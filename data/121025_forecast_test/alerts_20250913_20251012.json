@@ -1,0 +1,792 @@
+[
+    {
+        "product_id": "EF3A",
+        "issue_datetime": "2025-10-12 13:02:41.997",
+        "message": "Space Weather Message Code: ALTEF3\r\nSerial Number: 3544\r\nIssue Time: 2025 Oct 12 1302 UTC\r\n\r\nCONTINUED ALERT: Electron 2MeV Integral Flux exceeded 1000pfu\r\nContinuation of Serial Number: 3543\r\nBegin Time: 2025 Oct 01 1325 UTC\r\nYesterday Maximum 2MeV Flux: 2785 pfu\r\n\r\n\r\n\r\nPotential Impacts: Satellite systems may experience significant charging resulting in increased risk to satellite systems."
+    },
+    {
+        "product_id": "K05W",
+        "issue_datetime": "2025-10-12 03:36:38.990",
+        "message": "Space Weather Message Code: WARK05\r\nSerial Number: 2118\r\nIssue Time: 2025 Oct 12 0336 UTC\r\n\r\nWARNING: Geomagnetic K-index of 5 expected\r\nValid From: 2025 Oct 12 0334 UTC\r\nValid To: 2025 Oct 12 2359 UTC\r\nWarning Condition: Onset\r\nNOAA Scale: G1 - Minor\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 60 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nSpacecraft - Minor impact on satellite operations possible.\r\nAurora - Aurora may be visible at high latitudes, i.e., northern tier of the U.S. such as northern Michigan and Maine."
+    },
+    {
+        "product_id": "K04W",
+        "issue_datetime": "2025-10-12 03:36:38.973",
+        "message": "Space Weather Message Code: WARK04\r\nSerial Number: 5106\r\nIssue Time: 2025 Oct 12 0336 UTC\r\n\r\nEXTENDED WARNING: Geomagnetic K-index of 4 expected\r\nExtension to Serial Number: 5105\r\nValid From: 2025 Oct 11 0502 UTC\r\nNow Valid Until: 2025 Oct 12 2359 UTC\r\nWarning Condition: Persistence\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 65 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nAurora - Aurora may be visible at high latitudes such as Canada and Alaska."
+    },
+    {
+        "product_id": "K04W",
+        "issue_datetime": "2025-10-12 00:20:15.693",
+        "message": "Space Weather Message Code: WARK04\r\nSerial Number: 5105\r\nIssue Time: 2025 Oct 12 0020 UTC\r\n\r\nEXTENDED WARNING: Geomagnetic K-index of 4 expected\r\nExtension to Serial Number: 5104\r\nValid From: 2025 Oct 11 0502 UTC\r\nNow Valid Until: 2025 Oct 12 1800 UTC\r\nWarning Condition: Persistence\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 65 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nAurora - Aurora may be visible at high latitudes such as Canada and Alaska."
+    },
+    {
+        "product_id": "K04W",
+        "issue_datetime": "2025-10-11 23:56:19.127",
+        "message": "Space Weather Message Code: WARK04\r\nSerial Number: 5104\r\nIssue Time: 2025 Oct 11 2356 UTC\r\n\r\nEXTENDED WARNING: Geomagnetic K-index of 4 expected\r\nExtension to Serial Number: 5103\r\nValid From: 2025 Oct 11 0502 UTC\r\nNow Valid Until: 2025 Oct 11 1800 UTC\r\nWarning Condition: Persistence\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 65 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nAurora - Aurora may be visible at high latitudes such as Canada and Alaska."
+    },
+    {
+        "product_id": "K05A",
+        "issue_datetime": "2025-10-11 09:02:44.587",
+        "message": "Space Weather Message Code: ALTK05\r\nSerial Number: 1878\r\nIssue Time: 2025 Oct 11 0902 UTC\r\n\r\nALERT: Geomagnetic K-index of 5\r\n Threshold Reached: 2025 Oct 11 0859 UTC\r\nSynoptic Period: 0600-0900 UTC\r\n \r\nActive Warning: Yes\r\nNOAA Scale: G1 - Minor\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 60 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nSpacecraft - Minor impact on satellite operations possible.\r\nAurora - Aurora may be visible at high latitudes, i.e., northern tier of the U.S. such as northern Michigan and Maine."
+    },
+    {
+        "product_id": "K05W",
+        "issue_datetime": "2025-10-11 08:16:07.227",
+        "message": "Space Weather Message Code: WARK05\r\nSerial Number: 2117\r\nIssue Time: 2025 Oct 11 0816 UTC\r\n\r\nWARNING: Geomagnetic K-index of 5 expected\r\nValid From: 2025 Oct 11 0815 UTC\r\nValid To: 2025 Oct 11 2359 UTC\r\nWarning Condition: Onset\r\nNOAA Scale: G1 - Minor\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 60 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nSpacecraft - Minor impact on satellite operations possible.\r\nAurora - Aurora may be visible at high latitudes, i.e., northern tier of the U.S. such as northern Michigan and Maine."
+    },
+    {
+        "product_id": "K04A",
+        "issue_datetime": "2025-10-11 05:10:13.990",
+        "message": "Space Weather Message Code: ALTK04\r\nSerial Number: 2596\r\nIssue Time: 2025 Oct 11 0510 UTC\r\n\r\nALERT: Geomagnetic K-index of 4\r\n Threshold Reached: 2025 Oct 11 0509 UTC\r\nSynoptic Period: 0300-0600 UTC\r\n \r\nActive Warning: Yes\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 65 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nAurora - Aurora may be visible at high latitudes such as Canada and Alaska."
+    },
+    {
+        "product_id": "K04W",
+        "issue_datetime": "2025-10-11 05:03:03.427",
+        "message": "Space Weather Message Code: WARK04\r\nSerial Number: 5103\r\nIssue Time: 2025 Oct 11 0503 UTC\r\n\r\nWARNING: Geomagnetic K-index of 4 expected\r\nValid From: 2025 Oct 11 0502 UTC\r\nValid To: 2025 Oct 11 2359 UTC\r\nWarning Condition: Onset\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 65 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nAurora - Aurora may be visible at high latitudes such as Canada and Alaska."
+    },
+    {
+        "product_id": "EF3A",
+        "issue_datetime": "2025-10-11 04:59:26.830",
+        "message": "Space Weather Message Code: ALTEF3\r\nSerial Number: 3543\r\nIssue Time: 2025 Oct 11 0459 UTC\r\n\r\nCONTINUED ALERT: Electron 2MeV Integral Flux exceeded 1000pfu\r\nContinuation of Serial Number: 3542\r\nBegin Time: 2025 Oct 01 1325 UTC\r\nYesterday Maximum 2MeV Flux: 2513 pfu\r\n\r\n\r\n\r\nPotential Impacts: Satellite systems may experience significant charging resulting in increased risk to satellite systems."
+    },
+    {
+        "product_id": "A20F",
+        "issue_datetime": "2025-10-10 19:27:57.493",
+        "message": "Space Weather Message Code: WATA20\r\nSerial Number: 1069\r\nIssue Time: 2025 Oct 10 1927 UTC\r\n\r\nWATCH: Geomagnetic Storm Category G1 Predicted\r\n\r\nHighest Storm Level Predicted by Day:\r\nOct 11:  None (Below G1)   Oct 12:  G1 (Minor)   Oct 13:  G1 (Minor)\r\n\r\nTHIS SUPERSEDES ANY/ALL PRIOR WATCHES IN EFFECT\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 60 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nSpacecraft - Minor impact on satellite operations possible.\r\nAurora - Aurora may be visible at high latitudes, i.e., northern tier of the U.S. such as northern Michigan and Maine."
+    },
+    {
+        "product_id": "EF3A",
+        "issue_datetime": "2025-10-10 06:46:55.637",
+        "message": "Space Weather Message Code: ALTEF3\r\nSerial Number: 3542\r\nIssue Time: 2025 Oct 10 0646 UTC\r\n\r\nCONTINUED ALERT: Electron 2MeV Integral Flux exceeded 1000pfu\r\nContinuation of Serial Number: 3541\r\nBegin Time: 2025 Oct 01 1325 UTC\r\nYesterday Maximum 2MeV Flux: 5051 pfu\r\n\r\n\r\n\r\nPotential Impacts: Satellite systems may experience significant charging resulting in increased risk to satellite systems."
+    },
+    {
+        "product_id": "K04A",
+        "issue_datetime": "2025-10-10 03:02:10.843",
+        "message": "Space Weather Message Code: ALTK04\r\nSerial Number: 2595\r\nIssue Time: 2025 Oct 10 0302 UTC\r\n\r\nALERT: Geomagnetic K-index of 4\r\n Threshold Reached: 2025 Oct 10 0259 UTC\r\nSynoptic Period: 0000-0300 UTC\r\n \r\nActive Warning: Yes\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 65 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nAurora - Aurora may be visible at high latitudes such as Canada and Alaska."
+    },
+    {
+        "product_id": "K04W",
+        "issue_datetime": "2025-10-10 01:49:09.670",
+        "message": "Space Weather Message Code: WARK04\r\nSerial Number: 5102\r\nIssue Time: 2025 Oct 10 0149 UTC\r\n\r\nWARNING: Geomagnetic K-index of 4 expected\r\nValid From: 2025 Oct 10 0148 UTC\r\nValid To: 2025 Oct 10 1500 UTC\r\nWarning Condition: Onset\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 65 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nAurora - Aurora may be visible at high latitudes such as Canada and Alaska."
+    },
+    {
+        "product_id": "A20F",
+        "issue_datetime": "2025-10-09 21:15:57.937",
+        "message": "Space Weather Message Code: WATA20\r\nSerial Number: 1068\r\nIssue Time: 2025 Oct 09 2115 UTC\r\n\r\nWATCH: Geomagnetic Storm Category G1 Predicted\r\n\r\nHighest Storm Level Predicted by Day:\r\nOct 10:  None (Below G1)   Oct 11:  None (Below G1)   Oct 12:  G1 (Minor)\r\n\r\nTHIS SUPERSEDES ANY/ALL PRIOR WATCHES IN EFFECT\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 60 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nSpacecraft - Minor impact on satellite operations possible.\r\nAurora - Aurora may be visible at high latitudes, i.e., northern tier of the U.S. such as northern Michigan and Maine."
+    },
+    {
+        "product_id": "EF3A",
+        "issue_datetime": "2025-10-09 14:03:15.013",
+        "message": "Space Weather Message Code: ALTEF3\r\nSerial Number: 3541\r\nIssue Time: 2025 Oct 09 1403 UTC\r\n\r\nCONTINUED ALERT: Electron 2MeV Integral Flux exceeded 1000pfu\r\nContinuation of Serial Number: 3540\r\nBegin Time: 2025 Oct 01 1325 UTC\r\nYesterday Maximum 2MeV Flux: 4767 pfu\r\n\r\n\r\n\r\nPotential Impacts: Satellite systems may experience significant charging resulting in increased risk to satellite systems."
+    },
+    {
+        "product_id": "EF3A",
+        "issue_datetime": "2025-10-08 05:36:59.117",
+        "message": "Space Weather Message Code: ALTEF3\r\nSerial Number: 3540\r\nIssue Time: 2025 Oct 08 0536 UTC\r\n\r\nCONTINUED ALERT: Electron 2MeV Integral Flux exceeded 1000pfu\r\nContinuation of Serial Number: 3539\r\nBegin Time: 2025 Oct 01 1325 UTC\r\nYesterday Maximum 2MeV Flux: 10522 pfu\r\n\r\n\r\n\r\nPotential Impacts: Satellite systems may experience significant charging resulting in increased risk to satellite systems."
+    },
+    {
+        "product_id": "K04A",
+        "issue_datetime": "2025-10-08 05:36:03.673",
+        "message": "Space Weather Message Code: ALTK04\r\nSerial Number: 2594\r\nIssue Time: 2025 Oct 08 0536 UTC\r\n\r\nALERT: Geomagnetic K-index of 4\r\n Threshold Reached: 2025 Oct 08 0532 UTC\r\nSynoptic Period: 0300-0600 UTC\r\n \r\nActive Warning: Yes\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 65 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nAurora - Aurora may be visible at high latitudes such as Canada and Alaska."
+    },
+    {
+        "product_id": "K04W",
+        "issue_datetime": "2025-10-08 05:26:20.893",
+        "message": "Space Weather Message Code: WARK04\r\nSerial Number: 5101\r\nIssue Time: 2025 Oct 08 0526 UTC\r\n\r\nWARNING: Geomagnetic K-index of 4 expected\r\nValid From: 2025 Oct 08 0525 UTC\r\nValid To: 2025 Oct 08 1800 UTC\r\nWarning Condition: Onset\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 65 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nAurora - Aurora may be visible at high latitudes such as Canada and Alaska."
+    },
+    {
+        "product_id": "K04W",
+        "issue_datetime": "2025-10-08 04:08:27.260",
+        "message": "Space Weather Message Code: WARK04\r\nSerial Number: 5100\r\nIssue Time: 2025 Oct 08 0408 UTC\r\n\r\nWARNING: Geomagnetic K-index of 4 expected\r\nValid From: 2025 Oct 08 0408 UTC\r\nValid To: 2025 Oct 08 0900 UTC\r\nWarning Condition: Onset\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 65 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nAurora - Aurora may be visible at high latitudes such as Canada and Alaska."
+    },
+    {
+        "product_id": "TIIA",
+        "issue_datetime": "2025-10-07 20:51:01.067",
+        "message": "Space Weather Message Code: ALTTP2\r\nSerial Number: 1432\r\nIssue Time: 2025 Oct 07 2051 UTC\r\n\r\nALERT: Type II Radio Emission\r\nBegin Time: 2025 Oct 07 2007 UTC\r\nEstimated Velocity: 755 km/s\r\n\r\n\r\n\r\nDescription: Type II emissions occur in association with eruptions on the sun and typically indicate a coronal mass ejection is associated with a flare event."
+    },
+    {
+        "product_id": "K04A",
+        "issue_datetime": "2025-10-07 13:47:43.300",
+        "message": "Space Weather Message Code: ALTK04\r\nSerial Number: 2593\r\nIssue Time: 2025 Oct 07 1347 UTC\r\n\r\nALERT: Geomagnetic K-index of 4\r\n Threshold Reached: 2025 Oct 07 1343 UTC\r\nSynoptic Period: 1200-1500 UTC\r\n \r\nActive Warning: Yes\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 65 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nAurora - Aurora may be visible at high latitudes such as Canada and Alaska."
+    },
+    {
+        "product_id": "K04W",
+        "issue_datetime": "2025-10-07 12:33:56.650",
+        "message": "Space Weather Message Code: WARK04\r\nSerial Number: 5099\r\nIssue Time: 2025 Oct 07 1233 UTC\r\n\r\nWARNING: Geomagnetic K-index of 4 expected\r\nValid From: 2025 Oct 07 1233 UTC\r\nValid To: 2025 Oct 07 2359 UTC\r\nWarning Condition: Onset\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 65 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nAurora - Aurora may be visible at high latitudes such as Canada and Alaska."
+    },
+    {
+        "product_id": "K04W",
+        "issue_datetime": "2025-10-07 08:19:08.410",
+        "message": "Space Weather Message Code: WARK04\r\nSerial Number: 5098\r\nIssue Time: 2025 Oct 07 0819 UTC\r\n\r\nWARNING: Geomagnetic K-index of 4 expected\r\nValid From: 2025 Oct 07 0819 UTC\r\nValid To: 2025 Oct 07 1200 UTC\r\nWarning Condition: Onset\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 65 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nAurora - Aurora may be visible at high latitudes such as Canada and Alaska."
+    },
+    {
+        "product_id": "EF3A",
+        "issue_datetime": "2025-10-07 05:00:47.233",
+        "message": "Space Weather Message Code: ALTEF3\r\nSerial Number: 3539\r\nIssue Time: 2025 Oct 07 0500 UTC\r\n\r\nCONTINUED ALERT: Electron 2MeV Integral Flux exceeded 1000pfu\r\nContinuation of Serial Number: 3538\r\nBegin Time: 2025 Oct 01 1325 UTC\r\nYesterday Maximum 2MeV Flux: 17945 pfu\r\n\r\n\r\n\r\nPotential Impacts: Satellite systems may experience significant charging resulting in increased risk to satellite systems."
+    },
+    {
+        "product_id": "EF3A",
+        "issue_datetime": "2025-10-06 05:00:00.903",
+        "message": "Space Weather Message Code: ALTEF3\r\nSerial Number: 3538\r\nIssue Time: 2025 Oct 06 0500 UTC\r\n\r\nCONTINUED ALERT: Electron 2MeV Integral Flux exceeded 1000pfu\r\nContinuation of Serial Number: 3537\r\nBegin Time: 2025 Oct 01 1325 UTC\r\nYesterday Maximum 2MeV Flux: 23594 pfu\r\n\r\n\r\n\r\nPotential Impacts: Satellite systems may experience significant charging resulting in increased risk to satellite systems."
+    },
+    {
+        "product_id": "EF3A",
+        "issue_datetime": "2025-10-05 04:59:52.707",
+        "message": "Space Weather Message Code: ALTEF3\r\nSerial Number: 3537\r\nIssue Time: 2025 Oct 05 0459 UTC\r\n\r\nCONTINUED ALERT: Electron 2MeV Integral Flux exceeded 1000pfu\r\nContinuation of Serial Number: 3536\r\nBegin Time: 2025 Oct 01 1325 UTC\r\nYesterday Maximum 2MeV Flux: 14338 pfu\r\n\r\n\r\n\r\nPotential Impacts: Satellite systems may experience significant charging resulting in increased risk to satellite systems."
+    },
+    {
+        "product_id": "A20F",
+        "issue_datetime": "2025-10-05 02:26:14.823",
+        "message": "Space Weather Message Code: WATA20\r\nSerial Number: 1067\r\nIssue Time: 2025 Oct 05 0226 UTC\r\n\r\nWATCH: Geomagnetic Storm Category G1 Predicted\r\n\r\nHighest Storm Level Predicted by Day:\r\nOct 06:  None (Below G1)   Oct 07:  G1 (Minor)   Oct 08:  G1 (Minor)\r\n\r\nTHIS SUPERSEDES ANY/ALL PRIOR WATCHES IN EFFECT\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 60 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nSpacecraft - Minor impact on satellite operations possible.\r\nAurora - Aurora may be visible at high latitudes, i.e., northern tier of the U.S. such as northern Michigan and Maine."
+    },
+    {
+        "product_id": "A20F",
+        "issue_datetime": "2025-10-04 20:00:12.757",
+        "message": "Space Weather Message Code: WATA20\r\nSerial Number: 1066\r\nIssue Time: 2025 Oct 04 2000 UTC\r\n\r\nWATCH: Geomagnetic Storm Category G1 Predicted\r\n\r\nHighest Storm Level Predicted by Day:\r\nOct 05:  None (Below G1)   Oct 06:  None (Below G1)   Oct 07:  G1 (Minor)\r\n\r\nTHIS SUPERSEDES ANY/ALL PRIOR WATCHES IN EFFECT\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 60 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nSpacecraft - Minor impact on satellite operations possible.\r\nAurora - Aurora may be visible at high latitudes, i.e., northern tier of the U.S. such as northern Michigan and Maine."
+    },
+    {
+        "product_id": "TIIA",
+        "issue_datetime": "2025-10-04 17:16:24.820",
+        "message": "Space Weather Message Code: ALTTP2\r\nSerial Number: 1431\r\nIssue Time: 2025 Oct 04 1716 UTC\r\n\r\nALERT: Type II Radio Emission\r\nBegin Time: 2025 Oct 04 1643 UTC\r\nEstimated Velocity: 284 km/s\r\n\r\n\r\n\r\nDescription: Type II emissions occur in association with eruptions on the sun and typically indicate a coronal mass ejection is associated with a flare event."
+    },
+    {
+        "product_id": "K04W",
+        "issue_datetime": "2025-10-04 11:14:34.850",
+        "message": "Space Weather Message Code: WARK04\r\nSerial Number: 5097\r\nIssue Time: 2025 Oct 04 1114 UTC\r\n\r\nEXTENDED WARNING: Geomagnetic K-index of 4 expected\r\nExtension to Serial Number: 5096\r\nValid From: 2025 Sep 29 0645 UTC\r\nNow Valid Until: 2025 Oct 05 1200 UTC\r\nWarning Condition: Persistence\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 65 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nAurora - Aurora may be visible at high latitudes such as Canada and Alaska."
+    },
+    {
+        "product_id": "EF3A",
+        "issue_datetime": "2025-10-04 05:19:04.077",
+        "message": "Space Weather Message Code: ALTEF3\r\nSerial Number: 3536\r\nIssue Time: 2025 Oct 04 0519 UTC\r\n\r\nCONTINUED ALERT: Electron 2MeV Integral Flux exceeded 1000pfu\r\nContinuation of Serial Number: 3535\r\nBegin Time: 2025 Oct 01 1325 UTC\r\nYesterday Maximum 2MeV Flux: 7331 pfu\r\n\r\n\r\n\r\nPotential Impacts: Satellite systems may experience significant charging resulting in increased risk to satellite systems."
+    },
+    {
+        "product_id": "TIIA",
+        "issue_datetime": "2025-10-03 15:07:38.693",
+        "message": "Space Weather Message Code: ALTTP2\r\nSerial Number: 1430\r\nIssue Time: 2025 Oct 03 1507 UTC\r\n\r\nALERT: Type II Radio Emission\r\nBegin Time: 2025 Oct 03 1451 UTC\r\nEstimated Velocity: 416 km/s\r\n\r\n\r\n\r\nDescription: Type II emissions occur in association with eruptions on the sun and typically indicate a coronal mass ejection is associated with a flare event."
+    },
+    {
+        "product_id": "K05W",
+        "issue_datetime": "2025-10-03 14:44:00.150",
+        "message": "Space Weather Message Code: WARK05\r\nSerial Number: 2116\r\nIssue Time: 2025 Oct 03 1443 UTC\r\n\r\nEXTENDED WARNING: Geomagnetic K-index of 5 expected\r\nExtension to Serial Number: 2115\r\nValid From: 2025 Sep 30 0114 UTC\r\nNow Valid Until: 2025 Oct 03 2359 UTC\r\nWarning Condition: Persistence\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 60 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nSpacecraft - Minor impact on satellite operations possible.\r\nAurora - Aurora may be visible at high latitudes, i.e., northern tier of the U.S. such as northern Michigan and Maine."
+    },
+    {
+        "product_id": "K04W",
+        "issue_datetime": "2025-10-03 14:43:05.803",
+        "message": "Space Weather Message Code: WARK04\r\nSerial Number: 5096\r\nIssue Time: 2025 Oct 03 1443 UTC\r\n\r\nEXTENDED WARNING: Geomagnetic K-index of 4 expected\r\nExtension to Serial Number: 5095\r\nValid From: 2025 Sep 29 0645 UTC\r\nNow Valid Until: 2025 Oct 04 1200 UTC\r\nWarning Condition: Persistence\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 65 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nAurora - Aurora may be visible at high latitudes such as Canada and Alaska."
+    },
+    {
+        "product_id": "TIVA",
+        "issue_datetime": "2025-10-03 12:15:13.110",
+        "message": "Space Weather Message Code: ALTTP4\r\nSerial Number: 686\r\nIssue Time: 2025 Oct 03 1215 UTC\r\n\r\nALERT: Type IV Radio Emission\r\nBegin Time: 2025 Oct 03 1112 UTC\r\n\r\n\r\n\r\nDescription: Type IV emissions occur in association with major eruptions on the sun and are typically associated with strong coronal mass ejections and solar radiation storms."
+    },
+    {
+        "product_id": "TIIA",
+        "issue_datetime": "2025-10-03 12:14:38.247",
+        "message": "Space Weather Message Code: ALTTP2\r\nSerial Number: 1429\r\nIssue Time: 2025 Oct 03 1214 UTC\r\n\r\nALERT: Type II Radio Emission\r\nBegin Time: 2025 Oct 03 1101 UTC\r\nEstimated Velocity: 1618 km/s\r\n\r\n\r\n\r\nDescription: Type II emissions occur in association with eruptions on the sun and typically indicate a coronal mass ejection is associated with a flare event."
+    },
+    {
+        "product_id": "K05A",
+        "issue_datetime": "2025-10-03 08:44:00.093",
+        "message": "Space Weather Message Code: ALTK05\r\nSerial Number: 1877\r\nIssue Time: 2025 Oct 03 0843 UTC\r\n\r\nALERT: Geomagnetic K-index of 5\r\n Threshold Reached: 2025 Oct 03 0836 UTC\r\nSynoptic Period: 0600-0900 UTC\r\n \r\nActive Warning: Yes\r\nNOAA Scale: G1 - Minor\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 60 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nSpacecraft - Minor impact on satellite operations possible.\r\nAurora - Aurora may be visible at high latitudes, i.e., northern tier of the U.S. such as northern Michigan and Maine."
+    },
+    {
+        "product_id": "K05W",
+        "issue_datetime": "2025-10-03 07:16:26.617",
+        "message": "Space Weather Message Code: WARK05\r\nSerial Number: 2115\r\nIssue Time: 2025 Oct 03 0716 UTC\r\n\r\nEXTENDED WARNING: Geomagnetic K-index of 5 expected\r\nExtension to Serial Number: 2114\r\nValid From: 2025 Sep 30 0114 UTC\r\nNow Valid Until: 2025 Oct 03 1500 UTC\r\nWarning Condition: Persistence\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 60 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nSpacecraft - Minor impact on satellite operations possible.\r\nAurora - Aurora may be visible at high latitudes, i.e., northern tier of the U.S. such as northern Michigan and Maine."
+    },
+    {
+        "product_id": "EF3A",
+        "issue_datetime": "2025-10-03 05:00:49.740",
+        "message": "Space Weather Message Code: ALTEF3\r\nSerial Number: 3535\r\nIssue Time: 2025 Oct 03 0500 UTC\r\n\r\nCONTINUED ALERT: Electron 2MeV Integral Flux exceeded 1000pfu\r\nContinuation of Serial Number: 3534\r\nBegin Time: 2025 Oct 01 1325 UTC\r\nYesterday Maximum 2MeV Flux: 3609 pfu\r\n\r\n\r\n\r\nPotential Impacts: Satellite systems may experience significant charging resulting in increased risk to satellite systems."
+    },
+    {
+        "product_id": "K05A",
+        "issue_datetime": "2025-10-03 04:17:38.833",
+        "message": "Space Weather Message Code: ALTK05\r\nSerial Number: 1876\r\nIssue Time: 2025 Oct 03 0417 UTC\r\n\r\nALERT: Geomagnetic K-index of 5\r\n Threshold Reached: 2025 Oct 03 0407 UTC\r\nSynoptic Period: 0300-0600 UTC\r\n \r\nActive Warning: Yes\r\nNOAA Scale: G1 - Minor\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 60 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nSpacecraft - Minor impact on satellite operations possible.\r\nAurora - Aurora may be visible at high latitudes, i.e., northern tier of the U.S. such as northern Michigan and Maine."
+    },
+    {
+        "product_id": "K05W",
+        "issue_datetime": "2025-10-02 23:07:16.910",
+        "message": "Space Weather Message Code: WARK05\r\nSerial Number: 2114\r\nIssue Time: 2025 Oct 02 2307 UTC\r\n\r\nEXTENDED WARNING: Geomagnetic K-index of 5 expected\r\nExtension to Serial Number: 2113\r\nValid From: 2025 Sep 30 0114 UTC\r\nNow Valid Until: 2025 Oct 03 0900 UTC\r\nWarning Condition: Persistence\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 60 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nSpacecraft - Minor impact on satellite operations possible.\r\nAurora - Aurora may be visible at high latitudes, i.e., northern tier of the U.S. such as northern Michigan and Maine."
+    },
+    {
+        "product_id": "K04W",
+        "issue_datetime": "2025-10-02 19:53:05.283",
+        "message": "Space Weather Message Code: WARK04\r\nSerial Number: 5095\r\nIssue Time: 2025 Oct 02 1953 UTC\r\n\r\nEXTENDED WARNING: Geomagnetic K-index of 4 expected\r\nExtension to Serial Number: 5094\r\nValid From: 2025 Sep 29 0645 UTC\r\nNow Valid Until: 2025 Oct 04 0000 UTC\r\nWarning Condition: Persistence\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 65 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nAurora - Aurora may be visible at high latitudes such as Canada and Alaska."
+    },
+    {
+        "product_id": "K05A",
+        "issue_datetime": "2025-10-02 19:30:09.417",
+        "message": "Space Weather Message Code: ALTK05\r\nSerial Number: 1875\r\nIssue Time: 2025 Oct 02 1930 UTC\r\n\r\nALERT: Geomagnetic K-index of 5\r\n Threshold Reached: 2025 Oct 02 1922 UTC\r\nSynoptic Period: 1800-2100 UTC\r\n \r\nActive Warning: Yes\r\nNOAA Scale: G1 - Minor\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 60 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nSpacecraft - Minor impact on satellite operations possible.\r\nAurora - Aurora may be visible at high latitudes, i.e., northern tier of the U.S. such as northern Michigan and Maine."
+    },
+    {
+        "product_id": "K05W",
+        "issue_datetime": "2025-10-02 19:16:18.100",
+        "message": "Space Weather Message Code: WARK05\r\nSerial Number: 2113\r\nIssue Time: 2025 Oct 02 1916 UTC\r\n\r\nEXTENDED WARNING: Geomagnetic K-index of 5 expected\r\nExtension to Serial Number: 2112\r\nValid From: 2025 Sep 30 0114 UTC\r\nNow Valid Until: 2025 Oct 03 0000 UTC\r\nWarning Condition: Persistence\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 60 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nSpacecraft - Minor impact on satellite operations possible.\r\nAurora - Aurora may be visible at high latitudes, i.e., northern tier of the U.S. such as northern Michigan and Maine."
+    },
+    {
+        "product_id": "A30F",
+        "issue_datetime": "2025-10-02 11:40:02.270",
+        "message": "Space Weather Message Code: WATA30\r\nSerial Number: 258\r\nIssue Time: 2025 Oct 02 1140 UTC\r\n\r\nWATCH: Geomagnetic Storm Category G2 Predicted\r\n\r\nHighest Storm Level Predicted by Day:\r\nOct 02:  G2 (Moderate)   Oct 03:  G1 (Minor)   Oct 04:  None (Below G1)\r\n\r\nTHIS SUPERSEDES ANY/ALL PRIOR WATCHES IN EFFECT\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 55 degrees Geomagnetic Latitude.\r\nInduced Currents - Power grid fluctuations can occur. High-latitude power systems may experience voltage alarms.\r\nSpacecraft - Satellite orientation irregularities may occur; increased drag on low Earth-orbit satellites is possible.\r\nRadio - HF (high frequency) radio propagation can fade at higher latitudes.\r\nAurora - Aurora may be seen as low as New York to Wisconsin to Washington state."
+    },
+    {
+        "product_id": "K05A",
+        "issue_datetime": "2025-10-02 10:45:30.020",
+        "message": "Space Weather Message Code: ALTK05\r\nSerial Number: 1874\r\nIssue Time: 2025 Oct 02 1045 UTC\r\n\r\nALERT: Geomagnetic K-index of 5\r\n Threshold Reached: 2025 Oct 02 1038 UTC\r\nSynoptic Period: 0900-1200 UTC\r\n \r\nActive Warning: Yes\r\nNOAA Scale: G1 - Minor\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 60 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nSpacecraft - Minor impact on satellite operations possible.\r\nAurora - Aurora may be visible at high latitudes, i.e., northern tier of the U.S. such as northern Michigan and Maine."
+    },
+    {
+        "product_id": "K06W",
+        "issue_datetime": "2025-10-02 10:38:00.147",
+        "message": "Space Weather Message Code: WARK06\r\nSerial Number: 613\r\nIssue Time: 2025 Oct 02 1037 UTC\r\n\r\nEXTENDED WARNING: Geomagnetic K-Index of 6 expected\r\nExtension to Serial Number: 612\r\nValid From: 2025 Sep 30 0252 UTC\r\nNow Valid Until: 2025 Oct 02 1500 UTC\r\nWarning Condition: Persistence\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 55 degrees Geomagnetic Latitude.\r\nInduced Currents - Power grid fluctuations can occur. High-latitude power systems may experience voltage alarms.\r\nSpacecraft - Satellite orientation irregularities may occur; increased drag on low Earth-orbit satellites is possible.\r\nRadio - HF (high frequency) radio propagation can fade at higher latitudes.\r\nAurora - Aurora may be seen as low as New York to Wisconsin to Washington state."
+    },
+    {
+        "product_id": "K05A",
+        "issue_datetime": "2025-10-02 09:09:17.280",
+        "message": "Space Weather Message Code: ALTK05\r\nSerial Number: 1873\r\nIssue Time: 2025 Oct 02 0909 UTC\r\n\r\nALERT: Geomagnetic K-index of 5\r\n Threshold Reached: 2025 Oct 02 0859 UTC\r\nSynoptic Period: 0600-0900 UTC\r\n \r\nActive Warning: Yes\r\nNOAA Scale: G1 - Minor\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 60 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nSpacecraft - Minor impact on satellite operations possible.\r\nAurora - Aurora may be visible at high latitudes, i.e., northern tier of the U.S. such as northern Michigan and Maine."
+    },
+    {
+        "product_id": "K07A",
+        "issue_datetime": "2025-10-02 06:02:01.030",
+        "message": "Space Weather Message Code: ALTK07\r\nSerial Number: 192\r\nIssue Time: 2025 Oct 02 0602 UTC\r\n\r\nALERT: Geomagnetic K-index of 7\r\n Threshold Reached: 2025 Oct 02 0559 UTC\r\nSynoptic Period: 0300-0600 UTC\r\n \r\nActive Warning: Yes\r\nNOAA Scale: G3 - Strong\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 50 degrees Geomagnetic Latitude.\r\nInduced Currents - Power system voltage irregularities possible, false alarms may be triggered on some protection devices.\r\nSpacecraft - Systems may experience surface charging; increased drag on low Earth-orbit satellites and orientation problems may occur.\r\nNavigation - Intermittent satellite navigation (GPS) problems, including loss-of-lock and increased range error may occur.\r\nRadio - HF (high frequency) radio may be intermittent.\r\nAurora - Aurora may be seen as low as Pennsylvania to Iowa to Oregon."
+    },
+    {
+        "product_id": "EF3A",
+        "issue_datetime": "2025-10-02 04:59:41.810",
+        "message": "Space Weather Message Code: ALTEF3\r\nSerial Number: 3534\r\nIssue Time: 2025 Oct 02 0459 UTC\r\n\r\nCONTINUED ALERT: Electron 2MeV Integral Flux exceeded 1000pfu\r\nContinuation of Serial Number: 3533\r\nBegin Time: 2025 Oct 01 1325 UTC\r\nYesterday Maximum 2MeV Flux: 3601 pfu\r\n\r\n\r\n\r\nPotential Impacts: Satellite systems may experience significant charging resulting in increased risk to satellite systems."
+    },
+    {
+        "product_id": "K07W",
+        "issue_datetime": "2025-10-02 04:18:54.770",
+        "message": "Space Weather Message Code: WARK07\r\nSerial Number: 134\r\nIssue Time: 2025 Oct 02 0418 UTC\r\n\r\nWARNING: Geomagnetic K-index of 7 or greater expected\r\nValid From: 2025 Oct 02 0418 UTC\r\nValid To: 2025 Oct 02 1200 UTC\r\nWarning Condition: Onset\r\nNOAA Scale: G3 or greater\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 50 degrees Geomagnetic Latitude.\r\nInduced Currents - Power system voltage irregularities possible, false alarms may be triggered on some protection devices.\r\nSpacecraft - Systems may experience surface charging; increased drag on low Earth-orbit satellites and orientation problems may occur.\r\nNavigation - Intermittent satellite navigation (GPS) problems, including loss-of-lock and increased range error may occur.\r\nRadio - HF (high frequency) radio may be intermittent.\r\nAurora - Aurora may be seen as low as Pennsylvania to Iowa to Oregon."
+    },
+    {
+        "product_id": "K06A",
+        "issue_datetime": "2025-10-02 04:03:52.403",
+        "message": "Space Weather Message Code: ALTK06\r\nSerial Number: 663\r\nIssue Time: 2025 Oct 02 0403 UTC\r\n\r\nALERT: Geomagnetic K-index of 6\r\n Threshold Reached: 2025 Oct 02 0351 UTC\r\nSynoptic Period: 0300-0600 UTC\r\n \r\nActive Warning: Yes\r\nNOAA Scale: G2 - Moderate\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 55 degrees Geomagnetic Latitude.\r\nInduced Currents - Power grid fluctuations can occur. High-latitude power systems may experience voltage alarms.\r\nSpacecraft - Satellite orientation irregularities may occur; increased drag on low Earth-orbit satellites is possible.\r\nRadio - HF (high frequency) radio propagation can fade at higher latitudes.\r\nAurora - Aurora may be seen as low as New York to Wisconsin to Washington state."
+    },
+    {
+        "product_id": "K05A",
+        "issue_datetime": "2025-10-02 03:35:58.990",
+        "message": "Space Weather Message Code: ALTK05\r\nSerial Number: 1872\r\nIssue Time: 2025 Oct 02 0335 UTC\r\n\r\nALERT: Geomagnetic K-index of 5\r\n Threshold Reached: 2025 Oct 02 0322 UTC\r\nSynoptic Period: 0300-0600 UTC\r\n \r\nActive Warning: Yes\r\nNOAA Scale: G1 - Minor\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 60 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nSpacecraft - Minor impact on satellite operations possible.\r\nAurora - Aurora may be visible at high latitudes, i.e., northern tier of the U.S. such as northern Michigan and Maine."
+    },
+    {
+        "product_id": "TIIA",
+        "issue_datetime": "2025-10-02 02:49:29.250",
+        "message": "Space Weather Message Code: ALTTP2\r\nSerial Number: 1428\r\nIssue Time: 2025 Oct 02 0249 UTC\r\n\r\nALERT: Type II Radio Emission\r\nBegin Time: 2025 Oct 02 0209 UTC\r\nEstimated Velocity: 508 km/s\r\n\r\n\r\n\r\nDescription: Type II emissions occur in association with eruptions on the sun and typically indicate a coronal mass ejection is associated with a flare event."
+    },
+    {
+        "product_id": "K05A",
+        "issue_datetime": "2025-10-02 01:39:58.080",
+        "message": "Space Weather Message Code: ALTK05\r\nSerial Number: 1871\r\nIssue Time: 2025 Oct 02 0139 UTC\r\n\r\nALERT: Geomagnetic K-index of 5\r\n Threshold Reached: 2025 Oct 02 0135 UTC\r\nSynoptic Period: 0000-0300 UTC\r\n \r\nActive Warning: Yes\r\nNOAA Scale: G1 - Minor\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 60 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nSpacecraft - Minor impact on satellite operations possible.\r\nAurora - Aurora may be visible at high latitudes, i.e., northern tier of the U.S. such as northern Michigan and Maine."
+    },
+    {
+        "product_id": "A30F",
+        "issue_datetime": "2025-10-01 23:29:45.620",
+        "message": "Space Weather Message Code: WATA30\r\nSerial Number: 257\r\nIssue Time: 2025 Oct 01 2329 UTC\r\n\r\nWATCH: Geomagnetic Storm Category G2 Predicted\r\n\r\nHighest Storm Level Predicted by Day:\r\nOct 02:  G2 (Moderate)   Oct 03:  None (Below G1)   Oct 04:  None (Below G1)\r\n\r\nTHIS SUPERSEDES ANY/ALL PRIOR WATCHES IN EFFECT\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 55 degrees Geomagnetic Latitude.\r\nInduced Currents - Power grid fluctuations can occur. High-latitude power systems may experience voltage alarms.\r\nSpacecraft - Satellite orientation irregularities may occur; increased drag on low Earth-orbit satellites is possible.\r\nRadio - HF (high frequency) radio propagation can fade at higher latitudes.\r\nAurora - Aurora may be seen as low as New York to Wisconsin to Washington state."
+    },
+    {
+        "product_id": "K06A",
+        "issue_datetime": "2025-10-01 20:36:26.467",
+        "message": "Space Weather Message Code: ALTK06\r\nSerial Number: 662\r\nIssue Time: 2025 Oct 01 2036 UTC\r\n\r\nALERT: Geomagnetic K-index of 6\r\n Threshold Reached: 2025 Oct 01 2029 UTC\r\nSynoptic Period: 1800-2100 UTC\r\n \r\nActive Warning: Yes\r\nNOAA Scale: G2 - Moderate\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 55 degrees Geomagnetic Latitude.\r\nInduced Currents - Power grid fluctuations can occur. High-latitude power systems may experience voltage alarms.\r\nSpacecraft - Satellite orientation irregularities may occur; increased drag on low Earth-orbit satellites is possible.\r\nRadio - HF (high frequency) radio propagation can fade at higher latitudes.\r\nAurora - Aurora may be seen as low as New York to Wisconsin to Washington state."
+    },
+    {
+        "product_id": "K06W",
+        "issue_datetime": "2025-10-01 20:35:56.150",
+        "message": "Space Weather Message Code: WARK06\r\nSerial Number: 612\r\nIssue Time: 2025 Oct 01 2035 UTC\r\n\r\nEXTENDED WARNING: Geomagnetic K-Index of 6 expected\r\nExtension to Serial Number: 611\r\nValid From: 2025 Sep 30 0252 UTC\r\nNow Valid Until: 2025 Oct 02 1200 UTC\r\nWarning Condition: Persistence\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 55 degrees Geomagnetic Latitude.\r\nInduced Currents - Power grid fluctuations can occur. High-latitude power systems may experience voltage alarms.\r\nSpacecraft - Satellite orientation irregularities may occur; increased drag on low Earth-orbit satellites is possible.\r\nRadio - HF (high frequency) radio propagation can fade at higher latitudes.\r\nAurora - Aurora may be seen as low as New York to Wisconsin to Washington state."
+    },
+    {
+        "product_id": "K05W",
+        "issue_datetime": "2025-10-01 19:55:29.593",
+        "message": "Space Weather Message Code: WARK05\r\nSerial Number: 2112\r\nIssue Time: 2025 Oct 01 1955 UTC\r\n\r\nEXTENDED WARNING: Geomagnetic K-index of 5 expected\r\nExtension to Serial Number: 2111\r\nValid From: 2025 Sep 30 0114 UTC\r\nNow Valid Until: 2025 Oct 02 1800 UTC\r\nWarning Condition: Persistence\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 60 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nSpacecraft - Minor impact on satellite operations possible.\r\nAurora - Aurora may be visible at high latitudes, i.e., northern tier of the U.S. such as northern Michigan and Maine."
+    },
+    {
+        "product_id": "K04W",
+        "issue_datetime": "2025-10-01 19:54:41.683",
+        "message": "Space Weather Message Code: WARK04\r\nSerial Number: 5094\r\nIssue Time: 2025 Oct 01 1954 UTC\r\n\r\nEXTENDED WARNING: Geomagnetic K-index of 4 expected\r\nExtension to Serial Number: 5093\r\nValid From: 2025 Sep 29 0645 UTC\r\nNow Valid Until: 2025 Oct 03 0000 UTC\r\nWarning Condition: Persistence\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 65 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nAurora - Aurora may be visible at high latitudes such as Canada and Alaska."
+    },
+    {
+        "product_id": "K05A",
+        "issue_datetime": "2025-10-01 19:53:18.583",
+        "message": "Space Weather Message Code: ALTK05\r\nSerial Number: 1870\r\nIssue Time: 2025 Oct 01 1953 UTC\r\n\r\nALERT: Geomagnetic K-index of 5\r\n Threshold Reached: 2025 Oct 01 1946 UTC\r\nSynoptic Period: 1800-2100 UTC\r\n \r\nActive Warning: Yes\r\nNOAA Scale: G1 - Minor\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 60 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nSpacecraft - Minor impact on satellite operations possible.\r\nAurora - Aurora may be visible at high latitudes, i.e., northern tier of the U.S. such as northern Michigan and Maine."
+    },
+    {
+        "product_id": "K05A",
+        "issue_datetime": "2025-10-01 17:15:54.440",
+        "message": "Space Weather Message Code: ALTK05\r\nSerial Number: 1869\r\nIssue Time: 2025 Oct 01 1715 UTC\r\n\r\nALERT: Geomagnetic K-index of 5\r\n Threshold Reached: 2025 Oct 01 1706 UTC\r\nSynoptic Period: 1500-1800 UTC\r\n \r\nActive Warning: Yes\r\nNOAA Scale: G1 - Minor\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 60 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nSpacecraft - Minor impact on satellite operations possible.\r\nAurora - Aurora may be visible at high latitudes, i.e., northern tier of the U.S. such as northern Michigan and Maine."
+    },
+    {
+        "product_id": "K06A",
+        "issue_datetime": "2025-10-01 13:54:05.050",
+        "message": "Space Weather Message Code: ALTK06\r\nSerial Number: 661\r\nIssue Time: 2025 Oct 01 1354 UTC\r\n\r\nALERT: Geomagnetic K-index of 6\r\n Threshold Reached: 2025 Oct 01 1344 UTC\r\nSynoptic Period: 1200-1500 UTC\r\n \r\nActive Warning: Yes\r\nNOAA Scale: G2 - Moderate\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 55 degrees Geomagnetic Latitude.\r\nInduced Currents - Power grid fluctuations can occur. High-latitude power systems may experience voltage alarms.\r\nSpacecraft - Satellite orientation irregularities may occur; increased drag on low Earth-orbit satellites is possible.\r\nRadio - HF (high frequency) radio propagation can fade at higher latitudes.\r\nAurora - Aurora may be seen as low as New York to Wisconsin to Washington state."
+    },
+    {
+        "product_id": "EF3A",
+        "issue_datetime": "2025-10-01 13:33:29.167",
+        "message": "Space Weather Message Code: ALTEF3\r\nSerial Number: 3533\r\nIssue Time: 2025 Oct 01 1333 UTC\r\n\r\nALERT: Electron 2MeV Integral Flux exceeded 1000pfu\r\nThreshold Reached: 2025 Oct 01 1325 UTC\r\nStation: GOES19\r\n \r\n\r\n\r\n\r\nPotential Impacts: Satellite systems may experience significant charging resulting in increased risk to satellite systems."
+    },
+    {
+        "product_id": "K06W",
+        "issue_datetime": "2025-10-01 13:11:38.940",
+        "message": "Space Weather Message Code: WARK06\r\nSerial Number: 611\r\nIssue Time: 2025 Oct 01 1311 UTC\r\n\r\nEXTENDED WARNING: Geomagnetic K-Index of 6 expected\r\nExtension to Serial Number: 610\r\nValid From: 2025 Sep 30 0252 UTC\r\nNow Valid Until: 2025 Oct 01 1800 UTC\r\nWarning Condition: Persistence\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 55 degrees Geomagnetic Latitude.\r\nInduced Currents - Power grid fluctuations can occur. High-latitude power systems may experience voltage alarms.\r\nSpacecraft - Satellite orientation irregularities may occur; increased drag on low Earth-orbit satellites is possible.\r\nRadio - HF (high frequency) radio propagation can fade at higher latitudes.\r\nAurora - Aurora may be seen as low as New York to Wisconsin to Washington state."
+    },
+    {
+        "product_id": "K05W",
+        "issue_datetime": "2025-10-01 12:56:19.913",
+        "message": "Space Weather Message Code: WARK05\r\nSerial Number: 2111\r\nIssue Time: 2025 Oct 01 1256 UTC\r\n\r\nEXTENDED WARNING: Geomagnetic K-index of 5 expected\r\nExtension to Serial Number: 2110\r\nValid From: 2025 Sep 30 0114 UTC\r\nNow Valid Until: 2025 Oct 01 2100 UTC\r\nWarning Condition: Persistence\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 60 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nSpacecraft - Minor impact on satellite operations possible.\r\nAurora - Aurora may be visible at high latitudes, i.e., northern tier of the U.S. such as northern Michigan and Maine."
+    },
+    {
+        "product_id": "K05A",
+        "issue_datetime": "2025-10-01 12:55:41.503",
+        "message": "Space Weather Message Code: ALTK05\r\nSerial Number: 1868\r\nIssue Time: 2025 Oct 01 1255 UTC\r\n\r\nALERT: Geomagnetic K-index of 5\r\n Threshold Reached: 2025 Oct 01 1243 UTC\r\nSynoptic Period: 1200-1500 UTC\r\n \r\nActive Warning: Yes\r\nNOAA Scale: G1 - Minor\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 60 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nSpacecraft - Minor impact on satellite operations possible.\r\nAurora - Aurora may be visible at high latitudes, i.e., northern tier of the U.S. such as northern Michigan and Maine."
+    },
+    {
+        "product_id": "BHIS",
+        "issue_datetime": "2025-10-01 12:15:55.040",
+        "message": "Space Weather Message Code: SUM10R\r\nSerial Number: 879\r\nIssue Time: 2025 Oct 01 1215 UTC\r\n\r\nSUMMARY: 10cm Radio Burst\r\nBegin Time: 2025 Oct 01 1132 UTC\r\nMaximum Time: 2025 Oct 01 1132 UTC\r\nEnd Time: 2025 Oct 01 1132 UTC\r\nDuration: 1 minutes\r\nPeak Flux: 190 sfu\r\nLatest Penticton Noon Flux: 187 sfu\r\n\r\n\r\n\r\nDescription: A 10cm radio burst indicates that the electromagnetic burst associated with a solar flare at the 10cm wavelength was double or greater than the initial 10cm radio background. This can be indicative of significant radio noise in association with a solar flare. This noise is generally short-lived but can cause interference for sensitive receivers including radar, GPS, and satellite communications."
+    },
+    {
+        "product_id": "K05W",
+        "issue_datetime": "2025-10-01 11:54:15.310",
+        "message": "Space Weather Message Code: WARK05\r\nSerial Number: 2110\r\nIssue Time: 2025 Oct 01 1154 UTC\r\n\r\nEXTENDED WARNING: Geomagnetic K-index of 5 expected\r\nExtension to Serial Number: 2109\r\nValid From: 2025 Sep 30 0114 UTC\r\nNow Valid Until: 2025 Oct 01 1500 UTC\r\nWarning Condition: Persistence\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 60 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nSpacecraft - Minor impact on satellite operations possible.\r\nAurora - Aurora may be visible at high latitudes, i.e., northern tier of the U.S. such as northern Michigan and Maine."
+    },
+    {
+        "product_id": "K04W",
+        "issue_datetime": "2025-10-01 11:53:06.837",
+        "message": "Space Weather Message Code: WARK04\r\nSerial Number: 5093\r\nIssue Time: 2025 Oct 01 1153 UTC\r\n\r\nEXTENDED WARNING: Geomagnetic K-index of 4 expected\r\nExtension to Serial Number: 5092\r\nValid From: 2025 Sep 29 0645 UTC\r\nNow Valid Until: 2025 Oct 01 2359 UTC\r\nWarning Condition: Persistence\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 65 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nAurora - Aurora may be visible at high latitudes such as Canada and Alaska."
+    },
+    {
+        "product_id": "K05A",
+        "issue_datetime": "2025-10-01 08:47:48.970",
+        "message": "Space Weather Message Code: ALTK05\r\nSerial Number: 1867\r\nIssue Time: 2025 Oct 01 0847 UTC\r\n\r\nALERT: Geomagnetic K-index of 5\r\n Threshold Reached: 2025 Oct 01 0833 UTC\r\nSynoptic Period: 0600-0900 UTC\r\n \r\nActive Warning: Yes\r\nNOAA Scale: G1 - Minor\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 60 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nSpacecraft - Minor impact on satellite operations possible.\r\nAurora - Aurora may be visible at high latitudes, i.e., northern tier of the U.S. such as northern Michigan and Maine."
+    },
+    {
+        "product_id": "K05A",
+        "issue_datetime": "2025-10-01 03:46:11.357",
+        "message": "Space Weather Message Code: ALTK05\r\nSerial Number: 1866\r\nIssue Time: 2025 Oct 01 0346 UTC\r\n\r\nALERT: Geomagnetic K-index of 5\r\n Threshold Reached: 2025 Oct 01 0333 UTC\r\nSynoptic Period: 0300-0600 UTC\r\n \r\nActive Warning: Yes\r\nNOAA Scale: G1 - Minor\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 60 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nSpacecraft - Minor impact on satellite operations possible.\r\nAurora - Aurora may be visible at high latitudes, i.e., northern tier of the U.S. such as northern Michigan and Maine."
+    },
+    {
+        "product_id": "K05A",
+        "issue_datetime": "2025-10-01 01:02:50.627",
+        "message": "Space Weather Message Code: ALTK05\r\nSerial Number: 1865\r\nIssue Time: 2025 Oct 01 0102 UTC\r\n\r\nALERT: Geomagnetic K-index of 5\r\n Threshold Reached: 2025 Oct 01 0057 UTC\r\nSynoptic Period: 0000-0300 UTC\r\n \r\nActive Warning: Yes\r\nNOAA Scale: G1 - Minor\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 60 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nSpacecraft - Minor impact on satellite operations possible.\r\nAurora - Aurora may be visible at high latitudes, i.e., northern tier of the U.S. such as northern Michigan and Maine."
+    },
+    {
+        "product_id": "A30F",
+        "issue_datetime": "2025-09-30 22:39:00.207",
+        "message": "Space Weather Message Code: WATA30\r\nSerial Number: 256\r\nIssue Time: 2025 Sep 30 2238 UTC\r\n\r\nWATCH: Geomagnetic Storm Category G2 Predicted\r\n\r\nHighest Storm Level Predicted by Day:\r\nOct 01:  G2 (Moderate)   Oct 02:  None (Below G1)   Oct 03:  None (Below G1)\r\n\r\nTHIS SUPERSEDES ANY/ALL PRIOR WATCHES IN EFFECT\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 55 degrees Geomagnetic Latitude.\r\nInduced Currents - Power grid fluctuations can occur. High-latitude power systems may experience voltage alarms.\r\nSpacecraft - Satellite orientation irregularities may occur; increased drag on low Earth-orbit satellites is possible.\r\nRadio - HF (high frequency) radio propagation can fade at higher latitudes.\r\nAurora - Aurora may be seen as low as New York to Wisconsin to Washington state."
+    },
+    {
+        "product_id": "K06A",
+        "issue_datetime": "2025-09-30 22:16:42.943",
+        "message": "Space Weather Message Code: ALTK06\r\nSerial Number: 660\r\nIssue Time: 2025 Sep 30 2216 UTC\r\n\r\nALERT: Geomagnetic K-index of 6\r\n Threshold Reached: 2025 Sep 30 2207 UTC\r\nSynoptic Period: 2100-2400 UTC\r\n \r\nActive Warning: Yes\r\nNOAA Scale: G2 - Moderate\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 55 degrees Geomagnetic Latitude.\r\nInduced Currents - Power grid fluctuations can occur. High-latitude power systems may experience voltage alarms.\r\nSpacecraft - Satellite orientation irregularities may occur; increased drag on low Earth-orbit satellites is possible.\r\nRadio - HF (high frequency) radio propagation can fade at higher latitudes.\r\nAurora - Aurora may be seen as low as New York to Wisconsin to Washington state."
+    },
+    {
+        "product_id": "K05A",
+        "issue_datetime": "2025-09-30 21:44:14.440",
+        "message": "Space Weather Message Code: ALTK05\r\nSerial Number: 1864\r\nIssue Time: 2025 Sep 30 2144 UTC\r\n\r\nALERT: Geomagnetic K-index of 5\r\n Threshold Reached: 2025 Sep 30 2134 UTC\r\nSynoptic Period: 2100-2400 UTC\r\n \r\nActive Warning: Yes\r\nNOAA Scale: G1 - Minor\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 60 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nSpacecraft - Minor impact on satellite operations possible.\r\nAurora - Aurora may be visible at high latitudes, i.e., northern tier of the U.S. such as northern Michigan and Maine."
+    },
+    {
+        "product_id": "K06W",
+        "issue_datetime": "2025-09-30 20:55:13.423",
+        "message": "Space Weather Message Code: WARK06\r\nSerial Number: 610\r\nIssue Time: 2025 Sep 30 2055 UTC\r\n\r\nEXTENDED WARNING: Geomagnetic K-Index of 6 expected\r\nExtension to Serial Number: 609\r\nValid From: 2025 Sep 30 0252 UTC\r\nNow Valid Until: 2025 Oct 01 0900 UTC\r\nWarning Condition: Persistence\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 55 degrees Geomagnetic Latitude.\r\nInduced Currents - Power grid fluctuations can occur. High-latitude power systems may experience voltage alarms.\r\nSpacecraft - Satellite orientation irregularities may occur; increased drag on low Earth-orbit satellites is possible.\r\nRadio - HF (high frequency) radio propagation can fade at higher latitudes.\r\nAurora - Aurora may be seen as low as New York to Wisconsin to Washington state."
+    },
+    {
+        "product_id": "K05W",
+        "issue_datetime": "2025-09-30 20:54:20.967",
+        "message": "Space Weather Message Code: WARK05\r\nSerial Number: 2109\r\nIssue Time: 2025 Sep 30 2054 UTC\r\n\r\nEXTENDED WARNING: Geomagnetic K-index of 5 expected\r\nExtension to Serial Number: 2108\r\nValid From: 2025 Sep 30 0114 UTC\r\nNow Valid Until: 2025 Oct 01 1200 UTC\r\nWarning Condition: Persistence\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 60 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nSpacecraft - Minor impact on satellite operations possible.\r\nAurora - Aurora may be visible at high latitudes, i.e., northern tier of the U.S. such as northern Michigan and Maine."
+    },
+    {
+        "product_id": "K04W",
+        "issue_datetime": "2025-09-30 20:53:27.680",
+        "message": "Space Weather Message Code: WARK04\r\nSerial Number: 5092\r\nIssue Time: 2025 Sep 30 2053 UTC\r\n\r\nEXTENDED WARNING: Geomagnetic K-index of 4 expected\r\nExtension to Serial Number: 5091\r\nValid From: 2025 Sep 29 0645 UTC\r\nNow Valid Until: 2025 Oct 01 1500 UTC\r\nWarning Condition: Persistence\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 65 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nAurora - Aurora may be visible at high latitudes such as Canada and Alaska."
+    },
+    {
+        "product_id": "K06A",
+        "issue_datetime": "2025-09-30 20:24:18.823",
+        "message": "Space Weather Message Code: ALTK06\r\nSerial Number: 659\r\nIssue Time: 2025 Sep 30 2024 UTC\r\n\r\nALERT: Geomagnetic K-index of 6\r\n Threshold Reached: 2025 Sep 30 2020 UTC\r\nSynoptic Period: 1800-2100 UTC\r\n \r\nActive Warning: Yes\r\nNOAA Scale: G2 - Moderate\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 55 degrees Geomagnetic Latitude.\r\nInduced Currents - Power grid fluctuations can occur. High-latitude power systems may experience voltage alarms.\r\nSpacecraft - Satellite orientation irregularities may occur; increased drag on low Earth-orbit satellites is possible.\r\nRadio - HF (high frequency) radio propagation can fade at higher latitudes.\r\nAurora - Aurora may be seen as low as New York to Wisconsin to Washington state."
+    },
+    {
+        "product_id": "K06W",
+        "issue_datetime": "2025-09-30 18:53:53.767",
+        "message": "Space Weather Message Code: WARK06\r\nSerial Number: 609\r\nIssue Time: 2025 Sep 30 1853 UTC\r\n\r\nEXTENDED WARNING: Geomagnetic K-Index of 6 expected\r\nExtension to Serial Number: 608\r\nValid From: 2025 Sep 30 0252 UTC\r\nNow Valid Until: 2025 Oct 01 0300 UTC\r\nWarning Condition: Persistence\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 55 degrees Geomagnetic Latitude.\r\nInduced Currents - Power grid fluctuations can occur. High-latitude power systems may experience voltage alarms.\r\nSpacecraft - Satellite orientation irregularities may occur; increased drag on low Earth-orbit satellites is possible.\r\nRadio - HF (high frequency) radio propagation can fade at higher latitudes.\r\nAurora - Aurora may be seen as low as New York to Wisconsin to Washington state."
+    },
+    {
+        "product_id": "K05A",
+        "issue_datetime": "2025-09-30 18:53:11.450",
+        "message": "Space Weather Message Code: ALTK05\r\nSerial Number: 1863\r\nIssue Time: 2025 Sep 30 1853 UTC\r\n\r\nALERT: Geomagnetic K-index of 5\r\n Threshold Reached: 2025 Sep 30 1849 UTC\r\nSynoptic Period: 1800-2100 UTC\r\n \r\nActive Warning: Yes\r\nNOAA Scale: G1 - Minor\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 60 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nSpacecraft - Minor impact on satellite operations possible.\r\nAurora - Aurora may be visible at high latitudes, i.e., northern tier of the U.S. such as northern Michigan and Maine."
+    },
+    {
+        "product_id": "K04W",
+        "issue_datetime": "2025-09-30 18:01:20.947",
+        "message": "Space Weather Message Code: WARK04\r\nSerial Number: 5091\r\nIssue Time: 2025 Sep 30 1801 UTC\r\n\r\nEXTENDED WARNING: Geomagnetic K-index of 4 expected\r\nExtension to Serial Number: 5090\r\nValid From: 2025 Sep 29 0645 UTC\r\nNow Valid Until: 2025 Oct 01 1200 UTC\r\nWarning Condition: Persistence\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 65 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nAurora - Aurora may be visible at high latitudes such as Canada and Alaska."
+    },
+    {
+        "product_id": "K05W",
+        "issue_datetime": "2025-09-30 18:00:43.757",
+        "message": "Space Weather Message Code: WARK05\r\nSerial Number: 2108\r\nIssue Time: 2025 Sep 30 1800 UTC\r\n\r\nEXTENDED WARNING: Geomagnetic K-index of 5 expected\r\nExtension to Serial Number: 2107\r\nValid From: 2025 Sep 30 0114 UTC\r\nNow Valid Until: 2025 Oct 01 0300 UTC\r\nWarning Condition: Persistence\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 60 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nSpacecraft - Minor impact on satellite operations possible.\r\nAurora - Aurora may be visible at high latitudes, i.e., northern tier of the U.S. such as northern Michigan and Maine."
+    },
+    {
+        "product_id": "K06A",
+        "issue_datetime": "2025-09-30 17:59:27.220",
+        "message": "Space Weather Message Code: ALTK06\r\nSerial Number: 658\r\nIssue Time: 2025 Sep 30 1759 UTC\r\n\r\nALERT: Geomagnetic K-index of 6\r\n Threshold Reached: 2025 Sep 30 1754 UTC\r\nSynoptic Period: 1500-1800 UTC\r\n \r\nActive Warning: Yes\r\nNOAA Scale: G2 - Moderate\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 55 degrees Geomagnetic Latitude.\r\nInduced Currents - Power grid fluctuations can occur. High-latitude power systems may experience voltage alarms.\r\nSpacecraft - Satellite orientation irregularities may occur; increased drag on low Earth-orbit satellites is possible.\r\nRadio - HF (high frequency) radio propagation can fade at higher latitudes.\r\nAurora - Aurora may be seen as low as New York to Wisconsin to Washington state."
+    },
+    {
+        "product_id": "K05A",
+        "issue_datetime": "2025-09-30 16:51:58.340",
+        "message": "Space Weather Message Code: ALTK05\r\nSerial Number: 1862\r\nIssue Time: 2025 Sep 30 1651 UTC\r\n\r\nALERT: Geomagnetic K-index of 5\r\n Threshold Reached: 2025 Sep 30 1643 UTC\r\nSynoptic Period: 1500-1800 UTC\r\n \r\nActive Warning: Yes\r\nNOAA Scale: G1 - Minor\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 60 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nSpacecraft - Minor impact on satellite operations possible.\r\nAurora - Aurora may be visible at high latitudes, i.e., northern tier of the U.S. such as northern Michigan and Maine."
+    },
+    {
+        "product_id": "K06A",
+        "issue_datetime": "2025-09-30 14:18:55.557",
+        "message": "Space Weather Message Code: ALTK06\r\nSerial Number: 657\r\nIssue Time: 2025 Sep 30 1418 UTC\r\n\r\nALERT: Geomagnetic K-index of 6\r\n Threshold Reached: 2025 Sep 30 1410 UTC\r\nSynoptic Period: 1200-1500 UTC\r\n \r\nActive Warning: Yes\r\nNOAA Scale: G2 - Moderate\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 55 degrees Geomagnetic Latitude.\r\nInduced Currents - Power grid fluctuations can occur. High-latitude power systems may experience voltage alarms.\r\nSpacecraft - Satellite orientation irregularities may occur; increased drag on low Earth-orbit satellites is possible.\r\nRadio - HF (high frequency) radio propagation can fade at higher latitudes.\r\nAurora - Aurora may be seen as low as New York to Wisconsin to Washington state."
+    },
+    {
+        "product_id": "K06W",
+        "issue_datetime": "2025-09-30 13:10:53.777",
+        "message": "Space Weather Message Code: WARK06\r\nSerial Number: 608\r\nIssue Time: 2025 Sep 30 1310 UTC\r\n\r\nEXTENDED WARNING: Geomagnetic K-Index of 6 expected\r\nExtension to Serial Number: 607\r\nValid From: 2025 Sep 30 0252 UTC\r\nNow Valid Until: 2025 Sep 30 2100 UTC\r\nWarning Condition: Persistence\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 55 degrees Geomagnetic Latitude.\r\nInduced Currents - Power grid fluctuations can occur. High-latitude power systems may experience voltage alarms.\r\nSpacecraft - Satellite orientation irregularities may occur; increased drag on low Earth-orbit satellites is possible.\r\nRadio - HF (high frequency) radio propagation can fade at higher latitudes.\r\nAurora - Aurora may be seen as low as New York to Wisconsin to Washington state."
+    },
+    {
+        "product_id": "K05A",
+        "issue_datetime": "2025-09-30 13:07:01.617",
+        "message": "Space Weather Message Code: ALTK05\r\nSerial Number: 1861\r\nIssue Time: 2025 Sep 30 1307 UTC\r\n\r\nALERT: Geomagnetic K-index of 5\r\n Threshold Reached: 2025 Sep 30 1300 UTC\r\nSynoptic Period: 1200-1500 UTC\r\n \r\nActive Warning: Yes\r\nNOAA Scale: G1 - Minor\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 60 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nSpacecraft - Minor impact on satellite operations possible.\r\nAurora - Aurora may be visible at high latitudes, i.e., northern tier of the U.S. such as northern Michigan and Maine."
+    },
+    {
+        "product_id": "K05W",
+        "issue_datetime": "2025-09-30 11:42:51.640",
+        "message": "Space Weather Message Code: WARK05\r\nSerial Number: 2107\r\nIssue Time: 2025 Sep 30 1142 UTC\r\n\r\nEXTENDED WARNING: Geomagnetic K-index of 5 expected\r\nExtension to Serial Number: 2106\r\nValid From: 2025 Sep 30 0114 UTC\r\nNow Valid Until: 2025 Sep 30 2100 UTC\r\nWarning Condition: Persistence\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 60 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nSpacecraft - Minor impact on satellite operations possible.\r\nAurora - Aurora may be visible at high latitudes, i.e., northern tier of the U.S. such as northern Michigan and Maine."
+    },
+    {
+        "product_id": "K05A",
+        "issue_datetime": "2025-09-30 11:40:47.863",
+        "message": "Space Weather Message Code: ALTK05\r\nSerial Number: 1860\r\nIssue Time: 2025 Sep 30 1140 UTC\r\n\r\nALERT: Geomagnetic K-index of 5\r\n Threshold Reached: 2025 Sep 30 1134 UTC\r\nSynoptic Period: 0900-1200 UTC\r\n \r\nActive Warning: Yes\r\nNOAA Scale: G1 - Minor\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 60 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nSpacecraft - Minor impact on satellite operations possible.\r\nAurora - Aurora may be visible at high latitudes, i.e., northern tier of the U.S. such as northern Michigan and Maine."
+    },
+    {
+        "product_id": "K06A",
+        "issue_datetime": "2025-09-30 06:49:10.463",
+        "message": "Space Weather Message Code: ALTK06\r\nSerial Number: 656\r\nIssue Time: 2025 Sep 30 0649 UTC\r\n\r\nALERT: Geomagnetic K-index of 6\r\n Threshold Reached: 2025 Sep 30 0644 UTC\r\nSynoptic Period: 0600-0900 UTC\r\n \r\nActive Warning: Yes\r\nNOAA Scale: G2 - Moderate\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 55 degrees Geomagnetic Latitude.\r\nInduced Currents - Power grid fluctuations can occur. High-latitude power systems may experience voltage alarms.\r\nSpacecraft - Satellite orientation irregularities may occur; increased drag on low Earth-orbit satellites is possible.\r\nRadio - HF (high frequency) radio propagation can fade at higher latitudes.\r\nAurora - Aurora may be seen as low as New York to Wisconsin to Washington state."
+    },
+    {
+        "product_id": "K05A",
+        "issue_datetime": "2025-09-30 06:31:42.703",
+        "message": "Space Weather Message Code: ALTK05\r\nSerial Number: 1859\r\nIssue Time: 2025 Sep 30 0631 UTC\r\n\r\nALERT: Geomagnetic K-index of 5\r\n Threshold Reached: 2025 Sep 30 0625 UTC\r\nSynoptic Period: 0600-0900 UTC\r\n \r\nActive Warning: Yes\r\nNOAA Scale: G1 - Minor\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 60 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nSpacecraft - Minor impact on satellite operations possible.\r\nAurora - Aurora may be visible at high latitudes, i.e., northern tier of the U.S. such as northern Michigan and Maine."
+    },
+    {
+        "product_id": "K07A",
+        "issue_datetime": "2025-09-30 05:31:07.890",
+        "message": "Space Weather Message Code: ALTK07\r\nSerial Number: 191\r\nIssue Time: 2025 Sep 30 0531 UTC\r\n\r\nALERT: Geomagnetic K-index of 7\r\n Threshold Reached: 2025 Sep 30 0525 UTC\r\nSynoptic Period: 0300-0600 UTC\r\n \r\nActive Warning: Yes\r\nNOAA Scale: G3 - Strong\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 50 degrees Geomagnetic Latitude.\r\nInduced Currents - Power system voltage irregularities possible, false alarms may be triggered on some protection devices.\r\nSpacecraft - Systems may experience surface charging; increased drag on low Earth-orbit satellites and orientation problems may occur.\r\nNavigation - Intermittent satellite navigation (GPS) problems, including loss-of-lock and increased range error may occur.\r\nRadio - HF (high frequency) radio may be intermittent.\r\nAurora - Aurora may be seen as low as Pennsylvania to Iowa to Oregon."
+    },
+    {
+        "product_id": "K05W",
+        "issue_datetime": "2025-09-30 04:57:09.850",
+        "message": "Space Weather Message Code: WARK05\r\nSerial Number: 2106\r\nIssue Time: 2025 Sep 30 0457 UTC\r\n\r\nEXTENDED WARNING: Geomagnetic K-index of 5 expected\r\nExtension to Serial Number: 2105\r\nValid From: 2025 Sep 30 0114 UTC\r\nNow Valid Until: 2025 Sep 30 1500 UTC\r\nWarning Condition: Persistence\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 60 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nSpacecraft - Minor impact on satellite operations possible.\r\nAurora - Aurora may be visible at high latitudes, i.e., northern tier of the U.S. such as northern Michigan and Maine."
+    },
+    {
+        "product_id": "K04W",
+        "issue_datetime": "2025-09-30 04:57:09.837",
+        "message": "Space Weather Message Code: WARK04\r\nSerial Number: 5090\r\nIssue Time: 2025 Sep 30 0457 UTC\r\n\r\nEXTENDED WARNING: Geomagnetic K-index of 4 expected\r\nExtension to Serial Number: 5089\r\nValid From: 2025 Sep 29 0645 UTC\r\nNow Valid Until: 2025 Sep 30 2359 UTC\r\nWarning Condition: Persistence\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 65 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nAurora - Aurora may be visible at high latitudes such as Canada and Alaska."
+    },
+    {
+        "product_id": "K06W",
+        "issue_datetime": "2025-09-30 04:57:09.790",
+        "message": "Space Weather Message Code: WARK06\r\nSerial Number: 607\r\nIssue Time: 2025 Sep 30 0457 UTC\r\n\r\nEXTENDED WARNING: Geomagnetic K-Index of 6 expected\r\nExtension to Serial Number: 606\r\nValid From: 2025 Sep 30 0252 UTC\r\nNow Valid Until: 2025 Sep 30 1200 UTC\r\nWarning Condition: Persistence\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 55 degrees Geomagnetic Latitude.\r\nInduced Currents - Power grid fluctuations can occur. High-latitude power systems may experience voltage alarms.\r\nSpacecraft - Satellite orientation irregularities may occur; increased drag on low Earth-orbit satellites is possible.\r\nRadio - HF (high frequency) radio propagation can fade at higher latitudes.\r\nAurora - Aurora may be seen as low as New York to Wisconsin to Washington state."
+    },
+    {
+        "product_id": "K07W",
+        "issue_datetime": "2025-09-30 04:57:09.773",
+        "message": "Space Weather Message Code: WARK07\r\nSerial Number: 133\r\nIssue Time: 2025 Sep 30 0457 UTC\r\n\r\nWARNING: Geomagnetic K-index of 7 or greater expected\r\nValid From: 2025 Sep 30 0456 UTC\r\nValid To: 2025 Sep 30 1200 UTC\r\nWarning Condition: Onset\r\nNOAA Scale: G3 or greater\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 50 degrees Geomagnetic Latitude.\r\nInduced Currents - Power system voltage irregularities possible, false alarms may be triggered on some protection devices.\r\nSpacecraft - Systems may experience surface charging; increased drag on low Earth-orbit satellites and orientation problems may occur.\r\nNavigation - Intermittent satellite navigation (GPS) problems, including loss-of-lock and increased range error may occur.\r\nRadio - HF (high frequency) radio may be intermittent.\r\nAurora - Aurora may be seen as low as Pennsylvania to Iowa to Oregon."
+    },
+    {
+        "product_id": "K06A",
+        "issue_datetime": "2025-09-30 04:11:07.667",
+        "message": "Space Weather Message Code: ALTK06\r\nSerial Number: 655\r\nIssue Time: 2025 Sep 30 0411 UTC\r\n\r\nALERT: Geomagnetic K-index of 6\r\n Threshold Reached: 2025 Sep 30 0402 UTC\r\nSynoptic Period: 0300-0600 UTC\r\n \r\nActive Warning: Yes\r\nNOAA Scale: G2 - Moderate\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 55 degrees Geomagnetic Latitude.\r\nInduced Currents - Power grid fluctuations can occur. High-latitude power systems may experience voltage alarms.\r\nSpacecraft - Satellite orientation irregularities may occur; increased drag on low Earth-orbit satellites is possible.\r\nRadio - HF (high frequency) radio propagation can fade at higher latitudes.\r\nAurora - Aurora may be seen as low as New York to Wisconsin to Washington state."
+    },
+    {
+        "product_id": "K05A",
+        "issue_datetime": "2025-09-30 03:41:18.780",
+        "message": "Space Weather Message Code: ALTK05\r\nSerial Number: 1858\r\nIssue Time: 2025 Sep 30 0341 UTC\r\n\r\nALERT: Geomagnetic K-index of 5\r\n Threshold Reached: 2025 Sep 30 0337 UTC\r\nSynoptic Period: 0300-0600 UTC\r\n \r\nActive Warning: Yes\r\nNOAA Scale: G1 - Minor\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 60 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nSpacecraft - Minor impact on satellite operations possible.\r\nAurora - Aurora may be visible at high latitudes, i.e., northern tier of the U.S. such as northern Michigan and Maine."
+    },
+    {
+        "product_id": "K06W",
+        "issue_datetime": "2025-09-30 02:52:41.480",
+        "message": "Space Weather Message Code: WARK06\r\nSerial Number: 606\r\nIssue Time: 2025 Sep 30 0252 UTC\r\n\r\nWARNING: Geomagnetic K-Index of 6 expected\r\nValid From: 2025 Sep 30 0252 UTC\r\nValid To: 2025 Sep 30 0900 UTC\r\nWarning Condition: Onset\r\nNOAA Scale: G2 - Moderate\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 55 degrees Geomagnetic Latitude.\r\nInduced Currents - Power grid fluctuations can occur. High-latitude power systems may experience voltage alarms.\r\nSpacecraft - Satellite orientation irregularities may occur; increased drag on low Earth-orbit satellites is possible.\r\nRadio - HF (high frequency) radio propagation can fade at higher latitudes.\r\nAurora - Aurora may be seen as low as New York to Wisconsin to Washington state."
+    },
+    {
+        "product_id": "K05A",
+        "issue_datetime": "2025-09-30 02:47:13.753",
+        "message": "Space Weather Message Code: ALTK05\r\nSerial Number: 1857\r\nIssue Time: 2025 Sep 30 0247 UTC\r\n\r\nALERT: Geomagnetic K-index of 5\r\n Threshold Reached: 2025 Sep 30 0243 UTC\r\nSynoptic Period: 0000-0300 UTC\r\n \r\nActive Warning: Yes\r\nNOAA Scale: G1 - Minor\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 60 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nSpacecraft - Minor impact on satellite operations possible.\r\nAurora - Aurora may be visible at high latitudes, i.e., northern tier of the U.S. such as northern Michigan and Maine."
+    },
+    {
+        "product_id": "K04W",
+        "issue_datetime": "2025-09-30 01:15:31.610",
+        "message": "Space Weather Message Code: WARK04\r\nSerial Number: 5089\r\nIssue Time: 2025 Sep 30 0115 UTC\r\n\r\nEXTENDED WARNING: Geomagnetic K-index of 4 expected\r\nExtension to Serial Number: 5088\r\nValid From: 2025 Sep 29 0645 UTC\r\nNow Valid Until: 2025 Sep 30 1500 UTC\r\nWarning Condition: Persistence\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 65 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nAurora - Aurora may be visible at high latitudes such as Canada and Alaska."
+    },
+    {
+        "product_id": "K05W",
+        "issue_datetime": "2025-09-30 01:15:31.597",
+        "message": "Space Weather Message Code: WARK05\r\nSerial Number: 2105\r\nIssue Time: 2025 Sep 30 0115 UTC\r\n\r\nWARNING: Geomagnetic K-index of 5 expected\r\nValid From: 2025 Sep 30 0114 UTC\r\nValid To: 2025 Sep 30 0900 UTC\r\nWarning Condition: Onset\r\nNOAA Scale: G1 - Minor\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 60 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nSpacecraft - Minor impact on satellite operations possible.\r\nAurora - Aurora may be visible at high latitudes, i.e., northern tier of the U.S. such as northern Michigan and Maine."
+    },
+    {
+        "product_id": "K04W",
+        "issue_datetime": "2025-09-29 23:25:16.910",
+        "message": "Space Weather Message Code: WARK04\r\nSerial Number: 5088\r\nIssue Time: 2025 Sep 29 2325 UTC\r\n\r\nEXTENDED WARNING: Geomagnetic K-index of 4 expected\r\nExtension to Serial Number: 5087\r\nValid From: 2025 Sep 29 0645 UTC\r\nNow Valid Until: 2025 Sep 30 0900 UTC\r\nWarning Condition: Persistence\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 65 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nAurora - Aurora may be visible at high latitudes such as Canada and Alaska."
+    },
+    {
+        "product_id": "K05A",
+        "issue_datetime": "2025-09-29 20:34:56.447",
+        "message": "Space Weather Message Code: ALTK05\r\nSerial Number: 1855\r\nIssue Time: 2025 Sep 29 2034 UTC\r\n\r\nALERT: Geomagnetic K-index of 5\r\n Threshold Reached: 2025 Sep 29 2017 UTC\r\nSynoptic Period: 1800-2100 UTC\r\n \r\nActive Warning: Yes\r\nNOAA Scale: G1 - Minor\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 60 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nSpacecraft - Minor impact on satellite operations possible.\r\nAurora - Aurora may be visible at high latitudes, i.e., northern tier of the U.S. such as northern Michigan and Maine."
+    },
+    {
+        "product_id": "K05W",
+        "issue_datetime": "2025-09-29 17:21:36.803",
+        "message": "Space Weather Message Code: WARK05\r\nSerial Number: 2104\r\nIssue Time: 2025 Sep 29 1721 UTC\r\n\r\nEXTENDED WARNING: Geomagnetic K-index of 5 expected\r\nExtension to Serial Number: 2103\r\nValid From: 2025 Sep 29 1158 UTC\r\nNow Valid Until: 2025 Sep 30 0000 UTC\r\nWarning Condition: Persistence\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 60 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nSpacecraft - Minor impact on satellite operations possible.\r\nAurora - Aurora may be visible at high latitudes, i.e., northern tier of the U.S. such as northern Michigan and Maine."
+    },
+    {
+        "product_id": "K04W",
+        "issue_datetime": "2025-09-29 17:20:40.220",
+        "message": "Space Weather Message Code: WARK04\r\nSerial Number: 5087\r\nIssue Time: 2025 Sep 29 1720 UTC\r\n\r\nEXTENDED WARNING: Geomagnetic K-index of 4 expected\r\nExtension to Serial Number: 5086\r\nValid From: 2025 Sep 29 0645 UTC\r\nNow Valid Until: 2025 Sep 30 0000 UTC\r\nWarning Condition: Persistence\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 65 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nAurora - Aurora may be visible at high latitudes such as Canada and Alaska."
+    },
+    {
+        "product_id": "K05A",
+        "issue_datetime": "2025-09-29 17:20:00.890",
+        "message": "Space Weather Message Code: ALTK05\r\nSerial Number: 1854\r\nIssue Time: 2025 Sep 29 1720 UTC\r\n\r\nALERT: Geomagnetic K-index of 5\r\n Threshold Reached: 2025 Sep 29 1701 UTC\r\nSynoptic Period: 1500-1800 UTC\r\n \r\nActive Warning: Yes\r\nNOAA Scale: G1 - Minor\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 60 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nSpacecraft - Minor impact on satellite operations possible.\r\nAurora - Aurora may be visible at high latitudes, i.e., northern tier of the U.S. such as northern Michigan and Maine."
+    },
+    {
+        "product_id": "K05A",
+        "issue_datetime": "2025-09-29 12:00:08.047",
+        "message": "Space Weather Message Code: ALTK05\r\nSerial Number: 1854\r\nIssue Time: 2025 Sep 29 1200 UTC\r\n\r\nALERT: Geomagnetic K-index of 5\r\n Threshold Reached: 2025 Sep 29 1159 UTC\r\nSynoptic Period: 0900-1200 UTC\r\n \r\nActive Warning: Yes\r\nNOAA Scale: G1 - Minor\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 60 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nSpacecraft - Minor impact on satellite operations possible.\r\nAurora - Aurora may be visible at high latitudes, i.e., northern tier of the U.S. such as northern Michigan and Maine."
+    },
+    {
+        "product_id": "K05W",
+        "issue_datetime": "2025-09-29 11:59:20.730",
+        "message": "Space Weather Message Code: WARK05\r\nSerial Number: 2103\r\nIssue Time: 2025 Sep 29 1159 UTC\r\n\r\nWARNING: Geomagnetic K-index of 5 expected\r\nValid From: 2025 Sep 29 1158 UTC\r\nValid To: 2025 Sep 29 1800 UTC\r\nWarning Condition: Onset\r\nNOAA Scale: G1 - Minor\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 60 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nSpacecraft - Minor impact on satellite operations possible.\r\nAurora - Aurora may be visible at high latitudes, i.e., northern tier of the U.S. such as northern Michigan and Maine."
+    },
+    {
+        "product_id": "K04A",
+        "issue_datetime": "2025-09-29 09:02:26.120",
+        "message": "Space Weather Message Code: ALTK04\r\nSerial Number: 2592\r\nIssue Time: 2025 Sep 29 0902 UTC\r\n\r\nALERT: Geomagnetic K-index of 4\r\n Threshold Reached: 2025 Sep 29 0855 UTC\r\nSynoptic Period: 0600-0900 UTC\r\n \r\nActive Warning: Yes\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 65 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nAurora - Aurora may be visible at high latitudes such as Canada and Alaska."
+    },
+    {
+        "product_id": "K04W",
+        "issue_datetime": "2025-09-29 06:42:22.427",
+        "message": "Space Weather Message Code: WARK04\r\nSerial Number: 5086\r\nIssue Time: 2025 Sep 29 0642 UTC\r\n\r\nWARNING: Geomagnetic K-index of 4 expected\r\nValid From: 2025 Sep 29 0645 UTC\r\nValid To: 2025 Sep 29 1800 UTC\r\nWarning Condition: Onset\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 65 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nAurora - Aurora may be visible at high latitudes such as Canada and Alaska."
+    },
+    {
+        "product_id": "BHIS",
+        "issue_datetime": "2025-09-29 02:13:54.650",
+        "message": "Space Weather Message Code: SUM10R\r\nSerial Number: 878\r\nIssue Time: 2025 Sep 29 0213 UTC\r\n\r\nSUMMARY: 10cm Radio Burst\r\nBegin Time: 2025 Sep 29 0143 UTC\r\nMaximum Time: 2025 Sep 29 0143 UTC\r\nEnd Time: 2025 Sep 29 0149 UTC\r\nDuration: 6 minutes\r\nPeak Flux: 260 sfu\r\nLatest Penticton Noon Flux: 171 sfu\r\n\r\n\r\n\r\nDescription: A 10cm radio burst indicates that the electromagnetic burst associated with a solar flare at the 10cm wavelength was double or greater than the initial 10cm radio background. This can be indicative of significant radio noise in association with a solar flare. This noise is generally short-lived but can cause interference for sensitive receivers including radar, GPS, and satellite communications."
+    },
+    {
+        "product_id": "XM5S",
+        "issue_datetime": "2025-09-28 10:46:18.890",
+        "message": "Space Weather Message Code: SUMXM5\r\nSerial Number: 295\r\nIssue Time: 2025 Sep 28 1046 UTC\r\n\r\nSUMMARY: X-ray Event exceeded M5\r\nBegin Time: 2025 Sep 28 0834 UTC\r\nMaximum Time: 2025 Sep 28 0846 UTC\r\nEnd Time: 2025 Sep 28 0849 UTC\r\nX-ray Class: M6.4\r\nOptical Class: 1b\r\nLocation: N03E58\r\nNOAA Scale: R2 - Moderate\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact centered primarily on sub-solar point on the sunlit side of Earth.\r\nRadio - Limited blackout of HF (high frequency) radio communication for tens of minutes."
+    },
+    {
+        "product_id": "XM5A",
+        "issue_datetime": "2025-09-28 10:34:52.380",
+        "message": "Space Weather Message Code: ALTXMF\r\nSerial Number: 491\r\nIssue Time: 2025 Sep 28 1034 UTC\r\n\r\nALERT: X-Ray Flux exceeded M5\r\nThreshold Reached: 2025 Sep 28 0843 UTC\r\nNOAA Scale: R2 - Moderate\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact centered on sub-solar point on the sunlit side of Earth. Extent of blackout of HF (high frequency) radio communication dependent upon current X-ray Flux intensity. For real-time information on affected area and expected duration please see http://www.swpc.noaa.gov/products/d-region-absorption-predictions-d-rap."
+    },
+    {
+        "product_id": "EF3A",
+        "issue_datetime": "2025-09-27 13:46:41.800",
+        "message": "Space Weather Message Code: ALTEF3\r\nSerial Number: 3532\r\nIssue Time: 2025 Sep 27 1346 UTC\r\n\r\nALERT: Electron 2MeV Integral Flux exceeded 1000pfu\r\nThreshold Reached: 2025 Sep 27 1330 UTC\r\nStation: GOES19\r\n \r\n\r\n\r\n\r\nPotential Impacts: Satellite systems may experience significant charging resulting in increased risk to satellite systems."
+    },
+    {
+        "product_id": "TIIA",
+        "issue_datetime": "2025-09-26 20:41:13.047",
+        "message": "Space Weather Message Code: ALTTP2\r\nSerial Number: 1427\r\nIssue Time: 2025 Sep 26 2041 UTC\r\n\r\nALERT: Type II Radio Emission\r\nBegin Time: 2025 Sep 26 2005 UTC\r\nEstimated Velocity: 778 km/s\r\n\r\n\r\n\r\nDescription: Type II emissions occur in association with eruptions on the sun and typically indicate a coronal mass ejection is associated with a flare event."
+    },
+    {
+        "product_id": "TIIA",
+        "issue_datetime": "2025-09-23 11:11:58.297",
+        "message": "Space Weather Message Code: ALTTP2\r\nSerial Number: 1426\r\nIssue Time: 2025 Sep 23 1111 UTC\r\n\r\nALERT: Type II Radio Emission\r\nBegin Time: 2025 Sep 23 1042 UTC\r\nEstimated Velocity: 835 km/s\r\n\r\n\r\n\r\nDescription: Type II emissions occur in association with eruptions on the sun and typically indicate a coronal mass ejection is associated with a flare event."
+    },
+    {
+        "product_id": "K04W",
+        "issue_datetime": "2025-09-22 23:54:13.813",
+        "message": "Space Weather Message Code: WARK04\r\nSerial Number: 5085\r\nIssue Time: 2025 Sep 22 2354 UTC\r\n\r\nEXTENDED WARNING: Geomagnetic K-index of 4 expected\r\nExtension to Serial Number: 5084\r\nValid From: 2025 Sep 22 0157 UTC\r\nNow Valid Until: 2025 Sep 23 0600 UTC\r\nWarning Condition: Onset\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 65 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nAurora - Aurora may be visible at high latitudes such as Canada and Alaska."
+    },
+    {
+        "product_id": "EF3A",
+        "issue_datetime": "2025-09-22 12:11:53.087",
+        "message": "Space Weather Message Code: ALTEF3\r\nSerial Number: 3531\r\nIssue Time: 2025 Sep 22 1211 UTC\r\n\r\nCONTINUED ALERT: Electron 2MeV Integral Flux exceeded 1000pfu\r\nContinuation of Serial Number: 3530\r\nBegin Time: 2025 Sep 16 1100 UTC\r\nYesterday Maximum 2MeV Flux: 4819 pfu\r\n\r\n\r\n\r\nPotential Impacts: Satellite systems may experience significant charging resulting in increased risk to satellite systems."
+    },
+    {
+        "product_id": "K04W",
+        "issue_datetime": "2025-09-22 01:58:00.293",
+        "message": "Space Weather Message Code: WARK04\r\nSerial Number: 5084\r\nIssue Time: 2025 Sep 22 0157 UTC\r\n\r\nWARNING: Geomagnetic K-index of 4 expected\r\nValid From: 2025 Sep 22 0157 UTC\r\nValid To: 2025 Sep 22 2359 UTC\r\nWarning Condition: Onset\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 65 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nAurora - Aurora may be visible at high latitudes such as Canada and Alaska."
+    },
+    {
+        "product_id": "EF3A",
+        "issue_datetime": "2025-09-21 05:00:18.820",
+        "message": "Space Weather Message Code: ALTEF3\r\nSerial Number: 3530\r\nIssue Time: 2025 Sep 21 0500 UTC\r\n\r\nCONTINUED ALERT: Electron 2MeV Integral Flux exceeded 1000pfu\r\nContinuation of Serial Number: 3529\r\nBegin Time: 2025 Sep 16 1100 UTC\r\nYesterday Maximum 2MeV Flux: 4444 pfu\r\n\r\n\r\n\r\nPotential Impacts: Satellite systems may experience significant charging resulting in increased risk to satellite systems."
+    },
+    {
+        "product_id": "EF3A",
+        "issue_datetime": "2025-09-20 05:00:41.147",
+        "message": "Space Weather Message Code: ALTEF3\r\nSerial Number: 3529\r\nIssue Time: 2025 Sep 20 0500 UTC\r\n\r\nCONTINUED ALERT: Electron 2MeV Integral Flux exceeded 1000pfu\r\nContinuation of Serial Number: 3528\r\nBegin Time: 2025 Sep 16 1100 UTC\r\nYesterday Maximum 2MeV Flux: 5020 pfu\r\n\r\n\r\n\r\nPotential Impacts: Satellite systems may experience significant charging resulting in increased risk to satellite systems."
+    },
+    {
+        "product_id": "A20F",
+        "issue_datetime": "2025-09-19 16:03:14.160",
+        "message": "Space Weather Message Code: WATA20\r\nSerial Number: 1065\r\nIssue Time: 2025 Sep 19 1603 UTC\r\n\r\nWATCH: Geomagnetic Storm Category G1 Predicted\r\n\r\nHighest Storm Level Predicted by Day:\r\nSep 20:  None (Below G1)   Sep 21:  None (Below G1)   Sep 22:  G1 (Minor)\r\n\r\nTHIS SUPERSEDES ANY/ALL PRIOR WATCHES IN EFFECT\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 60 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nSpacecraft - Minor impact on satellite operations possible.\r\nAurora - Aurora may be visible at high latitudes, i.e., northern tier of the U.S. such as northern Michigan and Maine."
+    },
+    {
+        "product_id": "EF3A",
+        "issue_datetime": "2025-09-19 04:59:57.513",
+        "message": "Space Weather Message Code: ALTEF3\r\nSerial Number: 3528\r\nIssue Time: 2025 Sep 19 0459 UTC\r\n\r\nCONTINUED ALERT: Electron 2MeV Integral Flux exceeded 1000pfu\r\nContinuation of Serial Number: 3527\r\nBegin Time: 2025 Sep 16 1100 UTC\r\nYesterday Maximum 2MeV Flux: 6214 pfu\r\n\r\n\r\n\r\nPotential Impacts: Satellite systems may experience significant charging resulting in increased risk to satellite systems."
+    },
+    {
+        "product_id": "EF3A",
+        "issue_datetime": "2025-09-18 04:59:30.380",
+        "message": "Space Weather Message Code: ALTEF3\r\nSerial Number: 3527\r\nIssue Time: 2025 Sep 18 0459 UTC\r\n\r\nCONTINUED ALERT: Electron 2MeV Integral Flux exceeded 1000pfu\r\nContinuation of Serial Number: 3526\r\nBegin Time: 2025 Sep 16 1100 UTC\r\nYesterday Maximum 2MeV Flux: 4335 pfu\r\n\r\n\r\n\r\nPotential Impacts: Satellite systems may experience significant charging resulting in increased risk to satellite systems."
+    },
+    {
+        "product_id": "K04W",
+        "issue_datetime": "2025-09-17 14:55:56.010",
+        "message": "Space Weather Message Code: WARK04\r\nSerial Number: 5083\r\nIssue Time: 2025 Sep 17 1455 UTC\r\n\r\nEXTENDED WARNING: Geomagnetic K-index of 4 expected\r\nExtension to Serial Number: 5082\r\nValid From: 2025 Sep 14 2015 UTC\r\nNow Valid Until: 2025 Sep 14 2100 UTC\r\nWarning Condition: Persistence\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 65 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nAurora - Aurora may be visible at high latitudes such as Canada and Alaska."
+    },
+    {
+        "product_id": "EF3A",
+        "issue_datetime": "2025-09-17 04:59:33.880",
+        "message": "Space Weather Message Code: ALTEF3\r\nSerial Number: 3526\r\nIssue Time: 2025 Sep 17 0459 UTC\r\n\r\nCONTINUED ALERT: Electron 2MeV Integral Flux exceeded 1000pfu\r\nContinuation of Serial Number: 3525\r\nBegin Time: 2025 Sep 16 1100 UTC\r\nYesterday Maximum 2MeV Flux: 3347 pfu\r\n\r\n\r\n\r\nPotential Impacts: Satellite systems may experience significant charging resulting in increased risk to satellite systems."
+    },
+    {
+        "product_id": "K04W",
+        "issue_datetime": "2025-09-16 20:40:43.920",
+        "message": "Space Weather Message Code: WARK04\r\nSerial Number: 5082\r\nIssue Time: 2025 Sep 16 2040 UTC\r\n\r\nEXTENDED WARNING: Geomagnetic K-index of 4 expected\r\nExtension to Serial Number: 5081\r\nValid From: 2025 Sep 14 2015 UTC\r\nNow Valid Until: 2025 Sep 17 1500 UTC\r\nWarning Condition: Persistence\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 65 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nAurora - Aurora may be visible at high latitudes such as Canada and Alaska."
+    },
+    {
+        "product_id": "K04W",
+        "issue_datetime": "2025-09-16 11:55:00.780",
+        "message": "Space Weather Message Code: WARK04\r\nSerial Number: 5081\r\nIssue Time: 2025 Sep 16 1155 UTC\r\n\r\nEXTENDED WARNING: Geomagnetic K-index of 4 expected\r\nExtension to Serial Number: 5080\r\nValid From: 2025 Sep 14 2015 UTC\r\nNow Valid Until: 2025 Sep 16 2100 UTC\r\nWarning Condition: Persistence\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 65 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nAurora - Aurora may be visible at high latitudes such as Canada and Alaska."
+    },
+    {
+        "product_id": "EF3A",
+        "issue_datetime": "2025-09-16 11:20:01.957",
+        "message": "Space Weather Message Code: ALTEF3\r\nSerial Number: 3525\r\nIssue Time: 2025 Sep 16 1120 UTC\r\n\r\nALERT: Electron 2MeV Integral Flux exceeded 1000pfu\r\nThreshold Reached: 2025 Sep 16 1100 UTC\r\nStation: GOES19\r\n \r\n\r\n\r\n\r\nPotential Impacts: Satellite systems may experience significant charging resulting in increased risk to satellite systems."
+    },
+    {
+        "product_id": "K05A",
+        "issue_datetime": "2025-09-16 02:39:56.387",
+        "message": "Space Weather Message Code: ALTK05\r\nSerial Number: 1853\r\nIssue Time: 2025 Sep 16 0239 UTC\r\n\r\nALERT: Geomagnetic K-index of 5\r\n Threshold Reached: 2025 Sep 16 0235 UTC\r\nSynoptic Period: 0000-0300 UTC\r\n \r\nActive Warning: Yes\r\nNOAA Scale: G1 - Minor\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 60 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nSpacecraft - Minor impact on satellite operations possible.\r\nAurora - Aurora may be visible at high latitudes, i.e., northern tier of the U.S. such as northern Michigan and Maine."
+    },
+    {
+        "product_id": "K04W",
+        "issue_datetime": "2025-09-15 22:41:24.737",
+        "message": "Space Weather Message Code: WARK04\r\nSerial Number: 5080\r\nIssue Time: 2025 Sep 15 2241 UTC\r\n\r\nEXTENDED WARNING: Geomagnetic K-index of 4 expected\r\nExtension to Serial Number: 5079\r\nValid From: 2025 Sep 14 2015 UTC\r\nNow Valid Until: 2025 Sep 16 1200 UTC\r\nWarning Condition: Persistence\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 65 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nAurora - Aurora may be visible at high latitudes such as Canada and Alaska."
+    },
+    {
+        "product_id": "K05W",
+        "issue_datetime": "2025-09-15 22:05:34.097",
+        "message": "Space Weather Message Code: WARK05\r\nSerial Number: 2102\r\nIssue Time: 2025 Sep 15 2205 UTC\r\n\r\nEXTENDED WARNING: Geomagnetic K-index of 5 expected\r\nExtension to Serial Number: 2101\r\nValid From: 2025 Sep 14 2330 UTC\r\nNow Valid Until: 2025 Sep 16 1200 UTC\r\nWarning Condition: Persistence\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 60 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nSpacecraft - Minor impact on satellite operations possible.\r\nAurora - Aurora may be visible at high latitudes, i.e., northern tier of the U.S. such as northern Michigan and Maine."
+    },
+    {
+        "product_id": "A20F",
+        "issue_datetime": "2025-09-15 20:58:36.527",
+        "message": "Space Weather Message Code: WATA20\r\nSerial Number: 1064\r\nIssue Time: 2025 Sep 15 2058 UTC\r\n\r\nWATCH: Geomagnetic Storm Category G1 Predicted\r\n\r\nHighest Storm Level Predicted by Day:\r\nSep 16:  G1 (Minor)   Sep 17:  None (Below G1)   Sep 18:  None (Below G1)\r\n\r\nTHIS SUPERSEDES ANY/ALL PRIOR WATCHES IN EFFECT\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 60 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nSpacecraft - Minor impact on satellite operations possible.\r\nAurora - Aurora may be visible at high latitudes, i.e., northern tier of the U.S. such as northern Michigan and Maine."
+    },
+    {
+        "product_id": "K06W",
+        "issue_datetime": "2025-09-15 14:49:16.033",
+        "message": "Space Weather Message Code: WARK06\r\nSerial Number: 605\r\nIssue Time: 2025 Sep 15 1449 UTC\r\n\r\nEXTENDED WARNING: Geomagnetic K-Index of 6 expected\r\nExtension to Serial Number: 604\r\nValid From: 2025 Sep 15 0055 UTC\r\nNow Valid Until: 2025 Sep 15 2100 UTC\r\nWarning Condition: Persistence\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 55 degrees Geomagnetic Latitude.\r\nInduced Currents - Power grid fluctuations can occur. High-latitude power systems may experience voltage alarms.\r\nSpacecraft - Satellite orientation irregularities may occur; increased drag on low Earth-orbit satellites is possible.\r\nRadio - HF (high frequency) radio propagation can fade at higher latitudes.\r\nAurora - Aurora may be seen as low as New York to Wisconsin to Washington state."
+    },
+    {
+        "product_id": "K05W",
+        "issue_datetime": "2025-09-15 14:49:16.017",
+        "message": "Space Weather Message Code: WARK05\r\nSerial Number: 2101\r\nIssue Time: 2025 Sep 15 1449 UTC\r\n\r\nEXTENDED WARNING: Geomagnetic K-index of 5 expected\r\nExtension to Serial Number: 2100\r\nValid From: 2025 Sep 14 2330 UTC\r\nNow Valid Until: 2025 Sep 15 2359 UTC\r\nWarning Condition: Persistence\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 60 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nSpacecraft - Minor impact on satellite operations possible.\r\nAurora - Aurora may be visible at high latitudes, i.e., northern tier of the U.S. such as northern Michigan and Maine."
+    },
+    {
+        "product_id": "K05A",
+        "issue_datetime": "2025-09-15 12:56:18.210",
+        "message": "Space Weather Message Code: ALTK05\r\nSerial Number: 1852\r\nIssue Time: 2025 Sep 15 1256 UTC\r\n\r\nALERT: Geomagnetic K-index of 5\r\n Threshold Reached: 2025 Sep 15 1256 UTC\r\nSynoptic Period: 1200-1500 UTC\r\n \r\nActive Warning: Yes\r\nNOAA Scale: G1 - Minor\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 60 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nSpacecraft - Minor impact on satellite operations possible.\r\nAurora - Aurora may be visible at high latitudes, i.e., northern tier of the U.S. such as northern Michigan and Maine."
+    },
+    {
+        "product_id": "K05A",
+        "issue_datetime": "2025-09-15 11:59:09.357",
+        "message": "Space Weather Message Code: ALTK05\r\nSerial Number: 1851\r\nIssue Time: 2025 Sep 15 1159 UTC\r\n\r\nALERT: Geomagnetic K-index of 5\r\n Threshold Reached: 2025 Sep 15 1159 UTC\r\nSynoptic Period: 0900-1200 UTC\r\n \r\nActive Warning: Yes\r\nNOAA Scale: G1 - Minor\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 60 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nSpacecraft - Minor impact on satellite operations possible.\r\nAurora - Aurora may be visible at high latitudes, i.e., northern tier of the U.S. such as northern Michigan and Maine."
+    },
+    {
+        "product_id": "K04W",
+        "issue_datetime": "2025-09-15 08:54:15.857",
+        "message": "Space Weather Message Code: WARK04\r\nSerial Number: 5079\r\nIssue Time: 2025 Sep 15 0854 UTC\r\n\r\nEXTENDED WARNING: Geomagnetic K-index of 4 expected\r\nExtension to Serial Number: 5078\r\nValid From: 2025 Sep 14 2015 UTC\r\nNow Valid Until: 2025 Sep 15 2359 UTC\r\nWarning Condition: Persistence\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 65 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nAurora - Aurora may be visible at high latitudes such as Canada and Alaska."
+    },
+    {
+        "product_id": "K06W",
+        "issue_datetime": "2025-09-15 08:54:15.857",
+        "message": "Space Weather Message Code: WARK06\r\nSerial Number: 604\r\nIssue Time: 2025 Sep 15 0854 UTC\r\n\r\nEXTENDED WARNING: Geomagnetic K-Index of 6 expected\r\nExtension to Serial Number: 603\r\nValid From: 2025 Sep 15 0055 UTC\r\nNow Valid Until: 2025 Sep 15 1500 UTC\r\nWarning Condition: Persistence\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 55 degrees Geomagnetic Latitude.\r\nInduced Currents - Power grid fluctuations can occur. High-latitude power systems may experience voltage alarms.\r\nSpacecraft - Satellite orientation irregularities may occur; increased drag on low Earth-orbit satellites is possible.\r\nRadio - HF (high frequency) radio propagation can fade at higher latitudes.\r\nAurora - Aurora may be seen as low as New York to Wisconsin to Washington state."
+    },
+    {
+        "product_id": "K05W",
+        "issue_datetime": "2025-09-15 08:54:15.840",
+        "message": "Space Weather Message Code: WARK05\r\nSerial Number: 2100\r\nIssue Time: 2025 Sep 15 0854 UTC\r\n\r\nEXTENDED WARNING: Geomagnetic K-index of 5 expected\r\nExtension to Serial Number: 2099\r\nValid From: 2025 Sep 14 2330 UTC\r\nNow Valid Until: 2025 Sep 15 1800 UTC\r\nWarning Condition: Persistence\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 60 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nSpacecraft - Minor impact on satellite operations possible.\r\nAurora - Aurora may be visible at high latitudes, i.e., northern tier of the U.S. such as northern Michigan and Maine."
+    },
+    {
+        "product_id": "K05A",
+        "issue_datetime": "2025-09-15 08:06:42.703",
+        "message": "Space Weather Message Code: ALTK05\r\nSerial Number: 1850\r\nIssue Time: 2025 Sep 15 0806 UTC\r\n\r\nALERT: Geomagnetic K-index of 5\r\n Threshold Reached: 2025 Sep 15 0805 UTC\r\nSynoptic Period: 0600-0900 UTC\r\n \r\nActive Warning: Yes\r\nNOAA Scale: G1 - Minor\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 60 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nSpacecraft - Minor impact on satellite operations possible.\r\nAurora - Aurora may be visible at high latitudes, i.e., northern tier of the U.S. such as northern Michigan and Maine."
+    },
+    {
+        "product_id": "K05A",
+        "issue_datetime": "2025-09-15 03:32:01.383",
+        "message": "Space Weather Message Code: ALTK05\r\nSerial Number: 1849\r\nIssue Time: 2025 Sep 15 0332 UTC\r\n\r\nALERT: Geomagnetic K-index of 5\r\n Threshold Reached: 2025 Sep 15 0326 UTC\r\nSynoptic Period: 0300-0600 UTC\r\n \r\nActive Warning: Yes\r\nNOAA Scale: G1 - Minor\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 60 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nSpacecraft - Minor impact on satellite operations possible.\r\nAurora - Aurora may be visible at high latitudes, i.e., northern tier of the U.S. such as northern Michigan and Maine."
+    },
+    {
+        "product_id": "K07A",
+        "issue_datetime": "2025-09-15 02:59:45.833",
+        "message": "Space Weather Message Code: ALTK07\r\nSerial Number: 190\r\nIssue Time: 2025 Sep 15 0259 UTC\r\n\r\nALERT: Geomagnetic K-index of 7\r\n Threshold Reached: 2025 Sep 15 0259 UTC\r\nSynoptic Period: 0000-0300 UTC\r\n \r\nActive Warning: Yes\r\nNOAA Scale: G3 - Strong\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 50 degrees Geomagnetic Latitude.\r\nInduced Currents - Power system voltage irregularities possible, false alarms may be triggered on some protection devices.\r\nSpacecraft - Systems may experience surface charging; increased drag on low Earth-orbit satellites and orientation problems may occur.\r\nNavigation - Intermittent satellite navigation (GPS) problems, including loss-of-lock and increased range error may occur.\r\nRadio - HF (high frequency) radio may be intermittent.\r\nAurora - Aurora may be seen as low as Pennsylvania to Iowa to Oregon."
+    },
+    {
+        "product_id": "K07W",
+        "issue_datetime": "2025-09-15 02:55:00.577",
+        "message": "Space Weather Message Code: WARK07\r\nSerial Number: 132\r\nIssue Time: 2025 Sep 15 0255 UTC\r\n\r\nWARNING: Geomagnetic K-index of 7 or greater expected\r\nValid From: 2025 Sep 15 0254 UTC\r\nValid To: 2025 Sep 15 0900 UTC\r\nWarning Condition: Onset\r\nNOAA Scale: G3 or greater\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 50 degrees Geomagnetic Latitude.\r\nInduced Currents - Power system voltage irregularities possible, false alarms may be triggered on some protection devices.\r\nSpacecraft - Systems may experience surface charging; increased drag on low Earth-orbit satellites and orientation problems may occur.\r\nNavigation - Intermittent satellite navigation (GPS) problems, including loss-of-lock and increased range error may occur.\r\nRadio - HF (high frequency) radio may be intermittent.\r\nAurora - Aurora may be seen as low as Pennsylvania to Iowa to Oregon."
+    },
+    {
+        "product_id": "K06A",
+        "issue_datetime": "2025-09-15 02:10:30.270",
+        "message": "Space Weather Message Code: ALTK06\r\nSerial Number: 654\r\nIssue Time: 2025 Sep 15 0210 UTC\r\n\r\nALERT: Geomagnetic K-index of 6\r\n Threshold Reached: 2025 Sep 15 0207 UTC\r\nSynoptic Period: 0000-0300 UTC\r\n \r\nActive Warning: Yes\r\nNOAA Scale: G2 - Moderate\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 55 degrees Geomagnetic Latitude.\r\nInduced Currents - Power grid fluctuations can occur. High-latitude power systems may experience voltage alarms.\r\nSpacecraft - Satellite orientation irregularities may occur; increased drag on low Earth-orbit satellites is possible.\r\nRadio - HF (high frequency) radio propagation can fade at higher latitudes.\r\nAurora - Aurora may be seen as low as New York to Wisconsin to Washington state."
+    },
+    {
+        "product_id": "K06W",
+        "issue_datetime": "2025-09-15 00:55:39.637",
+        "message": "Space Weather Message Code: WARK06\r\nSerial Number: 603\r\nIssue Time: 2025 Sep 15 0055 UTC\r\n\r\nWARNING: Geomagnetic K-Index of 6 expected\r\nValid From: 2025 Sep 15 0055 UTC\r\nValid To: 2025 Sep 15 0900 UTC\r\nWarning Condition: Onset\r\nNOAA Scale: G2 - Moderate\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 55 degrees Geomagnetic Latitude.\r\nInduced Currents - Power grid fluctuations can occur. High-latitude power systems may experience voltage alarms.\r\nSpacecraft - Satellite orientation irregularities may occur; increased drag on low Earth-orbit satellites is possible.\r\nRadio - HF (high frequency) radio propagation can fade at higher latitudes.\r\nAurora - Aurora may be seen as low as New York to Wisconsin to Washington state."
+    },
+    {
+        "product_id": "K05A",
+        "issue_datetime": "2025-09-14 23:47:13.513",
+        "message": "Space Weather Message Code: ALTK05\r\nSerial Number: 1848\r\nIssue Time: 2025 Sep 14 2347 UTC\r\n\r\nALERT: Geomagnetic K-index of 5\r\n Threshold Reached: 2025 Sep 14 2341 UTC\r\nSynoptic Period: 2100-2400 UTC\r\n \r\nActive Warning: Yes\r\nNOAA Scale: G1 - Minor\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 60 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nSpacecraft - Minor impact on satellite operations possible.\r\nAurora - Aurora may be visible at high latitudes, i.e., northern tier of the U.S. such as northern Michigan and Maine."
+    },
+    {
+        "product_id": "K05W",
+        "issue_datetime": "2025-09-14 23:29:41.690",
+        "message": "Space Weather Message Code: WARK05\r\nSerial Number: 2099\r\nIssue Time: 2025 Sep 14 2329 UTC\r\n\r\nWARNING: Geomagnetic K-index of 5 expected\r\nValid From: 2025 Sep 14 2330 UTC\r\nValid To: 2025 Sep 15 0900 UTC\r\nWarning Condition: Onset\r\nNOAA Scale: G1 - Minor\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 60 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nSpacecraft - Minor impact on satellite operations possible.\r\nAurora - Aurora may be visible at high latitudes, i.e., northern tier of the U.S. such as northern Michigan and Maine."
+    },
+    {
+        "product_id": "K04A",
+        "issue_datetime": "2025-09-14 23:22:03.400",
+        "message": "Space Weather Message Code: ALTK04\r\nSerial Number: 2591\r\nIssue Time: 2025 Sep 14 2322 UTC\r\n\r\nALERT: Geomagnetic K-index of 4\r\n Threshold Reached: 2025 Sep 14 2311 UTC\r\nSynoptic Period: 2100-2400 UTC\r\n \r\nActive Warning: Yes\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 65 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nAurora - Aurora may be visible at high latitudes such as Canada and Alaska."
+    },
+    {
+        "product_id": "K04W",
+        "issue_datetime": "2025-09-14 20:17:19.027",
+        "message": "Space Weather Message Code: WARK04\r\nSerial Number: 5078\r\nIssue Time: 2025 Sep 14 2017 UTC\r\n\r\nWARNING: Geomagnetic K-index of 4 expected\r\nValid From: 2025 Sep 14 2015 UTC\r\nValid To: 2025 Sep 15 1200 UTC\r\nWarning Condition: Onset\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 65 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nAurora - Aurora may be visible at high latitudes such as Canada and Alaska."
+    },
+    {
+        "product_id": "EF3A",
+        "issue_datetime": "2025-09-14 18:51:30.480",
+        "message": "Space Weather Message Code: ALTEF3\r\nSerial Number: 3524\r\nIssue Time: 2025 Sep 14 1851 UTC\r\n\r\nCONTINUED ALERT: Electron 2MeV Integral Flux exceeded 1000pfu\r\nContinuation of Serial Number: 3523\r\nBegin Time: 2025 Sep 13 1820 UTC\r\nYesterday Maximum 2MeV Flux: 1181 pfu\r\n\r\n\r\n\r\nPotential Impacts: Satellite systems may experience significant charging resulting in increased risk to satellite systems."
+    },
+    {
+        "product_id": "A20F",
+        "issue_datetime": "2025-09-14 18:46:13.640",
+        "message": "Space Weather Message Code: WATA20\r\nSerial Number: 1063\r\nIssue Time: 2025 Sep 14 1846 UTC\r\n\r\nWATCH: Geomagnetic Storm Category G1 Predicted\r\n\r\nHighest Storm Level Predicted by Day:\r\nSep 15:  G1 (Minor)   Sep 16:  None (Below G1)   Sep 17:  None (Below G1)\r\n\r\nTHIS SUPERSEDES ANY/ALL PRIOR WATCHES IN EFFECT\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 60 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nSpacecraft - Minor impact on satellite operations possible.\r\nAurora - Aurora may be visible at high latitudes, i.e., northern tier of the U.S. such as northern Michigan and Maine."
+    },
+    {
+        "product_id": "EF3A",
+        "issue_datetime": "2025-09-13 19:02:15.620",
+        "message": "Space Weather Message Code: ALTEF3\r\nSerial Number: 3523\r\nIssue Time: 2025 Sep 13 1902 UTC\r\n\r\nALERT: Electron 2MeV Integral Flux exceeded 1000pfu\r\nThreshold Reached: 2025 Sep 13 1820 UTC\r\nStation: GOES19\r\n \r\n\r\n\r\n\r\nPotential Impacts: Satellite systems may experience significant charging resulting in increased risk to satellite systems."
+    },
+    {
+        "product_id": "A20F",
+        "issue_datetime": "2025-09-13 14:42:26.657",
+        "message": "Space Weather Message Code: WATA20\r\nSerial Number: 1062\r\nIssue Time: 2025 Sep 13 1442 UTC\r\n\r\nWATCH: Geomagnetic Storm Category G1 Predicted\r\n\r\nHighest Storm Level Predicted by Day:\r\nSep 14:  G1 (Minor)   Sep 15:  None (Below G1)   Sep 16:  None (Below G1)\r\n\r\nTHIS SUPERSEDES ANY/ALL PRIOR WATCHES IN EFFECT\r\n\r\nNOAA Space Weather Scale descriptions can be found at\r\nwww.swpc.noaa.gov/noaa-scales-explanation\r\n\r\nPotential Impacts: Area of impact primarily poleward of 60 degrees Geomagnetic Latitude.\r\nInduced Currents - Weak power grid fluctuations can occur.\r\nSpacecraft - Minor impact on satellite operations possible.\r\nAurora - Aurora may be visible at high latitudes, i.e., northern tier of the U.S. such as northern Michigan and Maine."
+    }
+]

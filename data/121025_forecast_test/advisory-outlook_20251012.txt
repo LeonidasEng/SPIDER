@@ -1,0 +1,25 @@
+:Product: Advisory Outlook advisory-outlook.txt
+:Issued: 2025 Oct 06 0235 UTC
+#
+# Prepared by the Dept. of Commerce, NOAA, Space Weather Prediction Center
+# Please send comments and suggestions to SWPC.Webmaster@noaa.gov
+#-------------------------------------------------------------------------
+Official Space Weather Advisory issued by NOAA Space Weather Prediction Center
+Boulder, Colorado, USA
+
+SPACE WEATHER ADVISORY OUTLOOK #25-36
+2025 October 5 at 8:33 p.m. MDT (2025 October 6 0233 UTC)
+
+**** SPACE WEATHER OUTLOOK ****
+
+Summary For September 29-October 5
+
+-G1 (Minor) geomagnetic storms were observed on 29 Sep-03 Oct, G2 (Moderate) storms were observed on 30 Sep-02 Oct, and G3 (Strong) storms were observed on 30 Sep and 02 Oct, due to CH HSS and CME influences. 
+-R1 (Minor) radio blackout events were observed on 29 Sep-03 Oct.
+-No additional space weather storms were observed during the summary period.
+
+Outlook For October 6-12
+
+-G1 (Minor) geomagnetic storming is likely on 07-08 Oct due to waning CH HSS influences and the anticipated arrival of two slow-moving CMEs that left the Sun on 03 Oct. G1 storm periods are likely again on 11 Oct in response to the onset of negative polarity CH HSS influences. 
+-No additional space weather storms are expected to occur during the outlook period.
+
