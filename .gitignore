@@ -1,0 +1,16 @@
+# VSCode
+.vscode/
+
+# Python
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+*.egg-info/
+build/
+dist/
+
+
+# Virtual environments
+venv/
+.env/
