@@ -13,7 +13,7 @@ from datetime import datetime
 
 # Long term archive of NOAA SWPC data
 FTP_HOST = "ftp.ngdc.noaa.gov"
-FTP_BASE_PATH = "/STP/space-weather/swpc-products/daily_reports"
+FTP_BASE_PATH = "/STP/space-weather/swpc-products/daily_reports" # For Prediction data
 
 DATA_PATHS  = {
     "3day": "3day_forecast",
@@ -71,6 +71,12 @@ def getDirSize(size_bytes):
         return f"{size_bytes / 1024 ** 2:.2f} MB"
     else:
         return f"{size_bytes / 1024 ** 3:.2f} GB"
+    
+def showBanner(base):
+    banner_name = "SPIDER_ASCII_Banner.txt"
+    banner_path = os.path.join(base, "docs", banner_name)
+    with open(banner_path, "r", encoding="utf-8") as f:
+        print(f.read())
 
 def downloadRange(start_date: datetime, end_date: datetime, local_dir, data_type: str):
     ''' Download range of data for specified dates from FTP Server '''
@@ -103,6 +109,11 @@ def downloadRange(start_date: datetime, end_date: datetime, local_dir, data_type
         print(f"FTP error: {e}")
 
 if __name__ == "__main__":
+    base = os.environ.get('SPIDER')
+    if base is None:
+        raise EnvironmentError("SPIDER environment variable not set!")
+    
+    showBanner(base)
     print("Running FTP Access Utility...")
 
     choice = input("Select dataset type (3day / geomag / daypre): ").strip().lower()
@@ -110,18 +121,13 @@ if __name__ == "__main__":
         print("Invalid choice, defaulting to 'geomag'")
         choice = 'geomag'
     
-    ds = datetime(2024, 8, 1)
-    de = datetime(2025, 9, 30)
+    ds = datetime(2025, 7, 31)
+    de = datetime(2025, 7, 31)
 
     # Format datetimes as strings for path
     start_str = ds.strftime("%Y%m%d")
     end_str = de.strftime("%Y%m%d")
     
-    base = os.environ.get('SPIDER')
-    if base is None:
-        raise EnvironmentError("SPIDER environment variable not set!")
-    
-    
-    local_dir = os.path.join(base, "data", f"{start_str}_{end_str}_raw")
+    local_dir = os.path.join(base, "data", "raw", f"{DATA_PATHS[choice]}", f"{start_str}_{end_str}_raw")
     
     downloadRange(ds, de, local_dir, data_type=DATA_PATHS[choice])
