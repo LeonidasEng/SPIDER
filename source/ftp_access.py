@@ -113,15 +113,17 @@ def summariseDatasets(data_type:str):
     ''' Connect briefly to the FTP server and summarise available years and months. '''
     print(f"\n Checking availability for '{data_type}' on {FTP_HOST}...")
     base_path = f"{FTP_BASE_PATH}/{data_type}"
-    summary = {}
+    summary = {} # Populate dict with query
 
     try:
         with ftplib.FTP(FTP_HOST) as ftp:
+            # Login, go to directory, list contents
             ftp.login()
             ftp.cwd(base_path)
             years = ftp.nlst()
             for year in years:
                 try:
+                    # List the months inside each year
                     ftp.cwd(f"{base_path}/{year}")
                     months = ftp.nlst()
                     summary[year] = months
@@ -136,8 +138,8 @@ def summariseDatasets(data_type:str):
         print("\nAvailable data on FTP:")
         # Build a structure to display ordered list of years and months.
         for y, months in sorted(summary.items()):
-            mlist = ", ".join(months)
-            print(f" {y}: {mlist}")
+            mlist = ", ".join(months) # Comma separated months
+            print(f" {y}: {mlist}") # YEAR: <list of available months>
         print("\n")
     else:
         print("No directories found or no access.")
