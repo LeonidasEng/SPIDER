@@ -1,5 +1,6 @@
 import ftplib
 import os
+import sys
 import time
 import re
 from datetime import datetime
@@ -108,7 +109,76 @@ def downloadRange(start_date: datetime, end_date: datetime, local_dir, data_type
     except ftplib.all_errors as e:
         print(f"FTP error: {e}")
 
-if __name__ == "__main__":
+def summariseDatasets(data_type:str):
+    ''' Connect briefly to the FTP server and summarise available years and months. '''
+    print(f"\n Checking availability for '{data_type}' on {FTP_HOST}...")
+    base_path = f"{FTP_BASE_PATH}/{data_type}"
+    summary = {}
+
+    try:
+        with ftplib.FTP(FTP_HOST) as ftp:
+            ftp.login()
+            ftp.cwd(base_path)
+            years = ftp.nlst()
+            for year in years:
+                try:
+                    ftp.cwd(f"{base_path}/{year}")
+                    months = ftp.nlst()
+                    summary[year] = months
+                except ftplib.error_perm:
+                    continue
+    except ftplib.all_errors as e:
+        print(f"Error retrieving summary: {e}")
+        return
+    
+    # Display summary of data
+    if summary:
+        print("\nAvailable data on FTP:")
+        # Build a structure to display ordered list of years and months.
+        for y, months in sorted(summary.items()):
+            mlist = ", ".join(months)
+            print(f" {y}: {mlist}")
+        print("\n")
+    else:
+        print("No directories found or no access.")
+
+def userInputs():
+    ''' Ask the user for data type and range and return them. '''
+    choice = input("Select dataset type (3day / geomag / daypre): ").strip().lower()
+    if choice not in DATA_PATHS:
+        print("Invalid choice, defaulting to 'geomag'")
+        choice = 'geomag'
+
+    # Show a quick summary of what data is available
+    summariseDatasets(DATA_PATHS[choice])
+    
+    # Allow user to insert one of the 
+    start_input = input("Please enter a start date (YYYYMMDD): ").strip()
+    try:
+        ds = datetime.strptime(start_input, "%Y%m%d")
+    except ValueError:
+        print("Error: Invalid start date format. Expected YYYYMMDD.")
+        sys.exit(1)
+
+    end_input = input("Please enter an end date (YYYYMMDD): ")
+    if end_input:
+        try:
+            de = datetime.strptime(end_input, "%Y%m%d")
+        except ValueError:
+            print("Error: Invalid end date format. Expected YYYYMMDD.")
+            sys.exit(1)
+    else:
+        de = ds
+
+    # Check date order
+    if de < ds:
+        print("Error: End date cannot be earlier than the start date.")
+        sys.exit(1)
+    
+    return choice, ds, de
+
+def runFTPaccess():
+    ''' Main entry point for running ftp_access utility '''
     base = os.environ.get('SPIDER')
     if base is None:
         raise EnvironmentError("SPIDER environment variable not set!")
@@ -116,18 +186,18 @@ if __name__ == "__main__":
     showBanner(base)
     print("Running FTP Access Utility...")
 
-    choice = input("Select dataset type (3day / geomag / daypre): ").strip().lower()
-    if choice not in DATA_PATHS:
-        print("Invalid choice, defaulting to 'geomag'")
-        choice = 'geomag'
-    
-    ds = datetime(2025, 7, 31)
-    de = datetime(2025, 7, 31)
+    choice, ds, de = userInputs()
 
     # Format datetimes as strings for path
     start_str = ds.strftime("%Y%m%d")
     end_str = de.strftime("%Y%m%d")
     
+
     local_dir = os.path.join(base, "data", "raw", f"{DATA_PATHS[choice]}", f"{start_str}_{end_str}_raw")
-    
+
     downloadRange(ds, de, local_dir, data_type=DATA_PATHS[choice])
+
+if __name__ == "__main__":
+    runFTPaccess()
+    
+    
