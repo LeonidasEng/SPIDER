@@ -75,7 +75,7 @@ if __name__ == "__main__":
                 kind = parts[0]
                 if kind in ("Observed", "Estimated"):
                     d = datetime.strptime(f"{parts[2]} {parts[3]} {yr}", "%d %b %Y")
-                    ap_rows.append([kind, d, parts[-1]])                     
+                    ap_rows.append([kind, d, parts[-1]]) # type, date and value                     
                 elif kind == "Predicted":
                     days = list(range(int(parts[2]), int(parts[3].split('-')[1]) + 1)) # I want between (n+1) and (n+4) so I get Day 1,2,3
                     vals = parts[-1].split('-')
