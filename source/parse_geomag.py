@@ -54,17 +54,44 @@ def parseSections(rows:list):
   
 
 def buildIndices(kp_data, ap_data, geomag_data, issue_dt):
-    forecast_dict = defaultdict(lambda: defaultdict(lambda: defaultdict(list)))
+    forecast_dict = defaultdict(lambda: defaultdict(lambda: defaultdict(list))) # Initialise structure - Debug: list or dict?
+    # Kp Parsing
     for line in kp_data[1:]:
         parts = line.split()
-        time_bin = parts[0]
-        full_time = f"{issue_dt} {time_bin}"
-        forecast_dict[issue_dt]["kp"]["n+1"].append((full_time, parts[1]))
+        time_bin = parts[0] # Only section that has 3-hour bins
+        full_time = f"{issue_dt} {time_bin}" # Main bin for future dataset
+        forecast_dict[issue_dt]["kp"]["n+1"].append((full_time, parts[1])) 
         forecast_dict[issue_dt]["kp"]["n+2"].append((full_time, parts[2]))
         forecast_dict[issue_dt]["kp"]["n+3"].append((full_time, parts[3]))
-        
+    # Ap Parsing
+    for line in ap_data:
+        parts = line.split()
+        if not parts:
+            continue
+        kind = parts[0]
+        if kind == "Observed":
+            forecast_dict[issue_dt]["ap"]["observed"] = int(parts[-1]) # Last element
+        elif kind == "Estimated":
+            forecast_dict[issue_dt]["ap"]["estimated"] = int(parts[-1]) # Last element
+        elif kind == "Predicted":
+            values = parts[-1].split("-") # Split last element into 3
+            forecast_dict[issue_dt]["ap"]["n+1"] = int(values[0])
+            forecast_dict[issue_dt]["ap"]["n+2"] = int(values[1])
+            forecast_dict[issue_dt]["ap"]["n+3"] = int(values[2])
+    # Geomag Parsing
+    for line in geomag_data:
+        parts = line.split()
+        if not parts:
+            continue
+        storm_type = " ".join(parts[:-1]) # Everything but last element
+        probs = parts[-1]
+        prob_values = [int(p) for p in probs.split("/") if p.isdigit()] # Split probabilities per day
+        forecast_dict[issue_dt]["geomag"]["n+1"][storm_type] = prob_values[0]
+        forecast_dict[issue_dt]["geomag"]["n+2"][storm_type] = prob_values[1]
+        forecast_dict[issue_dt]["geomag"]["n+3"][storm_type] = prob_values[2]
+    return forecast_dict
 
-    
+def dumpJob(forecast_dict):
     pass
 
 def concatN1():
