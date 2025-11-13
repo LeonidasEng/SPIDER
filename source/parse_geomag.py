@@ -7,18 +7,19 @@
 import os
 import re
 from datetime import datetime
-import csv
+import json
 import pandas as pd
 from collections import defaultdict
 
-def fileFetch(data_path:str):
-    fnames = os.listdir(data_path)
-    for file_name in fnames:
-        file_path = os.path.join(data_path, file_name)
-        with open(file_path, "r") as f:
-            text = f.readlines()
-        return text
-
+def fileFetch(base_path:str):
+    for root, dirs, files in os.walk(base_path):
+        for file_name in files:
+            if file_name.endswith(".txt"):
+                file_path = os.path.join(root, file_name)
+                with open(file_path, "r") as f:
+                    text = f.readlines()
+                yield file_path, text # Yield keyword to retrieve more than one file on iteration
+               
 def parseSections(text:list):
     issue_ln = text[1].replace(":Issued:", "").strip()
     issue = datetime.strptime(issue_ln, "%Y %b %d %H%M %Z")
@@ -54,6 +55,7 @@ def parseSections(text:list):
 
 def buildIndices(kp_data:list, ap_data:list, geomag_data:list, issue_dt:str):
     forecast_dict = defaultdict(lambda: defaultdict(lambda: defaultdict(dict))) # Initialise structure
+    # Kp Parsing
     try:
         for line in kp_data[1:]:
             parts = line.split()
@@ -101,35 +103,39 @@ def buildIndices(kp_data:list, ap_data:list, geomag_data:list, issue_dt:str):
         forecast_dict[issue_dt]["geomag"]["n+3"][storm_type] = prob_values[2]
     return forecast_dict
 
-def dumpJob(forecast_dict):
-    pass
+def dumpJob(year:int, month:int, month_data:dict, proc_output:str):
+    out_dir = os.path.join(proc_output, str(year))
+    os.makedirs(out_dir, exist_ok=True)
 
-def concatN1():
-    pass
+    out_file = os.path.join(out_dir, f"geomag_{year}_{month:02d}.json")
 
-def concatN2():
-    pass
-
-def concatN3():
-    pass
+    with open(out_file, "w", encoding="utf-8") as f:
+        json.dump(month_data, f, indent=4)
+    print(f"Dumped data for {year}-{month:02d} -> {out_file}")
 
 def main():
-    pass
-
-if __name__ == "__main__":
     base = os.environ.get('SPIDER')
     if base is None:
         raise EnvironmentError("SPIDER system variable is not set!")
-    
-    data_str = "data\\raw\\geomag_forecast\\20250831_20250831_raw\\2025\\08"
-    data_path = os.path.join(base, data_str)
+    data_rel = "data/raw/geomag_forecast/20250731_20250930_raw"
+    data_path = os.path.join(base, data_rel)
+    processed_path = os.path.join(base, "data", "data_processed", "geomag_forecast") 
+    data_dict = defaultdict(lambda: defaultdict(dict))
 
-    file = fileFetch(data_path)
-    kp_data, ap_data, geomag_data, issue_dt = parseSections(file)
-    forecast_dict = buildIndices(kp_data, ap_data, geomag_data, issue_dt)
-    print("boop!")
-    
-            
+    for file_path, text in fileFetch(data_path): # generate through files with yield 
+        parts = os.path.normpath(file_path).split(os.sep) # cross-platform
+        year = int(parts[-3])
+        month = int(parts[-2])
 
-            
-            
+        kp_data, ap_data, geomag_data, issue_dt = parseSections(text)
+        forecast = buildIndices(kp_data, ap_data, geomag_data, issue_dt)
+        data_dict[year][month][issue_dt] = forecast
+    
+    # Dump every month processed as a JSON file
+    for year, months in data_dict.items():
+        for month, month_data in months.items():
+            dumpJob(year, month, month_data, processed_path)
+
+
+if __name__ == "__main__":
+    main()
