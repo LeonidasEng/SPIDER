@@ -25,7 +25,7 @@ def parseSections(text:list):
     :param text: Extract relevant section data
     :type text: list
     '''
-    issue_ln = text[1].replace("Issued:", "").strip()
+    issue_ln = text[1].replace("Issued", "").replace(":", "").strip()
     issue = datetime.strptime(issue_ln, "%Y %b %d %H%M %Z")
     issue_dt = str(issue.date())
     del text[2:4] # delete comments
@@ -217,17 +217,102 @@ def cleanForecastData(kp_data:list, radiation_data:list, blackout_data:list):
 
     return kp_data_cleaned, radiation_data_cleaned, blackout_data_cleaned
 
-def buildIndices(kp, radiation, blackout):
-    pass
+def buildIndices(kp_data:list, radiation_data:list, blackout_data:list, 
+                 kp_meta:list, radiation_meta:list, blackout_meta:list, 
+                 issue_dt):
+    forecast_dict = defaultdict(lambda: defaultdict(lambda: defaultdict(dict)))
 
-def attachMeta():
-    pass
+    # Kp parsing
+    try:
+        for line in kp_data[2:]:
+            raw_parts = line.split()
+            parts = []
+            i = 0
+            while i < len(raw_parts):
+                if raw_parts[i].startswith("(") and parts:
+                    parts[-1] = parts[-1] + " " + raw_parts[i] # group Kp and scaled (Gx) terms
+                else:
+                    parts.append(raw_parts[i]) # otherwise append as normal
+                i += 1
+            time_bin = raw_parts[0]
+            full_time = f"{issue_dt} {time_bin}"
+
+            # Manually set lists for Kp
+            for key in ("n", "n+1", "n+2"):
+                if key not in forecast_dict[issue_dt]["kp"]:
+                    forecast_dict[issue_dt]["kp"][key] = []
+            
+            def splitKp(cell):
+                if "(" in cell and ")" in cell:
+                    value, scale = cell.split("(")
+                    return value.strip(), scale.strip(")")
+                else:
+                    return cell, None
+            
+            kp_n_val, kp_n_scale = splitKp(parts[1])
+            kp_n1_val, kp_n1_scale = splitKp(parts[2])
+            kp_n2_val, kp_n2_scale = splitKp(parts[3])
+
+            forecast_dict[issue_dt]["kp"]["n"].append((full_time, kp_n_val, kp_n_scale))
+            forecast_dict[issue_dt]["kp"]["n+1"].append((full_time, kp_n1_val, kp_n1_scale))
+            forecast_dict[issue_dt]["kp"]["n+2"].append((full_time, kp_n2_val, kp_n2_scale))
+        
+        forecast_dict[issue_dt]["kp"]["meta"] = kp_meta
+
+    except Exception as e:
+        print(f"Kp build failed due to an error: {e}")
+    
+    # Radiation parsing
+    try:
+        line = radiation_data[2]
+        label = re.split(r"\d+%", line, maxsplit=1)[0].strip() # extract label before percentage values
+        values = re.findall(r"\d+%", line) # find all percentages
+
+        forecast_dict[issue_dt]["solar_radiation"][label] = {
+            "n": values[0],
+            "n+1": values[1],
+            "n+2": values[2]
+        }
+    
+        forecast_dict[issue_dt]["solar_radiation"]["meta"] = radiation_meta
+
+    except Exception as e:
+        print(f"Radiation build failed due to an error: {e}")
+    
+    # Radio Blackout parsing
+    try:
+        for line in blackout_data[2:]:
+            label = re.split(r"\d+%", line, maxsplit=1)[0].strip() # extract label before percentage values
+            values = re.findall(r"\d+%", line) # find all percentages
+
+            forecast_dict[issue_dt]["radio_blackout"][label] = {
+                "n": values[0],
+                "n+1": values[1],
+                "n+2": values[2]
+            }
+        
+        forecast_dict[issue_dt]["radio_blackout"]["meta"] = blackout_meta
+    
+    except Exception as e:
+        print(f"Radio blackout build failed due to an error: {e}")
+    
+    return forecast_dict
+
+def dumpJob(year:int, month:int, month_data:dict, proc_output:str):
+    out_dir = os.path.join(proc_output, str(year))
+    os.makedirs(out_dir, exist_ok=True)
+
+    out_file = os.path.join(out_dir, f"3day_{year}_{month:02d}.json")
+
+    with open(out_file, "w", encoding="utf-8") as f:
+        json.dump(month_data, f, indent=4)
+    print(f"Dumped data for {year}-{month:02d} -> {out_file}")
 
 def main():
     base = os.environ.get('SPIDER')
     if base is None:
         raise EnvironmentError("SPIDER system variable is not set!")
-    data_rel = "data/raw/3day_forecast/20230202_20230205_raw"
+    data_rel = "data/raw/3day_forecast/20251108_20251110_raw"
     data_path = os.path.join(base, data_rel)
     processed_path = os.path.join(base, "data", "data_processed", "3day_forecast")
     data_dict = defaultdict(lambda: defaultdict(dict))
@@ -241,13 +326,16 @@ def main():
         kp_meta = extractKpMeta(kp_data)
         radiation_meta = extractBlackoutMeta(radiation_data)
         blackout_meta = extractRadiationMeta(blackout_data)
-        kp_data_cleaned, radiation_data_cleaned, blackout_data_cleaned = cleanForecastData(
-            kp_data, radiation_data, blackout_data)
-        forecast = buildIndices(kp_data_cleaned, radiation_data_cleaned, blackout_data_cleaned, issue_dt)
-        # forecast + meta_datas
-    
-    #dump to JSON
+        kp_data, radiation_data, blackout_data = cleanForecastData(kp_data, radiation_data, blackout_data)
+        forecast = buildIndices(kp_data, radiation_data, blackout_data, 
+                                kp_meta, radiation_meta, blackout_meta,
+                                issue_dt)
+        data_dict[year][month] = forecast
+        
+    # Dump every month processed as a JSON file
+    for year, months in data_dict.items():
+        for month, month_data in months.items():
+            dumpJob(year, month, month_data, processed_path)
 
-        print("BREAK")
 if __name__ == "__main__":
     main()
