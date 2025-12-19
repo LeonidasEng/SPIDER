@@ -5,10 +5,8 @@
 
 # Simplest one, should go first.
 import os
-import re
 from datetime import datetime
 import json
-import pandas as pd
 from collections import defaultdict
 
 def fileFetch(base_path:str):
@@ -117,7 +115,7 @@ def main():
     base = os.environ.get('SPIDER')
     if base is None:
         raise EnvironmentError("SPIDER system variable is not set!")
-    data_rel = "data/raw/geomag_forecast/20250731_20250930_raw"
+    data_rel = "data/raw/geomag_forecast/20250831_20250901_raw"
     data_path = os.path.join(base, data_rel)
     processed_path = os.path.join(base, "data", "data_processed", "geomag_forecast") 
     data_dict = defaultdict(lambda: defaultdict(dict))
@@ -129,7 +127,7 @@ def main():
 
         kp_data, ap_data, geomag_data, issue_dt = parseSections(text)
         forecast = buildIndices(kp_data, ap_data, geomag_data, issue_dt)
-        data_dict[year][month][issue_dt] = forecast
+        data_dict[year][month] = forecast
     
     # Dump every month processed as a JSON file
     for year, months in data_dict.items():
