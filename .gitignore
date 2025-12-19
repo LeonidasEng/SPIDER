@@ -13,6 +13,7 @@ dist/
 # Data
 data/raw/
 data/test/
+data/data_processed
 
 # Docs
 docs/
