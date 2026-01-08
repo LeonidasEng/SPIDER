@@ -3,13 +3,43 @@ import os
 import sys
 import time
 import re
+import logging
 from datetime import datetime
 
+def setupLogger(log_dir: str | None = None, level=logging.INFO):
+    logger = logging.getLogger("SPIDER.ftp")
+    logger.setLevel(level)
+    logger.propagate = False
+
+    formatter = logging.Formatter(
+        "%(asctime)s | %(levelname)-7s | %(message)s",
+        datefmt="%Y-%m-%d %H:%M:%S"
+    )
+
+    # Console Handler
+    ch = logging.StreamHandler()
+    ch.setLevel(level)
+    ch.setFormatter(formatter)
+    logger.addHandler(ch)
+
+    # File Handler
+    if log_dir:
+        os.makedirs(log_dir, exist_ok=True)
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        logfile = f"ftp_access_{timestamp}.log"
+        fh = logging.FileHandler(os.path.join(log_dir, logfile))
+        fh.setLevel(logging.DEBUG)
+        fh.setFormatter(formatter)
+        logger.addHandler(fh)
+    
+    return logger
+logger = logging.getLogger("SPIDER.ftp")
 
 # Docs
+# Logging: https://docs.python.org/3/library/logging.html
 # Datetime: https://docs.python.org/3/library/datetime.html
 # FTPLib: https://docs.python.org/3/library/ftplib.html
-# Regular Expressions: https://docs.python.org/3/library/re.html#checking-for-a-pair
+# Regular Expressions: https://docs.python.org/3/library/re.html
 
 FTP_SOURCES = {
     "forecasts": {
@@ -59,7 +89,7 @@ def listFiles(ftp: ftplib.FTP, source_cfg: dict, dataset: str,
         ftp.cwd(path) # Change working directory
         return ftp.nlst() # Return a list of filenames
     except ftplib.error_perm:
-        print(f"Skipping missing directory: {path}")
+        logger.error(f"Skipping missing directory: {path}")
         return []
 
 def extractDateFile(fname):
@@ -105,7 +135,7 @@ def downloadFTPfile(ftp: ftplib.FTP, source_cfg: dict, dataset: str,
     with open(local, "wb") as f: # Write Binary (wb) to ensure data maintains format
         ftp.retrbinary(f"RETR " + remote, f.write) # Retrieve and write data
     
-    print(f"Saved {fname} -> {local}")
+    logger.info(f"Saved {fname} -> {local}")
  
 def getDirBytes(path):
     # https://stackoverflow.com/questions/1392413/calculating-a-directorys-size-using-python
@@ -148,7 +178,7 @@ def downloadRange(start_date: datetime, end_date: datetime, local_dir: str, sour
         else:
             ftp = ftplib.FTP(source_cfg["host"])
             ftp.login()
-        print(f"Connected to {source_cfg['host']} ({source_key})")
+        logger.info(f"Connected to {source_cfg['host']} ({source_key})")
         
         current = start_date
         
@@ -189,10 +219,10 @@ def downloadRange(start_date: datetime, end_date: datetime, local_dir: str, sour
                     current = datetime(year, month + 1, 1) # else move to next available month
 
         size_bytes = getDirBytes(local_dir)
-        print(f"Download complete. Files saved to: {local_dir}, Size: {getDirSize(size_bytes)}")
+        logger.info(f"Download complete. Files saved to: {local_dir}, Size: {getDirSize(size_bytes)}")
         
     except ftplib.all_errors as e:
-        print(f"FTP error: {e}")
+        logger.error(f"FTP error: {e}")
     
     finally:
         if ftp is not None:
@@ -211,9 +241,9 @@ def summariseDatasets(source_key: str, dataset: str):
     dataset_path = source_cfg["datasets"].get(dataset, "")
     base_path = f"{source_cfg['base_path']}/{dataset_path}".replace("//", "/")
 
-    print(f"\n Checking availability for '{source_key} -> {dataset}'")
-    print(f"Host: {source_cfg['host']}")
-    print(f"Base path: {base_path}")
+    logger.info(f"\n Checking availability for '{source_key} -> {dataset}'")
+    logger.info(f"Host: {source_cfg['host']}")
+    logger.info(f"Base path: {base_path}")
 
     ftp = None
 
@@ -238,7 +268,7 @@ def summariseDatasets(source_key: str, dataset: str):
             )
 
             if not years:
-                print("No data found.")
+                logger.error("No data found.")
                 return
 
             print("\nAvailable OMNI2 yearly data:")
@@ -265,7 +295,7 @@ def summariseDatasets(source_key: str, dataset: str):
                 print(" (year-level data)")
 
     except ftplib.all_errors as e:
-        print(f"Error retrieving summary: {e}")
+        logger.error(f"Error retrieving summary: {e}")
         return
     
     finally:
@@ -283,7 +313,7 @@ def userInputs():
         - Start and End dates 
     '''
 
-    print("Avaiable data sources:")
+    print("Available data sources:")
     for key in FTP_SOURCES:
         print(f" - {key}")
     
@@ -312,7 +342,7 @@ def userInputs():
     try:
         start_date = datetime.strptime(start_input, "%Y%m%d")
     except ValueError:
-        print("Invalid start date format.")
+        logger.error("Invalid start date format.")
         sys.exit(1)
 
     end_input = input("Enter an end date (YYYYMMDD, leave blank for same day): ").strip()
@@ -320,14 +350,14 @@ def userInputs():
         try:
             end_date = datetime.strptime(end_input, "%Y%m%d")
         except ValueError:
-            print("Invalid end date format.")
+            logger.error("Invalid end date format.")
             sys.exit(1)
     else:
         end_date = start_date
 
     # Check date order
     if end_date < start_date:
-        print("End date cannot be earlier than the start date.")
+        logger.error("End date cannot be earlier than the start date.")
         sys.exit(1)
     
     return source_key, dataset_key, start_date, end_date
@@ -341,7 +371,11 @@ def runFTPaccess():
         raise EnvironmentError("SPIDER environment variable not set!")
     
     showBanner(base)
-    print("Running FTP Access Utility...")
+    logger = setupLogger(
+        log_dir=os.path.join(base, "logs"),
+        level=logging.INFO
+    )
+    logger.info("Running FTP Access Utility...")
 
     source_key, dataset_key, ds, de = userInputs()
 
