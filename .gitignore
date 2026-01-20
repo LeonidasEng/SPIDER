@@ -18,6 +18,9 @@ data/data_processed/
 # Docs
 docs/
 
+# Logs
+logs/
+
 
 # Virtual environments
 venv/
