@@ -1,8 +1,3 @@
-# Parse data from the 3 Day Forecast Text File
-# Do it for one file
-# Then for two files to see how files can combine
-# Then create for entire time period
-
 import os 
 import re
 from datetime import datetime
@@ -59,6 +54,7 @@ def parseSections(text:list):
     issue_ln = text[1].replace("Issued", "").replace(":", "").strip()
     issue = datetime.strptime(issue_ln, "%Y %b %d %H%M %Z")
     issue_dt = str(issue.date())
+    issue_ts = issue # full datetime
     del text[2:4] # delete comments
     
     kp_data, radiation_data, blackout_data = [], [], [] # Create lists for three_day_forecast text
@@ -86,7 +82,7 @@ def parseSections(text:list):
         elif section == "blackout":
             blackout_data.append(line)
 
-    return kp_data, radiation_data, blackout_data, issue_dt
+    return kp_data, radiation_data, blackout_data, issue_dt, issue_ts
 
 def extractKpMeta(kp_data:list):
     '''
@@ -357,6 +353,7 @@ def main():
     data_path = os.path.join(base, data_rel)
     processed_path = os.path.join(base, "data", "data_processed", "3day_forecast")
     data_dict = defaultdict(lambda: defaultdict(dict))
+    latest_issue_ts = {} # {"YYYY-MM-DD": datetime }
 
     for file_path, text in fileFetch(data_path):
         if not text:
@@ -368,7 +365,16 @@ def main():
         year = int(parts[-3])
         month = int(parts[-2])
 
-        kp_data, radiation_data, blackout_data, issue_dt = parseSections(text)
+        kp_data, radiation_data, blackout_data, issue_dt, issue_ts = parseSections(text)
+        
+        # Enforce latest-only measurement
+        prev_ts = latest_issue_ts.get(issue_dt)
+        if prev_ts is not None and issue_ts <= prev_ts:
+            logger.info(f"Skipping older forecast {issue_ts.strftime('%H:%M')}"
+                        f"for {issue_dt}")
+            continue
+        # Update latest timestamp
+        latest_issue_ts[issue_dt] = issue_ts
         kp_meta = extractKpMeta(kp_data)
         radiation_meta = extractBlackoutMeta(radiation_data)
         blackout_meta = extractRadiationMeta(blackout_data)
