@@ -68,32 +68,44 @@ def parseDayInd(text: list):
 
     kp_bins = [] # Contains (timestamp, Kp) tuple
 
+    is_estimated = False
+    is_planetary = False # Flags to ensure Kp values are selected
+    
     for line in text:
         l = line.lower().strip()
 
-        # Skip empty lines and comments
-        if not l or l.startswith('#'):
+        # Ensure correct line in raw data is selected under "Estimated"
+        if "estimated" in l:
+            is_estimated = True
             continue
+        
+        if is_estimated and "planetary" in l:
+            is_planetary = True
+            continue
+    
+        if is_planetary:
+            # Skip empty lines and comments
+            if not l or l.startswith('#'):
+                continue
 
+            # Data line starts with A index then 8 Kp values
+            parts = l.split()
+            if len(parts) >= 18:
+                # Extract planetary indices section
+                planetary_A = parts[9] # Unused
+                kp_vals = parts[10:18]
 
-        # Data line starts with A index then 8 Kp values
-        parts = l.split()
-        if len(parts) >= 18:
-            # Extract planetary indices section
-            planetary_A = parts[9] # Unused
-            kp_vals = parts[10:18]
+                # Fixed 3-hour UT bins used by NOAA forecasts
+                bins = [
+                    "00-03UT", "03-06UT", "06-09UT", "09-12UT",
+                    "12-15UT", "15-18UT", "18-21UT", "21-00UT"
+                ]
 
-            # Fixed 3-hour UT bins used by NOAA forecasts
-            bins = [
-                "00-03UT", "03-06UT", "06-09UT", "09-12UT",
-                "12-15UT", "15-18UT", "18-21UT", "21-00UT"
-            ]
-
-            # Pair each Kp value with it's corresponding 3-hour time bin
-            for b, v in zip(bins, kp_vals):
-                kp_bins.append((f"{observed_dt} {b}", float(v)))
-            
-            break # Only one Kp row exists per file
+                # Pair each Kp value with it's corresponding 3-hour time bin
+                for b, v in zip(bins, kp_vals):
+                    kp_bins.append((f"{observed_dt} {b}", float(v)))
+                
+                break # Only one Kp row exists per file
     
     return observed_dt, kp_bins
 
