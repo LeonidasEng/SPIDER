@@ -335,8 +335,12 @@ def dumpJob(year:int, month:int, month_data:dict, proc_output:str):
 
     out_file = os.path.join(out_dir, f"3day_{year}_{month:02d}.json")
 
+    # Sort by Issue Date
+    ordered_month_data = dict(sorted(month_data.items(), key=lambda x: x[0]))
+
     with open(out_file, "w", encoding="utf-8") as f:
-        json.dump(month_data, f, indent=4)
+        json.dump(ordered_month_data, f, indent=4)
+
     print(f"Dumped data for {year}-{month:02d} -> {out_file}")
 
 def main():
@@ -372,7 +376,7 @@ def main():
         forecast = buildIndices(kp_data, radiation_data, blackout_data, 
                                 kp_meta, radiation_meta, blackout_meta,
                                 issue_dt)
-        data_dict[year][month] = forecast
+        data_dict[year][month].update(forecast) # Extend each month file don't override
         
     # Dump every month processed as a JSON file
     for year, months in data_dict.items():

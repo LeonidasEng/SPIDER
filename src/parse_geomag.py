@@ -138,8 +138,11 @@ def dumpJob(year:int, month:int, month_data:dict, proc_output:str):
 
     out_file = os.path.join(out_dir, f"geomag_{year}_{month:02d}.json")
 
+    # Sorted by Issue Date
+    ordered_month_data = dict(sorted(month_data.items(), key=lambda x: x[0]))
+
     with open(out_file, "w", encoding="utf-8") as f:
-        json.dump(month_data, f, indent=4)
+        json.dump(ordered_month_data, f, indent=4)
     logger.info(f"Dumped data for {year}-{month:02d} -> {out_file}")
 
 def main():
@@ -164,7 +167,8 @@ def main():
 
         kp_data, ap_data, geomag_data, issue_dt = parseSections(text)
         forecast = buildIndices(kp_data, ap_data, geomag_data, issue_dt)
-        data_dict[year][month] = forecast
+        
+        data_dict[year][month].update(forecast) # Extend each month file don't override
     
     # Dump every month processed as a JSON file
     for year, months in data_dict.items():
