@@ -7,7 +7,38 @@ import os
 import re
 from datetime import datetime
 import json
+import logging
 from collections import defaultdict
+
+def setupLogger(log_dir: str | None = None, level=logging.INFO):
+    logger = logging.getLogger("SPIDER.3day")
+    logger.setLevel(level)
+    logger.propagate = False
+
+    formatter = logging.Formatter(
+        "%(asctime)s | %(levelname)-7s | %(message)s",
+        datefmt="%Y-%m-%d %H:%M:%S"
+    )
+
+    # Console Handler
+    ch = logging.StreamHandler()
+    ch.setLevel(level)
+    ch.setFormatter(formatter)
+    logger.addHandler(ch)
+
+    # File Handler
+    if log_dir:
+        os.makedirs(log_dir, exist_ok=True)
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        logfile = f"3day_{timestamp}.log"
+        fh = logging.FileHandler(os.path.join(log_dir, logfile))
+        fh.setLevel(logging.DEBUG)
+        fh.setFormatter(formatter)
+        logger.addHandler(fh)
+    
+    return logger
+logger = logging.getLogger("SPIDER.3day")
+
 
 def fileFetch(base_path:str):
     for root, dirs, files in os.walk(base_path):
@@ -260,7 +291,7 @@ def buildIndices(kp_data:list, radiation_data:list, blackout_data:list,
         forecast_dict[issue_dt]["kp"]["meta"] = kp_meta
 
     except Exception as e:
-        print(f"Kp build failed due to an error: {e}")
+        logger.error(f"Kp build failed due to an error: {e}")
     
     # Radiation parsing
     try:
@@ -277,7 +308,7 @@ def buildIndices(kp_data:list, radiation_data:list, blackout_data:list,
         forecast_dict[issue_dt]["solar_radiation"]["meta"] = radiation_meta
 
     except Exception as e:
-        print(f"Radiation build failed due to an error: {e}")
+        logger.error(f"Radiation build failed due to an error: {e}")
     
     # Radio Blackout parsing
     try:
@@ -312,12 +343,23 @@ def main():
     base = os.environ.get('SPIDER')
     if base is None:
         raise EnvironmentError("SPIDER system variable is not set!")
-    data_rel = "data/raw/3day_forecast/20251108_20251110_raw"
+    
+    logger = setupLogger(
+        log_dir=os.path.join(base, "logs"),
+        level=logging.INFO
+    )
+
+    data_rel = "data/raw/forecasts/3day/"
     data_path = os.path.join(base, data_rel)
     processed_path = os.path.join(base, "data", "data_processed", "3day_forecast")
     data_dict = defaultdict(lambda: defaultdict(dict))
 
     for file_path, text in fileFetch(data_path):
+        if not text:
+            logger.error(f"EMPTY FILE: {file_path}")
+            continue
+        logger.debug(f"Parsing file: {file_path} | Lines: {len(text)}")
+
         parts = os.path.normpath(file_path).split(os.sep)
         year = int(parts[-3])
         month = int(parts[-2])

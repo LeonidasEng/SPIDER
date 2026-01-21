@@ -1,8 +1,39 @@
 import os
 from datetime import datetime, timezone, timedelta
 import json
+import logging
 from collections import defaultdict
 import math
+
+def setupLogger(log_dir: str | None = None, level=logging.INFO):
+    logger = logging.getLogger("SPIDER.omni2")
+    logger.setLevel(level)
+    logger.propagate = False
+
+    formatter = logging.Formatter(
+        "%(asctime)s | %(levelname)-7s | %(message)s",
+        datefmt="%Y-%m-%d %H:%M:%S"
+    )
+
+    # Console Handler
+    ch = logging.StreamHandler()
+    ch.setLevel(level)
+    ch.setFormatter(formatter)
+    logger.addHandler(ch)
+
+    # File Handler
+    if log_dir:
+        os.makedirs(log_dir, exist_ok=True)
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        logfile = f"omni2_{timestamp}.log"
+        fh = logging.FileHandler(os.path.join(log_dir, logfile))
+        fh.setLevel(logging.DEBUG)
+        fh.setFormatter(formatter)
+        logger.addHandler(fh)
+    
+    return logger
+logger = logging.getLogger("SPIDER.omni2")
+
 
 # OMNI2 uses placeholder values to indicate missing or invalid data.
 # These must be converted to NaN for numerical analysis later
@@ -100,14 +131,19 @@ def dumpJob(year: int, month: int, month_data: dict, out_base: str):
     with open(out_file, "w", encoding="utf-8") as f:
         json.dump(sorted_days, f, indent=4)
 
-    print(f"Dumped OMNI2 {year}-{month:02d} -> {out_file}")
+    logger.info(f"Dumped OMNI2 {year}-{month:02d} -> {out_file}")
 
 def main():
     base = os.environ.get("SPIDER")
     if base is None:
         raise EnvironmentError("SPIDER system variable is not set")
     
-    raw_path = os.path.join(base, "data/raw/nasa_omni/omni2/20220101_20251231_raw")
+    logger = setupLogger(
+        log_dir=os.path.join(base, "logs"),
+        level=logging.INFO
+    )
+    
+    raw_path = os.path.join(base, "data/raw/nasa_omni/omni2/")
     out_path = os.path.join(base, "data/data_processed/omni2")
 
     # Aggregated structure: year -> month -> date -> hour

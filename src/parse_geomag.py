@@ -7,7 +7,38 @@
 import os
 from datetime import datetime
 import json
+import logging
 from collections import defaultdict
+
+def setupLogger(log_dir: str | None = None, level=logging.INFO):
+    logger = logging.getLogger("SPIDER.geomag")
+    logger.setLevel(level)
+    logger.propagate = False
+
+    formatter = logging.Formatter(
+        "%(asctime)s | %(levelname)-7s | %(message)s",
+        datefmt="%Y-%m-%d %H:%M:%S"
+    )
+
+    # Console Handler
+    ch = logging.StreamHandler()
+    ch.setLevel(level)
+    ch.setFormatter(formatter)
+    logger.addHandler(ch)
+
+    # File Handler
+    if log_dir:
+        os.makedirs(log_dir, exist_ok=True)
+        timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
+        logfile = f"geomag_{timestamp}.log"
+        fh = logging.FileHandler(os.path.join(log_dir, logfile))
+        fh.setLevel(logging.DEBUG)
+        fh.setFormatter(formatter)
+        logger.addHandler(fh)
+    
+    return logger
+logger = logging.getLogger("SPIDER.geomag")
+
 
 def fileFetch(base_path:str):
     for root, dirs, files in os.walk(base_path):
@@ -69,7 +100,7 @@ def buildIndices(kp_data:list, ap_data:list, geomag_data:list, issue_dt:str):
             forecast_dict[issue_dt]["kp"]["n+2"].append((full_time, parts[2]))
             forecast_dict[issue_dt]["kp"]["n+3"].append((full_time, parts[3]))
     except Exception as e:
-        print(f"Kp build failed due to an error: {e}")
+        logger.error(f"Kp build failed due to an error: {e}")
     # Ap Parsing
     try:
         for line in ap_data:
@@ -87,7 +118,7 @@ def buildIndices(kp_data:list, ap_data:list, geomag_data:list, issue_dt:str):
                 forecast_dict[issue_dt]["ap"]["n+2"] = int(values[1])
                 forecast_dict[issue_dt]["ap"]["n+3"] = int(values[2])
     except Exception as e:
-        print(f"Ap build failed due to an error: {e}")
+        logger.error(f"Ap build failed due to an error: {e}")
     # Geomag Parsing
     for line in geomag_data:
         parts = line.split()
@@ -109,13 +140,19 @@ def dumpJob(year:int, month:int, month_data:dict, proc_output:str):
 
     with open(out_file, "w", encoding="utf-8") as f:
         json.dump(month_data, f, indent=4)
-    print(f"Dumped data for {year}-{month:02d} -> {out_file}")
+    logger.info(f"Dumped data for {year}-{month:02d} -> {out_file}")
 
 def main():
     base = os.environ.get('SPIDER')
     if base is None:
         raise EnvironmentError("SPIDER system variable is not set!")
-    data_rel = "data/raw/geomag_forecast/20250831_20250901_raw"
+    
+    logger = setupLogger(
+        log_dir=os.path.join(base, "logs"),
+        level=logging.INFO
+    )
+
+    data_rel = "data/raw/forecasts/geomag/"
     data_path = os.path.join(base, data_rel)
     processed_path = os.path.join(base, "data", "data_processed", "geomag_forecast") 
     data_dict = defaultdict(lambda: defaultdict(dict))
