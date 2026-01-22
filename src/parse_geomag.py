@@ -5,7 +5,7 @@
 
 # Simplest one, should go first.
 import os
-from datetime import datetime
+from datetime import datetime, timedelta, timezone
 import json
 import logging
 from collections import defaultdict
@@ -52,7 +52,10 @@ def fileFetch(base_path:str):
 def parseSections(text:list):
     issue_ln = text[1].replace(":Issued:", "").strip()
     issue = datetime.strptime(issue_ln, "%Y %b %d %H%M %Z")
-    issue_dt = str(issue.date())  # e.g. '2025-08-31'
+    issue = issue.replace(tzinfo=timezone.utc)
+    issue_dt = issue.date().isoformat()  # e.g. '2025-08-31' - must be datetime for timedelta
+    issue_ts = issue # full datetime
+
     del text[2:4] # delete comments
     ap_data, geomag_data, kp_data = [], [], [] # Create blank lists for text sections
     section = None
@@ -79,26 +82,27 @@ def parseSections(text:list):
             geomag_data.append(line) # Geomag raw text section
         elif section == "kp":
             kp_data.append(line) # # Kp raw text section
-    return kp_data, ap_data, geomag_data, issue_dt
+    return kp_data, ap_data, geomag_data, issue_dt, issue_ts
   
 
-def buildIndices(kp_data:list, ap_data:list, geomag_data:list, issue_dt:str):
+def buildIndices(kp_data:list, ap_data:list, geomag_data:list, issue_dt:str, issue_ts:datetime):
     forecast_dict = defaultdict(lambda: defaultdict(lambda: defaultdict(dict))) # Initialise structure
+    forecast_dict[issue_dt]["issue"] = issue_ts.strftime("%Y-%m-%d %H:%M:%S %Z")
+
     # Kp Parsing
     try:
+        base_date = issue_ts.date()
+
         for line in kp_data[1:]:
             parts = line.split()
             time_bin = parts[0] # Only section that has 3-hour bins
-            full_time = f"{issue_dt} {time_bin}" # Main bin for future dataset
-            
-            # Manually set lists for Kp
-            for key in ("n+1", "n+2", "n+3"):
-                if key not in forecast_dict[issue_dt]["kp"]:
-                    forecast_dict[issue_dt]["kp"][key] = []
+                
+            for i, key in enumerate(("n+1", "n+2", "n+3"), start=1): # Pass one for day-alignment
+                predicted_date = (base_date + timedelta(days=i)).isoformat() # Ensures predictions align with forecast not issue date
+                full_time = f"{predicted_date} {time_bin}"
+                forecast_dict[issue_dt]["kp"].setdefault(key, []) # Set default cleaner than if statement
+                forecast_dict[issue_dt]["kp"][key].append((full_time, float(parts[i]))) # Kp is float
 
-            forecast_dict[issue_dt]["kp"]["n+1"].append((full_time, parts[1])) 
-            forecast_dict[issue_dt]["kp"]["n+2"].append((full_time, parts[2]))
-            forecast_dict[issue_dt]["kp"]["n+3"].append((full_time, parts[3]))
     except Exception as e:
         logger.error(f"Kp build failed due to an error: {e}")
     # Ap Parsing
@@ -165,8 +169,8 @@ def main():
         year = int(parts[-3])
         month = int(parts[-2])
 
-        kp_data, ap_data, geomag_data, issue_dt = parseSections(text)
-        forecast = buildIndices(kp_data, ap_data, geomag_data, issue_dt)
+        kp_data, ap_data, geomag_data, issue_dt, issue_ts = parseSections(text)
+        forecast = buildIndices(kp_data, ap_data, geomag_data, issue_dt, issue_ts)
         
         data_dict[year][month].update(forecast) # Extend each month file don't override
     
