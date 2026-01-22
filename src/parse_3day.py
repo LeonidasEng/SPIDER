@@ -98,29 +98,34 @@ def extractKpMeta(kp_data:list):
         "rationale": "" # Rationale can be multi-line
     }
     capture_rationale = False
-
-    for line in kp_data:
-        l = line.lower()
-        if "greatest observed" in l:
-            m = re.search(r"was\s+([\d.]+)", l) # regular expression for observed string (was) and float 
-            if m:
-                meta["greatest_observed_kp"] = float(m.group(1))
-        elif "greatest expected" in l:
-            m_val = re.search(r"is\s+([\d.]+)", l) # regular expression for predicted string (is) and float
-            m_scale = re.search(r"\((g\d)\)", l) # regular expression for scale id
-            if m_val:
-                meta["greatest_expected_kp"] = float(m_val.group(1))
-            if m_scale:
-                meta["greatest_expected_scale"] = m_scale.group(1).upper()
-        
-        elif l.startswith("rationale:"):
-            capture_rationale = True
-            meta["rationale"] += line.replace("Rationale:", "").strip() + " " # Adding whitespace to separate lines
-
-        elif capture_rationale:
-            meta["rationale"] += line.strip() + " " # Ensure captured rationale has no leading/trailing whitespace
     
-    meta["rationale"] = meta["rationale"].strip()
+    # Join lines to avoid missing values over new lines
+    joined = " ".join(line.strip() for line in kp_data)
+    joined = re.sub(r"\s+", " ", joined)
+
+    m_obs = re.search(r"greatest observed.*?was\s+([\d.]+)", joined, re.IGNORECASE) # Observed Kp
+    if m_obs:
+        meta["greatest_observed_kp"] = float(m_obs.group(1))
+
+    m_exp = re.search(r"greatest expected.*?is\s+([\d.]+)", joined, re.IGNORECASE) # Expected Kp value
+    if m_exp:
+        meta["greatest_expected_kp"] = float(m_exp.group(1))
+
+    m_scale = re.search(r"noaa scale\s*(g\d)", joined, re.IGNORECASE) # NOAA scale
+    if m_scale:
+        meta["greatest_expected_scale"] = m_scale.group(1).upper()
+
+    # Rationale capture
+    rationale_lines = []
+    capture = False
+    for line in kp_data:
+        if line.lower().startswith("rationale:"):
+            capture = True
+            rationale_lines.append(line.split(":", 1)[1].strip()) # Capture info not header
+        elif capture:
+            rationale_lines.append(line.strip())
+
+    meta["rationale"] = " ".join(rationale_lines).strip()
 
     return meta
 
@@ -137,24 +142,28 @@ def extractRadiationMeta(radiation_data:list):
         "rationale": "" # Rationale can be multi-line
     }
 
+    joined = " ".join(line.strip() for line in radiation_data)
+    joined = re.sub(r"\s+", " ", joined)
+    l_joined = joined.lower()
+
+    if "was below s-scale" in l_joined:
+        meta["radiation_observed"] = False
+    elif "was above s-scale" in l_joined:
+        meta["radiation_observed"] = True
+
     capture_rationale = False
+    rationale_lines = []
 
     for line in radiation_data:
-        l = line.lower()
+        l = line.lower().strip()
 
-        if "was below s-scale" in l:
-            meta["radiation_observed"] = False
-        elif "was above s-scale" in l:
-            meta["radiation_observed"] = True
-        
-        elif l.startswith("rationale:"):
+        if l.startswith("rationale:"):
             capture_rationale = True
-            meta["rationale"] += line.replace("Rationale", "").strip() + " " # Add whitespace between lines
-
+            rationale_lines.append(line.split(":", 1)[1].strip()) # Capture info not header
         elif capture_rationale:
-            meta["rationale"] += line.strip() + " " # Ensure captured rationale has no leading/trailing whitespace
-        
-    meta["rationale"] = meta["rationale"].strip()
+            rationale_lines.append(line.strip())
+
+    meta["rationale"] = " ".join(rationale_lines).strip()
 
     return meta
 
@@ -170,37 +179,42 @@ def extractBlackoutMeta(blackout_data:list):
         "blackout_observed": None,
         "max_blackout_level": None,
         "max_blackout_time": None,
-        "rationale": "" # Rationale can be multi-line
+        "rationale": ""
     }
 
+    joined = " ".join(line.strip() for line in blackout_data)
+    joined = re.sub(r"\s+", " ", joined)
+
+    if "radio blackouts reaching" in joined.lower():
+        meta["blackout_observed"] = True
+
+        # Extract max blackout level (e.g. R1, R2, R3)
+        m_level = re.search(r"\b(r\d)\b", joined, re.IGNORECASE) 
+        # Find rX (where X is int) on it's own "\b" -> word boundary (start-end)
+        if m_level:
+            meta["max_blackout_level"] = m_level.group(1).upper()
+
+        m_time = re.search(r"largest was at\s+(.+?\s+utc)", joined, re.IGNORECASE)
+        # Find 'largest was at' then capture everything (.) up to first (+?) 'UTC' 
+        if m_time:
+            meta["max_blackout_time"] = m_time.group(1).strip()
+
+    elif "no radio blackouts were observed" in joined.lower():
+        meta["blackout_observed"] = False
+
     capture_rationale = False
+    rationale_lines = []
 
     for line in blackout_data:
-        l = line.lower()
+        l = line.lower().strip()
 
-        if "radio blackouts reaching" in l:
-            meta["blackout_observed"] = True
-
-            m_level = re.search(r"(r\d)") # Extract Radio scale (if any) 
-            m_time = re.search(r"at\s+(.*utc)", line, re.IGNORECASE) # Extract blackout time (if any)
-
-            if m_level:
-                meta["max_blackout_level"] = m_level.group(1).upper()
-            if m_time:
-                meta["max_blackout_time"] = m_time.group(1).strip()
-
-        elif "no radio blackouts were observed" in l:
-            meta["blackout_observed"] = False
-            
-        elif l.startswith("rationale:"):
+        if l.startswith("rationale:"):
             capture_rationale = True
-            meta["rationale"] += line.replace("Rationale", "").strip() + " " # Add whitespace between lines
-        
+            rationale_lines.append(line.split(":", 1)[1].strip()) # Capture info not header
         elif capture_rationale:
-            meta["rationale"] += line.strip() + " "  # Ensure captured rationale has no leading/trailing whitespace
+            rationale_lines.append(line.strip())
 
-    meta["rationale"] = meta["rationale"].strip()
-
+    meta["rationale"] = " ".join(rationale_lines).strip()
     return meta
 
 def cleanForecastData(kp_data:list, radiation_data:list, blackout_data:list):
@@ -217,7 +231,7 @@ def cleanForecastData(kp_data:list, radiation_data:list, blackout_data:list):
     '''
     def extractBlock(lines:list, start_text:str):
         '''
-        Extract tabular data
+        Extract tabular data helper function
         
         :param lines: Section text
         :param start_text: Define the start of the tabular data
@@ -356,7 +370,7 @@ def main():
 
     data_rel = "data/raw/forecasts/3day/"
     data_path = os.path.join(base, data_rel)
-    processed_path = os.path.join(base, "data", "data_processed", "3day_forecast")
+    processed_path = os.path.join(base, "data", "data_processed", "3day_forecast", "test")
     data_dict = defaultdict(lambda: defaultdict(dict))
     latest_issue_ts = {} # {"YYYY-MM-DD": datetime }
 
@@ -381,8 +395,8 @@ def main():
         # Update latest timestamp
         latest_issue_ts[issue_dt] = issue_ts
         kp_meta = extractKpMeta(kp_data)
-        radiation_meta = extractBlackoutMeta(radiation_data)
-        blackout_meta = extractRadiationMeta(blackout_data)
+        radiation_meta = extractRadiationMeta(radiation_data)
+        blackout_meta = extractBlackoutMeta(blackout_data)
         kp_data, radiation_data, blackout_data = cleanForecastData(kp_data, radiation_data, blackout_data)
         forecast = buildIndices(kp_data, radiation_data, blackout_data, 
                                 kp_meta, radiation_meta, blackout_meta,
