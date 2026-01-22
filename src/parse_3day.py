@@ -1,6 +1,6 @@
 import os 
 import re
-from datetime import datetime
+from datetime import datetime, timezone
 import json
 import logging
 from collections import defaultdict
@@ -246,7 +246,7 @@ def cleanForecastData(kp_data:list, radiation_data:list, blackout_data:list):
 
 def buildIndices(kp_data:list, radiation_data:list, blackout_data:list, 
                  kp_meta:list, radiation_meta:list, blackout_meta:list, 
-                 issue_dt):
+                 issue_dt, issue_ts:datetime):
     forecast_dict = defaultdict(lambda: defaultdict(lambda: defaultdict(dict)))
 
     # Kp parsing
@@ -264,6 +264,9 @@ def buildIndices(kp_data:list, radiation_data:list, blackout_data:list,
             time_bin = raw_parts[0]
             full_time = f"{issue_dt} {time_bin}"
 
+            issue_ts = issue_ts.replace(tzinfo=timezone.utc) # force UTC
+            forecast_dict[issue_dt]["issue"] = issue_ts.strftime("%Y-%m-%d %H:%M:%S %Z")
+
             # Manually set lists for Kp
             for key in ("n", "n+1", "n+2"):
                 if key not in forecast_dict[issue_dt]["kp"]:
@@ -280,9 +283,9 @@ def buildIndices(kp_data:list, radiation_data:list, blackout_data:list,
             kp_n1_val, kp_n1_scale = splitKp(parts[2])
             kp_n2_val, kp_n2_scale = splitKp(parts[3])
 
-            forecast_dict[issue_dt]["kp"]["n"].append((full_time, kp_n_val, kp_n_scale))
-            forecast_dict[issue_dt]["kp"]["n+1"].append((full_time, kp_n1_val, kp_n1_scale))
-            forecast_dict[issue_dt]["kp"]["n+2"].append((full_time, kp_n2_val, kp_n2_scale))
+            forecast_dict[issue_dt]["kp"]["n"].append((full_time, float(kp_n_val), kp_n_scale))
+            forecast_dict[issue_dt]["kp"]["n+1"].append((full_time, float(kp_n1_val), kp_n1_scale))
+            forecast_dict[issue_dt]["kp"]["n+2"].append((full_time, float(kp_n2_val), kp_n2_scale))
         
         forecast_dict[issue_dt]["kp"]["meta"] = kp_meta
 
@@ -321,7 +324,7 @@ def buildIndices(kp_data:list, radiation_data:list, blackout_data:list,
         forecast_dict[issue_dt]["radio_blackout"]["meta"] = blackout_meta
     
     except Exception as e:
-        print(f"Radio blackout build failed due to an error: {e}")
+        logger.error(f"Radio blackout build failed due to an error: {e}")
     
     return forecast_dict
 
@@ -337,7 +340,7 @@ def dumpJob(year:int, month:int, month_data:dict, proc_output:str):
     with open(out_file, "w", encoding="utf-8") as f:
         json.dump(ordered_month_data, f, indent=4)
 
-    print(f"Dumped data for {year}-{month:02d} -> {out_file}")
+    logger.info(f"Dumped data for {year}-{month:02d} -> {out_file}")
 
 def main():
     base = os.environ.get('SPIDER')
@@ -381,7 +384,7 @@ def main():
         kp_data, radiation_data, blackout_data = cleanForecastData(kp_data, radiation_data, blackout_data)
         forecast = buildIndices(kp_data, radiation_data, blackout_data, 
                                 kp_meta, radiation_meta, blackout_meta,
-                                issue_dt)
+                                issue_dt, issue_ts)
         data_dict[year][month].update(forecast) # Extend each month file don't override
         
     # Dump every month processed as a JSON file
