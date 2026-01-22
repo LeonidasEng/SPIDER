@@ -1,6 +1,6 @@
 import os 
 import re
-from datetime import datetime, timezone
+from datetime import datetime, timezone, timedelta
 import json
 import logging
 from collections import defaultdict
@@ -265,6 +265,8 @@ def buildIndices(kp_data:list, radiation_data:list, blackout_data:list,
 
     # Kp parsing
     try:
+        base_date = issue_ts.date()
+
         for line in kp_data[2:]:
             raw_parts = line.split()
             parts = []
@@ -276,7 +278,6 @@ def buildIndices(kp_data:list, radiation_data:list, blackout_data:list,
                     parts.append(raw_parts[i]) # otherwise append as normal
                 i += 1
             time_bin = raw_parts[0]
-            full_time = f"{issue_dt} {time_bin}"
 
             issue_ts = issue_ts.replace(tzinfo=timezone.utc) # force UTC
             forecast_dict[issue_dt]["issue"] = issue_ts.strftime("%Y-%m-%d %H:%M:%S %Z")
@@ -297,10 +298,15 @@ def buildIndices(kp_data:list, radiation_data:list, blackout_data:list,
             kp_n1_val, kp_n1_scale = splitKp(parts[2])
             kp_n2_val, kp_n2_scale = splitKp(parts[3])
 
-            forecast_dict[issue_dt]["kp"]["n"].append((full_time, float(kp_n_val), kp_n_scale))
-            forecast_dict[issue_dt]["kp"]["n+1"].append((full_time, float(kp_n1_val), kp_n1_scale))
-            forecast_dict[issue_dt]["kp"]["n+2"].append((full_time, float(kp_n2_val), kp_n2_scale))
-        
+            # Streamline forecast dates for n, n+1, n+2
+            for day, key, val, scale in (
+                (0, "n", kp_n_val, kp_n_scale),
+                (1, "n+1", kp_n1_val, kp_n1_scale),
+                (2, "n+2", kp_n2_val, kp_n2_scale)):
+                predicted_date = (base_date + timedelta(days=day)).isoformat() # Align prediction with forecast not issue
+                full_time = f"{predicted_date} {time_bin}"
+                forecast_dict[issue_dt]["kp"][key].append((full_time, float(val), scale))
+
         forecast_dict[issue_dt]["kp"]["meta"] = kp_meta
 
     except Exception as e:
@@ -370,7 +376,7 @@ def main():
 
     data_rel = "data/raw/forecasts/3day/"
     data_path = os.path.join(base, data_rel)
-    processed_path = os.path.join(base, "data", "data_processed", "3day_forecast", "test")
+    processed_path = os.path.join(base, "data", "data_processed", "3day_forecast")
     data_dict = defaultdict(lambda: defaultdict(dict))
     latest_issue_ts = {} # {"YYYY-MM-DD": datetime }
 
