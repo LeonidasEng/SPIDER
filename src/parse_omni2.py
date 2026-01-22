@@ -40,17 +40,53 @@ logger = logging.getLogger("SPIDER.omni2")
 OMNI_FILL = {99.99, 999.9, 999.99, 9999.0}
 
 # Mapping of OMNI2 physical parameters to column indices
-# Note OMNI2 docs use 1-based index, Python is 0-based.
+# Note: OMNI2 docs use 1-based index, Python is 0-based.
 FIELDS = {    
-    "bz_gsm": 16,       # IMF Bz (GSM), Word 17 
-    "b_mag": 8,         # IMF Magnitude, Word 9
-    "v_sw": 24,         # Solar Wind Speed, Word 25
-    "np": 23,           # Proton Density, Word 24
-    "pdyn": 28,         # Solar Wind Dynamic Pressure, Word 29
-    "ey": 35,           # Solar Wind Electric Field, Word 36
-    "beta": 36,         # Plasma beta, Word 37
-    "mach_alfven": 37,  # Alfven Mach number, Word 38
-    "f107": 50          # F10.7 solar radio flux, Word 51
+    "bz_gsm": {
+        "index": 16,
+        "unit": "nT", # nano-Tesla
+        "description": "IMF Bz (downward) component in GSM coordinates"
+        },       # Word 17 - is IMF orientatating to open magnetosphere or keep it closed?
+    "b_mag": {
+        "index": 8,
+        "unit": "nT", # nano-Tesla
+        "description": "IMF Magnitude |B|"
+        },      # Word 9 - how strong is the magnetic field carried by solar wind?
+    "v_sw": {
+        "index": 24,
+        "unit": "km/s", # Kilometres per second
+        "description": "Solar wind (flow) speed"
+        },      # Word 25 - how fast is the solar wind hitting Earth?
+    "np": {
+        "index": 23,
+        "unit": "cm^-3", # Number of Protons per unit volume
+        "description": "Proton number Density"
+        },       # Word 24 - how many particles are in the solar wind?
+    "pdyn": {
+        "index": 28,
+        "unit": "nPa", # nano-Pascals
+        "description": "Solar Wind Dynamic Pressure"
+        },      # Word 29 - how hard is the solar wind pushing on Earth's magnetosphere?
+    "ey": {
+        "index": 35,
+        "unit": "mV/m", # milli-Volt per metre
+        "description": "Solar Wind Electric Field"
+        },      # Word 36 - how strong is the solar wind driving energy into the magnetosphere?
+    "beta": {
+        "index": 36,
+        "unit": "dimensionless",
+        "description": "Plasma Beta (thermal to magnetic pressure ratio)"
+        },      # Word 37 - is solar wind controlled more by particles or magnetic fields?
+    "mach_alfven": {
+        "index": 37,
+        "unit": "dimensionless",
+        "description": "Alfven Mach Number (solar wind speed / Alfven speed)"
+        },      # Word 38 - how violent is the solar wind?
+    "f107": {
+        "index": 50,
+        "unit": "sfu", # Solar Flux unit (1 sfu = 10^-22 W.m^-2.Hz^-1 )
+        "description": "F10.7 solar radio flux (long-term)"
+        }       # Word 51 - how active is the Sun's background energy output (quiet vs active Sun)
 }
 
 def toFloat(val: str):
@@ -108,8 +144,10 @@ def parseOMNI(text: list):
 
         # Extract selected physical parameters
         record = {}
-        for name, idx in FIELDS.items():
-            record[name] = toFloat(parts[idx])
+        for name, meta in FIELDS.items():
+            record[name] = {
+                "value": toFloat(parts[meta["index"]]),
+                "unit": meta["unit"]}
         
         # Store hourly record
         out[year][month][date_key][hour_key] = record
@@ -144,7 +182,7 @@ def main():
     )
     
     raw_path = os.path.join(base, "data/raw/nasa_omni/omni2/")
-    out_path = os.path.join(base, "data/data_processed/omni2")
+    out_path = os.path.join(base, "data/data_processed/omni2/test")
 
     # Aggregated structure: year -> month -> date -> hour
     yearly_data = defaultdict(lambda: defaultdict(lambda: defaultdict(dict)))
