@@ -299,9 +299,10 @@ def buildIndices(kp_data:list, radiation_data:list, blackout_data:list,
         values = re.findall(r"\d+%", line) # find all percentages
 
         forecast_dict[issue_dt]["solar_radiation"][label] = {
-            "n": values[0],
-            "n+1": values[1],
-            "n+2": values[2]
+            "n": int(values[0][:-1]),
+            "n+1": int(values[1][:-1]),
+            "n+2": int(values[2][:-1]),
+            "unit": "%"
         }
     
         forecast_dict[issue_dt]["solar_radiation"]["meta"] = radiation_meta
@@ -316,9 +317,10 @@ def buildIndices(kp_data:list, radiation_data:list, blackout_data:list,
             values = re.findall(r"\d+%", line) # find all percentages
 
             forecast_dict[issue_dt]["radio_blackout"][label] = {
-                "n": values[0],
-                "n+1": values[1],
-                "n+2": values[2]
+                "n": int(values[0][:-1]),
+                "n+1": int(values[1][:-1]),
+                "n+2": int(values[2][:-1]),
+                "unit": "%"
             }
         
         forecast_dict[issue_dt]["radio_blackout"]["meta"] = blackout_meta
