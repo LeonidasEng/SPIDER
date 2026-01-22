@@ -105,6 +105,7 @@ def buildIndices(kp_data:list, ap_data:list, geomag_data:list, issue_dt:str, iss
 
     except Exception as e:
         logger.error(f"Kp build failed due to an error: {e}")
+
     # Ap Parsing
     try:
         for line in ap_data:
@@ -123,6 +124,7 @@ def buildIndices(kp_data:list, ap_data:list, geomag_data:list, issue_dt:str, iss
                 forecast_dict[issue_dt]["ap"]["n+3"] = int(values[2])
     except Exception as e:
         logger.error(f"Ap build failed due to an error: {e}")
+
     # Geomag Parsing
     for line in geomag_data:
         parts = line.split()
@@ -134,6 +136,7 @@ def buildIndices(kp_data:list, ap_data:list, geomag_data:list, issue_dt:str, iss
         forecast_dict[issue_dt]["geomag"]["n+1"][storm_type] = prob_values[0]
         forecast_dict[issue_dt]["geomag"]["n+2"][storm_type] = prob_values[1]
         forecast_dict[issue_dt]["geomag"]["n+3"][storm_type] = prob_values[2]
+        forecast_dict[issue_dt]["geomag"]["unit"] = "%"
     return forecast_dict
 
 def dumpJob(year:int, month:int, month_data:dict, proc_output:str):
