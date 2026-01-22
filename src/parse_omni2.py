@@ -3,7 +3,7 @@ from datetime import datetime, timezone, timedelta
 import json
 import logging
 from collections import defaultdict
-import math
+
 
 def setupLogger(log_dir: str | None = None, level=logging.INFO):
     logger = logging.getLogger("SPIDER.omni2")
@@ -46,7 +46,7 @@ FIELDS = {
         "index": 16,
         "unit": "nT", # nano-Tesla
         "description": "IMF Bz (downward) component in GSM coordinates"
-        },       # Word 17 - is IMF orientatating to open magnetosphere or keep it closed?
+        },       # Word 17 - is IMF oriented to open magnetosphere or keep it closed?
     "b_mag": {
         "index": 8,
         "unit": "nT", # nano-Tesla
@@ -82,7 +82,7 @@ FIELDS = {
         "unit": "dimensionless",
         "description": "Alfven Mach Number (solar wind speed / Alfven speed)"
         },      # Word 38 - how violent is the solar wind?
-    "f107": {
+    "f10.7": {
         "index": 50,
         "unit": "sfu", # Solar Flux unit (1 sfu = 10^-22 W.m^-2.Hz^-1 )
         "description": "F10.7 solar radio flux (long-term)"
@@ -96,10 +96,10 @@ def toFloat(val: str):
     '''
     try:
         v = float(val)
-        return math.nan if v in OMNI_FILL else v
+        return None if v in OMNI_FILL else v
     except ValueError:
         # Handles missing or malformed fields
-        return math.nan
+        return None
 
 def fileFetch(base_path:str):
     '''
@@ -147,7 +147,8 @@ def parseOMNI(text: list):
         for name, meta in FIELDS.items():
             record[name] = {
                 "value": toFloat(parts[meta["index"]]),
-                "unit": meta["unit"]}
+                "unit": meta["unit"]
+                }
         
         # Store hourly record
         out[year][month][date_key][hour_key] = record
