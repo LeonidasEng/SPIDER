@@ -40,8 +40,6 @@ def extractObservedKp(observed_json:dict):
 
     return rows
             
-
-
 def extractGeomagForecast():
     pass
 
@@ -57,10 +55,33 @@ def buildForecast(data:dict):
 
     pass
 
-def buildObserved():
-    # import observed day
+def buildObserved(observed_path:str):
+    observed_data = []
     
-    pass
+    # Get sorted list of year sub-directories inside observed path
+    years = sorted(d for d in os.listdir(observed_path) 
+                   if os.path.isdir(os.path.join(observed_path, d)))
+    
+    for year in years:
+        year_path = os.path.join(observed_path, year)
+
+        for file_name in sorted(os.listdir(year_path)):
+            if not file_name.endswith(".json"):
+                continue
+                
+            filepath = os.path.join(year_path, file_name)
+            observed_json = importFile(filepath)
+
+            rows = extractObservedKp(observed_json)
+            observed_data.extend(rows)
+    
+    print(f"Extracted {len(observed_data)} observed bins")
+    
+    observed_data.sort(key=lambda x: x["valid_start_utc"])
+    df_obs = pd.DataFrame(observed_data)
+    df_obs = df_obs.sort_values("valid_start_utc").reset_index(drop=True)
+
+    return df_obs
 
 def buildOMNI():
     pass
@@ -81,30 +102,12 @@ def main():
     if base is None:
         raise EnvironmentError("SPIDER system variable is not set!")
     
-    observed_data = {}
     observed_path = getProcDatapath(base, "observed_kp")
+    geomag_forecast_path = getProcDatapath(base, "geomag_forecast")
+    three_forecast_path = getProcDatapath(base, "3day_forecast")
+    omni_path = getProcDatapath(base, "omni2")
 
-    all_rows = []
-
-    years = sorted(d for d in os.listdir(observed_path) 
-                   if os.path.isdir(os.path.join(observed_path, d)))
-    for year in years:
-        year_path = os.path.join(observed_path, year)
-
-        for file_name in sorted(os.listdir(year_path)):
-            if not file_name.endswith(".json"):
-                continue
-                
-            filepath = os.path.join(year_path, file_name)
-            observed_json = importFile(filepath)
-
-            rows = extractObservedKp(observed_json)
-            all_rows.extend(rows)
-    
-    print(f"Extracted {len(all_rows)} observed bins")
-    all_rows.sort(key=lambda x: x["valid_start_utc"])
-    df_obs = pd.DataFrame(all_rows)
-    df_obs = df_obs.sort_values("valid_start_utc").reset_index(drop=True)
+    df_obs = buildObserved(observed_path)
     print(df_obs.head())
     print(df_obs.tail())
     print(df_obs.info())
