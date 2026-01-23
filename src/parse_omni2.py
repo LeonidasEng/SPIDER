@@ -183,7 +183,7 @@ def main():
     )
     
     raw_path = os.path.join(base, "data/raw/nasa_omni/omni2/")
-    out_path = os.path.join(base, "data/data_processed/omni2/test")
+    out_path = os.path.join(base, "data/data_processed/omni2/")
 
     # Aggregated structure: year -> month -> date -> hour
     yearly_data = defaultdict(lambda: defaultdict(lambda: defaultdict(dict)))
