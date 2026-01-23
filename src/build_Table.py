@@ -64,22 +64,23 @@ def buildObserved(observed_path:str):
     
     for year in years:
         year_path = os.path.join(observed_path, year)
-
+        
+        # Sort and extract files in a single year directory
         for file_name in sorted(os.listdir(year_path)):
             if not file_name.endswith(".json"):
-                continue
-                
-            filepath = os.path.join(year_path, file_name)
-            observed_json = importFile(filepath)
+                continue # If not JSON
+            
+            file_path = os.path.join(year_path, file_name)
+            observed_json = importFile(file_path)
 
             rows = extractObservedKp(observed_json)
             observed_data.extend(rows)
     
     print(f"Extracted {len(observed_data)} observed bins")
     
-    observed_data.sort(key=lambda x: x["valid_start_utc"])
-    df_obs = pd.DataFrame(observed_data)
-    df_obs = df_obs.sort_values("valid_start_utc").reset_index(drop=True)
+    observed_data.sort(key=lambda x: x["valid_start_utc"]) # Sort by valid start
+    df_obs = pd.DataFrame(observed_data) # Create DataFrame for observed Kp
+    df_obs = df_obs.sort_values("valid_start_utc").reset_index(drop=True) # Enforce sort and remove index set new one
 
     return df_obs
 
