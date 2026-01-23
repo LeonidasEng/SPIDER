@@ -165,10 +165,10 @@ def dumpJob(year: int, month: int, month_data: dict, out_base: str):
     out_file = os.path.join(out_dir, f"omni2_{year}_{month:02d}.json")
 
     # Sort by date (YYYY-MM-DD)
-    sorted_days = dict(sorted(month_data.items()))
+    ordered_days = dict(sorted(month_data.items()))
 
     with open(out_file, "w", encoding="utf-8") as f:
-        json.dump(sorted_days, f, indent=4)
+        json.dump(ordered_days, f, indent=4)
 
     logger.info(f"Dumped OMNI2 {year}-{month:02d} -> {out_file}")
 

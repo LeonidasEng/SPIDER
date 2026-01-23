@@ -136,10 +136,10 @@ def dumpJob(year: int, month: int, month_data: dict, proc_output: str):
     out_file = os.path.join(out_dir, f"dayind_{year}_{month:02d}.json")
 
     # Ensure days in a month are sorted chronologically
-    sorted_month_data = dict(sorted(month_data.items()))
+    ordered_month_data = dict(sorted(month_data.items()))
 
     with open(out_file, "w", encoding="utf-8") as f:
-        json.dump(sorted_month_data, f, indent=4)
+        json.dump(ordered_month_data, f, indent=4)
     
     logger.info(f"Dumped data for {year}-{month:02d} -> {out_file}")
 
@@ -176,9 +176,9 @@ def main():
         data_dict[year][month].update(day_data)
     
     # Write monthly JSON
-    for year, months in data_dict.items():
-        for month, month_data in months.items():
-            dumpJob(year, month, month_data, processed_path)
+    for year in sorted(data_dict):
+        for month in sorted(data_dict[year]):
+            dumpJob(year, month, data_dict[year][month], processed_path)
 
 if __name__ == "__main__":
     main()

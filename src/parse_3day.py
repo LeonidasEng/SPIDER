@@ -410,9 +410,9 @@ def main():
         data_dict[year][month].update(forecast) # Extend each month file don't override
         
     # Dump every month processed as a JSON file
-    for year, months in data_dict.items():
-        for month, month_data in months.items():
-            dumpJob(year, month, month_data, processed_path)
+    for year in sorted(data_dict):
+        for month in sorted(data_dict[year]):
+            dumpJob(year, month, data_dict[year][month], processed_path)
 
 if __name__ == "__main__":
     main()
