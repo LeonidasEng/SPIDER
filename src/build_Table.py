@@ -1,6 +1,6 @@
 import os
 import json
-import datetime
+from datetime import datetime, timezone
 import pandas as pd
 
 DATASETS = {
@@ -18,8 +18,29 @@ def importFile(file_path:str):
     except FileNotFoundError:
         raise ValueError(f"JSON file not found at: {file_path}.")
 
-def extractObservedKp():
-    pass
+def extractObservedKp(observed_json:dict):
+    rows = []
+    
+    for day, data in observed_json.items():
+        bins = data.get("estimated_planetary", [])
+
+        for bin_entry in bins:
+            time_str, kp_obs = bin_entry
+
+            # 2022-01-01 00-03UT
+            date_part, hour_part = time_str.split()
+            start_hour = hour_part.split("-")[0]
+
+            valid_start = datetime.strptime(f"{date_part} {start_hour}", "%Y-%M-%d %H").replace(tzinfo=timezone.utc)
+
+            rows.append({
+                "valid_start_utc": valid_start,
+                "kp_obs": kp_obs
+            })
+
+    return rows
+            
+
 
 def extractGeomagForecast():
     pass
@@ -62,6 +83,9 @@ def main():
     
     observed_data = {}
     observed_path = getProcDatapath(base, "observed_kp")
+
+    all_rows = []
+
     years = sorted(d for d in os.listdir(observed_path) 
                    if os.path.isdir(os.path.join(observed_path, d)))
     for year in years:
@@ -74,9 +98,19 @@ def main():
             filepath = os.path.join(year_path, file_name)
             observed_json = importFile(filepath)
 
-            rows = extractObservedKp()
-
-    print("STOP!")
+            rows = extractObservedKp(observed_json)
+            all_rows.extend(rows)
+    
+    print(f"Extracted {len(all_rows)} observed bins")
+    all_rows.sort(key=lambda x: x["valid_start_utc"])
+    df_obs = pd.DataFrame(all_rows)
+    df_obs = df_obs.sort_values("valid_start_utc").reset_index(drop=True)
+    print(df_obs.head())
+    print(df_obs.tail())
+    print(df_obs.info())
 
 if __name__ == "__main__":
     main()
+
+
+
