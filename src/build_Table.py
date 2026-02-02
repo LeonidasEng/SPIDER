@@ -31,7 +31,7 @@ def extractObservedKp(observed_json:dict):
             date_part, hour_part = time_str.split()
             start_hour = hour_part.split("-")[0]
 
-            valid_start = datetime.strptime(f"{date_part} {start_hour}", "%Y-%M-%d %H").replace(tzinfo=timezone.utc)
+            valid_start = datetime.strptime(f"{date_part} {start_hour}", "%Y-%m-%d %H").replace(tzinfo=timezone.utc)
 
             rows.append({
                 "valid_start_utc": valid_start,
@@ -40,20 +40,148 @@ def extractObservedKp(observed_json:dict):
 
     return rows
             
-def extractGeomagForecast():
-    pass
+def extractGeomagForecastKp(geomag_json):
+    rows = []
 
-def extract3dayForecast():
-    pass
+    for day, forecast in geomag_json.items():
+        for key, data in forecast.items():
+            # Multiple keys at this level
+            if key == "issue":
+                # Track issue date to compute lead day and hour
+                issue_date = data
+                date_part, time_part, tz_part = issue_date.split() # Date Time Timezone
+                start_time = time_part.rsplit(":", 1)[0] # Extract Hours and Minutes - some issues aren't on the hour
+                issue_start = datetime.strptime(f"{date_part} {start_time}", "%Y-%m-%d %H:%M").replace(tzinfo=timezone.utc)
+                continue
+            elif key != "kp":
+                # Ignore for now - Reintroduce other data later in project
+                continue 
+
+            forecast_bins = ["n+1", "n+2", "n+3"] # Iterate through forecast bins
+            for bin in forecast_bins:
+                n_bins = data.get(bin, [])
+                for bin_entry in n_bins:
+                    time_str, geomag_kp = bin_entry
+                    date_part, hour_part = time_str.split() # Date Time
+                    start_hour = hour_part.split("-")[0] # 00-03UT get first part
+
+                    valid_start = datetime.strptime(f"{date_part} {start_hour}", "%Y-%m-%d %H").replace(tzinfo=timezone.utc)
+
+                    lead = valid_start - issue_start
+                    lead_hours = (lead.total_seconds() / 3600) # Total seconds / Seconds per hour
+
+                    rows.append({
+                        "valid_start_utc": valid_start,
+                        "kp_geomag": geomag_kp,         # Geomag Prediction
+                        "lead_day": lead.days,          # Days since issue, expect 1,2,3
+                        "lead_time": lead_hours         # Hours since issue
+                    })
+
+    return rows
+
+def extract3dayForecast(three_day_json:str):
+    rows = []
+
+    for day, forecast in three_day_json.items():
+        for key, data in forecast.items():
+            if key == "issue":
+                # Track issue date to comput lead day and hour
+                issue_date = data
+                date_part, time_part, tz_part = issue_date.split() # Date Time Timezone
+                start_time = time_part.rsplit(":", 1)[0] # Extract Hourse and Minutes - some issues aren't on the hour
+                issue_start = datetime.strptime(f"{date_part} {start_time}", "%Y-%m-%d %H:%M").replace(tzinfo=timezone.utc)
+                continue
+            elif key != "kp":
+                # Ignore for now - Reintroduce other data later in project
+                # Metadata could be useful later
+                continue
+
+            forecast_bins = ["n", "n+1", "n+2"] # Iterate through forecast bins
+            for bin in forecast_bins:
+                n_bins = data.get(bin, [])
+                for bin_entry in n_bins:
+                    time_str, threeday_kp, scale_kp = bin_entry
+                    date_part, hour_part = time_str.split() # Date Time
+                    start_hour = hour_part.split("-")[0] # 00-03UT get first part
+
+                    valid_start = datetime.strptime(f"{date_part} {start_hour}", "%Y-%m-%d %H").replace(tzinfo=timezone.utc)
+
+                    lead = valid_start - issue_start
+                    lead_hours = (lead.total_seconds() / 3600) # Total seconds / Seconds per hour
+
+                    if lead_hours < 0:
+                        continue # Omit readings before issue date 00-12UT
+
+                    rows.append({
+                        "valid_start_utc": valid_start,
+                        "kp_threeday": threeday_kp,     # Three day Prediction
+                        "lead_day": lead.days,          # Days since issue, expect 0,1,2
+                        "lead_time": lead_hours         # Hours since issue
+                    })
+
+    return rows
+
 
 def extractOmni2():
     pass
 
+def build3DayForecast(three_day_forecast_path:str):
+    threeday_data = []
 
-def buildForecast(data:dict):
+    years = sorted(d for d in os.listdir(three_day_forecast_path)
+                   if os.path.isdir(os.path.join(three_day_forecast_path, d)))
+    
+    # Year sub-folders inside processed 3day_forecast
+    for year in years:
+        year_path = os.path.join(three_day_forecast_path, year)
 
+        # Years are broken down into monthly files
+        for file_name in sorted(os.listdir(year_path)):
+            if not file_name.endswith(".json"):
+                continue
+            
+            file_path = os.path.join(year_path, file_name)
+            three_day_json = importFile(file_path)
 
-    pass
+            rows = extract3dayForecast(three_day_json)
+            threeday_data.extend(rows)
+    
+    print(f"Extracted {len(threeday_data)} 3day bins")
+
+    threeday_data.sort(key=lambda x: x["valid_start_utc"])
+    df_threeday = pd.DataFrame(threeday_data) # Create DataFrame for 3day forecat
+    df_threeday = df_threeday.sort_values("valid_start_utc").reset_index(drop=True) # Enforce sort and remove index to new one
+
+    return df_threeday
+
+def buildGeomagForecast(geomag_forecast_path:str):
+    geomag_data = []
+
+    years = sorted(d for d in os.listdir(geomag_forecast_path)
+                   if os.path.isdir(os.path.join(geomag_forecast_path, d)))
+    
+    # Year sub-folders inside processed geomag_forecast
+    for year in years:
+        year_path = os.path.join(geomag_forecast_path, year)
+
+        # Years are broken down into monthly files
+        for file_name in sorted(os.listdir(year_path)):
+            if not file_name.endswith(".json"):
+                continue
+        
+            file_path = os.path.join(year_path, file_name)
+            geomag_json = importFile(file_path)
+
+            rows = extractGeomagForecastKp(geomag_json)
+            geomag_data.extend(rows) # Extend data with all available forecast data
+    
+    print(f"Extracted {len(geomag_data)} geomag bins")
+
+    geomag_data.sort(key=lambda x: x["valid_start_utc"])
+    df_geomag = pd.DataFrame(geomag_data) # Create DataFrame for geomag forecast
+    df_geomag = df_geomag.sort_values("valid_start_utc").reset_index(drop=True) # Enforce sort and remove index to set new one
+    
+    return df_geomag
 
 def buildObserved(observed_path:str):
     observed_data = []
@@ -109,9 +237,22 @@ def main():
     omni_path = getProcDatapath(base, "omni2")
 
     df_obs = buildObserved(observed_path)
-    print(df_obs.head())
-    print(df_obs.tail())
-    print(df_obs.info())
+    df_geomag = buildGeomagForecast(geomag_forecast_path)
+    df_3day = build3DayForecast(three_forecast_path)
+    df_omni = buildOMNI()
+    
+    '''
+        print(df_obs.head())
+        print(df_obs.tail())
+        print(df_obs.info())
+        print(df_geomag.head())
+        print(df_geomag.tail())
+        print(df_geomag.info())
+        print(df_3day.head())
+        print(df_3day.tail())
+        print(df_3day.info())
+    '''
+    print("FIN.")
 
 if __name__ == "__main__":
     main()
