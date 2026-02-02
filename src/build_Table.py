@@ -122,8 +122,34 @@ def extract3dayForecast(three_day_json:str):
     return rows
 
 
-def extractOmni2():
-    pass
+def extractOmni2(omni2_json:dict):
+    rows = []
+
+    FIELDS = [
+        "bz_gsm",
+        "b_mag",
+        "v_sw",
+        "np",
+        "pdyn",
+        "ey",
+        "beta",
+        "mach_alfven",
+        "f10.7"    
+    ] # Iterate through FIELDS safer
+
+    for day, daily_data in omni2_json.items():
+        for hour, hourly_data in daily_data.items():
+
+            valid_start = datetime.strptime(f"{day} {hour}", "%Y-%m-%d %H").replace(tzinfo=timezone.utc)
+            
+            row = {"valid_start_utc": valid_start,
+                   **{field: hourly_data.get(field, {}).get("value") for field in FIELDS}} # Get "value"s value with (**)
+
+            rows.append(row)
+    
+    return rows
+
+
 
 def build3DayForecast(three_day_forecast_path:str):
     threeday_data = []
@@ -212,10 +238,37 @@ def buildObserved(observed_path:str):
 
     return df_obs
 
-def buildOMNI():
-    pass
+def buildOMNI(omni_path:str):
+    omni2_data = []
 
-def buildDF():
+    # Get sorted list of year sub-directories inside observed
+    years = sorted(d for d in os.listdir(omni_path)
+                   if os.path.isdir(os.path.join(omni_path, d)))
+    
+    for year in years:
+        year_path = os.path.join(omni_path, year)
+
+        # Sort and extract files in a single year directory
+        for file_name in sorted(os.listdir(year_path)):
+            if not file_name.endswith(".json"):
+                continue
+
+            file_path = os.path.join(year_path, file_name)
+            omni2_json = importFile(file_path)
+
+            rows = extractOmni2(omni2_json)
+            omni2_data.extend(rows)
+    
+    print(f"Extracted {len(omni2_data)} OMNI2 bins")
+
+    omni2_data.sort(key=lambda x: x["valid_start_utc"])
+    df_omni = pd.DataFrame(omni2_data)
+    df_omni = df_omni.sort_values("valid_start_utc").reset_index(drop=True)
+
+    return df_omni
+
+
+def buildTable(df_obs:pd.DataFrame, df_geomag:pd.DataFrame, df_3day:pd.DataFrame, df_omni:pd.DataFrame):
     pass
 
 
@@ -239,7 +292,9 @@ def main():
     df_obs = buildObserved(observed_path)
     df_geomag = buildGeomagForecast(geomag_forecast_path)
     df_3day = build3DayForecast(three_forecast_path)
-    df_omni = buildOMNI()
+    df_omni = buildOMNI(omni_path)
+
+    df_all = buildTable(df_obs, df_geomag, df_3day, df_omni)
     
     '''
         print(df_obs.head())
@@ -251,7 +306,11 @@ def main():
         print(df_3day.head())
         print(df_3day.tail())
         print(df_3day.info())
+        print(df_omni.head)
+        print(df_omni.tail)
+        print(df_omni.info)
     '''
+    
     print("FIN.")
 
 if __name__ == "__main__":
