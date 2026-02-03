@@ -12,6 +12,7 @@ DATASETS = {
 
 def importFile(file_path:str):
     try:
+        # Helper function for reading in JSON file
         with open(file_path, "r", encoding="utf-8") as f:
             data = json.load(f)
             return data
@@ -30,7 +31,8 @@ def extractObservedKp(observed_json:dict):
             # 2022-01-01 00-03UT
             date_part, hour_part = time_str.split()
             start_hour = hour_part.split("-")[0]
-
+            
+            # Datetime this measurement started from (start of 3-hour bin)
             valid_start = datetime.strptime(f"{date_part} {start_hour}", "%Y-%m-%d %H").replace(tzinfo=timezone.utc)
 
             rows.append({
@@ -65,9 +67,10 @@ def extractGeomagForecastKp(geomag_json):
                     date_part, hour_part = time_str.split() # Date Time
                     start_hour = hour_part.split("-")[0] # 00-03UT get first part
 
+                    # Extract valid start for Geomag Forecast (start of 3-hour bin)
                     valid_start = datetime.strptime(f"{date_part} {start_hour}", "%Y-%m-%d %H").replace(tzinfo=timezone.utc)
 
-                    lead = valid_start - issue_start
+                    lead = valid_start - issue_start           # Calculate lead time
                     lead_hours = (lead.total_seconds() / 3600) # Total seconds / Seconds per hour
 
                     rows.append({
@@ -86,10 +89,10 @@ def extract3dayForecastKp(three_day_json:str):
     for day, forecast in three_day_json.items():
         for key, data in forecast.items():
             if key == "issue":
-                # Track issue date to comput lead day and hour
+                # Track issue date to compute lead day and hour
                 issue_date = data
                 date_part, time_part, tz_part = issue_date.split() # Date Time Timezone
-                start_time = time_part.rsplit(":", 1)[0] # Extract Hourse and Minutes - some issues aren't on the hour
+                start_time = time_part.rsplit(":", 1)[0] # Extract Hours and Minutes - some issues aren't on the hour
                 issue_start = datetime.strptime(f"{date_part} {start_time}", "%Y-%m-%d %H:%M").replace(tzinfo=timezone.utc)
                 continue
             elif key != "kp":
@@ -145,13 +148,13 @@ def extractOmni2(omni2_json:dict):
             valid_start = datetime.strptime(f"{day} {hour}", "%Y-%m-%d %H").replace(tzinfo=timezone.utc)
             
             row = {"valid_start_utc": valid_start,
-                   **{field: hourly_data.get(field, {}).get("value") for field in FIELDS}} # Get "value"s value with (**)
+                   **{field: hourly_data.get(field, {}).get("value") for field in FIELDS}} # Unpack value's value with (**)
 
             rows.append(row)
     
     return rows
 
-def forecastView(df:pd.DataFrame, mode:str, *, drop_missing: bool = True) -> pd.DataFrame:
+def forecastView(df:pd.DataFrame, mode:str, drop_missing: bool = True) -> pd.DataFrame:
     '''
     Return a view of the merged SPIDER table under specific forecast lens
     :param df: Canonical merged table (CRISP-DM)
@@ -162,28 +165,45 @@ def forecastView(df:pd.DataFrame, mode:str, *, drop_missing: bool = True) -> pd.
     '''
     df_view = df.copy()
 
+    # Define required filters for different data views (easier than having different separate tables)
     if mode == "3day":
         sort_columns = ["issue_time_utc", "valid_start_utc"]
         required = ["kp_threeday", "lead_day", "lead_time"]
+    
     elif mode == "geomag":
         sort_columns = ["issue_time_utc_Geomag", "valid_start_utc"]
-        required = ["kp_geomag", "lead_day_Geomag", "lead_time_Geomag"]
+        required = ["issue_time_utc_Geomag","kp_geomag", "lead_day_Geomag", "lead_time_Geomag"]
+    
     elif mode == "observed":
         sort_columns = ["valid_start_utc"]
         required = ["kp_obs"]
     else:
         raise ValueError(f"Unknown mode '{mode}' Expected '3day', 'geomag', 'observed'")
     
-    if drop_missing:
-        df_view = df_view.dropna(subset=required)
+    # Error check for missing columns
+    missing_req = [col for col in required if col not in df_view.columns]
+    if missing_req:
+        raise KeyError(
+            f"Missing required columns for mode '{mode}': {missing_req}"
+        )
 
-    return df_view.sort_values(sort_columns).reset_index(drop=True)
+    missing_sort = [col for col in sort_columns if col not in df_view.columns]
+    if missing_sort:
+        raise KeyError(
+            f"Missing sort columns for mode '{mode}': {missing_sort}"
+        )
+    
+    if drop_missing:
+        df_view = df_view.dropna(subset=required) # Default: True, remove missing entries
+
+    return df_view.sort_values(sort_columns).reset_index(drop=True) # Apply specified sort
 
 
 
 def build3DayForecast(three_day_forecast_path:str):
     threeday_data = []
 
+    # Sort if sub-folders in a directory at path
     years = sorted(d for d in os.listdir(three_day_forecast_path)
                    if os.path.isdir(os.path.join(three_day_forecast_path, d)))
     
@@ -198,9 +218,10 @@ def build3DayForecast(three_day_forecast_path:str):
             
             file_path = os.path.join(year_path, file_name)
             three_day_json = importFile(file_path)
-
+            
+            # Extract records from JSON and store in rows
             rows = extract3dayForecastKp(three_day_json)
-            threeday_data.extend(rows)
+            threeday_data.extend(rows) # Extend data on iteration
     
     print(f"Extracted {len(threeday_data)} 3day bins")
 
@@ -213,6 +234,7 @@ def build3DayForecast(three_day_forecast_path:str):
 def buildGeomagForecast(geomag_forecast_path:str):
     geomag_data = []
 
+    # Sort if sub-folders in a directory at path
     years = sorted(d for d in os.listdir(geomag_forecast_path)
                    if os.path.isdir(os.path.join(geomag_forecast_path, d)))
     
@@ -290,9 +312,9 @@ def buildOMNI(omni_path:str):
             omni2_data.extend(rows)
     
     print(f"Extracted {len(omni2_data)} OMNI2 bins")
-
-    omni2_data.sort(key=lambda x: x["valid_start_utc"])
-    df_omni = pd.DataFrame(omni2_data)
+    
+    omni2_data.sort(key=lambda x: x["valid_start_utc"]) # Sort by valid start
+    df_omni = pd.DataFrame(omni2_data) # Create DataFrame for omni2
     df_omni = df_omni.sort_values("valid_start_utc").reset_index(drop=True)
 
     return df_omni
@@ -300,8 +322,9 @@ def buildOMNI(omni_path:str):
 
 def buildTable(df_obs:pd.DataFrame, df_geomag:pd.DataFrame, df_3day:pd.DataFrame, df_omni:pd.DataFrame) -> pd.DataFrame:
 
-    df = df_obs.copy()
-    # 3DAY
+    df = df_obs.copy() # Copy observed DataFrame as reference
+    
+    # 3DAY (similar to observed data, easy to merge)
     df = df.merge(df_3day, how="left", on="valid_start_utc", suffixes=("", "_3Day"))
     df = df.sort_values(["issue_time_utc", "valid_start_utc"]).reset_index(drop=True)
     
@@ -310,37 +333,49 @@ def buildTable(df_obs:pd.DataFrame, df_geomag:pd.DataFrame, df_3day:pd.DataFrame
         "kp_threeday",
         "lead_day",
         "lead_time"
-    ]
+    ] # Define columns that have no data - cannot be used so dropped
 
     # Both observed and predicted values need to be available
     df = df.dropna(subset=missing_cols, how="all").reset_index(drop=True)
 
     # GEOMAG (valid_start_utc can be forecast by different issue days, standard merge will not work)
-    # Lead time depend on issue_time_utc
-    df = pd.merge_asof(
-        df.sort_values("valid_start_utc"),
-        df_geomag.sort_values("issue_time_utc"),
-        left_on="valid_start_utc",
-        right_on="issue_time_utc",
-        direction="backward", # Match each observation with most recent forecast
-        suffixes=("", "_Geomag")) # Add suffix to Geomag columns if shared
-    
+    geomag_issues = (df_geomag[["issue_time_utc"]].drop_duplicates().sort_values("issue_time_utc")
+        .reset_index(drop=True))
+
+    # Lead time depend on issue_time_utc for geomag_forecast
+    df = pd.merge_asof(df.sort_values("valid_start_utc"), geomag_issues,
+                       left_on="valid_start_utc", right_on="issue_time_utc", direction="backward",
+                       suffixes=("", "_Geomag"))
+
+    df = df.merge(df_geomag.rename(columns={"issue_time_utc": "issue_time_utc_Geomag"}),
+                  how="left", on=["issue_time_utc_Geomag", "valid_start_utc"],
+                  suffixes=("", "_Geomag"))
+
+    # Sanity check (check for data leakage)
     mask = df["issue_time_utc_Geomag"].notna()
-    assert (
-        df.loc[mask, "issue_time_utc_Geomag"] <= df.loc[mask, "valid_start_utc"]
-    ).all(), "Geomag forecast issued after observed valid time" # Ensure Geomag forecast correctly aligned
-
-    df = df.drop(columns=["valid_start_utc_Geomag"]) # Aux column can safely be removed
-    df["lead_time"] = df["lead_time"].round(2) # Round lead_time
-    df["lead_time_Geomag"] = df["lead_time_Geomag"].round(2) # Round lead time
-
-    # OMNI2
     
-    return df
+    # Check that lead_time_Geomag is consistent after merge
+    computed = (
+        (df.loc[mask, "valid_start_utc"] -
+         df.loc[mask, "issue_time_utc_Geomag"])
+        .dt.total_seconds() / 3600
+    )
+    assert (computed - df.loc[mask, "lead_time_Geomag"]).abs().max() < 1e-6, \
+        "Geomag lead_time mismatch after merge"
+
+    df["lead_time"] = df["lead_time"].round(2)                  # Round to 2 decimal places 
+    df["lead_time_Geomag"] = df["lead_time_Geomag"].round(2)    # Round to 2 decimal places
+
+    # Merge OMNI2 
+    df = pd.merge_asof(df.sort_values("valid_start_utc"), df_omni.sort_values("valid_start_utc"),
+                       on="valid_start_utc", direction="backward", tolerance=pd.Timedelta("3H"))
+
+    return df.reset_index(drop=True)
 
 
 def getProcDatapath(base:str, dataset_key: str):
     try:
+        # Try to find data at data_processed path
         return os.path.join(base, "data/data_processed", DATASETS[dataset_key])
 
     except:
@@ -351,43 +386,54 @@ def main():
     if base is None:
         raise EnvironmentError("SPIDER system variable is not set!")
     
+    # Does path exist for processed data (observed, forecast, omni)
     observed_path = getProcDatapath(base, "observed_kp")
     geomag_forecast_path = getProcDatapath(base, "geomag_forecast")
     three_forecast_path = getProcDatapath(base, "3day_forecast")
     omni_path = getProcDatapath(base, "omni2")
 
+    # Build DataFrames for processed data
     df_obs = buildObserved(observed_path)
     df_geomag = buildGeomagForecast(geomag_forecast_path)
     df_3day = build3DayForecast(three_forecast_path)
     df_omni = buildOMNI(omni_path)
 
+    # Merge into canonical DataFrame
     df_all = buildTable(df_obs, df_geomag, df_3day, df_omni)
 
+    '''
+    3-Day Forecast View
+        - Daily forecast (n, n+1, n+2)
+        - Missing forecast rows dropped by default
+        - Each valid start time has a single issue context.
+        - lead_day and lead_time are categorical
+    '''
     df_3day_view = forecastView(df_all, mode="3day")
+    #print(df_3day_view.info())
+    
+    '''
+    Geomagnetic Forecast View
+        - Continuous in lead time
+        - Missing forecast rows dropped by default
+        - 'lead_time_Geomag' is valid.
+        - 'lead_day_Geomag' is for general grouping, 
+           should not be used as categorical data.
+        
+    '''
     df_geomag_view = forecastView(df_all, mode="geomag")
+    #print(df_geomag_view.info())
+    '''
+    Observed Data View
+        Measured Kp context + OMNI2 upstream conditions 
+        No issue or lead-days/times
+        Used as reference data
+    '''
     df_observed_view = forecastView(df_all, mode="observed")
+    #print(df_observed_view.info())
 
-    print("3-day View")
-    print(df_3day_view.head())
-    print(df_3day_view.tail())
-    print(df_3day_view.info())
-    
-    '''
-        print(df_obs.head())
-        print(df_obs.tail())
-        print(df_obs.info())
-        print(df_geomag.head())
-        print(df_geomag.tail())
-        print(df_geomag.info())
-        print(df_3day.head())
-        print(df_3day.tail())
-        print(df_3day.info())
-        print(df_omni.head)
-        print(df_omni.tail)
-        print(df_omni.info)
-    '''
-    
-    print("FIN.")
+    # With the views defined I can now edit and align the merged DataFrame
+    # to whatever view is required. I can also calculate the labels
+    # and targets for modelling 
 
 if __name__ == "__main__":
     main()
