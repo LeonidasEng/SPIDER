@@ -151,6 +151,36 @@ def extractOmni2(omni2_json:dict):
     
     return rows
 
+def forecastView(df:pd.DataFrame, mode:str, *, drop_missing: bool = True) -> pd.DataFrame:
+    '''
+    Return a view of the merged SPIDER table under specific forecast lens
+    :param df: Canonical merged table (CRISP-DM)
+    :param mode: Viewing mode (3day, geomag, observed)
+    :param drop_missing: Drop rows without forecast data for selected view
+
+    :return pd.DataFrame: Sorted and filtered ready for data analysis 
+    '''
+    df_view = df.copy()
+
+    if mode == "3day":
+        sort_columns = ["issue_time_utc", "valid_start_utc"]
+        required = ["kp_threeday", "lead_day", "lead_time"]
+    elif mode == "geomag":
+        sort_columns = ["issue_time_utc_Geomag", "valid_start_utc"]
+        required = ["kp_geomag", "lead_day_Geomag", "lead_time_Geomag"]
+    elif mode == "observed":
+        sort_columns = ["valid_start_utc"]
+        required = ["kp_obs"]
+    else:
+        raise ValueError(f"Unknown mode '{mode}' Expected '3day', 'geomag', 'observed'")
+    
+    if drop_missing:
+        df_view = df_view.dropna(subset=required)
+
+    return df_view.sort_values(sort_columns).reset_index(drop=True)
+
+
+
 def build3DayForecast(three_day_forecast_path:str):
     threeday_data = []
 
@@ -282,7 +312,7 @@ def buildTable(df_obs:pd.DataFrame, df_geomag:pd.DataFrame, df_3day:pd.DataFrame
         "lead_time"
     ]
 
-    # Both observed and predicted need to be available
+    # Both observed and predicted values need to be available
     df = df.dropna(subset=missing_cols, how="all").reset_index(drop=True)
 
     # GEOMAG (valid_start_utc can be forecast by different issue days, standard merge will not work)
@@ -292,11 +322,21 @@ def buildTable(df_obs:pd.DataFrame, df_geomag:pd.DataFrame, df_3day:pd.DataFrame
         df_geomag.sort_values("issue_time_utc"),
         left_on="valid_start_utc",
         right_on="issue_time_utc",
-        direction="backward",
-        suffixes=("", "_Geomag"))
+        direction="backward", # Match each observation with most recent forecast
+        suffixes=("", "_Geomag")) # Add suffix to Geomag columns if shared
     
-    print("STAHP!")
-    pass
+    mask = df["issue_time_utc_Geomag"].notna()
+    assert (
+        df.loc[mask, "issue_time_utc_Geomag"] <= df.loc[mask, "valid_start_utc"]
+    ).all(), "Geomag forecast issued after observed valid time" # Ensure Geomag forecast correctly aligned
+
+    df = df.drop(columns=["valid_start_utc_Geomag"]) # Aux column can safely be removed
+    df["lead_time"] = df["lead_time"].round(2) # Round lead_time
+    df["lead_time_Geomag"] = df["lead_time_Geomag"].round(2) # Round lead time
+
+    # OMNI2
+    
+    return df
 
 
 def getProcDatapath(base:str, dataset_key: str):
@@ -322,6 +362,15 @@ def main():
     df_omni = buildOMNI(omni_path)
 
     df_all = buildTable(df_obs, df_geomag, df_3day, df_omni)
+
+    df_3day_view = forecastView(df_all, mode="3day")
+    df_geomag_view = forecastView(df_all, mode="geomag")
+    df_observed_view = forecastView(df_all, mode="observed")
+
+    print("3-day View")
+    print(df_3day_view.head())
+    print(df_3day_view.tail())
+    print(df_3day_view.info())
     
     '''
         print(df_obs.head())
