@@ -71,6 +71,7 @@ def extractGeomagForecastKp(geomag_json):
                     lead_hours = (lead.total_seconds() / 3600) # Total seconds / Seconds per hour
 
                     rows.append({
+                        "issue_time_utc": issue_start,
                         "valid_start_utc": valid_start,
                         "kp_geomag": geomag_kp,         # Geomag Prediction
                         "lead_day": lead.days,          # Days since issue, expect 1,2,3
@@ -79,7 +80,7 @@ def extractGeomagForecastKp(geomag_json):
 
     return rows
 
-def extract3dayForecast(three_day_json:str):
+def extract3dayForecastKp(three_day_json:str):
     rows = []
 
     for day, forecast in three_day_json.items():
@@ -113,6 +114,7 @@ def extract3dayForecast(three_day_json:str):
                         continue # Omit readings before issue date 00-12UT
 
                     rows.append({
+                        "issue_time_utc": issue_start,
                         "valid_start_utc": valid_start,
                         "kp_threeday": threeday_kp,     # Three day Prediction
                         "lead_day": lead.days,          # Days since issue, expect 0,1,2
@@ -149,8 +151,6 @@ def extractOmni2(omni2_json:dict):
     
     return rows
 
-
-
 def build3DayForecast(three_day_forecast_path:str):
     threeday_data = []
 
@@ -169,14 +169,14 @@ def build3DayForecast(three_day_forecast_path:str):
             file_path = os.path.join(year_path, file_name)
             three_day_json = importFile(file_path)
 
-            rows = extract3dayForecast(three_day_json)
+            rows = extract3dayForecastKp(three_day_json)
             threeday_data.extend(rows)
     
     print(f"Extracted {len(threeday_data)} 3day bins")
 
-    threeday_data.sort(key=lambda x: x["valid_start_utc"])
+    threeday_data.sort(key=lambda x: x["issue_time_utc"]) # sort by issue_time_utc or valid_start_utc
     df_threeday = pd.DataFrame(threeday_data) # Create DataFrame for 3day forecat
-    df_threeday = df_threeday.sort_values("valid_start_utc").reset_index(drop=True) # Enforce sort and remove index to new one
+    df_threeday = df_threeday.sort_values(["issue_time_utc", "valid_start_utc"]).reset_index(drop=True) # Enforce sort and remove index to new one
 
     return df_threeday
 
@@ -203,9 +203,9 @@ def buildGeomagForecast(geomag_forecast_path:str):
     
     print(f"Extracted {len(geomag_data)} geomag bins")
 
-    geomag_data.sort(key=lambda x: x["valid_start_utc"])
+    geomag_data.sort(key=lambda x: x["issue_time_utc"])
     df_geomag = pd.DataFrame(geomag_data) # Create DataFrame for geomag forecast
-    df_geomag = df_geomag.sort_values("valid_start_utc").reset_index(drop=True) # Enforce sort and remove index to set new one
+    df_geomag = df_geomag.sort_values(["issue_time_utc", "valid_start_utc"]).reset_index(drop=True) # Enforce sort and remove index to set new one
     
     return df_geomag
 
@@ -268,7 +268,34 @@ def buildOMNI(omni_path:str):
     return df_omni
 
 
-def buildTable(df_obs:pd.DataFrame, df_geomag:pd.DataFrame, df_3day:pd.DataFrame, df_omni:pd.DataFrame):
+def buildTable(df_obs:pd.DataFrame, df_geomag:pd.DataFrame, df_3day:pd.DataFrame, df_omni:pd.DataFrame) -> pd.DataFrame:
+
+    df = df_obs.copy()
+    # 3DAY
+    df = df.merge(df_3day, how="left", on="valid_start_utc", suffixes=("", "_3Day"))
+    df = df.sort_values(["issue_time_utc", "valid_start_utc"]).reset_index(drop=True)
+    
+    missing_cols = [
+        "issue_time_utc",
+        "kp_threeday",
+        "lead_day",
+        "lead_time"
+    ]
+
+    # Both observed and predicted need to be available
+    df = df.dropna(subset=missing_cols, how="all").reset_index(drop=True)
+
+    # GEOMAG (valid_start_utc can be forecast by different issue days, standard merge will not work)
+    # Lead time depend on issue_time_utc
+    df = pd.merge_asof(
+        df.sort_values("valid_start_utc"),
+        df_geomag.sort_values("issue_time_utc"),
+        left_on="valid_start_utc",
+        right_on="issue_time_utc",
+        direction="backward",
+        suffixes=("", "_Geomag"))
+    
+    print("STAHP!")
     pass
 
 
