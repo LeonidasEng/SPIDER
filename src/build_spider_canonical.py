@@ -39,7 +39,6 @@ def extractObservedKp(observed_json:dict):
                 "valid_start_utc": valid_start,
                 "kp_obs": kp_obs
             })
-
     return rows
             
 def extractGeomagForecastKp(geomag_json):
@@ -80,7 +79,6 @@ def extractGeomagForecastKp(geomag_json):
                         "lead_day": lead.days,          # Days since issue, expect 1,2,3
                         "lead_time": lead_hours         # Hours since issue
                     })
-
     return rows
 
 def extract3dayForecastKp(three_day_json:str):
@@ -110,7 +108,7 @@ def extract3dayForecastKp(three_day_json:str):
 
                     valid_start = datetime.strptime(f"{date_part} {start_hour}", "%Y-%m-%d %H").replace(tzinfo=timezone.utc)
 
-                    lead = valid_start - issue_start
+                    lead = valid_start - issue_start # Starting at Day n @ 12:30 for n-n+1-n+2 there will be 8, 8, 3 bins
                     lead_hours = (lead.total_seconds() / 3600) # Total seconds / Seconds per hour
 
                     if lead_hours < 0:
@@ -153,52 +151,6 @@ def extractOmni2(omni2_json:dict):
             rows.append(row)
     
     return rows
-
-def forecastView(df:pd.DataFrame, mode:str, drop_missing: bool = True) -> pd.DataFrame:
-    '''
-    Return a view of the merged SPIDER table under specific forecast lens
-    :param df: Canonical merged table (CRISP-DM)
-    :param mode: Viewing mode (3day, geomag, observed)
-    :param drop_missing: Drop rows without forecast data for selected view
-
-    :return pd.DataFrame: Sorted and filtered ready for data analysis 
-    '''
-    df_view = df.copy()
-
-    # Define required filters for different data views (easier than having different separate tables)
-    if mode == "3day":
-        sort_columns = ["issue_time_utc", "valid_start_utc"]
-        required = ["kp_threeday", "lead_day", "lead_time"]
-    
-    elif mode == "geomag":
-        sort_columns = ["issue_time_utc_Geomag", "valid_start_utc"]
-        required = ["issue_time_utc_Geomag","kp_geomag", "lead_day_Geomag", "lead_time_Geomag"]
-    
-    elif mode == "observed":
-        sort_columns = ["valid_start_utc"]
-        required = ["kp_obs"]
-    else:
-        raise ValueError(f"Unknown mode '{mode}' Expected '3day', 'geomag', 'observed'")
-    
-    # Error check for missing columns
-    missing_req = [col for col in required if col not in df_view.columns]
-    if missing_req:
-        raise KeyError(
-            f"Missing required columns for mode '{mode}': {missing_req}"
-        )
-
-    missing_sort = [col for col in sort_columns if col not in df_view.columns]
-    if missing_sort:
-        raise KeyError(
-            f"Missing sort columns for mode '{mode}': {missing_sort}"
-        )
-    
-    if drop_missing:
-        df_view = df_view.dropna(subset=required) # Default: True, remove missing entries
-
-    return df_view.sort_values(sort_columns).reset_index(drop=True) # Apply specified sort
-
-
 
 def build3DayForecast(three_day_forecast_path:str):
     threeday_data = []
@@ -319,59 +271,49 @@ def buildOMNI(omni_path:str):
 
     return df_omni
 
+def buildTable3Day(df_3day:pd.DataFrame, df_obs:pd.DataFrame, df_omni:pd.DataFrame) -> pd.DataFrame:
+    df = df_3day.copy() # Important: Table forecast-centric NOT observation
 
-def buildTable(df_obs:pd.DataFrame, df_geomag:pd.DataFrame, df_3day:pd.DataFrame, df_omni:pd.DataFrame) -> pd.DataFrame:
-
-    df = df_obs.copy() # Copy observed DataFrame as reference
+    # 3DAY (attach valid time match)
+    df = df.merge(df_obs[["valid_start_utc", "kp_obs"]], # Align with valid time, merge kp_obs
+                  how="left", on="valid_start_utc")
     
-    # 3DAY (similar to observed data, easy to merge)
-    df = df.merge(df_3day, how="left", on="valid_start_utc", suffixes=("", "_3Day"))
-    df = df.sort_values(["issue_time_utc", "valid_start_utc"]).reset_index(drop=True)
-    
-    missing_cols = [
-        "issue_time_utc",
-        "kp_threeday",
-        "lead_day",
-        "lead_time"
-    ] # Define columns that have no data - cannot be used so dropped
+    # Drop rows without valid 3-day forecast
+    df = df.dropna(subset=["issue_time_utc", "kp_threeday"])
 
-    # Both observed and predicted values need to be available
-    df = df.dropna(subset=missing_cols, how="all").reset_index(drop=True)
-
-    # GEOMAG (valid_start_utc can be forecast by different issue days, standard merge will not work)
-    geomag_issues = (df_geomag[["issue_time_utc"]].drop_duplicates().sort_values("issue_time_utc")
-        .reset_index(drop=True))
-
-    # Lead time depend on issue_time_utc for geomag_forecast
-    df = pd.merge_asof(df.sort_values("valid_start_utc"), geomag_issues,
-                       left_on="valid_start_utc", right_on="issue_time_utc", direction="backward",
-                       suffixes=("", "_Geomag"))
-
-    df = df.merge(df_geomag.rename(columns={"issue_time_utc": "issue_time_utc_Geomag"}),
-                  how="left", on=["issue_time_utc_Geomag", "valid_start_utc"],
-                  suffixes=("", "_Geomag"))
-
-    # Sanity check (check for data leakage)
-    mask = df["issue_time_utc_Geomag"].notna()
-    
-    # Check that lead_time_Geomag is consistent after merge
-    computed = (
-        (df.loc[mask, "valid_start_utc"] -
-         df.loc[mask, "issue_time_utc_Geomag"])
-        .dt.total_seconds() / 3600
-    )
-    assert (computed - df.loc[mask, "lead_time_Geomag"]).abs().max() < 1e-6, \
-        "Geomag lead_time mismatch after merge"
+    # Merge OMNI (Upstream context (backwards), tolerance = 3 hours)
+    df = pd.merge_asof(df.sort_values("valid_start_utc"),
+                       df_omni.sort_values("valid_start_utc"),
+                       on="valid_start_utc",
+                       direction="backward",
+                       tolerance=pd.Timedelta("3h"))
 
     df["lead_time"] = df["lead_time"].round(2)                  # Round to 2 decimal places 
-    df["lead_time_Geomag"] = df["lead_time_Geomag"].round(2)    # Round to 2 decimal places
+    
+    return df.sort_values(["issue_time_utc", "valid_start_utc"]).reset_index(drop=True)
 
-    # Merge OMNI2 
-    df = pd.merge_asof(df.sort_values("valid_start_utc"), df_omni.sort_values("valid_start_utc"),
-                       on="valid_start_utc", direction="backward", tolerance=pd.Timedelta("3H"))
+def buildTableGeomag(df_geomag:pd.DataFrame, df_obs:pd.DataFrame, df_omni:pd.DataFrame) -> pd.DataFrame:
+    df = df_geomag.copy() # Important: Table forecast-centric NOT observation
 
-    return df.reset_index(drop=True)
+    # Merge observed Kp (exact valid time match)
+    df = df.merge(df_obs[["valid_start_utc", "kp_obs"]], how="left", on="valid_start_utc")
 
+    # Merge OMNI (contextual)
+    df = pd.merge_asof(df.sort_values("valid_start_utc"),
+                       df_omni.sort_values("valid_start_utc"),
+                       on="valid_start_utc",
+                       direction="backward",
+                       tolerance=pd.Timedelta("3h"))
+
+    # Sanity check: no lead time leakage
+    computed = ((df["valid_start_utc"] - df["issue_time_utc"]).dt.total_seconds() / 3600)
+    
+    assert (computed - df["lead_time"]).abs().max() < 1e-6, \
+            "Lead time mismatch"
+    
+    df["lead_time"] = df["lead_time"].round(2)                  # Round to 2 decimal places 
+    
+    return df.sort_values(["issue_time_utc", "lead_day", "valid_start_utc"]).reset_index(drop=True)
 
 def getProcDatapath(base:str, dataset_key: str):
     try:
@@ -398,42 +340,20 @@ def main():
     df_3day = build3DayForecast(three_forecast_path)
     df_omni = buildOMNI(omni_path)
 
-    # Merge into canonical DataFrame
-    df_all = buildTable(df_obs, df_geomag, df_3day, df_omni)
+    # Merge into canonical DataFrames
+    df_3day_canonical = buildTable3Day(df_3day, df_obs, df_omni)
+    df_geomag_canonical = buildTableGeomag(df_geomag, df_obs, df_omni)
 
-    '''
-    3-Day Forecast View
-        - Daily forecast (n, n+1, n+2)
-        - Missing forecast rows dropped by default
-        - Each valid start time has a single issue context.
-        - lead_day and lead_time are categorical
-    '''
-    df_3day_view = forecastView(df_all, mode="3day")
-    print(df_3day_view.info())
+    output_path = os.path.join(base, "data", "datasets")
+    os.makedirs(output_path, exist_ok=True)
+    canonical_3day = os.path.join(output_path, "spider_canonical_3day.parquet")
+    canonical_geomag = os.path.join(output_path, "spider_canonical_geomag.parquet")
     
-    '''
-    Geomagnetic Forecast View
-        - Continuous in lead time
-        - Missing forecast rows dropped by default
-        - 'lead_time_Geomag' is valid.
-        - 'lead_day_Geomag' is for general grouping, 
-           should not be used as categorical data.
-        
-    '''
-    df_geomag_view = forecastView(df_all, mode="geomag")
-    #print(df_geomag_view.info())
-    '''
-    Observed Data View
-        Measured Kp context + OMNI2 upstream conditions 
-        No issue or lead-days/times
-        Used as reference data
-    '''
-    df_observed_view = forecastView(df_all, mode="observed")
-    #print(df_observed_view.info())
+    # Output canonical merged dataframes as parquet 
+    df_3day_canonical.to_parquet(canonical_3day)
+    df_geomag_canonical.to_parquet(canonical_geomag)
 
-    # With the views defined I can now edit and align the merged DataFrame
-    # to whatever view is required. I can also calculate the labels
-    # and targets for modelling 
+    
 
 if __name__ == "__main__":
     main()
