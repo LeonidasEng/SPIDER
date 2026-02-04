@@ -409,7 +409,7 @@ def main():
         - lead_day and lead_time are categorical
     '''
     df_3day_view = forecastView(df_all, mode="3day")
-    #print(df_3day_view.info())
+    print(df_3day_view.info())
     
     '''
     Geomagnetic Forecast View
