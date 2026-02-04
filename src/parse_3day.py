@@ -364,6 +364,14 @@ def dumpJob(year:int, month:int, month_data:dict, proc_output:str):
 
     logger.info(f"Dumped data for {year}-{month:02d} -> {out_file}")
 
+def classifyTimePeriods(issue_ts: datetime) -> str:
+    minutes = issue_ts.hour * 60 + issue_ts.minute
+
+    if minutes < (12 * 60 + 30):
+        return "0030"
+    else:
+        return "1230"
+
 def main():
     base = os.environ.get('SPIDER')
     if base is None:
@@ -377,7 +385,7 @@ def main():
     data_rel = "data/raw/forecasts/3day/"
     data_path = os.path.join(base, data_rel)
     processed_path = os.path.join(base, "data", "data_processed", "3day_forecast")
-    data_dict = defaultdict(lambda: defaultdict(dict))
+    data_dict = defaultdict(lambda: defaultdict(lambda: defaultdict(dict))) # data_dict[slot][year][month]
     latest_issue_ts = {} # {"YYYY-MM-DD": datetime }
 
     for file_path, text in fileFetch(data_path):
@@ -391,13 +399,18 @@ def main():
         month = int(parts[-2])
 
         kp_data, radiation_data, blackout_data, issue_dt, issue_ts = parseSections(text)
+
+        issue_slot = classifyTimePeriods(issue_ts) # 0030 or 1230
         
-        # Enforce latest-only measurement
-        prev_ts = latest_issue_ts.get(issue_dt)
+        # Make both 0030 and 1230 available (let data drive omission decision)
+        slot_key = (issue_dt, issue_slot)
+        
+        prev_ts = latest_issue_ts.get(slot_key)
         if prev_ts is not None and issue_ts <= prev_ts:
-            logger.info(f"Skipping older forecast {issue_ts.strftime('%H:%M')}"
-                        f"for {issue_dt}")
+            logger.info(f"Skipping older {issue_slot} forecast "
+                        f"{issue_ts.strftime('%H:%M')} for {issue_dt}")
             continue
+
         # Update latest timestamp
         latest_issue_ts[issue_dt] = issue_ts
         kp_meta = extractKpMeta(kp_data)
@@ -407,12 +420,15 @@ def main():
         forecast = buildIndices(kp_data, radiation_data, blackout_data, 
                                 kp_meta, radiation_meta, blackout_meta,
                                 issue_dt, issue_ts)
-        data_dict[year][month].update(forecast) # Extend each month file don't override
+        data_dict[issue_slot][year][month].update(forecast) # Extend each month file don't override
         
     # Dump every month processed as a JSON file
-    for year in sorted(data_dict):
-        for month in sorted(data_dict[year]):
-            dumpJob(year, month, data_dict[year][month], processed_path)
+    for slot in sorted(data_dict):
+        slot_path = os.path.join(processed_path, f"3day_{slot}")
+    
+        for year in sorted(data_dict[slot]):
+            for month in sorted(data_dict[slot][year]):
+                dumpJob(year, month, data_dict[slot][year][month], slot_path)
 
 if __name__ == "__main__":
     main()
