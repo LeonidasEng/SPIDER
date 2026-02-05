@@ -315,10 +315,13 @@ def buildTableGeomag(df_geomag:pd.DataFrame, df_obs:pd.DataFrame, df_omni:pd.Dat
     
     return df.sort_values(["issue_time_utc", "lead_day", "valid_start_utc"]).reset_index(drop=True)
 
-def getProcDatapath(base:str, dataset_key: str):
+def getProcDatapath(base:str, dataset_key: str, sub_folder: str | None = None):
     try:
+        base_path = os.path.join(base, "data", "data_processed", DATASETS[dataset_key])
+        if sub_folder:
+            base_path = os.path.join(base_path, sub_folder)
         # Try to find data at data_processed path
-        return os.path.join(base, "data/data_processed", DATASETS[dataset_key])
+        return base_path
 
     except:
         raise ValueError(f"Unknown dataset key: {dataset_key}")
@@ -331,27 +334,33 @@ def main():
     # Does path exist for processed data (observed, forecast, omni)
     observed_path = getProcDatapath(base, "observed_kp")
     geomag_forecast_path = getProcDatapath(base, "geomag_forecast")
-    three_forecast_path = getProcDatapath(base, "3day_forecast")
+    three_forecast_morn_path = getProcDatapath(base, "3day_forecast", "3day_0030")
+    three_forecast_aft_path = getProcDatapath(base, "3day_forecast", "3day_1230")
     omni_path = getProcDatapath(base, "omni2")
 
     # Build DataFrames for processed data
     df_obs = buildObserved(observed_path)
     df_geomag = buildGeomagForecast(geomag_forecast_path)
-    df_3day = build3DayForecast(three_forecast_path)
+    df_3day_morn = build3DayForecast(three_forecast_morn_path)
+    df_3day_aft = build3DayForecast(three_forecast_aft_path)
     df_omni = buildOMNI(omni_path)
 
     # Merge into canonical DataFrames
-    df_3day_canonical = buildTable3Day(df_3day, df_obs, df_omni)
-    df_geomag_canonical = buildTableGeomag(df_geomag, df_obs, df_omni)
+    spider_3day_morn = buildTable3Day(df_3day_morn, df_obs, df_omni)
+    spider_3day_aft = buildTable3Day(df_3day_aft, df_obs, df_omni)
+    spider_geomag = buildTableGeomag(df_geomag, df_obs, df_omni)
 
     output_path = os.path.join(base, "data", "datasets")
     os.makedirs(output_path, exist_ok=True)
-    canonical_3day = os.path.join(output_path, "spider_canonical_3day.parquet")
-    canonical_geomag = os.path.join(output_path, "spider_canonical_geomag.parquet")
+
+    path_3day_morn = os.path.join(output_path, "spider_canonical_3day_0030.parquet")
+    path_3day_aft = os.path.join(output_path, "spider_canonical_3day_1230.parquet")
+    path_geomag = os.path.join(output_path, "spider_canonical_geomag.parquet")
     
-    # Output canonical merged dataframes as parquet 
-    df_3day_canonical.to_parquet(canonical_3day)
-    df_geomag_canonical.to_parquet(canonical_geomag)
+    # Output merged dataframes as parquet
+    spider_3day_morn.to_parquet(path_3day_morn) 
+    spider_3day_aft.to_parquet(path_3day_aft)
+    spider_geomag.to_parquet(path_geomag)
 
     
 
