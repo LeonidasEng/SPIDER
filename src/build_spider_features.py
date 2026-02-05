@@ -289,7 +289,10 @@ def buildTable3Day(df_3day:pd.DataFrame, df_obs:pd.DataFrame, df_omni:pd.DataFra
                        tolerance=pd.Timedelta("3h"))
 
     df["lead_time"] = df["lead_time"].round(2) # Round to 2 decimal places 
-    
+
+    df = df[(df["lead_time"] >= 0) & (df["lead_time"] <= 72)]
+    df = removeInvalidKp(df) # Removes invalid rows
+
     return df.sort_values(["issue_time_utc", "valid_start_utc"]).reset_index(drop=True)
 
 def buildTableGeomag(df_geomag:pd.DataFrame, df_obs:pd.DataFrame, df_omni:pd.DataFrame) -> pd.DataFrame:
@@ -313,6 +316,9 @@ def buildTableGeomag(df_geomag:pd.DataFrame, df_obs:pd.DataFrame, df_omni:pd.Dat
     
     df["lead_time"] = df["lead_time"].round(2) # Round to 2 decimal places 
     
+    df = df[(df["lead_time"] >= 0) & (df["lead_time"] <= 72)]
+    df = removeInvalidKp(df) # Removes invalid rows
+
     return df.sort_values(["issue_time_utc", "lead_day", "valid_start_utc"]).reset_index(drop=True)
 
 def getProcDatapath(base:str, dataset_key: str, sub_folder: str | None = None):
@@ -325,7 +331,13 @@ def getProcDatapath(base:str, dataset_key: str, sub_folder: str | None = None):
 
     except:
         raise ValueError(f"Unknown dataset key: {dataset_key}")
-    
+
+def removeInvalidKp(df:pd.DataFrame) -> pd.DataFrame:
+    # Removes impossible Kp (Kp < 0)
+    kp_columns = [c for c in ["kp_obs", "kp_threeday", "kp_geomag"] if c in df.columns]
+
+    return df[~(df[kp_columns] < 0).any(axis=1)]
+
 def verifyDataQuality(df: pd.DataFrame, name:str="dataset") -> dict:
     # CRISP-DM Data Understanding (2.4)
     # Examine quality of data, addressing data completeness 
@@ -407,14 +419,17 @@ def main():
     spider_3day_aft = buildTable3Day(df_3day_aft, df_obs, df_omni)
     spider_geomag = buildTableGeomag(df_geomag, df_obs, df_omni)
 
-    output_path = os.path.join(base, "data", "datasets")
-    os.makedirs(output_path, exist_ok=True)
+    data_output_path = os.path.join(base, "data", "datasets")
+    os.makedirs(data_output_path, exist_ok=True)
 
-    path_3day_morn = os.path.join(output_path, "spider_features_3day_0030.parquet")
-    path_3day_aft = os.path.join(output_path, "spider_features_3day_1230.parquet")
-    path_geomag = os.path.join(output_path, "spider_features_geomag.parquet")
+    path_3day_morn = os.path.join(data_output_path, "spider_features_3day_0030.parquet")
+    path_3day_aft = os.path.join(data_output_path, "spider_features_3day_1230.parquet")
+    path_geomag = os.path.join(data_output_path, "spider_features_geomag.parquet")
     
-    with open(os.path.join(output_path, "spider_quality_report.json"), "w") as f:
+    report_output_path = os.path.join(base, "docs")
+    os.makedirs(report_output_path, exist_ok=True)
+
+    with open(os.path.join(report_output_path, "spider_feature_report.json"), "w") as f:
         json.dump({
             "3day_0030": verifyDataQuality(spider_3day_morn, "3day_0030"),
             "3day_1230": verifyDataQuality(spider_3day_aft, "3day_1230"),
