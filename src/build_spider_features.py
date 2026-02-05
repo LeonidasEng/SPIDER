@@ -325,6 +325,62 @@ def getProcDatapath(base:str, dataset_key: str, sub_folder: str | None = None):
 
     except:
         raise ValueError(f"Unknown dataset key: {dataset_key}")
+    
+def verifyDataQuality(df: pd.DataFrame, name:str="dataset") -> dict:
+    # CRISP-DM Data Understanding (2.4)
+    # Examine quality of data, addressing data completeness 
+    # data errors, missing values
+
+    def percent(x):
+        return round(x * 100, 1)
+    
+    def precision(x):
+        return None if pd.isna(x) else round(float(x), 2)
+    
+    report = {}
+
+    report["dataset"] = name
+    report["rows"] = int(len(df))
+    report["columns"] = int(df.shape[1])
+    
+    if "valid_start_utc" in df.columns:
+        df_sorted = df.sort_values("valid_start_utc")
+
+        # Identify time range
+        report["time_start"] = df_sorted["valid_start_utc"].min()
+        report["time_end"] = df_sorted["valid_start_utc"].max()
+
+        # Identify time gaps looking for differences between rows
+        differences = (df_sorted["valid_start_utc"]
+                       .diff()
+                       .dropna()
+                       .dt.total_seconds() / 3600)
+        
+        # Build dictionary of gaps
+        report["hour_gap_distribution"] = {
+            precision(k): int(v) for k, v in differences.value_counts().to_dict().items()
+        }
+        # Which time steps not spaced by 3 hours?
+        report["time_gaps"] = int((differences != 3).sum())
+        report["average_time_gaps_%"] = percent((differences !=3).mean())
+    
+    missing_values = df.isna().mean()
+    report["missing_values_%"] = {
+        col: percent(val) for col, val in missing_values.items() if val > 0
+    }
+
+    if "lead_time" in df.columns:
+        report["negative_lead_times"] = int((df["lead_time"] < 0).sum())
+        report["max_lead_time_hours"] = precision(df["lead_time"].max())
+        report["min_lead_time_hours"] = precision(df["lead_time"].min())
+
+    if "valid_start_utc" in df.columns:
+        # Multiplicity expected
+        dup = df["valid_start_utc"].duplicated().sum()
+        report["duplicate_times"] = int(dup)
+        report["duplicate_times_%"] = percent(dup / len(df))
+
+    return report
 
 def main():
     # Environment variable must be set to run this script
@@ -358,6 +414,13 @@ def main():
     path_3day_aft = os.path.join(output_path, "spider_features_3day_1230.parquet")
     path_geomag = os.path.join(output_path, "spider_features_geomag.parquet")
     
+    with open(os.path.join(output_path, "spider_quality_report.json"), "w") as f:
+        json.dump({
+            "3day_0030": verifyDataQuality(spider_3day_morn, "3day_0030"),
+            "3day_1230": verifyDataQuality(spider_3day_aft, "3day_1230"),
+            "geomag": verifyDataQuality(spider_geomag, "geomag")
+            }, f, default=str, indent=4)
+
     # Output merged dataframes as parquet
     spider_3day_morn.to_parquet(path_3day_morn) 
     spider_3day_aft.to_parquet(path_3day_aft)
