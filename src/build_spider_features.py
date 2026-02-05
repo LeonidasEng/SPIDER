@@ -179,7 +179,7 @@ def build3DayForecast(three_day_forecast_path:str):
 
     threeday_data.sort(key=lambda x: x["issue_time_utc"]) # sort by issue_time_utc or valid_start_utc
     df_threeday = pd.DataFrame(threeday_data) # Create DataFrame for 3day forecat
-    df_threeday = df_threeday.sort_values(["issue_time_utc", "valid_start_utc"]).reset_index(drop=True) # Enforce sort and remove index to new one
+    df_threeday = df_threeday.sort_values(["issue_time_utc", "valid_start_utc"]).reset_index(drop=True) # Primary & secondary sort, reset index
 
     return df_threeday
 
@@ -209,7 +209,7 @@ def buildGeomagForecast(geomag_forecast_path:str):
 
     geomag_data.sort(key=lambda x: x["issue_time_utc"])
     df_geomag = pd.DataFrame(geomag_data) # Create DataFrame for geomag forecast
-    df_geomag = df_geomag.sort_values(["issue_time_utc", "valid_start_utc"]).reset_index(drop=True) # Enforce sort and remove index to set new one
+    df_geomag = df_geomag.sort_values(["issue_time_utc", "valid_start_utc"]).reset_index(drop=True) # Primary & secondary sort, reset index
     
     return df_geomag
 
@@ -238,7 +238,7 @@ def buildObserved(observed_path:str):
     
     observed_data.sort(key=lambda x: x["valid_start_utc"]) # Sort by valid start
     df_obs = pd.DataFrame(observed_data) # Create DataFrame for observed Kp
-    df_obs = df_obs.sort_values("valid_start_utc").reset_index(drop=True) # Enforce sort and remove index set new one
+    df_obs = df_obs.sort_values("valid_start_utc").reset_index(drop=True) # Primary & secondary sort, reset index
 
     return df_obs
 
@@ -272,7 +272,7 @@ def buildOMNI(omni_path:str):
     return df_omni
 
 def buildTable3Day(df_3day:pd.DataFrame, df_obs:pd.DataFrame, df_omni:pd.DataFrame) -> pd.DataFrame:
-    df = df_3day.copy() # Important: Table forecast-centric NOT observation
+    df = df_3day.copy() # Important: Table forecast-centric NOT observation-centric
 
     # 3DAY (attach valid time match)
     df = df.merge(df_obs[["valid_start_utc", "kp_obs"]], # Align with valid time, merge kp_obs
@@ -288,12 +288,12 @@ def buildTable3Day(df_3day:pd.DataFrame, df_obs:pd.DataFrame, df_omni:pd.DataFra
                        direction="backward",
                        tolerance=pd.Timedelta("3h"))
 
-    df["lead_time"] = df["lead_time"].round(2)                  # Round to 2 decimal places 
+    df["lead_time"] = df["lead_time"].round(2) # Round to 2 decimal places 
     
     return df.sort_values(["issue_time_utc", "valid_start_utc"]).reset_index(drop=True)
 
 def buildTableGeomag(df_geomag:pd.DataFrame, df_obs:pd.DataFrame, df_omni:pd.DataFrame) -> pd.DataFrame:
-    df = df_geomag.copy() # Important: Table forecast-centric NOT observation
+    df = df_geomag.copy() # Important: Table forecast-centric NOT observation-centric
 
     # Merge observed Kp (exact valid time match)
     df = df.merge(df_obs[["valid_start_utc", "kp_obs"]], how="left", on="valid_start_utc")
@@ -311,27 +311,28 @@ def buildTableGeomag(df_geomag:pd.DataFrame, df_obs:pd.DataFrame, df_omni:pd.Dat
     assert (computed - df["lead_time"]).abs().max() < 1e-6, \
             "Lead time mismatch"
     
-    df["lead_time"] = df["lead_time"].round(2)                  # Round to 2 decimal places 
+    df["lead_time"] = df["lead_time"].round(2) # Round to 2 decimal places 
     
     return df.sort_values(["issue_time_utc", "lead_day", "valid_start_utc"]).reset_index(drop=True)
 
 def getProcDatapath(base:str, dataset_key: str, sub_folder: str | None = None):
+    # Added subfolder param for 3day 0030 and 1230
     try:
         base_path = os.path.join(base, "data", "data_processed", DATASETS[dataset_key])
         if sub_folder:
             base_path = os.path.join(base_path, sub_folder)
-        # Try to find data at data_processed path
         return base_path
 
     except:
         raise ValueError(f"Unknown dataset key: {dataset_key}")
 
 def main():
+    # Environment variable must be set to run this script
     base = os.environ.get("SPIDER")
     if base is None:
         raise EnvironmentError("SPIDER system variable is not set!")
     
-    # Does path exist for processed data (observed, forecast, omni)
+    # Does path exist for processed data (forecasts, observed, omni)
     observed_path = getProcDatapath(base, "observed_kp")
     geomag_forecast_path = getProcDatapath(base, "geomag_forecast")
     three_forecast_morn_path = getProcDatapath(base, "3day_forecast", "3day_0030")
@@ -345,7 +346,7 @@ def main():
     df_3day_aft = build3DayForecast(three_forecast_aft_path)
     df_omni = buildOMNI(omni_path)
 
-    # Merge into canonical DataFrames
+    # Merge into forecast-centric DataFrames
     spider_3day_morn = buildTable3Day(df_3day_morn, df_obs, df_omni)
     spider_3day_aft = buildTable3Day(df_3day_aft, df_obs, df_omni)
     spider_geomag = buildTableGeomag(df_geomag, df_obs, df_omni)
@@ -353,9 +354,9 @@ def main():
     output_path = os.path.join(base, "data", "datasets")
     os.makedirs(output_path, exist_ok=True)
 
-    path_3day_morn = os.path.join(output_path, "spider_canonical_3day_0030.parquet")
-    path_3day_aft = os.path.join(output_path, "spider_canonical_3day_1230.parquet")
-    path_geomag = os.path.join(output_path, "spider_canonical_geomag.parquet")
+    path_3day_morn = os.path.join(output_path, "spider_features_3day_0030.parquet")
+    path_3day_aft = os.path.join(output_path, "spider_features_3day_1230.parquet")
+    path_geomag = os.path.join(output_path, "spider_features_geomag.parquet")
     
     # Output merged dataframes as parquet
     spider_3day_morn.to_parquet(path_3day_morn) 
