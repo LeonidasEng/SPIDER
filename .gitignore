@@ -16,7 +16,7 @@ data/test/
 data/data_processed/
 
 # Docs
-docs/
+docs/resources
 
 # Logs
 logs/
