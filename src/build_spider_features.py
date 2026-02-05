@@ -301,7 +301,7 @@ def buildTableGeomag(df_geomag:pd.DataFrame, df_obs:pd.DataFrame, df_omni:pd.Dat
     # Merge observed Kp (exact valid time match)
     df = df.merge(df_obs[["valid_start_utc", "kp_obs"]], how="left", on="valid_start_utc")
 
-    # Merge OMNI (contextual)
+    # Merge OMNI (Upstream context (backwards), tolerance = 3 hours)
     df = pd.merge_asof(df.sort_values("valid_start_utc"),
                        df_omni.sort_values("valid_start_utc"),
                        on="valid_start_utc",
