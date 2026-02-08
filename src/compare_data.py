@@ -27,7 +27,6 @@ def dailyKp(df, kp_column):
     return df[kp_column].resample("1D").max()
 
 def forecastSpread(dataset_path:str):
-    
     # Load in each forecast
     df_threeday_0030 = pd.read_parquet(os.path.join(dataset_path, FILES["3 Day Forecast 0030"]))
     df_threeday_1230 = pd.read_parquet(os.path.join(dataset_path, FILES["3 Day Forecast 1230"]))
@@ -43,23 +42,26 @@ def forecastSpread(dataset_path:str):
     df_threeday_1230_ld0 = normaliseTime(df_threeday_1230_ld0)
     df_geomag_ld0 = normaliseTime(df_geomag_ld0)
 
-    # Extract daily Kp values for 
+    # Extract daily Kp values for each forecast
     kp_0030_ld0 = dailyKp(df_threeday_0030_ld0, "kp_threeday")
     kp_1230_ld0 = dailyKp(df_threeday_1230_ld0, "kp_threeday")
     kp_geomag_ld0 = dailyKp(df_geomag_ld0, "kp_geomag")
 
-    df_aligned = pd.concat(
-        [
+    df_aligned = pd.concat([
             kp_0030_ld0.rename("kp_0030"),
             kp_1230_ld0.rename("kp_1230"),
             kp_geomag_ld0.rename("kp_geomag")
         ], axis=1, join="inner")
     
+    # Sanity check: alignment 
     print("Aligned days:", len(df_aligned))
     print(df_aligned.head())
     
+    # Spread of forecast values
     df_aligned["spread"] = df_aligned.max(axis=1) - df_aligned.min(axis=1)
+    # Short term uncertainty (spikes = forecasters unsure, dips = predictable weather)
     spread_smooth = df_aligned["spread"].rolling(27, center=True, min_periods=10).mean()
+    # Long term forecast reliability over time (strongly justifies modelling!)
     smooth_long = df_aligned["spread"].rolling(81, center=True, min_periods=40).mean()
 
     plt.figure(figsize=(12,5))
@@ -72,12 +74,43 @@ def forecastSpread(dataset_path:str):
     plt.show()
 
 def forecastRevision(dataset_path:str):
+    # Load in each forecast
+    df_threeday_0030 = pd.read_parquet(os.path.join(dataset_path, FILES["3 Day Forecast 0030"]))
+    df_threeday_1230 = pd.read_parquet(os.path.join(dataset_path, FILES["3 Day Forecast 1230"]))
 
+    # Filter for Lead Day 0
+    df_threeday_0030_ld0 = prepareForecast(df_threeday_0030, 0)
+    df_threeday_1230_ld0 = prepareForecast(df_threeday_1230, 0)
+
+    # Sort by valid start time
+    df_threeday_0030_ld0 = normaliseTime(df_threeday_0030_ld0)
+    df_threeday_1230_ld0 = normaliseTime(df_threeday_1230_ld0)
+
+    # How do forecasts compare between issue times?
+    kp_0030_ld0 = dailyKp(df_threeday_0030_ld0, "kp_threeday")
+    kp_1230_ld0 = dailyKp(df_threeday_1230_ld0, "kp_threeday")
+
+    # Combine Daily Kp values and rename to distinguish origin
+    df_revision = pd.concat([kp_0030_ld0.rename("kp_0030"),kp_1230_ld0.rename("kp_1230")],
+                                    axis=1, join="inner")
+    
+    # 
+    df_revision["revision"] = (df_revision["kp_0030"] - df_revision["kp_1230"]).abs()
+    rev_short = df_revision["revision"].rolling(27, center=True, min_periods=10).mean()
+    rev_long = df_revision["revision"].rolling(81, center=True, min_periods=40).mean()
+
+    plt.plot(rev_short, label="Short-term revision")
+    plt.plot(rev_long, label="Long-term revision")
+    plt.ylabel("Kp Revision Magnitude")
+    plt.title("Forecast stability between 0030 and 1230 forecast products")
+    plt.legend()
+    plt.show()
+
+def leadDaySkill(dataset_path:str):
     pass
 
 def loadObservedLD0(dataset_path: str, source_name: str) -> pd.DataFrame:
     df = pd.read_parquet(dataset_path)
-    # df = df[df["lead_day"] == 0].copy() # Only Lead Day 0
     df = prepareForecast(df, 0)
     # Extract only the relevant observed data
     df["valid_start_utc"] = pd.to_datetime(df["valid_start_utc"])
@@ -104,7 +137,7 @@ def buildCombinedObs(dataset_path: str) -> pd.DataFrame:
     return df_all
 
 
-def lineOverview(dataset_path: str):
+def overviewObserved(dataset_path: str):
     '''
     Provides high-level overview of Kp in the context of the solar cycle. 
         - Use lead day of 0 to get single occurrence per valid time.
@@ -206,8 +239,9 @@ def main():
     dataset_path = os.path.join(base, "data", "datasets")
 
     #histogramObserved(dataset_path)
-    #lineOverview(dataset_path)
-    forecastSpread(dataset_path)
+    #overviewObserved(dataset_path)
+    #forecastSpread(dataset_path)
+    forecastRevision(dataset_path)
     #linePrediction(dataset_path)
 
 if __name__ == "__main__":
