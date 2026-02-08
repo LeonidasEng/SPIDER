@@ -9,37 +9,76 @@ FILES = {
         "Geomag Forecast": "spider_features_geomag.parquet"
     }
     
-def histogramObserved(dataset_path:str):
-    
-    bins = np.arange(-0.5, 9.6, 1)
+def prepareForecast(df, lead_day):
+    df = df.copy()
 
-    plt.figure(figsize=(10,6))
+    # Lead Day Filter
+    df = df[df["lead_day"] == lead_day]
 
-    obs_column = "kp_obs"
+    return df
 
-    for label, path in FILES.items():     
-        df = pd.read_parquet(os.path.join(dataset_path, path))
-        values = df[obs_column].dropna()
+def normaliseTime(df):
+    df["valid_start_utc"] = pd.to_datetime(df["valid_start_utc"])
+    df = df.sort_values("valid_start_utc")
+    df = df.set_index("valid_start_utc")
+    return df
 
-        plt.hist(values, bins=bins, alpha=0.5, label=label, edgecolor="black")
-
-    plt.xticks(range(0,10))
-    plt.xlabel("Kp Index")
-    plt.ylabel("Occurences")
-    plt.title("Observed Kp Distribution Comparison")
-    plt.legend()
-    plt.grid(alpha=0.3)
-
-    plt.show()
+def dailyKp(df, kp_column):
+    return df[kp_column].resample("1D").max()
 
 def forecastSpread(dataset_path:str):
-    df = pd.read_parquet
+    
+    # Load in each forecast
+    df_threeday_0030 = pd.read_parquet(os.path.join(dataset_path, FILES["3 Day Forecast 0030"]))
+    df_threeday_1230 = pd.read_parquet(os.path.join(dataset_path, FILES["3 Day Forecast 1230"]))
+    df_geomag = pd.read_parquet(os.path.join(dataset_path, FILES["Geomag Forecast"]))
 
+    # Apply filter to retrieve Leaad Day 0 data
+    df_threeday_0030_ld0 = prepareForecast(df_threeday_0030, 0)
+    df_threeday_1230_ld0 = prepareForecast(df_threeday_1230, 0)
+    df_geomag_ld0 = prepareForecast(df_geomag, 0)
+
+    # Sort by valid start time
+    df_threeday_0030_ld0 = normaliseTime(df_threeday_0030_ld0)
+    df_threeday_1230_ld0 = normaliseTime(df_threeday_1230_ld0)
+    df_geomag_ld0 = normaliseTime(df_geomag_ld0)
+
+    # Extract daily Kp values for 
+    kp_0030_ld0 = dailyKp(df_threeday_0030_ld0, "kp_threeday")
+    kp_1230_ld0 = dailyKp(df_threeday_1230_ld0, "kp_threeday")
+    kp_geomag_ld0 = dailyKp(df_geomag_ld0, "kp_geomag")
+
+    df_aligned = pd.concat(
+        [
+            kp_0030_ld0.rename("kp_0030"),
+            kp_1230_ld0.rename("kp_1230"),
+            kp_geomag_ld0.rename("kp_geomag")
+        ], axis=1, join="inner")
+    
+    print("Aligned days:", len(df_aligned))
+    print(df_aligned.head())
+    
+    df_aligned["spread"] = df_aligned.max(axis=1) - df_aligned.min(axis=1)
+    spread_smooth = df_aligned["spread"].rolling(27, center=True, min_periods=10).mean()
+    smooth_long = df_aligned["spread"].rolling(81, center=True, min_periods=40).mean()
+
+    plt.figure(figsize=(12,5))
+    plt.plot(spread_smooth, label="Short-term Uncertainty")
+    plt.plot(smooth_long, label="Long-term Reliability")
+    plt.xlabel("Time")
+    plt.ylabel("Kp Spread")
+    plt.title("Disagreement between forecast products")
+    plt.legend()
+    plt.show()
+
+def forecastRevision(dataset_path:str):
+
+    pass
 
 def loadObservedLD0(dataset_path: str, source_name: str) -> pd.DataFrame:
     df = pd.read_parquet(dataset_path)
-    df = df[df["lead_day"] == 0].copy() # Only Lead Day 0
-
+    # df = df[df["lead_day"] == 0].copy() # Only Lead Day 0
+    df = prepareForecast(df, 0)
     # Extract only the relevant observed data
     df["valid_start_utc"] = pd.to_datetime(df["valid_start_utc"])
     df = df[["valid_start_utc", "kp_obs", "f10.7"]]
@@ -167,7 +206,8 @@ def main():
     dataset_path = os.path.join(base, "data", "datasets")
 
     #histogramObserved(dataset_path)
-    lineOverview(dataset_path)
+    #lineOverview(dataset_path)
+    forecastSpread(dataset_path)
     #linePrediction(dataset_path)
 
 if __name__ == "__main__":
