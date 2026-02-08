@@ -321,6 +321,20 @@ def buildTableGeomag(df_geomag:pd.DataFrame, df_obs:pd.DataFrame, df_omni:pd.Dat
 
     return df.sort_values(["issue_time_utc", "lead_day", "valid_start_utc"]).reset_index(drop=True)
 
+def buildTableObserved(df_obs:pd.DataFrame, df_omni:pd.DataFrame) -> pd.DataFrame:
+    df = df_obs.copy() # Full ground truth.
+    
+    # Merge OMNI (Upstream context for full period)
+    df = pd.merge_asof(df.sort_values("valid_start_utc"),
+                       df_omni.sort_values("valid_start_utc"),
+                       on="valid_start_utc",
+                       direction="backward",
+                       tolerance=pd.Timedelta("3h"))
+    
+    df = removeInvalidKp(df)
+    
+    return df.sort_values("valid_start_utc").reset_index(drop=True)
+
 def getProcDatapath(base:str, dataset_key: str, sub_folder: str | None = None):
     # Added subfolder param for 3day 0030 and 1230
     try:
@@ -418,6 +432,7 @@ def main():
     spider_3day_morn = buildTable3Day(df_3day_morn, df_obs, df_omni)
     spider_3day_aft = buildTable3Day(df_3day_aft, df_obs, df_omni)
     spider_geomag = buildTableGeomag(df_geomag, df_obs, df_omni)
+    spider_obs = buildTableObserved(df_obs, df_omni)
 
     data_output_path = os.path.join(base, "data", "datasets")
     os.makedirs(data_output_path, exist_ok=True)
@@ -425,7 +440,8 @@ def main():
     path_3day_morn = os.path.join(data_output_path, "spider_features_3day_0030.parquet")
     path_3day_aft = os.path.join(data_output_path, "spider_features_3day_1230.parquet")
     path_geomag = os.path.join(data_output_path, "spider_features_geomag.parquet")
-    
+    path_observed = os.path.join(data_output_path, "spider_features_obs.parquet")
+
     report_output_path = os.path.join(base, "docs")
     os.makedirs(report_output_path, exist_ok=True)
 
@@ -440,8 +456,7 @@ def main():
     spider_3day_morn.to_parquet(path_3day_morn) 
     spider_3day_aft.to_parquet(path_3day_aft)
     spider_geomag.to_parquet(path_geomag)
-
-    
+    spider_obs.to_parquet(path_observed)
 
 if __name__ == "__main__":
     main()
