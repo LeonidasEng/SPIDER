@@ -4,6 +4,7 @@ import pandas as pd
 import matplotlib.pyplot as plt
 
 FILES = {
+        "Observed": "spider_features_obs.parquet",
         "3 Day Forecast 0030": "spider_features_3day_0030.parquet",
         "3 Day Forecast 1230": "spider_features_3day_1230.parquet",
         "Geomag Forecast": "spider_features_geomag.parquet"
@@ -107,7 +108,68 @@ def forecastRevision(dataset_path:str):
     plt.show()
 
 def leadDaySkill(dataset_path:str):
-    pass
+    
+    lead_errors = {}
+    
+    kp_column = {
+        "3 Day Forecast 0030": "kp_threeday",
+        "3 Day Forecast 1230": "kp_threeday",
+        "Geomag Forecast": "kp_geomag"
+    }
+
+    kp_obs_daily = None
+
+    for dataset, file_name in FILES.items():
+        
+        df = pd.read_parquet(os.path.join(dataset_path, file_name))
+
+        if dataset == "Observed":
+            df["valid_start_utc"] = pd.to_datetime(df["valid_start_utc"])
+            df = df.sort_values("valid_start_utc").set_index("valid_start_utc")
+            kp_obs_daily = df["kp_obs"].resample("1D").max().rename("kp_obs")
+            continue
+
+        if kp_obs_daily is None:
+            # In case, order changes
+            raise RuntimeError("Observed dataset must be loaded to identify error.")
+
+        for lead_day in [0, 1, 2]:
+            # For each lead day: filter data, sort and extract Kp
+            df_ld = prepareForecast(df, lead_day)
+            df_ld = normaliseTime(df_ld)
+            kp_forecast = dailyKp(df_ld, kp_column[dataset]).rename("kp_forecast") # Geomag Kp different from 3 Day
+
+            # align with observed
+            aligned = pd.concat([kp_forecast, kp_obs_daily], axis=1, join="inner")
+            aligned["error"] = (aligned["kp_forecast"] - aligned["kp_obs"]).abs()
+
+            # Rolling mean to identify wider trend and de-noise
+            lead_errors[lead_day] = aligned["error"].rolling(27, center=True, min_periods=10).mean()
+        
+        # Subplots give the best view of this data and the variation with different lead day
+        fig, axs = plt.subplots(3,1, figsize=(10,6))
+
+        colours = {
+            0:"tab:blue",
+            1:"tab:orange",
+            2:"tab:red"
+        }
+
+        lead_order = [2, 1, 0] # Order: LD2 > LD1 > LD0 at bottom 
+
+        for ax, ld in zip(axs, lead_order):
+            ax.plot(lead_errors[ld], label=f"Lead Day {ld}", color=colours[ld])
+            ax.axhline(y=1.0, color="black", linestyle="--", linewidth=1) # Error Indicator
+            ax.set_xlabel("Time")
+            ax.set_ylabel("Absolute Kp Error")
+            ax.set_ylim(0, 2.2) # Uniform range
+            ax.grid(alpha=0.3)
+            ax.legend()
+
+        fig.suptitle(f"{dataset} Skill vs Lead Day", fontweight="bold", y=0.95) # Move suptitle closer to plots
+        fig.tight_layout()
+
+        plt.show()
 
 def loadObservedLD0(dataset_path: str, source_name: str) -> pd.DataFrame:
     df = pd.read_parquet(dataset_path)
@@ -143,7 +205,12 @@ def overviewObserved(dataset_path: str):
         - Use lead day of 0 to get single occurrence per valid time.
         - Data gaps included to show trend of solar cycle 
     '''
-    df_3day_ld0 = buildCombinedObs(dataset_path)
+    
+    df_obs_all = pd.read_parquet(os.path.join(dataset_path, FILES["Observed"]))
+
+    df_obs_all["valid_start_utc"] = pd.to_datetime(df_obs_all["valid_start_utc"])
+    df_obs_all = df_obs_all.set_index("valid_start_utc").sort_index()
+    df_obs_all = df_obs_all[["kp_obs", "f10.7"]]
 
     # With the combined set there was not a lot of new forecast records
     # Nine daily max values increased, and 1 additonal day of activity
@@ -151,10 +218,10 @@ def overviewObserved(dataset_path: str):
 
     # Find the daily max Kp, apply a 27-day rolling mean to align with solar rotation
     # https://www.sciencedirect.com/science/article/abs/pii/S027311772401086X
-    kp_daily_max = df_3day_ld0["kp_obs"].resample("1D").max()
+    kp_daily_max = df_obs_all["kp_obs"].resample("1D").max()
     kp_max_smooth = kp_daily_max.rolling(window=27, center=True, min_periods=10).mean()
     # https://www.spaceweather.gc.ca/forecast-prevision/solar-solaire/solarflux/sx-2-en.php
-    f107_daily = df_3day_ld0["f10.7"].resample("1D").mean()
+    f107_daily = df_obs_all["f10.7"].resample("1D").mean()
 
     def classifyStorm(kp):
         if kp >= 8.67: return "G5"
@@ -226,7 +293,7 @@ def overviewObserved(dataset_path: str):
     handles2, labels2 = ax2.get_legend_handles_labels() # F10.7
     ax1.legend(handles1 + handles2, labels1 + labels2, loc="upper left")
 
-    plt.title("Geomagnetic Activity vs Solar Flux (Lead Day 0)", fontdict={"fontsize": 16, "fontweight": "bold"})
+    plt.title("Geomagnetic Activity vs Solar Flux (Observed)", fontdict={"fontsize": 16, "fontweight": "bold"})
     plt.tight_layout()
     plt.show()    
 
@@ -241,7 +308,8 @@ def main():
     #histogramObserved(dataset_path)
     #overviewObserved(dataset_path)
     #forecastSpread(dataset_path)
-    forecastRevision(dataset_path)
+    #forecastRevision(dataset_path)
+    leadDaySkill(dataset_path)
     #linePrediction(dataset_path)
 
 if __name__ == "__main__":
