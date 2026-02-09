@@ -15,25 +15,25 @@
             "750.0": 1,
             "918.0": 1
         },
-        "time_gaps": 14974,
-        "average_time_gaps_%": 64.8,
+        "time_gaps": 8,
+        "average_time_gaps_%": 0.035,
         "missing_values_%": {
-            "kp_obs": 0.1,
-            "bz_gsm": 0.4,
-            "b_mag": 0.4,
-            "v_sw": 1.6,
-            "np": 1.6,
-            "pdyn": 1.6,
-            "ey": 1.7,
-            "beta": 1.8,
-            "mach_alfven": 1.7,
-            "f10.7": 0.1
+            "kp_obs": 0.104,
+            "bz_gsm": 0.402,
+            "b_mag": 0.402,
+            "v_sw": 1.631,
+            "np": 1.631,
+            "pdyn": 1.631,
+            "ey": 1.704,
+            "beta": 1.778,
+            "mach_alfven": 1.704,
+            "f10.7": 0.095
         },
         "negative_lead_times": 0,
         "max_lead_time_hours": 69.0,
         "min_lead_time_hours": 0.0,
-        "duplicate_times": 14966,
-        "duplicate_times_%": 64.7
+        "duplicate_times": 0,
+        "duplicate_times_%": 0.0
     },
     "3day_1230": {
         "dataset": "3day_1230",
@@ -51,25 +51,25 @@
             "738.0": 1,
             "930.0": 1
         },
-        "time_gaps": 10895,
-        "average_time_gaps_%": 57.3,
+        "time_gaps": 8,
+        "average_time_gaps_%": 0.042,
         "missing_values_%": {
-            "kp_obs": 0.1,
-            "bz_gsm": 0.4,
-            "b_mag": 0.4,
-            "v_sw": 1.7,
-            "np": 1.7,
-            "pdyn": 1.7,
-            "ey": 1.7,
-            "beta": 1.8,
-            "mach_alfven": 1.7,
-            "f10.7": 0.1
+            "kp_obs": 0.126,
+            "bz_gsm": 0.436,
+            "b_mag": 0.436,
+            "v_sw": 1.661,
+            "np": 1.661,
+            "pdyn": 1.661,
+            "ey": 1.734,
+            "beta": 1.813,
+            "mach_alfven": 1.734,
+            "f10.7": 0.116
         },
         "negative_lead_times": 0,
         "max_lead_time_hours": 56.5,
         "min_lead_time_hours": 0.83,
-        "duplicate_times": 10887,
-        "duplicate_times_%": 57.2
+        "duplicate_times": 0,
+        "duplicate_times_%": 0.0
     },
     "geomag": {
         "dataset": "geomag",
@@ -86,24 +86,24 @@
             "723.0": 1,
             "915.0": 1
         },
-        "time_gaps": 13737,
-        "average_time_gaps_%": 66.3,
+        "time_gaps": 7,
+        "average_time_gaps_%": 0.034,
         "missing_values_%": {
-            "kp_obs": 0.2,
-            "bz_gsm": 0.6,
-            "b_mag": 0.6,
-            "v_sw": 1.9,
-            "np": 1.9,
-            "pdyn": 1.9,
-            "ey": 2.0,
-            "beta": 2.1,
-            "mach_alfven": 2.0,
-            "f10.7": 0.2
+            "kp_obs": 0.232,
+            "bz_gsm": 0.579,
+            "b_mag": 0.579,
+            "v_sw": 1.944,
+            "np": 1.944,
+            "pdyn": 1.944,
+            "ey": 2.031,
+            "beta": 2.118,
+            "mach_alfven": 2.031,
+            "f10.7": 0.217
         },
         "negative_lead_times": 0,
         "max_lead_time_hours": 71.0,
         "min_lead_time_hours": 1.5,
-        "duplicate_times": 13730,
-        "duplicate_times_%": 66.2
+        "duplicate_times": 0,
+        "duplicate_times_%": 0.0
     }
 }

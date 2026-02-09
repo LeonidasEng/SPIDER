@@ -358,7 +358,7 @@ def verifyDataQuality(df: pd.DataFrame, name:str="dataset") -> dict:
     # data errors, missing values
 
     def percent(x):
-        return round(x * 100, 1)
+        return round(x * 100, 3)
     
     def precision(x):
         return None if pd.isna(x) else round(float(x), 2)
@@ -386,9 +386,11 @@ def verifyDataQuality(df: pd.DataFrame, name:str="dataset") -> dict:
         report["hour_gap_distribution"] = {
             precision(k): int(v) for k, v in differences.value_counts().to_dict().items()
         }
-        # Which time steps not spaced by 3 hours?
-        report["time_gaps"] = int((differences != 3).sum())
-        report["average_time_gaps_%"] = percent((differences !=3).mean())
+        # Which time steps not spaced by 3 hours (normal) or 0 hours (forecast duplicates)?
+        invalid = (differences != 0) & (differences != 3)
+        report["time_gaps"] = int(invalid.sum())
+        report["average_time_gaps_%"] = percent(invalid.mean())
+        #print(differences.value_counts().sort_index())
     
     missing_values = df.isna().mean()
     report["missing_values_%"] = {
@@ -402,7 +404,8 @@ def verifyDataQuality(df: pd.DataFrame, name:str="dataset") -> dict:
 
     if "valid_start_utc" in df.columns:
         # Multiplicity expected
-        dup = df["valid_start_utc"].duplicated().sum()
+        dup_mask = df.duplicated(subset=["valid_start_utc", "issue_time_utc"])
+        dup = dup_mask.sum()
         report["duplicate_times"] = int(dup)
         report["duplicate_times_%"] = percent(dup / len(df))
 
