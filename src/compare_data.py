@@ -300,12 +300,14 @@ def overviewObserved(dataset_path: str):
     f107_daily = df_obs_all["f10.7"].resample("1D").mean()
 
     def classifyStorm(kp):
-        if kp >= 8.67: return "G5"
-        elif kp >= 7.34: return "G4"
-        elif kp >= 6.34: return "G3"
-        elif kp >= 5.34: return "G2"
-        elif kp >= 4.67: return "G1"
-        return None
+        # These are not finalised Kp values from GFZ-Potsdam, Germany but estimated Kp
+        # from SWPC
+        if   kp >= 9: return "G5"
+        elif kp >= 8: return "G4"
+        elif kp >= 7: return "G3"
+        elif kp >= 6: return "G2"
+        elif kp >= 5: return "G1"
+        return None # No storm
     
     # Identify storms in daily data and assign to Dataframe
     storm_points = kp_daily_max.dropna().to_frame(name="kp")
@@ -361,7 +363,7 @@ def overviewObserved(dataset_path: str):
     ax1.grid(alpha=0.3)
 
     # Populate plot with storm scale overlay
-    for g in ["G1", "G2", "G3", "G4", "G5"]:
+    for g in labels.keys():
             gdata = storm_points[storm_points["G"] == g]
             ax1.scatter(gdata.index, gdata["kp"], color=colours[g], marker=markers[g], s=20, label=labels[g], zorder=zorder_map[g])
     
