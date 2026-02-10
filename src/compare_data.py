@@ -28,6 +28,13 @@ def dailyKp(df, kp_column):
     return df[kp_column].resample("1D").max()
 
 def forecastSpread(dataset_path:str):
+    '''
+    Tier 1 EDA Disagreement between forecast products at the same
+    valid time:
+        - Spread = max(Kp) - min(Kp)
+        - Low spread = predictable, High spread = unstable
+        - Determine failures and unpredictability
+    '''
     # Load in each forecast
     df_threeday_0030 = pd.read_parquet(os.path.join(dataset_path, FILES["3 Day Forecast 0030"]))
     df_threeday_1230 = pd.read_parquet(os.path.join(dataset_path, FILES["3 Day Forecast 1230"]))
@@ -48,6 +55,7 @@ def forecastSpread(dataset_path:str):
     kp_1230_ld0 = dailyKp(df_threeday_1230_ld0, "kp_threeday")
     kp_geomag_ld0 = dailyKp(df_geomag_ld0, "kp_geomag")
 
+    # Combine forecasts across datasets and compare
     df_aligned = pd.concat([
             kp_0030_ld0.rename("kp_0030"),
             kp_1230_ld0.rename("kp_1230"),
@@ -55,8 +63,8 @@ def forecastSpread(dataset_path:str):
         ], axis=1, join="inner")
     
     # Sanity check: alignment 
-    print("Aligned days:", len(df_aligned))
-    print(df_aligned.head())
+    # print("Aligned days:", len(df_aligned))
+    # print(df_aligned.head())
     
     # Spread of forecast values
     df_aligned["spread"] = df_aligned.max(axis=1) - df_aligned.min(axis=1)
@@ -70,11 +78,18 @@ def forecastSpread(dataset_path:str):
     plt.plot(smooth_long, label="Long-term Reliability")
     plt.xlabel("Time")
     plt.ylabel("Kp Spread")
-    plt.title("Disagreement between forecast products")
+    plt.title("Disagreement between forecast products", fontweight="bold")
     plt.legend()
     plt.show()
 
 def forecastRevision(dataset_path:str):
+    '''
+    Tier 1 EDA Revision between 0030 and 1230
+        - How did forecasts change between issuance
+        - Add next: not just issuance but lead time (not lead day)
+        - Add next: Change to iterative function using helper functions
+    
+    '''
     # Load in each forecast
     df_threeday_0030 = pd.read_parquet(os.path.join(dataset_path, FILES["3 Day Forecast 0030"]))
     df_threeday_1230 = pd.read_parquet(os.path.join(dataset_path, FILES["3 Day Forecast 1230"]))
@@ -126,7 +141,7 @@ def leadDaySkill(dataset_path:str):
         if dataset == "Observed":
             df["valid_start_utc"] = pd.to_datetime(df["valid_start_utc"])
             df = df.sort_values("valid_start_utc").set_index("valid_start_utc")
-            kp_obs_daily = df["kp_obs"].resample("1D").max().rename("kp_obs")
+            kp_obs_daily = dailyKp(df, "kp_obs")
             continue
 
         if kp_obs_daily is None:
@@ -171,39 +186,100 @@ def leadDaySkill(dataset_path:str):
 
         plt.show()
 
-def loadObservedLD0(dataset_path: str, source_name: str) -> pd.DataFrame:
-    df = pd.read_parquet(dataset_path)
-    df = prepareForecast(df, 0)
-    # Extract only the relevant observed data
-    df["valid_start_utc"] = pd.to_datetime(df["valid_start_utc"])
-    df = df[["valid_start_utc", "kp_obs", "f10.7"]]
+def riskCurves(dataset_path:str):
+    '''
+    Generates operational risk curves for each forecast and lead day.
+    
+    For each lead day, the function aligns daily max forecast Kp with 
+    observed daily max Kp to calculate probability of a large forecast
+    error P(|ΔKp| > 1) conditioned on the forecast value.
 
-    # Add an additional column, required for later concat
-    df["source"] = source_name
+    Answers: "How trustworthy is a forecast Kp level at a given lead time?" 
+            P((|ΔKp| > 1) | Kp, Ld)    
+    '''
+    # Kp columns are different across datasets
+    kp_column = {
+            "3 Day Forecast 0030": "kp_threeday",
+            "3 Day Forecast 1230": "kp_threeday",
+            "Geomag Forecast": "kp_geomag"
+        }
 
-    return df
+    for dataset, file_name in FILES.items():
+        df = pd.read_parquet(os.path.join(dataset_path, file_name))
 
-def buildCombinedObs(dataset_path: str) -> pd.DataFrame:
-    # Load the different datasets with a lead day of 0
-    df_0030     = loadObservedLD0(os.path.join(dataset_path, FILES["3 Day Forecast 0030"]), "0030")
-    df_1230     = loadObservedLD0(os.path.join(dataset_path, FILES["3 Day Forecast 1230"]), "1230")
-    df_geomag   = loadObservedLD0(os.path.join(dataset_path, FILES["Geomag Forecast"]), "geomag")
+        if dataset == "Observed":
+            # Define observed 
+            df["valid_start_utc"] = pd.to_datetime(df["valid_start_utc"])
+            df = df.sort_values("valid_start_utc").set_index("valid_start_utc")
+            kp_obs_daily = df["kp_obs"].resample("1D").max().rename("kp_obs")
+            continue
 
-    # Combine observed values into a single dataframe and order by valid start
-    df_all = pd.concat([df_0030, df_1230, df_geomag], ignore_index=True)
-    df_all = df_all.dropna(subset=["kp_obs"])
-    df_all = df_all.sort_values("valid_start_utc")
-    df_all = df_all.groupby("valid_start_utc", as_index=False).first()
-    df_all = df_all.set_index("valid_start_utc").sort_index()
+        if kp_obs_daily is None:
+            # In case, order changes
+            raise RuntimeError("Observed dataset must be loaded to identify error.")
 
-    return df_all
+        # 1 row of 3 plots for each lead day, for each forecast
+        fig, axs = plt.subplots(1,3, figsize=(15,5))
+        fig.suptitle(f"{dataset} Operational Risk by Lead Day", fontweight="bold")
+
+        for lead_day in [0, 1, 2]:
+            df_ld = prepareForecast(df, lead_day)
+            df_ld = normaliseTime(df_ld)
+            kp_forecast = dailyKp(df_ld, kp_column[dataset]).rename("kp_forecast")
+
+            # Aligned dataset of each forecast by lead time with observation 
+            aligned = pd.concat([kp_forecast, kp_obs_daily], axis=1, join="inner")
+            aligned["error"] = (aligned["kp_forecast"] - aligned["kp_obs"]).abs()
+
+            # Remove NaNs from aligned table and define error state
+            aligned = aligned.dropna(subset=["kp_forecast", "kp_obs", "error"])
+            aligned["event"] = (aligned["error"] > 1).astype(int)
+            
+            aligned["kp_bin"] = (aligned["kp_forecast"].round().clip(0,9)).astype(int)
+            
+            # Create a probability table 
+            prob_table = (aligned.groupby("kp_bin")["event"] # 
+                        .agg(["mean", "count"]) # specific functions: mean() and count()
+                        .rename(columns={"mean":"probability"}))
+            
+            # Debug output table and view as percentages
+            # prob_table["probability"] = (prob_table["probability"] * 100).round(1).astype(str) + "%"
+            # print(f"{dataset} Lead Day: {lead_day}")
+            # print(prob_table)
+            
+            # Entries that had less than 10 counts are statistically meaningless
+            prob_plot = prob_table[prob_table["count"] >= 10]
+            ax = axs[lead_day]
+
+            # Risk bands that will help identify if forecast is trustworthy
+            ax.axhspan(0.0, 0.2, color="tab:green", alpha=0.2)      # Safe to trust
+            ax.axhspan(0.2, 0.4, color="yellow", alpha=0.2)         # Caution
+            ax.axhspan(0.4, 0.6, color="tab:orange", alpha=0.2)     # Unreliable
+            ax.axhspan(0.6, 1.0, color="tab:red", alpha=0.2)        # Do not trust
+
+            ax.plot(prob_plot.index, prob_plot["probability"], marker="o")
+
+            ax.set_xlim(0,9) # Set x-range to Kp
+            ax.set_ylim(0,1) # Set y-range to Probability
+            ax.set_xlabel("Forecast Kp")
+            ax.set_ylabel("P(|ΔKp| > 1)")
+            display_day = lead_day + 1 if dataset == "Geomag Forecast" else lead_day
+            ax.set_title(f"Lead Day {display_day}")
+
+            ax.grid(alpha=0.3)
+        
+        plt.tight_layout()    
+        plt.show()
+
 
 
 def overviewObserved(dataset_path: str):
     '''
     Provides high-level overview of Kp in the context of the solar cycle. 
+        - F10.7cm provides long-term context of solar activity
         - Use lead day of 0 to get single occurrence per valid time.
-        - Data gaps included to show trend of solar cycle 
+        - Data gaps must be included to show trend of solar cycle
+        - Identifies when storms occur and overlays the events
     '''
     
     df_obs_all = pd.read_parquet(os.path.join(dataset_path, FILES["Observed"]))
@@ -235,6 +311,11 @@ def overviewObserved(dataset_path: str):
     storm_points = kp_daily_max.dropna().to_frame(name="kp")
     storm_points["G"] = storm_points["kp"].apply(classifyStorm)
     storm_points = storm_points.dropna()
+
+    # MATPLOTLIB DOCS:
+    # Colours: https://matplotlib.org/stable/gallery/color/named_colors.html
+    # Markers: https://matplotlib.org/stable/api/markers_api.html
+    # Z Order:  https://matplotlib.org/3.1.1/gallery/misc/zorder_demo.html
 
     # Names of each scale for display in legend
     labels = {
@@ -293,7 +374,7 @@ def overviewObserved(dataset_path: str):
     handles2, labels2 = ax2.get_legend_handles_labels() # F10.7
     ax1.legend(handles1 + handles2, labels1 + labels2, loc="upper left")
 
-    plt.title("Geomagnetic Activity vs Solar Flux (Observed)", fontdict={"fontsize": 16, "fontweight": "bold"})
+    plt.title("Geomagnetic Activity vs Solar Flux (Observed)", fontsize=16, fontweight="bold")
     plt.tight_layout()
     plt.show()    
 
@@ -305,11 +386,15 @@ def main():
     
     dataset_path = os.path.join(base, "data", "datasets")
 
+    # Comment out specific line, doesn't have to be a proper program
+    # Only care about making the graphs:
+
     #histogramObserved(dataset_path)
-    #overviewObserved(dataset_path)
+    overviewObserved(dataset_path)
     #forecastSpread(dataset_path)
     #forecastRevision(dataset_path)
-    leadDaySkill(dataset_path)
+    #leadDaySkill(dataset_path)
+    #riskCurves(dataset_path)
     #linePrediction(dataset_path)
 
 if __name__ == "__main__":
