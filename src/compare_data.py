@@ -34,53 +34,55 @@ def forecastSpread(dataset_path:str):
         - Spread = max(Kp) - min(Kp)
         - Low spread = predictable, High spread = unstable
         - Determine failures and unpredictability
-    '''
-    # Load in each forecast
-    df_threeday_0030 = pd.read_parquet(os.path.join(dataset_path, FILES["3 Day Forecast 0030"]))
-    df_threeday_1230 = pd.read_parquet(os.path.join(dataset_path, FILES["3 Day Forecast 1230"]))
-    df_geomag = pd.read_parquet(os.path.join(dataset_path, FILES["Geomag Forecast"]))
+    '''    
+    kp_column = {
+        "3 Day Forecast 0030": "kp_threeday",
+        "3 Day Forecast 1230": "kp_threeday",
+        "Geomag Forecast": "kp_geomag"
+    }
 
-    # Apply filter to retrieve Leaad Day 0 data
-    df_threeday_0030_ld0 = prepareForecast(df_threeday_0030, 0)
-    df_threeday_1230_ld0 = prepareForecast(df_threeday_1230, 0)
-    df_geomag_ld0 = prepareForecast(df_geomag, 0)
-
-    # Sort by valid start time
-    df_threeday_0030_ld0 = normaliseTime(df_threeday_0030_ld0)
-    df_threeday_1230_ld0 = normaliseTime(df_threeday_1230_ld0)
-    df_geomag_ld0 = normaliseTime(df_geomag_ld0)
-
-    # Extract daily Kp values for each forecast
-    kp_0030_ld0 = dailyKp(df_threeday_0030_ld0, "kp_threeday")
-    kp_1230_ld0 = dailyKp(df_threeday_1230_ld0, "kp_threeday")
-    kp_geomag_ld0 = dailyKp(df_geomag_ld0, "kp_geomag")
-
-    # Combine forecasts across datasets and compare
-    df_aligned = pd.concat([
-            kp_0030_ld0.rename("kp_0030"),
-            kp_1230_ld0.rename("kp_1230"),
-            kp_geomag_ld0.rename("kp_geomag")
-        ], axis=1, join="inner")
+    lead_days = [0,1,2]
     
-    # Sanity check: alignment 
-    # print("Aligned days:", len(df_aligned))
-    # print(df_aligned.head())
+    for lead_day in lead_days:
     
-    # Spread of forecast values
-    df_aligned["spread"] = df_aligned.max(axis=1) - df_aligned.min(axis=1)
-    # Short term uncertainty (spikes = forecasters unsure, dips = predictable weather)
-    spread_smooth = df_aligned["spread"].rolling(27, center=True, min_periods=10).mean()
-    # Long term forecast reliability over time (strongly justifies modelling!)
-    smooth_long = df_aligned["spread"].rolling(81, center=True, min_periods=40).mean()
+        prepared = {}
 
-    plt.figure(figsize=(12,5))
-    plt.plot(spread_smooth, label="Short-term Uncertainty")
-    plt.plot(smooth_long, label="Long-term Reliability")
-    plt.xlabel("Time")
-    plt.ylabel("Kp Spread")
-    plt.title("Disagreement between forecast products", fontweight="bold")
-    plt.legend()
-    plt.show()
+        for dataset, file_name in FILES.items():
+            if dataset == "Observed":
+                continue
+
+            df = pd.read_parquet(os.path.join(dataset_path, file_name))
+            
+            df_ld = prepareForecast(df, lead_day)
+            df_ld = normaliseTime(df_ld)
+            prepared[dataset] = dailyKp(df_ld, kp_column[dataset])
+
+        # Combine forecasts across datasets and compare
+        df_aligned = pd.concat([
+                prepared["3 Day Forecast 0030"].rename("kp_0030"),
+                prepared["3 Day Forecast 1230"].rename("kp_1230"),
+                prepared["Geomag Forecast"].rename("kp_geomag")
+            ], axis=1, join="inner")
+    
+        # Sanity check: alignment 
+        # print("Aligned days:", len(df_aligned))
+        # print(df_aligned.head())
+    
+        # Spread of forecast values
+        df_aligned["spread"] = df_aligned.max(axis=1) - df_aligned.min(axis=1)
+        # Short term uncertainty (spikes = forecasters unsure, dips = predictable weather)
+        spread_short = df_aligned["spread"].rolling(27, center=True, min_periods=10).mean()
+        # Long term forecast reliability over time (strongly justifies modelling!)
+        spread_long = df_aligned["spread"].rolling(81, center=True, min_periods=40).mean()
+
+        plt.figure(figsize=(12,5))
+        plt.plot(spread_short, label="Short-term Uncertainty")
+        plt.plot(spread_long, label="Long-term Reliability")
+        plt.xlabel("Time")
+        plt.ylabel("Kp Spread")
+        plt.title(f"Forecast Disagreement (Lead Day {lead_day})", fontweight="bold")
+        plt.legend()
+        plt.show()
 
 def forecastRevision(dataset_path:str):
     '''
@@ -208,7 +210,7 @@ def riskCurves(dataset_path:str):
         df = pd.read_parquet(os.path.join(dataset_path, file_name))
 
         if dataset == "Observed":
-            # Define observed 
+            # Define observed  and sort and set by time
             df["valid_start_utc"] = pd.to_datetime(df["valid_start_utc"])
             df = df.sort_values("valid_start_utc").set_index("valid_start_utc")
             kp_obs_daily = df["kp_obs"].resample("1D").max().rename("kp_obs")
@@ -242,7 +244,7 @@ def riskCurves(dataset_path:str):
                         .agg(["mean", "count"]) # specific functions: mean() and count()
                         .rename(columns={"mean":"probability"}))
             
-            # Debug output table and view as percentages
+            # Debug output table and view as percentages (percentage of error)
             # prob_table["probability"] = (prob_table["probability"] * 100).round(1).astype(str) + "%"
             # print(f"{dataset} Lead Day: {lead_day}")
             # print(prob_table)
@@ -270,8 +272,6 @@ def riskCurves(dataset_path:str):
         
         plt.tight_layout()    
         plt.show()
-
-
 
 def overviewObserved(dataset_path: str):
     '''
@@ -392,8 +392,8 @@ def main():
     # Only care about making the graphs:
 
     #histogramObserved(dataset_path)
-    overviewObserved(dataset_path)
-    #forecastSpread(dataset_path)
+    #overviewObserved(dataset_path)
+    forecastSpread(dataset_path)
     #forecastRevision(dataset_path)
     #leadDaySkill(dataset_path)
     #riskCurves(dataset_path)
