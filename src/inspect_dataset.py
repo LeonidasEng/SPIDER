@@ -25,11 +25,11 @@ def main():
     df_0030 = pd.read_parquet(os.path.join(dataset_path, FILES["3 Day Forecast 0030"]))
     df_1230 = pd.read_parquet(os.path.join(dataset_path, FILES["3 Day Forecast 1230"]))
     df_geo = pd.read_parquet(os.path.join(dataset_path, FILES["Geomag Forecast"]))
-    df_tar_0030 = pd.read_parquet(os.path.join(dataset_path, FILES["3 Day Forecast 0030"]))
-    df_tar_1230 = pd.read_parquet(os.path.join(dataset_path, FILES["3 Day Forecast 1230"]))
+    df_tar_0030 = pd.read_parquet(os.path.join(dataset_path, FILES["3 Day Targets 0030"]))
+    df_tar_1230 = pd.read_parquet(os.path.join(dataset_path, FILES["3 Day Targets 1230"]))
     df_tar_geo = pd.read_parquet(os.path.join(dataset_path, FILES["Geomag Targets"]))
 
-    print("stop")
+    print("stop") # For debug
     
 
 if __name__ == "__main__":
