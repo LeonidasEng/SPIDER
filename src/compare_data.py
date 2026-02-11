@@ -10,30 +10,34 @@ FILES = {
         "Geomag Forecast": "spider_features_geomag.parquet"
     }
     
+# Helper functions for preparing datasets
 def prepareForecast(df, lead_day):
+    # Filter forecast to specific lead day
     df = df.copy()
-
-    # Lead Day Filter
     df = df[df["lead_day"] == lead_day]
-
     return df
 
 def normaliseTime(df):
+    # Normalise by valid time to resample Kp to daily
     df["valid_start_utc"] = pd.to_datetime(df["valid_start_utc"])
     df = df.sort_values("valid_start_utc")
     df = df.set_index("valid_start_utc")
     return df
 
 def dailyKp(df, kp_column):
+    # 3-hour Kp is too noisy to plot, resampling at 1D minimum
     return df[kp_column].resample("1D").max()
 
 def forecastSpread(dataset_path:str):
     '''
-    Tier 1 EDA Disagreement between forecast products at the same
-    valid time:
-        - Spread = max(Kp) - min(Kp)
-        - Low spread = predictable, High spread = unstable
-        - Determine failures and unpredictability
+    Tier 1 EDA Forecast Disagreement between products
+
+    Measures how much forecasts systems disagree at same valid time
+
+    Spread is calculated as max(Kp_forecasts) - min(Kp_forecasts)
+
+    Low Spread = forecasts agree (predictable)
+    High Spread = forecasts conflict (uncertain)
     '''    
     kp_column = {
         "3 Day Forecast 0030": "kp_threeday",
@@ -84,48 +88,64 @@ def forecastSpread(dataset_path:str):
         plt.legend()
         plt.show()
 
-def forecastRevision(dataset_path:str):
+def forecastRevision(dataset_path: str):
     '''
-    Tier 1 EDA Revision between 0030 and 1230
-        - How did forecasts change between issuance
-        - Add next: not just issuance but lead time (not lead day)
-        - Add next: Change to iterative function using helper functions
-    
+    Tier 1 EDA Forecast revision vs lead time
+
+    Measures how forecasts change as the valid time approaches.
+
+    High revision = new information entering forecast
+    Low revision  = forecast confident
     '''
-    # Load in each forecast
-    df_threeday_0030 = pd.read_parquet(os.path.join(dataset_path, FILES["3 Day Forecast 0030"]))
-    df_threeday_1230 = pd.read_parquet(os.path.join(dataset_path, FILES["3 Day Forecast 1230"]))
 
-    # Filter for Lead Day 0
-    df_threeday_0030_ld0 = prepareForecast(df_threeday_0030, 0)
-    df_threeday_1230_ld0 = prepareForecast(df_threeday_1230, 0)
+    df = pd.read_parquet(os.path.join(dataset_path, FILES["3 Day Forecast 0030"]))
 
-    # Sort by valid start time
-    df_threeday_0030_ld0 = normaliseTime(df_threeday_0030_ld0)
-    df_threeday_1230_ld0 = normaliseTime(df_threeday_1230_ld0)
+    lead_days = [2, 1, 0] # Decreasing lead day
 
-    # How do forecasts compare between issue times?
-    kp_0030_ld0 = dailyKp(df_threeday_0030_ld0, "kp_threeday")
-    kp_1230_ld0 = dailyKp(df_threeday_1230_ld0, "kp_threeday")
+    prepared = {}
+    for lead_day in lead_days:
+        df_ld = prepareForecast(df, lead_day)
+        df_ld = normaliseTime(df_ld)
+        prepared[lead_day] = dailyKp(df_ld, "kp_threeday")
 
-    # Combine Daily Kp values and rename to distinguish origin
-    df_revision = pd.concat([kp_0030_ld0.rename("kp_0030"),kp_1230_ld0.rename("kp_1230")],
-                                    axis=1, join="inner")
+    revisions = {}
+
+    # Step through each lead day pairing each time range
+    for earlier, later in zip(lead_days[:-1], lead_days[1:]):
+
+        df_pair = pd.concat([prepared[earlier].rename("earlier"),
+                             prepared[later].rename("later")],
+                             axis=1, join="inner")
+        # Calculate the difference and store at new key
+        revisions[f"L{earlier}_to_L{later}"] = (df_pair["earlier"] - df_pair["later"]).abs()
     
-    # 
-    df_revision["revision"] = (df_revision["kp_0030"] - df_revision["kp_1230"]).abs()
-    rev_short = df_revision["revision"].rolling(27, center=True, min_periods=10).mean()
-    rev_long = df_revision["revision"].rolling(81, center=True, min_periods=40).mean()
+    # Plot each revision period on the figure
+    for name, series in revisions.items():
+        revisions[name] = series.rolling(27, center=True, min_periods=10).mean()
+    
+    # Plot revision for forecast
+    plt.figure()
+    for name, series in revisions.items():
+        plt.plot(series, label=f"{name}")
 
-    plt.plot(rev_short, label="Short-term revision")
-    plt.plot(rev_long, label="Long-term revision")
     plt.ylabel("Kp Revision Magnitude")
-    plt.title("Forecast stability between 0030 and 1230 forecast products")
+    plt.title("Forecast stability as lead time decreases", fontsize=16, fontweight="bold")
     plt.legend()
+    plt.grid(alpha=0.3)
     plt.show()
 
+
 def leadDaySkill(dataset_path:str):
-    
+    '''
+    Tier 2 EDA Forecast skill vs lead time
+
+    Measures how close each forecast is to the observed geomagnetic activity
+
+    Error is defined as |Kp_forecast - Kp_observed|
+
+    Low Error = Forecast accurate
+    High Error = Forecast unreliable
+    '''
     lead_errors = {}
     
     kp_column = {
@@ -141,8 +161,7 @@ def leadDaySkill(dataset_path:str):
         df = pd.read_parquet(os.path.join(dataset_path, file_name))
 
         if dataset == "Observed":
-            df["valid_start_utc"] = pd.to_datetime(df["valid_start_utc"])
-            df = df.sort_values("valid_start_utc").set_index("valid_start_utc")
+            df = normaliseTime(df)
             kp_obs_daily = dailyKp(df, "kp_obs")
             continue
 
@@ -190,11 +209,13 @@ def leadDaySkill(dataset_path:str):
 
 def riskCurves(dataset_path:str):
     '''
+    Tier 3 EDA Risk vs Lead Day (Justifies ML modelling)
+    
     Generates operational risk curves for each forecast and lead day.
     
-    For each lead day, the function aligns daily max forecast Kp with 
-    observed daily max Kp to calculate probability of a large forecast
-    error P(|ΔKp| > 1) conditioned on the forecast value.
+    For each lead day, aligns daily max forecast Kp with 
+    observed daily max Kp to calculate probability of a large forecast error 
+    P(|ΔKp| > 1) conditioned on the forecast value.
 
     Answers: "How trustworthy is a forecast Kp level at a given lead time?" 
             P((|ΔKp| > 1) | Kp, Ld)    
@@ -275,17 +296,19 @@ def riskCurves(dataset_path:str):
 
 def overviewObserved(dataset_path: str):
     '''
+    Tier 0 EDA Observed Geomagnetic activity context
+
     Provides high-level overview of Kp in the context of the solar cycle. 
-        - F10.7cm provides long-term context of solar activity
-        - Use lead day of 0 to get single occurrence per valid time.
-        - Data gaps must be included to show trend of solar cycle
-        - Identifies when storms occur and overlays the events
+    
+    F10.7cm provides long-term context of solar activity
+    Use lead day of 0 to get single occurrence per valid time.
+    Data gaps must be included to show trend of solar cycle
+    Identifies when storms occur and overlays the events
     '''
     
     df_obs_all = pd.read_parquet(os.path.join(dataset_path, FILES["Observed"]))
 
-    df_obs_all["valid_start_utc"] = pd.to_datetime(df_obs_all["valid_start_utc"])
-    df_obs_all = df_obs_all.set_index("valid_start_utc").sort_index()
+    df_obs_all = normaliseTime(df_obs_all)
     df_obs_all = df_obs_all[["kp_obs", "f10.7"]]
 
     # With the combined set there was not a lot of new forecast records
@@ -388,16 +411,15 @@ def main():
     
     dataset_path = os.path.join(base, "data", "datasets")
 
-    # Comment out specific line, doesn't have to be a proper program
-    # Only care about making the graphs:
+    # Commenting out specific lines, doesn't have to be a proper program
+    # I only care about making the graphs:
 
     #histogramObserved(dataset_path)
     #overviewObserved(dataset_path)
-    forecastSpread(dataset_path)
-    #forecastRevision(dataset_path)
+    #forecastSpread(dataset_path)
+    forecastRevision(dataset_path)
     #leadDaySkill(dataset_path)
     #riskCurves(dataset_path)
-    #linePrediction(dataset_path)
 
 if __name__ == "__main__":
     main()
