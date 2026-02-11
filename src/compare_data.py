@@ -415,9 +415,9 @@ def main():
     # I only care about making the graphs:
 
     #histogramObserved(dataset_path)
-    #overviewObserved(dataset_path)
+    overviewObserved(dataset_path)
     #forecastSpread(dataset_path)
-    forecastRevision(dataset_path)
+    #forecastRevision(dataset_path)
     #leadDaySkill(dataset_path)
     #riskCurves(dataset_path)
 
