@@ -124,7 +124,6 @@ def extract3dayForecastKp(three_day_json:str):
 
     return rows
 
-
 def extractOmni2(omni2_json:dict):
     rows = []
 

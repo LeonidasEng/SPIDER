@@ -104,14 +104,17 @@ def extractKpMeta(kp_data:list):
     joined = re.sub(r"\s+", " ", joined)
 
     m_obs = re.search(r"greatest observed.*?was\s+([\d.]+)", joined, re.IGNORECASE) # Observed Kp
+    # Capture any text in between (non-greedy), keyword "was", at least one space and capture any number with decimal
     if m_obs:
         meta["greatest_observed_kp"] = float(m_obs.group(1))
 
     m_exp = re.search(r"greatest expected.*?is\s+([\d.]+)", joined, re.IGNORECASE) # Expected Kp value
+    # Capture any text in between (non-greedy), keyword "is", at least one space and capture any number with decimal
     if m_exp:
         meta["greatest_expected_kp"] = float(m_exp.group(1))
 
     m_scale = re.search(r"noaa scale\s*(g\d)", joined, re.IGNORECASE) # NOAA scale
+    # Capturea any scale with at least one space, the letter "g" followed by a number
     if m_scale:
         meta["greatest_expected_scale"] = m_scale.group(1).upper()
 
