@@ -60,8 +60,11 @@ def main():
     path_geomag = os.path.join(data_output_path, "spider_targets_geomag.parquet")
     
     ds_3day_0030.to_parquet(path_3day_morn)
+    print(f"SPIDER 3 Day 0030 target parquet was saved to: {path_3day_morn}") 
     ds_3day_1230.to_parquet(path_3day_aft)
+    print(f"SPIDER 3 Day 1230 feature parquet was saved to: {path_3day_aft}")
     ds_geomag.to_parquet(path_geomag)
+    print(f"SPIDER Geomag feature parquet was saved to: {path_geomag}")
 
 if __name__ == "__main__":
     main()
