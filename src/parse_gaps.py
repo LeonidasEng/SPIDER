@@ -1,6 +1,7 @@
 import os
 import json
-from datetime import datetime
+from datetime import datetime, timedelta
+from collections import defaultdict
 
 
 # The kind people at SWPC provided me with this data to fill in the gaps that I found within the NCEI archive
@@ -21,6 +22,15 @@ def importFile(file_path:str):
     except FileNotFoundError:
         # Should not occur as only 3 files, but good practice
         raise ValueError(f"JSON file not found at: {file_path}.")
+    
+def classifyStorm(kp:float):
+    ''' Convert Kp to NOAA G-scale '''
+    if kp >= 9: return "G5"
+    if kp >= 8: return "G4"
+    if kp >= 7: return "G3"
+    if kp >= 6: return "G2"
+    if kp >= 5: return "G1"
+    return None
 
 def normaliseRecord(data: dict) -> dict:
     # Normalise each record using the known SPIDER schema
@@ -31,8 +41,8 @@ def normaliseRecord(data: dict) -> dict:
         "issue_time_utc": str(issue),
         "valid_start_utc": str(valid),
         "lead_time_hrs": data["tau"],
-        "forecast_kp": data["forecastKp"],
-        "observed_kp": data["observedKp"]
+        "forecast_kp": data["forecastKp"]
+        # Omitting observed as not present in other 3day forecast products
     }
 
 def splitJSON(threeday_json:list):
@@ -45,11 +55,11 @@ def splitJSON(threeday_json:list):
         record = normaliseRecord(data)
 
         issue_date, issue_time = record["issue_time_utc"].split()
-
+        hour = int(issue_time.split(":")[0])
         # Extract hour from time 
-        if int(issue_time.split(":")[0]) < 2:
+        if  hour < 2:
             threeday_0030.append(record)
-        elif int(issue_time.split(":")[0]) >= 12:
+        elif hour >= 12:
             threeday_1230.append(record)
         else:
             # There should be only two issues
@@ -67,23 +77,72 @@ def sortJSON(threeday_0030, threeday_1230):
 
     return sorted_0030, sorted_1230
 
-def dumpJob(sorted_0030:list, sorted_1230:list, proc_output:str, issue:str):
-    out_dir = os.path.join(proc_output, "time_gaps")
-    os.makedirs(out_dir, exist_ok=True)
-    
-    file_0030 = os.path.join(out_dir, f"3day_Time_{issue}_0030.json")
-    file_1230 = os.path.join(out_dir, f"3day_Time_{issue}_1230.json")
+def buildForecastStruct(sorted_records:list):
+    '''
+    Build same structure as other parsing scripts to insert into existing
+    data pipeline.
+    '''
+    output = defaultdict(lambda: {
+        "issue": None,
+        "kp": {"n": [], "n+1": [], "n+2": []}
+    })
 
-    # Dump data for 0030 issue
-    with open(file_0030, "w", encoding="utf-8") as f:
-        json.dump(sorted_0030, f, indent=4)
+    for record in sorted_records:
+        issue = datetime.fromisoformat(record["issue_time_utc"])
+        valid = datetime.fromisoformat(record["valid_start_utc"])
+
+        dt   = issue.strftime("%Y-%m-%d")
+        issue_str = issue.strftime("%Y-%m-%d %H:%M:%S UTC")
+
+        issue_date = issue.date()
+        valid_date = valid.date()
+
+        lead_day = (valid_date - issue_date).days
+
+        if lead_day not in (0, 1, 2):
+            continue
+
+        forecast_bin = ["n", "n+1", "n+2"][lead_day]
+
+        end = valid + timedelta(hours=3)
+        label = f"{valid.strftime('%Y-%m-%d %H')}-{end.strftime('%H')}UT"
+
+        kp = float(record["forecast_kp"])
+        g = classifyStorm(kp)
+
+        output[dt]["issue"] = issue_str
+        output[dt]["kp"][forecast_bin].append([label, kp, g])
     
-    # Dump data for 1230 issue
-    with open(file_1230, "w", encoding="utf-8") as f:
-        json.dump(sorted_1230, f, indent=4)
+    return dict(output)
+
+def dumpJob(sorted_records:list, proc_output:str, issue:str, tag:str):
+    out_dir = os.path.join(proc_output, "time_gaps")
+
+    struct = buildForecastStruct(sorted_records)
     
-    print(f"Dumped 0030 data for time {issue} -> {out_dir}")
-    print(f"Dumped 1230 data for time {issue} -> {out_dir}")
+    monthly_files = {}
+
+    for day, content in struct.items():
+        year = day[:4] # Year substring
+        month = day[5:7] # Month substring
+
+        year_dir = os.path.join(out_dir, year)
+        os.makedirs(year_dir, exist_ok=True)
+
+        file_path = os.path.join(year_dir, f"3day_{year}_{month}_{tag}.json")
+
+        # If path does not exist create new one
+        if file_path not in monthly_files:
+            monthly_files[file_path] = {}
+        
+        # Populate monthly dict
+        monthly_files[file_path][day] = content
+
+    for file_path, data in monthly_files.items():
+        with open(file_path, "w", encoding="utf-8") as f:
+            json.dump(dict(sorted(data.items())), f, indent=4)
+        
+        print(f"Dumped {tag} data to {file_path}")
 
 def main():
     base = os.environ.get("SPIDER")
@@ -97,7 +156,9 @@ def main():
         threeday_json = importFile(os.path.join(raw_path, file_name))
         threeday_0030, threeday_1230 = splitJSON(threeday_json)
         sorted_0030, sorted_1230 = sortJSON(threeday_0030, threeday_1230)
-        dumpJob(sorted_0030, sorted_1230, processed_path, gap)
+        # Call dump job for each issue type
+        dumpJob(sorted_0030, processed_path, gap, "0030")
+        dumpJob(sorted_1230, processed_path, gap, "1230")
 
 
 
