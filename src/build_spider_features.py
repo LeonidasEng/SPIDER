@@ -455,10 +455,14 @@ def main():
             }, f, default=str, indent=4)
 
     # Output merged dataframes as parquet
-    spider_3day_morn.to_parquet(path_3day_morn) 
+    spider_3day_morn.to_parquet(path_3day_morn)
+    print(f"SPIDER 3 Day 0030 feature parquet was saved to: {path_3day_morn}") 
     spider_3day_aft.to_parquet(path_3day_aft)
+    print(f"SPIDER 3 Day 1230 feature parquet was saved to: {path_3day_aft}")
     spider_geomag.to_parquet(path_geomag)
+    print(f"SPIDER Geomag feature parquet was saved to: {path_geomag}")
     spider_obs.to_parquet(path_observed)
+    print(f"SPIDER Observed parquet was saved to {path_geomag}")
 
 if __name__ == "__main__":
     main()

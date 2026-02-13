@@ -29,8 +29,25 @@ def main():
     df_tar_1230 = pd.read_parquet(os.path.join(dataset_path, FILES["3 Day Targets 1230"]))
     df_tar_geo = pd.read_parquet(os.path.join(dataset_path, FILES["Geomag Targets"]))
 
+    print(f"Observed Dataset: {df_obs.shape}")
+    print(f"3 Day 0030 Feature Dataset: {df_0030.shape}")
+    print(f"3 Day 1230 Feature Dataset: {df_1230.shape}")
+    print(f"Geomag Feature Dataset: {df_geo.shape}")
+    print(f"3 Day 0030 Target Dataset: {df_tar_0030.shape}")
+    print(f"3 Day 1230 Target Dataset: {df_tar_1230.shape}")
+    print(f"Geomag Target Dataset: {df_tar_geo.shape}")
+
     print("stop") # For debug
     
+    # PRE NEW DATA
+    # Observed Dataset: (11675, 11)
+    # 3 Day 0030 Feature Dataset: (23117, 15)
+    # 3 Day 1230 Feature Dataset: (19026, 15)
+    # Geomag Feature Dataset: (20726, 15)
+    # 3 Day 0030 Target Dataset: (23117, 19)
+    # 3 Day 1230 Target Dataset: (19026, 19)
+    # Geomag Target Dataset: (20726, 19)
+
 
 if __name__ == "__main__":
     main()
