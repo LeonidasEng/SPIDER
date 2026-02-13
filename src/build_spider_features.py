@@ -378,7 +378,6 @@ def verifyDataQuality(df: pd.DataFrame, name:str="dataset") -> dict:
         # Identify time gaps looking for differences between rows
         differences = (df_sorted["valid_start_utc"]
                        .diff()
-                       .dropna()
                        .dt.total_seconds() / 3600)
         
         # Build dictionary of gaps
@@ -386,10 +385,28 @@ def verifyDataQuality(df: pd.DataFrame, name:str="dataset") -> dict:
             precision(k): int(v) for k, v in differences.value_counts().to_dict().items()
         }
         # Which time steps not spaced by 3 hours (normal) or 0 hours (forecast duplicates)?
-        invalid = (differences != 0) & (differences != 3)
+        invalid = (differences.notna()) & (differences != 0) & (differences != 3)
         report["time_gaps"] = int(invalid.sum())
         report["average_time_gaps_%"] = percent(invalid.mean())
-        #print(differences.value_counts().sort_index())
+        
+        # Adding data ranges to report for more detail to report
+        gap_rows = df_sorted.loc[invalid].copy()
+        gap_ranges = []
+        for idx in gap_rows.index:
+            # Find the current time
+            current_time = df_sorted.loc[idx, "valid_start_utc"]
+            # Track the previous index to find gaps
+            prev_idx = df_sorted.index.get_loc(idx) - 1
+            if prev_idx >= 0:
+                previous_time = df_sorted.iloc[prev_idx]["valid_start_utc"]
+                gap_hours = (current_time - previous_time).total_seconds() / 3600
+                gap_ranges.append({
+                    "start_gap_after": str(previous_time),
+                    "resumes_at": str(current_time),
+                    "gap_hours": precision(gap_hours)
+                })
+        report["gap_ranges"] = gap_ranges
+
     
     missing_values = df.isna().mean()
     report["missing_values_%"] = {
@@ -447,6 +464,7 @@ def main():
     report_output_path = os.path.join(base, "docs")
     os.makedirs(report_output_path, exist_ok=True)
 
+    # Create a detailed JSON report on all feature datasets 
     with open(os.path.join(report_output_path, "spider_feature_report.json"), "w") as f:
         json.dump({
             "3day_0030": verifyDataQuality(spider_3day_morn, "3day_0030"),
