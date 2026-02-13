@@ -46,7 +46,6 @@ def normaliseRecord(data: dict) -> dict:
     }
 
 def splitJSON(threeday_json:list):
-    
     # Keep as lists to allow sorting later
     threeday_0030 = []
     threeday_1230 = []
@@ -82,6 +81,8 @@ def buildForecastStruct(sorted_records:list):
     Build same structure as other parsing scripts to insert into existing
     data pipeline.
     '''
+    # Initialise the default structure shared by processed data
+    # Omitting meta, Solar and Radio data as this was not provided
     output = defaultdict(lambda: {
         "issue": None,
         "kp": {"n": [], "n+1": [], "n+2": []}
@@ -91,8 +92,8 @@ def buildForecastStruct(sorted_records:list):
         issue = datetime.fromisoformat(record["issue_time_utc"])
         valid = datetime.fromisoformat(record["valid_start_utc"])
 
-        dt   = issue.strftime("%Y-%m-%d")
-        issue_str = issue.strftime("%Y-%m-%d %H:%M:%S UTC")
+        dt_key = issue.strftime("%Y-%m-%d") # Key
+        issue_str = issue.strftime("%Y-%m-%d %H:%M:%S UTC") # meta
 
         issue_date = issue.date()
         valid_date = valid.date()
@@ -110,13 +111,14 @@ def buildForecastStruct(sorted_records:list):
         kp = float(record["forecast_kp"])
         g = classifyStorm(kp)
 
-        output[dt]["issue"] = issue_str
-        output[dt]["kp"][forecast_bin].append([label, kp, g])
+        output[dt_key]["issue"] = issue_str
+        output[dt_key]["kp"][forecast_bin].append([label, kp, g])
     
     return dict(output)
 
-def dumpJob(sorted_records:list, proc_output:str, issue:str, tag:str):
-    out_dir = os.path.join(proc_output, "time_gaps")
+def dumpJob(sorted_records:list, proc_output:str, tag:str):
+    # Changed to 3day_ folder to match other processed data
+    out_dir = os.path.join(proc_output, "time_gaps", f"3day_{tag}")
 
     struct = buildForecastStruct(sorted_records)
     
@@ -129,7 +131,7 @@ def dumpJob(sorted_records:list, proc_output:str, issue:str, tag:str):
         year_dir = os.path.join(out_dir, year)
         os.makedirs(year_dir, exist_ok=True)
 
-        file_path = os.path.join(year_dir, f"3day_{year}_{month}_{tag}.json")
+        file_path = os.path.join(year_dir, f"3day_{year}_{month}.json")
 
         # If path does not exist create new one
         if file_path not in monthly_files:
@@ -152,13 +154,13 @@ def main():
     raw_path = os.path.join(base, "data", "raw", "forecasts", "3day", "time_gaps")
     processed_path = os.path.join(base, "data", "data_processed", "3day_forecast")
 
-    for gap, file_name in GAPS.items():
+    for _, file_name in GAPS.items():
         threeday_json = importFile(os.path.join(raw_path, file_name))
         threeday_0030, threeday_1230 = splitJSON(threeday_json)
         sorted_0030, sorted_1230 = sortJSON(threeday_0030, threeday_1230)
         # Call dump job for each issue type
-        dumpJob(sorted_0030, processed_path, gap, "0030")
-        dumpJob(sorted_1230, processed_path, gap, "1230")
+        dumpJob(sorted_0030, processed_path, "0030")
+        dumpJob(sorted_1230, processed_path, "1230")
 
 
 
