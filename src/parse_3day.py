@@ -145,6 +145,7 @@ def extractRadiationMeta(radiation_data:list):
         "rationale": "" # Rationale can be multi-line
     }
 
+    # Join lines to avoid missing values over new lines
     joined = " ".join(line.strip() for line in radiation_data)
     joined = re.sub(r"\s+", " ", joined)
     l_joined = joined.lower()
@@ -185,6 +186,7 @@ def extractBlackoutMeta(blackout_data:list):
         "rationale": ""
     }
 
+    # Join lines to avoid missing values over new lines
     joined = " ".join(line.strip() for line in blackout_data)
     joined = re.sub(r"\s+", " ", joined)
 

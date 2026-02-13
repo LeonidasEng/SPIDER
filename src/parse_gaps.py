@@ -1,8 +1,7 @@
 import os
 import json
-from datetime import datetime, timezone, timedelta
-import logging
-from collections import defaultdict
+from datetime import datetime
+
 
 # The kind people at SWPC provided me with this data to fill in the gaps that I found within the NCEI archive
 # using an in-house tool. This data is not definitive and and may contain errors.
@@ -29,8 +28,8 @@ def normaliseRecord(data: dict) -> dict:
     valid = datetime.fromisoformat(data["valid"].replace("Z", "+00:00"))
 
     return {
-        "issue_time_utc": issue,
-        "valid_start_utc": valid,
+        "issue_time_utc": str(issue),
+        "valid_start_utc": str(valid),
         "lead_time_hrs": data["tau"],
         "forecast_kp": data["forecastKp"],
         "observed_kp": data["observedKp"]
@@ -45,9 +44,12 @@ def splitJSON(threeday_json:list):
     for data in threeday_json:
         record = normaliseRecord(data)
 
-        if record["issue_time_utc"].hour == 0:
+        issue_date, issue_time = record["issue_time_utc"].split()
+
+        # Extract hour from time 
+        if int(issue_time.split(":")[0]) < 2:
             threeday_0030.append(record)
-        elif record["issue_time_utc"].hour == 12:
+        elif int(issue_time.split(":")[0]) >= 12:
             threeday_1230.append(record)
         else:
             # There should be only two issues
@@ -56,6 +58,7 @@ def splitJSON(threeday_json:list):
     return threeday_0030, threeday_1230
 
 def sortJSON(threeday_0030, threeday_1230):
+    # Key helper function making sorting neater
     def sorter(record):
         return (record["issue_time_utc"], record["valid_start_utc"])
     
@@ -63,6 +66,24 @@ def sortJSON(threeday_0030, threeday_1230):
     sorted_1230 = sorted(threeday_1230, key=sorter)
 
     return sorted_0030, sorted_1230
+
+def dumpJob(sorted_0030:list, sorted_1230:list, proc_output:str, issue:str):
+    out_dir = os.path.join(proc_output, "time_gaps")
+    os.makedirs(out_dir, exist_ok=True)
+    
+    file_0030 = os.path.join(out_dir, f"3day_Time_{issue}_0030.json")
+    file_1230 = os.path.join(out_dir, f"3day_Time_{issue}_1230.json")
+
+    # Dump data for 0030 issue
+    with open(file_0030, "w", encoding="utf-8") as f:
+        json.dump(sorted_0030, f, indent=4)
+    
+    # Dump data for 1230 issue
+    with open(file_1230, "w", encoding="utf-8") as f:
+        json.dump(sorted_1230, f, indent=4)
+    
+    print(f"Dumped 0030 data for time {issue} -> {out_dir}")
+    print(f"Dumped 1230 data for time {issue} -> {out_dir}")
 
 def main():
     base = os.environ.get("SPIDER")
@@ -76,7 +97,7 @@ def main():
         threeday_json = importFile(os.path.join(raw_path, file_name))
         threeday_0030, threeday_1230 = splitJSON(threeday_json)
         sorted_0030, sorted_1230 = sortJSON(threeday_0030, threeday_1230)
-    
+        dumpJob(sorted_0030, sorted_1230, processed_path, gap)
 
 
 
