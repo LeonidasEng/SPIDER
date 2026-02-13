@@ -48,6 +48,19 @@ def main():
     # 3 Day 1230 Target Dataset: (19026, 19)
     # Geomag Target Dataset: (20726, 19)
 
+    # POST NEW DATA
+    # Observed Dataset: (11675, 11)
+    # 3 Day 0030 Feature Dataset: (30578, 15)
+    # 3 Day 1230 Feature Dataset: (25215, 15)
+    # Geomag Feature Dataset: (20726, 15)
+    # 3 Day 0030 Target Dataset: (30578, 19)
+    # 3 Day 1230 Target Dataset: (25215, 19)
+    # Geomag Target Dataset: (20726, 19)
+
+    # Dataset     | Old rows | New rows | Increase
+    # 3-Day 00:30 | 23,117   | 30,578   | +7,461 (~32%)
+    # 3-Day 12:30 | 19,026   | 25,215   | +6,189 (~32%)
+    # Geomag      | 20,726   | 20,726   | no change
 
 if __name__ == "__main__":
     main()
