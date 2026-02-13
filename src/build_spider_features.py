@@ -462,7 +462,7 @@ def main():
     spider_geomag.to_parquet(path_geomag)
     print(f"SPIDER Geomag feature parquet was saved to: {path_geomag}")
     spider_obs.to_parquet(path_observed)
-    print(f"SPIDER Observed parquet was saved to {path_geomag}")
+    print(f"SPIDER Observed parquet was saved to {path_observed}")
 
 if __name__ == "__main__":
     main()
