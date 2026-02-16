@@ -3,6 +3,10 @@ import pandas as pd
 
 # Debugger for all parquet files to quickly assess datasets.
 
+def climateOut(df): 
+    cols = ["bz_gsm", "v_sw", "ey", "np", "pdyn", "beta", "mach_alfven"]
+    return df[cols].copy()
+
 def main():
     # Environment variable must be set to run this script
     base = os.environ.get("SPIDER")
@@ -37,6 +41,10 @@ def main():
     print(f"3 Day 1230 Target Dataset: {df_tar_1230.shape}")
     print(f"Geomag Target Dataset: {df_tar_geo.shape}")
 
+    df_clim0030 = climateOut(df_tar_0030)
+    df_clim1230 = climateOut(df_tar_1230)
+    df_climGeo  = climateOut(df_tar_geo)
+
     print("stop") # For debug
     
     # PRE NEW DATA
@@ -57,10 +65,10 @@ def main():
     # 3 Day 1230 Target Dataset: (25215, 19)
     # Geomag Target Dataset: (20726, 19)
 
-    # Dataset     | Old rows | New rows | Increase
-    # 3-Day 00:30 | 23,117   | 30,578   | +7,461 (~32%)
-    # 3-Day 12:30 | 19,026   | 25,215   | +6,189 (~32%)
-    # Geomag      | 20,726   | 20,726   | no change
+    # Dataset    | Old rows | New rows | Increase
+    # 3-Day 0030 | 23,117   | 30,578   | +7,461 (~32%)
+    # 3-Day 1230 | 19,026   | 25,215   | +6,189 (~32%)
+    # Geomag     | 20,726   | 20,726   | no change
 
 if __name__ == "__main__":
     main()
