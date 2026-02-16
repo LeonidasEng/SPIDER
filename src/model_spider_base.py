@@ -41,40 +41,40 @@ def persistenceBase(df:pd.DataFrame, lead_day:int, target_col="is_large_error"):
 
     y_true = df[target_col].astype(int)         # Ground Truth
     y_prob = df["probability"].astype(float)    # Deterministic 0 or 1 but treating as prob for Brier and ROC
-    y_pred = (y_prob >= 0.5).astype(int)        # Predicted binary classification
+    y_pred = (y_prob >= 1).astype(int)        # Predicted binary classification
 
     # accuracy = (y_true == y_pred).mean()
     # print(f"Persistence accuracy {accuracy: .3f}")
 
     return y_true, y_prob, y_pred
 
-def climatologyBase(df:pd.DataFrame, lead_day:int, target_col="is_large_error"):
+def climatologyBase(df:pd.DataFrame, lead_day:int, target_col="is_large_error", forecast_col="kp_forecast"):
     df = df.copy()
 
     df = df[df["lead_day"] == lead_day]
 
-    # Using Data Wrangler, I can see the distribution of OMNI data.
-    # Using only 2 drivers to maintain broad outlook (I think!)
-    bins_bz = [-np.inf, -20, -10, -5, 0, 5, np.inf] 
-    # [-inf, -20], [-20, -10], [-10, -5], [-5, 0], [0, 5], [5, inf]
-    bins_vsw = [0, 350, 450, 600, 800, np.inf] 
-    # [0, 350], [350, 450], [450, 600], [600, 800], [800, inf]
+    # # Using Data Wrangler, I can see the distribution of OMNI data.
+    # # Using only 2 drivers to maintain broad outlook (I think!)
+    # bins_bz = [-np.inf, -20, -10, -5, 0, 5, np.inf] 
+    # # [-inf, -20], [-20, -10], [-10, -5], [-5, 0], [0, 5], [5, inf]
+    # bins_vsw = [0, 350, 450, 600, 800, np.inf] 
+    # # [0, 350], [350, 450], [450, 600], [600, 800], [800, inf]
 
-    df["bz_bin"]  = pd.cut(df["bz_gsm"], bins=bins_bz, include_lowest=True) # Include lowest for Large -Bz = Storm
-    df["vsw_bin"] = pd.cut(df["v_sw"], bins=bins_vsw)
+    # df["bz_bin"]  = pd.cut(df["bz_gsm"], bins=bins_bz, include_lowest=True) # Include lowest for Large -Bz = Storm
+    # df["vsw_bin"] = pd.cut(df["v_sw"], bins=bins_vsw)
 
-    # Climatology-based probabilty model P(|ΔKp| > 1)| Bz, vSw)
+    # Climatology-based probabilty model P(|ΔKp| > 1)| Forecast Kp)
     climatology = (
-        df.groupby(["bz_bin", "vsw_bin"], observed=False)[target_col]
+        df.groupby(forecast_col)[target_col]
         .mean()
         .rename("probability")
         .reset_index()
     )
 
-    df = df.merge(climatology, on=["bz_bin", "vsw_bin"], how="left")
+    df = df.merge(climatology, on=forecast_col, how="left") # ["bz_bin", "vsw_bin"]
     
     y_true = df[target_col].astype(int)
-    y_prob = df["probability"].fillna(0.0) # Fill missing with zeros
+    y_prob = df["probability"].fillna(df[target_col].mean()) # Fill missing with zeros
     y_pred = (y_prob >= 0.5).astype(int) # baseline prediction threshold (Camporeale:2025)
 
     # accuracy = (y_true == y_pred).mean()
@@ -139,6 +139,12 @@ def main():
     train_sets = {}
     test_sets = {}
     tables = {}
+
+    kp_column = {
+            "3 Day Forecast 0030": "kp_threeday",
+            "3 Day Forecast 1230": "kp_threeday",
+            "Geomag Forecast": "kp_geomag"
+        }
     
     for dataset, file_name in TARGETS.items():
 
@@ -155,6 +161,7 @@ def main():
             y_true, y_prob,  y_pred = persistenceBase(test_set, lead_day)
             print(f"{y_true.shape}, {y_pred.shape}")
             rows.append(metricsTable(dataset, lead_day, "Persistence", y_true, y_prob, y_pred))
+            test_set = test_set.rename(columns={kp_column[dataset]: "kp_forecast"})
             y_true, y_prob, y_pred = climatologyBase(test_set, lead_day)
             print(f"{y_true.shape}, {y_pred.shape}")
             rows.append(metricsTable(dataset, lead_day, "Climatology", y_true, y_prob, y_pred))
