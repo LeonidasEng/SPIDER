@@ -7,10 +7,10 @@ from collections import defaultdict
 # The kind people at SWPC provided me with this data to fill in the gaps that I found within the NCEI archive
 # using an in-house tool. This data is not definitive and and may contain errors.
 
-GAPS = {
-    "Gap_2022":"20220816-20221112_KpFcst.json",
-    "Gap_2023":"20230809-20240229_KpFcst.json",
-    "Gap_2024":"20240901-20240930_KpFcst.json"
+DATA = {
+    "Full":"full_data.json"
+    # Yes only one file now, but if this should change when integrating test data
+    # additional entries will be easy to attach
 }
 
 def importFile(file_path:str):
@@ -55,8 +55,8 @@ def splitJSON(threeday_json:list):
 
         issue_date, issue_time = record["issue_time_utc"].split()
         hour = int(issue_time.split(":")[0])
-        # Extract hour from time 
-        if  hour < 2:
+        # Extract hour from time (some issues are late but this is exception not rule)
+        if  hour < 12:
             threeday_0030.append(record)
         elif hour >= 12:
             threeday_1230.append(record)
@@ -118,7 +118,7 @@ def buildForecastStruct(sorted_records:list):
 
 def dumpJob(sorted_records:list, proc_output:str, tag:str):
     # Changed to 3day_ folder to match other processed data
-    out_dir = os.path.join(proc_output, "time_gaps", f"3day_{tag}")
+    out_dir = os.path.join(proc_output, "operation_full", f"3day_{tag}")
 
     struct = buildForecastStruct(sorted_records)
     
@@ -151,10 +151,10 @@ def main():
     if base is None:
         raise EnvironmentError("SPIDER system variable is not set!")
     
-    raw_path = os.path.join(base, "data", "raw", "forecasts", "3day", "time_gaps")
+    raw_path = os.path.join(base, "data", "raw", "forecasts", "3day", "operation_full")
     processed_path = os.path.join(base, "data", "data_processed", "3day_forecast")
 
-    for _, file_name in GAPS.items():
+    for _, file_name in DATA.items():
         threeday_json = importFile(os.path.join(raw_path, file_name))
         threeday_0030, threeday_1230 = splitJSON(threeday_json)
         sorted_0030, sorted_1230 = sortJSON(threeday_0030, threeday_1230)
