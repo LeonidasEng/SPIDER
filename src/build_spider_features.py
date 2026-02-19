@@ -5,7 +5,7 @@ import pandas as pd
 
 DATASETS = {
     "observed_kp":"dayind",
-    "geomag_forecast": "geomag_forecast",
+    # "geomag_forecast": "geomag_forecast", # Removing
     "3day_forecast": "3day_forecast",
     "omni2":"omni2"
 }
@@ -435,14 +435,14 @@ def main():
     
     # Does path exist for processed data (forecasts, observed, omni)
     observed_path = getProcDatapath(base, "observed_kp")
-    geomag_forecast_path = getProcDatapath(base, "geomag_forecast")
+    #geomag_forecast_path = getProcDatapath(base, "geomag_forecast")
     three_forecast_morn_path = getProcDatapath(base, "3day_forecast", "3day_0030")
     three_forecast_aft_path = getProcDatapath(base, "3day_forecast", "3day_1230")
     omni_path = getProcDatapath(base, "omni2")
 
     # Build DataFrames for processed data
     df_obs = buildObserved(observed_path)
-    df_geomag = buildGeomagForecast(geomag_forecast_path)
+    #df_geomag = buildGeomagForecast(geomag_forecast_path)
     df_3day_morn = build3DayForecast(three_forecast_morn_path)
     df_3day_aft = build3DayForecast(three_forecast_aft_path)
     df_omni = buildOMNI(omni_path)
@@ -450,7 +450,7 @@ def main():
     # Merge into forecast-centric DataFrames
     spider_3day_morn = buildTable3Day(df_3day_morn, df_obs, df_omni)
     spider_3day_aft = buildTable3Day(df_3day_aft, df_obs, df_omni)
-    spider_geomag = buildTableGeomag(df_geomag, df_obs, df_omni)
+    #spider_geomag = buildTableGeomag(df_geomag, df_obs, df_omni)
     spider_obs = buildTableObserved(df_obs, df_omni)
 
     data_output_path = os.path.join(base, "data", "datasets")
@@ -468,8 +468,8 @@ def main():
     with open(os.path.join(report_output_path, "spider_feature_report.json"), "w") as f:
         json.dump({
             "3day_0030": verifyDataQuality(spider_3day_morn, "3day_0030"),
-            "3day_1230": verifyDataQuality(spider_3day_aft, "3day_1230"),
-            "geomag": verifyDataQuality(spider_geomag, "geomag")
+            "3day_1230": verifyDataQuality(spider_3day_aft, "3day_1230")
+            #"geomag": verifyDataQuality(spider_geomag, "geomag")
             }, f, default=str, indent=4)
 
     # Output merged dataframes as parquet
@@ -477,8 +477,8 @@ def main():
     print(f"SPIDER 3 Day 0030 feature parquet was saved to: {path_3day_morn}") 
     spider_3day_aft.to_parquet(path_3day_aft)
     print(f"SPIDER 3 Day 1230 feature parquet was saved to: {path_3day_aft}")
-    spider_geomag.to_parquet(path_geomag)
-    print(f"SPIDER Geomag feature parquet was saved to: {path_geomag}")
+    #spider_geomag.to_parquet(path_geomag)
+    #print(f"SPIDER Geomag feature parquet was saved to: {path_geomag}")
     spider_obs.to_parquet(path_observed)
     print(f"SPIDER Observed parquet was saved to {path_observed}")
 
