@@ -17,6 +17,8 @@ data/data_processed/
 
 # Docs
 docs/resources
+docs/P_Clim
+docs/P_Clim_ForecastKp_Condition
 
 # Logs
 logs/
