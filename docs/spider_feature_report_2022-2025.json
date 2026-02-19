@@ -1,0 +1,227 @@
+{
+    "3day_0030": {
+        "dataset": "3day_0030",
+        "rows": 30578,
+        "columns": 15,
+        "time_start": "2022-03-25 03:00:00+00:00",
+        "time_end": "2026-01-02 21:00:00+00:00",
+        "hour_gap_distribution": {
+            "0.0": 19875,
+            "3.0": 10694,
+            "6.0": 5,
+            "30.0": 1,
+            "750.0": 1,
+            "222.0": 1
+        },
+        "time_gaps": 8,
+        "average_time_gaps_%": 0.026,
+        "gap_ranges": [
+            {
+                "start_gap_after": "2022-11-12 21:00:00+00:00",
+                "resumes_at": "2022-11-13 03:00:00+00:00",
+                "gap_hours": 6.0
+            },
+            {
+                "start_gap_after": "2022-12-16 00:00:00+00:00",
+                "resumes_at": "2022-12-17 06:00:00+00:00",
+                "gap_hours": 30.0
+            },
+            {
+                "start_gap_after": "2024-02-29 21:00:00+00:00",
+                "resumes_at": "2024-03-01 03:00:00+00:00",
+                "gap_hours": 6.0
+            },
+            {
+                "start_gap_after": "2024-05-16 21:00:00+00:00",
+                "resumes_at": "2024-06-17 03:00:00+00:00",
+                "gap_hours": 750.0
+            },
+            {
+                "start_gap_after": "2024-06-19 09:00:00+00:00",
+                "resumes_at": "2024-06-19 15:00:00+00:00",
+                "gap_hours": 6.0
+            },
+            {
+                "start_gap_after": "2024-08-03 03:00:00+00:00",
+                "resumes_at": "2024-08-03 09:00:00+00:00",
+                "gap_hours": 6.0
+            },
+            {
+                "start_gap_after": "2024-09-30 21:00:00+00:00",
+                "resumes_at": "2024-10-10 03:00:00+00:00",
+                "gap_hours": 222.0
+            },
+            {
+                "start_gap_after": "2024-10-13 15:00:00+00:00",
+                "resumes_at": "2024-10-13 21:00:00+00:00",
+                "gap_hours": 6.0
+            }
+        ],
+        "missing_values_%": {
+            "kp_obs": 0.078,
+            "bz_gsm": 0.477,
+            "b_mag": 0.477,
+            "v_sw": 1.403,
+            "np": 1.403,
+            "pdyn": 1.403,
+            "ey": 1.527,
+            "beta": 1.583,
+            "mach_alfven": 1.527,
+            "f10.7": 0.072
+        },
+        "negative_lead_times": 0,
+        "max_lead_time_hours": 69.0,
+        "min_lead_time_hours": 0.0,
+        "duplicate_times": 0,
+        "duplicate_times_%": 0.0
+    },
+    "3day_1230": {
+        "dataset": "3day_1230",
+        "rows": 25215,
+        "columns": 15,
+        "time_start": "2022-03-25 15:00:00+00:00",
+        "time_end": "2026-01-02 21:00:00+00:00",
+        "hour_gap_distribution": {
+            "0.0": 14524,
+            "3.0": 10682,
+            "6.0": 3,
+            "18.0": 2,
+            "30.0": 1,
+            "738.0": 1,
+            "234.0": 1
+        },
+        "time_gaps": 8,
+        "average_time_gaps_%": 0.032,
+        "gap_ranges": [
+            {
+                "start_gap_after": "2022-11-12 21:00:00+00:00",
+                "resumes_at": "2022-11-13 15:00:00+00:00",
+                "gap_hours": 18.0
+            },
+            {
+                "start_gap_after": "2022-12-16 00:00:00+00:00",
+                "resumes_at": "2022-12-17 06:00:00+00:00",
+                "gap_hours": 30.0
+            },
+            {
+                "start_gap_after": "2024-02-29 21:00:00+00:00",
+                "resumes_at": "2024-03-01 15:00:00+00:00",
+                "gap_hours": 18.0
+            },
+            {
+                "start_gap_after": "2024-05-16 21:00:00+00:00",
+                "resumes_at": "2024-06-16 15:00:00+00:00",
+                "gap_hours": 738.0
+            },
+            {
+                "start_gap_after": "2024-06-19 09:00:00+00:00",
+                "resumes_at": "2024-06-19 15:00:00+00:00",
+                "gap_hours": 6.0
+            },
+            {
+                "start_gap_after": "2024-08-03 03:00:00+00:00",
+                "resumes_at": "2024-08-03 09:00:00+00:00",
+                "gap_hours": 6.0
+            },
+            {
+                "start_gap_after": "2024-09-30 21:00:00+00:00",
+                "resumes_at": "2024-10-10 15:00:00+00:00",
+                "gap_hours": 234.0
+            },
+            {
+                "start_gap_after": "2024-10-13 15:00:00+00:00",
+                "resumes_at": "2024-10-13 21:00:00+00:00",
+                "gap_hours": 6.0
+            }
+        ],
+        "missing_values_%": {
+            "kp_obs": 0.095,
+            "bz_gsm": 0.496,
+            "b_mag": 0.496,
+            "v_sw": 1.424,
+            "np": 1.424,
+            "pdyn": 1.424,
+            "ey": 1.543,
+            "beta": 1.602,
+            "mach_alfven": 1.543,
+            "f10.7": 0.087
+        },
+        "negative_lead_times": 0,
+        "max_lead_time_hours": 57.0,
+        "min_lead_time_hours": 0.0,
+        "duplicate_times": 0,
+        "duplicate_times_%": 0.0
+    },
+    "geomag": {
+        "dataset": "geomag",
+        "rows": 20726,
+        "columns": 15,
+        "time_start": "2022-11-14 00:00:00+00:00",
+        "time_end": "2026-01-03 21:00:00+00:00",
+        "hour_gap_distribution": {
+            "0.0": 13730,
+            "3.0": 6988,
+            "6.0": 3,
+            "30.0": 1,
+            "4875.0": 1,
+            "723.0": 1,
+            "915.0": 1
+        },
+        "time_gaps": 7,
+        "average_time_gaps_%": 0.034,
+        "gap_ranges": [
+            {
+                "start_gap_after": "2022-12-16 00:00:00+00:00",
+                "resumes_at": "2022-12-17 06:00:00+00:00",
+                "gap_hours": 30.0
+            },
+            {
+                "start_gap_after": "2023-08-11 21:00:00+00:00",
+                "resumes_at": "2024-03-02 00:00:00+00:00",
+                "gap_hours": 4875.0
+            },
+            {
+                "start_gap_after": "2024-05-17 21:00:00+00:00",
+                "resumes_at": "2024-06-17 00:00:00+00:00",
+                "gap_hours": 723.0
+            },
+            {
+                "start_gap_after": "2024-06-19 09:00:00+00:00",
+                "resumes_at": "2024-06-19 15:00:00+00:00",
+                "gap_hours": 6.0
+            },
+            {
+                "start_gap_after": "2024-08-03 03:00:00+00:00",
+                "resumes_at": "2024-08-03 09:00:00+00:00",
+                "gap_hours": 6.0
+            },
+            {
+                "start_gap_after": "2024-09-01 21:00:00+00:00",
+                "resumes_at": "2024-10-10 00:00:00+00:00",
+                "gap_hours": 915.0
+            },
+            {
+                "start_gap_after": "2024-10-13 15:00:00+00:00",
+                "resumes_at": "2024-10-13 21:00:00+00:00",
+                "gap_hours": 6.0
+            }
+        ],
+        "missing_values_%": {
+            "kp_obs": 0.232,
+            "bz_gsm": 0.579,
+            "b_mag": 0.579,
+            "v_sw": 1.944,
+            "np": 1.944,
+            "pdyn": 1.944,
+            "ey": 2.031,
+            "beta": 2.118,
+            "mach_alfven": 2.031,
+            "f10.7": 0.217
+        },
+        "negative_lead_times": 0,
+        "max_lead_time_hours": 71.0,
+        "min_lead_time_hours": 1.5,
+        "duplicate_times": 0,
+        "duplicate_times_%": 0.0
+    }
+}
