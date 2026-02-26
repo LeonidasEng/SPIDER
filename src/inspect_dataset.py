@@ -19,35 +19,35 @@ def main():
             "Observed": "spider_features_obs.parquet",
             "3 Day Forecast 0030": "spider_features_3day_0030.parquet",
             "3 Day Forecast 1230": "spider_features_3day_1230.parquet",
-            "Geomag Forecast": "spider_features_geomag.parquet",
+            #"Geomag Forecast": "spider_features_geomag.parquet",
             "3 Day Targets 0030": "spider_targets_3day_0030.parquet",
             "3 Day Targets 1230": "spider_targets_3day_1230.parquet",
-            "Geomag Targets": "spider_targets_geomag.parquet"
+            #"Geomag Targets": "spider_targets_geomag.parquet"
         }
     
     df_obs = pd.read_parquet(os.path.join(dataset_path, FILES["Observed"]))
     df_0030 = pd.read_parquet(os.path.join(dataset_path, FILES["3 Day Forecast 0030"]))
     df_1230 = pd.read_parquet(os.path.join(dataset_path, FILES["3 Day Forecast 1230"]))
-    df_geo = pd.read_parquet(os.path.join(dataset_path, FILES["Geomag Forecast"]))
+    #df_geo = pd.read_parquet(os.path.join(dataset_path, FILES["Geomag Forecast"]))
     df_tar_0030 = pd.read_parquet(os.path.join(dataset_path, FILES["3 Day Targets 0030"]))
     df_tar_1230 = pd.read_parquet(os.path.join(dataset_path, FILES["3 Day Targets 1230"]))
-    df_tar_geo = pd.read_parquet(os.path.join(dataset_path, FILES["Geomag Targets"]))
+    #df_tar_geo = pd.read_parquet(os.path.join(dataset_path, FILES["Geomag Targets"]))
 
     print(f"Observed Dataset: {df_obs.shape}")
     print(f"3 Day 0030 Feature Dataset: {df_0030.shape}")
     print(f"3 Day 1230 Feature Dataset: {df_1230.shape}")
-    print(f"Geomag Feature Dataset: {df_geo.shape}")
+    #print(f"Geomag Feature Dataset: {df_geo.shape}")
     print(f"3 Day 0030 Target Dataset: {df_tar_0030.shape}")
     print(f"3 Day 1230 Target Dataset: {df_tar_1230.shape}")
-    print(f"Geomag Target Dataset: {df_tar_geo.shape}")
+    #print(f"Geomag Target Dataset: {df_tar_geo.shape}")
 
-    df_clim0030 = climateOut(df_tar_0030)
-    df_clim1230 = climateOut(df_tar_1230)
-    df_climGeo  = climateOut(df_tar_geo)
+    #df_clim0030 = climateOut(df_tar_0030)
+    #df_clim1230 = climateOut(df_tar_1230)
+    #df_climGeo  = climateOut(df_tar_geo)
 
     print("stop") # For debug
     
-    # PRE NEW DATA
+    # ORIGINAL DATA
     # Observed Dataset: (11675, 11)
     # 3 Day 0030 Feature Dataset: (23117, 15)
     # 3 Day 1230 Feature Dataset: (19026, 15)
@@ -56,7 +56,7 @@ def main():
     # 3 Day 1230 Target Dataset: (19026, 19)
     # Geomag Target Dataset: (20726, 19)
 
-    # POST NEW DATA
+    # POST NEW DATA (2022-2025) 
     # Observed Dataset: (11675, 11)
     # 3 Day 0030 Feature Dataset: (30578, 15)
     # 3 Day 1230 Feature Dataset: (25215, 15)
@@ -69,6 +69,13 @@ def main():
     # 3-Day 0030 | 23,117   | 30,578   | +7,461 (~32%)
     # 3-Day 1230 | 19,026   | 25,215   | +6,189 (~32%)
     # Geomag     | 20,726   | 20,726   | no change
+
+    # POST LARGE DATA (2015-2025)
+    # Observed Dataset: (31898, 11)
+    # 3 Day 0030 Feature Dataset: (94873, 15)
+    # 3 Day 1230 Feature Dataset: (78990, 15)
+    # 3 Day 0030 Target Dataset: (94873, 19)
+    # 3 Day 1230 Target Dataset: (78990, 19)
 
 if __name__ == "__main__":
     main()

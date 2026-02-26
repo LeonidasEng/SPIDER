@@ -2,12 +2,13 @@ import os
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+import matplotlib.dates as mdates
 
 FILES = {
         "Observed": "spider_features_obs.parquet",
         "3 Day Forecast 0030": "spider_features_3day_0030.parquet",
         "3 Day Forecast 1230": "spider_features_3day_1230.parquet",
-        "Geomag Forecast": "spider_features_geomag.parquet"
+        #"Geomag Forecast": "spider_features_geomag.parquet"
     }
     
 # Helper functions for preparing datasets
@@ -42,7 +43,7 @@ def forecastSpread(dataset_path:str):
     kp_column = {
         "3 Day Forecast 0030": "kp_threeday",
         "3 Day Forecast 1230": "kp_threeday",
-        "Geomag Forecast": "kp_geomag"
+        #"Geomag Forecast": "kp_geomag"
     }
 
     lead_days = [0,1,2]
@@ -64,8 +65,8 @@ def forecastSpread(dataset_path:str):
         # Combine forecasts across datasets and compare
         df_aligned = pd.concat([
                 prepared["3 Day Forecast 0030"].rename("kp_0030"),
-                prepared["3 Day Forecast 1230"].rename("kp_1230"),
-                prepared["Geomag Forecast"].rename("kp_geomag")
+                prepared["3 Day Forecast 1230"].rename("kp_1230")
+                #prepared["Geomag Forecast"].rename("kp_geomag")
             ], axis=1, join="inner")
     
         # Sanity check: alignment 
@@ -151,7 +152,7 @@ def leadDaySkill(dataset_path:str):
     kp_column = {
         "3 Day Forecast 0030": "kp_threeday",
         "3 Day Forecast 1230": "kp_threeday",
-        "Geomag Forecast": "kp_geomag"
+        #"Geomag Forecast": "kp_geomag"
     }
 
     kp_obs_daily = None
@@ -224,7 +225,7 @@ def riskCurves(dataset_path:str):
     kp_column = {
             "3 Day Forecast 0030": "kp_threeday",
             "3 Day Forecast 1230": "kp_threeday",
-            "Geomag Forecast": "kp_geomag"
+            #"Geomag Forecast": "kp_geomag"
         }
 
     for dataset, file_name in FILES.items():
@@ -381,6 +382,8 @@ def overviewObserved(dataset_path: str):
     # Create multiple plots to be overlayed
     _, ax1 = plt.subplots(figsize=(10,6))
     ax1.plot(kp_max_smooth.index, kp_max_smooth, linewidth=2, color="tab:orange", label="Kp 27-day Mean")
+    ax1.xaxis.set_major_locator(mdates.YearLocator(1))
+    ax1.xaxis.set_major_formatter(mdates.DateFormatter("%Y"))
     ax1.set_xlabel("Time", fontsize=12)
     ax1.set_ylabel("Kp Index", fontsize=12)
     ax1.grid(alpha=0.3)
@@ -393,7 +396,7 @@ def overviewObserved(dataset_path: str):
     # Secondary axis for F10.7
     ax2 = ax1.twinx()
     ax2.plot(f107_daily.index, f107_daily, alpha=0.35, color="magenta", label="F10.7")
-    ax2.set_ylabel("F10.7 (sfu)")
+    ax2.set_ylabel("F10.7 (sfu)", fontsize=12)
 
     handles1, labels1 = ax1.get_legend_handles_labels() # Kp and Storm scales
     handles2, labels2 = ax2.get_legend_handles_labels() # F10.7
@@ -415,11 +418,11 @@ def main():
     # I only care about making the graphs:
 
     #histogramObserved(dataset_path)
-    overviewObserved(dataset_path)
+    #overviewObserved(dataset_path)
     #forecastSpread(dataset_path)
     #forecastRevision(dataset_path)
     #leadDaySkill(dataset_path)
-    #riskCurves(dataset_path)
+    riskCurves(dataset_path)
 
 if __name__ == "__main__":
     main()

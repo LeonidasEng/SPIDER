@@ -458,7 +458,7 @@ def main():
 
     path_3day_morn = os.path.join(data_output_path, "spider_features_3day_0030.parquet")
     path_3day_aft = os.path.join(data_output_path, "spider_features_3day_1230.parquet")
-    path_geomag = os.path.join(data_output_path, "spider_features_geomag.parquet")
+    #path_geomag = os.path.join(data_output_path, "spider_features_geomag.parquet")
     path_observed = os.path.join(data_output_path, "spider_features_obs.parquet")
 
     report_output_path = os.path.join(base, "docs")
