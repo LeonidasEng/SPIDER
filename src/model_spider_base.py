@@ -3,11 +3,13 @@ import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
 from sklearn import metrics
+from sklearn.model_selection import train_test_split
+from sklearn.naive_bayes import GaussianNB
 
 TARGETS = {
         "3 Day Forecast 0030": "spider_targets_3day_0030.parquet",
         "3 Day Forecast 1230": "spider_targets_3day_1230.parquet",
-        "Geomag Forecast": "spider_targets_geomag.parquet"
+        #"Geomag Forecast": "spider_targets_geomag.parquet"
     }
 
 # Create Test and Train datasets: https://www.geeksforgeeks.org/python/pandas-create-test-and-train-samples-from-dataframe/
@@ -41,7 +43,7 @@ def persistenceBase(df:pd.DataFrame, lead_day:int, target_col="is_large_error"):
 
     y_true = df[target_col].astype(int)         # Ground Truth
     y_prob = df["probability"].astype(float)    # Deterministic 0 or 1 but treating as prob for Brier and ROC
-    y_pred = (y_prob >= 1).astype(int)        # Predicted binary classification
+    y_pred = (y_prob == 1).astype(int)        # Predicted binary classification
 
     # accuracy = (y_true == y_pred).mean()
     # print(f"Persistence accuracy {accuracy: .3f}")
@@ -71,16 +73,26 @@ def climatologyBase(df:pd.DataFrame, lead_day:int, target_col="is_large_error", 
         .reset_index()
     )
 
-    df = df.merge(climatology, on=forecast_col, how="left") # ["bz_bin", "vsw_bin"]
+    df = df.merge(climatology, on=forecast_col, how="left")
     
     y_true = df[target_col].astype(int)
     y_prob = df["probability"].fillna(df[target_col].mean()) # Fill missing with zeros
-    y_pred = (y_prob >= 0.5).astype(int) # baseline prediction threshold (Camporeale:2025)
-
+    y_pred = (y_prob >= 0.5).astype(int) # baseline prediction threshold (Camporeale:2025) 
+    # Not: 0.15, 0.2, 0.3, 0.35 (T0), 0.4, 0.45
+    # Based on Camporeale I should use the y_pred that maximises TSS.
+    # 0.35 3 Day Forecast 0030,Climatology,0,0.63,0.46,0.5,0.48,0.21,0.63,0.5,0.54,0.32,0.19,0.19
     # accuracy = (y_true == y_pred).mean()
     # print(f"Climatology accuracy: {accuracy: .3f}")
 
     return y_true, y_prob, y_pred
+
+def gaussianBase(df:pd.DataFrame, lead_day:int):
+    df = df.copy()
+
+    df = df[df["lead_day"] == lead_day]
+
+    clf = GaussianNB()
+    pass
 
 def cmDisplay(observed, predicted):
     
@@ -121,7 +133,7 @@ def metricsTable(dataset, lead_day, model_name, y_true, y_prob, y_pred):
         "F1": round(f1, 2),
         "Brier": round(brier, 2) ,
         "AUC": round(auc, 2),
-        "POD": round(pod, 2),
+        "POD": round(pod, 2), # Same as recall, use as verification but delete in final version
         "FAR": round(far, 2),
         "CSI": round(csi, 2),
         "TSS": round(tss, 2),
@@ -143,7 +155,7 @@ def main():
     kp_column = {
             "3 Day Forecast 0030": "kp_threeday",
             "3 Day Forecast 1230": "kp_threeday",
-            "Geomag Forecast": "kp_geomag"
+            #"Geomag Forecast": "kp_geomag"
         }
     
     for dataset, file_name in TARGETS.items():
