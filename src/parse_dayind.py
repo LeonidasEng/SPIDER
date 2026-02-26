@@ -57,8 +57,11 @@ def parseDayInd(text: list):
     '''
 
     # Extract issue timestamp from product header
+    if not text:
+        return None
     issue_ln = text[1].replace(":Issued:", "").strip()
-    issue = datetime.strptime(issue_ln.replace(" UT", ""), "%Y %b %d %H%M")
+    # Replace UTC or UT
+    issue = datetime.strptime(issue_ln.replace(" UTC", "").replace(" UT", ""), "%Y %b %d %H%M")
     issue = issue.replace(tzinfo=timezone.utc)
     
     # NOAA dayind products are issued after the observation day
@@ -170,7 +173,12 @@ def main():
         month = int(parts[-2])
 
         # Parse file and integrate into year/month
-        issue_dt, kp_bins = parseDayInd(text)
+        parsed = parseDayInd(text)
+        if parsed is None:
+            logger.warning(f"Skipping empty or missing product {file_path}")
+            continue
+
+        issue_dt, kp_bins = parsed
         day_data = buildIndices(issue_dt, kp_bins)
 
         data_dict[year][month].update(day_data)
