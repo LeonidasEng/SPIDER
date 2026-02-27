@@ -5,7 +5,6 @@ import pandas as pd
 
 DATASETS = {
     "observed_kp":"dayind",
-    # "geomag_forecast": "geomag_forecast", # Removing
     "3day_forecast": "3day_forecast",
     "omni2":"omni2"
 }
@@ -41,46 +40,6 @@ def extractObservedKp(observed_json:dict):
             })
     return rows
             
-def extractGeomagForecastKp(geomag_json):
-    rows = []
-
-    for day, forecast in geomag_json.items():
-        for key, data in forecast.items():
-            # Multiple keys at this level
-            if key == "issue":
-                # Track issue date to compute lead day and hour
-                issue_date = data
-                date_part, time_part, tz_part = issue_date.split() # Date Time Timezone
-                start_time = time_part.rsplit(":", 1)[0] # Extract Hours and Minutes - some issues aren't on the hour
-                issue_start = datetime.strptime(f"{date_part} {start_time}", "%Y-%m-%d %H:%M").replace(tzinfo=timezone.utc)
-                continue
-            elif key != "kp":
-                # Ignore for now - Reintroduce other data later in project
-                continue 
-
-            forecast_bins = ["n+1", "n+2", "n+3"] # Iterate through forecast bins
-            for bin in forecast_bins:
-                n_bins = data.get(bin, [])
-                for bin_entry in n_bins:
-                    time_str, geomag_kp = bin_entry
-                    date_part, hour_part = time_str.split() # Date Time
-                    start_hour = hour_part.split("-")[0] # 00-03UT get first part
-
-                    # Extract valid start for Geomag Forecast (start of 3-hour bin)
-                    valid_start = datetime.strptime(f"{date_part} {start_hour}", "%Y-%m-%d %H").replace(tzinfo=timezone.utc)
-
-                    lead = valid_start - issue_start           # Calculate lead time
-                    lead_hours = (lead.total_seconds() / 3600) # Total seconds / Seconds per hour
-
-                    rows.append({
-                        "issue_time_utc": issue_start,
-                        "valid_start_utc": valid_start,
-                        "kp_geomag": geomag_kp,         # Geomag Prediction
-                        "lead_day": lead.days,          # Days since issue, expect 1,2,3
-                        "lead_time": lead_hours         # Hours since issue
-                    })
-    return rows
-
 def extract3dayForecastKp(three_day_json:str):
     rows = []
 
@@ -182,36 +141,6 @@ def build3DayForecast(three_day_forecast_path:str):
 
     return df_threeday
 
-def buildGeomagForecast(geomag_forecast_path:str):
-    geomag_data = []
-
-    # Sort if sub-folders in a directory at path
-    years = sorted(d for d in os.listdir(geomag_forecast_path)
-                   if os.path.isdir(os.path.join(geomag_forecast_path, d)))
-    
-    # Year sub-folders inside processed geomag_forecast
-    for year in years:
-        year_path = os.path.join(geomag_forecast_path, year)
-
-        # Years are broken down into monthly files
-        for file_name in sorted(os.listdir(year_path)):
-            if not file_name.endswith(".json"):
-                continue
-        
-            file_path = os.path.join(year_path, file_name)
-            geomag_json = importFile(file_path)
-
-            rows = extractGeomagForecastKp(geomag_json)
-            geomag_data.extend(rows) # Extend data with all available forecast data
-    
-    print(f"Extracted {len(geomag_data)} geomag bins")
-
-    geomag_data.sort(key=lambda x: x["issue_time_utc"])
-    df_geomag = pd.DataFrame(geomag_data) # Create DataFrame for geomag forecast
-    df_geomag = df_geomag.sort_values(["issue_time_utc", "valid_start_utc"]).reset_index(drop=True) # Primary & secondary sort, reset index
-    
-    return df_geomag
-
 def buildObserved(observed_path:str):
     observed_data = []
     
@@ -293,32 +222,6 @@ def buildTable3Day(df_3day:pd.DataFrame, df_obs:pd.DataFrame, df_omni:pd.DataFra
     df = removeInvalidKp(df) # Removes invalid rows
 
     return df.sort_values(["issue_time_utc", "valid_start_utc"]).reset_index(drop=True)
-
-def buildTableGeomag(df_geomag:pd.DataFrame, df_obs:pd.DataFrame, df_omni:pd.DataFrame) -> pd.DataFrame:
-    df = df_geomag.copy() # Important: Table forecast-centric NOT observation-centric
-
-    # Merge observed Kp (exact valid time match)
-    df = df.merge(df_obs[["valid_start_utc", "kp_obs"]], how="left", on="valid_start_utc")
-
-    # Merge OMNI (Upstream context (backwards), tolerance = 3 hours)
-    df = pd.merge_asof(df.sort_values("valid_start_utc"),
-                       df_omni.sort_values("valid_start_utc"),
-                       on="valid_start_utc",
-                       direction="backward",
-                       tolerance=pd.Timedelta("3h"))
-
-    # Sanity check: no lead time leakage
-    computed = ((df["valid_start_utc"] - df["issue_time_utc"]).dt.total_seconds() / 3600)
-    
-    assert (computed - df["lead_time"]).abs().max() < 1e-6, \
-            "Lead time mismatch"
-    
-    df["lead_time"] = df["lead_time"].round(2) # Round to 2 decimal places 
-    
-    df = df[(df["lead_time"] >= 0) & (df["lead_time"] <= 72)]
-    df = removeInvalidKp(df) # Removes invalid rows
-
-    return df.sort_values(["issue_time_utc", "lead_day", "valid_start_utc"]).reset_index(drop=True)
 
 def buildTableObserved(df_obs:pd.DataFrame, df_omni:pd.DataFrame) -> pd.DataFrame:
     df = df_obs.copy() # Full ground truth.
@@ -435,14 +338,12 @@ def main():
     
     # Does path exist for processed data (forecasts, observed, omni)
     observed_path = getProcDatapath(base, "observed_kp")
-    #geomag_forecast_path = getProcDatapath(base, "geomag_forecast")
     three_forecast_morn_path = getProcDatapath(base, "3day_forecast", "3day_0030")
     three_forecast_aft_path = getProcDatapath(base, "3day_forecast", "3day_1230")
     omni_path = getProcDatapath(base, "omni2")
 
     # Build DataFrames for processed data
     df_obs = buildObserved(observed_path)
-    #df_geomag = buildGeomagForecast(geomag_forecast_path)
     df_3day_morn = build3DayForecast(three_forecast_morn_path)
     df_3day_aft = build3DayForecast(three_forecast_aft_path)
     df_omni = buildOMNI(omni_path)
@@ -450,7 +351,6 @@ def main():
     # Merge into forecast-centric DataFrames
     spider_3day_morn = buildTable3Day(df_3day_morn, df_obs, df_omni)
     spider_3day_aft = buildTable3Day(df_3day_aft, df_obs, df_omni)
-    #spider_geomag = buildTableGeomag(df_geomag, df_obs, df_omni)
     spider_obs = buildTableObserved(df_obs, df_omni)
 
     data_output_path = os.path.join(base, "data", "datasets")
@@ -458,7 +358,6 @@ def main():
 
     path_3day_morn = os.path.join(data_output_path, "spider_features_3day_0030.parquet")
     path_3day_aft = os.path.join(data_output_path, "spider_features_3day_1230.parquet")
-    #path_geomag = os.path.join(data_output_path, "spider_features_geomag.parquet")
     path_observed = os.path.join(data_output_path, "spider_features_obs.parquet")
 
     report_output_path = os.path.join(base, "docs")
@@ -469,7 +368,6 @@ def main():
         json.dump({
             "3day_0030": verifyDataQuality(spider_3day_morn, "3day_0030"),
             "3day_1230": verifyDataQuality(spider_3day_aft, "3day_1230")
-            #"geomag": verifyDataQuality(spider_geomag, "geomag")
             }, f, default=str, indent=4)
 
     # Output merged dataframes as parquet
@@ -477,8 +375,6 @@ def main():
     print(f"SPIDER 3 Day 0030 feature parquet was saved to: {path_3day_morn}") 
     spider_3day_aft.to_parquet(path_3day_aft)
     print(f"SPIDER 3 Day 1230 feature parquet was saved to: {path_3day_aft}")
-    #spider_geomag.to_parquet(path_geomag)
-    #print(f"SPIDER Geomag feature parquet was saved to: {path_geomag}")
     spider_obs.to_parquet(path_observed)
     print(f"SPIDER Observed parquet was saved to {path_observed}")
 

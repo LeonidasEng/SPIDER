@@ -19,27 +19,23 @@ def main():
             "Observed": "spider_features_obs.parquet",
             "3 Day Forecast 0030": "spider_features_3day_0030.parquet",
             "3 Day Forecast 1230": "spider_features_3day_1230.parquet",
-            #"Geomag Forecast": "spider_features_geomag.parquet",
             "3 Day Targets 0030": "spider_targets_3day_0030.parquet",
-            "3 Day Targets 1230": "spider_targets_3day_1230.parquet",
-            #"Geomag Targets": "spider_targets_geomag.parquet"
+            "3 Day Targets 1230": "spider_targets_3day_1230.parquet"
         }
     
     df_obs = pd.read_parquet(os.path.join(dataset_path, FILES["Observed"]))
     df_0030 = pd.read_parquet(os.path.join(dataset_path, FILES["3 Day Forecast 0030"]))
     df_1230 = pd.read_parquet(os.path.join(dataset_path, FILES["3 Day Forecast 1230"]))
-    #df_geo = pd.read_parquet(os.path.join(dataset_path, FILES["Geomag Forecast"]))
     df_tar_0030 = pd.read_parquet(os.path.join(dataset_path, FILES["3 Day Targets 0030"]))
     df_tar_1230 = pd.read_parquet(os.path.join(dataset_path, FILES["3 Day Targets 1230"]))
-    #df_tar_geo = pd.read_parquet(os.path.join(dataset_path, FILES["Geomag Targets"]))
+
 
     print(f"Observed Dataset: {df_obs.shape}")
     print(f"3 Day 0030 Feature Dataset: {df_0030.shape}")
     print(f"3 Day 1230 Feature Dataset: {df_1230.shape}")
-    #print(f"Geomag Feature Dataset: {df_geo.shape}")
     print(f"3 Day 0030 Target Dataset: {df_tar_0030.shape}")
     print(f"3 Day 1230 Target Dataset: {df_tar_1230.shape}")
-    #print(f"Geomag Target Dataset: {df_tar_geo.shape}")
+
 
     #df_clim0030 = climateOut(df_tar_0030)
     #df_clim1230 = climateOut(df_tar_1230)
@@ -76,6 +72,17 @@ def main():
     # 3 Day 1230 Feature Dataset: (78990, 15)
     # 3 Day 0030 Target Dataset: (94873, 19)
     # 3 Day 1230 Target Dataset: (78990, 19)
+
+    # POST ALL DATA (2012-2025)
+    # Observed Dataset: (38202, 11)
+    # 3 Day 0030 Feature Dataset: (113465, 15)
+    # 3 Day 1230 Feature Dataset: (94455, 15)
+    # 3 Day 0030 Target Dataset: (113465, 19)
+    # 3 Day 1230 Target Dataset: (94455, 19)
+
+    # Dataset    | Old rows | New rows  | Increase
+    # 3-Day 0030 | 23,117   | 113,465   | +90,348 (~391%)
+    # 3-Day 1230 | 19,026   |  94,455   | +75,429 (~396%)
 
 if __name__ == "__main__":
     main()

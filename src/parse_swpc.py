@@ -8,7 +8,7 @@ from collections import defaultdict
 # using an in-house tool. This data is not definitive and and may contain errors.
 
 DATA = {
-    "Full":"full_data.json"
+    "Full":"full_data_2011-2015.json"
     # Yes only one file now, but if this should change when integrating test data
     # additional entries will be easy to attach
 }
