@@ -122,7 +122,7 @@ def forecastRevision(dataset_path: str):
     
     # Plot each revision period on the figure
     for name, series in revisions.items():
-        revisions[name] = series.rolling(27, center=True, min_periods=10).mean()
+        revisions[name] = series.rolling(81, center=True, min_periods=40).mean()
     
     # Plot revision for forecast
     plt.figure()
@@ -130,7 +130,7 @@ def forecastRevision(dataset_path: str):
         plt.plot(series, label=f"{name}")
 
     plt.ylabel("Kp Revision Magnitude")
-    plt.title("Forecast stability as lead time decreases", fontsize=16, fontweight="bold")
+    plt.title("Forecast stability as lead time decreases (81-day rolling mean)", fontsize=16, fontweight="bold")
     plt.legend()
     plt.grid(alpha=0.3)
     plt.show()
