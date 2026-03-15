@@ -35,7 +35,7 @@ def dataSplit(df: pd.DataFrame, dataset:str):
 
 def persistenceBase(df:pd.DataFrame, target_col="is_large_error_win"):
     '''
-    Was forecast wrong today? Will it be wrong tomorrow?
+    Was forecast wrong today? Will it be wrong tomorrow? (but 3-hour intervals)
     '''
     df = df.copy()
     df["probability"] = df[target_col].shift(1)
@@ -114,9 +114,10 @@ def gaussianBase(train_set:pd.DataFrame, test_set:pd.DataFrame):
 
     y_true = y_test
     y_prob = nb.predict_proba(X_test)[:, 1]
-    y_pred = (y_prob >= 0.5).astype(int)
-    
-    return y_true, y_prob, y_pred
+    y_train_pred = nb.predict(X_train)
+    y_pred = nb.predict(X_test)
+
+    return y_train, y_train_pred, y_true, y_prob, y_pred
 
 def logisticBase(train_set:pd.DataFrame, test_set:pd.DataFrame):
     '''
@@ -147,11 +148,11 @@ def logisticBase(train_set:pd.DataFrame, test_set:pd.DataFrame):
     lr = LogisticRegression(max_iter=1000, solver="lbfgs", class_weight="balanced")
     lr.fit(X_train, y_train)
 
-    y_true = y_test
     y_prob = lr.predict_proba(X_test)[:, 1]
-    y_pred = (y_prob >= 0.5).astype(int)
-
-    return y_true, y_prob, y_pred
+    y_train_pred = lr.predict(X_train)
+    y_pred = lr.predict(X_test)
+    
+    return y_train, y_train_pred, y_test, y_prob, y_pred
 
 def cmDisplay(observed, predicted):
     
@@ -160,16 +161,29 @@ def cmDisplay(observed, predicted):
     cm_display.plot()
     plt.show()
 
-def metricsTable(dataset, lead_day, model_name, y_true, y_prob, y_pred):
-    accuracy = metrics.accuracy_score(y_true, y_pred)
-    precision = metrics.precision_score(y_true, y_pred)
-    recall = metrics.recall_score(y_true, y_pred)
-    f1 = metrics.f1_score(y_true, y_pred)
+def metricsTable(dataset, lead_day, model_name, 
+                 y_test, y_prob, y_pred,
+                 y_train=None, y_train_pred=None):
     
-    brier = metrics.brier_score_loss(y_true, y_prob) # Calibration 
-    auc = metrics.roc_auc_score(y_true, y_prob) # Discrimination
+    # Persistence and Climatology don't have training sets
+    test_accuracy = metrics.accuracy_score(y_test, y_pred)
+    if y_train is not None and y_train_pred is not None:    
+        train_accuracy = metrics.accuracy_score(y_train, y_train_pred)
+        fit_difference = train_accuracy - test_accuracy
+        train_accuracy = round(train_accuracy, 2)
+        fit_difference = round(fit_difference, 2)
+    else:
+        train_accuracy = None
+        fit_difference = None
     
-    TN, FP, FN, TP = metrics.confusion_matrix(y_true, y_pred).ravel()
+    precision = metrics.precision_score(y_test, y_pred)
+    recall = metrics.recall_score(y_test, y_pred)
+    f1 = metrics.f1_score(y_test, y_pred)
+    
+    brier = metrics.brier_score_loss(y_test, y_prob) # Calibration 
+    auc = metrics.roc_auc_score(y_test, y_prob) # Discrimination
+    
+    TN, FP, FN, TP = metrics.confusion_matrix(y_test, y_pred).ravel()
     pod = TP / (TP+FN) # Probability of Detection
     # Fraction of real large forecast errors that were successfully detected
     far = FP / (TP+FP) # False Alarm Ratio
@@ -186,7 +200,9 @@ def metricsTable(dataset, lead_day, model_name, y_true, y_prob, y_pred):
         "Dataset": dataset,
         "Model": model_name,
         "Lead Day": lead_day,
-        "Accuracy": round(accuracy, 2),
+        "Train Accuracy": train_accuracy,
+        "Test Accuracy": round(test_accuracy, 2),
+        "Fit Difference": fit_difference,
         "Precision": round(precision, 2),
         "Recall": round(recall, 2),
         "F1": round(f1, 2),
@@ -229,27 +245,37 @@ def main():
 
             # Based on Owens if I apply +-3 hrs it should prevent double penalties
             df_ld["is_large_error_win"] = ((prev_err == 1) | (current_err == 1) | (next_err == 1)).astype(int)
-            df_ld["prev_error"] = df_ld["is_large_error_win"].shift(1)
+            df_ld["prev_error"] = df_ld["is_large_error"].shift(1) # To prevent leakage this must not use window.
 
             train_set, test_set = dataSplit(df_ld, dataset)
+            base_rate = train_set["is_large_error"].mean()
+            base_rate_windowed = train_set["is_large_error_win"].mean()
+            print(f"Standard Base Rate for Lead Day {lead_day}: {base_rate:.3f}")
+            print(f"Windowed Base Rate for Lead Day {lead_day}: {base_rate_windowed:.3f}")
 
             print(f"Dataset: {dataset}")
             print(f"Running Persistence baseline model for Lead Day {lead_day}...")
             y_true, y_prob, y_pred = persistenceBase(test_set)
-            rows.append(metricsTable(dataset, lead_day, "Persistence", y_true, y_prob, y_pred))
+            rows.append(metricsTable(dataset, lead_day, "Persistence", 
+                                     y_true, y_prob, y_pred))
             
             print(f"Running Climatology baseline model for Lead Day {lead_day}...")
             clim_map, global_mean = climatologyFit(train_set) # Fit to train data
             y_true, y_prob, y_pred = climatologyApply(test_set, clim_map, global_mean) # Apply to test for no future leakage
-            rows.append(metricsTable(dataset, lead_day, "Climatology", y_true, y_prob, y_pred))
+            rows.append(metricsTable(dataset, lead_day, "Climatology",  
+                                     y_true, y_prob, y_pred))
 
             print(f"Running Naive Bayes baseline model for Lead Day {lead_day}...")
-            y_true, y_prob, y_pred = gaussianBase(train_set, test_set)
-            rows.append(metricsTable(dataset, lead_day, "NB", y_true, y_prob, y_pred))
+            y_train, y_train_pred, y_true, y_prob, y_pred = gaussianBase(train_set, test_set)
+            rows.append(metricsTable(dataset, lead_day, "NB",  
+                                     y_true, y_prob, y_pred,
+                                     y_train, y_train_pred))
             
             print(f"Running Logistic Regression baseline model for Lead Day {lead_day}...")
-            y_true, y_prob, y_pred = logisticBase(train_set, test_set)
-            rows.append(metricsTable(dataset, lead_day, "LR", y_true, y_prob, y_pred))
+            y_train, y_train_pred, y_true, y_prob, y_pred = logisticBase(train_set, test_set)
+            rows.append(metricsTable(dataset, lead_day, "LR", 
+                                     y_true, y_prob, y_pred,
+                                     y_train, y_train_pred))
             
             #cmDisplay(y_true, y_pred)
             tables[dataset][lead_day] = pd.DataFrame(rows)
