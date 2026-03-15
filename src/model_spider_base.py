@@ -2,9 +2,11 @@ import os
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+
 from sklearn import metrics
 from sklearn.naive_bayes import GaussianNB
 from sklearn.linear_model import LogisticRegression
+from sklearn.metrics import roc_curve
 
 TARGETS = {
         "3 Day Forecast 0030": "spider_targets_3day_0030.parquet",
@@ -31,7 +33,7 @@ def dataSplit(df: pd.DataFrame, dataset:str):
     print(f"Train: {train_set.shape} Test: {test_set.shape}")
     return train_set, test_set
 
-def persistenceBase(df:pd.DataFrame, target_col="is_large_error"):
+def persistenceBase(df:pd.DataFrame, target_col="is_large_error_win"):
     '''
     Was forecast wrong today? Will it be wrong tomorrow?
     '''
@@ -49,7 +51,7 @@ def persistenceBase(df:pd.DataFrame, target_col="is_large_error"):
 
 
 def climatologyFit(train_set:pd.DataFrame,
-                   target_col="is_large_error", forecast_col="kp_forecast"):
+                   target_col="is_large_error_win", forecast_col="kp_forecast"):
     train = train_set.copy()
     train = train.dropna(subset=[forecast_col, target_col])
 
@@ -68,7 +70,7 @@ def climatologyFit(train_set:pd.DataFrame,
 
 def climatologyApply(test_set:pd.DataFrame,
                      clim_map: dict, global_mean: float, 
-                     target_col="is_large_error", forecast_col="kp_forecast"):
+                     target_col="is_large_error_win", forecast_col="kp_forecast"):
     test = test_set.copy()
     test = test.dropna(subset=[forecast_col, target_col])
 
@@ -94,17 +96,18 @@ def gaussianBase(train_set:pd.DataFrame, test_set:pd.DataFrame):
         "ey",
         "beta",
         "mach_alfven",
-        "f10.7"
+        "f10.7",
+        "prev_error"
     ]
 
-    df_train = train_set.dropna(subset=feature_columns + ["is_large_error"])
-    df_test = test_set.dropna(subset=feature_columns + ["is_large_error"])
+    df_train = train_set.dropna(subset=feature_columns + ["is_large_error_win"])
+    df_test = test_set.dropna(subset=feature_columns + ["is_large_error_win"])
 
     X_train = df_train[feature_columns]
-    y_train = df_train["is_large_error"]
+    y_train = df_train["is_large_error_win"]
 
     X_test = df_test[feature_columns]
-    y_test = df_test["is_large_error"]
+    y_test = df_test["is_large_error_win"]
 
     nb = GaussianNB()
     nb.fit(X_train, y_train)
@@ -128,17 +131,18 @@ def logisticBase(train_set:pd.DataFrame, test_set:pd.DataFrame):
         "ey",
         "beta",
         "mach_alfven",
-        "f10.7"
+        "f10.7",
+        "prev_error"
     ]
 
-    df_train = train_set.dropna(subset=feature_columns + ["is_large_error"])
-    df_test = test_set.dropna(subset=feature_columns + ["is_large_error"])
+    df_train = train_set.dropna(subset=feature_columns + ["is_large_error_win"])
+    df_test = test_set.dropna(subset=feature_columns + ["is_large_error_win"])
 
     X_train = df_train[feature_columns]
-    y_train = df_train["is_large_error"]
+    y_train = df_train["is_large_error_win"]
 
     X_test = df_test[feature_columns]
-    y_test = df_test["is_large_error"]
+    y_test = df_test["is_large_error_win"]
 
     lr = LogisticRegression(max_iter=1000, solver="lbfgs", class_weight="balanced")
     lr.fit(X_train, y_train)
@@ -203,32 +207,31 @@ def main():
     
     dataset_path = os.path.join(base, "data", "datasets")
 
-    train_sets = {}
-    test_sets = {}
     tables = {}
-
-    kp_column = {
-            "3 Day Forecast 0030": "kp_threeday",
-            "3 Day Forecast 1230": "kp_threeday"
-        }
     
     for dataset, file_name in TARGETS.items():
 
         df = pd.read_parquet(os.path.join(dataset_path, file_name))
-        train_set, test_set = dataSplit(df, dataset)
-
-        train_sets[dataset] = train_set
-        test_sets[dataset]  = test_set
         tables[dataset] = {}
-
-        train_set = train_set.rename(columns={kp_column[dataset]: "kp_forecast"})
-        test_set = test_set.rename(columns={kp_column[dataset]: "kp_forecast"})
 
         for lead_day in [0, 1, 2]:
             rows = []
 
             df_ld = df[df["lead_day"] == lead_day].copy()
             df_ld = df_ld.sort_values(["issue_time_utc", "valid_start_utc"])
+
+            # Rename before feature engineering
+            df_ld = df_ld.rename(columns={"kp_threeday": "kp_forecast"})
+
+            prev_err = df_ld["is_large_error"].shift(1).fillna(0)
+            current_err = df_ld["is_large_error"]
+            next_err = df_ld["is_large_error"].shift(-1).fillna(0)
+
+            # Based on Owens if I apply +-3 hrs it should prevent double penalties
+            df_ld["is_large_error_win"] = ((prev_err == 1) | (current_err == 1) | (next_err == 1)).astype(int)
+            df_ld["prev_error"] = df_ld["is_large_error_win"].shift(1)
+
+            train_set, test_set = dataSplit(df_ld, dataset)
 
             print(f"Dataset: {dataset}")
             print(f"Running Persistence baseline model for Lead Day {lead_day}...")
