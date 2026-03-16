@@ -249,18 +249,8 @@ def main():
             # Rename before feature engineering
             df_ld = df_ld.rename(columns={"kp_threeday": "kp_forecast"})
 
-            prev_err = df_ld["is_large_error"].shift(1).fillna(0)
-            current_err = df_ld["is_large_error"]
-            next_err = df_ld["is_large_error"].shift(-1).fillna(0)
-
-            # Based on Owens if I apply +-3 hrs it should prevent double penalties
-            df_ld["is_large_error_win"] = ((prev_err == 1) | (current_err == 1) | (next_err == 1)).astype(int)
-            df_ld["prev_error"] = df_ld["is_large_error"].shift(1) # To prevent leakage this must not use window.
-
             train_set, test_set = dataSplit(df_ld, dataset)
-            base_rate = train_set["is_large_error"].mean()
             base_rate_windowed = train_set["is_large_error_win"].mean()
-            print(f"Standard Base Rate for Lead Day {lead_day}: {base_rate:.3f}")
             print(f"Windowed Base Rate for Lead Day {lead_day}: {base_rate_windowed:.3f}")
 
             print(f"Dataset: {dataset}")

@@ -21,12 +21,48 @@ def buildTargetsT1(dataset_path:str, file_name:str):
     df["abs_delta_kp"] = df["delta_kp"].abs()
 
     df["is_large_error"] = (df["abs_delta_kp"] > 1)
-    df["is_severe_error"] = (df["abs_delta_kp"] > 2)
+    #df["is_severe_error"] = (df["abs_delta_kp"] > 2)
 
     return df
 
-def buildTargetsT2(dataset_path:str):
-    pass
+def buildTargetsT2(dataset_path:str, file_name:str):
+    '''
+    Tier 2 Targets for Modelling
+    '''
+    df = pd.read_parquet(os.path.join(dataset_path, file_name)).copy()
+
+    forecast_col = [col for col in df.columns if col.startswith("kp_") and col != "kp_obs"]
+    
+    kp_forecast = forecast_col[0]
+
+    df["delta_kp"] = df[kp_forecast] - df["kp_obs"]
+    df["abs_delta_kp"] = df["delta_kp"].abs()
+
+    df["is_large_error"] = (df["abs_delta_kp"] > 1)
+
+    # Ensure correct order
+    df:pd.DataFrame = df.sort_values(["lead_day", "issue_time_utc", "valid_start_utc"])
+
+    # Adding previous error feature
+    df["prev_error"] = df.groupby("lead_day")["is_large_error"].shift(1).fillna(False).astype(bool)
+
+    # Adding windowed target 3 hour tolerance based on (Owens:2018):
+    prev_err = df["is_large_error"].shift(1).fillna(0)
+    current_err = df["is_large_error"]
+    next_err = df["is_large_error"].shift(-1).fillna(0)
+
+    # This will prevent double penalties
+    df["is_large_error_win"] = ((prev_err == 1) | (current_err == 1) | (next_err == 1)).astype(bool)
+
+    # Return previous order
+    df = df.sort_values(["issue_time_utc", "valid_start_utc"])
+
+    # These columns are only needed for calculation and can safely be removed
+    df = df.drop(columns=["kp_obs", "delta_kp", "abs_delta_kp", "is_large_error"])
+
+    #print("STAHP!")
+
+    return df
 
 def buildTargetsT3(dataset_path:str):
     pass
@@ -46,7 +82,7 @@ def main():
         if dataset == "Observed":
             continue
         
-        df_pack[dataset] = buildTargetsT1(dataset_path, file_name)
+        df_pack[dataset] = buildTargetsT2(dataset_path, file_name) # Previously T1
 
     ds_3day_0030, ds_3day_1230 = (df_pack["3 Day Forecast 0030"], df_pack["3 Day Forecast 1230"])
    
