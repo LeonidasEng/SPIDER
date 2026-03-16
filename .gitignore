@@ -18,9 +18,7 @@ data/datasets/archive/
 
 # Docs
 docs/resources
-docs/P_Clim
-docs/P_Clim_ForecastKp_Condition
-docs/P_Clim_ForecastKp_10year
+docs/historic_model_outputs
 
 # Logs
 logs/
