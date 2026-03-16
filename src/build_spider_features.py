@@ -261,6 +261,9 @@ def removeInvalidKp(df:pd.DataFrame) -> pd.DataFrame:
 def addTemporalFeatures(df: pd.DataFrame) -> pd.DataFrame:
     df = df.sort_values(["issue_time_utc", "valid_start_utc"])
 
+    # No more than these features might envoke the Curse of Dimensionality
+    # if adding more. These features are taken from the original literature.
+
     # 6-hour Ey (2 rows)
     df["ey_int_6h"] = df["ey"].rolling(window=2, min_periods=1).sum().round(2)
 
@@ -270,13 +273,14 @@ def addTemporalFeatures(df: pd.DataFrame) -> pd.DataFrame:
     # 12-hour Solar Wind Speed mean (4 rows)
     df["vsw_mean_12h"] = df["v_sw"].rolling(window=4, min_periods=1).mean().round(2)
 
-    #
+    # Product of vSw and Southward Bz
     df["vbz_coupling"] = (df["v_sw"] * np.maximum(0, -df["bz_gsm"])).round(2)
 
+    # 6-hour rolling mean of vBz
     df["vbz_coupling_6h"] = df["vbz_coupling"].rolling(window=2, min_periods=1).mean().round(2)
 
-    # Validate that new features are related to Kp Observed and each other
-    #print(df[["ey_int_6h","bz_south_6h","vsw_mean_12h", "vbz_coupling", "vbz_coupling_6h", "kp_obs"]].corr())
+    # Capture storm arrival via sudden pressure jump (bool type)
+    df["pressure_jump_flag"] = df["pdyn"].diff().fillna(0) > 1.0
 
     return df
 
