@@ -21,7 +21,6 @@ def buildTargetsT1(dataset_path:str, file_name:str):
     df["abs_delta_kp"] = df["delta_kp"].abs()
 
     df["is_large_error"] = (df["abs_delta_kp"] > 1)
-    #df["is_severe_error"] = (df["abs_delta_kp"] > 2)
 
     return df
 
@@ -43,7 +42,7 @@ def buildTargetsT2(dataset_path:str, file_name:str):
     # Ensure correct order
     df:pd.DataFrame = df.sort_values(["lead_day", "issue_time_utc", "valid_start_utc"])
 
-    # Adding previous error feature
+    # Adding previous error feature (derived from target)
     df["prev_error"] = df.groupby("lead_day")["is_large_error"].shift(1).fillna(False).astype(bool)
 
     # Adding windowed target 3 hour tolerance based on (Owens:2018):
@@ -59,8 +58,6 @@ def buildTargetsT2(dataset_path:str, file_name:str):
 
     # These columns are only needed for calculation and can safely be removed
     df = df.drop(columns=["kp_obs", "delta_kp", "abs_delta_kp", "is_large_error"])
-
-    #print("STAHP!")
 
     return df
 

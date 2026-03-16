@@ -106,6 +106,11 @@ def gaussianBase(train_set:pd.DataFrame, test_set:pd.DataFrame):
         "beta",
         "mach_alfven",
         "f10.7",
+        "ey_int_6h",
+        "bz_south_6h",
+        "vsw_mean_12h",
+        "vbz_coupling",
+        "vbz_coupling_6h",
         "prev_error"
     ]
 
@@ -142,6 +147,11 @@ def logisticBase(train_set:pd.DataFrame, test_set:pd.DataFrame):
         "beta",
         "mach_alfven",
         "f10.7",
+        "ey_int_6h",
+        "bz_south_6h",
+        "vsw_mean_12h",
+        "vbz_coupling",
+        "vbz_coupling_6h",
         "prev_error"
     ]
 

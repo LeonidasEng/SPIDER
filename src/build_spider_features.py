@@ -1,4 +1,5 @@
 import os
+import numpy as np
 import json
 from datetime import datetime, timezone
 import pandas as pd
@@ -215,6 +216,9 @@ def buildTable3Day(df_3day:pd.DataFrame, df_obs:pd.DataFrame, df_omni:pd.DataFra
                        on="valid_start_utc",
                        direction="backward",
                        tolerance=pd.Timedelta("3h"))
+    
+    # Add temporal features
+    df = addTemporalFeatures(df)
 
     df["lead_time"] = df["lead_time"].round(2) # Round to 2 decimal places 
 
@@ -253,6 +257,28 @@ def removeInvalidKp(df:pd.DataFrame) -> pd.DataFrame:
     kp_columns = [c for c in ["kp_obs", "kp_threeday", "kp_geomag"] if c in df.columns]
 
     return df[~(df[kp_columns] < 0).any(axis=1)]
+
+def addTemporalFeatures(df: pd.DataFrame) -> pd.DataFrame:
+    df = df.sort_values(["issue_time_utc", "valid_start_utc"])
+
+    # 6-hour Ey (2 rows)
+    df["ey_int_6h"] = df["ey"].rolling(window=2, min_periods=1).sum().round(2)
+
+    # 6-hour Southward Bz condition (2 rows)
+    df["bz_south_6h"] = (df["bz_gsm"] < 0).rolling(window=2, min_periods=1).sum().round(2)
+
+    # 12-hour Solar Wind Speed mean (4 rows)
+    df["vsw_mean_12h"] = df["v_sw"].rolling(window=4, min_periods=1).mean().round(2)
+
+    #
+    df["vbz_coupling"] = (df["v_sw"] * np.maximum(0, -df["bz_gsm"])).round(2)
+
+    df["vbz_coupling_6h"] = df["vbz_coupling"].rolling(window=2, min_periods=1).mean().round(2)
+
+    # Validate that new features are related to Kp Observed and each other
+    #print(df[["ey_int_6h","bz_south_6h","vsw_mean_12h", "vbz_coupling", "vbz_coupling_6h", "kp_obs"]].corr())
+
+    return df
 
 def verifyDataQuality(df: pd.DataFrame, name:str="dataset") -> dict:
     # CRISP-DM Data Understanding (2.4)
