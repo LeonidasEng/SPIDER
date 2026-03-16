@@ -6,6 +6,9 @@ import matplotlib.pyplot as plt
 from sklearn import metrics
 from sklearn.naive_bayes import GaussianNB
 from sklearn.linear_model import LogisticRegression
+
+from sklearn.pipeline import Pipeline
+from sklearn.preprocessing import StandardScaler
 from sklearn.metrics import roc_curve
 
 TARGETS = {
@@ -164,7 +167,10 @@ def logisticBase(train_set:pd.DataFrame, test_set:pd.DataFrame):
     X_test = df_test[feature_columns]
     y_test = df_test["is_large_error_win"]
 
-    lr = LogisticRegression(max_iter=1000, solver="lbfgs", class_weight="balanced")
+    lr = Pipeline([
+        ("scaler", StandardScaler()),
+        ("lr", LogisticRegression(max_iter=1000, solver="lbfgs", class_weight="balanced"))
+    ]) 
     lr.fit(X_train, y_train)
 
     y_prob = lr.predict_proba(X_test)[:, 1]
