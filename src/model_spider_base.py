@@ -55,15 +55,20 @@ def climatologyFit(train_set:pd.DataFrame,
     train = train_set.copy()
     train = train.dropna(subset=[forecast_col, target_col])
 
-    # Bin Kp for Climatology to reduce noise
-    train["kp_bin"] = train[forecast_col].round().clip(0, 9).astype(int)
+    # Bin Kp for Climatology to reduce noise Kp's above 7 are grouped.
+    train["kp_bin"] = train[forecast_col].round().clip(0, 7).astype(int)
 
     # Climatology-based probabilty model P(|ΔKp| > 1)| Forecast Kp)
-    clim_map = (
-        train.groupby("kp_bin", observed=True)[target_col]
-        .mean()
-        .to_dict()
-    )
+    # Calculate the historical averages of the Kp scale and use it
+    # for the target condition.
+
+    # Using Laplace smoothing to fix extreme probabilities
+    # https://towardsdatascience.com/laplace-smoothing-in-naive-bayes-algorithm-9c237a8bdece/
+    group = train.groupby("kp_bin", observed=True)[target_col]
+    errors = group.sum()
+    samples = group.count()
+
+    clim_map = ((errors + 1) / (samples + 2)).to_dict() # Fix no 1.0 probabilities
 
     global_mean = float(train[target_col].mean())
     return clim_map, global_mean
@@ -74,12 +79,16 @@ def climatologyApply(test_set:pd.DataFrame,
     test = test_set.copy()
     test = test.dropna(subset=[forecast_col, target_col])
 
-    test["kp_bin"] = test[forecast_col].round().clip(0, 9).astype(int)
+    test["kp_bin"] = test[forecast_col].round().clip(0, 7).astype(int)
+
     test["probability"] = test["kp_bin"].map(clim_map).fillna(global_mean)
 
     y_true = test[target_col].astype(int)
     y_prob = test["probability"].astype(float)
     y_pred = (y_prob >= 0.5).astype(int) # baseline prediction threshold (Camporeale:2025)
+    # Changing this threshold would mean optimising the baseline which is not the objective
+    # It would only effect Kp 0 and 2. 
+    # This baseline answers: What skill is achievable only on historical reliability?
 
     return y_true, y_prob, y_pred
 
@@ -167,6 +176,7 @@ def metricsTable(dataset, lead_day, model_name,
     
     # Persistence and Climatology don't have training sets
     test_accuracy = metrics.accuracy_score(y_test, y_pred)
+    
     if y_train is not None and y_train_pred is not None:    
         train_accuracy = metrics.accuracy_score(y_train, y_train_pred)
         fit_difference = train_accuracy - test_accuracy
