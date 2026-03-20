@@ -342,7 +342,7 @@ def main():
     for dataset in tables:
         for lead_day in tables[dataset]:
             tables[dataset][lead_day].to_csv(
-                f"model_metrics_{dataset}_L{lead_day}.csv", index=False)
+                f"base_metrics_{dataset}_L{lead_day}.csv", index=False)
 
 if __name__ == "__main__":
     main()
