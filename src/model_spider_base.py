@@ -9,6 +9,8 @@ from sklearn.linear_model import LogisticRegression
 
 from sklearn.pipeline import Pipeline
 from sklearn.preprocessing import StandardScaler
+from sklearn.calibration import calibration_curve
+from scipy.optimize import curve_fit
 from sklearn.metrics import roc_curve
 
 TARGETS = {
@@ -114,8 +116,9 @@ def gaussianBase(train_set:pd.DataFrame, test_set:pd.DataFrame):
         "vsw_mean_12h",
         "vbz_coupling",
         "vbz_coupling_6h",
-        "prev_error"
-    ]
+        "pressure_jump_flag",
+        "prev_error",
+    ] # Additional temporal features added to NB
 
     df_train = train_set.dropna(subset=feature_columns + ["is_large_error_win"])
     df_test = test_set.dropna(subset=feature_columns + ["is_large_error_win"])
@@ -134,7 +137,8 @@ def gaussianBase(train_set:pd.DataFrame, test_set:pd.DataFrame):
     y_train_pred = nb.predict(X_train)
     y_pred = nb.predict(X_test)
 
-    return y_train, y_train_pred, y_true, y_prob, y_pred
+
+    return y_test, y_train, y_train_pred, y_prob, y_pred
 
 def logisticBase(train_set:pd.DataFrame, test_set:pd.DataFrame):
     '''
@@ -155,8 +159,9 @@ def logisticBase(train_set:pd.DataFrame, test_set:pd.DataFrame):
         "vsw_mean_12h",
         "vbz_coupling",
         "vbz_coupling_6h",
+        "pressure_jump_flag",
         "prev_error"
-    ]
+    ] # Additional temporal features added to LR
 
     df_train = train_set.dropna(subset=feature_columns + ["is_large_error_win"])
     df_test = test_set.dropna(subset=feature_columns + ["is_large_error_win"])
@@ -176,8 +181,8 @@ def logisticBase(train_set:pd.DataFrame, test_set:pd.DataFrame):
     y_prob = lr.predict_proba(X_test)[:, 1]
     y_train_pred = lr.predict(X_train)
     y_pred = lr.predict(X_test)
-    
-    return y_train, y_train_pred, y_test, y_prob, y_pred
+
+    return y_test, y_train, y_train_pred, y_prob, y_pred
 
 def cmDisplay(observed, predicted):
     
@@ -234,12 +239,47 @@ def metricsTable(dataset, lead_day, model_name,
         "F1": round(f1, 2),
         "Brier": round(brier, 2),
         "AUC": round(auc, 2),
-        "POD": round(pod, 2), # Same as recall, use as verification but delete in final version
+        "POD": round(pod, 2), # Same as recall, use as verification
         "FAR": round(far, 2),
         "CSI": round(csi, 2),
         "TSS": round(tss, 2),
         "HSS": round(hss, 2)
     }
+
+def reliabilityCurve(dataset, lead_day, y_test, y_prob, model_name="Model", n_bins=10):
+    """
+    Generate reliability curve with probability histogram
+    """
+
+    prob_true, prob_pred = calibration_curve(y_test, y_prob, n_bins=n_bins, strategy="uniform")
+
+    suffix = dataset[-4:]
+
+    # Create figure with two panels in vertical configuration
+    fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(8,8), gridspec_kw={"height_ratios": [2,1]})
+
+    ax1.plot([0,1], [0,1], linestyle="--", color="grey", label="Perfect calibration")
+    ax1.plot(prob_pred, prob_true, marker="o", color="tab:blue", label=model_name)
+
+    ax1.set_xlabel("Predicted Probability")
+    ax1.set_ylabel("Observed Frequency")
+    ax1.set_title(f"{suffix} Reliability Curve LD{lead_day} ({model_name})")
+    ax1.legend()
+    ax1.grid(True)
+
+    bin_borders = ax2.hist(y_prob, bins=n_bins, range=(0,1), edgecolor="black")
+    bin_centres = bin_borders[:1] + np.diff(bin_borders) / 2
+    popt, _ = curve_fit(y_prob, bin_centres, bin_heights=[1., 0, 1.])
+    x_interval_for_fit = np.linspace(bin_borders[0], bin_borders[-1], 10000)
+    ax2.plot(x_interval_for_fit, y_prob(x_interval_for_fit, *popt), label='fit')
+    ax2.set_xlabel("Predicted Probability")
+    ax2.set_ylabel("Count")
+    ax2.set_title("Probability Distribution")
+    ax2.grid(alpha=0.3)
+
+    plt.tight_layout()
+    plt.legend()
+    plt.show()
 
 def main():
     # Environment variable must be set to run this script
@@ -282,16 +322,19 @@ def main():
                                      y_true, y_prob, y_pred))
 
             print(f"Running Naive Bayes baseline model for Lead Day {lead_day}...")
-            y_train, y_train_pred, y_true, y_prob, y_pred = gaussianBase(train_set, test_set)
+            y_test, y_train, y_train_pred, y_prob, y_pred = gaussianBase(train_set, test_set)
             rows.append(metricsTable(dataset, lead_day, "NB",  
-                                     y_true, y_prob, y_pred,
+                                     y_test, y_prob, y_pred,
                                      y_train, y_train_pred))
+            reliabilityCurve(dataset, lead_day, y_test, y_prob, model_name="Gaussian NB")
             
             print(f"Running Logistic Regression baseline model for Lead Day {lead_day}...")
-            y_train, y_train_pred, y_true, y_prob, y_pred = logisticBase(train_set, test_set)
+            y_test, y_train, y_train_pred, y_prob, y_pred = logisticBase(train_set, test_set)
             rows.append(metricsTable(dataset, lead_day, "LR", 
-                                     y_true, y_prob, y_pred,
-                                     y_train, y_train_pred))
+                                     y_test, y_prob, y_pred,
+                                     y_train, y_train_pred))   
+            reliabilityCurve(dataset, lead_day, y_test, y_prob, model_name="Logistic Regression")
+    
             
             #cmDisplay(y_true, y_pred)
             tables[dataset][lead_day] = pd.DataFrame(rows)
