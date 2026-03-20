@@ -118,6 +118,8 @@ def gaussianBase(train_set:pd.DataFrame, test_set:pd.DataFrame):
         "vbz_coupling_6h",
         "pressure_jump_flag",
         "prev_error",
+        "error_rate_24h",
+        "time_since_last_error"
     ] # Additional temporal features added to NB
 
     df_train = train_set.dropna(subset=feature_columns + ["is_large_error_win"])
@@ -160,7 +162,9 @@ def logisticBase(train_set:pd.DataFrame, test_set:pd.DataFrame):
         "vbz_coupling",
         "vbz_coupling_6h",
         "pressure_jump_flag",
-        "prev_error"
+        "prev_error",
+        "error_rate_24h",
+        "time_since_last_error"
     ] # Additional temporal features added to LR
 
     df_train = train_set.dropna(subset=feature_columns + ["is_large_error_win"])
@@ -267,11 +271,7 @@ def reliabilityCurve(dataset, lead_day, y_test, y_prob, model_name="Model", n_bi
     ax1.legend()
     ax1.grid(True)
 
-    bin_borders = ax2.hist(y_prob, bins=n_bins, range=(0,1), edgecolor="black")
-    bin_centres = bin_borders[:1] + np.diff(bin_borders) / 2
-    popt, _ = curve_fit(y_prob, bin_centres, bin_heights=[1., 0, 1.])
-    x_interval_for_fit = np.linspace(bin_borders[0], bin_borders[-1], 10000)
-    ax2.plot(x_interval_for_fit, y_prob(x_interval_for_fit, *popt), label='fit')
+    ax2.hist(y_prob, bins=n_bins, range=(0,1), edgecolor="black")
     ax2.set_xlabel("Predicted Probability")
     ax2.set_ylabel("Count")
     ax2.set_title("Probability Distribution")

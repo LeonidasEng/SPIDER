@@ -1,5 +1,7 @@
 import os 
 import pandas as pd
+import warnings
+warnings.simplefilter(action='ignore', category=FutureWarning)
 
 FILES = {
         "Observed": "spider_features_obs.parquet",
@@ -35,29 +37,69 @@ def buildTargetsT2(dataset_path:str, file_name:str):
     kp_forecast = forecast_col[0]
 
     df["delta_kp"] = df[kp_forecast] - df["kp_obs"]
-    df["abs_delta_kp"] = df["delta_kp"].abs()
+    df["abs_delta_kp"] = df["delta_kp"].abs() # Absolute value of difference
 
-    df["is_large_error"] = (df["abs_delta_kp"] > 1)
+    df["is_large_error"] = (df["abs_delta_kp"] > 1) # Target
 
     # Ensure correct order
     df:pd.DataFrame = df.sort_values(["lead_day", "issue_time_utc", "valid_start_utc"])
 
-    # Adding previous error feature (derived from target)
+    # Adding previous error features based on persistence (derived from target pre-window)
+    def _sinceLastError(series):
+        # Internal and only used once for feature
+        counter = 0
+        output = []
+        for val in series:
+            if val:
+                counter = 0
+            else:
+                counter += 1
+            output.append(counter)
+        return output
+    
+    # Previous error is inspired by the good performance of the persistence baseline model
     df["prev_error"] = df.groupby("lead_day")["is_large_error"].shift(1).fillna(False).astype(bool)
+    df["error_count_24h"] = (
+        df.groupby("lead_day")["is_large_error"]
+        .rolling(window=8, min_periods=1) # 8 periods equal to 24-hours
+        .sum()
+        .reset_index(level=0, drop=True) # Reset index to original
+        ) # this is not a feature and will be dropped.
+    df["error_rate_24h"] = df["error_count_24h"] / 8
+    df["time_since_last_error"] = (
+        df.groupby("lead_day")["is_large_error"]
+        .transform(_sinceLastError)
+    )
+    # Need to groupby and shift at the same time
+    df["error_rate_24h"] = df.groupby("lead_day")["error_rate_24h"].shift(1).fillna(0)
+    df["time_since_last_error"] = df.groupby("lead_day")["time_since_last_error"].shift(1).fillna(0)
 
     # Adding windowed target 3 hour tolerance based on (Owens:2018):
     prev_err = df["is_large_error"].shift(1).fillna(0)
     current_err = df["is_large_error"]
     next_err = df["is_large_error"].shift(-1).fillna(0)
 
-    # This will prevent double penalties
+    # This will prevent double penalties, bool type to preve
     df["is_large_error_win"] = ((prev_err == 1) | (current_err == 1) | (next_err == 1)).astype(bool)
-
+    
     # Return previous order
     df = df.sort_values(["issue_time_utc", "valid_start_utc"])
+    
+    # Diagnostics
+    # print("Correlation with Kp Observed values:")
+    # corr_obs_ld = df.groupby("lead_day").apply(
+    #     lambda x: x[["prev_error", "error_rate_24h", "time_since_last_error"]].corrwith(x["kp_obs"])
+    # )
+    # print(corr_obs_ld)
+
+    # print("Correlation with is_large_error_win:")
+    # corr_err_ld = df.groupby("lead_day").apply(
+    #     lambda x: x[["prev_error", "error_rate_24h", "time_since_last_error"]].corrwith(x["is_large_error_win"])
+    # )
+    # print(corr_err_ld)
 
     # These columns are only needed for calculation and can safely be removed
-    df = df.drop(columns=["kp_obs", "delta_kp", "abs_delta_kp", "is_large_error"])
+    df = df.drop(columns=["kp_obs", "delta_kp", "abs_delta_kp", "is_large_error", "error_count_24h"])
 
     return df
 
