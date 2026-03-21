@@ -4,6 +4,7 @@ import pandas as pd
 
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier
+from sklearn.calibration import CalibratedClassifierCV
 from sklearn.calibration import calibration_curve
 
 from sklearn import metrics
@@ -76,8 +77,8 @@ def decisionTree(train_set:pd.DataFrame, test_set:pd.DataFrame):
 
     y_prob = dt.predict_proba(X_test)[:, 1]
     y_train_pred = dt.predict(X_train)
-    # y_pred = dt.predict(X_test)
-    y_pred = (y_prob >= 0.33).astype(int)
+    y_pred = dt.predict(X_test)
+    # y_pred = (y_prob >= 0.33).astype(int)
 
     return y_test, y_train, y_train_pred, y_prob, y_pred
 
@@ -120,12 +121,18 @@ def randomForest(train_set, test_set):
         random_state=RANDOM_STATE,
         verbose=1
     )
-    rf.fit(X_train, y_train)
+    #rf.fit(X_train, y_train)
+    rf_cal = CalibratedClassifierCV(
+        estimator=rf,
+        method="sigmoid",
+        cv=5
+    )
+    rf_cal.fit(X_train, y_train)
 
-    y_prob = rf.predict_proba(X_test)[:, 1]
-    y_train_pred = rf.predict(X_train)
-    #y_pred = rf.predict(X_test)
-    y_pred = (y_prob >= 0.33).astype(int)
+    y_prob = rf_cal.predict_proba(X_test)[:, 1]
+    y_train_pred = rf_cal.predict(X_train)
+    y_pred = rf_cal.predict(X_test)
+    # y_pred = (y_prob >= 0.33).astype(int)
 
     return y_test, y_train, y_train_pred, y_prob, y_pred
 
@@ -198,7 +205,7 @@ def reliabilityCurve(dataset, lead_day, y_test, y_prob, model_name="Model", n_bi
 
     prob_true, prob_pred = calibration_curve(y_test, y_prob, n_bins=n_bins, strategy="uniform")
 
-    suffix = dataset[-4:]
+    prefix = dataset[-4:]
 
     # Create figure with two panels in vertical configuration
     fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(8,8), gridspec_kw={"height_ratios": [2,1]})
@@ -208,7 +215,7 @@ def reliabilityCurve(dataset, lead_day, y_test, y_prob, model_name="Model", n_bi
 
     ax1.set_xlabel("Predicted Probability")
     ax1.set_ylabel("Observed Frequency")
-    ax1.set_title(f"{suffix} Reliability Curve LD{lead_day} ({model_name})")
+    ax1.set_title(f"{prefix} Reliability Curve LD{lead_day} ({model_name})")
     ax1.legend()
     ax1.grid(True)
 
@@ -247,12 +254,12 @@ def main():
 
             train_set, test_set = dataSplit(df_ld, dataset)
             print(f"Dataset: {dataset}")
-            # print(f"Running Decision Tree Classifier for Lead Day {lead_day}...")
-            # y_test, y_train, y_train_pred, y_prob, y_pred = decisionTree(train_set, test_set)
-            # rows.append(metricsTable(dataset, lead_day, "DT",
-            #                         y_test, y_prob, y_pred,
-            #                         y_train, y_train_pred))
-            # reliabilityCurve(dataset, lead_day, y_test, y_prob, model_name="Decision Tree")
+            print(f"Running Decision Tree Classifier for Lead Day {lead_day}...")
+            y_test, y_train, y_train_pred, y_prob, y_pred = decisionTree(train_set, test_set)
+            rows.append(metricsTable(dataset, lead_day, "DT",
+                                    y_test, y_prob, y_pred,
+                                    y_train, y_train_pred))
+            reliabilityCurve(dataset, lead_day, y_test, y_prob, model_name="Decision Tree")
             # cmDisplay(y_test, y_pred)
 
             print(f"Running Random Forest Classifier for Lead Day {lead_day}...")
@@ -260,8 +267,7 @@ def main():
             rows.append(metricsTable(dataset, lead_day, "RF",
                                      y_test, y_prob, y_pred,
                                      y_train, y_train_pred))
-            reliabilityCurve(dataset, lead_day, y_test, y_prob, model_name="Random Forest")
-            print(f"Test targets: {y_test.shape}")
+            reliabilityCurve(dataset, lead_day, y_test, y_prob, model_name="Random Forest")      
             # cmDisplay(y_test, y_pred)
     
             tables[dataset][lead_day] = pd.DataFrame(rows)
