@@ -1,6 +1,7 @@
 import os
 import matplotlib.pyplot as plt
 import pandas as pd
+import joblib
 
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier
@@ -82,7 +83,7 @@ def decisionTree(train_set:pd.DataFrame, test_set:pd.DataFrame):
 
     return y_test, y_train, y_train_pred, y_prob, y_pred
 
-def randomForest(train_set, test_set):
+def randomForest(train_set, test_set, base, dataset, lead_day):
     feature_columns = [
         "bz_gsm",
         "b_mag",
@@ -128,6 +129,13 @@ def randomForest(train_set, test_set):
         cv=5
     )
     rf_cal.fit(X_train, y_train)
+    
+    # Creating folder to store trained models
+    prefix = dataset[-4:]
+    model_dir = os.path.join(base, "models")
+    os.makedirs(model_dir, exist_ok=True)
+    filename = os.path.join(model_dir, f"rf_cal_{prefix}_LD{lead_day}.pkl")
+    joblib.dump(rf_cal, filename)
 
     y_prob = rf_cal.predict_proba(X_test)[:, 1]
     y_train_pred = rf_cal.predict(X_train)
@@ -259,11 +267,12 @@ def main():
             rows.append(metricsTable(dataset, lead_day, "DT",
                                     y_test, y_prob, y_pred,
                                     y_train, y_train_pred))
-            reliabilityCurve(dataset, lead_day, y_test, y_prob, model_name="Decision Tree")
+            #reliabilityCurve(dataset, lead_day, y_test, y_prob, model_name="Decision Tree")
             # cmDisplay(y_test, y_pred)
 
             print(f"Running Random Forest Classifier for Lead Day {lead_day}...")
-            y_test, y_train, y_train_pred, y_prob, y_pred = randomForest(train_set, test_set)
+            y_test, y_train, y_train_pred, y_prob, y_pred = randomForest(train_set, test_set, 
+                                                                         base, dataset, lead_day)
             rows.append(metricsTable(dataset, lead_day, "RF",
                                      y_test, y_prob, y_pred,
                                      y_train, y_train_pred))
