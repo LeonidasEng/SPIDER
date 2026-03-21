@@ -1,8 +1,10 @@
 import os
-import matplotlib as plt
+import matplotlib.pyplot as plt
 import pandas as pd
 
 from sklearn.tree import DecisionTreeClassifier
+from sklearn.ensemble import RandomForestClassifier
+from sklearn.calibration import calibration_curve
 
 from sklearn import metrics
 
@@ -65,17 +67,67 @@ def decisionTree(train_set:pd.DataFrame, test_set:pd.DataFrame):
     dt = DecisionTreeClassifier(
         max_depth=5,
         min_samples_leaf=50,
+        min_samples_split=100,
         class_weight="balanced",
+        #class_weight={0:1, 1:2},
         random_state=RANDOM_STATE
     )
     dt.fit(X_train, y_train)
 
     y_prob = dt.predict_proba(X_test)[:, 1]
     y_train_pred = dt.predict(X_train)
-    y_pred = dt.predict(X_test)
+    # y_pred = dt.predict(X_test)
+    y_pred = (y_prob >= 0.33).astype(int)
 
     return y_test, y_train, y_train_pred, y_prob, y_pred
 
+def randomForest(train_set, test_set):
+    feature_columns = [
+        "bz_gsm",
+        "b_mag",
+        "v_sw",
+        "np",
+        "pdyn",
+        "ey",
+        "beta",
+        "mach_alfven",
+        "f10.7",
+        "ey_int_6h",
+        "bz_south_6h",
+        "vsw_mean_12h",
+        "vbz_coupling",
+        "vbz_coupling_6h",
+        "pressure_jump_flag",
+        "prev_error",
+        "error_rate_24h",
+        "time_since_last_error"
+    ] # Additional temporal features added to LR
+
+    df_train = train_set.dropna(subset=feature_columns + ["is_large_error_win"])
+    df_test = test_set.dropna(subset=feature_columns + ["is_large_error_win"])
+
+    X_train = df_train[feature_columns]
+    y_train = df_train["is_large_error_win"]
+
+    X_test = df_test[feature_columns]
+    y_test = df_test["is_large_error_win"]
+
+    rf = RandomForestClassifier(
+        n_estimators=100,
+        max_depth=8,
+        min_samples_leaf=20,
+        class_weight="balanced",
+        random_state=RANDOM_STATE,
+        verbose=1
+    )
+    rf.fit(X_train, y_train)
+
+    y_prob = rf.predict_proba(X_test)[:, 1]
+    y_train_pred = rf.predict(X_train)
+    #y_pred = rf.predict(X_test)
+    y_pred = (y_prob >= 0.33).astype(int)
+
+    return y_test, y_train, y_train_pred, y_prob, y_pred
 
 def cmDisplay(observed, predicted):
     
@@ -139,6 +191,36 @@ def metricsTable(dataset, lead_day, model_name,
         "HSS": round(hss, 2)
     }
 
+def reliabilityCurve(dataset, lead_day, y_test, y_prob, model_name="Model", n_bins=10):
+    """
+    Generate reliability curve with probability histogram
+    """
+
+    prob_true, prob_pred = calibration_curve(y_test, y_prob, n_bins=n_bins, strategy="uniform")
+
+    suffix = dataset[-4:]
+
+    # Create figure with two panels in vertical configuration
+    fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(8,8), gridspec_kw={"height_ratios": [2,1]})
+
+    ax1.plot([0,1], [0,1], linestyle="--", color="grey", label="Perfect calibration")
+    ax1.plot(prob_pred, prob_true, marker="o", color="tab:blue", label=model_name)
+
+    ax1.set_xlabel("Predicted Probability")
+    ax1.set_ylabel("Observed Frequency")
+    ax1.set_title(f"{suffix} Reliability Curve LD{lead_day} ({model_name})")
+    ax1.legend()
+    ax1.grid(True)
+
+    ax2.hist(y_prob, bins=n_bins, range=(0,1), edgecolor="black")
+    ax2.set_xlabel("Predicted Probability")
+    ax2.set_ylabel("Count")
+    ax2.set_title("Probability Distribution")
+    ax2.grid(alpha=0.3)
+
+    plt.tight_layout()
+    plt.show()
+
 def main():
     # Environment variable must be set to run this script
     base = os.environ.get("SPIDER")
@@ -165,11 +247,22 @@ def main():
 
             train_set, test_set = dataSplit(df_ld, dataset)
             print(f"Dataset: {dataset}")
-            print(f"Running Decision Tree Classifier for Lead Day {lead_day}...")
-            y_test, y_train, y_train_pred, y_prob, y_pred = decisionTree(train_set, test_set)
-            rows.append(metricsTable(dataset, lead_day, "DT",
-                                    y_test, y_prob, y_pred,
-                                    y_train, y_train_pred))
+            # print(f"Running Decision Tree Classifier for Lead Day {lead_day}...")
+            # y_test, y_train, y_train_pred, y_prob, y_pred = decisionTree(train_set, test_set)
+            # rows.append(metricsTable(dataset, lead_day, "DT",
+            #                         y_test, y_prob, y_pred,
+            #                         y_train, y_train_pred))
+            # reliabilityCurve(dataset, lead_day, y_test, y_prob, model_name="Decision Tree")
+            # cmDisplay(y_test, y_pred)
+
+            print(f"Running Random Forest Classifier for Lead Day {lead_day}...")
+            y_test, y_train, y_train_pred, y_prob, y_pred = randomForest(train_set, test_set)
+            rows.append(metricsTable(dataset, lead_day, "RF",
+                                     y_test, y_prob, y_pred,
+                                     y_train, y_train_pred))
+            reliabilityCurve(dataset, lead_day, y_test, y_prob, model_name="Random Forest")
+            print(f"Test targets: {y_test.shape}")
+            # cmDisplay(y_test, y_pred)
     
             tables[dataset][lead_day] = pd.DataFrame(rows)
 
