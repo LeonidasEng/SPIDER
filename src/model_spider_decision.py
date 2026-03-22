@@ -2,7 +2,7 @@ import os
 import matplotlib.pyplot as plt
 import pandas as pd
 import joblib
-import graphviz
+
 
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier
@@ -10,7 +10,6 @@ from sklearn.calibration import CalibratedClassifierCV
 from sklearn.calibration import calibration_curve
 
 from sklearn import metrics
-from sklearn.tree import export_graphviz
 
 RANDOM_STATE = 37
 
@@ -59,11 +58,11 @@ def addErrorFeatures(df:pd.DataFrame):
     df["prev_error"] = df.groupby("lead_day")["is_large_error"].shift(1).fillna(False).astype(bool)
 
     # Attempting to avoid future leakage
-    shifted_error = df.groupby("lead_day")["is_large_error"].shift(1)
+    # shifted_error = df.groupby("lead_day")["is_large_error"].shift(1)
 
     df["error_count_24h"] = (
-        # df.groupby("lead_day")["is_large_error"]
-        shifted_error
+        df.groupby("lead_day")["is_large_error"]
+        #shifted_error
         .rolling(window=8, min_periods=1) # 8 periods equal to 24-hours
         .sum()
         .reset_index(level=0, drop=True) # Reset index to original
@@ -72,17 +71,16 @@ def addErrorFeatures(df:pd.DataFrame):
     df["error_rate_24h"] = df["error_count_24h"] / 8
 
     df["time_since_last_error"] = (
-        #df.groupby("lead_day")["is_large_error"]
-        shifted_error.groupby(df["lead_day"])
+        df.groupby("lead_day")["is_large_error"]
+        # shifted_error.groupby(df["lead_day"])
         .transform(_sinceLastError)
     )
 
     # Need to groupby and shift at the same time
-    df["error_rate_24h"] = df["error_rate_24h"].fillna(0)
-    df["time_since_last_error"] = df.groupby("lead_day")["time_since_last_error"].fillna(0)
+    df["error_rate_24h"] = df["error_rate_24h"].shift(1).fillna(0)
+    df["time_since_last_error"] = df["time_since_last_error"].shift(1).fillna(0)
 
-    # These columns are only needed for calculation and can safely be removed
-    df = df.drop(columns=["is_large_error", "error_count_24h"])
+    df = df.sort_values(["issue_time_utc", "valid_start_utc"])
 
     return df
 
@@ -175,13 +173,7 @@ def randomForest(train_set, test_set, base, dataset, lead_day):
         random_state=RANDOM_STATE,
         verbose=1
     )
-    # rf.fit(X_train, y_train)
-    # tree = rf.estimators_[0]
 
-    # dot_data = export_graphviz(tree, out_file=None, feature_names=feature_columns, filled=True)
-    # graph = graphviz.Source(dot_data)
-    # graph.render("tree", format="png", cleanup=True)
-    #rf.fit(X_train, y_train)
     rf_cal = CalibratedClassifierCV(
         estimator=rf,
         method="sigmoid",
