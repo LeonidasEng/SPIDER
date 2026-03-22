@@ -321,8 +321,8 @@ def main():
             # Place test set in file for rule layer testing
             test_path = os.path.join(base, "data", "test_sets")
             os.makedirs(test_path, exist_ok=True)
-            dformat = dataset.replace(" ", "_")
-            test_file = os.path.join(test_path, f"test_{dformat}_LD{lead_day}.parquet")
+            prefix = dataset[-4:]
+            test_file = os.path.join(test_path, f"test_{prefix}_LD{lead_day}.parquet")
             test_set.to_parquet(test_file)
 
             print(f"Dataset: {dataset}")
