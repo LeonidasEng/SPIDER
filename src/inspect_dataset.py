@@ -14,13 +14,20 @@ def main():
         raise EnvironmentError("SPIDER system variable is not set!")
     
     dataset_path = os.path.join(base, "data", "datasets")
+    testset_path = os.path.join(base, "data", "test_sets")
 
     FILES = {
             "Observed": "spider_features_obs.parquet",
             "3 Day Forecast 0030": "spider_features_3day_0030.parquet",
             "3 Day Forecast 1230": "spider_features_3day_1230.parquet",
             "3 Day Targets 0030": "spider_targets_3day_0030.parquet",
-            "3 Day Targets 1230": "spider_targets_3day_1230.parquet"
+            "3 Day Targets 1230": "spider_targets_3day_1230.parquet",
+            "Testset 0030 LD0": "test_3_Day_Forecast_0030_LD0.parquet",
+            "Testset 0030 LD1": "test_3_Day_Forecast_0030_LD1.parquet",
+            "Testset 0030 LD2": "test_3_Day_Forecast_0030_LD2.parquet",
+            "Testset 1230 LD0": "test_3_Day_Forecast_1230_LD0.parquet",
+            "Testset 1230 LD1": "test_3_Day_Forecast_1230_LD1.parquet",
+            "Testset 1230 LD2": "test_3_Day_Forecast_1230_LD2.parquet"
         }
     
     df_obs = pd.read_parquet(os.path.join(dataset_path, FILES["Observed"]))
@@ -37,6 +44,15 @@ def main():
     print(f"3 Day 1230 Target Dataset: {df_tar_1230.shape}")
 
 
+    test_0030_LD0 = pd.read_parquet(os.path.join(testset_path, FILES["Testset 0030 LD0"]))
+    test_0030_LD1 = pd.read_parquet(os.path.join(testset_path, FILES["Testset 0030 LD1"]))
+    test_0030_LD2 = pd.read_parquet(os.path.join(testset_path, FILES["Testset 0030 LD2"]))
+
+    test_1230_LD0 = pd.read_parquet(os.path.join(testset_path, FILES["Testset 1230 LD0"]))
+    test_1230_LD1 = pd.read_parquet(os.path.join(testset_path, FILES["Testset 1230 LD1"]))
+    test_1230_LD2 = pd.read_parquet(os.path.join(testset_path, FILES["Testset 1230 LD2"]))
+
+    
     #df_clim0030 = climateOut(df_tar_0030)
     #df_clim1230 = climateOut(df_tar_1230)
     #df_climGeo  = climateOut(df_tar_geo)
