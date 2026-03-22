@@ -44,36 +44,6 @@ def buildTargetsT2(dataset_path:str, file_name:str):
     # Ensure correct order
     df:pd.DataFrame = df.sort_values(["lead_day", "issue_time_utc", "valid_start_utc"])
 
-    # Adding previous error features based on persistence (derived from target pre-window)
-    def _sinceLastError(series):
-        # Internal and only used once for feature
-        counter = 0
-        output = []
-        for val in series:
-            if val:
-                counter = 0
-            else:
-                counter += 1
-            output.append(counter)
-        return output
-    
-    # Previous error is inspired by the good performance of the persistence baseline model
-    df["prev_error"] = df.groupby("lead_day")["is_large_error"].shift(1).fillna(False).astype(bool)
-    df["error_count_24h"] = (
-        df.groupby("lead_day")["is_large_error"]
-        .rolling(window=8, min_periods=1) # 8 periods equal to 24-hours
-        .sum()
-        .reset_index(level=0, drop=True) # Reset index to original
-        ) # this is not a feature and will be dropped.
-    df["error_rate_24h"] = df["error_count_24h"] / 8
-    df["time_since_last_error"] = (
-        df.groupby("lead_day")["is_large_error"]
-        .transform(_sinceLastError)
-    )
-    # Need to groupby and shift at the same time
-    df["error_rate_24h"] = df.groupby("lead_day")["error_rate_24h"].shift(1).fillna(0)
-    df["time_since_last_error"] = df.groupby("lead_day")["time_since_last_error"].shift(1).fillna(0)
-
     # Adding windowed target 3 hour tolerance based on (Owens:2018):
     prev_err = df["is_large_error"].shift(1).fillna(0)
     current_err = df["is_large_error"]
@@ -99,7 +69,7 @@ def buildTargetsT2(dataset_path:str, file_name:str):
     # print(corr_err_ld)
 
     # These columns are only needed for calculation and can safely be removed
-    df = df.drop(columns=["kp_obs", "delta_kp", "abs_delta_kp", "is_large_error", "error_count_24h"])
+    df = df.drop(columns=["kp_obs", "delta_kp", "abs_delta_kp"])
 
     return df
 

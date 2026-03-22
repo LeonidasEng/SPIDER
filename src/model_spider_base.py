@@ -34,16 +34,66 @@ def dataSplit(df: pd.DataFrame, dataset:str):
     train_set = df[df["issue_time_utc"] < cutoff]
     test_set = df[df["issue_time_utc"] >= cutoff]
 
+    train_set = addErrorFeatures(train_set)
+    test_set = addErrorFeatures(test_set)
+
     print(f"{dataset}")
     print(f"Train: {train_set.shape} Test: {test_set.shape}")
     return train_set, test_set
 
+def addErrorFeatures(df:pd.DataFrame):
+    df = df.sort_values(["lead_day", "issue_time_utc", "valid_start_utc"])
+
+    # Adding previous error features based on persistence (derived from target pre-window)
+    def _sinceLastError(series):
+        # Internal and only used once for feature
+        counter = 0
+        output = []
+        for val in series:
+            if val:
+                counter = 0
+            else:
+                counter += 1
+            output.append(counter)
+        return output
+    
+    # Previous error is inspired by the good performance of the persistence baseline model
+    df["prev_error"] = df.groupby("lead_day")["is_large_error"].shift(8).fillna(False).astype(bool)
+
+    # Attempting to avoid future leakage
+    shifted_error = df.groupby("lead_day")["is_large_error"].shift(8)
+
+    df["error_count_24h"] = (
+        # df.groupby("lead_day")["is_large_error"]
+        shifted_error
+        .rolling(window=8, min_periods=1) # 8 periods equal to 24-hours
+        .sum()
+        .reset_index(level=0, drop=True) # Reset index to original
+    ) # this is not a feature and will be dropped.
+
+    df["error_rate_24h"] = df["error_count_24h"] / 8
+
+    df["time_since_last_error"] = (
+        #df.groupby("lead_day")["is_large_error"]
+        shifted_error.groupby(df["lead_day"])
+        .transform(_sinceLastError)
+    )
+
+    # Need to groupby and shift at the same time
+    df["error_rate_24h"] = df["error_rate_24h"].fillna(0)
+    df["time_since_last_error"] = df.groupby("lead_day")["time_since_last_error"].fillna(0)
+
+    # These columns are only needed for calculation and can safely be removed
+    df = df.drop(columns=["is_large_error", "error_count_24h"])
+
+    return df
+
 def persistenceBase(df:pd.DataFrame, target_col="is_large_error_win"):
     '''
-    Was forecast wrong today? Will it be wrong tomorrow? (but 3-hour intervals)
+    Was forecast wrong today? Will it be wrong tomorrow? (8 * 3-hour intervals)
     '''
     df = df.copy()
-    df["probability"] = df[target_col].shift(1)
+    df["probability"] = df[target_col].shift(8)
 
      # Remove missing values
     df = df.dropna(subset=["probability"])
@@ -278,7 +328,6 @@ def reliabilityCurve(dataset, lead_day, y_test, y_prob, model_name="Model", n_bi
     ax2.grid(alpha=0.3)
 
     plt.tight_layout()
-    plt.legend()
     plt.show()
 
 def main():

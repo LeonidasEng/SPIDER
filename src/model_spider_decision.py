@@ -2,6 +2,7 @@ import os
 import matplotlib.pyplot as plt
 import pandas as pd
 import joblib
+import graphviz
 
 from sklearn.tree import DecisionTreeClassifier
 from sklearn.ensemble import RandomForestClassifier
@@ -9,6 +10,7 @@ from sklearn.calibration import CalibratedClassifierCV
 from sklearn.calibration import calibration_curve
 
 from sklearn import metrics
+from sklearn.tree import export_graphviz
 
 RANDOM_STATE = 37
 
@@ -30,9 +32,59 @@ def dataSplit(df: pd.DataFrame, dataset:str):
     train_set = df[df["issue_time_utc"] < cutoff]
     test_set = df[df["issue_time_utc"] >= cutoff]
 
+    train_set = addErrorFeatures(train_set)
+    test_set = addErrorFeatures(test_set)
+
     print(f"{dataset}")
     print(f"Train: {train_set.shape} Test: {test_set.shape}")
     return train_set, test_set
+
+def addErrorFeatures(df:pd.DataFrame):
+    df = df.sort_values(["lead_day", "issue_time_utc", "valid_start_utc"])
+
+    # Adding previous error features based on persistence (derived from target pre-window)
+    def _sinceLastError(series):
+        # Internal and only used once for feature
+        counter = 0
+        output = []
+        for val in series:
+            if val:
+                counter = 0
+            else:
+                counter += 1
+            output.append(counter)
+        return output
+    
+    # Previous error is inspired by the good performance of the persistence baseline model
+    df["prev_error"] = df.groupby("lead_day")["is_large_error"].shift(1).fillna(False).astype(bool)
+
+    # Attempting to avoid future leakage
+    shifted_error = df.groupby("lead_day")["is_large_error"].shift(1)
+
+    df["error_count_24h"] = (
+        # df.groupby("lead_day")["is_large_error"]
+        shifted_error
+        .rolling(window=8, min_periods=1) # 8 periods equal to 24-hours
+        .sum()
+        .reset_index(level=0, drop=True) # Reset index to original
+    ) # this is not a feature and will be dropped.
+
+    df["error_rate_24h"] = df["error_count_24h"] / 8
+
+    df["time_since_last_error"] = (
+        #df.groupby("lead_day")["is_large_error"]
+        shifted_error.groupby(df["lead_day"])
+        .transform(_sinceLastError)
+    )
+
+    # Need to groupby and shift at the same time
+    df["error_rate_24h"] = df["error_rate_24h"].fillna(0)
+    df["time_since_last_error"] = df.groupby("lead_day")["time_since_last_error"].fillna(0)
+
+    # These columns are only needed for calculation and can safely be removed
+    df = df.drop(columns=["is_large_error", "error_count_24h"])
+
+    return df
 
 def decisionTree(train_set:pd.DataFrame, test_set:pd.DataFrame):
     
@@ -117,11 +169,18 @@ def randomForest(train_set, test_set, base, dataset, lead_day):
     rf = RandomForestClassifier(
         n_estimators=100,
         max_depth=8,
-        min_samples_leaf=20,
+        min_samples_leaf=50,
+        min_samples_split=100,
         class_weight="balanced",
         random_state=RANDOM_STATE,
         verbose=1
     )
+    # rf.fit(X_train, y_train)
+    # tree = rf.estimators_[0]
+
+    # dot_data = export_graphviz(tree, out_file=None, feature_names=feature_columns, filled=True)
+    # graph = graphviz.Source(dot_data)
+    # graph.render("tree", format="png", cleanup=True)
     #rf.fit(X_train, y_train)
     rf_cal = CalibratedClassifierCV(
         estimator=rf,
@@ -129,7 +188,7 @@ def randomForest(train_set, test_set, base, dataset, lead_day):
         cv=5
     )
     rf_cal.fit(X_train, y_train)
-    
+ 
     # Creating folder to store trained models
     prefix = dataset[-4:]
     model_dir = os.path.join(base, "models")
@@ -267,7 +326,7 @@ def main():
             rows.append(metricsTable(dataset, lead_day, "DT",
                                     y_test, y_prob, y_pred,
                                     y_train, y_train_pred))
-            #reliabilityCurve(dataset, lead_day, y_test, y_prob, model_name="Decision Tree")
+            reliabilityCurve(dataset, lead_day, y_test, y_prob, model_name="Decision Tree")
             # cmDisplay(y_test, y_pred)
 
             print(f"Running Random Forest Classifier for Lead Day {lead_day}...")
