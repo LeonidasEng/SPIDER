@@ -41,6 +41,8 @@ def dataSplit(df: pd.DataFrame, dataset:str):
 def addErrorFeatures(df:pd.DataFrame):
     df = df.sort_values(["lead_day", "issue_time_utc", "valid_start_utc"])
 
+    target = df["is_large_error_win"]
+
     # Adding previous error features based on persistence (derived from target pre-window)
     def _sinceLastError(series):
         # Internal and only used once for feature
@@ -79,6 +81,9 @@ def addErrorFeatures(df:pd.DataFrame):
     # Need to groupby and shift at the same time
     df["error_rate_24h"] = df["error_rate_24h"].shift(1).fillna(0)
     df["time_since_last_error"] = df["time_since_last_error"].shift(1).fillna(0)
+
+    df = df.drop("is_large_error_win", axis=1)
+    df["is_large_error_win"] = target # Last column should always be the target
 
     df = df.sort_values(["issue_time_utc", "valid_start_utc"])
 
@@ -312,13 +317,21 @@ def main():
             df_ld = df_ld.rename(columns={"kp_threeday": "kp_forecast"})
 
             train_set, test_set = dataSplit(df_ld, dataset)
+            
+            # Place test set in file for rule layer testing
+            test_path = os.path.join(base, "data", "test_sets")
+            os.makedirs(test_path, exist_ok=True)
+            dformat = dataset.replace(" ", "_")
+            test_file = os.path.join(test_path, f"test_{dformat}_LD{lead_day}.parquet")
+            test_set.to_parquet(test_file)
+
             print(f"Dataset: {dataset}")
             print(f"Running Decision Tree Classifier for Lead Day {lead_day}...")
             y_test, y_train, y_train_pred, y_prob, y_pred = decisionTree(train_set, test_set)
             rows.append(metricsTable(dataset, lead_day, "DT",
                                     y_test, y_prob, y_pred,
                                     y_train, y_train_pred))
-            reliabilityCurve(dataset, lead_day, y_test, y_prob, model_name="Decision Tree")
+            # reliabilityCurve(dataset, lead_day, y_test, y_prob, model_name="Decision Tree")
             # cmDisplay(y_test, y_pred)
 
             print(f"Running Random Forest Classifier for Lead Day {lead_day}...")
@@ -327,7 +340,7 @@ def main():
             rows.append(metricsTable(dataset, lead_day, "RF",
                                      y_test, y_prob, y_pred,
                                      y_train, y_train_pred))
-            reliabilityCurve(dataset, lead_day, y_test, y_prob, model_name="Random Forest")      
+            # reliabilityCurve(dataset, lead_day, y_test, y_prob, model_name="Random Forest")      
             # cmDisplay(y_test, y_pred)
     
             tables[dataset][lead_day] = pd.DataFrame(rows)
