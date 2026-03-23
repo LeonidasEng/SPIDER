@@ -22,12 +22,12 @@ def main():
             "3 Day Forecast 1230": "spider_features_3day_1230.parquet",
             "3 Day Targets 0030": "spider_targets_3day_0030.parquet",
             "3 Day Targets 1230": "spider_targets_3day_1230.parquet",
-            "Testset 0030 LD0": "test_3_Day_Forecast_0030_LD0.parquet",
-            "Testset 0030 LD1": "test_3_Day_Forecast_0030_LD1.parquet",
-            "Testset 0030 LD2": "test_3_Day_Forecast_0030_LD2.parquet",
-            "Testset 1230 LD0": "test_3_Day_Forecast_1230_LD0.parquet",
-            "Testset 1230 LD1": "test_3_Day_Forecast_1230_LD1.parquet",
-            "Testset 1230 LD2": "test_3_Day_Forecast_1230_LD2.parquet"
+            "Testset 0030 LD0": "test_0030_LD0.parquet",
+            "Testset 0030 LD1": "test_0030_LD1.parquet",
+            "Testset 0030 LD2": "test_0030_LD2.parquet",
+            "Testset 1230 LD0": "test_1230_LD0.parquet",
+            "Testset 1230 LD1": "test_1230_LD1.parquet",
+            "Testset 1230 LD2": "test_1230_LD2.parquet"
         }
     
     df_obs = pd.read_parquet(os.path.join(dataset_path, FILES["Observed"]))
