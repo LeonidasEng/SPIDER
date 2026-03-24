@@ -10,6 +10,7 @@ from sklearn.calibration import CalibratedClassifierCV
 from sklearn.calibration import calibration_curve
 
 from sklearn import metrics
+from sklearn.inspection import permutation_importance
 
 RANDOM_STATE = 37
 
@@ -136,7 +137,7 @@ def decisionTree(train_set:pd.DataFrame, test_set:pd.DataFrame):
     y_pred = dt.predict(X_test)
     # y_pred = (y_prob >= 0.33).astype(int)
 
-    return y_test, y_train, y_train_pred, y_prob, y_pred
+    return dt, X_test, y_test, y_train, y_train_pred, y_prob, y_pred
 
 def randomForest(train_set, test_set, base, dataset, lead_day):
     feature_columns = [
@@ -198,7 +199,7 @@ def randomForest(train_set, test_set, base, dataset, lead_day):
     y_pred = rf_cal.predict(X_test)
     # y_pred = (y_prob >= 0.33).astype(int)
 
-    return y_test, y_train, y_train_pred, y_prob, y_pred
+    return rf_cal, X_test, y_test, y_train, y_train_pred, y_prob, y_pred
 
 def cmDisplay(observed, predicted):
     
@@ -292,6 +293,33 @@ def reliabilityCurve(dataset, lead_day, y_test, y_prob, model_name="Model", n_bi
     plt.tight_layout()
     plt.show()
 
+
+def plotPFI(dataset, lead_day, model, X_test, y_test, feature_names, top=10, model_name="Model"):
+
+    scoring_type = "roc_auc"
+
+    result = permutation_importance(
+        model,
+        X_test,
+        y_test,
+        n_repeats=10,
+        random_state=RANDOM_STATE,
+        scoring=scoring_type
+    )
+
+    importances = pd.Series(result.importances_mean, index=feature_names)
+
+    top_features = importances.sort_values(ascending=True).tail(top)
+
+    plt.figure(figsize=(10,6))
+    top_features.plot(kind="barh")
+    plt.title(f"{dataset} LD{lead_day} {model_name} Top {top} Permutation Feature Importance")
+    plt.xlabel(f"{scoring_type.upper().replace('_', ' ')} Importance")
+    plt.grid(axis="x", alpha=0.3)
+    plt.tight_layout()
+    plt.show()
+
+
 def main():
     # Environment variable must be set to run this script
     base = os.environ.get("SPIDER")
@@ -327,21 +355,25 @@ def main():
 
             print(f"Dataset: {dataset}")
             print(f"Running Decision Tree Classifier for Lead Day {lead_day}...")
-            y_test, y_train, y_train_pred, y_prob, y_pred = decisionTree(train_set, test_set)
+            dt, X_test, y_test, y_train, y_train_pred, y_prob, y_pred = decisionTree(train_set, test_set)
             rows.append(metricsTable(dataset, lead_day, "DT",
                                     y_test, y_prob, y_pred,
                                     y_train, y_train_pred))
             # reliabilityCurve(dataset, lead_day, y_test, y_prob, model_name="Decision Tree")
             # cmDisplay(y_test, y_pred)
+            plotPFI(dataset, lead_day, dt, X_test, y_test, 
+                    feature_names=X_test.columns, top=10, model_name="Decision Tree")
 
             print(f"Running Random Forest Classifier for Lead Day {lead_day}...")
-            y_test, y_train, y_train_pred, y_prob, y_pred = randomForest(train_set, test_set, 
+            rf, X_test, y_test, y_train, y_train_pred, y_prob, y_pred = randomForest(train_set, test_set, 
                                                                          base, dataset, lead_day)
             rows.append(metricsTable(dataset, lead_day, "RF",
                                      y_test, y_prob, y_pred,
                                      y_train, y_train_pred))
             # reliabilityCurve(dataset, lead_day, y_test, y_prob, model_name="Random Forest")      
             # cmDisplay(y_test, y_pred)
+            plotPFI(dataset, lead_day, rf, X_test, y_test, 
+                    feature_names=X_test.columns, top=10, model_name="Random Forest")
     
             tables[dataset][lead_day] = pd.DataFrame(rows)
 
