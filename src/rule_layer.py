@@ -5,6 +5,8 @@ import joblib
 
 from datetime import datetime, timedelta
 
+DEBUG = True
+
 def loadModel(forecast, lead_day):
     # Path to trained models
     model_path = f"models/rf_cal_{forecast}_LD{lead_day}.pkl"
@@ -26,12 +28,12 @@ def confidenceInterval(prob, uncertainty):
     upper = min(1, prob + uncertainty)
     return lower, upper
 
-def makeDecision(prob, uncertainty):
+def makeDecision(reliability, uncertainty):
     # Based on trained model and reliability curve 
     # the following decisions can be defined
-    if prob >= 0.7 and uncertainty < 0.3: # was 0.2
+    if reliability >= 0.7 and uncertainty < 0.4: # was 0.2 and 0.3
         return "HIGH CONFIDENCE, TRUST"
-    elif prob >= 0.4 and uncertainty < 0.4: # was 0.3
+    elif reliability >= 0.4 and uncertainty < 0.6: # was 0.3
         return "MODERATE CONFIDENCE, CAUTION"
     else:
         return "LOW CONFIDENCE, DO NOT TRUST"
@@ -136,7 +138,7 @@ def main():
     #choice, ftype = userInputs()
     
     # NOTE: Debug with these values DATE and FORECAST TYPE
-    choice = datetime.strptime("30/12/2023", "%d/%m/%Y")
+    choice = datetime.strptime("01/01/2023", "%d/%m/%Y")
     ftype = "0030"
 
     test_sets = {
@@ -167,6 +169,13 @@ def main():
         new_records[ld] = df_all[
             df_all["valid_start_utc"].dt.date == target_date
         ].sort_values("valid_start_utc").reset_index(drop=True)
+    
+    if DEBUG == True:
+        # To view all records not just one day
+        new_records = {
+            ld: df.sort_values("valid_start_utc").reset_index(drop=True)
+            for ld, df in test_sets.items()
+        }
         
     # Use all the feature columns to produce probabilities
     feature_columns = [
@@ -201,15 +210,19 @@ def main():
     }
 
     model_outputs = {}
+    debug_rows = []
 
     for ld in [0, 1, 2]:
         model = models[ld]
         X = new_forecasts[ld]
+        if DEBUG == True:
+            df_ld = new_records[ld] # <- DEBUG
+
         probs = predictProb(model, X)
 
         outputs = []
 
-        for p in probs:
+        for i, p in enumerate(probs):
             reliability = 1 - p
             # Inverse of probability of large error = Reliability
             uncertainty = 1 - abs(2 * p - 1)
@@ -228,8 +241,24 @@ def main():
                 "decision": decision
             })
 
+            # Want to be able to see all outputs to tune decision thresholds
+            if DEBUG == True:
+                debug_rows.append({
+                    "issue_time_utc": df_ld.iloc[i]["issue_time_utc"],
+                    "valid_start_utc": df_ld.iloc[i]["valid_start_utc"],
+                    "lead_day": ld,
+                    "kp_forecast": round(df_ld.iloc[i]["kp_forecast"], 2),
+                    "reliability": round(reliability, 2),
+                    "uncertainty": round(uncertainty, 2),
+                    "ci_lower": round(lower, 2),
+                    "ci_upper": round(upper, 2),
+                    "decision": decision
+                })
+
+
         model_outputs[ld] = outputs 
-    
+    # Use debugger with breakpoint to vew debug_df
+    debug_df = pd.DataFrame(debug_rows)
     text = formatResult(base, new_records, model_outputs)
     output_path = os.path.join(
         base, "outputs", 
