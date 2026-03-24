@@ -1,14 +1,23 @@
 import os
+import sys
 import pandas as pd
 import joblib
+
+from datetime import datetime, timedelta
 
 def loadModel(forecast, lead_day):
     # Path to trained models
     model_path = f"models/rf_cal_{forecast}_LD{lead_day}.pkl"
     return joblib.load(model_path)
 
+def showBanner(base):
+    banner_name = "SPIDER_ASCII_Banner.txt"
+    banner_path = os.path.join(base, "docs", banner_name)
+    with open(banner_path, "r", encoding="utf-8") as f:
+        return f.read()
+
 def predictProb(model, X):
-    # Calibrated model so probability = reliability
+    # Model targe is is_large_error
     return model.predict_proba(X)[:, 1]
 
 def confidenceInterval(prob, uncertainty):
@@ -20,24 +29,145 @@ def confidenceInterval(prob, uncertainty):
 def makeDecision(prob, uncertainty):
     # Based on trained model and reliability curve 
     # the following decisions can be defined
-    if prob >= 0.7 and uncertainty < 0.2:
+    if prob >= 0.7 and uncertainty < 0.3: # was 0.2
         return "HIGH CONFIDENCE, TRUST"
-    elif prob >= 0.4 and uncertainty < 0.3:
+    elif prob >= 0.4 and uncertainty < 0.4: # was 0.3
         return "MODERATE CONFIDENCE, CAUTION"
     else:
         return "LOW CONFIDENCE, DO NOT TRUST"
 
+def formatBlock(df:pd.DataFrame, rels, uncertainties, cis, decisions):
+    lines = []
+
+    header = "TIME   Kp    REL   UNC   CI            DECISION"
+
+    for i in range(len(df)):
+        # Follow similar format to original forecast
+        valid = df.iloc[i]["valid_start_utc"].strftime("%H:%M")
+        kp = f"{df.iloc[i]['kp_forecast']:.2f}"    # Forecast Kp
+        r = f"{rels[i]:.2f}"                       # Reliability
+        u = f"{uncertainties[i]:.2f}"              # Uncertainty
+        ci = f"[{cis[i][0]:.2f}, {cis[i][1]:.2f}]" # Confidence Interval [lo, up]
+        d = decisions[i]                           # Decision
+
+        lines.append(f"{valid}  {kp}  {r}  {u}  {ci}  {d}")
+    return header + "\n" + "\n".join(lines)
+
+def formatResult(base, new_records, model_outputs):
+    issue = new_records[0].iloc[0]["issue_time_utc"]
+    issue_str = datetime.strftime(issue, "%Y %b %d %H:%M UTC")
+    
+    lead_dates = {
+        # Adding the lead day to the issue to see in 
+        # same date format as original forecast
+        ld: ((issue + timedelta(days=ld)).strftime("%b %d"))
+        for ld in [0, 1, 2]
+    }
+    blocks = {}
+    for ld in [0, 1, 2]:
+        outputs = model_outputs[ld]
+
+        rels = [out["reliability"] for out in outputs]
+        uncs = [out["uncertainty"] for out in outputs]
+        cis  = [out["ci"] for out in outputs]        
+        decs = [out["decision"] for out in outputs]
+        
+        blocks[ld] = formatBlock(new_records[ld],
+                                 rels,
+                                 uncs,
+                                 cis,
+                                 decs)
+    # No indent here is intentional, as it would appear in txt file otherwise.
+    text = f"""{showBanner(base)}
+###############################################################################
+:Product: SPIDER_{issue.year}{issue.month:02d}{issue.day:02d}_3DAY_FORECAST.txt
+:Issued: {issue_str}
+# Created by LeonidasEng, thanks to NOAA SWPC for the data!
+
+SPIDER Geomagnetic Activity Forecast with Reliability
+
+{lead_dates[0]} Forecast:
+
+{blocks[0]}
+
+{lead_dates[1]} Forecast:
+
+{blocks[1]}
+
+{lead_dates[2]} Forecast:
+
+{blocks[2]}
+
+Key:
+TIME: Valid start of the 3-hour forecast time window.
+REL:  Reliability, the inverse of the large error probability.
+UNC:  Uncertainty, the confidence in the model prediction.
+      Max uncertainty is (p = 0.5), while confidence is 0 or 1.
+CI:   Confidence interval, uncertainty range around reliability.
+
+DECISION: Recommendation based on results.
+    """
+    #Rationale: {rationale} - I can only include this for 2025-2026
+    #print(text)
+    return text
+
+def userInputs():
+    # This is a simple prompt to act as a quick interface
+    print("Please insert a date between 01/01/2023 and 31/12/2025.")
+    issue_input = input("Insert: ").strip()
+    try:
+        issue = datetime.strptime(issue_input, "%d/%m/%Y")
+    except ValueError:
+        print("Invalid start date format.")
+        sys.exit(1)
+
+    print("Please enter a forecast type ['0030' or '1230'].")
+    ftype = input("Insert: ").strip()
+    
+    if ftype not in ["0030", "1230"]:
+        print("Invalid forecast type.")
+        sys.exit(1)
+    
+    return issue, ftype
+
 def main():
     base = os.environ.get("SPIDER") # Get SPIDER $PATH
 
-    # FIXME copy forecast style
-    # Change these settings for different test sets
-    ftype = "0030"     # Which forecast?
-    ld = 0             # Which lead day?
+    #choice, ftype = userInputs()
+    
+    # NOTE: Debug with these values DATE and FORECAST TYPE
+    choice = datetime.strptime("30/12/2023", "%d/%m/%Y")
+    ftype = "0030"
 
-    # Path to chosen forecast
-    fpath = os.path.join(base, "data", "test_sets", f"test_{ftype}_LD{ld}.parquet")
-    test_set = pd.read_parquet(fpath)
+    test_sets = {
+        # Load the test set from data across lead days
+        ld: pd.read_parquet(
+            os.path.join(base, "data", "test_sets", 
+                                f"test_{ftype}_LD{ld}.parquet"))
+        for ld in [0, 1, 2]
+    }
+
+    new_records = {}
+    
+    # To avoid future leakage, 3 day forecasts were altered
+    # to not include the first element of the forecast 
+    # because it's valid start was before 0030 so I need to
+    # correct for that change in the output from 
+    # 8,8,7 to 7,8,8
+
+    # Get all rows for the issue time (across all lead days)
+    df_all = pd.concat([
+        df[df["issue_time_utc"].dt.date == choice.date()]
+        for df in test_sets.values()
+    ])
+
+    for ld in [0, 1, 2]:
+        target_date = (choice + timedelta(days=ld)).date()
+
+        new_records[ld] = df_all[
+            df_all["valid_start_utc"].dt.date == target_date
+        ].sort_values("valid_start_utc").reset_index(drop=True)
+        
     # Use all the feature columns to produce probabilities
     feature_columns = [
         "bz_gsm",
@@ -60,39 +190,54 @@ def main():
         "time_since_last_error"
     ]
     
-    # To select a single element
-    new_record = test_set.iloc[25] # FIXME Make it a day not a single record
-    new_forecast = test_set.iloc[[25]][feature_columns] # Model expects 2D entry
+    # Loads 3 CalibratedClassifierCV(RandomForestClassifier)
+    models = {
+        ld: loadModel(ftype, ld) for ld in [0, 1, 2]
+    }
 
-    results = [] # FIXME: Make this a bulletin not a row.
+    # Create feature set for each lead day
+    new_forecasts = {
+        ld: df[feature_columns] for ld, df in new_records.items()
+    }
 
-    model = loadModel(forecast=ftype, lead_day=ld)
-    probs = predictProb(model, new_forecast)
-    for p in probs:
-        reliability = p
-        uncertainty = 1 - abs(2*p - 1) 
-        #p=0: certain(0), p=0.5: uncertain(1), p=1: certain(0)
+    model_outputs = {}
 
-        # How confident?
-        lower, upper = confidenceInterval(p, uncertainty)
-        
-        # Should operators trust model?
-        decision = makeDecision(p, uncertainty)
+    for ld in [0, 1, 2]:
+        model = models[ld]
+        X = new_forecasts[ld]
+        probs = predictProb(model, X)
 
-        results.append({
-            "Forecast Type": ftype,
-            "Lead Day": ld,
-            "Issue Time":  new_record["issue_time_utc"],
-            "Valid Start": new_record["valid_start_utc"],
-            "Forecast Kp": new_record["kp_forecast"],
-            "Reliability": f"{reliability:.2f}",
-            "Uncertainty": f"{uncertainty:.2f}",
-            "CI": f"[{lower:.2f}, {upper:.2f}]",
-            "Decision": decision
-        })
+        outputs = []
+
+        for p in probs:
+            reliability = 1 - p
+            # Inverse of probability of large error = Reliability
+            uncertainty = 1 - abs(2 * p - 1)
+            #Defined: p=0: certain(0), p=0.5: uncertain(1), p=1: certain(0)
+
+            # How confident?
+            lower, upper = confidenceInterval(reliability, uncertainty)
+            
+            # Should operators trust model?
+            decision = makeDecision(reliability, uncertainty)
+
+            outputs.append({
+                "reliability": reliability,
+                "uncertainty": uncertainty,
+                "ci": (lower, upper),
+                "decision": decision
+            })
+
+        model_outputs[ld] = outputs 
     
-    final_output = pd.DataFrame(results)
-    print(final_output)
+    text = formatResult(base, new_records, model_outputs)
+    output_path = os.path.join(
+        base, "outputs", 
+        f"SPIDER_{choice.year}{choice.month:02d}{choice.day:02d}_3DAY_FORECAST.txt"
+        )
+    # Output forecast + reliability to file
+    with open(output_path, "w") as f:
+        f.write(text)
 
 if __name__ == "__main__":
     main()
