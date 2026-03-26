@@ -361,8 +361,8 @@ def main():
                                     y_train, y_train_pred))
             # reliabilityCurve(dataset, lead_day, y_test, y_prob, model_name="Decision Tree")
             # cmDisplay(y_test, y_pred)
-            plotPFI(dataset, lead_day, dt, X_test, y_test, 
-                    feature_names=X_test.columns, top=10, model_name="Decision Tree")
+            # plotPFI(dataset, lead_day, dt, X_test, y_test, 
+            #         feature_names=X_test.columns, top=10, model_name="Decision Tree")
 
             print(f"Running Random Forest Classifier for Lead Day {lead_day}...")
             rf, X_test, y_test, y_train, y_train_pred, y_prob, y_pred = randomForest(train_set, test_set, 
@@ -370,10 +370,10 @@ def main():
             rows.append(metricsTable(dataset, lead_day, "RF",
                                      y_test, y_prob, y_pred,
                                      y_train, y_train_pred))
-            # reliabilityCurve(dataset, lead_day, y_test, y_prob, model_name="Random Forest")      
+            reliabilityCurve(dataset, lead_day, y_test, y_prob, model_name="Random Forest")      
             # cmDisplay(y_test, y_pred)
-            plotPFI(dataset, lead_day, rf, X_test, y_test, 
-                    feature_names=X_test.columns, top=10, model_name="Random Forest")
+            # plotPFI(dataset, lead_day, rf, X_test, y_test, 
+            #         feature_names=X_test.columns, top=10, model_name="Random Forest")
     
             tables[dataset][lead_day] = pd.DataFrame(rows)
 
