@@ -33,3 +33,13 @@ data gaps, so the original parsing method parse_3day.py was
 retained which includes geomagnetic activity forecast, solar 
 radiation forecast and radio blackout forecast, including 
 associated metadata. All previous years use the in-house tool.
+
+Note: Observed and OMNI2 data are not available in this repo due to
+size constraints. To reproduce the full dataset, users should run:
+
+- `ftp_access.py`
+- `parse_dayind.py`
+- `parse_omni2.py`
+
+These scripts will retrieve and process the required data for a
+specified time range.
