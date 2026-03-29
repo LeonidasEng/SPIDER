@@ -19,6 +19,7 @@ data/datasets/archive/
 # Docs
 docs/resources
 docs/historic_model_outputs
+docs/model_performance
 
 # Logs
 logs/
