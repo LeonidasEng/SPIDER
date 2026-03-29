@@ -1,0 +1,5241 @@
+{
+    "2023-03-01": {
+        "issue": "2023-03-01 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-03-01 00-03UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2023-03-01 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-03-01 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-01 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-01 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-01 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-01 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-01 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-03-02 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-02 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-02 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-02 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-02 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-02 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-02 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-02 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-03-03 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-03 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-03 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-03 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-03 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-03-03 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-03 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-03 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 6.0,
+                "greatest_expected_kp": 4.67,
+                "greatest_expected_scale": "G2",
+                "rationale": "The geomagnetic field is expected to be active to G1 storm levels early on 01 Mar due to lingering, but weakening CME passage effects and continuing CH HSS influences."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 50,
+                "n+1": 50,
+                "n+2": 45,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R2",
+                "max_blackout_time": "Feb 28 2023 1750 UTC",
+                "rationale": "There is still a chance for R1-R2 (Minor-Moderate) radio blackouts on 01-03 Mar due primarily to the flare potential and recent activity of Region 3234."
+            }
+        }
+    },
+    "2023-03-02": {
+        "issue": "2023-03-02 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-03-02 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-02 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-02 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-02 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-02 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-02 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-02 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-02 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-03-03 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-03 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-03 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-03 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-03 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-03-03 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-03 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-03 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-03-04 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-04 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-04 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-03-04 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-03-04 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-03-04 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-04 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-04 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 50,
+                "n+1": 45,
+                "n+2": 45,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Mar 01 2023 0107 UTC",
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) and a slight chance of an R3 (Strong) radio blackout event on 02-04 Mar, primarily due to the flare potential of Region 3234 and flare history of Regions 3236 and 3240."
+            }
+        }
+    },
+    "2023-03-03": {
+        "issue": "2023-03-03 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-03-03 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-03 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-03-03 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-03 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-03 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-03-03 15-18UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2023-03-03 18-21UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2023-03-03 21-00UT",
+                    1.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-03-04 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-04 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-04 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-03-04 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-03-04 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-03-04 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-04 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-04 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-03-05 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-03-05 03-06UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2023-03-05 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-03-05 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-03-05 12-15UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-03-05 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-05 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-05 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 4.67,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storms are likely on 05 Mar due to CH HSS influence."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 45,
+                "n+1": 45,
+                "n+2": 30,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Mar 02 2023 2116 UTC",
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts over 03-05 Mar."
+            }
+        }
+    },
+    "2023-03-04": {
+        "issue": "2023-03-04 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-03-04 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-03-04 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-03-04 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-03-04 09-12UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-03-04 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-04 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-04 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-03-04 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-03-05 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-03-05 03-06UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2023-03-05 06-09UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2023-03-05 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-03-05 12-15UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-03-05 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-05 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-05 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-03-06 00-03UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2023-03-06 03-06UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2023-03-06 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-03-06 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-03-06 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-03-06 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-06 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-06 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 4.67,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storms are likely on 05-06 Mar due to CH HSS influences."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for S1 (Minor) solar radiation storms over 04-06 Mar."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 55,
+                "n+1": 55,
+                "n+2": 55,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R3",
+                "max_blackout_time": "Mar 03 2023 1752 UTC",
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are likely, with a slight chance for R3 or greater events, over 04-06 Mar."
+            }
+        }
+    },
+    "2023-03-05": {
+        "issue": "2023-03-05 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-03-05 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-03-05 03-06UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2023-03-05 06-09UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2023-03-05 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-03-05 12-15UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-03-05 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-05 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-05 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-03-06 00-03UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2023-03-06 03-06UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2023-03-06 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-03-06 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-03-06 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-03-06 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-06 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-06 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-03-07 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-03-07 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-03-07 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-03-07 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-03-07 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-03-07 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-07 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-07 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 4.67,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storms are likely on 05-06 Mar due to negative polarity CH HSS influences."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 15,
+                "n+1": 10,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for S1 (Minor) solar radiation storms on 05-06 Mar."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 55,
+                "n+1": 55,
+                "n+2": 55,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R2",
+                "max_blackout_time": "Mar 04 2023 1557 UTC",
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are likely, with a slight chance for R3 or greater events, over 05-07 Mar."
+            }
+        }
+    },
+    "2023-03-06": {
+        "issue": "2023-03-06 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-03-06 00-03UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2023-03-06 03-06UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2023-03-06 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-03-06 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-03-06 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-03-06 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-06 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-06 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-03-07 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-03-07 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-03-07 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-03-07 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-03-07 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-03-07 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-07 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-07 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-03-08 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-03-08 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-08 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-08 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-08 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-08 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-08 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-08 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 4.67,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storms are likely on 06 Mar due to CH HSS influence."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 55,
+                "n+1": 55,
+                "n+2": 55,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R2",
+                "max_blackout_time": "Mar 05 2023 2136 UTC",
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are likely, with a slight chance for R3 or greater events, over 06-08 Mar."
+            }
+        }
+    },
+    "2023-03-07": {
+        "issue": "2023-03-07 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-03-07 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-03-07 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-03-07 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-03-07 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-03-07 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-03-07 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-03-07 18-21UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-03-07 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-03-08 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-03-08 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-08 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-08 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-08 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-03-08 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-08 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-08 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-03-09 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-09 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-09 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-09 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-09 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-09 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-09 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-09 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 55,
+                "n+1": 55,
+                "n+2": 55,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R2",
+                "max_blackout_time": "Mar 06 2023 0228 UTC",
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts and a slight chance for R3 (Strong) or greater radio blackouts all three days."
+            }
+        }
+    },
+    "2023-03-08": {
+        "issue": "2023-03-08 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-03-08 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-08 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-08 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-08 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-08 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-08 15-18UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-03-08 18-21UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2023-03-08 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-03-09 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-03-09 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-09 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-09 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-09 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-09 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-09 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-09 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-03-10 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-10 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-10 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-10 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-10 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-10 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-10 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-10 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 4.33,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 45,
+                "n+1": 45,
+                "n+2": 45,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts and a slight chance for R3 Strong or greater blackouts through 10 Mar primarily due to the potential from Regions 3242 and 3245."
+            }
+        }
+    },
+    "2023-03-09": {
+        "issue": "2023-03-09 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-03-09 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-09 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-09 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-09 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-09 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-09 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-09 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-09 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-03-10 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-10 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-10 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-10 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-10 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-10 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-10 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-10 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-03-11 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-11 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-11 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-11 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-11 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-11 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-11 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-11 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 2.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 40,
+                "n+1": 35,
+                "n+2": 35,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Mar 08 2023 2244 UTC",
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts and a slight chance for R3 (Strong) or greater blackouts all three days."
+            }
+        }
+    },
+    "2023-03-10": {
+        "issue": "2023-03-10 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-03-10 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-10 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-10 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-10 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-10 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-10 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-10 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-10 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-03-11 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-11 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-11 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-11 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-11 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-11 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-11 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-11 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-03-12 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-12 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-12 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-03-12 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-12 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-12 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-12 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-12 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 3.33,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 30,
+                "n+1": 30,
+                "n+2": 30,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts and a slight chance for R3 (Strong) or greater blackouts on 10-12 Mar."
+            }
+        }
+    },
+    "2023-03-11": {
+        "issue": "2023-03-11 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-03-11 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-11 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-11 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-11 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-11 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-11 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-11 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-11 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-03-12 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-12 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-12 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-03-12 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-12 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-12 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-12 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-12 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-03-13 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-13 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-13 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-13 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-13 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-13 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-13 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-13 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 3.33,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 25,
+                "n+1": 25,
+                "n+2": 25,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts over 11-13 Mar."
+            }
+        }
+    },
+    "2023-03-12": {
+        "issue": "2023-03-12 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-03-12 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-12 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-12 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-03-12 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-12 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-12 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-12 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-12 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-03-13 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-13 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-13 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-13 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-13 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-13 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-13 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-13 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-03-14 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-14 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-14 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-14 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-14 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-14 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-14 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-14 21-00UT",
+                    1.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 3.33,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There exists a slight chance for R1 (Minor) radio blackouts on 12-14 Mar."
+            }
+        }
+    },
+    "2023-03-13": {
+        "issue": "2023-03-13 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-03-13 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-13 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-13 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-13 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-13 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-13 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-13 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-13 21-00UT",
+                    1.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-03-14 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-14 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-14 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-14 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-14 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-14 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-14 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-14 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-03-15 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-15 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-03-15 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-03-15 09-12UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-03-15 12-15UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2023-03-15 15-18UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-03-15 18-21UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-03-15 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 4.67,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storms likely on 15 Mar due to anticipated effects from the periphery of a passing CME that left the Sun on 11 Mar."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There exists a slight chance for R1-R2 (Minor-Moderate) radio blackouts over 13-15 Mar."
+            }
+        }
+    },
+    "2023-03-14": {
+        "issue": "2023-03-14 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-03-14 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-14 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-14 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-14 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-14 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-14 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-14 18-21UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-03-14 21-00UT",
+                    4.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-03-15 00-03UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2023-03-15 03-06UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2023-03-15 06-09UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-03-15 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-03-15 12-15UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-03-15 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-15 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-03-15 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-03-16 00-03UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2023-03-16 03-06UT",
+                    5.33,
+                    "G1"
+                ],
+                [
+                    "2023-03-16 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-03-16 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-03-16 12-15UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-03-16 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-16 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-16 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 1.0,
+                "greatest_expected_kp": 5.33,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storms are expected on 15-16 Mar in response to numerous CMEs that erupted from the Sun over the last several days."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 25,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": true,
+                "rationale": "There is a chance for an S1 (Minor) solar radiation storm on 14 Mar. Levels remain above background levels with the event that began on 13 Mar, and only a small increase would push 10 MeV protons back above the S1 warning threshold."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a slight chance for R1-R2 (Minor-Moderate) radio blackouts for the next three days (14-16 Mar)."
+            }
+        }
+    },
+    "2023-03-15": {
+        "issue": "2023-03-15 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-03-15 00-03UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2023-03-15 03-06UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2023-03-15 06-09UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-03-15 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-03-15 12-15UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-03-15 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-15 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-03-15 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-03-16 00-03UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2023-03-16 03-06UT",
+                    5.33,
+                    "G1"
+                ],
+                [
+                    "2023-03-16 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-03-16 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-03-16 12-15UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-03-16 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-16 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-16 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-03-17 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-17 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-17 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-17 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-17 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-17 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-17 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-17 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 5.33,
+                "greatest_expected_scale": "G1",
+                "rationale": "The geomagnetic field is expected to reach active levels, with G1 (Minor) geomagnetic storming likely on 15-16 Mar, first in response to weak positive polarity CH HSS and the periphery of the 10 and 11 Mar CMEs and then due to any glancing effects from an additional pair of CMEs from 12 and 13 Mar."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 99,
+                "n+1": 25,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": true,
+                "rationale": "The greater than 10 MeV proton flux is expected to remain slightly enhanced through 16 Mar, becoming nominal by 17 Mar."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "No R1 (Minor) or greater radio blackouts are expected.  No significant active region flare activity is forecast."
+            }
+        }
+    },
+    "2023-03-16": {
+        "issue": "2023-03-16 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-03-16 00-03UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2023-03-16 03-06UT",
+                    5.33,
+                    "G1"
+                ],
+                [
+                    "2023-03-16 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-03-16 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-03-16 12-15UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-03-16 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-16 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-16 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-03-17 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-17 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-17 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-17 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-17 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-17 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-17 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-17 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-03-18 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-18 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-18 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-18 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-18 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-18 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-18 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-18 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 6.0,
+                "greatest_expected_kp": 5.33,
+                "greatest_expected_scale": "G2",
+                "rationale": "The geomagnetic field is expected to see G1 (Minor) to G2 (Moderate) geomagnetic storm levels early on 16 Mar due to CME effects. Unsettled to active levels are expected for the remainder of 16 Mar."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 25,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": true,
+                "rationale": "There is a chance that the greater than 10 MeV proton flux could see additional S1 (Minor) radiation levels on 16 Mar. Conditions are expected to be near background levels on 17-18 Mar."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 5,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "No R1 (Minor) or greater radio blackouts are expected.  No significant active region flare activity is forecast."
+            }
+        }
+    },
+    "2023-03-17": {
+        "issue": "2023-03-17 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-03-17 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-17 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-17 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-03-17 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-17 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-17 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-17 18-21UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-03-17 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-03-18 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-18 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-18 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-18 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-18 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-18 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-18 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-18 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-03-19 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-19 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-19 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-19 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-19 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-19 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-19 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-19 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 3.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "No R1 (Minor) or greater radio blackouts are expected.  No significant active region flare activity is forecast."
+            }
+        }
+    },
+    "2023-03-18": {
+        "issue": "2023-03-18 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-03-18 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-18 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-18 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-18 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-18 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-18 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-18 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-18 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-03-19 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-19 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-19 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-19 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-19 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-19 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-19 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-19 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-03-20 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-20 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-03-20 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-03-20 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-20 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-20 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-03-20 18-21UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-03-20 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 4.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Mar 17 2023 1507 UTC",
+                "rationale": "There is a slight chance for R1-R2 (Minor-Moderate) radio blackouts over 18-20 Mar."
+            }
+        }
+    },
+    "2023-03-19": {
+        "issue": "2023-03-19 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-03-19 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-19 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-19 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-19 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-19 12-15UT",
+                    0.33,
+                    null
+                ],
+                [
+                    "2023-03-19 15-18UT",
+                    0.33,
+                    null
+                ],
+                [
+                    "2023-03-19 18-21UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-03-19 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-03-20 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-20 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-03-20 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-03-20 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-03-20 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-20 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-20 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-20 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-03-21 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-03-21 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-03-21 06-09UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-03-21 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-03-21 12-15UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-03-21 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-21 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-21 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 4.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 25,
+                "n+1": 25,
+                "n+2": 25,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There exists a slight chance for R1-R2 (Minor-Moderate) radio blackouts over 19-21 Mar."
+            }
+        }
+    },
+    "2023-03-20": {
+        "issue": "2023-03-20 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-03-20 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-20 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-03-20 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-03-20 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-03-20 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-20 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-20 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-20 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-03-21 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-03-21 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-03-21 06-09UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-03-21 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-03-21 12-15UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-03-21 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-21 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-21 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-03-22 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-22 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-22 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-22 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-22 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-22 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-22 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-22 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 4.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 25,
+                "n+1": 25,
+                "n+2": 25,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There exists a chance for R1-R2 (Minor-Moderate) radio blackouts over 20-22 Mar."
+            }
+        }
+    },
+    "2023-03-21": {
+        "issue": "2023-03-21 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-03-21 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-03-21 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-03-21 06-09UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-03-21 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-03-21 12-15UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-03-21 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-21 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-21 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-03-22 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-22 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-22 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-22 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-22 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-22 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-22 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-22 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-03-23 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-23 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-23 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-23 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-23 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-23 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-23 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-23 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 4.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 25,
+                "n+1": 25,
+                "n+2": 25,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Mar 20 2023 0148 UTC",
+                "rationale": "No R1 (Minor) or greater radio blackouts are expected.  No significant active region flare activity is forecast."
+            }
+        }
+    },
+    "2023-03-22": {
+        "issue": "2023-03-22 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-03-22 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-22 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-22 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-22 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-22 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-22 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-22 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-22 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-03-23 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-23 03-06UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-03-23 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-03-23 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-03-23 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-23 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-23 18-21UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-03-23 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-03-24 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-24 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-24 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-24 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-03-24 12-15UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2023-03-24 15-18UT",
+                    5.33,
+                    "G1"
+                ],
+                [
+                    "2023-03-24 18-21UT",
+                    5.67,
+                    "G2"
+                ],
+                [
+                    "2023-03-24 21-00UT",
+                    6.0,
+                    "G2"
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 6.0,
+                "greatest_expected_scale": "G2",
+                "rationale": "G1-G2 (Minor-Moderate) geomagnetic storms are likely on 24 Mar due to combined CIR and CH HSS effects."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 20,
+                "n+1": 20,
+                "n+2": 20,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "No R1 (Minor) or greater radio blackouts are expected.  No significant active region flare activity is forecast."
+            }
+        }
+    },
+    "2023-03-23": {
+        "issue": "2023-03-23 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-03-23 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-23 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-23 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-23 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-23 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-23 15-18UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-03-23 18-21UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2023-03-23 21-00UT",
+                    5.0,
+                    "G1"
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-03-24 00-03UT",
+                    5.33,
+                    "G1"
+                ],
+                [
+                    "2023-03-24 03-06UT",
+                    5.67,
+                    "G2"
+                ],
+                [
+                    "2023-03-24 06-09UT",
+                    6.0,
+                    "G2"
+                ],
+                [
+                    "2023-03-24 09-12UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2023-03-24 12-15UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-03-24 15-18UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-03-24 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-03-24 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-03-25 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-03-25 03-06UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2023-03-25 06-09UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2023-03-25 09-12UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-03-25 12-15UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-03-25 15-18UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-03-25 18-21UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2023-03-25 21-00UT",
+                    4.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 6.0,
+                "greatest_expected_scale": "G2",
+                "rationale": "G1-G2 (Minor-Moderate) geomagnetic storms are probable 23-25 Mar. G1 levels are likely 23 Mar due to nearby or weak flanking influences of a passing CME. Additionally, a CIR ahead of a negative polarity CH HSS is anticipated to arrive. 24 Mar is likely to see responses escalate to G2 levels due to combined CIR and CH HSS effects. 25 Mar is likely to experience an isolated G1 period due to continuing CH HSS effects."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "No R1 (Minor) or greater radio blackouts are expected.  No significant active region flare activity is forecast."
+            }
+        }
+    },
+    "2023-03-24": {
+        "issue": "2023-03-24 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-03-24 00-03UT",
+                    6.67,
+                    "G3"
+                ],
+                [
+                    "2023-03-24 03-06UT",
+                    5.67,
+                    "G2"
+                ],
+                [
+                    "2023-03-24 06-09UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2023-03-24 09-12UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2023-03-24 12-15UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-03-24 15-18UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-03-24 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-24 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-03-25 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-03-25 03-06UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2023-03-25 06-09UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2023-03-25 09-12UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-03-25 12-15UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-03-25 15-18UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-03-25 18-21UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2023-03-25 21-00UT",
+                    4.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-03-26 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-26 03-06UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-03-26 06-09UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2023-03-26 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-03-26 12-15UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-03-26 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-03-26 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-03-26 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 7.0,
+                "greatest_expected_kp": 6.67,
+                "greatest_expected_scale": "G3",
+                "rationale": "G2-G3 (Moderate-Strong) storm levels are expected early 24 Mar due to CME influences. G1-G2 (Minor-Moderate) levels remain likely through the remainder of 24 Mar due to continuing, but weakening CME influences; and CH HSS onset later in the day. 25-26 Mar are likely to experience isolated periods of G1 storms due to CH HSS effects, while transient influences end."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "No R1 (Minor) or greater radio blackouts are expected.  No significant active region flare activity is forecast."
+            }
+        }
+    },
+    "2023-03-25": {
+        "issue": "2023-03-25 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-03-25 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-03-25 03-06UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2023-03-25 06-09UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2023-03-25 09-12UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-03-25 12-15UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-03-25 15-18UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-03-25 18-21UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2023-03-25 21-00UT",
+                    4.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-03-26 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-26 03-06UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-03-26 06-09UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2023-03-26 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-03-26 12-15UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-03-26 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-03-26 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-03-26 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-03-27 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-03-27 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-03-27 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-03-27 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-03-27 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-27 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-27 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-27 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 8.0,
+                "greatest_expected_kp": 4.67,
+                "greatest_expected_scale": "G4",
+                "rationale": "G1 (Minor) geomagnetic storms are expected on Mar 25 and likely on Mar 26 due to lingering CME and CH HSS influence."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a slight chance for R1-R2 (Minor-Moderate) radio blackouts on Mar 25-27."
+            }
+        }
+    },
+    "2023-03-26": {
+        "issue": "2023-03-26 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-03-26 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-26 03-06UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-03-26 06-09UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2023-03-26 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-03-26 12-15UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-03-26 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-03-26 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-03-26 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-03-27 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-03-27 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-03-27 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-03-27 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-03-27 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-27 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-27 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-27 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-03-28 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-28 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-28 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-28 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-28 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-28 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-28 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-28 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 4.67,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storms are likely on Mar 26 due to CH HSS effects."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a slight chance for R1-R2 (Minor-Moderate) radio blackouts on Mar 26-28."
+            }
+        }
+    },
+    "2023-03-27": {
+        "issue": "2023-03-27 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-03-27 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-27 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-27 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-27 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-27 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-27 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-27 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-27 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-03-28 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-28 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-28 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-28 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-28 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-28 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-28 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-28 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-03-29 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-29 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-29 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-29 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-29 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-29 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-29 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-29 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 2.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a slight chance for R1-R2 (Minor-Moderate) radio blackouts on Mar 27-29."
+            }
+        }
+    },
+    "2023-03-28": {
+        "issue": "2023-03-28 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-03-28 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-28 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-28 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-03-28 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-28 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-28 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-28 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-28 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-03-29 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-29 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-29 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-29 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-29 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-29 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-29 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-29 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-03-30 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-30 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-30 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-30 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-30 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-03-30 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-30 18-21UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-03-30 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 1.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "No R1 (Minor) or greater radio blackouts are expected.  No significant active region flare activity is forecast."
+            }
+        }
+    },
+    "2023-03-29": {
+        "issue": "2023-03-29 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-03-29 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-29 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-29 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-29 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-29 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-29 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-29 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-29 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-03-30 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-30 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-30 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-30 09-12UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-03-30 12-15UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-03-30 15-18UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2023-03-30 18-21UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2023-03-30 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-03-31 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-03-31 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-03-31 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-03-31 09-12UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-03-31 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-03-31 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-03-31 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-31 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 2.0,
+                "greatest_expected_kp": 4.33,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "No R1 (Minor) or greater radio blackouts are expected.  No significant active region flare activity is forecast."
+            }
+        }
+    },
+    "2023-03-30": {
+        "issue": "2023-03-30 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-03-30 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-03-30 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-30 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-03-30 09-12UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-03-30 12-15UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-03-30 15-18UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2023-03-30 18-21UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2023-03-30 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-03-31 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-03-31 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-03-31 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-03-31 09-12UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-03-31 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-03-31 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-03-31 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-31 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-04-01 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-04-01 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-04-01 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-04-01 09-12UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-04-01 12-15UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-04-01 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-04-01 18-21UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-04-01 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 2.0,
+                "greatest_expected_kp": 4.33,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 25,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R3",
+                "max_blackout_time": "Mar 29 2023 0233 UTC",
+                "rationale": "No R1 (Minor) or greater radio blackouts are expected.  No significant active region flare activity is forecast."
+            }
+        }
+    },
+    "2023-03-31": {
+        "issue": "2023-03-31 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-03-31 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-03-31 03-06UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2023-03-31 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-03-31 09-12UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-03-31 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-03-31 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-03-31 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-03-31 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-04-01 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-04-01 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-04-01 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-04-01 09-12UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-04-01 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-04-01 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-04-01 18-21UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-04-01 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-04-02 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-04-02 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-04-02 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-04-02 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-04-02 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-04-02 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-04-02 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-04-02 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 4.67,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storms are expected on Mar 31 due to recurrent CH HSS influence."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 5,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for S1 (Minor) solar radiation storms on Mar 31 from Region 3256."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 25,
+                "n+1": 20,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 5,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R2",
+                "max_blackout_time": "Mar 30 2023 0737 UTC",
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts, with a slight chance for R3 (Strong) radio blackouts on Mar 31. There is a slight chance for R1-R2 (Minor-Moderate) radio blackouts on Apr 01-02 due to the flare history of Region 3256."
+            }
+        }
+    }
+}

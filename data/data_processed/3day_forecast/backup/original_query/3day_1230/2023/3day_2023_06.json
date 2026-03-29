@@ -1,0 +1,5072 @@
+{
+    "2023-06-01": {
+        "issue": "2023-06-01 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-06-01 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-06-01 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-01 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-06-01 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-06-01 12-15UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-06-01 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-01 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-01 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-06-02 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-02 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-02 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-06-02 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-06-02 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-02 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-06-02 18-21UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2023-06-02 21-00UT",
+                    4.67,
+                    "G1"
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-06-03 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-06-03 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-03 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-03 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-03 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-03 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-06-03 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-03 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 4.67,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storms are likely on 02 Jun with the onset of a positive polarity CH HSS."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for a greater than 10 MeV proton event reaching S1 (Minor) levels through 03 Jun."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 40,
+                "n+1": 40,
+                "n+2": 40,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "May 31 2023 2252 UTC",
+                "rationale": "There is a chance for M-class flares through 03 Jun."
+            }
+        }
+    },
+    "2023-06-02": {
+        "issue": "2023-06-02 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-06-02 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-02 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-02 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-02 09-12UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2023-06-02 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-02 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-06-02 18-21UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2023-06-02 21-00UT",
+                    4.67,
+                    "G1"
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-06-03 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-06-03 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-03 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-03 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-03 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-03 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-06-03 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-03 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-06-04 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-06-04 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-04 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-04 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-04 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-04 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-04 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-04 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 4.67,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storms are likely on 02 Jun with the onset of a positive polarity CH HSS."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance the 10 MeV proton flux measured at GOES-16 could reach S1 (Minor) storm levels through 04 Jun."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 35,
+                "n+1": 35,
+                "n+2": 35,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Jun 02 2023 0241 UTC",
+                "rationale": "A chance remains for isolated M-class flares through 04 Jun."
+            }
+        }
+    },
+    "2023-06-03": {
+        "issue": "2023-06-03 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-06-03 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-03 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-03 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-06-03 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-03 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-06-03 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-06-03 18-21UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-06-03 21-00UT",
+                    4.67,
+                    "G1"
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-06-04 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-06-04 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-06-04 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-06-04 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-06-04 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-04 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-04 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-04 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-06-05 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-06-05 03-06UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-06-05 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-06-05 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-06-05 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-05 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-05 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-05 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 2.0,
+                "greatest_expected_kp": 4.67,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storms are likely on 03 Jun with the onset of a positive polarity CH HSS."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance the 10 MeV proton flux measured at GOES-16 could reach S1 (Minor) storm levels through 05 Jun."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 35,
+                "n+1": 35,
+                "n+2": 30,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance for M-class flares (R1-R2 Minor-Moderate) and a slight chance for X-class flares (R3 Strong) on 03-05 Jun."
+            }
+        }
+    },
+    "2023-06-04": {
+        "issue": "2023-06-04 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-06-04 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-04 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-04 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-04 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-04 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-04 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-04 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-04 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-06-05 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-06-05 03-06UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-06-05 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-06-05 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-06-05 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-05 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-05 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-05 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-06-06 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-06 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-06 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-06 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-06 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-06 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-06 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-06 21-00UT",
+                    1.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 3.33,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for S1 (Minor) or greater solar radiation storms on Jun 04-06."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 35,
+                "n+1": 35,
+                "n+2": 35,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts, with a slight chance for R3 or greater radio blackouts, on Jun 04-06, from Regions 3319 and 3323."
+            }
+        }
+    },
+    "2023-06-05": {
+        "issue": "2023-06-05 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-06-05 00-03UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-06-05 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-05 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-05 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-05 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-05 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-05 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-05 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-06-06 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-06 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-06 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-06 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-06 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-06 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-06 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-06 21-00UT",
+                    1.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-06-07 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-07 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-07 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-07 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-07 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-07 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-07 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-07 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 2.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for S1 (Minor) solar radiation storms on Jun 05-06."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 35,
+                "n+1": 35,
+                "n+2": 25,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts on Jun 05-07. There is a slight chance for R3 (Strong) or greater radio blackouts on Jun 05-06."
+            }
+        }
+    },
+    "2023-06-06": {
+        "issue": "2023-06-06 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-06-06 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-06 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-06 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-06 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-06 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-06 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-06 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-06 21-00UT",
+                    1.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-06-07 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-07 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-07 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-07 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-07 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-07 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-07 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-07 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-06-08 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-08 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-08 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-06-08 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-08 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-06-08 15-18UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-06-08 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-06-08 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 4.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for an S1 (Minor) or greater solar radiation storm on 06 Jun."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 30,
+                "n+1": 25,
+                "n+2": 25,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts all three days, and a slight chance for R3 (Strong) or greater blackouts on 06 Jun."
+            }
+        }
+    },
+    "2023-06-07": {
+        "issue": "2023-06-07 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-06-07 00-03UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2023-06-07 03-06UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-06-07 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-06-07 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-07 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-07 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-07 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-07 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-06-08 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-08 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-08 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-06-08 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-08 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-06-08 15-18UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-06-08 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-06-08 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-06-09 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-09 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-06-09 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-09 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-09 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-09 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-09 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-09 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 2.0,
+                "greatest_expected_kp": 4.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for S1 (Minor) or greater solar radiation storms all three days primarily due to the flare potential from Region 3327."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 30,
+                "n+1": 30,
+                "n+2": 30,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Jun 07 2023 1146 UTC",
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts, and a slight chance for R3 (Strong) or greater blackouts all three days primarily due to the flare potential from Region 3327."
+            }
+        }
+    },
+    "2023-06-08": {
+        "issue": "2023-06-08 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-06-08 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-08 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-08 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-08 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-08 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-08 15-18UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-06-08 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-06-08 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-06-09 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-09 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-06-09 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-09 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-09 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-09 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-09 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-09 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-06-10 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-10 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-10 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-10 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-10 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-10 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-10 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-10 21-00UT",
+                    1.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 4.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for S1 (Minor) or greater solar radiation storms all three days."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 30,
+                "n+1": 30,
+                "n+2": 30,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts, and a slight chance for R3 (Strong) or greater blackouts all three days."
+            }
+        }
+    },
+    "2023-06-09": {
+        "issue": "2023-06-09 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-06-09 00-03UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-06-09 03-06UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-06-09 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-06-09 09-12UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2023-06-09 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-09 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-09 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-09 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-06-10 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-10 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-10 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-10 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-10 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-10 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-10 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-10 21-00UT",
+                    1.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-06-11 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-11 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-11 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-11 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-11 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-11 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-11 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-11 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 2.0,
+                "greatest_expected_kp": 2.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 25,
+                "n+1": 25,
+                "n+2": 25,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts on Jun 09-11."
+            }
+        }
+    },
+    "2023-06-10": {
+        "issue": "2023-06-10 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-06-10 00-03UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-10 03-06UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2023-06-10 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-10 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-10 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-10 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-10 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-10 21-00UT",
+                    1.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-06-11 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-11 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-11 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-11 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-11 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-11 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-06-11 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-06-11 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-06-12 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-06-12 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-06-12 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-06-12 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-12 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-06-12 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-12 18-21UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-06-12 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 2.0,
+                "greatest_expected_kp": 4.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 25,
+                "n+1": 25,
+                "n+2": 25,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Jun 09 2023 1711 UTC",
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts on Jun 10-12."
+            }
+        }
+    },
+    "2023-06-11": {
+        "issue": "2023-06-11 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-06-11 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-11 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-11 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-11 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-11 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-11 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-06-11 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-06-11 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-06-12 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-06-12 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-06-12 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-06-12 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-12 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-06-12 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-12 18-21UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-06-12 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-06-13 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-06-13 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-13 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-13 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-13 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-13 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-13 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-13 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 4.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 20,
+                "n+1": 20,
+                "n+2": 20,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a slight chance for R1-R2 (Minor-Moderate) radio blackouts on Jun 11-13."
+            }
+        }
+    },
+    "2023-06-12": {
+        "issue": "2023-06-12 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-06-12 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-12 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-12 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-12 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-12 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-06-12 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-12 18-21UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-06-12 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-06-13 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-06-13 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-13 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-13 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-13 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-13 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-13 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-13 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-06-14 00-03UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-14 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-14 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-14 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-14 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-14 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-14 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-14 21-00UT",
+                    1.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a slight chance for R1-R2 (Minor-Moderate) radio blackouts on Jun 12-14."
+            }
+        }
+    },
+    "2023-06-13": {
+        "issue": "2023-06-13 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-06-13 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-13 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-13 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-13 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-13 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-13 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-13 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-13 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-06-14 00-03UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-14 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-14 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-14 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-14 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-14 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-14 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-14 21-00UT",
+                    1.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-06-15 00-03UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-15 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-15 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-15 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-15 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-15 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-15 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-15 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 3.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "A slight chance for R1-2 (Minor-Moderate) will persist throughout the forecast period primarily due to the potential currently exhibited by AR 3327 (S15W40, Esi/Beta) and AR 3331 (S23E03, Csi/Beta-Gamma)."
+            }
+        }
+    },
+    "2023-06-14": {
+        "issue": "2023-06-14 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-06-14 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-14 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-14 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-14 09-12UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2023-06-14 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-14 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-14 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-14 21-00UT",
+                    1.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-06-15 00-03UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-15 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-15 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-15 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-15 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-15 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-15 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-15 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-06-16 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-16 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-16 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-06-16 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-06-16 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-06-16 15-18UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-06-16 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-16 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "A slight chance for R1-R2 (Minor-Moderate) will persist throughout the forecast period."
+            }
+        }
+    },
+    "2023-06-15": {
+        "issue": "2023-06-15 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-06-15 00-03UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-15 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-15 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-15 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-15 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-15 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-15 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-15 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-06-16 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-16 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-16 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-06-16 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-06-16 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-06-16 15-18UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-06-16 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-16 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-06-17 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-17 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-17 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-17 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-17 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-17 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-17 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-06-17 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 2.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "A slight chance for R1-R2 (Minor-Moderate) will persist throughout the forecast period primarily in response to ARs 3333, 3335, and 3336."
+            }
+        }
+    },
+    "2023-06-16": {
+        "issue": "2023-06-16 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-06-16 00-03UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2023-06-16 03-06UT",
+                    6.33,
+                    "G2"
+                ],
+                [
+                    "2023-06-16 06-09UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2023-06-16 09-12UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2023-06-16 12-15UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2023-06-16 15-18UT",
+                    5.67,
+                    "G2"
+                ],
+                [
+                    "2023-06-16 18-21UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2023-06-16 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-06-17 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-06-17 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-06-17 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-17 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-06-17 12-15UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-06-17 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-06-17 18-21UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-06-17 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-06-18 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-18 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-18 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-18 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-18 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-18 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-18 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-18 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 6.0,
+                "greatest_expected_kp": 6.33,
+                "greatest_expected_scale": "G2",
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 20,
+                "n+1": 20,
+                "n+2": 20,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Jun 16 2023 1038 UTC",
+                "rationale": "A slight chance for R1-R2 (Minor-Moderate) will persist throughout the forecast period."
+            }
+        }
+    },
+    "2023-06-17": {
+        "issue": "2023-06-17 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-06-17 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-17 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-17 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-17 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-17 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-17 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-17 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-17 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-06-18 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-18 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-18 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-18 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-18 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-18 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-18 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-18 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-06-19 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-19 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-19 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-19 09-12UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2023-06-19 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-06-19 15-18UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-06-19 18-21UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-06-19 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected. The high speed solar wind stream responsible for activity yesterday is waning."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 30,
+                "n+1": 30,
+                "n+2": 30,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Jun 16 2023 1959 UTC",
+                "rationale": "There is a chance for more R1 (Minor) or greater radio blackouts from the active regions currently on the visible disk."
+            }
+        }
+    },
+    "2023-06-18": {
+        "issue": "2023-06-18 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-06-18 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-18 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-18 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-18 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-18 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-18 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-18 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-18 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-06-19 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-19 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-19 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-19 09-12UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2023-06-19 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-06-19 15-18UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-06-19 18-21UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-06-19 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-06-20 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-06-20 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-20 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-20 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-20 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-20 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-20 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-20 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 30,
+                "n+1": 30,
+                "n+2": 30,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Jun 18 2023 0031 UTC",
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts from the active regions currently on the visible disk."
+            }
+        }
+    },
+    "2023-06-19": {
+        "issue": "2023-06-19 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-06-19 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-19 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-19 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-19 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-19 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-06-19 15-18UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-06-19 18-21UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-06-19 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-06-20 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-06-20 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-20 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-20 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-20 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-20 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-20 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-20 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-06-21 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-06-21 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-06-21 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-21 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-21 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-21 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-21 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-21 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for an S1 (Minor) solar radiation storm on 19-21 Jun."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 40,
+                "n+1": 40,
+                "n+2": 40,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Jun 18 2023 1353 UTC",
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts and a slight chance for R3 (Strong) or greater blackouts all three days from the active regions currently on the visible disk."
+            }
+        }
+    },
+    "2023-06-20": {
+        "issue": "2023-06-20 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-06-20 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-06-20 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-20 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-20 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-20 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-20 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-20 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-06-20 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-06-21 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-06-21 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-06-21 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-21 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-21 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-21 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-21 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-21 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-06-22 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-06-22 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-22 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-22 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-22 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-22 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-22 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-22 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 40,
+                "n+1": 40,
+                "n+2": 40,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Jun 20 2023 1125 UTC",
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts and a slight chance for R3 (Strong) or greater blackouts all three days from the active regions currently on the visible disk."
+            }
+        }
+    },
+    "2023-06-21": {
+        "issue": "2023-06-21 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-06-21 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-21 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-21 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-21 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-06-21 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-21 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-21 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-06-21 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-06-22 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-06-22 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-06-22 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-22 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-22 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-22 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-22 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-22 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-06-23 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-23 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-23 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-23 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-23 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-23 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-23 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-23 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 20,
+                "n+1": 20,
+                "n+2": 20,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance the greater than 10 MeV proton flux could see an enhancement over 21-23 Jun due to increased flare activity from several magnetically complex spot groups on the visible disk."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 60,
+                "n+1": 60,
+                "n+2": 60,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 20,
+                "n+1": 20,
+                "n+2": 20,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R3",
+                "max_blackout_time": "Jun 20 2023 1709 UTC",
+                "rationale": "Solar activity is likely to be moderate with a slight chance for an X-class flare on 21-23 Jun."
+            }
+        }
+    },
+    "2023-06-22": {
+        "issue": "2023-06-22 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-06-22 00-03UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-06-22 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-22 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-22 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-22 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-22 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-22 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-22 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-06-23 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-06-23 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-23 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-23 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-23 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-23 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-06-23 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-06-23 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-06-24 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-24 03-06UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-06-24 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-24 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-24 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-24 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-24 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-24 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 4.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 40,
+                "n+1": 40,
+                "n+2": 40,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Jun 21 2023 1244 UTC",
+                "rationale": "Solar activity is expected to be low with a chance for M-class (R1-2/Minor-Moderate) flares and a slight chance for an X-class (R3/Strong) flare on 22-24 Jun."
+            }
+        }
+    },
+    "2023-06-23": {
+        "issue": "2023-06-23 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-06-23 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-23 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-23 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-23 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-23 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-23 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-06-23 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-06-23 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-06-24 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-24 03-06UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-06-24 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-24 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-24 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-24 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-24 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-24 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-06-25 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-25 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-06-25 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-25 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-25 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-25 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-25 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-25 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 4.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 40,
+                "n+1": 40,
+                "n+2": 40,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Jun 22 2023 2344 UTC",
+                "rationale": "Solar activity is expected to be low with a chance for M-class (R1-2/Minor-Moderate) flares and a slight chance for an X-class (R3/Strong) flare on 23-25 Jun."
+            }
+        }
+    },
+    "2023-06-24": {
+        "issue": "2023-06-24 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-06-24 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-24 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-06-24 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-24 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-24 12-15UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-06-24 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-24 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-24 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-06-25 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-25 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-06-25 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-25 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-25 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-25 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-25 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-25 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-06-26 00-03UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-26 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-26 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-26 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-26 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-26 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-26 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-26 21-00UT",
+                    1.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 40,
+                "n+1": 40,
+                "n+2": 40,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts over 24-26 Jun."
+            }
+        }
+    },
+    "2023-06-25": {
+        "issue": "2023-06-25 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-06-25 00-03UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2023-06-25 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-25 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-25 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-25 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-25 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-25 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-25 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-06-26 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-26 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-26 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-26 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-06-26 12-15UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2023-06-26 15-18UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2023-06-26 18-21UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-06-26 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-06-27 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-27 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-06-27 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-06-27 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-27 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-27 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-27 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-27 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 5.0,
+                "greatest_expected_kp": 5.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 40,
+                "n+1": 40,
+                "n+2": 40,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts over 25-27 Jun."
+            }
+        }
+    },
+    "2023-06-26": {
+        "issue": "2023-06-26 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-06-26 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-26 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-26 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-26 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-26 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-06-26 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-06-26 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-26 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-06-27 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-27 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-06-27 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-06-27 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-27 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-27 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-27 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-27 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-06-28 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-06-28 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-06-28 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-28 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-28 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-06-28 15-18UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2023-06-28 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-28 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 40,
+                "n+1": 40,
+                "n+2": 40,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts over 26-28 Jun primarily due to the potential of AR 3340."
+            }
+        }
+    },
+    "2023-06-27": {
+        "issue": "2023-06-27 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-06-27 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-27 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-27 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-27 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-27 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-27 15-18UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2023-06-27 18-21UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-06-27 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-06-28 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-28 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-28 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-28 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-28 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-28 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-28 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-28 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-06-29 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-29 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-29 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-29 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-29 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-29 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-29 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-29 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 40,
+                "n+1": 40,
+                "n+2": 40,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Jun 26 2023 1622 UTC",
+                "rationale": "Solar activity is expected to be low with a chance for M-class flare activity and a slight chance for X-class flare activity over 27-29 Jun primarily due to Ars 3340 and 3354."
+            }
+        }
+    },
+    "2023-06-28": {
+        "issue": "2023-06-28 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-06-28 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-28 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-28 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-28 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-28 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-28 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-28 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-28 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-06-29 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-29 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-29 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-29 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-29 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-29 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-29 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-29 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-06-30 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-30 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-30 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-30 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-30 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-30 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-30 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-30 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 2.0,
+                "greatest_expected_kp": 2.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 40,
+                "n+1": 40,
+                "n+2": 40,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Jun 28 2023 0844 UTC",
+                "rationale": "Solar activity is expected to be low with a chance for M-class flare activity and a slight chance for X-class flares over 28-30 Jun."
+            }
+        }
+    },
+    "2023-06-29": {
+        "issue": "2023-06-29 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-06-29 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-06-29 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-06-29 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-06-29 09-12UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-06-29 12-15UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-06-29 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-29 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-29 21-00UT",
+                    1.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-06-30 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-30 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-30 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-30 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-30 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-30 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-30 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-30 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-07-01 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-07-01 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-07-01 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-07-01 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-07-01 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-07-01 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-07-01 18-21UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-07-01 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 40,
+                "n+1": 35,
+                "n+2": 35,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "Solar activity is expected to be low with a chance for M-class flare activity and a slight chance for X-class flares over 29 Jun - 01 Ju1."
+            }
+        }
+    },
+    "2023-06-30": {
+        "issue": "2023-06-30 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-06-30 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-06-30 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-30 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-30 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-30 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-30 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-30 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-30 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-07-01 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-07-01 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-07-01 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-07-01 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-07-01 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-07-01 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-07-01 18-21UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-07-01 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-07-02 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-07-02 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-07-02 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-07-02 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-07-02 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-07-02 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-07-02 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-07-02 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "A slight chance for a S1 (Minor) solar radiation storm will persist throughout the forecast period primarily due to the potential exhibited by AR 3354."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 35,
+                "n+1": 35,
+                "n+2": 35,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Jun 29 2023 1415 UTC",
+                "rationale": "Solar activity is expected to be low with a chance for M-class flare activity and a slight chance for X-class flares over 30 Jun - 02 Ju1."
+            }
+        }
+    }
+}

@@ -1,0 +1,5241 @@
+{
+    "2025-08-01": {
+        "issue": "2025-08-01 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-08-01 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-01 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-01 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-01 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-01 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-01 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-01 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-01 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-08-02 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-02 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-08-02 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-02 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-08-02 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-02 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-02 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-02 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-08-03 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-03 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-03 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-03 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-03 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-03 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-03 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-03 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 3.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 30,
+                "n+1": 30,
+                "n+2": 30,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There exists a chance for R1-R2 (Minor-Moderate) radio blackouts over 01-03 Aug."
+            }
+        }
+    },
+    "2025-08-02": {
+        "issue": "2025-08-02 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-08-02 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-08-02 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-02 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-02 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-02 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-02 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-02 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-02 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-08-03 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-03 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-03 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-03 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-03 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-03 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-03 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-03 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-08-04 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-04 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-04 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-04 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-04 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-04 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-04 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-04 21-00UT",
+                    1.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 3.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 30,
+                "n+1": 30,
+                "n+2": 30,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts over 02-04 Aug."
+            }
+        }
+    },
+    "2025-08-03": {
+        "issue": "2025-08-03 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-08-03 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-03 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-03 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-03 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-03 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-03 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2025-08-03 18-21UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2025-08-03 21-00UT",
+                    1.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-08-04 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-04 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-04 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-04 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-04 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-04 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-04 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-04 21-00UT",
+                    1.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-08-05 00-03UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2025-08-05 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-05 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-05 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-05 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-05 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-08-05 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-05 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 3.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 30,
+                "n+1": 30,
+                "n+2": 30,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There exists a chance for R1-R2 (Minor-Moderate) radio blackouts over 03-05 Aug."
+            }
+        }
+    },
+    "2025-08-04": {
+        "issue": "2025-08-04 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-08-04 00-03UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2025-08-04 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-04 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-04 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-04 12-15UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-08-04 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-04 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-04 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-08-05 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-05 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-08-05 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-08-05 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-08-05 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-05 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-05 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-05 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-08-06 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-08-06 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-06 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-06 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-06 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-06 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-06 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-06 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 40,
+                "n+1": 40,
+                "n+2": 40,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Aug 03 2025 1357 UTC",
+                "rationale": "There exists a chance for R1-R2 (Minor-Moderate) radio blackouts, with a slight chance for R3 (Strong), over 04-06 Aug."
+            }
+        }
+    },
+    "2025-08-05": {
+        "issue": "2025-08-05 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-08-05 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-08-05 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-05 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2025-08-05 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-05 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-05 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-05 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-05 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-08-06 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-08-06 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-06 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-06 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-06 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-06 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-06 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-06 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-08-07 00-03UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-07 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-07 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-07 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-07 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-07 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-07 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-07 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 3.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 40,
+                "n+1": 40,
+                "n+2": 40,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Aug 05 2025 0212 UTC",
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts, and a slight chance for R3 (Strong) or greater radio blackouts all three days."
+            }
+        }
+    },
+    "2025-08-06": {
+        "issue": "2025-08-06 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-08-06 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-06 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-06 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-06 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-06 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-06 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-06 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-06 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-08-07 00-03UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-07 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-07 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-07 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-07 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-07 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-07 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-07 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-08-08 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-08 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-08 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-08 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-08 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-08-08 15-18UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-08-08 18-21UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2025-08-08 21-00UT",
+                    4.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 4.33,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 50,
+                "n+1": 50,
+                "n+2": 50,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Aug 05 2025 1553 UTC",
+                "rationale": "There is a high chance for R1-R2 (Minor-Moderate) radio blackouts, and a slight chance for R3 (Strong) or greater radio blackouts all three days."
+            }
+        }
+    },
+    "2025-08-07": {
+        "issue": "2025-08-07 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-08-07 00-03UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-07 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-07 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-07 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-08-07 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-08-07 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-08-07 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-07 21-00UT",
+                    4.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-08-08 00-03UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-08-08 03-06UT",
+                    6.0,
+                    "G2"
+                ],
+                [
+                    "2025-08-08 06-09UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2025-08-08 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-08-08 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-08-08 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-08-08 18-21UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-08-08 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-08-09 00-03UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2025-08-09 03-06UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2025-08-09 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-08-09 09-12UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-08-09 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-08-09 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-08-09 18-21UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-08-09 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 2.0,
+                "greatest_expected_kp": 6.0,
+                "greatest_expected_scale": "G2",
+                "rationale": "G1-G2 (Minor-Moderate) geomagnetic storms are likely on 08-09 Aug due to influences from a CME that left the Sun on 05 Aug."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 25,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "A chance for an S1 (Minor) solar radiation event exists for 07 Aug given recent activity from Region 4168."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 55,
+                "n+1": 55,
+                "n+2": 55,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Aug 07 2025 0232 UTC",
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are likely, with a slight chance for R3 (Strong) or greater radio blackouts all three days primarily due to the flare potential and history of AR 4168."
+            }
+        }
+    },
+    "2025-08-08": {
+        "issue": "2025-08-08 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-08-08 00-03UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2025-08-08 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-08 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-08 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-08 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-08-08 15-18UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-08-08 18-21UT",
+                    5.33,
+                    "G1"
+                ],
+                [
+                    "2025-08-08 21-00UT",
+                    5.67,
+                    "G2"
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-08-09 00-03UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2025-08-09 03-06UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2025-08-09 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-08-09 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-08-09 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-08-09 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-08-09 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-08-09 21-00UT",
+                    4.67,
+                    "G1"
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-08-10 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-08-10 03-06UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-08-10 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-08-10 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-08-10 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-10 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-08-10 18-21UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-08-10 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 2.0,
+                "greatest_expected_kp": 5.67,
+                "greatest_expected_scale": "G2",
+                "rationale": "G1-G2 (Minor-Moderate) geomagnetic storms are likely on 08-09 Aug due to influences from a CME that left the Sun on 05 Aug."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "A slight chance for an S1 (Minor) solar radiation event will presist through 10 Aug primarily due to risk generated from AR 4168."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 60,
+                "n+1": 60,
+                "n+2": 60,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Aug 08 2025 0353 UTC",
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are likely, with a slight chance for R3 (Strong) or greater radio blackouts all three days primarily due to the flare potential and history of AR 4168."
+            }
+        }
+    },
+    "2025-08-09": {
+        "issue": "2025-08-09 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-08-09 00-03UT",
+                    5.33,
+                    "G1"
+                ],
+                [
+                    "2025-08-09 03-06UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2025-08-09 06-09UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2025-08-09 09-12UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-08-09 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-08-09 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-08-09 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-08-09 21-00UT",
+                    4.67,
+                    "G1"
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-08-10 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-08-10 03-06UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-08-10 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-08-10 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-08-10 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-10 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-08-10 18-21UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-08-10 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-08-11 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-08-11 03-06UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-08-11 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-08-11 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-08-11 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-08-11 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-08-11 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-08-11 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 5.0,
+                "greatest_expected_kp": 5.33,
+                "greatest_expected_scale": "G1",
+                "rationale": "Periods of G1 (Minor) storming are expected on 09 Aug due to CH HSS influence."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for S1 (Minor) storm levels over 09-11 Aug."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 60,
+                "n+1": 60,
+                "n+2": 60,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Aug 08 2025 1910 UTC",
+                "rationale": "R1-R2 (Minor-Moderate) events are likely, with a slight chance for R3 (Strong) or greater events, over 09-11 Aug."
+            }
+        }
+    },
+    "2025-08-10": {
+        "issue": "2025-08-10 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-08-10 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-08-10 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-10 06-09UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2025-08-10 09-12UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2025-08-10 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-10 15-18UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-08-10 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-08-10 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-08-11 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-08-11 03-06UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-08-11 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-08-11 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-08-11 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-08-11 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-08-11 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-08-11 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-08-12 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-08-12 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-12 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-12 09-12UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-08-12 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-08-12 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-08-12 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-08-12 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 6.0,
+                "greatest_expected_kp": 4.67,
+                "greatest_expected_scale": "G2",
+                "rationale": "Periods of G1 (Minor) geomagnetic storms are likely on 10 Aug due to CH HSS influence."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 55,
+                "n+1": 55,
+                "n+2": 55,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Aug 10 2025 0312 UTC",
+                "rationale": "R1-R2 (Minor-Moderate) events are likely, with a slight chance for R3 (Strong) or greater events, over 10-12 Aug."
+            }
+        }
+    },
+    "2025-08-11": {
+        "issue": "2025-08-11 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-08-11 00-03UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2025-08-11 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-08-11 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-08-11 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-08-11 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-08-11 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-08-11 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-08-11 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-08-12 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-08-12 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-12 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-12 09-12UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-08-12 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-08-12 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-08-12 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-12 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-08-13 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-08-13 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-08-13 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-13 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-13 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-13 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-13 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-13 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 4.33,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for S1 (Minor) solar radiation storms over 11-13 Aug."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 55,
+                "n+1": 55,
+                "n+2": 55,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Aug 10 2025 1507 UTC",
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are likely, with a slight chance for R3 (Strong) or greater events, over 11-13 Aug."
+            }
+        }
+    },
+    "2025-08-12": {
+        "issue": "2025-08-12 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-08-12 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-08-12 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-08-12 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-12 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-12 12-15UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-08-12 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-08-12 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-08-12 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-08-13 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-08-13 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-08-13 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-13 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-13 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-13 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-13 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-13 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-08-14 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-14 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-08-14 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-08-14 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-14 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-14 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-14 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-08-14 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 4.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for S1 (Minor) solar radiation storms over 12-14 Aug."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 55,
+                "n+1": 55,
+                "n+2": 55,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Aug 12 2025 0123 UTC",
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are likely, with a slight chance for R3 (Strong) or greater events, over 12-14 Aug."
+            }
+        }
+    },
+    "2025-08-13": {
+        "issue": "2025-08-13 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-08-13 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-13 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-08-13 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-13 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-08-13 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-13 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-13 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-13 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-08-14 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-14 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-08-14 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-08-14 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-14 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-14 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-14 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-08-14 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-08-15 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-15 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-08-15 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-08-15 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-15 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-15 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-15 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-08-15 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 50,
+                "n+1": 50,
+                "n+2": 45,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "A high chance for R1-R2 (Minor-Moderate) radio blackouts due to M-class flare activity, most likely from Regions 4178 and/or 4172, will persist through 15 August. Probabilities will begin to decrease slightly on 15 August as Region 4178 exits the visible solar disk."
+            }
+        }
+    },
+    "2025-08-14": {
+        "issue": "2025-08-14 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-08-14 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-08-14 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-08-14 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-08-14 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-08-14 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-14 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-14 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-14 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-08-15 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-15 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-08-15 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-08-15 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-15 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-15 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-15 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-08-15 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-08-16 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-16 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-16 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-16 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-16 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-16 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-16 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-16 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 35,
+                "n+1": 30,
+                "n+2": 30,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "A chance for R1-R2 (Minor-Moderate) radio blackouts due to M-class flares will persist through 16 August primarily due to the flare potential of Regions 4172 and 4178."
+            }
+        }
+    },
+    "2025-08-15": {
+        "issue": "2025-08-15 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-08-15 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-15 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-08-15 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-08-15 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-15 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-15 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-15 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-08-15 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-08-16 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-16 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-16 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-16 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-16 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-16 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-16 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-16 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-08-17 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-17 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-17 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-17 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-17 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-17 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-17 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-17 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 2.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 35,
+                "n+1": 30,
+                "n+2": 30,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts over 15-17 Aug."
+            }
+        }
+    },
+    "2025-08-16": {
+        "issue": "2025-08-16 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-08-16 00-03UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-16 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-16 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-16 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-16 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-16 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-16 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-16 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-08-17 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-17 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-17 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-17 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-17 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-17 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-17 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-17 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-08-18 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-08-18 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-08-18 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-08-18 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-08-18 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-08-18 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-08-18 18-21UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-08-18 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 2.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 25,
+                "n+1": 25,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "Solar activity is expected to continue at low levels on 16-17 August becoming likely on 18 August. There is a chance for moderate (R1-minor) levels on 16-17 August decreasing to a slight chance on 18 August."
+            }
+        }
+    },
+    "2025-08-17": {
+        "issue": "2025-08-17 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-08-17 00-03UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-17 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-17 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-17 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-17 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-17 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-17 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-17 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-08-18 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-18 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-18 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2025-08-18 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2025-08-18 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2025-08-18 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-08-18 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-08-18 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-08-19 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-08-19 03-06UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2025-08-19 06-09UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2025-08-19 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-08-19 12-15UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2025-08-19 15-18UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-08-19 18-21UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-08-19 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 2.0,
+                "greatest_expected_kp": 5.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "Periods of G1 (Minor) geomagnetic storms are likely on 19 Aug due to negative polarity CH HSS influence."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 20,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a slight chance for R1-R2 (Minor-Moderate) radio blackouts over 17-19 Aug."
+            }
+        }
+    },
+    "2025-08-18": {
+        "issue": "2025-08-18 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-08-18 00-03UT",
+                    0.33,
+                    null
+                ],
+                [
+                    "2025-08-18 03-06UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2025-08-18 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-18 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-08-18 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2025-08-18 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-08-18 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-08-18 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-08-19 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-08-19 03-06UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2025-08-19 06-09UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2025-08-19 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-08-19 12-15UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2025-08-19 15-18UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-08-19 18-21UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-08-19 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-08-20 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-08-20 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-08-20 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-08-20 09-12UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-08-20 12-15UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-08-20 15-18UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-08-20 18-21UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-08-20 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 2.0,
+                "greatest_expected_kp": 5.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "Periods of G1 (Minor) geomagnetic storms are likely on 19 Aug due to negative polarity CH HSS influence."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "No R1 (Minor) or greater radio blackouts are expected.  No significant active region flare activity is forecast."
+            }
+        }
+    },
+    "2025-08-19": {
+        "issue": "2025-08-19 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-08-19 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-08-19 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-19 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-19 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-19 12-15UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-08-19 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-08-19 18-21UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-08-19 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-08-20 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-08-20 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-08-20 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-08-20 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-20 12-15UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-08-20 15-18UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2025-08-20 18-21UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-08-20 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-08-21 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-08-21 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-08-21 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-08-21 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-21 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-08-21 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-08-21 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-08-21 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 5.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "Isolated periods of G1 (Minor) geomagnetic storming are likely on 19 and 20 August, due to negative polarity CH HSS effects, followed by a possible glancing blow from a CME that left the Sun on 17 August."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Aug 19 2025 0439 UTC",
+                "rationale": "Solar activity will likely be at very low to low levels, with a slight chance for for M-class flares due to the anticipated return of old active regions."
+            }
+        }
+    },
+    "2025-08-20": {
+        "issue": "2025-08-20 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-08-20 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-08-20 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-08-20 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-08-20 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-20 12-15UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-08-20 15-18UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2025-08-20 18-21UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-08-20 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-08-21 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-08-21 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-08-21 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-08-21 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-21 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-08-21 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-08-21 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-08-21 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-08-22 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-22 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-08-22 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-08-22 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-22 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-22 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-08-22 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-22 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 5.0,
+                "greatest_expected_kp": 5.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "Isolated periods of G1 (Minor) geomagnetic storming are likely on 20 August, due to negative polarity CH HSS effects, followed by a possible glancing blow from a CME that left the Sun on 17 August."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "Solar activity will likely be at very low to low levels, with a slight chance for for M-class flares due to the anticipated return of old active regions."
+            }
+        }
+    },
+    "2025-08-21": {
+        "issue": "2025-08-21 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-08-21 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-21 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-21 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2025-08-21 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2025-08-21 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-08-21 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-08-21 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-08-21 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-08-22 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-22 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-08-22 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-08-22 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-22 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-22 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-08-22 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-22 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-08-23 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-23 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-23 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-23 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-23 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-23 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-23 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-23 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 3.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 20,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a slight chance for R1-R2 (Minor-Moderate) radio blackouts on 21-23 Aug."
+            }
+        }
+    },
+    "2025-08-22": {
+        "issue": "2025-08-22 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-08-22 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-08-22 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-22 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-22 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2025-08-22 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-22 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-08-22 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-22 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-08-23 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-23 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-23 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-23 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2025-08-23 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2025-08-23 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-23 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-23 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-08-24 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-24 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-24 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-24 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-24 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-24 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-24 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-24 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 3.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 15,
+                "n+1": 20,
+                "n+2": 25,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a slight chance for R1 (Minor) radio blackouts through 23 Aug due to the anticipated return of old active regions. Probabilities increase slightly to a chance for an isolated event, most likely from the east limb, on 24 Aug as old active regions return to view."
+            }
+        }
+    },
+    "2025-08-23": {
+        "issue": "2025-08-23 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-08-23 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-23 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-08-23 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-23 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-23 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2025-08-23 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-23 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-23 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-08-24 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-24 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-24 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-24 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-24 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-24 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-24 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-24 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-08-25 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-08-25 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-25 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-25 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-25 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-25 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-25 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-25 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 25,
+                "n+1": 10,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a chance for S1 (Minor) solar radiation storms on 23 Aug, and a slight chance for S1 levels on 24 Aug."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 25,
+                "n+1": 35,
+                "n+2": 45,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Aug 22 2025 1859 UTC",
+                "rationale": "There is an increasing chance for R1-R2 (Minor-Moderate) radio blackouts over 23-25 Aug."
+            }
+        }
+    },
+    "2025-08-24": {
+        "issue": "2025-08-24 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-08-24 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-24 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-24 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-24 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2025-08-24 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-24 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-24 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-24 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-08-25 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-08-25 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-25 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-25 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-25 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-25 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-25 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-25 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-08-26 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-08-26 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-08-26 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-08-26 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-08-26 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-26 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-26 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-26 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 2.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 20,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for S1 (Minor) storm levels on 24 Aug."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 35,
+                "n+1": 45,
+                "n+2": 45,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Aug 23 2025 2006 UTC",
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts over 24-26 Aug."
+            }
+        }
+    },
+    "2025-08-25": {
+        "issue": "2025-08-25 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-08-25 00-03UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2025-08-25 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-25 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-25 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-25 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-25 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-25 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-25 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-08-26 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-08-26 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-08-26 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-08-26 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-08-26 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-26 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-26 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-26 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-08-27 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-08-27 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-27 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-27 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-27 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-27 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-27 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-27 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 2.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 75,
+                "n+1": 50,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "S1 (Minor) solar radiation storms are expected on 25 Aug, with a chance for S1 levels on 26 Aug, and a slight chance on 27 Aug."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 45,
+                "n+1": 45,
+                "n+2": 45,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Aug 25 2025 0524 UTC",
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts over 25-27 Aug."
+            }
+        }
+    },
+    "2025-08-26": {
+        "issue": "2025-08-26 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-08-26 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-26 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-08-26 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-08-26 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-26 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-26 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-26 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-26 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-08-27 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-27 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-08-27 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-08-27 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-08-27 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-27 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-27 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-27 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-08-28 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-28 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-28 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-28 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-28 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-08-28 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-28 18-21UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2025-08-28 21-00UT",
+                    0.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 85,
+                "n+1": 40,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": true,
+                "rationale": "The greater than 10 MeV proton flux is expected to remain at S1 (Minor) storming levels through at least 26/2359 UTC. A slow decline is expected through 28 Aug."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 55,
+                "n+1": 55,
+                "n+2": 55,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Aug 26 2025 0525 UTC",
+                "rationale": "Solar activity is likely to reach moderate levels through 28 Aug due to M-class flare activity with a slight chance for an isolated X-class flare event."
+            }
+        }
+    },
+    "2025-08-27": {
+        "issue": "2025-08-27 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-08-27 00-03UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-27 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-27 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2025-08-27 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-27 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-08-27 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-27 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-27 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-08-28 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-28 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-28 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-28 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-28 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-08-28 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-28 18-21UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2025-08-28 21-00UT",
+                    0.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-08-29 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-08-29 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-29 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-29 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-29 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-29 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-29 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-29 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 2.0,
+                "greatest_expected_kp": 2.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 99,
+                "n+1": 35,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": true,
+                "rationale": "The greater than 10 MeV proton flux is expected to continue at the S1 (Minor) solar radiation storm threshold of 10 pfu on 27 Aug. A gradual return to background levels is anticipated thereafter."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 60,
+                "n+1": 60,
+                "n+2": 65,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Aug 26 2025 1407 UTC",
+                "rationale": "Solar activity is likely to reach moderate levels (R1-R2, Minor-Moderate) through 29 Aug due to M-class flare activity with a slight chance for an isolated X-class flare (R3-Strong) event."
+            }
+        }
+    },
+    "2025-08-28": {
+        "issue": "2025-08-28 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-08-28 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-28 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-28 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-28 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-08-28 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-28 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-28 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-08-28 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-08-29 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-08-29 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-29 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-29 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-29 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-29 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-29 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-29 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-08-30 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-30 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-30 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-30 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-30 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-30 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-30 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-30 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 2.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 50,
+                "n+1": 20,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": true,
+                "rationale": "The greater than 10 MeV proton flux is expected to continue a steady declining trend towards background levels over the course of the next few days, with a slight chance for an S1 (Minor) solar radiation storm event remaining through 30 Aug."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 60,
+                "n+1": 60,
+                "n+2": 60,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "Solar activity is likely to reach moderate (R1-R2, Minor-Moderate) levels through 30 Aug due to M-class flare activity with a slight chance for an isolated X-class flare (R3-Strong) event."
+            }
+        }
+    },
+    "2025-08-29": {
+        "issue": "2025-08-29 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-08-29 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-08-29 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-29 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-29 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-29 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2025-08-29 15-18UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2025-08-29 18-21UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2025-08-29 21-00UT",
+                    1.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-08-30 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-30 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-30 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-30 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-30 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-30 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-30 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-30 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-08-31 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-31 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-31 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-08-31 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-08-31 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-08-31 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-08-31 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-08-31 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 2.0,
+                "greatest_expected_kp": 2.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 50,
+                "n+1": 25,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There exists a chance for S1 (Minor) solar radiation storms on 29-30 Aug, and a slight chance on 31 Aug."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 75,
+                "n+1": 75,
+                "n+2": 75,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 20,
+                "n+1": 20,
+                "n+2": 20,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Aug 28 2025 2040 UTC",
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are expected, with a slight chance for R3 (Strong) or greater events, over 29-31 Aug."
+            }
+        }
+    },
+    "2025-08-30": {
+        "issue": "2025-08-30 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-08-30 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-30 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-30 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-30 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-30 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-30 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-30 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-08-30 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-08-31 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-31 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-31 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-08-31 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-08-31 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-08-31 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-08-31 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-08-31 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-09-01 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-09-01 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-09-01 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-09-01 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-09-01 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-09-01 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-09-01 18-21UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2025-09-01 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 2.0,
+                "greatest_expected_kp": 2.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 20,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There exists a slight chance for S1 (Minor) solar radiation storms through 01 Sep."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 65,
+                "n+1": 65,
+                "n+2": 65,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 20,
+                "n+1": 20,
+                "n+2": 20,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are likely, with a slight chance for R3 (Strong) or greater events, through 01 Sep."
+            }
+        }
+    },
+    "2025-08-31": {
+        "issue": "2025-08-31 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-08-31 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-08-31 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-08-31 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-08-31 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-31 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-08-31 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-08-31 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-08-31 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-09-01 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-09-01 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-09-01 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-09-01 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-09-01 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-09-01 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-09-01 18-21UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-09-01 21-00UT",
+                    5.67,
+                    "G2"
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-09-02 00-03UT",
+                    5.67,
+                    "G2"
+                ],
+                [
+                    "2025-09-02 03-06UT",
+                    5.67,
+                    "G2"
+                ],
+                [
+                    "2025-09-02 06-09UT",
+                    6.67,
+                    "G3"
+                ],
+                [
+                    "2025-09-02 09-12UT",
+                    5.67,
+                    "G2"
+                ],
+                [
+                    "2025-09-02 12-15UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-09-02 15-18UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-09-02 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-09-02 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 6.67,
+                "greatest_expected_scale": "G3",
+                "rationale": "Periods of G2 (Moderate) storming are likely, with a chance for G3 (Strong) storm periods, late on 01 Sep due to the anticipated arrival of the 30 Aug asymmetric full halo CME. On 02 Sep, periods of G3 (Strong) storming are likely, with a chance for G4 (Severe) storm periods, as CME influences persists."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There exists a slight chance for S1 (Minor) solar radiation storms through 02 Sep."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 65,
+                "n+1": 65,
+                "n+2": 65,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 20,
+                "n+1": 20,
+                "n+2": 20,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Aug 30 2025 2002 UTC",
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are likely, with a slight chance for R3 (Strong) or greater events, through 02 Sep."
+            }
+        }
+    }
+}

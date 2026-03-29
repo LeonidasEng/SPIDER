@@ -1,0 +1,1185 @@
+{
+    "2022-03-25": {
+        "issue": "2022-03-25 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-03-25 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-03-25 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-03-25 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-03-25 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-03-25 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-03-25 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-03-25 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-03-25 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-03-26 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-03-26 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-03-26 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-03-26 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-03-26 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-03-26 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-03-26 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-03-26 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-03-27 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-03-27 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-03-27 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-03-27 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-03-27 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-03-27 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-03-27 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-03-27 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 3.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": null,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "No R1 (Minor) or greater radio blackouts are expected.  No significant active region flare activity is forecast."
+            }
+        }
+    },
+    "2022-03-26": {
+        "issue": "2022-03-26 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-03-26 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-03-26 03-06UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-03-26 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-03-26 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-03-26 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-03-26 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-03-26 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-03-26 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-03-27 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-03-27 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-03-27 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-03-27 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-03-27 12-15UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2022-03-27 15-18UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-03-27 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-03-27 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-03-28 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-03-28 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-03-28 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-03-28 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-03-28 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-03-28 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-03-28 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-03-28 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 2.0,
+                "greatest_expected_kp": 5.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storm levels are likely on 27 Mar due to CH HSS activity and a glancing blow from the 25 Mar CME."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "No R1 (Minor) or greater radio blackouts are expected.  No significant active region flare activity is forecast."
+            }
+        }
+    },
+    "2022-03-27": {
+        "issue": "2022-03-27 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-03-27 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-03-27 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-03-27 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-03-27 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-03-27 12-15UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-03-27 15-18UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-03-27 18-21UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2022-03-27 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-03-28 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-03-28 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-03-28 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-03-28 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-03-28 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-03-28 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-03-28 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-03-28 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-03-29 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-03-29 03-06UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-03-29 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-03-29 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-03-29 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-03-29 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-03-29 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-03-29 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 5.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storms are likely on Mar 27 due to anticipated impacts from the Mar 25 CME."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "No R1 (Minor) or greater radio blackouts are expected.  No significant active region flare activity is forecast."
+            }
+        }
+    },
+    "2022-03-28": {
+        "issue": "2022-03-28 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-03-28 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-03-28 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-03-28 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-03-28 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-03-28 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-03-28 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-03-28 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-03-28 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-03-29 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-03-29 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-03-29 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-03-29 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-03-29 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-03-29 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-03-29 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-03-29 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-03-30 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-03-30 03-06UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-03-30 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-03-30 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-03-30 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-03-30 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-03-30 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-03-30 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 4.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 99,
+                "n+1": 50,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "The greater than 10 MeV proton flux is expected to reach S1 (Minor) thresholds on 28 Mar with a chance to persist into 29 Mar associated with the M4 flare at 28/1129 UTC."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 35,
+                "n+1": 35,
+                "n+2": 35,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Mar 28 2022 1129 UTC",
+                "rationale": "There is a chance for further R1-R2 (Minor-Moderate) radio blackouts on 28-30 Mar due primarily to potential flare activity from Region 2975."
+            }
+        }
+    },
+    "2022-03-29": {
+        "issue": "2022-03-29 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-03-29 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-03-29 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-03-29 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-03-29 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-03-29 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-03-29 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-03-29 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-03-29 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-03-30 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-03-30 03-06UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-03-30 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-03-30 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-03-30 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-03-30 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-03-30 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-03-30 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-03-31 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-03-31 03-06UT",
+                    6.0,
+                    "G2"
+                ],
+                [
+                    "2022-03-31 06-09UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2022-03-31 09-12UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-03-31 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-03-31 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-03-31 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-03-31 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 2.0,
+                "greatest_expected_kp": 6.0,
+                "greatest_expected_scale": "G2",
+                "rationale": "G2 (moderate) or greater geomagnetic storms are expected on 31 Mar due to CME activity."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 99,
+                "n+1": 20,
+                "n+2": 20,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": true,
+                "rationale": "A chance for S1 (Minor) or greater solar radiation storms are expected.  No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 35,
+                "n+1": 30,
+                "n+2": 30,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Mar 29 2022 0111 UTC",
+                "rationale": "No R1 (Minor) or greater radio blackouts are expected.  No significant active region flare activity is forecast."
+            }
+        }
+    },
+    "2022-03-30": {
+        "issue": "2022-03-30 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-03-30 00-03UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-03-30 03-06UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-03-30 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-03-30 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-03-30 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-03-30 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-03-30 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-03-30 21-00UT",
+                    5.0,
+                    "G1"
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-03-31 00-03UT",
+                    7.0,
+                    "G3"
+                ],
+                [
+                    "2022-03-31 03-06UT",
+                    6.0,
+                    "G2"
+                ],
+                [
+                    "2022-03-31 06-09UT",
+                    6.0,
+                    "G2"
+                ],
+                [
+                    "2022-03-31 09-12UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2022-03-31 12-15UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2022-03-31 15-18UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-03-31 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-03-31 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-04-01 00-03UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2022-04-01 03-06UT",
+                    6.0,
+                    "G2"
+                ],
+                [
+                    "2022-04-01 06-09UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-01 09-12UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-01 12-15UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-01 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-01 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-01 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 2.0,
+                "greatest_expected_kp": 7.0,
+                "greatest_expected_scale": "G3",
+                "rationale": "Significant enhancements in the solar wind environment are anticipated late on 30 Mar/early on 31 Mar due to the arrival of the 28 Mar CMEs. Storm levels are expected to be at their highest the first half of 31 Mar. G3 (Strong) storming is likely along with several periods of G1-G2 (Minor-Moderate) storming."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 20,
+                "n+1": 15,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 50,
+                "n+1": 30,
+                "n+2": 30,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Mar 29 2022 2152 UTC",
+                "rationale": "No R1 (Minor) or greater radio blackouts are expected.  No significant active region flare activity is forecast."
+            }
+        }
+    },
+    "2022-03-31": {
+        "issue": "2022-03-31 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-03-31 00-03UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2022-03-31 03-06UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2022-03-31 06-09UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-03-31 09-12UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-03-31 12-15UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2022-03-31 15-18UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-03-31 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-03-31 21-00UT",
+                    7.0,
+                    "G3"
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-04-01 00-03UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2022-04-01 03-06UT",
+                    6.0,
+                    "G2"
+                ],
+                [
+                    "2022-04-01 06-09UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-01 09-12UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-01 12-15UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-01 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-01 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-01 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-04-02 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-02 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-02 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-02 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-02 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-02 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-02 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-02 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 5.0,
+                "greatest_expected_kp": 7.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) through G3 (Strong) geomagnetic storms are anticipated due to CME activity."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 99,
+                "n+1": 50,
+                "n+2": 25,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": true,
+                "rationale": "S1 (Minor) or greater solar radiation storms are likely."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 50,
+                "n+1": 35,
+                "n+2": 35,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R3",
+                "max_blackout_time": "Mar 30 2022 1737 UTC",
+                "rationale": "R1 (Minor) or greater radio blackouts are likely."
+            }
+        }
+    }
+}

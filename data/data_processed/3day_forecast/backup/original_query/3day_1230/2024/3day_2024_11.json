@@ -1,0 +1,5072 @@
+{
+    "2024-11-01": {
+        "issue": "2024-11-01 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2024-11-01 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2024-11-01 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-01 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-01 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-01 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-01 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-01 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-01 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2024-11-02 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-02 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-02 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2024-11-02 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2024-11-02 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-02 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-02 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-02 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2024-11-03 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-03 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2024-11-03 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-03 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-03 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-03 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-03 18-21UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2024-11-03 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected. No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 90,
+                "n+1": 40,
+                "n+2": 20,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": true,
+                "rationale": "The greater than 10 MeV proton flux is expected to decrease below the S-scale storm level threshold on 01 Nov, and remain elevated but below threshold over 02-03 Nov."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 75,
+                "n+1": 75,
+                "n+2": 75,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 25,
+                "n+1": 25,
+                "n+2": 25,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R3",
+                "max_blackout_time": "Oct 31 2024 2120 UTC",
+                "rationale": "M-class flares (R1-minor) are expected, with a chance for X-class (R3-strong), through 03 Nov."
+            }
+        }
+    },
+    "2024-11-02": {
+        "issue": "2024-11-02 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2024-11-02 00-03UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2024-11-02 03-06UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2024-11-02 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-02 09-12UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2024-11-02 12-15UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2024-11-02 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-02 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-02 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2024-11-03 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-03 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2024-11-03 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-03 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-03 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-03 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-03 18-21UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2024-11-03 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2024-11-04 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2024-11-04 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-04 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-04 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-04 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-04 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-04 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-04 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 4.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 50,
+                "n+1": 30,
+                "n+2": 30,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a chance for the greater than 10 MeV proton flux to remain elevated but below the threshold over 02-04 Nov."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 75,
+                "n+1": 75,
+                "n+2": 75,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 35,
+                "n+1": 35,
+                "n+2": 35,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Nov 01 2024 1431 UTC",
+                "rationale": "M-class (R1-minor) are expected, with a chance for X-class (R3-strong), through 04 Nov."
+            }
+        }
+    },
+    "2024-11-03": {
+        "issue": "2024-11-03 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2024-11-03 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-03 03-06UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2024-11-03 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2024-11-03 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-03 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-03 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-03 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2024-11-03 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2024-11-04 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2024-11-04 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-04 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-04 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-04 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-04 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-04 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-04 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2024-11-05 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-05 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-05 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-05 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-05 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-05 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2024-11-05 18-21UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2024-11-05 21-00UT",
+                    1.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 30,
+                "n+1": 30,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a chance for the greater than 10 MeV proton flux to remain elevated but below the threshold over 03-04 Nov."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 75,
+                "n+1": 75,
+                "n+2": 50,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 35,
+                "n+1": 35,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Nov 03 2024 0849 UTC",
+                "rationale": "M-class (R1-minor) are expected, with a chance for X-class (R3-strong), through 04 Nov. On 05 Nov, there is a chance for M-class (R1-minor) activity and a slight chance for X-class (R3-strong) activity."
+            }
+        }
+    },
+    "2024-11-04": {
+        "issue": "2024-11-04 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2024-11-04 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2024-11-04 03-06UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2024-11-04 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-04 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-04 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-04 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-04 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-04 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2024-11-05 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-05 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-05 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-05 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-05 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-05 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2024-11-05 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-05 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2024-11-06 00-03UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-06 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-06 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-06 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-06 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-06 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-06 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-06 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 4.33,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 20,
+                "n+1": 10,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for the greater than 10 MeV proton flux to remain elevated but below the threshold over 04-05 Nov."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 95,
+                "n+1": 80,
+                "n+2": 75,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 30,
+                "n+1": 30,
+                "n+2": 20,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Nov 04 2024 0140 UTC",
+                "rationale": "M-class (R1-minor) are expected through 06 Nov. There is a chance for X-class (R3-strong) on 04-05 Nov, decreasing to a slight chance on 06 Nov."
+            }
+        }
+    },
+    "2024-11-05": {
+        "issue": "2024-11-05 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2024-11-05 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-05 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-05 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2024-11-05 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-05 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-05 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-05 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-05 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2024-11-06 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-06 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-06 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-06 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2024-11-06 12-15UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2024-11-06 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-06 18-21UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2024-11-06 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2024-11-07 00-03UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2024-11-07 03-06UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2024-11-07 06-09UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2024-11-07 09-12UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2024-11-07 12-15UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2024-11-07 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-07 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-07 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 5.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) or greater geomagnetic storms are likely on 07 Nov due to possible CME effects."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for an S1 (Minor) solar radiation storm on 05-07 Nov."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 80,
+                "n+1": 80,
+                "n+2": 80,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 30,
+                "n+1": 30,
+                "n+2": 30,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R2",
+                "max_blackout_time": "Nov 04 2024 1538 UTC",
+                "rationale": "Solar activity is expected to be moderate with continued M-Class (R1-R2/Minor-Moderate) flaring and a chance for X-Class (R3-Strong) levels 05-07 Nov. Solar flare probabilities are being driven by Regions 3883 and 3886 due to their magnetic complexities."
+            }
+        }
+    },
+    "2024-11-06": {
+        "issue": "2024-11-06 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2024-11-06 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2024-11-06 03-06UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2024-11-06 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-06 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-06 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-06 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-06 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-06 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2024-11-07 00-03UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2024-11-07 03-06UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2024-11-07 06-09UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2024-11-07 09-12UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2024-11-07 12-15UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2024-11-07 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-07 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-07 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2024-11-08 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-08 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-08 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-08 09-12UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2024-11-08 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2024-11-08 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2024-11-08 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2024-11-08 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 5.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) or greater geomagnetic storms are likely on 07 Nov due to possible CME effects."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for an S1 (Minor) solar radiation storm on 06-08 Nov."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 80,
+                "n+1": 80,
+                "n+2": 80,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 35,
+                "n+1": 35,
+                "n+2": 35,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R2",
+                "max_blackout_time": "Nov 06 2024 0850 UTC",
+                "rationale": "Solar activity is expected to be moderate with continued M-Class (R1-R2/Minor-Moderate) flaring and a chance for X-Class (R3-Strong) levels 06-08 Nov. Solar flare probabilities are being driven by Regions 3883 and 3886 due to their magnetic complexities."
+            }
+        }
+    },
+    "2024-11-07": {
+        "issue": "2024-11-07 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2024-11-07 00-03UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-07 03-06UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2024-11-07 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-07 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-07 12-15UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2024-11-07 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-07 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2024-11-07 21-00UT",
+                    4.67,
+                    "G1"
+                ]
+            ],
+            "n+1": [
+                [
+                    "2024-11-08 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2024-11-08 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-08 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2024-11-08 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2024-11-08 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2024-11-08 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2024-11-08 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-08 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2024-11-09 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2024-11-09 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2024-11-09 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2024-11-09 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2024-11-09 12-15UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2024-11-09 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2024-11-09 18-21UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2024-11-09 21-00UT",
+                    4.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 2.0,
+                "greatest_expected_kp": 4.67,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) or greater geomagnetic storms are likely on 07 Nov due to possible CME effects."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for an S1 (Minor) solar radiation storm on 07-09 Nov."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 80,
+                "n+1": 80,
+                "n+2": 80,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 35,
+                "n+1": 35,
+                "n+2": 35,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R3",
+                "max_blackout_time": "Nov 06 2024 1340 UTC",
+                "rationale": "Solar activity is expected to be moderate with continued M-Class (R1-R2/Minor-Moderate) flaring and a chance for X-Class (R3-Strong) levels 07-09 Nov. Solar flare probabilities are being driven by Regions 3883, 3886, and 3889 due to their history and magnetic complexities."
+            }
+        }
+    },
+    "2024-11-08": {
+        "issue": "2024-11-08 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2024-11-08 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-08 03-06UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2024-11-08 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-08 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-08 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-08 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2024-11-08 18-21UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2024-11-08 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2024-11-09 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2024-11-09 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2024-11-09 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2024-11-09 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2024-11-09 12-15UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2024-11-09 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2024-11-09 18-21UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2024-11-09 21-00UT",
+                    4.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2024-11-10 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2024-11-10 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2024-11-10 06-09UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2024-11-10 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2024-11-10 12-15UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2024-11-10 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-10 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-10 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 4.33,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There exists a slight chance for S1 (Minor) solar radiation storms over 08-10 Nov due to potential from multiple complex regions on the visible disk."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 85,
+                "n+1": 85,
+                "n+2": 80,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 35,
+                "n+1": 35,
+                "n+2": 35,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Nov 07 2024 1506 UTC",
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are expected, with a chance for R3 (Strong), over 08-10 Nov due to the flare potential from multiple complex regions on the visible disk."
+            }
+        }
+    },
+    "2024-11-09": {
+        "issue": "2024-11-09 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2024-11-09 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2024-11-09 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2024-11-09 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2024-11-09 09-12UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2024-11-09 12-15UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2024-11-09 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2024-11-09 18-21UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2024-11-09 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2024-11-10 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2024-11-10 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2024-11-10 06-09UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2024-11-10 09-12UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2024-11-10 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2024-11-10 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-10 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-10 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2024-11-11 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-11 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2024-11-11 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-11 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-11 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-11 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-11 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-11 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 5.0,
+                "greatest_expected_kp": 5.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storms are expected on 09 Nov. Geomagnetic activity is likely to decline to below G1 levels for 10-11 Nov."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There exists a slight chance for S1 (Minor) solar radiation storms over 09-11 Nov."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 70,
+                "n+1": 70,
+                "n+2": 70,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 20,
+                "n+1": 20,
+                "n+2": 20,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are expected, with a chance for R3 (Strong), over 09-11 Nov due to the flare potential from multiple complex regions on the visible disk."
+            }
+        }
+    },
+    "2024-11-10": {
+        "issue": "2024-11-10 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2024-11-10 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2024-11-10 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2024-11-10 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-10 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-10 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2024-11-10 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-10 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-10 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2024-11-11 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-11 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2024-11-11 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-11 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-11 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-11 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-11 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-11 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2024-11-12 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2024-11-12 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-12 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-12 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-12 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-12 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-12 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-12 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 5.0,
+                "greatest_expected_kp": 4.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There exists a slight chance for S1 (Minor) solar radiation storms over 10-12 Nov."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 40,
+                "n+1": 40,
+                "n+2": 40,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Nov 10 2024 0015 UTC",
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts, and a slight chance for R3 (Strong), over 10-12 Nov."
+            }
+        }
+    },
+    "2024-11-11": {
+        "issue": "2024-11-11 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2024-11-11 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-11 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-11 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2024-11-11 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-11 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2024-11-11 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2024-11-11 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-11 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2024-11-12 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2024-11-12 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-12 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-12 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-12 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-12 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-12 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-12 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2024-11-13 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-13 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2024-11-13 06-09UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2024-11-13 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2024-11-13 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-13 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-13 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-13 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 5.0,
+                "greatest_expected_kp": 4.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for S1 (Minor)  solar radiation storms over 11-13 Nov."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 70,
+                "n+1": 70,
+                "n+2": 70,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 30,
+                "n+1": 30,
+                "n+2": 30,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Nov 10 2024 2021 UTC",
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are likely, with a chance for R3 (Strong), over 11-13 Nov."
+            }
+        }
+    },
+    "2024-11-12": {
+        "issue": "2024-11-12 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2024-11-12 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-12 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-12 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-12 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2024-11-12 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-12 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-12 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-12 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2024-11-13 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-13 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2024-11-13 06-09UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2024-11-13 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2024-11-13 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-13 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-13 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-13 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2024-11-14 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2024-11-14 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-14 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-14 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-14 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-14 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-14 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-14 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 4.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for the greater than 10 MeV proton flux to reach S1 (Minor) levels over 12-14 Nov."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 70,
+                "n+1": 70,
+                "n+2": 70,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 25,
+                "n+1": 25,
+                "n+2": 25,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are likely, with a chance for R3 (Strong), over 12-14 Nov."
+            }
+        }
+    },
+    "2024-11-13": {
+        "issue": "2024-11-13 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2024-11-13 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2024-11-13 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-13 06-09UT",
+                    0.33,
+                    null
+                ],
+                [
+                    "2024-11-13 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-13 12-15UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2024-11-13 15-18UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2024-11-13 18-21UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2024-11-13 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2024-11-14 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2024-11-14 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-14 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-14 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-14 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-14 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-14 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-14 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2024-11-15 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2024-11-15 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-15 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-15 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-15 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-15 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-15 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-15 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 4.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for the greater than 10 MeV proton flux to reach S1 (Minor) levels over 13-15 Nov."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 65,
+                "n+1": 65,
+                "n+2": 65,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 25,
+                "n+1": 25,
+                "n+2": 25,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Nov 13 2024 0022 UTC",
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are likely, with a chance for R3 (Strong), over 13-15 Nov."
+            }
+        }
+    },
+    "2024-11-14": {
+        "issue": "2024-11-14 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2024-11-14 00-03UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2024-11-14 03-06UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2024-11-14 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-14 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-14 12-15UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2024-11-14 15-18UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2024-11-14 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-14 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2024-11-15 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2024-11-15 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-15 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-15 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-15 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-15 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-15 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-15 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2024-11-16 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2024-11-16 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2024-11-16 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-16 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-16 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-16 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-16 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-16 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for the greater than 10 MeV proton flux to reach S1 (Minor) levels over 14-16 Nov."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 60,
+                "n+1": 60,
+                "n+2": 60,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 20,
+                "n+1": 20,
+                "n+2": 20,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Nov 13 2024 1708 UTC",
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are likely, with a chance for R3 (Strong), over 14-16 Nov."
+            }
+        }
+    },
+    "2024-11-15": {
+        "issue": "2024-11-15 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2024-11-15 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2024-11-15 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2024-11-15 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-15 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-15 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-15 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-15 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-15 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2024-11-16 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2024-11-16 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2024-11-16 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-16 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-16 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-16 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-16 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-16 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2024-11-17 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-17 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2024-11-17 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-17 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-17 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-17 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2024-11-17 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-17 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for the greater than 10 MeV proton flux to reach S1 (Minor) levels over 15-17 Nov."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 60,
+                "n+1": 60,
+                "n+2": 60,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 20,
+                "n+1": 20,
+                "n+2": 20,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Nov 15 2024 0147 UTC",
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are likely, with a chance for R3 (Strong), over 15-17 Nov."
+            }
+        }
+    },
+    "2024-11-16": {
+        "issue": "2024-11-16 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2024-11-16 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2024-11-16 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-16 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-16 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-16 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-16 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-16 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-16 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2024-11-17 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-17 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2024-11-17 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-17 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-17 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-17 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2024-11-17 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-17 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2024-11-18 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-18 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-18 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-18 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-18 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2024-11-18 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2024-11-18 18-21UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2024-11-18 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for the greater than 10 MeV proton flux to reach S1 (Minor) levels over 16-18 Nov."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 50,
+                "n+1": 50,
+                "n+2": 50,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Nov 16 2024 0137 UTC",
+                "rationale": "A chance for R1-2 (Minor-Moderate) radio blackouts will persist though 18 Nov along with a slight chance for an R3 (Strong) or great event."
+            }
+        }
+    },
+    "2024-11-17": {
+        "issue": "2024-11-17 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2024-11-17 00-03UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2024-11-17 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2024-11-17 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-17 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-17 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-17 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-17 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-17 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2024-11-18 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-18 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-18 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-18 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-18 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2024-11-18 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2024-11-18 18-21UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2024-11-18 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2024-11-19 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-19 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2024-11-19 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-19 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-19 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-19 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2024-11-19 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-19 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for the greater than 10 MeV proton flux to reach S1 (Minor) levels over 17-19 Nov."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 45,
+                "n+1": 45,
+                "n+2": 45,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "A chance for R1-2 (Minor-Moderate) radio blackouts will persist through 19 Nov along with a slight chance for an R3 (Strong) or great event."
+            }
+        }
+    },
+    "2024-11-18": {
+        "issue": "2024-11-18 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2024-11-18 00-03UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2024-11-18 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-18 06-09UT",
+                    0.33,
+                    null
+                ],
+                [
+                    "2024-11-18 09-12UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2024-11-18 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-18 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-18 18-21UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2024-11-18 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2024-11-19 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-19 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2024-11-19 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-19 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-19 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-19 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2024-11-19 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-19 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2024-11-20 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-20 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-20 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-20 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-20 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-20 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-20 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-20 21-00UT",
+                    1.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 55,
+                "n+1": 55,
+                "n+2": 60,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Nov 18 2024 1058 UTC",
+                "rationale": "R1-2 (Minor-Moderate) radio blackouts due to M-class flare activity will remain likely through 20 Nov. A slight chance for an isolated R3 (Strong) or greater event will persist as well. Event probabilities will increase slightly on day three, 20 Nov, with the anticipated return of a few active regions."
+            }
+        }
+    },
+    "2024-11-19": {
+        "issue": "2024-11-19 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2024-11-19 00-03UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2024-11-19 03-06UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2024-11-19 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-19 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-19 12-15UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2024-11-19 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-19 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-19 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2024-11-20 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-20 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-20 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-20 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-20 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-20 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-20 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-20 21-00UT",
+                    1.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2024-11-21 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-21 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-21 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-21 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-21 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-21 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-21 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-21 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 2.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 55,
+                "n+1": 60,
+                "n+2": 60,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Nov 18 2024 1253 UTC",
+                "rationale": "Solar activity will likely maintain R1-R2 (Minor-Moderate) levels with a slight chance for isolated R3 (Strong) events 19-21 Nov. Probabilities will increase slightly 20-21 Nov with the return of a few active regions."
+            }
+        }
+    },
+    "2024-11-20": {
+        "issue": "2024-11-20 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2024-11-20 00-03UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2024-11-20 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2024-11-20 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2024-11-20 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-20 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-20 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-20 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-20 21-00UT",
+                    1.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2024-11-21 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-21 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-21 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-21 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-21 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-21 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-21 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-21 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2024-11-22 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-22 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-22 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-22 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2024-11-22 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-22 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-22 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2024-11-22 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 3.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 50,
+                "n+1": 50,
+                "n+2": 50,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "Solar activity is expected to be low, with a chance for M-class flares (R1-R2/Minor-Moderate) activity and a slight chance of X-class (R3-Strong) events 20-22 Nov due primarily to the flare potential of Regions 3897 - which will rotate out of view by 21 Nov - and Regions 3899 and 3898."
+            }
+        }
+    },
+    "2024-11-21": {
+        "issue": "2024-11-21 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2024-11-21 00-03UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2024-11-21 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-21 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-21 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-21 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-21 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-21 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-21 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2024-11-22 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-22 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-22 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-22 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2024-11-22 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-22 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-22 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2024-11-22 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2024-11-23 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-23 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2024-11-23 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-23 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-23 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-23 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-23 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-23 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 2.0,
+                "greatest_expected_kp": 3.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 50,
+                "n+1": 50,
+                "n+2": 50,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Nov 20 2024 1948 UTC",
+                "rationale": "Solar activity is expected to be low, with a chance for M-class flares (R1/R2-Minor/Moderate) and a slight chance of X-class (R3-Strong) events 21-23 Nov."
+            }
+        }
+    },
+    "2024-11-22": {
+        "issue": "2024-11-22 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2024-11-22 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-22 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-22 06-09UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2024-11-22 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-22 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-22 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-22 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-22 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2024-11-23 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-23 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2024-11-23 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-23 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-23 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-23 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-23 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-23 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2024-11-24 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-24 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-24 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-24 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-24 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-24 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-24 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-24 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 3.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 99,
+                "n+1": 50,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": true,
+                "rationale": "S1 (Minor) solar radiation storms are expected on 22 Nov. Probabilities decrease to a chance for a continuing event on 23 Nov as current conditions are expected to wane barring an additional event."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 50,
+                "n+1": 50,
+                "n+2": 50,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "Solar activity is expected to be low, with a chance for M-class flares (R1/R2-Minor/Moderate) and a slight chance of X-class (R3-Strong) events 22-24 Nov."
+            }
+        }
+    },
+    "2024-11-23": {
+        "issue": "2024-11-23 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2024-11-23 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-23 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-23 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-23 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-23 12-15UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2024-11-23 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-23 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2024-11-23 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2024-11-24 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-24 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-24 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-24 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-24 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-24 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-24 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-24 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2024-11-25 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-25 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2024-11-25 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-25 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-25 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-25 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-25 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-25 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": true,
+                "rationale": "A slight chance for an S1 (Minor) solar radiation storm event will persist for the remainder of 23 Nov."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 60,
+                "n+1": 60,
+                "n+2": 60,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Nov 22 2024 1546 UTC",
+                "rationale": "M-class flares (R1/R2-Minor/Moderate) are likely, with a slight chance of X-class (R3-Strong) flares, on 23-25 Nov."
+            }
+        }
+    },
+    "2024-11-24": {
+        "issue": "2024-11-24 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2024-11-24 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-24 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-24 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-24 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2024-11-24 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-24 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-24 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-24 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2024-11-25 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-25 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-25 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-25 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2024-11-25 12-15UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2024-11-25 15-18UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2024-11-25 18-21UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2024-11-25 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2024-11-26 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-26 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-26 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-26 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-26 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-26 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-26 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-26 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 2.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 60,
+                "n+1": 60,
+                "n+2": 60,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Nov 23 2024 1607 UTC",
+                "rationale": "M-class flares (R1/R2-Minor/Moderate) are likely, with a slight chance of X-class (R3-Strong) flares, on 24-26 Nov."
+            }
+        }
+    },
+    "2024-11-25": {
+        "issue": "2024-11-25 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2024-11-25 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2024-11-25 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-25 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-25 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-25 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-25 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-25 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-25 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2024-11-26 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-26 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-26 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-26 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-26 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-26 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-26 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-26 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2024-11-27 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-27 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-27 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-27 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-27 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-27 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-27 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-27 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 3.33,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "A slight chance for the greater than 10 MeV proton flux to reach S1 (Minor) radiation storm levels will persist through 27 Nov primarily due to the flare and subsequent CME potential currently exhibited by AR 3906."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 60,
+                "n+1": 60,
+                "n+2": 60,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 20,
+                "n+1": 20,
+                "n+2": 20,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R2",
+                "max_blackout_time": "Nov 25 2024 0742 UTC",
+                "rationale": "M-class flares (R1/R2-Minor/Moderate) are likely, with a slight chance of X-class (R3-Strong) flares, on 24-26 Nov."
+            }
+        }
+    },
+    "2024-11-26": {
+        "issue": "2024-11-26 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2024-11-26 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2024-11-26 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-26 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2024-11-26 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-26 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-26 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-26 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-26 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2024-11-27 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-27 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-27 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-27 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-27 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-27 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-27 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-27 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2024-11-28 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2024-11-28 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-28 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-28 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2024-11-28 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-28 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-28 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-28 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 60,
+                "n+1": 60,
+                "n+2": 60,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 20,
+                "n+1": 20,
+                "n+2": 20,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Nov 25 2024 2054 UTC",
+                "rationale": "R1-R2 (Minor-Moderate) radio blackout activity is likely, with a slight chance for R3 (Strong) events, through 28 Nov."
+            }
+        }
+    },
+    "2024-11-27": {
+        "issue": "2024-11-27 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2024-11-27 00-03UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2024-11-27 03-06UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2024-11-27 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-27 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-27 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-27 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-11-27 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-27 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2024-11-28 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2024-11-28 03-06UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2024-11-28 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-28 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-28 12-15UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2024-11-28 15-18UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2024-11-28 18-21UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2024-11-28 21-00UT",
+                    4.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2024-11-29 00-03UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2024-11-29 03-06UT",
+                    5.67,
+                    "G2"
+                ],
+                [
+                    "2024-11-29 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2024-11-29 09-12UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2024-11-29 12-15UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2024-11-29 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2024-11-29 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2024-11-29 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 2.0,
+                "greatest_expected_kp": 5.67,
+                "greatest_expected_scale": "G2",
+                "rationale": "G1-G2 (Minor-Moderate) or greater geomagnetic storms are likely on 28-29 Nov due to possible impacts from a filament eruption on 25 Nov."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for S1 (Minor) or greater solar radiation storm over the next three days."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 65,
+                "n+1": 65,
+                "n+2": 65,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 20,
+                "n+1": 20,
+                "n+2": 20,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "R1-R2 (Minor-Moderate) radio blackout activity is likely, with a slight chance for R3 (Strong) events, through 29 Nov."
+            }
+        }
+    },
+    "2024-11-28": {
+        "issue": "2024-11-28 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2024-11-28 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-28 03-06UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2024-11-28 06-09UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2024-11-28 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2024-11-28 12-15UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2024-11-28 15-18UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2024-11-28 18-21UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2024-11-28 21-00UT",
+                    4.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2024-11-29 00-03UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2024-11-29 03-06UT",
+                    5.67,
+                    "G2"
+                ],
+                [
+                    "2024-11-29 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2024-11-29 09-12UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2024-11-29 12-15UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2024-11-29 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2024-11-29 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2024-11-29 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2024-11-30 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2024-11-30 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2024-11-30 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2024-11-30 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-30 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-30 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-30 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-30 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 2.0,
+                "greatest_expected_kp": 5.67,
+                "greatest_expected_scale": "G2",
+                "rationale": "G1-G2 (Minor-Moderate) or greater geomagnetic storms are likely on 28-29 Nov due to possible impacts from a filament eruption on 25 Nov."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for S1 (Minor) or greater solar radiation storm over the next three days."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 60,
+                "n+1": 60,
+                "n+2": 60,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 20,
+                "n+1": 20,
+                "n+2": 20,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Nov 27 2024 1246 UTC",
+                "rationale": "R1-R2 (Minor-Moderate) radio blackout activity is likely, with a slight chance for R3 (Strong) events, through 30 Nov."
+            }
+        }
+    },
+    "2024-11-29": {
+        "issue": "2024-11-29 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2024-11-29 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-29 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-29 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-29 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-29 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-29 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-29 18-21UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2024-11-29 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2024-11-30 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2024-11-30 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2024-11-30 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-30 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-30 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-11-30 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-11-30 18-21UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2024-11-30 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2024-12-01 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-12-01 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-12-01 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-12-01 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-12-01 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-12-01 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-12-01 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-12-01 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 2.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for S1 (Minor) or greater solar radiation storm over the next three days."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 55,
+                "n+1": 55,
+                "n+2": 55,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 20,
+                "n+1": 20,
+                "n+2": 20,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "R1-R2 (Minor-Moderate) radio blackout activity is likely, with a slight chance for R3 (Strong) events, through 01 Dec."
+            }
+        }
+    },
+    "2024-11-30": {
+        "issue": "2024-11-30 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2024-11-30 00-03UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2024-11-30 03-06UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2024-11-30 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-11-30 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2024-11-30 12-15UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2024-11-30 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-11-30 18-21UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2024-11-30 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2024-12-01 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-12-01 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-12-01 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-12-01 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-12-01 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-12-01 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-12-01 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2024-12-01 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2024-12-02 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2024-12-02 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-12-02 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-12-02 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-12-02 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2024-12-02 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2024-12-02 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2024-12-02 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 5.0,
+                "greatest_expected_kp": 4.67,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) or greater geomagnetic storms are expected on 30 Nov."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for S1 (Minor) solar radiation storms over 30 Nov-02 Dec."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 40,
+                "n+1": 40,
+                "n+2": 40,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts, and a slight chance for R3 or greater events, over 30 Nov-02 Dec."
+            }
+        }
+    }
+}

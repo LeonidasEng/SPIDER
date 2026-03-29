@@ -1,0 +1,5241 @@
+{
+    "2025-03-01": {
+        "issue": "2025-03-01 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-03-01 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-03-01 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-01 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-01 09-12UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-03-01 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-01 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-01 18-21UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2025-03-01 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-03-02 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-02 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-02 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-02 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-02 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-02 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-02 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-02 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-03-03 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-03 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-03 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-03 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-03 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-03 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-03-03 18-21UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2025-03-03 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 5.0,
+                "greatest_expected_kp": 4.67,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) storm levels are expected on 01 Mar due to continued positive polarity CH HSS influence and the possible additional influence from a CME that left the Sun on 25 Feb."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 30,
+                "n+1": 30,
+                "n+2": 30,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) events over 01-03 Mar."
+            }
+        }
+    },
+    "2025-03-02": {
+        "issue": "2025-03-02 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-03-02 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-02 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-02 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-02 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-02 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-02 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-02 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-02 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-03-03 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-03 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-03 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-03 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-03 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-03 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-03-03 18-21UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2025-03-03 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-03-04 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-03-04 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-03-04 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-03-04 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-03-04 12-15UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2025-03-04 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-03-04 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-03-04 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 25,
+                "n+1": 25,
+                "n+2": 25,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "A chance remains for R1-R2 (Minor-Moderate) events over 02-04 Mar."
+            }
+        }
+    },
+    "2025-03-03": {
+        "issue": "2025-03-03 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-03-03 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-03 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-03 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-03 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-03 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-03 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-03-03 18-21UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2025-03-03 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-03-04 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-03-04 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-03-04 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-03-04 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-03-04 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-04 15-18UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-04 18-21UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-03-04 21-00UT",
+                    5.0,
+                    "G1"
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-03-05 00-03UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2025-03-05 03-06UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-03-05 06-09UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2025-03-05 09-12UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-03-05 12-15UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-05 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-05 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-05 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 2.0,
+                "greatest_expected_kp": 5.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "Periods of G1 (Minor) geomagnetic storming are likely on 04-05 Mar due to the anticipated arrival of a CME that left the Sun on 01 Mar."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 30,
+                "n+1": 30,
+                "n+2": 30,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) events over 03-05 Mar."
+            }
+        }
+    },
+    "2025-03-04": {
+        "issue": "2025-03-04 00:35:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-03-04 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-03-04 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-03-04 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-03-04 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-03-04 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-04 15-18UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-04 18-21UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-03-04 21-00UT",
+                    5.0,
+                    "G1"
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-03-05 00-03UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2025-03-05 03-06UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-03-05 06-09UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2025-03-05 09-12UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-03-05 12-15UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-05 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-05 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-05 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-03-06 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-06 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-06 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-06 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-06 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-03-06 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-06 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-06 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 2.0,
+                "greatest_expected_kp": 5.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storms are likely on 04-05 Mar due to possible influences from a CME that left the Sun on 01 Mar."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 30,
+                "n+1": 30,
+                "n+2": 30,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts through 06 Mar."
+            }
+        }
+    },
+    "2025-03-05": {
+        "issue": "2025-03-05 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-03-05 00-03UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2025-03-05 03-06UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-03-05 06-09UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2025-03-05 09-12UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-03-05 12-15UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-05 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-05 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-05 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-03-06 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-06 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-06 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-06 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-06 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-03-06 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-06 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-06 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-03-07 00-03UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-03-07 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-03-07 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-03-07 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-03-07 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-03-07 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-03-07 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-03-07 21-00UT",
+                    1.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 5.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storms are likely on 05 Mar due to possible influences from a CME that left the Sun on 01 Mar."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 40,
+                "n+1": 40,
+                "n+2": 40,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts through 07 Mar."
+            }
+        }
+    },
+    "2025-03-06": {
+        "issue": "2025-03-06 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-03-06 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-06 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-06 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-06 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-06 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-03-06 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-06 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-06 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-03-07 00-03UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-03-07 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-03-07 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-03-07 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-03-07 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-03-07 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-03-07 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-03-07 21-00UT",
+                    1.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-03-08 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-08 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-03-08 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-08 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-08 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-08 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-08 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-08 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 4.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 45,
+                "n+1": 45,
+                "n+2": 45,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Mar 05 2025 1150 UTC",
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts through 08 Mar."
+            }
+        }
+    },
+    "2025-03-07": {
+        "issue": "2025-03-07 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-03-07 00-03UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-03-07 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-03-07 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-03-07 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-03-07 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-03-07 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-03-07 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-03-07 21-00UT",
+                    1.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-03-08 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-08 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-03-08 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-08 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-08 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-08 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-08 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-08 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-03-09 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-09 03-06UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-03-09 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-09 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-09 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-09 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-09 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-09 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 4.67,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storms are likely on 09 Mar due to the anticipated arrival of a CIR and subsequent CH HSS."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 45,
+                "n+1": 45,
+                "n+2": 45,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate), with a slight chance for R3 (Strong) or greater radio blackouts through 09 Mar."
+            }
+        }
+    },
+    "2025-03-08": {
+        "issue": "2025-03-08 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-03-08 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-08 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-03-08 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-08 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-08 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-08 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-08 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-08 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-03-09 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-09 03-06UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-03-09 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-09 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-09 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-09 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-09 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-09 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-03-10 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-03-10 03-06UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2025-03-10 06-09UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-03-10 09-12UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-10 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-10 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-10 18-21UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-10 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 5.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storms are likely on 09-10 Mar due to anticipated influence from a negative polarity coronal hole."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 40,
+                "n+1": 40,
+                "n+2": 40,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Mar 07 2025 2100 UTC",
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts over 08-10 Mar."
+            }
+        }
+    },
+    "2025-03-09": {
+        "issue": "2025-03-09 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-03-09 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-09 03-06UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-03-09 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-09 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-09 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-09 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-09 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-09 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-03-10 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-03-10 03-06UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2025-03-10 06-09UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-03-10 09-12UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-10 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-10 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-10 18-21UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-10 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-03-11 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-11 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-11 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-11 09-12UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-11 12-15UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-11 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-11 18-21UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-11 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 5.0,
+                "greatest_expected_kp": 5.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) conditions are expected on 09-10 Mar due to influence from a negative polarity coronal hole."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 30,
+                "n+1": 30,
+                "n+2": 30,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts over 09-11 Mar."
+            }
+        }
+    },
+    "2025-03-10": {
+        "issue": "2025-03-10 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-03-10 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-03-10 03-06UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2025-03-10 06-09UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-03-10 09-12UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-10 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-10 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-10 18-21UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-10 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-03-11 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-11 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-11 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-11 09-12UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-11 12-15UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-11 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-11 18-21UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-11 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-03-12 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-12 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-12 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-12 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-12 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-12 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-12 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-12 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 6.0,
+                "greatest_expected_kp": 5.0,
+                "greatest_expected_scale": "G2",
+                "rationale": "G1 (Minor) geomagnetic storms are likely on 10 Mar due to CH HSS influences."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 30,
+                "n+1": 30,
+                "n+2": 30,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "A chance for R1-R2 (Minor-Moderate) radio blackouts will persist through 12 Mar mainly due to the flare potential of Region 4012."
+            }
+        }
+    },
+    "2025-03-11": {
+        "issue": "2025-03-11 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-03-11 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-11 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-11 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-11 09-12UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-11 12-15UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-11 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-11 18-21UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-11 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-03-12 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-12 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-12 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-12 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-12 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-12 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-12 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-12 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-03-13 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-13 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-13 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-13 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-13 12-15UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-13 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-13 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-13 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 30,
+                "n+1": 30,
+                "n+2": 30,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "A chance remains for R1-R2 (Minor-Moderate) radio blackouts through 13 Mar as Region 4019 continues develop."
+            }
+        }
+    },
+    "2025-03-12": {
+        "issue": "2025-03-12 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-03-12 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-12 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-12 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-12 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-12 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-12 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-12 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-12 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-03-13 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-13 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-13 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-13 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-13 12-15UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-13 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-13 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-13 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-03-14 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-14 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-14 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-14 09-12UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-14 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-14 15-18UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-14 18-21UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-14 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 35,
+                "n+1": 40,
+                "n+2": 40,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Mar 11 2025 1304 UTC",
+                "rationale": "A chance for isolated R1-R2 (Minor-Moderate) radio blackouts will persist through 14 Mar."
+            }
+        }
+    },
+    "2025-03-13": {
+        "issue": "2025-03-13 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-03-13 00-03UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-03-13 03-06UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-03-13 06-09UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-03-13 09-12UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2025-03-13 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-13 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-13 18-21UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2025-03-13 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-03-14 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-14 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-14 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-14 09-12UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-14 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-14 15-18UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-14 18-21UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-14 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-03-15 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-15 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-15 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-15 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-15 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-15 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-15 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-15 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 5.0,
+                "greatest_expected_kp": 4.67,
+                "greatest_expected_scale": "G1",
+                "rationale": "Due to the continued southward orientation of the IMF, G1-Minor storming conditions are expected to continue."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 40,
+                "n+1": 40,
+                "n+2": 40,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance for M-Class (R1-R2 Minor-Moderate) flaring 13-15 Mar."
+            }
+        }
+    },
+    "2025-03-14": {
+        "issue": "2025-03-14 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-03-14 00-03UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-03-14 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-03-14 06-09UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-03-14 09-12UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2025-03-14 12-15UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-03-14 15-18UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2025-03-14 18-21UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2025-03-14 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-03-15 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-03-15 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-03-15 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-15 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-15 12-15UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-15 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-15 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-03-15 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-03-16 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-16 03-06UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-16 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-16 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-16 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-16 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-16 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-16 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 5.0,
+                "greatest_expected_kp": 4.67,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) storming is expected on 14 Mar due to CH HSS activity."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 45,
+                "n+1": 45,
+                "n+2": 45,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance for M-Class (R1-R2 Minor-Moderate) flaring 14-16 Mar."
+            }
+        }
+    },
+    "2025-03-15": {
+        "issue": "2025-03-15 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-03-15 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-15 03-06UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-15 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-15 09-12UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-15 12-15UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-15 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-15 18-21UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-15 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-03-16 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-03-16 03-06UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-16 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-16 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-16 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-16 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-16 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-16 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-03-17 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-17 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-17 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-17 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-17 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-17 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-17 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-17 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 6.0,
+                "greatest_expected_kp": 4.0,
+                "greatest_expected_scale": "G2",
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 45,
+                "n+1": 45,
+                "n+2": 45,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Mar 14 2025 2221 UTC",
+                "rationale": "There is an increased chance for M-class flaring (R1-R2, Minor-Moderate) on 15-17 Mar."
+            }
+        }
+    },
+    "2025-03-16": {
+        "issue": "2025-03-16 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-03-16 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-03-16 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-16 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-16 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-16 12-15UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-16 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-16 18-21UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-16 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-03-17 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-17 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-17 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-17 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-17 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-17 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-17 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-17 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-03-18 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-18 03-06UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-18 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-18 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-18 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-18 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-18 18-21UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-18 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 45,
+                "n+1": 45,
+                "n+2": 45,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance for M-class flaring (R1-R2, Minor-Moderate) and a slight chance for X-class flares through 17 Mar."
+            }
+        }
+    },
+    "2025-03-17": {
+        "issue": "2025-03-17 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-03-17 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-17 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-17 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-17 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-17 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-17 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-17 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-17 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-03-18 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-18 03-06UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-18 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-18 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-18 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-18 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-18 18-21UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-18 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-03-19 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-19 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-19 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-19 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-19 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-19 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-19 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-19 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 40,
+                "n+1": 40,
+                "n+2": 40,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "Solar activity is expected to be low with a chance for M-class flaring (R1-R2, Minor-Moderate) and a slight chance for X-class flares (R3, strong) through 19 Mar."
+            }
+        }
+    },
+    "2025-03-18": {
+        "issue": "2025-03-18 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-03-18 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-18 03-06UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-18 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-18 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-18 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-18 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-18 18-21UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-18 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-03-19 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-19 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-19 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-19 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-03-19 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-19 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-19 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-19 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-03-20 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-20 03-06UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-20 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-20 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-20 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-20 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-20 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-20 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 50,
+                "n+1": 50,
+                "n+2": 50,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Mar 17 2025 1933 UTC",
+                "rationale": "A high chance for M-class flares (R1-R2, Minor-Moderate) and a slight chance for X-class flares (R3, Strong) will persist through Mar 20."
+            }
+        }
+    },
+    "2025-03-19": {
+        "issue": "2025-03-19 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-03-19 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-19 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-19 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-19 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-03-19 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-19 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-19 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-19 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-03-20 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-20 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-20 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-20 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-20 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-20 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-20 18-21UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-20 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-03-21 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-03-21 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-21 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-21 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-21 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-21 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-21 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-21 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 4.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 50,
+                "n+1": 50,
+                "n+2": 50,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "A high chance for M-class flares (R1-R2, Minor-Moderate), and a slight chance for an isolated X-class flare (R3, Strong), will persist through 21 Mar."
+            }
+        }
+    },
+    "2025-03-20": {
+        "issue": "2025-03-20 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-03-20 00-03UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-03-20 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-20 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-20 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-20 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-20 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-20 18-21UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-20 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-03-21 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-21 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-21 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-21 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-03-21 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-03-21 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-03-21 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-21 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-03-22 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-22 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-22 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-22 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-22 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-22 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-22 18-21UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-22 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 5.0,
+                "greatest_expected_kp": 4.67,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storms are expected early on 20 Mar due to ongoing enhancements in the solar wind."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 30,
+                "n+1": 30,
+                "n+2": 30,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Mar 19 2025 2040 UTC",
+                "rationale": "There is a chance for R1-R2 (Minor) radio blackouts over 20-22 Mar."
+            }
+        }
+    },
+    "2025-03-21": {
+        "issue": "2025-03-21 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-03-21 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-03-21 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-03-21 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-03-21 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-03-21 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-03-21 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-03-21 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-03-21 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-03-22 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-22 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-22 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-22 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-22 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-22 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-22 18-21UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-22 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-03-23 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-23 03-06UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-23 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-23 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-23 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-23 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-23 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-23 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 2.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 30,
+                "n+1": 30,
+                "n+2": 30,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There exists a chance for R1-R2 (Minor-Moderate) radio blackouts over 21-23 Mar."
+            }
+        }
+    },
+    "2025-03-22": {
+        "issue": "2025-03-22 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-03-22 00-03UT",
+                    5.33,
+                    "G1"
+                ],
+                [
+                    "2025-03-22 03-06UT",
+                    5.33,
+                    "G1"
+                ],
+                [
+                    "2025-03-22 06-09UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-03-22 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-22 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-22 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-22 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-22 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-03-23 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-23 03-06UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-23 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-23 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-23 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-23 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-23 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-23 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-03-24 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-24 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-24 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-24 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-03-24 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-24 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-24 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-24 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 5.0,
+                "greatest_expected_kp": 5.33,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) or greater geomagnetic storms are expected early on 22 Mar due to lingering CME effects. No significant transient or recurrent solar wind features are forecast on 23-24 March."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 25,
+                "n+1": 25,
+                "n+2": 25,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Mar 21 2025 1558 UTC",
+                "rationale": "A chance for R1-R2 (Minor-Moderate) radio blackouts due to M-class flares will persist through 24 Mar."
+            }
+        }
+    },
+    "2025-03-23": {
+        "issue": "2025-03-23 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-03-23 00-03UT",
+                    6.0,
+                    "G2"
+                ],
+                [
+                    "2025-03-23 03-06UT",
+                    7.0,
+                    "G3"
+                ],
+                [
+                    "2025-03-23 06-09UT",
+                    6.0,
+                    "G2"
+                ],
+                [
+                    "2025-03-23 09-12UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2025-03-23 12-15UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2025-03-23 15-18UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-03-23 18-21UT",
+                    5.33,
+                    "G1"
+                ],
+                [
+                    "2025-03-23 21-00UT",
+                    5.33,
+                    "G1"
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-03-24 00-03UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-03-24 03-06UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2025-03-24 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-24 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-24 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-24 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-24 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-24 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-03-25 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-25 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-25 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-25 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-25 12-15UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-25 15-18UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2025-03-25 18-21UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2025-03-25 21-00UT",
+                    5.67,
+                    "G2"
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 6.0,
+                "greatest_expected_kp": 7.0,
+                "greatest_expected_scale": "G2",
+                "rationale": "G3 (Strong) geomagnetic storming is likely on 23 Mar due to CME arrival. G1 (Minor) geomagnetic storming is likely on 24 Mar as CME and CH HSS wane. G1 (Minor) to G2 (Moderate) geomagnetic storming is likely on 25 Mar under the influence of CH HSS."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 30,
+                "n+1": 30,
+                "n+2": 30,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "A chance for R1-R2 (Minor-Moderate) radio blackouts exists due to M-class flares through 25 Mar."
+            }
+        }
+    },
+    "2025-03-24": {
+        "issue": "2025-03-24 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-03-24 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-03-24 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-03-24 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-24 09-12UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2025-03-24 12-15UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-03-24 15-18UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-03-24 18-21UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-24 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-03-25 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-25 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-25 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-25 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-25 12-15UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-25 15-18UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2025-03-25 18-21UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2025-03-25 21-00UT",
+                    5.67,
+                    "G2"
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-03-26 00-03UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-03-26 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-26 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-26 09-12UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-26 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-26 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-26 18-21UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-26 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 5.67,
+                "greatest_expected_scale": "G2",
+                "rationale": "G1 (Minor) geomagnetic storming is likely on 24 Mar as CME and CH HSS effects wane. G1-G2 (Minor-Moderate) geomagnetic storming is likely on 25 Mar due to positive polarity CH HSS effects. G1 (Minor) geomagnetic storming is likely on 26 Mar due to positive polarity CH HSS effects."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 30,
+                "n+1": 30,
+                "n+2": 30,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "A chance for R1 (Minor) radio blackouts due to isolated M-class flare activity will persist through 26 Mar."
+            }
+        }
+    },
+    "2025-03-25": {
+        "issue": "2025-03-25 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-03-25 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-25 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-25 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-25 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-25 12-15UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-25 15-18UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2025-03-25 18-21UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2025-03-25 21-00UT",
+                    5.67,
+                    "G2"
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-03-26 00-03UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-03-26 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-26 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-26 09-12UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-26 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-26 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-26 18-21UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-26 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-03-27 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-27 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-27 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-27 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-27 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-27 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-27 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-27 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 5.67,
+                "greatest_expected_scale": "G2",
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 30,
+                "n+1": 30,
+                "n+2": 30,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "No R1 (Minor) or greater radio blackouts are expected.  No significant active region flare activity is forecast."
+            }
+        }
+    },
+    "2025-03-26": {
+        "issue": "2025-03-26 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-03-26 00-03UT",
+                    5.67,
+                    "G2"
+                ],
+                [
+                    "2025-03-26 03-06UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2025-03-26 06-09UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2025-03-26 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-26 12-15UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2025-03-26 15-18UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-26 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-03-26 21-00UT",
+                    5.0,
+                    "G1"
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-03-27 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-03-27 03-06UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2025-03-27 06-09UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-03-27 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-27 12-15UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-27 15-18UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-03-27 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-03-27 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-03-28 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-28 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-28 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-28 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-28 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-28 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-28 18-21UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-28 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 5.67,
+                "greatest_expected_scale": "G2",
+                "rationale": "G2 (Moderate) geomagnetic storming is likely on 26 Mar and G1 (Minor) geomagnetic storming is likely on 27 Mar due to positive polarity CH HSS effects."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 30,
+                "n+1": 25,
+                "n+2": 25,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "A chance for R1 (Minor) radio blackouts due to isolated M-class flares will persist through 28 Mar."
+            }
+        }
+    },
+    "2025-03-27": {
+        "issue": "2025-03-27 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-03-27 00-03UT",
+                    5.67,
+                    "G2"
+                ],
+                [
+                    "2025-03-27 03-06UT",
+                    5.33,
+                    "G1"
+                ],
+                [
+                    "2025-03-27 06-09UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2025-03-27 09-12UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2025-03-27 12-15UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-03-27 15-18UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-03-27 18-21UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-27 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-03-28 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-28 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-03-28 06-09UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-03-28 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-28 12-15UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-28 15-18UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-28 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-03-28 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-03-29 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-29 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-29 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-29 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-29 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-29 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-29 18-21UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-29 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 6.0,
+                "greatest_expected_kp": 5.67,
+                "greatest_expected_scale": "G2",
+                "rationale": "The geomagnetic field should continue to see periods of G1-G2 (Minor-Moderate) storming levels into 27 Mar due to the CH HSS."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 30,
+                "n+1": 25,
+                "n+2": 25,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Mar 26 2025 0809 UTC",
+                "rationale": "There is a chance for isolated R1-R2 (Minor-Moderate) radio blackout activity through 27 Mar, with chances decreasing as Region 4036 continues to move beyond the western limb. Chances for R3 (Strong) events remain very low through 29 Mar."
+            }
+        }
+    },
+    "2025-03-28": {
+        "issue": "2025-03-28 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-03-28 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-28 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-03-28 06-09UT",
+                    4.67,
+                    null
+                ],
+                [
+                    "2025-03-28 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-28 12-15UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-28 15-18UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-28 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-03-28 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-03-29 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-29 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-29 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-29 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-29 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-29 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-29 18-21UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-29 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-03-30 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-30 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-30 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-30 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-30 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-30 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-03-30 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-03-30 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 5.0,
+                "greatest_expected_kp": 4.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "The geomagnetic field is expected to observe periods of G1 (Minor) geomagnetic storm levels on 28 Mar due to CH HSS influence."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 25,
+                "n+1": 25,
+                "n+2": 25,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Mar 27 2025 0037 UTC",
+                "rationale": "There exists a chance for R1-R2 (Minor-Moderate) radio blackouts over 28-30 Mar."
+            }
+        }
+    },
+    "2025-03-29": {
+        "issue": "2025-03-29 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-03-29 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-29 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-29 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-29 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-03-29 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-29 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-29 18-21UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-03-29 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-03-30 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-03-30 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-30 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-30 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-30 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-30 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-03-30 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-03-30 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-03-31 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-03-31 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-03-31 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-03-31 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-03-31 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-03-31 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-03-31 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-03-31 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 50,
+                "n+1": 50,
+                "n+2": 50,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 20,
+                "n+1": 20,
+                "n+2": 20,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R3",
+                "max_blackout_time": "Mar 28 2025 1520 UTC",
+                "rationale": "A chance for isolated R1-R2 (Minor-Moderate), and slight chance for R3 (Strong), radio blackouts will persist through 31 Mar primarily due to the potential exhibited by multiple regions near the E. limb."
+            }
+        }
+    },
+    "2025-03-30": {
+        "issue": "2025-03-30 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-03-30 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-03-30 03-06UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2025-03-30 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-03-30 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-30 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-03-30 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-03-30 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-03-30 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-03-31 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-03-31 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-03-31 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-03-31 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-03-31 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-03-31 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-03-31 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-03-31 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-04-01 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-04-01 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-04-01 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-04-01 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-04-01 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-04-01 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-04-01 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-04-01 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 4.33,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 40,
+                "n+1": 40,
+                "n+2": 40,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Mar 29 2025 2300 UTC",
+                "rationale": "There exists a chance for R1-R2 (Minor-Moderate) radio blackouts, with a slight chance for R3 (Strong), over 03 Mar - 01 Apr."
+            }
+        }
+    },
+    "2025-03-31": {
+        "issue": "2025-03-31 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-03-31 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-31 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-31 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-31 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-31 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-31 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-03-31 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-03-31 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-04-01 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-04-01 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-04-01 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-04-01 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-04-01 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-04-01 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-04-01 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-04-01 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-04-02 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-04-02 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-04-02 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-04-02 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-04-02 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-04-02 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-04-02 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-04-02 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 3.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 55,
+                "n+1": 50,
+                "n+2": 50,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Mar 30 2025 1642 UTC",
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are likely on 31 Mar, with a chance for up to R2 events persists through 02 Apr. A slight chance for R3 (Strong) events exists for 31 Mar - 02 Apr."
+            }
+        }
+    }
+}

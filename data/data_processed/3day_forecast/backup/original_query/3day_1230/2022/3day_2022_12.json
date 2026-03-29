@@ -1,0 +1,5072 @@
+{
+    "2022-12-01": {
+        "issue": "2022-12-01 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-12-01 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-12-01 03-06UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2022-12-01 06-09UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2022-12-01 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2022-12-01 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-01 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-01 18-21UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2022-12-01 21-00UT",
+                    4.67,
+                    "G1"
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-12-02 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2022-12-02 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-02 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2022-12-02 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2022-12-02 12-15UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2022-12-02 15-18UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2022-12-02 18-21UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2022-12-02 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-12-03 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-12-03 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-03 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-03 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-03 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-03 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-03 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-03 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 5.0,
+                "greatest_expected_kp": 5.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storms are likely on 01 Dec due to continued CH HSS influences."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Dec 01 2022 0721 UTC",
+                "rationale": "There is a slight chance for R1-R2 (Minor) radio blackouts on 01-03 Dec."
+            }
+        }
+    },
+    "2022-12-02": {
+        "issue": "2022-12-02 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-12-02 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2022-12-02 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2022-12-02 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2022-12-02 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-02 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-02 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-02 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-02 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-12-03 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-12-03 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-03 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-03 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-03 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-03 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-03 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-03 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-12-04 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-04 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-04 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2022-12-04 09-12UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2022-12-04 12-15UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-12-04 15-18UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2022-12-04 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-04 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 4.33,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is slight chance for R1-R2 (Minor-Moderate) radio blackouts on 02-04 Dec."
+            }
+        }
+    },
+    "2022-12-03": {
+        "issue": "2022-12-03 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-12-03 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-03 03-06UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2022-12-03 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-03 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-03 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-03 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-03 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-03 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-12-04 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-04 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-12-04 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-04 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-04 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-04 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-04 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-04 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-12-05 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-05 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-05 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-05 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-05 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-12-05 15-18UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2022-12-05 18-21UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-12-05 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 25,
+                "n+1": 25,
+                "n+2": 25,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "A chance for isolated R1-2 (Minor-Moderate) radio blackouts exists through 05 Dec mainly due to the potential exhibited by Region 3153."
+            }
+        }
+    },
+    "2022-12-04": {
+        "issue": "2022-12-04 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-12-04 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-04 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-04 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-04 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-04 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-04 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-04 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-04 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-12-05 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-05 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-05 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-05 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-05 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-12-05 15-18UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2022-12-05 18-21UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-12-05 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-12-06 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-06 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-06 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-06 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-06 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-06 15-18UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2022-12-06 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-06 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 3.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 25,
+                "n+1": 25,
+                "n+2": 25,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Dec 03 2022 1741 UTC",
+                "rationale": "A chance for R1-2 (Minor-Moderate) radio blackouts from M-class flare activity will persist through the forecast period mainly due to the potential exhibited by Regions 3153 and 3155 as well as the recent history of Region 3157."
+            }
+        }
+    },
+    "2022-12-05": {
+        "issue": "2022-12-05 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-12-05 00-03UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-12-05 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-05 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-05 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-05 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-05 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-05 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-05 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-12-06 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-06 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-06 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-06 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-06 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-06 15-18UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2022-12-06 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-06 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-12-07 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-07 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-07 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-07 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-12-07 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-07 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-07 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-12-07 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 4.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 20,
+                "n+1": 20,
+                "n+2": 20,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a slight chance for R1-R2 (Minor-Moderate) radio blackouts on 05-07 Dec."
+            }
+        }
+    },
+    "2022-12-06": {
+        "issue": "2022-12-06 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-12-06 00-03UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2022-12-06 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-06 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-12-06 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-12-06 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-12-06 15-18UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2022-12-06 18-21UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-12-06 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-12-07 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-07 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-07 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-07 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-12-07 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-07 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-07 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-12-07 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-12-08 00-03UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2022-12-08 03-06UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2022-12-08 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2022-12-08 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-12-08 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-12-08 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-08 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-08 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 4.67,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storms are likely on 08 Dec due to CH HSS influences."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 40,
+                "n+1": 40,
+                "n+2": 40,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts, and a slight chance for R3 (Strong) or greater radio blackouts on 06-08 Dec due to the collective flare potential of the regions on the disk."
+            }
+        }
+    },
+    "2022-12-07": {
+        "issue": "2022-12-07 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-12-07 00-03UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-12-07 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-07 06-09UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2022-12-07 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-12-07 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-07 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-07 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-12-07 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-12-08 00-03UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2022-12-08 03-06UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2022-12-08 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2022-12-08 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-12-08 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-12-08 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-08 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-08 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-12-09 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-09 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-09 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-09 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-09 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-09 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-09 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-09 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 4.67,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storms are likely on 08 Dec due to CH HSS influences."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 30,
+                "n+1": 30,
+                "n+2": 30,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts, and a slight chance for R3 (Strong) or greater radio blackouts on 07-09 Dec."
+            }
+        }
+    },
+    "2022-12-08": {
+        "issue": "2022-12-08 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-12-08 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-08 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-12-08 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-08 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-08 12-15UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2022-12-08 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-08 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-08 21-00UT",
+                    4.67,
+                    "G1"
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-12-09 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2022-12-09 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-12-09 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-09 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-09 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-09 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-09 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-09 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-12-10 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-12-10 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-12-10 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-10 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-10 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-10 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-10 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-10 21-00UT",
+                    1.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 5.0,
+                "greatest_expected_kp": 4.67,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storms are possible on 08 Dec due to CH HSS influences."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 30,
+                "n+1": 30,
+                "n+2": 30,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts, and a slight chance for R3 (Strong) or greater radio blackouts on 08-10 Dec."
+            }
+        }
+    },
+    "2022-12-09": {
+        "issue": "2022-12-09 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-12-09 00-03UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2022-12-09 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-09 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-09 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-12-09 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-09 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-09 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-09 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-12-10 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-12-10 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-10 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-10 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-12-10 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-10 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-10 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-10 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-12-11 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-11 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-11 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-11 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-11 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-11 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-11 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-11 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 4.33,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 20,
+                "n+1": 20,
+                "n+2": 20,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a slight chance for R1-R2 (Minor-Moderate) radio blackouts on 09-11 Dec."
+            }
+        }
+    },
+    "2022-12-10": {
+        "issue": "2022-12-10 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-12-10 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2022-12-10 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-10 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-12-10 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-10 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-10 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-10 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-10 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-12-11 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-11 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-11 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-11 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-11 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-11 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-11 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-11 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-12-12 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-12 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-12 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-12 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-12 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-12 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-12 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-12 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 3.33,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 30,
+                "n+1": 30,
+                "n+2": 30,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts on 10-12 Dec."
+            }
+        }
+    },
+    "2022-12-11": {
+        "issue": "2022-12-11 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-12-11 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-11 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-11 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-11 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-11 12-15UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2022-12-11 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-12-11 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-11 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-12-12 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-12 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-12 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-12 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-12 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-12 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-12 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-12 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-12-13 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-13 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-13 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-13 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-13 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-13 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-13 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-13 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 2.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 20,
+                "n+1": 20,
+                "n+2": 20,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a slight chance for R1-R2 (Minor-Moderate) radio blackouts on 11-13 Dec."
+            }
+        }
+    },
+    "2022-12-12": {
+        "issue": "2022-12-12 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-12-12 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-12 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-12 06-09UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2022-12-12 09-12UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2022-12-12 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-12-12 15-18UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2022-12-12 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-12 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-12-13 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-13 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-13 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-13 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-13 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-13 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-13 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-13 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-12-14 00-03UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-14 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-14 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-14 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-14 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-14 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-14 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-14 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 2.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 20,
+                "n+1": 20,
+                "n+2": 20,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a slight chance for R1-R2 (Minor-Moderate) radio blackouts on 12-14 Dec."
+            }
+        }
+    },
+    "2022-12-13": {
+        "issue": "2022-12-13 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-12-13 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-13 03-06UT",
+                    0.33,
+                    null
+                ],
+                [
+                    "2022-12-13 06-09UT",
+                    0.33,
+                    null
+                ],
+                [
+                    "2022-12-13 09-12UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2022-12-13 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-12-13 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-12-13 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-13 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-12-14 00-03UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-14 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-14 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-14 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-14 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-14 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-14 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-14 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-12-15 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-15 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-15 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-15 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-15 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-15 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-15 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-15 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 2.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 20,
+                "n+1": 20,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a slight chance for R1-R2 (Minor-Moderate) radio blackouts on 13-15 Dec."
+            }
+        }
+    },
+    "2022-12-14": {
+        "issue": "2022-12-14 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-12-14 00-03UT",
+                    0.33,
+                    null
+                ],
+                [
+                    "2022-12-14 03-06UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-12-14 06-09UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2022-12-14 09-12UT",
+                    0.33,
+                    null
+                ],
+                [
+                    "2022-12-14 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-14 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-14 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-14 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-12-15 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-15 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-15 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-15 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-15 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-15 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-15 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-15 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-12-16 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-16 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-16 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-16 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-16 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-16 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-16 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-16 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 1.0,
+                "greatest_expected_kp": 1.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 25,
+                "n+1": 25,
+                "n+2": 25,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Dec 14 2022 0740 UTC",
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts on 14-16 Dec due mainly to the flare potential of Region 3165."
+            }
+        }
+    },
+    "2022-12-15": {
+        "issue": "2022-12-15 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-12-15 00-03UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-15 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-15 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-15 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-15 12-15UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2022-12-15 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-15 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-15 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-12-16 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-16 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-16 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-16 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-16 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-16 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-16 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-16 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-12-17 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-17 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-17 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-17 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-17 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-17 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-17 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-17 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 2.0,
+                "greatest_expected_kp": 2.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for S1 (Minor) or greater solar radiation storms on 15-17 Dec mainly due to the flare potential of Region 3165."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 75,
+                "n+1": 60,
+                "n+2": 50,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 15,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R2",
+                "max_blackout_time": "Dec 14 2022 1442 UTC",
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are expected, and there is a slight chance for R3 (Strong) or greater radio blackouts on 15-17 Dec due to the flare potential of Region 3165."
+            }
+        }
+    },
+    "2022-12-16": {
+        "issue": "2022-12-16 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-12-16 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-16 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-16 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-16 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-16 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-12-16 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-12-16 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-16 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-12-17 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-17 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-17 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-17 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-17 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-17 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-17 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-17 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-12-18 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-18 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-18 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-18 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-18 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-18 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-18 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-18 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 2.0,
+                "greatest_expected_kp": 3.33,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for S1 (Minor) or greater solar radiation storms due to the flare potential and favorable location of Region 3165."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 75,
+                "n+1": 75,
+                "n+2": 70,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R2",
+                "max_blackout_time": "Dec 15 2022 2240 UTC",
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are expected, and there is a slight chance for R3 (Strong) or greater radio blackouts on 16-18 Dec due mainly to the flare potential of Region 3165."
+            }
+        }
+    },
+    "2022-12-17": {
+        "issue": "2022-12-17 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-12-17 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-17 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-17 06-09UT",
+                    0.33,
+                    null
+                ],
+                [
+                    "2022-12-17 09-12UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2022-12-17 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-17 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-17 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-17 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-12-18 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-18 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-18 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-18 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-18 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-18 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-18 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-18 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-12-19 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-19 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-19 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-19 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-19 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-19 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-19 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-19 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 0.0,
+                "greatest_expected_kp": 3.33,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "A slight chance for S1 (Minor) or greater solar radiation storms are possible on 17 Dec.  No significant active region activity favorable for radiation storm production is forecast for 18-19 Dec."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 70,
+                "n+1": 60,
+                "n+2": 60,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Dec 16 2022 1440 UTC",
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are likely on 17-19 Dec. A slight chance for R3 (Strong) radio blackouts are possible on 17-19 Dec."
+            }
+        }
+    },
+    "2022-12-18": {
+        "issue": "2022-12-18 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-12-18 00-03UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2022-12-18 03-06UT",
+                    0.0,
+                    null
+                ],
+                [
+                    "2022-12-18 06-09UT",
+                    0.33,
+                    null
+                ],
+                [
+                    "2022-12-18 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-18 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-18 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2022-12-18 18-21UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2022-12-18 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-12-19 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-19 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-19 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-19 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-19 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-19 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-19 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-19 21-00UT",
+                    1.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-12-20 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-20 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-20 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-20 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-20 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-20 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-20 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-20 21-00UT",
+                    1.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 1.0,
+                "greatest_expected_kp": 3.33,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for an S1 event over 18-20 Dec."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 50,
+                "n+1": 50,
+                "n+2": 50,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Dec 17 2022 1953 UTC",
+                "rationale": "There is a chance for R1-R2 events, and a slight chance for R3 or greater events, on 18-20 Dec."
+            }
+        }
+    },
+    "2022-12-20": {
+        "issue": "2022-12-20 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-12-20 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-20 03-06UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-12-20 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-20 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-12-20 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-20 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-20 18-21UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2022-12-20 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-12-21 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-12-21 03-06UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2022-12-21 06-09UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-12-21 09-12UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2022-12-21 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-21 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-21 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-21 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-12-22 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-22 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2022-12-22 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-12-22 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-12-22 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-22 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-22 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-22 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 2.0,
+                "greatest_expected_kp": 4.67,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storms are likely on 21 Dec due to CH HSS influences."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for S1 (Minor) or greater solar radiation storms on 20-22 Dec."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 30,
+                "n+1": 30,
+                "n+2": 30,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts, and a slight chance for R3 (Strong) or greater radio blackouts on 20-22 Dec."
+            }
+        }
+    },
+    "2022-12-21": {
+        "issue": "2022-12-21 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-12-21 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-21 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-21 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-12-21 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-21 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-21 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-21 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-21 21-00UT",
+                    4.67,
+                    "G1"
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-12-22 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-22 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2022-12-22 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-12-22 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-12-22 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-22 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-22 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-22 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-12-23 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-23 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-12-23 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-12-23 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-23 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-23 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-12-23 18-21UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-12-23 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 4.67,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storms are likely on 21 Dec due to CH HSS influences."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for S1 (Minor) or greater solar radiation storms on 21-23 Dec."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 30,
+                "n+1": 30,
+                "n+2": 30,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Dec 20 2022 1406 UTC",
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts, and a slight chance for R3 (Strong) or greater radio blackouts on 21-23 Dec."
+            }
+        }
+    },
+    "2022-12-22": {
+        "issue": "2022-12-22 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-12-22 00-03UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-12-22 03-06UT",
+                    0.33,
+                    null
+                ],
+                [
+                    "2022-12-22 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-22 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-22 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-22 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-22 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-22 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-12-23 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-23 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-12-23 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-12-23 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-23 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-23 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-12-23 18-21UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-12-23 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-12-24 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-24 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-24 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-24 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-24 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-24 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-24 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-24 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 3.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for S1 (Minor) or greater solar radiation storms on 22-23 Dec."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 30,
+                "n+1": 30,
+                "n+2": 20,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) or greater radio blackouts on 22-23 Dec, and a slight chance R1-R2 radio blackouts on 24 Dec. There is also a slight chance for R3 (Strong) or greater radio blackouts on 22-23 Dec."
+            }
+        }
+    },
+    "2022-12-23": {
+        "issue": "2022-12-23 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-12-23 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-12-23 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-23 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2022-12-23 09-12UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2022-12-23 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-23 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-12-23 18-21UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-12-23 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-12-24 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-24 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-24 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-12-24 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-24 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-24 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-24 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-24 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-12-25 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-25 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-25 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-25 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-25 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-12-25 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-25 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-25 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 4.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 20,
+                "n+1": 20,
+                "n+2": 20,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "A slight chance for R1-R2 (Minor-Moderate) exists on 23-25 Dec."
+            }
+        }
+    },
+    "2022-12-24": {
+        "issue": "2022-12-24 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-12-24 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2022-12-24 03-06UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2022-12-24 06-09UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-12-24 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2022-12-24 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-24 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-24 18-21UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2022-12-24 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-12-25 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2022-12-25 03-06UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2022-12-25 06-09UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-12-25 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-25 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-25 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-25 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-25 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-12-26 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-12-26 03-06UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2022-12-26 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-12-26 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-26 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-26 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2022-12-26 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-12-26 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 5.0,
+                "greatest_expected_kp": 4.33,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storms are expected on 24 Dec due to CH HSS influences."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "A slight chance for R1-R2 (Minor-Moderate) activity exists due to possible flare activity from Regions 3169 and 3171."
+            }
+        }
+    },
+    "2022-12-25": {
+        "issue": "2022-12-25 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-12-25 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-12-25 03-06UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2022-12-25 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-25 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2022-12-25 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-25 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-25 18-21UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2022-12-25 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-12-26 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-12-26 03-06UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2022-12-26 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-12-26 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-26 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-26 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2022-12-26 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-12-26 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-12-27 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-27 03-06UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2022-12-27 06-09UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2022-12-27 09-12UT",
+                    5.33,
+                    "G1"
+                ],
+                [
+                    "2022-12-27 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-12-27 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2022-12-27 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-12-27 21-00UT",
+                    4.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 5.33,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storm conditions are likely on 27 Dec due to CME and CH HSS influences."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 10,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "A slight chance for R1-R2 (Minor-Moderate) radio blackouts exist during the period."
+            }
+        }
+    },
+    "2022-12-26": {
+        "issue": "2022-12-26 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-12-26 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-12-26 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-26 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-12-26 09-12UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2022-12-26 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-26 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-26 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-26 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-12-27 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-27 03-06UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2022-12-27 06-09UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2022-12-27 09-12UT",
+                    5.33,
+                    "G1"
+                ],
+                [
+                    "2022-12-27 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-12-27 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2022-12-27 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-12-27 21-00UT",
+                    4.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-12-28 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-28 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2022-12-28 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2022-12-28 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-28 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-28 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-28 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-28 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 5.33,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storm conditions are likely on 27 Dec due to a combination of CME effects and CH HSS influences."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "No R1 (Minor) or greater radio blackouts are expected.  No significant active region flare activity is forecast."
+            }
+        }
+    },
+    "2022-12-27": {
+        "issue": "2022-12-27 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-12-27 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-12-27 03-06UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2022-12-27 06-09UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2022-12-27 09-12UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-12-27 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-27 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-27 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-12-27 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-12-28 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-28 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2022-12-28 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2022-12-28 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-28 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-28 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-28 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-28 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-12-29 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-29 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-29 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-29 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-29 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-29 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-29 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-29 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 5.0,
+                "greatest_expected_kp": 4.67,
+                "greatest_expected_scale": "G1",
+                "rationale": "Isolated G1 (Minor) levels are expected to continue through 27 Dec with ongoing CH HSS and CME effects."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 45,
+                "n+1": 45,
+                "n+2": 45,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Dec 27 2022 0054 UTC",
+                "rationale": "There is a chance for isolated R1-R2 (Minor-Moderate) radio blackouts, and a slight chance for R3 (Strong) radio blackouts, on 27-29 Dec."
+            }
+        }
+    },
+    "2022-12-28": {
+        "issue": "2022-12-28 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-12-28 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-28 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-28 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-28 09-12UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2022-12-28 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-28 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-28 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-28 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-12-29 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-29 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-29 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-29 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-29 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-29 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-29 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-29 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-12-30 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2022-12-30 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-30 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-30 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-12-30 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-30 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-30 18-21UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2022-12-30 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 35,
+                "n+1": 35,
+                "n+2": 35,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Dec 27 2022 1626 UTC",
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts, and a slight chance for isolated R3 (Strong) radio blackouts, primarily from Regions 3176 and 3169."
+            }
+        }
+    },
+    "2022-12-29": {
+        "issue": "2022-12-29 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-12-29 00-03UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2022-12-29 03-06UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2022-12-29 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2022-12-29 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-29 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-29 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-29 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-29 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-12-30 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-30 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-30 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-30 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-30 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-12-30 15-18UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2022-12-30 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-12-30 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-12-31 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2022-12-31 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-12-31 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2022-12-31 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-31 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-31 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-31 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-31 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 2.0,
+                "greatest_expected_kp": 4.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 30,
+                "n+1": 30,
+                "n+2": 35,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Dec 29 2022 0727 UTC",
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate HF radio blackouts) and a slight chance of an R3 (Strong) event on 29-31 Dec."
+            }
+        }
+    },
+    "2022-12-30": {
+        "issue": "2022-12-30 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-12-30 00-03UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2022-12-30 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2022-12-30 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2022-12-30 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2022-12-30 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-30 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-30 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-30 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-12-31 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2022-12-31 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-12-31 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2022-12-31 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-31 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-31 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-31 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-31 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-01-01 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-01 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-01 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-01 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-01 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-01 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-01 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-01 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 5.0,
+                "greatest_expected_kp": 5.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 45,
+                "n+1": 45,
+                "n+2": 45,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Dec 29 2022 1833 UTC",
+                "rationale": "There is still an ongoing a chance for isolated (R1-R2; Minor-Moderate) events, and a slight chance of (R3; Strong) events on 30-31 Dec and 01 Jan due the enhanced magnetic structure and recent flare history of active Regions 3176 and 3180."
+            }
+        }
+    },
+    "2022-12-31": {
+        "issue": "2022-12-31 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-12-31 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2022-12-31 03-06UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2022-12-31 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2022-12-31 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-31 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2022-12-31 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-31 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-12-31 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-01-01 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-01 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-01 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-01 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-01 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-01 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-01 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-01 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-01-02 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-02 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-02 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-02 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-02 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-02 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-02 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-02 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 5.0,
+                "greatest_expected_kp": 3.33,
+                "greatest_expected_scale": "G1",
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 50,
+                "n+1": 50,
+                "n+2": 50,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Dec 30 2022 1938 UTC",
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts over 31 Dec-02 Jan."
+            }
+        }
+    }
+}

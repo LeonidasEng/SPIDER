@@ -1,0 +1,4903 @@
+{
+    "2022-04-01": {
+        "issue": "2022-04-01 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-04-01 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-01 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-01 06-09UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-01 09-12UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-01 12-15UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-01 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-01 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-01 21-00UT",
+                    5.0,
+                    "G1"
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-04-02 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-02 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-02 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-02 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-02 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-02 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-02 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-02 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-04-03 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-03 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-03 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-03 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-03 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-03 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-03 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-03 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 5.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storm levels are expected on 01 Apr due to continued CME activity."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 50,
+                "n+1": 50,
+                "n+2": 50,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a chance for S1 (Minor) solar radiation storms on 01-03 Apr due to potential flare activity from Region 2975."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 75,
+                "n+1": 75,
+                "n+2": 75,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 30,
+                "n+1": 30,
+                "n+2": 30,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R2",
+                "max_blackout_time": "Mar 31 2022 1835 UTC",
+                "rationale": "R1-R2 (Minor-Moderate) levels are expected with a chance for R3 (strong) or greater on 01-03 Apr due to flare potential of Regions 2975, 2978, and 2981."
+            }
+        }
+    },
+    "2022-04-02": {
+        "issue": "2022-04-02 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-04-02 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-02 03-06UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2022-04-02 06-09UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-02 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-02 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-02 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-02 18-21UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-02 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-04-03 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-03 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-03 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-03 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-03 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-03 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-03 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-03 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-04-04 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-04 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-04 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-04 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-04 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-04 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-04 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-04 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 5.0,
+                "greatest_expected_kp": 5.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storm levels were observed early on 02 Apr. Unsettled to active levels are expected on 03 Apr."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 30,
+                "n+1": 30,
+                "n+2": 25,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a chance for S1 (Minor) solar radiation storms on Apr 02-04 due to potential flare activity from Region 2975."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 65,
+                "n+1": 65,
+                "n+2": 35,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 25,
+                "n+1": 25,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Apr 02 2022 0256 UTC",
+                "rationale": "R1-R2 (Minor-Moderate) levels are likely, with a chance for R3 (strong) or greater, on Apr 02-03 due to flare potential of Regions 2975, 2978, and 2981. There is a chance for R1-R2 (Minor-Moderate) radio blackouts on Apr 04 after Region 2975 rotates beyond the west limb."
+            }
+        }
+    },
+    "2022-04-03": {
+        "issue": "2022-04-03 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-04-03 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-03 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-03 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-03 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-03 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-03 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-03 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-03 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-04-04 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-04 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-04 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-04 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-04 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-04 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-04 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-04 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-04-05 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-05 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-05 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-05 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-05 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-05 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-05 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-05 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 4.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 50,
+                "n+1": 25,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": true,
+                "rationale": "There is a chance for S1 (Minor) solar radiations storms on 03-04 Apr and a slight chance for 05 Apr as Region 2975 rotates further around the west limb."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 70,
+                "n+1": 50,
+                "n+2": 25,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 25,
+                "n+1": 5,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Apr 02 2022 1744 UTC",
+                "rationale": "R1-R2 (Minor-Moderate) levels are likely, with a chance for R3 (strong) or greater, on Apr 03 due to flare potential of Regions 2975, 2978, and 2981. There is a chance for R1-R2 (Minor-Moderate) radio blackouts on Apr 04-05 after Region 2975 rotates beyond the west limb."
+            }
+        }
+    },
+    "2022-04-04": {
+        "issue": "2022-04-04 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-04-04 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-04 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-04 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-04 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-04 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-04 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-04 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-04 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-04-05 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-05 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-05 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-05 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-05 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-05 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-05 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-05 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-04-06 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-06 03-06UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-06 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-06 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-06 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-06 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-06 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-06 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 4.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected. Active levels are expected on 06 Apr due to the arrival of the 03 Apr CME."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 25,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "The greater than 10 MeV proton flux may increase above the 10 pfu threshold (S1-Minor) on 04 Mar if Region 2975 produces another significant eruption."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 25,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts on 04 Apr with a slight chanced on 05-06 Apr."
+            }
+        }
+    },
+    "2022-04-05": {
+        "issue": "2022-04-05 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-04-05 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-05 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-05 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-05 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-05 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-05 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-05 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-05 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-04-06 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-06 03-06UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-06 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-06 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-06 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-06 15-18UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-06 18-21UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2022-04-06 21-00UT",
+                    5.0,
+                    "G1"
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-04-07 00-03UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2022-04-07 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-07 06-09UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2022-04-07 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-07 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-07 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-07 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-07 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 2.0,
+                "greatest_expected_kp": 5.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storms are likely on 06-07 Apr with a CME that left the Sun on 03 Apr."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for S1 (Minor) or greater solar radiation storms for the next three days (05-07 Apr)."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 25,
+                "n+1": 20,
+                "n+2": 20,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts on 05 Apr, then a slight chance on 06-07 Apr. There is a slight chance for R3 (Strong) or greater radio blackouts all three days (05-07 Apr)."
+            }
+        }
+    },
+    "2022-04-06": {
+        "issue": "2022-04-06 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-04-06 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-06 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-06 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-06 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-06 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-06 15-18UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-06 18-21UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2022-04-06 21-00UT",
+                    5.0,
+                    "G1"
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-04-07 00-03UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2022-04-07 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-07 06-09UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2022-04-07 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-07 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-07 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-07 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-07 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-04-08 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-08 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-08 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-08 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-08 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-08 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-08 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-08 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 5.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storms are likely on 06-07 Apr with a CME that erupted from the Sun on 03 Apr."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 15,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a slight chance for R1-R2 (Minor-Moderate) radio blackouts through 08 Apr."
+            }
+        }
+    },
+    "2022-04-07": {
+        "issue": "2022-04-07 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-04-07 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-07 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-07 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-07 09-12UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-07 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-07 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-07 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-07 21-00UT",
+                    5.0,
+                    "G1"
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-04-08 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-08 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-08 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-08 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-08 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-08 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-08 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-08 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-04-09 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-09 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-09 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-09 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-09 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-09 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-09 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-09 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 5.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storms remain likely on 07 Apr with ongoing CME influences."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a slight chance for R1-R2 (Minor-Moderate) radio blackouts 07-08 Apr."
+            }
+        }
+    },
+    "2022-04-08": {
+        "issue": "2022-04-08 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-04-08 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-08 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-08 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-08 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-08 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-08 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-08 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-08 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-04-09 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-09 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-09 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-09 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-09 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-09 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-09 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-09 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-04-10 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-10 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-10 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-10 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-10 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-10 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-10 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-10 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 4.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a slight chance for R1-R2 (Minor-Moderate) radio blackouts through 09 Apr."
+            }
+        }
+    },
+    "2022-04-09": {
+        "issue": "2022-04-09 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-04-09 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-09 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-09 06-09UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-09 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-09 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-09 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-09 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-09 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-04-10 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-10 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-10 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-10 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-10 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-10 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-10 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-10 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-04-11 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-11 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-11 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-11 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-11 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-11 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-11 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-11 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 4.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 5,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "No R1 (Minor) or greater radio blackouts are expected.  No significant active region flare activity is forecast."
+            }
+        }
+    },
+    "2022-04-10": {
+        "issue": "2022-04-10 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-04-10 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-10 03-06UT",
+                    7.0,
+                    "G3"
+                ],
+                [
+                    "2022-04-10 06-09UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2022-04-10 09-12UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-10 12-15UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2022-04-10 15-18UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-10 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-10 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-04-11 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-11 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-11 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-11 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-11 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-11 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-11 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-11 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-04-12 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-12 03-06UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-12 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-12 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-12 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-12 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-12 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-12 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 7.0,
+                "greatest_expected_kp": 7.0,
+                "greatest_expected_scale": "G3",
+                "rationale": "G3 (Strong) geomagnetic storms were observed on Apr 10 due to combined CME/CH HSS influence."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "No R1 (Minor) or greater radio blackouts are expected.  No significant active region flare activity is forecast."
+            }
+        }
+    },
+    "2022-04-11": {
+        "issue": "2022-04-11 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-04-11 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-11 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-11 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-11 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-11 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-11 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-11 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-11 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-04-12 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-12 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-12 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-12 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-12 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-12 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-12 18-21UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-12 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-04-13 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-13 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-13 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-13 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-13 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-13 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-13 18-21UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-13 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 4.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "No R1 (Minor) or greater radio blackouts are expected.  No significant active region flare activity is forecast."
+            }
+        }
+    },
+    "2022-04-12": {
+        "issue": "2022-04-12 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-04-12 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-12 03-06UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-12 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-12 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-12 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-12 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-12 18-21UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-12 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-04-13 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-13 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-13 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-13 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-13 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-13 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-13 18-21UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-13 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-04-14 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-14 03-06UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2022-04-14 06-09UT",
+                    6.0,
+                    "G2"
+                ],
+                [
+                    "2022-04-14 09-12UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2022-04-14 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-14 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-14 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-14 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 2.0,
+                "greatest_expected_kp": 6.0,
+                "greatest_expected_scale": "G2",
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "No R1 (Minor) or greater radio blackouts are expected.  No significant active region flare activity is forecast."
+            }
+        }
+    },
+    "2022-04-13": {
+        "issue": "2022-04-13 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-04-13 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-13 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-13 06-09UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-13 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-13 12-15UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-13 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-13 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-13 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-04-14 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-14 03-06UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2022-04-14 06-09UT",
+                    6.0,
+                    "G2"
+                ],
+                [
+                    "2022-04-14 09-12UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2022-04-14 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-14 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-14 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-14 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-04-15 00-03UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2022-04-15 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-15 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-15 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-15 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-15 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-15 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-15 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 6.0,
+                "greatest_expected_scale": "G2",
+                "rationale": "G2 (Moderate) geomagnetic storms are likely on 14 Apr due to the anticipated arrival of a full halo CME that left the Sun on 11 Apr. G1 (Minor) storms are likely to carry over into 15 Apr along with the arrival of a positive polarity CH HSS."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "No R1 (Minor) or greater radio blackouts are expected.  No significant active region flare activity is forecast."
+            }
+        }
+    },
+    "2022-04-15": {
+        "issue": "2022-04-15 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-04-15 00-03UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2022-04-15 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-15 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-15 09-12UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-15 12-15UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-15 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-15 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-15 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-04-16 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-16 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-16 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-16 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-16 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-16 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-16 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-16 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-04-17 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-17 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-17 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-17 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-17 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-17 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-17 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-17 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 6.0,
+                "greatest_expected_kp": 5.0,
+                "greatest_expected_scale": "G2",
+                "rationale": "G1 (Minor) geomagnetic storms are expected on 15 Apr due to CME influence."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 1,
+                "n+1": 5,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Apr 15 2022 1149 UTC",
+                "rationale": "There is a slight chance for R1 (Minor) or greater radio blackouts on Apr 17 due to an active area behind the East limb."
+            }
+        }
+    },
+    "2022-04-16": {
+        "issue": "2022-04-16 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-04-16 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-16 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-16 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-16 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-16 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-16 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-16 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-16 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-04-17 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-17 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-17 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-17 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-17 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-17 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-17 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-17 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-04-18 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-18 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-18 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-18 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-18 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-18 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-18 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-18 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 4.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 20,
+                "n+1": 20,
+                "n+2": 20,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Apr 15 2022 1359 UTC",
+                "rationale": "There is a slight chance for R1 (Minor) or greater radio blackouts on Apr 16-18 due to an active region around the East limb."
+            }
+        }
+    },
+    "2022-04-17": {
+        "issue": "2022-04-17 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-04-17 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-17 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-17 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-17 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-17 12-15UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-17 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-17 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-17 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-04-18 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-18 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-18 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-18 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-18 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-18 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-18 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-18 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-04-19 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-19 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-19 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-19 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-19 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-19 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-19 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-19 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 4.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 65,
+                "n+1": 65,
+                "n+2": 65,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R3",
+                "max_blackout_time": "Apr 17 2022 0334 UTC",
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are likely with a slight chance for R3 (Strong) radio blackouts on Apr 17-19 due to flare history from Regions 2993 and 2994."
+            }
+        }
+    },
+    "2022-04-18": {
+        "issue": "2022-04-18 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-04-18 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-18 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-18 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-18 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-18 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-18 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-18 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-18 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-04-19 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-19 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-19 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-19 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-19 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-19 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-19 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-19 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-04-20 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-20 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-20 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-20 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-20 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-20 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-20 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-20 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 4.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 75,
+                "n+1": 75,
+                "n+2": 75,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 25,
+                "n+1": 25,
+                "n+2": 25,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Apr 17 2022 2234 UTC",
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are expected, with a chance for R3 (Strong) radio blackouts on Apr 18-20 due to flare history from Regions 2992, 2993, and 2994."
+            }
+        }
+    },
+    "2022-04-19": {
+        "issue": "2022-04-19 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-04-19 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-19 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-19 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-19 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-19 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-19 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-19 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-19 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-04-20 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-20 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-20 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-20 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-20 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-20 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-20 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-20 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-04-21 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-21 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-21 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-21 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-21 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-21 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-21 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-21 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 3.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 75,
+                "n+1": 75,
+                "n+2": 75,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 25,
+                "n+1": 25,
+                "n+2": 25,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Apr 18 2022 1724 UTC",
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are expected, with a chance for R3 (Strong) radio blackouts 19-21 Apr."
+            }
+        }
+    },
+    "2022-04-20": {
+        "issue": "2022-04-20 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-04-20 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-20 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-20 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-20 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-20 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-20 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-20 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-20 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-04-21 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-21 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-21 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-21 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-21 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-21 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-21 18-21UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-21 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-04-22 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-22 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-22 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-22 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-22 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-22 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-22 18-21UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-22 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 3.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 75,
+                "n+1": 75,
+                "n+2": 75,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 25,
+                "n+1": 25,
+                "n+2": 25,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R3",
+                "max_blackout_time": "Apr 20 2022 0357 UTC",
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are expected, with a chance of R3 (Strong) or greater radio blackouts."
+            }
+        }
+    },
+    "2022-04-21": {
+        "issue": "2022-04-21 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-04-21 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-21 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-21 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-21 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-21 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-21 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-21 18-21UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-21 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-04-22 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-22 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-22 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-22 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-22 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-22 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-22 18-21UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-22 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-04-23 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-23 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-23 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-23 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-23 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-23 15-18UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-23 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-23 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 4.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 75,
+                "n+1": 75,
+                "n+2": 75,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 25,
+                "n+1": 25,
+                "n+2": 25,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R2",
+                "max_blackout_time": "Apr 21 2022 0159 UTC",
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are expected, with a chance for R3 (Strong) or higher."
+            }
+        }
+    },
+    "2022-04-22": {
+        "issue": "2022-04-22 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-04-22 00-03UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-22 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-22 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-22 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-22 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-22 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-22 18-21UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-22 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-04-23 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-23 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-23 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-23 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-23 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-23 15-18UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-23 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-23 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-04-24 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-24 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-24 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-24 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-24 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-24 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-24 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-24 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 4.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 75,
+                "n+1": 75,
+                "n+2": 75,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 25,
+                "n+1": 25,
+                "n+2": 25,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Apr 22 2022 0514 UTC",
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are expected, with a chance for R3 (Strong) or higher activity 22-24 Apr."
+            }
+        }
+    },
+    "2022-04-23": {
+        "issue": "2022-04-23 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-04-23 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-23 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-23 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-23 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-23 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-23 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-23 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-23 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-04-24 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-24 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-24 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-24 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-24 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-24 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-24 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-24 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-04-25 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-25 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-25 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-25 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-25 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-25 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-25 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-25 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 2.0,
+                "greatest_expected_kp": 3.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 50,
+                "n+1": 50,
+                "n+2": 50,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Apr 22 2022 1325 UTC",
+                "rationale": "R1-R2 (Minor to Moderate) or radio blackouts are likely, with a slight chance for R3 (Strong) events associated with Regions 2993 and 2994."
+            }
+        }
+    },
+    "2022-04-24": {
+        "issue": "2022-04-24 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-04-24 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-24 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-24 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-24 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-24 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-24 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-24 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-24 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-04-25 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-25 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-25 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-25 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-25 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-25 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-25 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-25 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-04-26 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-26 03-06UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-26 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-26 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-26 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-26 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-26 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-26 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 3.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 40,
+                "n+1": 40,
+                "n+2": 40,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts, and a slight chance for R3 (Strong) or greater radio blackouts on 24-26 Apr."
+            }
+        }
+    },
+    "2022-04-25": {
+        "issue": "2022-04-25 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-04-25 00-03UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-25 03-06UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-25 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-25 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-25 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-25 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-25 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-25 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-04-26 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-26 03-06UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-26 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-26 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-26 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-26 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-26 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-26 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-04-27 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-27 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-27 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-27 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-27 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-27 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-27 18-21UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-27 21-00UT",
+                    1.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 2.0,
+                "greatest_expected_kp": 2.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 40,
+                "n+1": 40,
+                "n+2": 40,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Apr 25 2022 0201 UTC",
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts and a slight chance for R3 (Strong) or greater radio blackouts on 25-27 Apr."
+            }
+        }
+    },
+    "2022-04-26": {
+        "issue": "2022-04-26 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-04-26 00-03UT",
+                    0.0,
+                    null
+                ],
+                [
+                    "2022-04-26 03-06UT",
+                    0.0,
+                    null
+                ],
+                [
+                    "2022-04-26 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-26 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-26 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-26 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-26 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-26 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-04-27 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-27 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-27 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-27 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-27 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-27 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-27 18-21UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-27 21-00UT",
+                    1.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-04-28 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-28 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-28 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-28 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-28 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-28 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-28 18-21UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-28 21-00UT",
+                    1.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 2.0,
+                "greatest_expected_kp": 2.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for an S1 (Minor) solar radiation storm 26-28 Apr."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 35,
+                "n+1": 35,
+                "n+2": 35,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts and a slight chance for an R3 (Strong) or higher event 26-28 Apr."
+            }
+        }
+    },
+    "2022-04-27": {
+        "issue": "2022-04-27 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-04-27 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-27 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-27 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-27 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-27 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-27 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-27 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-27 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-04-28 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-28 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-28 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-28 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-28 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-28 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-28 18-21UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-04-28 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-04-29 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-29 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-29 06-09UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2022-04-29 09-12UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-29 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-29 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-29 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-29 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 2.0,
+                "greatest_expected_kp": 5.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storms are likely on 29 Apr due to CIR and CH HSS influences."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance of S1 (Minor) solar radiation storms 27-29 Apr."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 25,
+                "n+1": 25,
+                "n+2": 25,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance of R1-R2 (Minor-Moderate) radio blackouts, with a slight chance of a R3 (Strong) event 27-29 Apr."
+            }
+        }
+    },
+    "2022-04-28": {
+        "issue": "2022-04-28 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-04-28 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-28 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-28 06-09UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-28 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-28 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-28 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-28 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-28 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-04-29 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-29 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-29 06-09UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2022-04-29 09-12UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-29 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-29 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-29 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-29 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-04-30 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-30 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-30 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-30 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-30 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-30 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-30 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-30 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 5.0,
+                "greatest_expected_kp": 5.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storms are likely on 29 Apr due to CH HSS effects."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for S1 (Minor) solar radiation storms 28-29 Apr."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 25,
+                "n+1": 20,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance of R1-R2 (Minor-Moderate) radio blackouts 28 Apr and slight chance 29-30 Apr."
+            }
+        }
+    },
+    "2022-04-29": {
+        "issue": "2022-04-29 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-04-29 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-29 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-29 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-29 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-29 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-29 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-29 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-29 21-00UT",
+                    5.0,
+                    "G1"
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-04-30 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-30 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-30 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-30 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-30 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-30 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-30 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-30 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-05-01 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-05-01 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-05-01 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-05-01 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-05-01 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-05-01 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-05-01 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-05-01 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 5.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storms are likely on 29 Apr due to CH HSS influences."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for S1 (Minor) solar radiation storms on 29-30 Apr due to potential from Regions 2993 and 2994."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 25,
+                "n+1": 25,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Apr 29 2022 0730 UTC",
+                "rationale": "There is a chance for R1-R2 (Minor) radio blackouts on 29-30 Apr, and a slight chance for R1-R2 radio blackouts on 01 May."
+            }
+        }
+    },
+    "2022-04-30": {
+        "issue": "2022-04-30 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-04-30 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-04-30 03-06UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2022-04-30 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-30 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-30 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-04-30 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-30 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-04-30 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-05-01 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-05-01 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-05-01 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-05-01 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-05-01 12-15UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-05-01 15-18UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-05-01 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-05-01 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-05-02 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-05-02 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-05-02 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-05-02 09-12UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-05-02 12-15UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-05-02 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-05-02 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-05-02 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 5.0,
+                "greatest_expected_kp": 5.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for S1 (Minor) or greater solar radiation storms on 30 Apr-01 May."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 25,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Apr 30 2022 0958 UTC",
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts on 30 Apr, And a slight chance for R1-R2 radio blackouts on 01-02 May."
+            }
+        }
+    }
+}

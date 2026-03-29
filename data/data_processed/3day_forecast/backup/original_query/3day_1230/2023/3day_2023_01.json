@@ -1,0 +1,5241 @@
+{
+    "2023-01-01": {
+        "issue": "2023-01-01 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-01-01 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-01 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-01 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-01 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-01-01 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-01-01 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-01 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-01 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-01-02 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-02 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-02 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-02 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-02 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-02 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-01-02 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-02 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-01-03 00-03UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-03 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-03 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-03 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-03 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-03 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-03 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-03 21-00UT",
+                    1.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 3.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 40,
+                "n+1": 40,
+                "n+2": 40,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts over 01-03 Jan."
+            }
+        }
+    },
+    "2023-01-02": {
+        "issue": "2023-01-02 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-01-02 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-02 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-02 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-02 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-02 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-01-02 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-01-02 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-02 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-01-03 00-03UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-03 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-03 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-03 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-03 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-03 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-03 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-03 21-00UT",
+                    1.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-01-04 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-04 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-04 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-01-04 09-12UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2023-01-04 12-15UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2023-01-04 15-18UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-01-04 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-04 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 4.67,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storms are likely on 04 Jan due to CH HSS and CME influences."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 35,
+                "n+1": 35,
+                "n+2": 35,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts over 02-04 Jan."
+            }
+        }
+    },
+    "2023-01-03": {
+        "issue": "2023-01-03 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-01-03 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-03 03-06UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2023-01-03 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-03 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-01-03 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-01-03 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-03 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-03 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-01-04 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-04 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-04 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-01-04 09-12UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2023-01-04 12-15UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2023-01-04 15-18UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-01-04 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-04 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-01-05 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-01-05 03-06UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2023-01-05 06-09UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-01-05 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-01-05 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-05 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-05 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-05 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 4.67,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storm periods are likely on 04-05 Jan due to the onset of negative polarity CH HSS influences and the anticipated arrival of a CME from 30 Dec."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 35,
+                "n+1": 35,
+                "n+2": 35,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance for M-class (R1-R2: Minor/Moderate) flare activity over 03-05 Jan"
+            }
+        }
+    },
+    "2023-01-04": {
+        "issue": "2023-01-04 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-01-04 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-01-04 03-06UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2023-01-04 06-09UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2023-01-04 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-01-04 12-15UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2023-01-04 15-18UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2023-01-04 18-21UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-01-04 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-01-05 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-01-05 03-06UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2023-01-05 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-01-05 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-01-05 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-05 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-05 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-05 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-01-06 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-01-06 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-01-06 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-06 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-06 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-06 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-06 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-06 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 5.0,
+                "greatest_expected_kp": 5.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) storm levels are possible on 04 Jan, due to CME influences and possible CIR arrival. CME influences are likely to diminish on 05 Jan, yet CH HSS effects are expected to continue and G1 levels remain likely."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 30,
+                "n+1": 30,
+                "n+2": 30,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There remains a chance for R1-R2 (Minor-Moderate) and slight chance for R3 (Strong) radio blackouts on 04-06 Jan."
+            }
+        }
+    },
+    "2023-01-05": {
+        "issue": "2023-01-05 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-01-05 00-03UT",
+                    0.33,
+                    null
+                ],
+                [
+                    "2023-01-05 03-06UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-01-05 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-05 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-01-05 12-15UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2023-01-05 15-18UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2023-01-05 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-01-05 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-01-06 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-01-06 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-01-06 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-06 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-06 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-06 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-06 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-06 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-01-07 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-07 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-07 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-07 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-07 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-07 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-07 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-07 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 4.67,
+                "greatest_expected_scale": "G1",
+                "rationale": "Isolated G1 (Minor) storm levels are expected on 05 Jan as CME influences wane, yet CH HSS influences begin. Unsettled to active levels are expected, with a chance for isolated G1 (Minor) storming by 06 Jan as CH HSS influences persist."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 35,
+                "n+1": 35,
+                "n+2": 35,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a continuing chance ofR1-R2 (Minor-Moderate) and a slight chance of R3 (Strong) radio blackouts, due mainly to the magnetic complexity of Regions 3180 and 3182."
+            }
+        }
+    },
+    "2023-01-06": {
+        "issue": "2023-01-06 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-01-06 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-06 03-06UT",
+                    0.33,
+                    null
+                ],
+                [
+                    "2023-01-06 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-01-06 09-12UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2023-01-06 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-06 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-06 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-01-06 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-01-07 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-07 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-07 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-07 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-07 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-01-07 15-18UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2023-01-07 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-07 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-01-08 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-08 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-01-08 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-08 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-08 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-01-08 15-18UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2023-01-08 18-21UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-01-08 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 3.33,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 45,
+                "n+1": 45,
+                "n+2": 45,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 20,
+                "n+1": 20,
+                "n+2": 20,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R3",
+                "max_blackout_time": "Jan 06 2023 0057 UTC",
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate), and a slight chance for R3 (Strong) or greater, radio blackouts over 06-08 Jan."
+            }
+        }
+    },
+    "2023-01-07": {
+        "issue": "2023-01-07 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-01-07 00-03UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-07 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-07 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-01-07 09-12UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2023-01-07 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-01-07 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-01-07 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-07 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-01-08 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-08 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-01-08 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-08 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-08 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-01-08 15-18UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2023-01-08 18-21UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-01-08 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-01-09 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-09 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-09 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-01-09 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-09 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-09 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-09 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-09 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 3.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for S1 (Minor) radiation storms over 07-09 Jan."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 40,
+                "n+1": 40,
+                "n+2": 40,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 20,
+                "n+1": 20,
+                "n+2": 20,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Jan 07 2023 0052 UTC",
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) events, and a slight chance for R3 (Strong) or greater events, over 07-09 Jan."
+            }
+        }
+    },
+    "2023-01-08": {
+        "issue": "2023-01-08 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-01-08 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-08 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-08 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-08 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-08 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-01-08 15-18UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2023-01-08 18-21UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-01-08 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-01-09 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-09 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-09 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-09 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-09 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-09 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-09 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-09 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-01-10 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-10 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-10 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-01-10 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-01-10 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-10 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-10 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-01-10 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 3.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for S1 (Minor) radiation storm conditions over 08-10 Jan."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 60,
+                "n+1": 60,
+                "n+2": 60,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 25,
+                "n+1": 25,
+                "n+2": 25,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Jan 08 2023 0948 UTC",
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are likely, with a chance for R3 (Strong) or greater events, over 08-10 Jan."
+            }
+        }
+    },
+    "2023-01-09": {
+        "issue": "2023-01-09 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-01-09 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-09 03-06UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2023-01-09 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-01-09 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-01-09 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-09 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-09 18-21UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-01-09 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-01-10 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-10 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-10 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-01-10 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-01-10 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-10 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-10 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-01-10 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-01-11 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-11 03-06UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-01-11 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-01-11 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-11 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-11 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-11 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-11 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 3.33,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for S1 (Minor) solar radiation storm conditions over 09-11 Jan."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 70,
+                "n+1": 70,
+                "n+2": 70,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 30,
+                "n+1": 30,
+                "n+2": 30,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Jan 09 2023 0901 UTC",
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are likely, with a chance for R3 (Strong) or greater events, over 09-11 Jan."
+            }
+        }
+    },
+    "2023-01-10": {
+        "issue": "2023-01-10 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-01-10 00-03UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-01-10 03-06UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2023-01-10 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-01-10 09-12UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2023-01-10 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-10 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-10 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-01-10 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-01-11 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-11 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-11 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-11 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-11 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-11 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-11 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-11 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-01-12 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-12 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-12 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-12 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-12 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-12 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-12 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-12 21-00UT",
+                    1.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 2.0,
+                "greatest_expected_kp": 3.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 20,
+                "n+1": 20,
+                "n+2": 20,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "A slight chance of an S1 (Minor) event exists all three days due mainly to the increasingly favorable location and probability of a solar energetic proton event from, in particular, Region 3181."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 70,
+                "n+1": 70,
+                "n+2": 70,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 25,
+                "n+1": 25,
+                "n+2": 25,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R3",
+                "max_blackout_time": "Jan 09 2023 1850 UTC",
+                "rationale": "Moderate solar activity is likely, with the continuing likelihood of M-class (R1-R2; Minor-Moderate) flares and a chance of an X-class (R3; Strong) event 10-12 Jan due to the combined flare probabilities of primarily Regions 3184, 3182, and 3181."
+            }
+        }
+    },
+    "2023-01-11": {
+        "issue": "2023-01-11 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-01-11 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-11 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-11 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-11 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-11 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-11 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-11 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-11 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-01-12 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-12 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-12 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-12 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-12 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-12 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-12 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-12 21-00UT",
+                    1.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-01-13 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-13 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-13 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-13 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-13 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-13 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-13 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-13 21-00UT",
+                    1.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 2.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 20,
+                "n+1": 20,
+                "n+2": 20,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "A slight chance of an S1 (Minor) solar radiation storm will persist through 13 Jan due to the combined solar energetic proton event potential of the several large sunspot group complexes present."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 65,
+                "n+1": 65,
+                "n+2": 65,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 30,
+                "n+1": 30,
+                "n+2": 30,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R3",
+                "max_blackout_time": "Jan 10 2023 2247 UTC",
+                "rationale": "M-class flares (R1-2, Minor-Moderate), with a chance of isolated X-class (R3-Strong) events, will remain likely through 13 Jan due primarily to the combined flare probabilities of Regions 3181, 3182, 3184, and 3186."
+            }
+        }
+    },
+    "2023-01-12": {
+        "issue": "2023-01-12 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-01-12 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-01-12 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-12 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-12 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-12 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-12 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-12 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-12 21-00UT",
+                    1.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-01-13 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-13 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-13 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-13 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-13 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-13 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-13 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-13 21-00UT",
+                    1.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-01-14 00-03UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-01-14 03-06UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-01-14 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-14 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-14 12-15UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-01-14 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-01-14 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-14 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 3.33,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 20,
+                "n+1": 20,
+                "n+2": 20,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance of an S1 (Minor) solar radiation storm all three days primarily due to ARs 3181 and 3182."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 55,
+                "n+1": 55,
+                "n+2": 55,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 20,
+                "n+1": 20,
+                "n+2": 20,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Jan 12 2023 0650 UTC",
+                "rationale": "Isolated R1-2 (Minor-Moderate) radio blackouts are likely to continue throughout the forecast period given the large AR complexes inhabiting the visible solar disk. A slight chance for an R3 (Strong) event can not be ruled out all three days as well primarily due to the flare history and potential of AR 3186."
+            }
+        }
+    },
+    "2023-01-13": {
+        "issue": "2023-01-13 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-01-13 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-13 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-13 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-13 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-13 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-13 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-13 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-13 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-01-14 00-03UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-01-14 03-06UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-01-14 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-14 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-14 12-15UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-01-14 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-01-14 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-14 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-01-15 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-01-15 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-15 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-15 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-15 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-15 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-15 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-15 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 3.33,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 25,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "The greater than 10 MeV proton flux is expected to remain below S1 (Minor) levels, but a chance for a threshold event remains a reality for 13 Jan. Probabilities for an event decrease to a slight chance 14-15 Jan as Region 3181, along with the culprit of the current particle environment's state, continue beyond the western limb."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 55,
+                "n+1": 45,
+                "n+2": 45,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 15,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Jan 13 2023 1015 UTC",
+                "rationale": "Solar activity is likely to be moderate, with the continued likelihood of M-class (R1-R2; Minor-Moderate) flares and a slight chance of X-class (R3-Strong) events through 13 Jan. Probabilities decrease slightly 14-15 Jan with a chance for M-class flares remaining."
+            }
+        }
+    },
+    "2023-01-14": {
+        "issue": "2023-01-14 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-01-14 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-01-14 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-01-14 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-14 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-14 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-01-14 15-18UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-01-14 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-14 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-01-15 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-01-15 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-15 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-15 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-15 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-15 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-15 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-15 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-01-16 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-16 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-16 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-16 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-16 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-16 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-16 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-16 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 4.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 20,
+                "n+1": 15,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for S1 (Minor) or greater solar radiation storms on Jan 14-16 primarily from Region 3181."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 55,
+                "n+1": 55,
+                "n+2": 55,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Jan 14 2023 0210 UTC",
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are likely, with a slight chance for R3 or greater radio blackouts on Jan 14-16 due to the flare history and magnetic complexity of several regions on the visible disk."
+            }
+        }
+    },
+    "2023-01-15": {
+        "issue": "2023-01-15 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-01-15 00-03UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2023-01-15 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-01-15 06-09UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-01-15 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-01-15 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-15 15-18UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2023-01-15 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-15 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-01-16 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-16 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-16 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-16 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-16 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-16 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-16 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-16 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-01-17 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-17 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-17 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-17 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-17 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-17 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-17 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-17 21-00UT",
+                    1.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 5.0,
+                "greatest_expected_kp": 5.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storms are expected on 15 Jan in response to transient influence."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 25,
+                "n+1": 25,
+                "n+2": 25,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There exists a chance for S1 (Minor) solar radiation storms over 15-17 Jan due to the flare potential of several complex regions on the visible disk."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 60,
+                "n+1": 60,
+                "n+2": 55,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R2",
+                "max_blackout_time": "Jan 15 2023 0342 UTC",
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are likely, with a slight chance for R3 (Strong) radio blackouts on Jan 15-17. This increased flare probability is due to the magnetic complexity and recent flare history of several regions on the visible disk."
+            }
+        }
+    },
+    "2023-01-16": {
+        "issue": "2023-01-16 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-01-16 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-01-16 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-16 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-01-16 09-12UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-01-16 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-16 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-16 18-21UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-01-16 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-01-17 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-17 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-17 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-17 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-17 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-17 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-17 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-17 21-00UT",
+                    1.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-01-18 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-18 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-18 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-18 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-18 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-18 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-18 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-18 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 5.0,
+                "greatest_expected_kp": 4.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a chance for S1 (Minor) or greater solar radiation storms on Jan 16-18."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 60,
+                "n+1": 60,
+                "n+2": 55,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Jan 15 2023 1431 UTC",
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are likely, with a slight chance for R3 (Strong) or greater radio blackouts, on Jan 16-18 due to the magnetic complexity and flare history of several active regions on the visible disk."
+            }
+        }
+    },
+    "2023-01-17": {
+        "issue": "2023-01-17 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-01-17 00-03UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2023-01-17 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-17 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-17 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-01-17 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-17 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-17 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-17 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-01-18 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-18 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-18 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-18 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-18 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-18 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-18 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-18 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-01-19 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-01-19 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-01-19 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-01-19 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-19 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-19 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-01-19 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-01-19 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "A slight chance for an S1 (minor) event will persist throughout the forecast period given the flare history of ARs approaching the western limb."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 60,
+                "n+1": 60,
+                "n+2": 60,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "R1-2 (Minor-Moderate) radio blackouts are likely through 19 Jan with a slight chance for an isolated R3 (Strong) event primarily due to ARs 3186, 3190 and 3192."
+            }
+        }
+    },
+    "2023-01-18": {
+        "issue": "2023-01-18 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-01-18 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-01-18 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-01-18 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-01-18 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-01-18 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-18 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-18 18-21UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-01-18 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-01-19 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-01-19 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-01-19 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-01-19 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-19 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-19 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-01-19 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-01-19 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-01-20 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-01-20 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-01-20 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-20 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-01-20 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-20 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-20 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-20 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 4.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "A slight chance for S1 (Minor) solar radiation will persist throughout the forecast period given the total disk potential of the current, visible active regions."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 60,
+                "n+1": 55,
+                "n+2": 50,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Jan 17 2023 2329 UTC",
+                "rationale": "Isolated R1-2 (Minor-Moderate) radio blackouts remain likely through 19 Jan primarily due to the flare potential exhibited by Regions 3190, 3191 and 3192. A slight chance for an isolated R3 (Strong) event will also remain present during this time. Probabilities for an event decrease slightly on 20 Jan."
+            }
+        }
+    },
+    "2023-01-19": {
+        "issue": "2023-01-19 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-01-19 00-03UT",
+                    0.33,
+                    null
+                ],
+                [
+                    "2023-01-19 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-19 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-01-19 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-19 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-19 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-01-19 18-21UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-01-19 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-01-20 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-01-20 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-20 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-20 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-01-20 12-15UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-01-20 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-01-20 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-01-20 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-01-21 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-01-21 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-01-21 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-01-21 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-01-21 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-01-21 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-21 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-21 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 4.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for S1 (Minor) or greater solar radiation storms all three days."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 60,
+                "n+1": 60,
+                "n+2": 60,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Jan 19 2023 1012 UTC",
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are likely all three days. There is a slight chance for R3 (Strong) or greater radio blackouts all three days."
+            }
+        }
+    },
+    "2023-01-20": {
+        "issue": "2023-01-20 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-01-20 00-03UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-01-20 03-06UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-01-20 06-09UT",
+                    0.0,
+                    null
+                ],
+                [
+                    "2023-01-20 09-12UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2023-01-20 12-15UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-01-20 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-01-20 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-01-20 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-01-21 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-01-21 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-01-21 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-01-21 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-01-21 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-01-21 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-21 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-21 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-01-22 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-22 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-22 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-22 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-22 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-22 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-22 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-22 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for S1 (Minor) or greater solar radiation storms on Jan 20-22."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 60,
+                "n+1": 60,
+                "n+2": 55,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are likely, and a slight chance for R3 (Strong) blackouts, on Jan 20-22."
+            }
+        }
+    },
+    "2023-01-21": {
+        "issue": "2023-01-21 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-01-21 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-01-21 03-06UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2023-01-21 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-01-21 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-21 12-15UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-01-21 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-21 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-21 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-01-22 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-01-22 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-01-22 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-22 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-22 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-22 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-22 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-22 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-01-23 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-23 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-23 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-23 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-23 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-23 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-23 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-23 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 4.33,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for S1 (Minor) or greater solar radiation storms on Jan 21-23."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 55,
+                "n+1": 55,
+                "n+2": 55,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are likely, with a slight chance for R3 (Strong) radio blackouts on Jan 21-23."
+            }
+        }
+    },
+    "2023-01-22": {
+        "issue": "2023-01-22 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-01-22 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-22 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-22 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-22 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-22 12-15UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-01-22 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-01-22 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-22 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-01-23 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-01-23 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-01-23 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-23 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-23 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-23 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-01-23 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-23 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-01-24 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-24 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-24 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-24 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-24 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-24 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-24 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-24 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 4.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for S1 (Minor) or greater solar radiation storms on Jan 22-24."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 50,
+                "n+1": 50,
+                "n+2": 50,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There exists a chance for R1-R2 (Minor-Moderate) radio blackouts, with a slight chance for R3 (Strong) radio blackouts on Jan 22-24."
+            }
+        }
+    },
+    "2023-01-23": {
+        "issue": "2023-01-23 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-01-23 00-03UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2023-01-23 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-23 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-01-23 09-12UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2023-01-23 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-23 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-01-23 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-23 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-01-24 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-24 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-24 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-24 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-24 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-24 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-24 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-24 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-01-25 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-01-25 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-01-25 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-01-25 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-25 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-25 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-25 18-21UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-01-25 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for S1 (Minor) or greater solar radiation storms on Jan 23-25."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 35,
+                "n+1": 35,
+                "n+2": 35,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Jan 22 2023 1702 UTC",
+                "rationale": "There exists a chance for R1-R2 (Minor-Moderate) radio blackouts on Jan 23-25."
+            }
+        }
+    },
+    "2023-01-24": {
+        "issue": "2023-01-24 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-01-24 00-03UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-24 03-06UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2023-01-24 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-01-24 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-24 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-24 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-24 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-24 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-01-25 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-01-25 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-01-25 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-01-25 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-25 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-25 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-25 18-21UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-01-25 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-01-26 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-26 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-26 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-26 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-26 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-26 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-26 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-26 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for S1 (Minor) or greater solar radiation storms for the next three days (24-26 Jan)."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 45,
+                "n+1": 45,
+                "n+2": 45,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts, and a slight chance for R3 (Strong) or greater radio blackouts for the next three days (24-26 Jan)."
+            }
+        }
+    },
+    "2023-01-25": {
+        "issue": "2023-01-25 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-01-25 00-03UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2023-01-25 03-06UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2023-01-25 06-09UT",
+                    0.33,
+                    null
+                ],
+                [
+                    "2023-01-25 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-25 12-15UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2023-01-25 15-18UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2023-01-25 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-25 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-01-26 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-26 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-26 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-26 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-26 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-26 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-26 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-26 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-01-27 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-27 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-27 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-27 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-27 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-27 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-27 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-27 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 2.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 35,
+                "n+1": 35,
+                "n+2": 25,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Jan 25 2023 1011 UTC",
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) blackouts for the next three days (25-27 Jan), as well as a slight chance for R3 (Strong) or greater radio blackouts on 25-26 Jan."
+            }
+        }
+    },
+    "2023-01-26": {
+        "issue": "2023-01-26 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-01-26 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-26 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-01-26 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-01-26 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-26 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-26 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-26 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-26 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-01-27 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-27 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-27 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-27 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-27 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-27 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-27 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-27 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-01-28 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-28 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-28 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-28 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-28 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-28 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-28 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-28 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 3.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 30,
+                "n+1": 25,
+                "n+2": 25,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Jan 25 2023 2235 UTC",
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) blackouts for the next three days (26-28 Jan), as well as a slight chance for R3 (Strong) or greater radio blackouts on 26 Jan."
+            }
+        }
+    },
+    "2023-01-27": {
+        "issue": "2023-01-27 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-01-27 00-03UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-01-27 03-06UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2023-01-27 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-27 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-27 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-27 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-27 18-21UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-01-27 21-00UT",
+                    1.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-01-28 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-28 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-28 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-28 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-28 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-28 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-28 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-28 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-01-29 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-29 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-29 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-29 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-29 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-29 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-29 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-29 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 2.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 25,
+                "n+1": 35,
+                "n+2": 35,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Jan 26 2023 1306 UTC",
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts on 27-29 Jan, and a slight chance for R3 (Strong) or greater radio blackouts on 28-29 Jan with an active region due to rotate onto the SE limb."
+            }
+        }
+    },
+    "2023-01-28": {
+        "issue": "2023-01-28 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-01-28 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-01-28 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-28 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-28 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-28 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-01-28 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-28 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-28 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-01-29 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-29 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-29 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-29 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-29 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-29 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-29 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-29 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-01-30 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-30 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-30 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-30 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-30 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-30 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-30 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-30 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 3.33,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 35,
+                "n+1": 35,
+                "n+2": 35,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts on Jan 28-30 due primarily to potential activity just beyond the SE limb."
+            }
+        }
+    },
+    "2023-01-29": {
+        "issue": "2023-01-29 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-01-29 00-03UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-01-29 03-06UT",
+                    0.33,
+                    null
+                ],
+                [
+                    "2023-01-29 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-29 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-29 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-29 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-29 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-29 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-01-30 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-30 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-30 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-30 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-30 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-30 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-30 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-30 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-01-31 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-31 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-31 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-31 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-31 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-31 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-31 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-31 21-00UT",
+                    1.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 2.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 20,
+                "n+1": 20,
+                "n+2": 20,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a slight chance for R1-R2 (Minor-Moderate) radio blackouts on Jan 29-31."
+            }
+        }
+    },
+    "2023-01-30": {
+        "issue": "2023-01-30 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-01-30 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-30 03-06UT",
+                    0.33,
+                    null
+                ],
+                [
+                    "2023-01-30 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-01-30 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-30 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-30 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-30 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-30 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-01-31 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-31 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-31 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-01-31 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-31 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-31 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-31 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-01-31 21-00UT",
+                    1.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-02-01 00-03UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-02-01 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-02-01 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-02-01 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-02-01 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-02-01 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-02-01 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-02-01 21-00UT",
+                    1.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 2.0,
+                "greatest_expected_kp": 1.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a slight chance for R1-R2 (Minor-Moderate) radio blackouts on Jan 30-31 and Feb 01, mostly due to activity from active regions on the SE limb."
+            }
+        }
+    },
+    "2023-01-31": {
+        "issue": "2023-01-31 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-01-31 00-03UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2023-01-31 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-01-31 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-01-31 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-31 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-31 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-31 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-01-31 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-02-01 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-02-01 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-02-01 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-02-01 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-02-01 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-02-01 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-02-01 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-02-01 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-02-02 00-03UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-02-02 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-02-02 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-02-02 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-02-02 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-02-02 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-02-02 18-21UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-02-02 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 4.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a slight chance for R1-R2 (Minor-Moderate) radio blackouts on 31 Jan - 02 Feb mainly due to the flare potential of Region 3207."
+            }
+        }
+    }
+}

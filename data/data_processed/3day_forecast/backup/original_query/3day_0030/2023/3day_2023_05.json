@@ -1,0 +1,5241 @@
+{
+    "2023-05-01": {
+        "issue": "2023-05-01 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-05-01 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-05-01 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-05-01 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-05-01 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-05-01 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-01 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-01 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-01 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-05-02 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-05-02 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-05-02 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-02 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-02 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-05-02 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-02 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-05-02 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-05-03 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-05-03 03-06UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-05-03 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-05-03 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-05-03 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-03 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-03 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-03 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 4.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 40,
+                "n+1": 40,
+                "n+2": 40,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Apr 30 2023 2028 UTC",
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts through 03 May."
+            }
+        }
+    },
+    "2023-05-02": {
+        "issue": "2023-05-02 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-05-02 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-05-02 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-05-02 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-05-02 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-05-02 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-02 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-02 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-05-02 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-05-03 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-05-03 03-06UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-05-03 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-05-03 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-05-03 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-03 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-03 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-03 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-05-04 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-05-04 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-05-04 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-04 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-04 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-04 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-04 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-04 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 4.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 50,
+                "n+1": 50,
+                "n+2": 50,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R2",
+                "max_blackout_time": "May 01 2023 1309 UTC",
+                "rationale": "There is chance for R1-R2 (Minor-Moderate) radio blackouts, and a slight chance of an R3 (Strong) event on 02-04 May due primarily to the flare probability contributions of Regions 3288 and 3293."
+            }
+        }
+    },
+    "2023-05-03": {
+        "issue": "2023-05-03 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-05-03 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-05-03 03-06UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-05-03 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-05-03 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-05-03 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-03 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-03 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-03 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-05-04 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-04 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-05-04 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-04 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-04 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-04 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-04 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-04 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-05-05 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-05 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-05 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-05 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-05 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-05 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-05 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-05 21-00UT",
+                    1.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 4.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 50,
+                "n+1": 50,
+                "n+2": 50,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance of isolated R1-R2 (Minor-Moderate) radio blackouts, and a slight chance of an R3 (Strong) event on 03-05 May due to the combined flare probabilities of all visible active regions, in particular the more complex Regions 3288 and 3293."
+            }
+        }
+    },
+    "2023-05-04": {
+        "issue": "2023-05-04 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-05-04 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-04 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-05-04 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-04 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-04 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-04 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-04 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-04 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-05-05 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-05 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-05 06-09UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2023-05-05 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-05 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-05 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-05 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-05 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-05-06 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-06 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-06 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-05-06 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-05-06 12-15UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-05-06 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-05-06 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-05-06 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 2.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 5,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 55,
+                "n+1": 55,
+                "n+2": 50,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 15,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R2",
+                "max_blackout_time": "May 03 2023 1045 UTC",
+                "rationale": "Isolated R1-R2 (Minor-Moderate) radio blackouts are likely on 04-05 May, with a slight chance of an R3 (Strong) event on 04-06 May. The increased radio blackout probability is primarily due to growth of Region 3296 and increased activity from Region 3293. However, a decrease to a chance of R1-R2 (Minor-Moderate) radio blackouts on 06 May is forecast due to rotation of Region 3288 beyond the limb and the more recent weakening trend of Region 3293."
+            }
+        }
+    },
+    "2023-05-05": {
+        "issue": "2023-05-05 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-05-05 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-05 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-05 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-05 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-05-05 12-15UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2023-05-05 15-18UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2023-05-05 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-05 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-05-06 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-06 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-06 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-05-06 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-05-06 12-15UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-05-06 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-05-06 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-05-06 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-05-07 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-05-07 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-05-07 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-05-07 09-12UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-05-07 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-05-07 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-05-07 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-05-07 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 2.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 5,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 55,
+                "n+1": 50,
+                "n+2": 50,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 15,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "May 04 2023 0844 UTC",
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are likely on 05 May."
+            }
+        }
+    },
+    "2023-05-06": {
+        "issue": "2023-05-06 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-05-06 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-06 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-06 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-06 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-05-06 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-06 15-18UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-05-06 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-05-06 21-00UT",
+                    4.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-05-07 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-05-07 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-05-07 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-05-07 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-05-07 12-15UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-05-07 15-18UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2023-05-07 18-21UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2023-05-07 21-00UT",
+                    5.0,
+                    "G1"
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-05-08 00-03UT",
+                    5.33,
+                    "G1"
+                ],
+                [
+                    "2023-05-08 03-06UT",
+                    6.0,
+                    "G2"
+                ],
+                [
+                    "2023-05-08 06-09UT",
+                    5.67,
+                    "G2"
+                ],
+                [
+                    "2023-05-08 09-12UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2023-05-08 12-15UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2023-05-08 15-18UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-05-08 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-05-08 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 2.0,
+                "greatest_expected_kp": 6.0,
+                "greatest_expected_scale": "G2",
+                "rationale": "G1 (Minor) geomagnetic storms are likely on 07-08 May, and G2 (Moderate) storms are likely on 08 May, due to a combination of coronal hole high speed stream and CME effects."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 55,
+                "n+1": 55,
+                "n+2": 55,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "May 05 2023 0801 UTC",
+                "rationale": "R1 (Minor) radio blackouts are likely over 06-08 May, with a slight chance for R3 or greater events."
+            }
+        }
+    },
+    "2023-05-07": {
+        "issue": "2023-05-07 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-05-07 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-07 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-07 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-07 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-05-07 12-15UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2023-05-07 15-18UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2023-05-07 18-21UT",
+                    5.67,
+                    "G2"
+                ],
+                [
+                    "2023-05-07 21-00UT",
+                    5.67,
+                    "G2"
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-05-08 00-03UT",
+                    6.0,
+                    "G2"
+                ],
+                [
+                    "2023-05-08 03-06UT",
+                    6.67,
+                    "G3"
+                ],
+                [
+                    "2023-05-08 06-09UT",
+                    5.67,
+                    "G2"
+                ],
+                [
+                    "2023-05-08 09-12UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2023-05-08 12-15UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2023-05-08 15-18UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2023-05-08 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-05-08 21-00UT",
+                    4.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-05-09 00-03UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2023-05-09 03-06UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2023-05-09 06-09UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-05-09 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-05-09 12-15UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-05-09 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-05-09 18-21UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-05-09 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 6.0,
+                "greatest_expected_kp": 6.67,
+                "greatest_expected_scale": "G2",
+                "rationale": "G1-G2 (Minor-Moderate) geomagnetic storms are likely on 07 May, G1-G3 (Minor-Strong) storms are likely on 08 May, and G1 (Minor) storms are likely on 09 May due to a combination of positive polarity CH HSS influences and the anticipated arrival of CMEs from 04 and 05 May."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 55,
+                "n+1": 55,
+                "n+2": 55,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "Isolated R1-R2 (Minor-Moderate) radio blackouts are likely over 07-09 May."
+            }
+        }
+    },
+    "2023-05-08": {
+        "issue": "2023-05-08 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-05-08 00-03UT",
+                    5.67,
+                    "G2"
+                ],
+                [
+                    "2023-05-08 03-06UT",
+                    6.67,
+                    "G3"
+                ],
+                [
+                    "2023-05-08 06-09UT",
+                    5.67,
+                    "G2"
+                ],
+                [
+                    "2023-05-08 09-12UT",
+                    5.67,
+                    "G2"
+                ],
+                [
+                    "2023-05-08 12-15UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2023-05-08 15-18UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2023-05-08 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-05-08 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-05-09 00-03UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2023-05-09 03-06UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2023-05-09 06-09UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-05-09 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-05-09 12-15UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-05-09 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-05-09 18-21UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-05-09 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-05-10 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-05-10 03-06UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-05-10 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-05-10 09-12UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-05-10 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-05-10 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-05-10 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-05-10 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 6.67,
+                "greatest_expected_scale": "G3",
+                "rationale": "G1-G3 (Minor-Strong) geomagnetic storms are likely on 08 May in response to multiple CME arrivals and positive polarity CH HSS influences. G1 (Minor) storms are likely on 09 May."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 55,
+                "n+1": 55,
+                "n+2": 55,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "May 07 2023 2323 UTC",
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are likely over 08-10 May."
+            }
+        }
+    },
+    "2023-05-09": {
+        "issue": "2023-05-09 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-05-09 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-05-09 03-06UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2023-05-09 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-05-09 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-09 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-09 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-09 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-09 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-05-10 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-10 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-05-10 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-05-10 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-10 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-10 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-05-10 18-21UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2023-05-10 21-00UT",
+                    5.33,
+                    "G1"
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-05-11 00-03UT",
+                    5.33,
+                    "G1"
+                ],
+                [
+                    "2023-05-11 03-06UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2023-05-11 06-09UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2023-05-11 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-05-11 12-15UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-05-11 15-18UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-05-11 18-21UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2023-05-11 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 5.0,
+                "greatest_expected_kp": 5.33,
+                "greatest_expected_scale": "G1",
+                "rationale": "Mainly quiet to active levels are expected on 09 May, with the likelihood of an isolated, early G1 storm period still possible due to the disturbed solar wind field. A return to mainly quiet to unsettled levels is expected most of 10 May, however, CME influences later on 10 May into 11 May are likely to escalate responses to active and G1 storm levels, with a chance of isolated G2 (Moderate) storms and slight chance of G3 (Strong) levels."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 95,
+                "n+1": 50,
+                "n+2": 20,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": true,
+                "rationale": "The greater than 10 MeV proton flux is expected to continue at S1 levels as the solar proton event continues into 09 May. A general decline in levels is anticipated and a sub-S1 levels are likely by 10 May, with a chance that S1 levels may still be occurring. Continuing, gradual decrease in flux is expected and a return to background conditions, albeit elevated levels, are anticipated on 11 May. There is also a slight chance that S1 levels may be still be reached. There is also a risk of a re-enhancement ahead of a CME arrival later on 10 May to early 11 May."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 55,
+                "n+1": 55,
+                "n+2": 55,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 20,
+                "n+1": 20,
+                "n+2": 20,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "May 08 2023 2025 UTC",
+                "rationale": "Solar activity is likely to be moderate, with likelihood of further M-class flares (R1-R2; Minor-Moderate) and a slight chance of X-class (R3; Strong) events 09-11 May. These levels are primarily driven by the enhanced flare probabilities of Regions 3296 and 3297."
+            }
+        }
+    },
+    "2023-05-10": {
+        "issue": "2023-05-10 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-05-10 00-03UT",
+                    5.67,
+                    "G2"
+                ],
+                [
+                    "2023-05-10 03-06UT",
+                    5.33,
+                    "G1"
+                ],
+                [
+                    "2023-05-10 06-09UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2023-05-10 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-05-10 12-15UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-05-10 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-05-10 18-21UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-05-10 21-00UT",
+                    4.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-05-11 00-03UT",
+                    5.33,
+                    "G1"
+                ],
+                [
+                    "2023-05-11 03-06UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2023-05-11 06-09UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2023-05-11 09-12UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2023-05-11 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-05-11 15-18UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-05-11 18-21UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-05-11 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-05-12 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-05-12 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-05-12 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-05-12 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-12 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-12 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-05-12 18-21UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-05-12 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 5.0,
+                "greatest_expected_kp": 5.67,
+                "greatest_expected_scale": "G1",
+                "rationale": "G2 (Moderate) storm levels are likely on 10 May as effects from the apparent arrival of the 7 May CME persist. Dependent upon the CME trajectory, there is a slight, and decreasing chance of G3 (Strong) levels associated with the CME effects. G1 (Minor) storms are currently anticipated on 11 May as CME influences continue; however, based on our analysis of the most recent M4 flare associated CME - this forecast may be upgraded. Currently, we anticipate active conditions on 12 May, but any CME influences from the most recent CME could continue and these levels may be upgraded accordingly as well."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 50,
+                "n+1": 25,
+                "n+2": 20,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": true,
+                "rationale": "The re-enhancement in the greater than 10 MeV proton flux, due to recent CME activity and 7 May CME arrival, is expected to continue through at least midday on 10 May. A decreased chance of any subsequent event exists on 11 May, decreasing to a slight chance on 12 May."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 65,
+                "n+1": 60,
+                "n+2": 60,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 20,
+                "n+1": 20,
+                "n+2": 20,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R2",
+                "max_blackout_time": "May 09 2023 0354 UTC",
+                "rationale": "Solar activity is likely to be moderate with a continuing likelihood of M-class flares (R1-R2; Minor-Moderate) and slight chance of X-class flares (R3; Strong) 10-12 May due primarily to the enhanced flare potential of Region 3296."
+            }
+        }
+    },
+    "2023-05-11": {
+        "issue": "2023-05-11 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-05-11 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-05-11 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-05-11 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-05-11 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-05-11 12-15UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2023-05-11 15-18UT",
+                    7.0,
+                    "G3"
+                ],
+                [
+                    "2023-05-11 18-21UT",
+                    5.33,
+                    "G1"
+                ],
+                [
+                    "2023-05-11 21-00UT",
+                    6.0,
+                    "G2"
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-05-12 00-03UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2023-05-12 03-06UT",
+                    5.67,
+                    "G2"
+                ],
+                [
+                    "2023-05-12 06-09UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2023-05-12 09-12UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-05-12 12-15UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-05-12 15-18UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-05-12 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-05-12 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-05-13 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-05-13 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-05-13 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-13 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-05-13 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-13 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-05-13 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-13 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 5.0,
+                "greatest_expected_kp": 7.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "Continuing CME transit will likely lead to unsettled and active levels early on 11 May, with a chance of G1 levels. Arrival of the anticipated glancing blow CME later on 11 May, will likely lead to G1-G3 (Minor to Strong) storm levels with shock arrival followed by flanking edge bulk plasma magnetic field enhancements. Any CME influences would likely lead to G1-G2 (Minor-Moderate) levels of response on 12 May, with waning effects on 13 May leading to unsettled and active responses."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 99,
+                "n+1": 70,
+                "n+2": 50,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": true,
+                "rationale": "The S1 event is expected to continue on 11 May, with a gradual decline anticipated to a chance of an additional or continued S1 event on 12 May and slight chance on 13 May. The current S1 storm's main contributor was likely the M4 flare on 9 May from Region 3296, which is the likely source for any additional solar proton event enhancements."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 60,
+                "n+1": 60,
+                "n+2": 55,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 20,
+                "n+1": 20,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "May 10 2023 1421 UTC",
+                "rationale": "Solar activity is likely to be moderate with a continued likelihood of isolated M-class flares (R1-R2; Minor-Moderate) and a slight chance of X-class (R3; Strong) events 11-13 May primarily due to the flare probability and activity tendency of Region 3296."
+            }
+        }
+    },
+    "2023-05-12": {
+        "issue": "2023-05-12 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-05-12 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-05-12 03-06UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2023-05-12 06-09UT",
+                    5.67,
+                    "G2"
+                ],
+                [
+                    "2023-05-12 09-12UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2023-05-12 12-15UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-05-12 15-18UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-05-12 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-12 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-05-13 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-05-13 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-05-13 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-13 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-05-13 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-13 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-05-13 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-13 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-05-14 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-05-14 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-05-14 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-14 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-14 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-14 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-14 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-14 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 5.67,
+                "greatest_expected_scale": "G2",
+                "rationale": "G1-G2 (Minor-Moderate) geomagnetic storms are likely on 12 May due to CME influence."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 70,
+                "n+1": 50,
+                "n+2": 20,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": true,
+                "rationale": "There is a decreasing chance for S1 (Minor) storms over 12-14 May."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 55,
+                "n+1": 55,
+                "n+2": 55,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 20,
+                "n+1": 20,
+                "n+2": 20,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "May 11 2023 0901 UTC",
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are likely over 12-14 May with a chance for R3 or greater events."
+            }
+        }
+    },
+    "2023-05-13": {
+        "issue": "2023-05-13 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-05-13 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-05-13 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-05-13 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-13 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-05-13 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-13 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-05-13 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-13 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-05-14 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-05-14 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-05-14 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-14 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-14 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-14 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-14 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-14 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-05-15 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-15 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-15 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-15 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-15 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-05-15 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-05-15 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-15 21-00UT",
+                    1.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 5.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": "G1",
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 15,
+                "n+1": 10,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 55,
+                "n+1": 55,
+                "n+2": 55,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are likely over 13-15 May."
+            }
+        }
+    },
+    "2023-05-14": {
+        "issue": "2023-05-14 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-05-14 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-14 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-05-14 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-14 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-14 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-14 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-14 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-14 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-05-15 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-15 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-15 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-15 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-15 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-05-15 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-05-15 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-15 21-00UT",
+                    1.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-05-16 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-16 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-05-16 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-16 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-05-16 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-05-16 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-16 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-16 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 5,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 35,
+                "n+1": 35,
+                "n+2": 35,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts over 14-16 May."
+            }
+        }
+    },
+    "2023-05-15": {
+        "issue": "2023-05-15 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-05-15 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-15 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-15 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-15 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-15 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-05-15 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-05-15 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-15 21-00UT",
+                    1.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-05-16 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-16 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-05-16 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-16 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-05-16 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-05-16 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-16 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-16 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-05-17 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-17 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-17 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-17 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-17 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-17 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-05-17 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-17 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "No R1 (Minor) or greater radio blackouts are expected.  No significant active region flare activity is forecast."
+            }
+        }
+    },
+    "2023-05-16": {
+        "issue": "2023-05-16 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-05-16 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-16 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-05-16 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-05-16 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-05-16 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-16 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-16 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-16 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-05-17 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-17 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-05-17 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-17 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-17 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-17 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-05-17 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-17 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-05-18 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-18 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-18 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-18 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-18 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-18 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-18 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-18 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 15,
+                "n+1": 25,
+                "n+2": 25,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a slight chance for isolated (R1-R2, Minor-Moderate) events on 16 May. Probabilities increase to a chance for (R1-R2, Minor-Moderate) events on 17-18 May with the anticipated return of old Region 3288."
+            }
+        }
+    },
+    "2023-05-17": {
+        "issue": "2023-05-17 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-05-17 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-17 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-05-17 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-17 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-17 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-17 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-05-17 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-17 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-05-18 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-18 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-18 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-18 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-18 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-18 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-18 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-18 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-05-19 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-19 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-19 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-19 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-19 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-19 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-19 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-19 21-00UT",
+                    1.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 3.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 15,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 25,
+                "n+1": 25,
+                "n+2": 25,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R2",
+                "max_blackout_time": "May 16 2023 1643 UTC",
+                "rationale": "There is a chance for isolated R1-R2 (Minor-Moderate) radio blackouts) through 19 May as returning Region 3288 (S23, L=278) makes its way onto the SE limb."
+            }
+        }
+    },
+    "2023-05-18": {
+        "issue": "2023-05-18 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-05-18 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-18 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-18 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-18 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-18 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-18 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-18 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-18 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-05-19 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-19 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-19 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-19 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-19 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-19 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-19 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-19 21-00UT",
+                    1.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-05-20 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-20 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-20 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-20 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-20 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-20 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-05-20 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-20 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 1.0,
+                "greatest_expected_kp": 2.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 25,
+                "n+1": 25,
+                "n+2": 25,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "A chance for isolated R1-R2 (Minor-Moderate) radio blackouts will persist through 20 May."
+            }
+        }
+    },
+    "2023-05-19": {
+        "issue": "2023-05-19 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-05-19 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-19 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-19 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-19 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-19 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-19 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-19 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-19 21-00UT",
+                    1.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-05-20 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-20 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-20 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-20 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-20 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-20 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-05-20 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-20 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-05-21 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-05-21 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-21 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-05-21 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-21 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-05-21 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-05-21 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-21 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 1.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 35,
+                "n+1": 25,
+                "n+2": 25,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "May 18 2023 2105 UTC",
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts on 19-21 May."
+            }
+        }
+    },
+    "2023-05-20": {
+        "issue": "2023-05-20 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-05-20 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-05-20 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-20 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-05-20 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-20 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-20 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-20 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-20 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-05-21 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-05-21 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-21 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-05-21 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-21 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-05-21 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-05-21 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-21 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-05-22 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-05-22 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-05-22 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-22 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-22 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-22 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-22 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-22 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "There is a chance for G1 (Minor) geomagnetic storms on 20 May due to CH HSS activity."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There exists a slight chance for S1 (Minor) solar radiation storms over 20-22 May due to flare potential from multiples complex regions on the visible disk."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 55,
+                "n+1": 55,
+                "n+2": 55,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 25,
+                "n+1": 25,
+                "n+2": 25,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R2",
+                "max_blackout_time": "May 19 2023 0048 UTC",
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are likely with a chance for R3 (Strong) radio blackouts over 20-22 May."
+            }
+        }
+    },
+    "2023-05-21": {
+        "issue": "2023-05-21 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-05-21 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-05-21 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-05-21 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-05-21 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-21 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-21 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-05-21 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-21 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-05-22 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-05-22 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-05-22 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-22 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-22 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-22 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-22 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-22 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-05-23 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-05-23 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-23 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-23 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-23 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-23 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-05-23 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-05-23 21-00UT",
+                    5.0,
+                    "G1"
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 6.0,
+                "greatest_expected_kp": 5.0,
+                "greatest_expected_scale": "G2",
+                "rationale": "G1 (Minor) geomagnetic storms are likely late on 23 May due to negative polarity CH HSS influence."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There exists a chance for S1 (Minor) solar radiation storms over 21-23 May."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 75,
+                "n+1": 75,
+                "n+2": 75,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 35,
+                "n+1": 35,
+                "n+2": 35,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R2",
+                "max_blackout_time": "May 20 2023 1235 UTC",
+                "rationale": "Over 21-23 May, R1-R2 (Minor-Moderate) radio blackouts are expected, with a chance for R3 (Strong) radio blackouts, due primarily to the flare potential from Region 3311."
+            }
+        }
+    },
+    "2023-05-22": {
+        "issue": "2023-05-22 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-05-22 00-03UT",
+                    5.67,
+                    "G2"
+                ],
+                [
+                    "2023-05-22 03-06UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2023-05-22 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-05-22 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-05-22 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-05-22 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-22 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-22 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-05-23 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-05-23 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-23 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-23 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-23 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-23 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-05-23 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-05-23 21-00UT",
+                    5.0,
+                    "G1"
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-05-24 00-03UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2023-05-24 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-05-24 06-09UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-05-24 09-12UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-05-24 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-05-24 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-24 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-24 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 6.0,
+                "greatest_expected_kp": 5.67,
+                "greatest_expected_scale": "G2",
+                "rationale": "G2 (Moderate) geomagnetic storms are expected on 22 May and G1 (Minor) conditions are likely on 23-24 May."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for S1 (Minor) solar radiation storms over 22-24 May."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 75,
+                "n+1": 75,
+                "n+2": 75,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 30,
+                "n+1": 30,
+                "n+2": 30,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "May 21 2023 1604 UTC",
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are likely, with a chance for R3 or greater events, over 22-24 May."
+            }
+        }
+    },
+    "2023-05-23": {
+        "issue": "2023-05-23 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-05-23 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-05-23 03-06UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2023-05-23 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-05-23 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-23 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-23 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-05-23 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-05-23 21-00UT",
+                    5.0,
+                    "G1"
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-05-24 00-03UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2023-05-24 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-05-24 06-09UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-05-24 09-12UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-05-24 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-05-24 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-24 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-24 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-05-25 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-25 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-05-25 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-25 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-25 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-25 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-25 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-25 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 5.0,
+                "greatest_expected_kp": 5.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "The geomagnetic field is expected to reach G1 (Minor) storm levels on 23 May due to some latent CME passage influence and negative polarity CH HSS effects. G1 conditions are likely to persist into 24 May due to lingering CH effects."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 60,
+                "n+1": 50,
+                "n+2": 50,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 20,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "May 22 2023 1337 UTC",
+                "rationale": "Solar activity is likely to remain at moderate to high levels with isolated R1-R2 (Minor) radio blackouts on 23 May. R1-R2 (Minor) radio blackout chances decrease slightly to a chance for isolated activity on 24-25 May as a few regions exit the western limb."
+            }
+        }
+    },
+    "2023-05-24": {
+        "issue": "2023-05-24 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-05-24 00-03UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2023-05-24 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-05-24 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-05-24 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-24 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-05-24 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-24 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-05-24 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-05-25 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-25 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-05-25 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-25 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-05-25 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-25 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-25 18-21UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-05-25 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-05-26 00-03UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2023-05-26 03-06UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-05-26 06-09UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-05-26 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-26 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-05-26 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-26 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-26 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 5.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "Periods of G1 (Minor) geomagnetic storming are likely on 24 May in response to negative polarity CH HSS effects."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 50,
+                "n+1": 50,
+                "n+2": 55,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "May 23 2023 1213 UTC",
+                "rationale": "Solar activity is expected to be at low levels with a chance for isolated M-class flare (R1-2/Minor-Moderate) events through 25 May primarily due to the history and potential of AR 3311. M-class flare probabilities increase to likely levels 26 May with the anticipated return of old AR 3296."
+            }
+        }
+    },
+    "2023-05-25": {
+        "issue": "2023-05-25 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-05-25 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-05-25 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-05-25 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-25 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-25 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-25 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-05-25 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-25 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-05-26 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-05-26 03-06UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-05-26 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-05-26 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-26 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-05-26 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-26 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-26 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-05-27 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-05-27 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-27 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-05-27 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-27 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-27 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-27 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-05-27 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 4.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "The 10 MeV proton flux is expected to remain at background levels through 26 May. On 27 May probabilities for an S1 (Minor) solar radiation event increase to a slight chance as Region 3311 enters the western portions of the disk, favoring better to Earth."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 30,
+                "n+1": 40,
+                "n+2": 45,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "May 24 2023 1726 UTC",
+                "rationale": "Solar activity is expected to be at low levels with a chance for isolated M-class flares through 27 May. Probabilities increase to a slight chance for X-class flares as well on 26-27 May with anticipated returning regions."
+            }
+        }
+    },
+    "2023-05-26": {
+        "issue": "2023-05-26 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-05-26 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-05-26 03-06UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-05-26 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-05-26 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-26 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-05-26 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-26 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-26 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-05-27 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-05-27 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-27 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-05-27 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-27 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-27 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-27 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-05-27 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-05-28 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-28 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-28 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-28 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-28 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-28 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-28 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-28 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 4.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 35,
+                "n+1": 35,
+                "n+2": 35,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "May 25 2023 1446 UTC",
+                "rationale": "Solar activity is expected to be at low levels with a chance for isolated R1-R2 (Minor-Moderate) radio blackouts through 28 May."
+            }
+        }
+    },
+    "2023-05-27": {
+        "issue": "2023-05-27 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-05-27 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-27 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-27 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-27 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-27 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-27 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-27 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-27 21-00UT",
+                    1.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-05-28 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-28 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-28 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-28 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-28 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-28 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-28 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-28 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-05-29 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-29 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-29 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-05-29 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-29 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-29 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-05-29 18-21UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-05-29 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 2.0,
+                "greatest_expected_kp": 4.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 30,
+                "n+1": 30,
+                "n+2": 30,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "May 26 2023 2303 UTC",
+                "rationale": "There exists a chance for R1-R2 (Minor-Moderate) radio blackouts over 27-29 May."
+            }
+        }
+    },
+    "2023-05-28": {
+        "issue": "2023-05-28 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-05-28 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-28 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-28 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-28 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-28 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-28 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-28 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-28 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-05-29 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-29 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-29 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-05-29 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-29 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-29 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-05-29 18-21UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-05-29 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-05-30 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-05-30 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-30 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-05-30 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-05-30 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-30 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-30 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-30 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 2.0,
+                "greatest_expected_kp": 4.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There exists a slight chance for S1 (Minor) solar radiation storms over 28-30 May."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 55,
+                "n+1": 55,
+                "n+2": 55,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts, and a slight chance for R3 (Strong), over 28-30 May."
+            }
+        }
+    },
+    "2023-05-29": {
+        "issue": "2023-05-29 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-05-29 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-29 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-29 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-05-29 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-29 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-29 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-05-29 18-21UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-05-29 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-05-30 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-05-30 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-30 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-05-30 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-05-30 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-30 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-30 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-30 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-05-31 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-31 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-31 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-31 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-31 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-31 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-31 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-31 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 4.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for S1 (Minor) solar radiation storms over 29-31 May."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 55,
+                "n+1": 55,
+                "n+2": 55,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "May 28 2023 1036 UTC",
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are likely, with a slight chance for R3 or greater events, over 29-31 May."
+            }
+        }
+    },
+    "2023-05-30": {
+        "issue": "2023-05-30 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-05-30 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-05-30 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-30 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-05-30 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-05-30 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-30 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-30 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-30 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-05-31 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-31 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-05-31 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-05-31 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-05-31 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-31 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-31 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-31 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-06-01 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-01 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-01 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-01 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-01 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-01 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-01 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-01 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 1.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 40,
+                "n+1": 40,
+                "n+2": 40,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "No R1 (Minor) or greater radio blackouts are expected.  No significant active region flare activity is forecast."
+            }
+        }
+    },
+    "2023-05-31": {
+        "issue": "2023-05-31 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-05-31 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-31 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-31 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-31 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-31 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-31 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-05-31 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-05-31 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-06-01 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-01 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-01 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-01 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-01 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-01 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-01 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-06-01 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-06-02 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-06-02 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-06-02 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-06-02 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-06-02 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-06-02 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-06-02 18-21UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2023-06-02 21-00UT",
+                    4.67,
+                    "G1"
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 2.0,
+                "greatest_expected_kp": 4.67,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storms are likely on 02 Jun due to anticipated CH HSS effects."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 40,
+                "n+1": 40,
+                "n+2": 40,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "May 30 2023 1338 UTC",
+                "rationale": "No R1 (Minor) or greater radio blackouts are expected.  No significant active region flare activity is forecast."
+            }
+        }
+    }
+}

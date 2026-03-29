@@ -1,0 +1,5241 @@
+{
+    "2025-05-01": {
+        "issue": "2025-05-01 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-05-01 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-05-01 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-05-01 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-01 09-12UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-05-01 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-01 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-01 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-01 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-05-02 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-05-02 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-05-02 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-05-02 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-05-02 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-05-02 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-05-02 18-21UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-05-02 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-05-03 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-03 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-03 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-03 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-03 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-03 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-03 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-03 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 4.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 50,
+                "n+1": 50,
+                "n+2": 50,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "Solar activity is expected to be low with a chance for M-class flares (R1-R2, Minor-Moderate), and a slight chance for X-class flares (R3-Strong) through 03 May."
+            }
+        }
+    },
+    "2025-05-02": {
+        "issue": "2025-05-02 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-05-02 00-03UT",
+                    5.33,
+                    "G1"
+                ],
+                [
+                    "2025-05-02 03-06UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-05-02 06-09UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-05-02 09-12UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2025-05-02 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-05-02 15-18UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-05-02 18-21UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-02 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-05-03 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-03 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-03 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-03 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-03 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-05-03 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-03 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-03 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-05-04 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-04 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-04 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-04 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-04 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-05-04 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-05-04 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-05-04 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 5.0,
+                "greatest_expected_kp": 5.33,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storming is expected on 02 May due to CH HSS effects."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 35,
+                "n+1": 35,
+                "n+2": 35,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "Solar activity is expected to be low with a chance for M-class flares (R1-R2, Minor-Moderate) through 04 May."
+            }
+        }
+    },
+    "2025-05-03": {
+        "issue": "2025-05-03 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-05-03 00-03UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2025-05-03 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-05-03 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-03 09-12UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-05-03 12-15UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-05-03 15-18UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-03 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-05-03 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-05-04 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-04 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-04 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-04 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-04 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-04 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-04 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-04 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-05-05 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-05 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-05 06-09UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-05-05 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-05 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-05-05 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-05 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-05 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 5.0,
+                "greatest_expected_kp": 5.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "Periods of G1 (Minor) storms are expected on 03 May in response to negative polarity CH HSS influences."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 35,
+                "n+1": 35,
+                "n+2": 35,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts over 03-05 May."
+            }
+        }
+    },
+    "2025-05-04": {
+        "issue": "2025-05-04 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-05-04 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-05-04 03-06UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-05-04 06-09UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-05-04 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-04 12-15UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-05-04 15-18UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-04 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-04 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-05-05 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-05 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-05 06-09UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-05-05 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-05 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-05-05 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-05 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-05 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-05-06 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-06 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-06 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-06 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-06 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-06 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-06 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-05-06 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 5.0,
+                "greatest_expected_kp": 4.67,
+                "greatest_expected_scale": "G1",
+                "rationale": "Periods of G1 (Minor) geomagnetic storms are expected on 04 May in response to negative polarity CH HSS influences."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 35,
+                "n+1": 35,
+                "n+2": 35,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts over 04-06 May."
+            }
+        }
+    },
+    "2025-05-05": {
+        "issue": "2025-05-05 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-05-05 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-05-05 03-06UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-05-05 06-09UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2025-05-05 09-12UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-05-05 12-15UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-05-05 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-05 18-21UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-05 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-05-06 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-06 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-06 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-06 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-06 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-06 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-06 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-05-06 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-05-07 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-07 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-07 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-07 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-05-07 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2025-05-07 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2025-05-07 18-21UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2025-05-07 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 5.0,
+                "greatest_expected_kp": 4.67,
+                "greatest_expected_scale": "G1",
+                "rationale": "Periods of G1 (Minor) geomagnetic storms are expected on 05 May in response to continued negative polarity CH HSS influences."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 35,
+                "n+1": 35,
+                "n+2": 35,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts over 05-07 May."
+            }
+        }
+    },
+    "2025-05-06": {
+        "issue": "2025-05-06 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-05-06 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-06 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-06 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-05-06 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-06 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-06 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-06 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-06 21-00UT",
+                    4.67,
+                    "G1"
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-05-07 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-07 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-05-07 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-05-07 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-07 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-07 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-07 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-05-07 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-05-08 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-08 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-08 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-08 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-08 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-08 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-08 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-08 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 5.0,
+                "greatest_expected_kp": 4.67,
+                "greatest_expected_scale": "G1",
+                "rationale": "The geomagnetic field is expected to reach G1 (Minor) storm levels on 06 May, and active levels on 07 May, due to sustained negative polarity CH HSS influences."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 45,
+                "n+1": 45,
+                "n+2": 45,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "Solar activity is expected to be low with a chance for M-class (R1-R2/Minor-Moderate) flare activity through 08 May."
+            }
+        }
+    },
+    "2025-05-07": {
+        "issue": "2025-05-07 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-05-07 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-07 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-07 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-07 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-07 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-07 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-07 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-05-07 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-05-08 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-08 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-08 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-08 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-08 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-08 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-08 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-08 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-05-09 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-05-09 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-09 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-09 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-09 12-15UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-09 15-18UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-05-09 18-21UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-05-09 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 4.67,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) conditions are likely on 09 May due to the onset of influence from another negative polarity CH HSS."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 45,
+                "n+1": 45,
+                "n+2": 45,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts over 07-09 May."
+            }
+        }
+    },
+    "2025-05-08": {
+        "issue": "2025-05-08 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-05-08 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-08 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-05-08 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-05-08 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-08 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-08 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-08 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-08 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-05-09 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-05-09 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-09 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-09 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-09 12-15UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-09 15-18UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-05-09 18-21UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-05-09 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-05-10 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-10 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-05-10 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-10 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-10 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-10 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-10 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-10 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 4.67,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) conditions are likely on 09 May due to the onset of influence from another negative polarity CH HSS coupled with a possible glancing blow CME from 05 May."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 45,
+                "n+1": 45,
+                "n+2": 45,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "Region 4079s enhanced magnetic complexity will keep the chance for R1-R2 (Minor-Moderate) radio blackouts in the forecast over 08-10 May."
+            }
+        }
+    },
+    "2025-05-09": {
+        "issue": "2025-05-09 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-05-09 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-09 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-09 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-05-09 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-09 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-09 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-05-09 18-21UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-09 21-00UT",
+                    4.67,
+                    "G1"
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-05-10 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-10 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-05-10 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-10 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-10 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-10 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-10 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-10 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-05-11 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-05-11 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-11 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-11 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-11 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-11 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-11 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-11 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 4.67,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storm conditions are likely on 09 May due to negative polarity CH HSS influences and the possible arrival of a CME from 05 May."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 40,
+                "n+1": 40,
+                "n+2": 40,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts over 09-11 May."
+            }
+        }
+    },
+    "2025-05-10": {
+        "issue": "2025-05-10 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-05-10 00-03UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2025-05-10 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-10 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-10 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-10 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-10 15-18UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-10 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-10 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-05-11 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-05-11 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-11 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-11 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-11 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-11 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-11 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-11 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-05-12 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-12 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-12 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-12 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2025-05-12 12-15UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2025-05-12 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-12 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-12 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 4.33,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 40,
+                "n+1": 40,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts on 10-11 May, and a slight chance for R1-R2 events on 12 May."
+            }
+        }
+    },
+    "2025-05-11": {
+        "issue": "2025-05-11 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-05-11 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-11 03-06UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-05-11 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-11 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-11 12-15UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-11 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-11 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-11 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-05-12 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-12 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-12 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-12 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2025-05-12 12-15UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2025-05-12 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-12 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-12 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-05-13 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-13 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-13 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-13 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-13 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-05-13 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-05-13 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-05-13 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 25,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts on 11 May."
+            }
+        }
+    },
+    "2025-05-12": {
+        "issue": "2025-05-12 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-05-12 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-12 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-12 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-05-12 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-05-12 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-12 15-18UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-12 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-12 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-05-13 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-13 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-13 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-13 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-13 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-05-13 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-05-13 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-05-13 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-05-14 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-14 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-14 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-14 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-14 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-14 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-14 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-14 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 5.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": "G1",
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "May 12 2025 0001 UTC",
+                "rationale": "No R1 (Minor) or greater radio blackouts are expected.  No significant active region flare activity is forecast."
+            }
+        }
+    },
+    "2025-05-13": {
+        "issue": "2025-05-13 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-05-13 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-05-13 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-05-13 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-05-13 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-05-13 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-05-13 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-05-13 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-05-13 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-05-14 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-14 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-14 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-14 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-14 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-14 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-14 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-14 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-05-15 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-15 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-15 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-15 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-15 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-15 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-15 18-21UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-15 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 2.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 15,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a slight chance for R1-R2 (Minor-Moderate) radio blackouts on 13-15 May."
+            }
+        }
+    },
+    "2025-05-14": {
+        "issue": "2025-05-14 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-05-14 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-05-14 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-14 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-14 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-05-14 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-14 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-14 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-14 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-05-15 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-15 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-15 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-15 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-15 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-15 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-15 18-21UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-15 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-05-16 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-16 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-16 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-16 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-05-16 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-16 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-16 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-16 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for S1 (Minor) or greater solar radiation storms all three days due to the potential of Region 4087."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 75,
+                "n+1": 75,
+                "n+2": 75,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 30,
+                "n+1": 30,
+                "n+2": 30,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R3",
+                "max_blackout_time": "May 14 2025 0825 UTC",
+                "rationale": "Solar activity is expected to be at moderate levels (75%) with a chance for X-class activity (30%). Region 4087 is likely more complex than its current classification but foreshortening due to the limb effect is making it difficult to discern accurately."
+            }
+        }
+    },
+    "2025-05-15": {
+        "issue": "2025-05-15 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-05-15 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-05-15 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-05-15 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-15 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-15 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-15 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-15 18-21UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-15 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-05-16 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-16 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-16 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-16 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-05-16 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-16 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-16 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-16 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-05-17 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-05-17 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-17 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-17 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-05-17 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-05-17 15-18UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-17 18-21UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-05-17 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 4.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There remains a slight chance for an S1 (Minor) solar radiation storm on 15 May."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 65,
+                "n+1": 65,
+                "n+2": 65,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 30,
+                "n+1": 30,
+                "n+2": 30,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "May 14 2025 1811 UTC",
+                "rationale": "Given the magnetic complexity of Region 4087, theres a 65% chance that M-Class (R1-R2, Minor-Moderate) level flare activity will occur through 17 May with a 30% chance for X-Class (R3-Strong) levels during the same time."
+            }
+        }
+    },
+    "2025-05-16": {
+        "issue": "2025-05-16 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-05-16 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-16 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-05-16 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-05-16 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-16 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-16 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-05-16 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-05-16 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-05-17 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-05-17 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-17 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-17 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-05-17 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-05-17 15-18UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-17 18-21UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-05-17 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-05-18 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-18 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-18 06-09UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-05-18 09-12UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-05-18 12-15UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-18 15-18UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-18 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-05-18 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 4.67,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storm conditions are likely on 18 May due to CH HSS onset."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 65,
+                "n+1": 65,
+                "n+2": 65,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 30,
+                "n+1": 30,
+                "n+2": 25,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "May 15 2025 1721 UTC",
+                "rationale": "There remains a 65% chance that M-Class (R1-R2, Minor-Moderate) level flare activity will occur through 18 May with a 30% chance for X-Class (R3-Strong) levels during the same time due to the complex magnetic field within Region 4087."
+            }
+        }
+    },
+    "2025-05-17": {
+        "issue": "2025-05-17 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-05-17 00-03UT",
+                    6.33,
+                    "G2"
+                ],
+                [
+                    "2025-05-17 03-06UT",
+                    5.33,
+                    "G1"
+                ],
+                [
+                    "2025-05-17 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-05-17 09-12UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-05-17 12-15UT",
+                    5.33,
+                    "G1"
+                ],
+                [
+                    "2025-05-17 15-18UT",
+                    5.67,
+                    "G2"
+                ],
+                [
+                    "2025-05-17 18-21UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2025-05-17 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-05-18 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-18 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-18 06-09UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-05-18 09-12UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-05-18 12-15UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-18 15-18UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2025-05-18 18-21UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-05-18 21-00UT",
+                    4.67,
+                    "G1"
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-05-19 00-03UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-05-19 03-06UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2025-05-19 06-09UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-05-19 09-12UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2025-05-19 12-15UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-19 15-18UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-05-19 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-05-19 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 6.0,
+                "greatest_expected_kp": 6.33,
+                "greatest_expected_scale": "G2",
+                "rationale": "CME effects are expected to persist, keeping conditions at active to G1-G2 (Minor-Moderate) levels on 17 May. An anticipated CIR is likely to bring additional chances for G1 (Minor) storm levels on 18 May, with a chance for G2 (Moderate) levels on 19 May as the positive polarity CH HSS settles in."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 55,
+                "n+1": 55,
+                "n+2": 55,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 20,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "R1/R2 (Minor/Moderate) radio blackouts are likely with a slight chance for an R3 (Strong) event on 17-19 May."
+            }
+        }
+    },
+    "2025-05-18": {
+        "issue": "2025-05-18 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-05-18 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-05-18 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-05-18 06-09UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-05-18 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-05-18 12-15UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-05-18 15-18UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2025-05-18 18-21UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-05-18 21-00UT",
+                    5.0,
+                    "G1"
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-05-19 00-03UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-05-19 03-06UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2025-05-19 06-09UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-05-19 09-12UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2025-05-19 12-15UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-19 15-18UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-05-19 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-05-19 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-05-20 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-20 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-20 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-05-20 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-20 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-05-20 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-05-20 18-21UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-05-20 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 5.0,
+                "greatest_expected_kp": 5.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "Periods of G1 (Minor) storm levels are likely on 18-19 May, with periods of active conditions likely on 20 May, due to continued, yet waning positive polarity CH HSS influences."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 35,
+                "n+1": 35,
+                "n+2": 35,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) events, and a slight chance for an R3 (Strong) or greater event, over 18-20 May."
+            }
+        }
+    },
+    "2025-05-19": {
+        "issue": "2025-05-19 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-05-19 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-05-19 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-05-19 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-05-19 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-05-19 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-19 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-19 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-05-19 21-00UT",
+                    4.67,
+                    "G1"
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-05-20 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-05-20 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-20 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-20 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-20 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-20 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-05-20 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-20 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-05-21 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-21 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-21 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-21 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-21 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-05-21 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-21 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-21 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 4.67,
+                "greatest_expected_scale": "G1",
+                "rationale": "Periods of G1 (Minor) storming are likely on 19 May in response to positive polarity CH HSS influences."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 25,
+                "n+1": 25,
+                "n+2": 25,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "May 19 2025 0821 UTC",
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) events over 19-21 May. Probabilities may increase on days two and three as the active region near the NE limb rotates onto the visible disk."
+            }
+        }
+    },
+    "2025-05-20": {
+        "issue": "2025-05-20 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-05-20 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-20 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-05-20 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-05-20 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-05-20 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-20 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-05-20 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-20 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-05-21 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-21 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-21 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-21 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-21 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-05-21 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-21 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-21 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-05-22 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-22 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-22 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-22 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-22 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-22 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-22 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-22 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 35,
+                "n+1": 35,
+                "n+2": 35,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "Solar activity is expected to be low, with a 35% chance for R1-R2 (Minor-Moderate) events, over 20-22 May. Probabilities increased slightly based on the flare potential of the active region near the NE limb."
+            }
+        }
+    },
+    "2025-05-21": {
+        "issue": "2025-05-21 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-05-21 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-05-21 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-05-21 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-05-21 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-05-21 12-15UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-05-21 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-05-21 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-05-21 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-05-22 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-22 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-22 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-22 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-22 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-22 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-22 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-22 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-05-23 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-23 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-23 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-05-23 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-23 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-23 15-18UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-05-23 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-23 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 4.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 35,
+                "n+1": 35,
+                "n+2": 35,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "May 21 2025 0008 UTC",
+                "rationale": "Solar flare activity is expected to remain low as most regions on the disk are fairly simple in their magnetic complexities. There remains a 35% chance for R1-R2 (Minor-Moderate) and a 5% chance for R3 (Strong) activity through 23 May."
+            }
+        }
+    },
+    "2025-05-22": {
+        "issue": "2025-05-22 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-05-22 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-22 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-22 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-22 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-22 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-22 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-22 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-22 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-05-23 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-23 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-23 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-05-23 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-23 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-23 15-18UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-05-23 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-23 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-05-24 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-05-24 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-05-24 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-05-24 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-05-24 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-05-24 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-05-24 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-05-24 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 2.0,
+                "greatest_expected_kp": 4.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 25,
+                "n+1": 25,
+                "n+2": 25,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "Solar flare activity is expected to remain low as most regions on the disk are fairly simple in their magnetic complexities. There remains a 25% chance for R1-R2 (Minor-Moderate) and a 5% chance for R3 (Strong) activity through 24 May."
+            }
+        }
+    },
+    "2025-05-23": {
+        "issue": "2025-05-23 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-05-23 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-23 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-05-23 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-23 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-05-23 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-23 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-05-23 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-05-23 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-05-24 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-24 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-24 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-05-24 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-24 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-05-24 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-24 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-05-24 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-05-25 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-25 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-25 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-05-25 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-25 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-05-25 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-25 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-25 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 2.0,
+                "greatest_expected_kp": 4.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 25,
+                "n+1": 25,
+                "n+2": 25,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There remains a chance for R1-R2 (Minor-Moderate) radio blackouts through 25 May."
+            }
+        }
+    },
+    "2025-05-24": {
+        "issue": "2025-05-24 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-05-24 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-05-24 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-05-24 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-05-24 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-05-24 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-05-24 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-24 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-24 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-05-25 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-25 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-25 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-05-25 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-25 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-05-25 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-25 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-25 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-05-26 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-26 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-26 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-05-26 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-26 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-05-26 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-26 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-26 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 2.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 25,
+                "n+1": 25,
+                "n+2": 25,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "A chance remains for R1/R2 (Minor/Moderate) radio blackouts through 26 May."
+            }
+        }
+    },
+    "2025-05-25": {
+        "issue": "2025-05-25 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-05-25 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-05-25 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-25 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-25 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-25 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-25 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2025-05-25 18-21UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2025-05-25 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-05-26 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-26 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-26 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-26 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-26 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-05-26 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2025-05-26 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-05-26 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-05-27 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-27 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-27 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-27 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-05-27 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-05-27 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2025-05-27 18-21UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2025-05-27 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 2.0,
+                "greatest_expected_kp": 2.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for a greater than 10 MeV proton flux (S1-Minor) event through 27 May."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 55,
+                "n+1": 55,
+                "n+2": 55,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 20,
+                "n+1": 20,
+                "n+2": 20,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R3",
+                "max_blackout_time": "May 25 2025 0152 UTC",
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are likely, with a chance for an isolated R3 (Strong) event, over 25-27 May, mostly attributed to the increased activity from Region 4098."
+            }
+        }
+    },
+    "2025-05-26": {
+        "issue": "2025-05-26 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-05-26 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-05-26 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-05-26 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-26 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-05-26 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-05-26 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2025-05-26 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-05-26 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-05-27 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-27 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-27 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-27 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-05-27 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-05-27 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2025-05-27 18-21UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2025-05-27 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-05-28 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-28 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-05-28 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-28 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-28 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-28 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-28 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-28 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 2.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for the greater than 10 MeV proton flux to reach S1 (Minor) levels over 26-28 May."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 65,
+                "n+1": 65,
+                "n+2": 65,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 25,
+                "n+1": 25,
+                "n+2": 25,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R2",
+                "max_blackout_time": "May 25 2025 1630 UTC",
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are likely, with a chance for isolated R3 (Strong or greater) events over 26-28 May."
+            }
+        }
+    },
+    "2025-05-27": {
+        "issue": "2025-05-27 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-05-27 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-27 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-27 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-05-27 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-27 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-05-27 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2025-05-27 18-21UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2025-05-27 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-05-28 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-05-28 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-28 06-09UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2025-05-28 09-12UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-05-28 12-15UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-28 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-05-28 18-21UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-05-28 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-05-29 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-05-29 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-05-29 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-05-29 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-05-29 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-29 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-29 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-29 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 5.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) or greater geomagnetic storms are likely on 28 May due to CH HSS onset. No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for the greater than 10 MeV proton flux to reach S1 (Minor) levels over 27-29 May."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 70,
+                "n+1": 70,
+                "n+2": 70,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 30,
+                "n+1": 30,
+                "n+2": 30,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "May 26 2025 1306 UTC",
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are likely, with a chance for isolated R3 (Strong or greater) events over 27-29 May."
+            }
+        }
+    },
+    "2025-05-28": {
+        "issue": "2025-05-28 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-05-28 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-05-28 03-06UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2025-05-28 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-28 09-12UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-05-28 12-15UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-28 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-05-28 18-21UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-05-28 21-00UT",
+                    4.67,
+                    "G1"
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-05-29 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-05-29 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-05-29 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-05-29 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-05-29 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-29 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-29 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-29 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-05-30 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-30 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-30 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-30 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-30 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-30 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-30 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-30 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 4.67,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) or greater geomagnetic storms are likely on 28 May due to CH HSS onset. No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for the greater than 10 MeV proton flux to reach S1 (Minor) levels over 28-30 May."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 55,
+                "n+1": 55,
+                "n+2": 55,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are likely, with a slight chance for isolated R3 (Strong or greater) events over 28-30 May."
+            }
+        }
+    },
+    "2025-05-29": {
+        "issue": "2025-05-29 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-05-29 00-03UT",
+                    6.67,
+                    "G3"
+                ],
+                [
+                    "2025-05-29 03-06UT",
+                    5.33,
+                    "G1"
+                ],
+                [
+                    "2025-05-29 06-09UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2025-05-29 09-12UT",
+                    5.33,
+                    "G1"
+                ],
+                [
+                    "2025-05-29 12-15UT",
+                    5.67,
+                    "G2"
+                ],
+                [
+                    "2025-05-29 15-18UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-05-29 18-21UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-05-29 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-05-30 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-30 03-06UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2025-05-30 06-09UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2025-05-30 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-30 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-30 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-30 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-30 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-05-31 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-31 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-31 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-05-31 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-05-31 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-31 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-31 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-31 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 7.0,
+                "greatest_expected_kp": 6.67,
+                "greatest_expected_scale": "G3",
+                "rationale": "G1-G2 (Minor-Moderate) geomagnetic storms are expected on 29 May due to persistent CH HSS influences."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for the greater than 10 MeV proton flux to reach S1 (Minor) levels over 29-31 May."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 50,
+                "n+1": 50,
+                "n+2": 50,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts, with a slight chance for isolated R3 (Strong or greater) events over 29-31 May."
+            }
+        }
+    },
+    "2025-05-30": {
+        "issue": "2025-05-30 12:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-05-30 00-03UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2025-05-30 03-06UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2025-05-30 06-09UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-05-30 09-12UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-05-30 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-05-30 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-05-30 18-21UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-05-30 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-05-31 00-03UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-05-31 03-06UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2025-05-31 06-09UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-05-31 09-12UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-05-31 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-05-31 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-31 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-31 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-06-01 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-06-01 03-06UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-06-01 06-09UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-06-01 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-06-01 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-01 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-06-01 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-06-01 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 6.0,
+                "greatest_expected_kp": 5.0,
+                "greatest_expected_scale": "G2",
+                "rationale": "G1-G2 (Minor-Moderate) geomagnetic storms are expected on 30 May due to influence from a negative polarity coronal hole. G1 (Minor) conditions are again likely on 31 May - 01 Jun due to waning coronal hole effects."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for S1 (Minor) or greater solar radiation storms over 30 May - 01 Jun."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 50,
+                "n+1": 50,
+                "n+2": 50,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "May 30 2025 0613 UTC",
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts, with a slight chance for R3 (Strong), over 30 May - 01 Jun."
+            }
+        }
+    },
+    "2025-05-31": {
+        "issue": "2025-05-31 15:35:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-05-31 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-05-31 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-05-31 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-05-31 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-05-31 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-05-31 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-31 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-05-31 21-00UT",
+                    4.67,
+                    "G1"
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-06-01 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-06-01 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-06-01 06-09UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-06-01 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-06-01 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-01 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-06-01 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-06-01 21-00UT",
+                    6.67,
+                    "G3"
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-06-02 00-03UT",
+                    7.67,
+                    "G4"
+                ],
+                [
+                    "2025-06-02 03-06UT",
+                    7.0,
+                    "G3"
+                ],
+                [
+                    "2025-06-02 06-09UT",
+                    6.67,
+                    "G3"
+                ],
+                [
+                    "2025-06-02 09-12UT",
+                    6.33,
+                    "G2"
+                ],
+                [
+                    "2025-06-02 12-15UT",
+                    6.0,
+                    "G2"
+                ],
+                [
+                    "2025-06-02 15-18UT",
+                    6.0,
+                    "G2"
+                ],
+                [
+                    "2025-06-02 18-21UT",
+                    5.67,
+                    "G2"
+                ],
+                [
+                    "2025-06-02 21-00UT",
+                    5.33,
+                    "G1"
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 4.67,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) storm conditions are likely early on 01 Jun as CH HSS conditions persist. By as early as late on 01 Jun to early on 02 Jun, conditions are expected to increase rapidly with the arrival of the expected CME from 31 May. G3-G4 (Strong-Severe) conditions are likely, with a chance for G5 (Extreme) levels on 01-02 Jun."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There exists a slight chance for S1 (Minor) or greater solar radiation storms over 31 May - 02 Jun, due primarily to recent activity from and future potential of Region 4100."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 65,
+                "n+1": 65,
+                "n+2": 65,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R2",
+                "max_blackout_time": "May 31 2025 0005 UTC",
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are likely, with a slight chance for R3 (Strong), over 31 May - 02 Jun due to the flare potential from multiple complex regions on the Suns visible disk. ****AMD for increased geomagnetic activity forecast****"
+            }
+        }
+    }
+}

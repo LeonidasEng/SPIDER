@@ -1,0 +1,5072 @@
+{
+    "2022-07-01": {
+        "issue": "2022-07-01 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-07-01 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-01 03-06UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-01 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-01 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-01 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-01 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-01 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-01 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-07-02 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-02 03-06UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-02 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-02 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-02 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-02 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-02 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-02 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-07-03 00-03UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-03 03-06UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-03 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-03 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-03 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-03 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-03 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-03 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 1.0,
+                "greatest_expected_kp": 2.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "No R1 (Minor) or greater radio blackouts are expected.  No significant active region flare activity is forecast."
+            }
+        }
+    },
+    "2022-07-02": {
+        "issue": "2022-07-02 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-07-02 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-02 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-02 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-02 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-02 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-02 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-02 18-21UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-02 21-00UT",
+                    1.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-07-03 00-03UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-03 03-06UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-03 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-03 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-03 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-03 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-03 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-03 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-07-04 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-04 03-06UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-04 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-04 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-04 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-04 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-04 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-04 21-00UT",
+                    1.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 3.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "No R1 (Minor) or greater radio blackouts are expected.  No significant active region flare activity is forecast."
+            }
+        }
+    },
+    "2022-07-03": {
+        "issue": "2022-07-03 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-07-03 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-03 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-03 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-03 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-03 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-03 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-03 18-21UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-03 21-00UT",
+                    1.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-07-04 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-04 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-04 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-04 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-04 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-04 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-04 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-04 21-00UT",
+                    1.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-07-05 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-05 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-05 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-05 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-05 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-05 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-05 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-05 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 5.0,
+                "greatest_expected_kp": 3.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "No R1 (Minor) or greater radio blackouts are expected.  No significant active region flare activity is forecast."
+            }
+        }
+    },
+    "2022-07-04": {
+        "issue": "2022-07-04 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-07-04 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-04 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-04 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-04 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-04 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-04 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-04 18-21UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-04 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-07-05 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-05 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-05 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-05 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-05 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-05 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-05 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-05 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-07-06 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-06 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-07-06 06-09UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2022-07-06 09-12UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2022-07-06 12-15UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-07-06 15-18UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-07-06 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-06 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 5.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) or greater geomagnetic storms are likely on 06 July due to CH HSS influence."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "No R1 (Minor) or greater radio blackouts are expected.  No significant active region flare activity is forecast."
+            }
+        }
+    },
+    "2022-07-05": {
+        "issue": "2022-07-05 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-07-05 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-05 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-05 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-05 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-05 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-05 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-05 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-05 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-07-06 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-06 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-07-06 06-09UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2022-07-06 09-12UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2022-07-06 12-15UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-07-06 15-18UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-07-06 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-06 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-07-07 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-07 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-07-07 06-09UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-07-07 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-07 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-07 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-07 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-07 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 5.0,
+                "greatest_expected_kp": 5.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storming is likely 06 Jul as CH HSS effects increase. A chance for isolated G1 (Minor) storming periods remains on 07 Jul as effects gradually begin to cease."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "No R1 (Minor) or greater radio blackouts are expected.  No significant active region flare activity is forecast."
+            }
+        }
+    },
+    "2022-07-06": {
+        "issue": "2022-07-06 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-07-06 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-06 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-07-06 06-09UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2022-07-06 09-12UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2022-07-06 12-15UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-07-06 15-18UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-07-06 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-06 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-07-07 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-07 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-07-07 06-09UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-07-07 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-07 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-07 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-07 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-07 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-07-08 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-08 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-08 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-08 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-08 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-08 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-08 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-08 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 1.0,
+                "greatest_expected_kp": 5.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storms are likely on 06 Jul as CH HSS effects increase. Unsettled to active levels, with a chance for isolated G1 (Minor) storming periods, are expected 07-08 Jul as effects wane."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "No R1 (Minor) or greater radio blackouts are expected.  No significant active region flare activity is forecast."
+            }
+        }
+    },
+    "2022-07-07": {
+        "issue": "2022-07-07 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-07-07 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-07 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-07-07 06-09UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-07-07 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-07 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-07 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-07 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-07 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-07-08 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-08 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-08 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-08 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-08 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-08 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-08 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-08 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-07-09 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-09 03-06UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-09 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-09 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-09 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-09 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-09 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-09 21-00UT",
+                    1.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 2.0,
+                "greatest_expected_kp": 4.0,
+                "greatest_expected_scale": null,
+                "rationale": "A chance remains for isolated G1 (Minor) storming periods on 07 Jul as the potential for CH HSS effects persists."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "No R1 (Minor) or greater radio blackouts are expected.  No significant active region flare activity is forecast."
+            }
+        }
+    },
+    "2022-07-08": {
+        "issue": "2022-07-08 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-07-08 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-07-08 03-06UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2022-07-08 06-09UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-07-08 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-08 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-08 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-08 18-21UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-08 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-07-09 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-09 03-06UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-09 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-09 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-09 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-09 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-09 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-09 21-00UT",
+                    1.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-07-10 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-10 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-10 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-10 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-10 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-10 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-10 18-21UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-10 21-00UT",
+                    1.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 5.0,
+                "greatest_expected_kp": 5.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storms are expected 08 Jul due to possible combined transient and CIR influences."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "A slight chance for R1 (Minor) or greater radio blackouts are possible through the period."
+            }
+        }
+    },
+    "2022-07-09": {
+        "issue": "2022-07-09 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-07-09 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-09 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-09 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-09 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-09 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-09 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-09 18-21UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-09 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-07-10 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-10 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-10 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-10 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-10 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-10 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-10 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-10 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-07-11 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-11 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-11 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-11 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-11 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-11 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-11 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-11 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 3.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 20,
+                "n+1": 20,
+                "n+2": 20,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Jul 08 2022 2049 UTC",
+                "rationale": "There is a slight chance for R1-R2 (Minor-Moderate) radio blackouts on 08-10 Jul."
+            }
+        }
+    },
+    "2022-07-10": {
+        "issue": "2022-07-10 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-07-10 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-10 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-10 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-10 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-10 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-10 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-10 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-10 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-07-11 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-11 03-06UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-11 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-11 09-12UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-07-11 12-15UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-07-11 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-11 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-11 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-07-12 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-12 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-12 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-12 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-12 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-12 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-12 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-12 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 4.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 35,
+                "n+1": 35,
+                "n+2": 35,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts on 10-12 Jul."
+            }
+        }
+    },
+    "2022-07-11": {
+        "issue": "2022-07-11 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-07-11 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-11 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-11 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-11 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-11 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-11 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-11 18-21UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-11 21-00UT",
+                    1.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-07-12 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-12 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-12 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-12 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-12 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-12 15-18UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-07-12 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-07-12 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-07-13 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-07-13 03-06UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2022-07-13 06-09UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2022-07-13 09-12UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-07-13 12-15UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-07-13 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-13 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-13 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 5.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) or greater geomagnetic storms are likely on 13 July due to CH HSS influence."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for S1 (Minor) solar radiation storms on 11-13 Jul due to the flare potential of Regions 3053 and 3055."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 50,
+                "n+1": 50,
+                "n+2": 50,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Jul 10 2022 2343 UTC",
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts and a slight chance for R3 (Strong) or greater on 11-13 Jul due to the flare potential of Regions 3053 and 3055."
+            }
+        }
+    },
+    "2022-07-12": {
+        "issue": "2022-07-12 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-07-12 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-12 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-12 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-12 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-12 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-12 15-18UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-07-12 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-07-12 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-07-13 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-07-13 03-06UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2022-07-13 06-09UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2022-07-13 09-12UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-07-13 12-15UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-07-13 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-13 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-13 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-07-14 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-07-14 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-14 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-14 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-14 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-14 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-14 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-14 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 5.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) storm conditions are likely on 13 Jul in response to positive polarity CH HSS influences."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 50,
+                "n+1": 50,
+                "n+2": 50,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Jul 11 2022 0919 UTC",
+                "rationale": "(R1-R2, Minor-Moderate) radio blackouts are likely with a slight chance for (R3 Strong or greater) radio blackouts on 12-14 Jul."
+            }
+        }
+    },
+    "2022-07-13": {
+        "issue": "2022-07-13 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-07-13 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-07-13 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-07-13 06-09UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2022-07-13 09-12UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-07-13 12-15UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-07-13 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-13 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-13 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-07-14 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-07-14 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-14 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-14 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-14 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-14 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-14 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-14 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-07-15 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-15 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-15 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-15 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-15 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-15 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-15 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-15 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 5.0,
+                "greatest_expected_kp": 5.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) storm conditions are again likely on 13 Jul in response to additional positive polarity CH HSS influences."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 40,
+                "n+1": 40,
+                "n+2": 40,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance for M-class flares (R1-R2, Minor-Moderate radio blackouts) and a slight chance for X-flares (R3 Strong or greater radio blackouts) on 13-15 Jul due to multiple complex spot regions on the visible disk."
+            }
+        }
+    },
+    "2022-07-14": {
+        "issue": "2022-07-14 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-07-14 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-14 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-14 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-14 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-14 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-14 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-14 18-21UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-14 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-07-15 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-15 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-15 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-15 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-15 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-15 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-15 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-15 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-07-16 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-16 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-16 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-16 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-16 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-16 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-16 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-16 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 2.0,
+                "greatest_expected_kp": 3.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 35,
+                "n+1": 35,
+                "n+2": 35,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance for (R1-R2, Minor-Moderate radio blackouts) and a slight chance for X-flares (R3 Strong or greater radio blackouts) through 16 Jul as a few of the spotted regions remain magnetically complex."
+            }
+        }
+    },
+    "2022-07-15": {
+        "issue": "2022-07-15 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-07-15 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-15 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-15 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-15 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-15 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-15 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-15 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-15 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-07-16 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-16 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-16 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-16 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-16 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-16 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-16 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-16 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-07-17 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-17 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-17 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-17 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-17 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-17 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-17 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-17 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 2.0,
+                "greatest_expected_kp": 3.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for a greater than 10 MeV proton enhancement exceeding alert thresholds (S1 Minor) through 17 Jul as Regions 3053 and 3055 approach the west limb."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 40,
+                "n+1": 40,
+                "n+2": 40,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Jul 14 2022 2148 UTC",
+                "rationale": "A chance still exists for (R1-R2, Minor-Moderate radio blackouts) and a slight chance for (R3 Strong or greater radio blackouts) through 17 Jul."
+            }
+        }
+    },
+    "2022-07-16": {
+        "issue": "2022-07-16 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-07-16 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-16 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-16 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-16 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-16 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-16 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-16 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-16 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-07-17 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-17 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-17 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-17 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-17 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-17 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-17 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-17 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-07-18 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-18 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-18 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-18 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-18 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-18 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-18 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-18 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 3.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "A slight chance for S1 (Minor) solar radiation storms will be present 17-18 July mainly due to the favorable location of active regions 3053 and 3055."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 45,
+                "n+1": 45,
+                "n+2": 45,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "A chance for R1-2 (Minor-Moderate), with a slight chance for R3 (Strong), radio blackouts will persist through 18 July given the current active regions on the solar disk."
+            }
+        }
+    },
+    "2022-07-17": {
+        "issue": "2022-07-17 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-07-17 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-17 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-17 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-17 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-17 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-17 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-17 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-17 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-07-18 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-18 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-18 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-18 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-18 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-18 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-18 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-18 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-07-19 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-19 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-19 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-19 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-19 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-19 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-19 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-19 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 3.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "A slight chance for S1 (Minor) solar radiation storms will be present 17-18 July mainly due to the favorable location of active regions 3053 and 3055, as well as growth noted in region 3056."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 45,
+                "n+1": 45,
+                "n+2": 40,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Jul 16 2022 1539 UTC",
+                "rationale": "A chance for R1-2 (Minor-Moderate), with a slight chance for R3 (Strong), radio blackouts will persist through 18 July given the current active regions on the solar disk. Chances begin to decrease 19 Jul as regions 3053 and 3055 rotate off the visible solar disk."
+            }
+        }
+    },
+    "2022-07-18": {
+        "issue": "2022-07-18 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-07-18 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-18 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-18 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-18 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-18 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-18 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-18 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-18 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-07-19 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-19 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-19 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-19 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-19 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-19 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-19 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-19 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-07-20 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-20 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-20 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-20 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-20 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-20 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-20 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-07-20 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 2.0,
+                "greatest_expected_kp": 4.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "A slight chance for S1 (Minor) radiation storms persists through 20 Jul due to the complexity and favorable locations of a few active regions in the western portion of the solar disk."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 45,
+                "n+1": 45,
+                "n+2": 40,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "A chance for R1-2 (Minor-Moderate), with a slight chance for R3 (Strong), radio blackouts will persist through 20 July given the current active regions on the solar disk."
+            }
+        }
+    },
+    "2022-07-19": {
+        "issue": "2022-07-19 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-07-19 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-07-19 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-19 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-19 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-19 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-19 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-19 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-19 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-07-20 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-20 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-20 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-20 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-20 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-20 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-20 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-07-20 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-07-21 00-03UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2022-07-21 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-21 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-21 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-21 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-21 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-21 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-07-21 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 5.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "A slow-moving CME that left the Sun on 15 Jul is expected to arrive at Earth on 21 Jul, making G1 (Minor) geomagnetic storming likely."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 35,
+                "n+1": 35,
+                "n+2": 35,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance for (R1-R2, Minor-Moderate radio blackouts) and a slight chance for (R3 Strong or greater radio blackouts) through 21 Jul."
+            }
+        }
+    },
+    "2022-07-20": {
+        "issue": "2022-07-20 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-07-20 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-07-20 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-20 06-09UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-07-20 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-20 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-20 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-20 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-07-20 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-07-21 00-03UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2022-07-21 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-21 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-21 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-21 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-21 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-21 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-07-21 21-00UT",
+                    5.0,
+                    "G1"
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-07-22 00-03UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2022-07-22 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-22 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-22 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-22 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-22 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-22 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-07-22 21-00UT",
+                    5.0,
+                    "G1"
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 5.0,
+                "greatest_expected_kp": 5.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "A slow-moving CME that left the Sun on 15 Jul combined with a CH HSS (-) that arrives as early as 21 Jul is likely to produce isolated G1 (Minor) geomagnetic storming on 21-22 Jul."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 25,
+                "n+1": 25,
+                "n+2": 25,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "A chance remains for (R1-R2, Minor-Moderate radio blackouts) and a slight chance for (R3 Strong or greater radio blackouts) through 22 Jul with the enhanced magnetic complexity of multiple regions on the visible disk."
+            }
+        }
+    },
+    "2022-07-21": {
+        "issue": "2022-07-21 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-07-21 00-03UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2022-07-21 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-21 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-21 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-21 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-21 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-21 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-07-21 21-00UT",
+                    5.0,
+                    "G1"
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-07-22 00-03UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2022-07-22 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-22 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-22 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-22 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-22 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-22 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-07-22 21-00UT",
+                    5.0,
+                    "G1"
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-07-23 00-03UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2022-07-23 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-07-23 06-09UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-07-23 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-23 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-23 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-23 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-23 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 5.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storms are likely through 23 Jul due to CME and CH HSS influences."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a slight chance for R1-R2 (Minor-Moderate) radio blackouts 21-22 Jul due to combined flare probabilities of active regions currently present on the visible solar disk."
+            }
+        }
+    },
+    "2022-07-22": {
+        "issue": "2022-07-22 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-07-22 00-03UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2022-07-22 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-07-22 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-22 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-22 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-22 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-22 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-22 21-00UT",
+                    5.0,
+                    "G1"
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-07-23 00-03UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2022-07-23 03-06UT",
+                    6.0,
+                    "G2"
+                ],
+                [
+                    "2022-07-23 06-09UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2022-07-23 09-12UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-07-23 12-15UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-07-23 15-18UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-07-23 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-23 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-07-24 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-07-24 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-07-24 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-24 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-24 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-24 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-24 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-24 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 5.0,
+                "greatest_expected_kp": 6.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storming is likely 22 July due to -CH HSS effects. Storming is likely to increase to G2 (Moderate) levels early on 23 July with the arrival of the 21 July CME."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "A slight chance R1-2 (Minor-Moderate) radio blackouts exists through 24 July mainly due to the current number of active regions present on the visible solar disk."
+            }
+        }
+    },
+    "2022-07-23": {
+        "issue": "2022-07-23 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-07-23 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-23 03-06UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2022-07-23 06-09UT",
+                    6.0,
+                    "G2"
+                ],
+                [
+                    "2022-07-23 09-12UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2022-07-23 12-15UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-07-23 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-23 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-07-23 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-07-24 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-07-24 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-07-24 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-24 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-24 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-24 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-24 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-24 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-07-25 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-25 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-25 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-25 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-25 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-25 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-25 18-21UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-25 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 6.0,
+                "greatest_expected_scale": "G2",
+                "rationale": "Isolated G1-2 (Minor-Moderate) geomagnetic storming is likely on 23 Jul with the arrival of the 21 Jul faint, halo CME."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "A slight chance for R1-2 (Minor-Moderate) radio blackouts persists through 25 Jul given the number of active regions and their magnetic configurations."
+            }
+        }
+    },
+    "2022-07-24": {
+        "issue": "2022-07-24 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-07-24 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-24 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-24 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-24 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-24 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-24 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-24 18-21UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-24 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-07-25 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-25 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-25 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-25 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-25 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-25 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-25 18-21UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-25 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-07-26 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-26 03-06UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-26 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-26 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-26 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-26 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-26 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-26 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 5.0,
+                "greatest_expected_kp": 3.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "No R1 (Minor) or greater radio blackouts are expected.  No significant active region flare activity is forecast."
+            }
+        }
+    },
+    "2022-07-26": {
+        "issue": "2022-07-26 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-07-26 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-26 03-06UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-26 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-26 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-26 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-26 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-26 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-26 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-07-27 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-27 03-06UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-27 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-27 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-27 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-27 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-27 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-27 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-07-28 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-28 03-06UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-28 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-28 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-28 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-28 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-28 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-28 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 2.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "No R1 (Minor) or greater radio blackouts are expected.  No significant active region flare activity is forecast."
+            }
+        }
+    },
+    "2022-07-27": {
+        "issue": "2022-07-27 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-07-27 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-27 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-27 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-27 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-27 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-27 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-27 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-27 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-07-28 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-28 03-06UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-28 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-28 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-28 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-28 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-28 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-28 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-07-29 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-29 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-29 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-29 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-29 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-29 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-29 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-29 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 3.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 5,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "No R1 (Minor) or greater radio blackouts are expected.  No significant active region flare activity is forecast."
+            }
+        }
+    },
+    "2022-07-28": {
+        "issue": "2022-07-28 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-07-28 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-28 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-28 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-28 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-28 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-28 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-28 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-28 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-07-29 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-29 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-29 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-29 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-29 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-29 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-29 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-29 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-07-30 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-30 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-30 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-30 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-30 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-30 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-30 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-07-30 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 4.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "No R1 (Minor) or greater radio blackouts are expected.  No significant active region flare activity is forecast."
+            }
+        }
+    },
+    "2022-07-29": {
+        "issue": "2022-07-29 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-07-29 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-29 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-29 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-29 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-29 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-29 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-29 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-29 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-07-30 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-30 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-30 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-30 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-30 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-30 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-30 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-07-30 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-07-31 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-31 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-31 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-31 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-31 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-31 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-31 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-31 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 4.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "No R1 (Minor) or greater radio blackouts are expected.  No significant active region flare activity is forecast."
+            }
+        }
+    },
+    "2022-07-30": {
+        "issue": "2022-07-30 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-07-30 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-30 03-06UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-30 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-30 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-30 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-30 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-30 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-30 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-07-31 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-07-31 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-31 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-31 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-31 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-31 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-31 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-31 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-08-01 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-08-01 03-06UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-08-01 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-08-01 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-08-01 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-08-01 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-08-01 18-21UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-08-01 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 2.0,
+                "greatest_expected_kp": 4.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "No R1 (Minor) or greater radio blackouts are expected.  No significant active region flare activity is forecast."
+            }
+        }
+    },
+    "2022-07-31": {
+        "issue": "2022-07-31 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2022-07-31 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-31 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-31 06-09UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2022-07-31 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2022-07-31 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-31 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-07-31 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-07-31 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2022-08-01 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-08-01 03-06UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-08-01 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-08-01 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-08-01 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-08-01 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-08-01 18-21UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-08-01 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2022-08-02 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-08-02 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-08-02 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2022-08-02 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-08-02 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-08-02 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-08-02 18-21UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2022-08-02 21-00UT",
+                    1.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 4.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "No R1 (Minor) or greater radio blackouts are expected.  No significant active region flare activity is forecast."
+            }
+        }
+    }
+}

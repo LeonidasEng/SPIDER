@@ -1,0 +1,5072 @@
+{
+    "2025-06-01": {
+        "issue": "2025-06-01 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-06-01 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-06-01 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-06-01 06-09UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-06-01 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-06-01 12-15UT",
+                    7.67,
+                    "G4"
+                ],
+                [
+                    "2025-06-01 15-18UT",
+                    7.67,
+                    "G4"
+                ],
+                [
+                    "2025-06-01 18-21UT",
+                    7.33,
+                    "G3"
+                ],
+                [
+                    "2025-06-01 21-00UT",
+                    7.33,
+                    "G3"
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-06-02 00-03UT",
+                    7.0,
+                    "G3"
+                ],
+                [
+                    "2025-06-02 03-06UT",
+                    7.67,
+                    "G4"
+                ],
+                [
+                    "2025-06-02 06-09UT",
+                    6.67,
+                    "G3"
+                ],
+                [
+                    "2025-06-02 09-12UT",
+                    6.33,
+                    "G2"
+                ],
+                [
+                    "2025-06-02 12-15UT",
+                    6.0,
+                    "G2"
+                ],
+                [
+                    "2025-06-02 15-18UT",
+                    6.0,
+                    "G2"
+                ],
+                [
+                    "2025-06-02 18-21UT",
+                    5.67,
+                    "G2"
+                ],
+                [
+                    "2025-06-02 21-00UT",
+                    5.33,
+                    "G1"
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-06-03 00-03UT",
+                    5.33,
+                    "G1"
+                ],
+                [
+                    "2025-06-03 03-06UT",
+                    5.67,
+                    "G2"
+                ],
+                [
+                    "2025-06-03 06-09UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2025-06-03 09-12UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-06-03 12-15UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-06-03 15-18UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2025-06-03 18-21UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-06-03 21-00UT",
+                    4.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 7.67,
+                "greatest_expected_scale": "G4",
+                "rationale": "By midday on 01 Jun, conditions are expected to increase rapidly with the arrival of the expected CME from 31 May. G3-G4 (Strong-Severe) conditions are likely, with a chance for G5 (Extreme) levels on 01-02 Jun. G1-G2 (Minor-Moderate) conditions are expected to persist on 03 Jun."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 75,
+                "n+1": 75,
+                "n+2": 75,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": true,
+                "rationale": "S1 (Minor) or greater solar radiation storms are expected to persist on 01-03 Jun."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 65,
+                "n+1": 65,
+                "n+2": 65,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 25,
+                "n+1": 25,
+                "n+2": 25,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R2",
+                "max_blackout_time": "May 31 2025 0030 UTC",
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are likely, with a slight chance for R3 (Strong), over 01 Jun - 03 Jun due to the flare potential from multiple complex regions on the Suns visible disk."
+            }
+        }
+    },
+    "2025-06-02": {
+        "issue": "2025-06-02 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-06-02 00-03UT",
+                    7.0,
+                    "G3"
+                ],
+                [
+                    "2025-06-02 03-06UT",
+                    7.67,
+                    "G4"
+                ],
+                [
+                    "2025-06-02 06-09UT",
+                    6.67,
+                    "G3"
+                ],
+                [
+                    "2025-06-02 09-12UT",
+                    6.33,
+                    "G2"
+                ],
+                [
+                    "2025-06-02 12-15UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2025-06-02 15-18UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-06-02 18-21UT",
+                    5.33,
+                    "G1"
+                ],
+                [
+                    "2025-06-02 21-00UT",
+                    4.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-06-03 00-03UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2025-06-03 03-06UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2025-06-03 06-09UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-06-03 09-12UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-06-03 12-15UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-06-03 15-18UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2025-06-03 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-06-03 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-06-04 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-06-04 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-06-04 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-06-04 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-04 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-04 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-06-04 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-04 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 8.0,
+                "greatest_expected_kp": 7.67,
+                "greatest_expected_scale": "G4",
+                "rationale": "UP to G4 (Severe) geomagnetic storms are likely on 02 Jun due to effects from a CME that left the Sun on 31 May. G1-G2 (Minor-Moderate) geomagnetic storms are likely on 03 Jun due to coronal hole influence."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 99,
+                "n+1": 75,
+                "n+2": 60,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": true,
+                "rationale": "S1-S2 (Minor-Moderate) solar radiation storms are likely persist over 02-03 Jun becoming likely on 04 Jun."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 65,
+                "n+1": 65,
+                "n+2": 65,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are likely, with a slight chance for R3 (Strong), over 02-04 Jun."
+            }
+        }
+    },
+    "2025-06-03": {
+        "issue": "2025-06-03 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-06-03 00-03UT",
+                    5.67,
+                    "G2"
+                ],
+                [
+                    "2025-06-03 03-06UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2025-06-03 06-09UT",
+                    7.0,
+                    "G3"
+                ],
+                [
+                    "2025-06-03 09-12UT",
+                    5.67,
+                    "G2"
+                ],
+                [
+                    "2025-06-03 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-03 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-03 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-03 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-06-04 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-04 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-04 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-04 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-04 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-04 15-18UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-06-04 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-06-04 21-00UT",
+                    4.67,
+                    "G1"
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-06-05 00-03UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2025-06-05 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-06-05 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-06-05 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-05 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-05 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-05 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-05 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 7.0,
+                "greatest_expected_kp": 7.0,
+                "greatest_expected_scale": "G3",
+                "rationale": "G3 (Strong) storm levels are expected through early to midday 03 Jun as CME effects persist. G1 (Minor) storming is likely on 04-05 Jun due to CH HSS effects."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 25,
+                "n+1": 25,
+                "n+2": 25,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": true,
+                "rationale": "There is a chance for a greater than 10 MeV proton event (S1-Minor) on 03-05 Jun due primarily to the flare potential of Region 4100."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 55,
+                "n+1": 55,
+                "n+2": 55,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Jun 02 2025 1118 UTC",
+                "rationale": "(R1-R2, Minor-Moderate) radio blackouts are likely, with a slight chance for an (R3-Strong) event on 03-05 Jun due primarily to the flare potential of Region 4100."
+            }
+        }
+    },
+    "2025-06-04": {
+        "issue": "2025-06-04 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-06-04 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-06-04 03-06UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-06-04 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-04 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-04 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-04 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-04 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-04 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-06-05 00-03UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2025-06-05 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-06-05 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-06-05 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-05 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-05 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-05 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-05 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-06-06 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-06-06 03-06UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-06-06 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-06-06 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-06 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-06 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-06-06 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-06-06 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 7.0,
+                "greatest_expected_kp": 5.0,
+                "greatest_expected_scale": "G3",
+                "rationale": "No G1 (Minor) geomagnetic storms are expected should the current solar wind environment turn favorable again early on 4 Jun. CME influences are anticipated to cease later on 4 Jun, and a transition back to a CH HSS regime is expected which will make G1 storm levels possible again on 5 Jun."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 55,
+                "n+1": 55,
+                "n+2": 55,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Jun 03 2025 1303 UTC",
+                "rationale": "R1 (Minor) radio blackouts are likely due to a few active regions on the solar disk and their combined solar flare potential."
+            }
+        }
+    },
+    "2025-06-05": {
+        "issue": "2025-06-05 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-06-05 00-03UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-06-05 03-06UT",
+                    5.67,
+                    "G2"
+                ],
+                [
+                    "2025-06-05 06-09UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-06-05 09-12UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-06-05 12-15UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-06-05 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-05 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-06-05 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-06-06 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-06-06 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-06-06 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-06-06 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-06 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-06 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-06-06 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-06-06 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-06-07 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-06-07 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-06-07 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-07 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-07 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-06-07 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-07 18-21UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-06-07 21-00UT",
+                    4.67,
+                    "G1"
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 5.0,
+                "greatest_expected_kp": 5.67,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 to G2 (Minor-Moderate) geomagnetic storming is likely on 05 Jun due to waning CME and CH HSS influences. G1 (Minor) geomagnetic storming is likely again on 07 Jun due to CME influences from the 04 Jun filament eruption."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "A slight chance for S1 (Minor) solar radiation storms will persist through 07 Jun given the flare potential and history of AR 4100 in particular."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 45,
+                "n+1": 45,
+                "n+2": 45,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Jun 04 2025 2328 UTC",
+                "rationale": "A chance for R1-2 (Minor-Moderate) radio blackouts, with a slight chance for an isolated R3 (Strong) event, will persist through 07 Jun."
+            }
+        }
+    },
+    "2025-06-06": {
+        "issue": "2025-06-06 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-06-06 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-06 03-06UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-06-06 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-06-06 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-06-06 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-06 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-06 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-06 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-06-07 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-06-07 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-06-07 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-07 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-07 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-06-07 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-07 18-21UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-06-07 21-00UT",
+                    4.67,
+                    "G1"
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-06-08 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-06-08 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-06-08 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-08 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-08 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-08 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-06-08 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-06-08 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 4.67,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storming is likely on 07 Jun due to CME influences from the 04 Jun filament eruption."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 40,
+                "n+1": 40,
+                "n+2": 40,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "A chance for R1-2 (Minor-Moderate) radio blackouts, with a slight chance for an isolated R3 (Strong) event, will persist through 08 Jun."
+            }
+        }
+    },
+    "2025-06-07": {
+        "issue": "2025-06-07 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-06-07 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-06-07 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-06-07 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-07 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-07 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-06-07 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-07 18-21UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-06-07 21-00UT",
+                    4.67,
+                    "G1"
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-06-08 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-06-08 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-06-08 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-08 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-08 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-08 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-06-08 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-06-08 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-06-09 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-09 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-06-09 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-06-09 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-09 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-09 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-09 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-09 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 2.0,
+                "greatest_expected_kp": 4.67,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storming is likely on 07 Jun due to anticipated CME influence."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 35,
+                "n+1": 35,
+                "n+2": 35,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There exists a chance for R1-R2 (Minor-Moderate) radio blackouts over 07-09 Jun."
+            }
+        }
+    },
+    "2025-06-08": {
+        "issue": "2025-06-08 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-06-08 00-03UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-06-08 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-06-08 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-06-08 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-06-08 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-08 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-08 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-08 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-06-09 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-06-09 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-06-09 06-09UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2025-06-09 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-06-09 12-15UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-06-09 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-09 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-09 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-06-10 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-06-10 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-10 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-10 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-10 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-06-10 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-10 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-10 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 5.0,
+                "greatest_expected_kp": 5.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storms are likely on 08-09 Jun due to transient influence."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 30,
+                "n+1": 35,
+                "n+2": 35,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "A chance exists for R1-R2 (Minor-Moderate) radio blackouts over 08-10 Jun."
+            }
+        }
+    },
+    "2025-06-09": {
+        "issue": "2025-06-09 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-06-09 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-06-09 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-06-09 06-09UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2025-06-09 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-06-09 12-15UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-06-09 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-09 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-09 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-06-10 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-06-10 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-10 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-10 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-10 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-06-10 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-10 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-10 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-06-11 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-11 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-11 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-11 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-11 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-06-11 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2025-06-11 18-21UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-06-11 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 5.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storms are likely on 09 Jun due to CME and coronal hole influence."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 25,
+                "n+1": 25,
+                "n+2": 25,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There exists a chance for R1-R2 (Minor-Moderate) radio blackouts over 09-11 Jun."
+            }
+        }
+    },
+    "2025-06-10": {
+        "issue": "2025-06-10 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-06-10 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-06-10 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-10 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-10 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-10 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-06-10 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-10 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-10 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-06-11 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-11 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-11 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-11 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-11 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-06-11 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2025-06-11 18-21UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-06-11 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-06-12 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-12 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-06-12 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-06-12 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-06-12 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-06-12 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-06-12 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-06-12 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 4.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 20,
+                "n+1": 20,
+                "n+2": 20,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "No R1 (Minor) or greater radio blackouts are expected.  No significant active region flare activity is forecast."
+            }
+        }
+    },
+    "2025-06-11": {
+        "issue": "2025-06-11 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-06-11 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-11 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-11 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-11 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-11 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-06-11 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2025-06-11 18-21UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-06-11 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-06-12 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-12 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-12 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-06-12 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-06-12 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-06-12 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-06-12 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-06-12 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-06-13 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-06-13 03-06UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-06-13 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-06-13 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-13 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-13 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-13 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-13 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 4.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 35,
+                "n+1": 35,
+                "n+2": 35,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts all three days."
+            }
+        }
+    },
+    "2025-06-12": {
+        "issue": "2025-06-12 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-06-12 00-03UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-06-12 03-06UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-06-12 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-06-12 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-06-12 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-12 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-12 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-12 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-06-13 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-06-13 03-06UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-06-13 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-06-13 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-13 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-13 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-13 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-13 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-06-14 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-06-14 03-06UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-06-14 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-06-14 09-12UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2025-06-14 12-15UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2025-06-14 15-18UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-06-14 18-21UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-06-14 21-00UT",
+                    5.67,
+                    "G2"
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 5.0,
+                "greatest_expected_kp": 5.67,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storms are expected early on 12 Jun due to sustained southward Bz. G1-G2 storming is likely again 14 Jun due to recurrent CH HSS influences."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 40,
+                "n+1": 40,
+                "n+2": 40,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts all three days."
+            }
+        }
+    },
+    "2025-06-13": {
+        "issue": "2025-06-13 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-06-13 00-03UT",
+                    5.33,
+                    "G1"
+                ],
+                [
+                    "2025-06-13 03-06UT",
+                    5.67,
+                    "G2"
+                ],
+                [
+                    "2025-06-13 06-09UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-06-13 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-06-13 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-13 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-13 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-13 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-06-14 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-06-14 03-06UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-06-14 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-06-14 09-12UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2025-06-14 12-15UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2025-06-14 15-18UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-06-14 18-21UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-06-14 21-00UT",
+                    5.67,
+                    "G2"
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-06-15 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-06-15 03-06UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-06-15 06-09UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2025-06-15 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-06-15 12-15UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-06-15 15-18UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-06-15 18-21UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-06-15 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 5.0,
+                "greatest_expected_kp": 5.67,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1-G2 (Minor-Moderate) or greater geomagnetic storms are expected early on 13 Jun due to what is likely passage of the 08 Jun transient. G1-G2 storms are likely on 14-15 Jun due to the expected onset of a CIR and subsequent CH HSS."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 40,
+                "n+1": 40,
+                "n+2": 40,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts all three days."
+            }
+        }
+    },
+    "2025-06-14": {
+        "issue": "2025-06-14 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-06-14 00-03UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-06-14 03-06UT",
+                    5.33,
+                    "G1"
+                ],
+                [
+                    "2025-06-14 06-09UT",
+                    5.67,
+                    "G2"
+                ],
+                [
+                    "2025-06-14 09-12UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2025-06-14 12-15UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-06-14 15-18UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-06-14 18-21UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2025-06-14 21-00UT",
+                    6.0,
+                    "G2"
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-06-15 00-03UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2025-06-15 03-06UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2025-06-15 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-06-15 09-12UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-06-15 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-15 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-15 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-15 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-06-16 00-03UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-06-16 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-06-16 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-06-16 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-16 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-16 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-16 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-16 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 6.0,
+                "greatest_expected_kp": 6.0,
+                "greatest_expected_scale": "G2",
+                "rationale": "Periods of G1-G2 (Minor-Moderate) geomagnetic storms are expected on 14 Jun due to CME and CH HSS influences. Periods of G1 (Minor) storming are likely on 15-16 Jun due to CH HSS influences."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 40,
+                "n+1": 40,
+                "n+2": 40,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Jun 13 2025 2110 UTC",
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts over 14-16 Jun."
+            }
+        }
+    },
+    "2025-06-15": {
+        "issue": "2025-06-15 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-06-15 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-06-15 03-06UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-06-15 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-15 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-15 12-15UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-06-15 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-06-15 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-06-15 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-06-16 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-06-16 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-16 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-16 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-16 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-16 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-06-16 18-21UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-06-16 21-00UT",
+                    4.67,
+                    "G1"
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-06-17 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-06-17 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-06-17 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-06-17 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-17 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-17 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-17 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-06-17 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 5.0,
+                "greatest_expected_kp": 4.67,
+                "greatest_expected_scale": "G1",
+                "rationale": "Periods of G1 (Minor) geomagnetic storms are likely on 15-16 Jun due to CH HSS influences."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for S1 (Minor) solar radiation storms over 15-17 Jun."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 55,
+                "n+1": 55,
+                "n+2": 55,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R2",
+                "max_blackout_time": "Jun 14 2025 2301 UTC",
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are likely, with a slight chance for R3 (Strong) or greater events, over 15-17 Jun."
+            }
+        }
+    },
+    "2025-06-16": {
+        "issue": "2025-06-16 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-06-16 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-16 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-16 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-16 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-06-16 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-06-16 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-16 18-21UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-06-16 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-06-17 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-17 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-06-17 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-17 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-17 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-17 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-06-17 18-21UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2025-06-17 21-00UT",
+                    1.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-06-18 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-06-18 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-06-18 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-06-18 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-18 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-18 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-06-18 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-06-18 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 4.67,
+                "greatest_expected_scale": "G1",
+                "rationale": "Periods of G1 (Minor) geomagnetic storms are likely on 16 Jun due to CH HSS influences."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 65,
+                "n+1": 45,
+                "n+2": 35,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "S1 (Minor) solar radiation storms are likely on 16 Jun, with a chance for S1 conditions on 17-18 Jun, following the M8.4 flare at 15/1807 UTC."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 75,
+                "n+1": 75,
+                "n+2": 75,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 30,
+                "n+1": 30,
+                "n+2": 30,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R2",
+                "max_blackout_time": "Jun 15 2025 1807 UTC",
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are expected, with a chance for R3 (Strong) or greater events, over 16-18 Jun."
+            }
+        }
+    },
+    "2025-06-17": {
+        "issue": "2025-06-17 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-06-17 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-17 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-06-17 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-17 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-17 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-17 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-06-17 18-21UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2025-06-17 21-00UT",
+                    1.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-06-18 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-06-18 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-18 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-06-18 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-18 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-18 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-06-18 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-06-18 21-00UT",
+                    4.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-06-19 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-06-19 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-06-19 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-06-19 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-19 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-19 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-06-19 18-21UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-06-19 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 4.33,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 30,
+                "n+1": 15,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a decreasing chance for S1 (Minor) or greater solar radiation storms over the next three days."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 75,
+                "n+1": 75,
+                "n+2": 70,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 30,
+                "n+1": 30,
+                "n+2": 30,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R2",
+                "max_blackout_time": "Jun 16 2025 0938 UTC",
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are expected, with a chance for R3 (Strong) or greater events, over 17-19 Jun."
+            }
+        }
+    },
+    "2025-06-18": {
+        "issue": "2025-06-18 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-06-18 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-06-18 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-18 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-06-18 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-18 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-18 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-06-18 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-06-18 21-00UT",
+                    4.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-06-19 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-06-19 03-06UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-06-19 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-06-19 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-19 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-06-19 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-06-19 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-19 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-06-20 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-20 03-06UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2025-06-20 06-09UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2025-06-20 09-12UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2025-06-20 12-15UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-06-20 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-06-20 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-20 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 5.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) or greater geomagnetic storms are likely on 20 Jun due to possible transient passage."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for S1 (Minor) or greater solar radiation storms all three days, primarily due to the potential from Region 4114."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 75,
+                "n+1": 75,
+                "n+2": 75,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 25,
+                "n+1": 25,
+                "n+2": 25,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R3",
+                "max_blackout_time": "Jun 17 2025 2149 UTC",
+                "rationale": "R1-R2 (Minor-Moderate) flaring is expected with a chance for X-class flares (R3-Strong) on 18-20 Jun, mostly driven by Regions 4114 and 4115."
+            }
+        }
+    },
+    "2025-06-19": {
+        "issue": "2025-06-19 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-06-19 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-06-19 03-06UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-06-19 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-06-19 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-19 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-06-19 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-06-19 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-19 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-06-20 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-20 03-06UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2025-06-20 06-09UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2025-06-20 09-12UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2025-06-20 12-15UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-06-20 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-06-20 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-20 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-06-21 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-21 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-06-21 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-21 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-21 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-21 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-21 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-21 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 5.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storming is likely on 20 June.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for S1 (Minor) or greater solar radiation storms through 21 Jun."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 75,
+                "n+1": 75,
+                "n+2": 75,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 25,
+                "n+1": 25,
+                "n+2": 25,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "R1-R2 (Minor-Moderate) flaring is expected with a chance for X-class flares (R3-Strong) through 21 June, mostly driven by Regions 4114, 4115, and 4117."
+            }
+        }
+    },
+    "2025-06-20": {
+        "issue": "2025-06-20 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-06-20 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-20 03-06UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2025-06-20 06-09UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2025-06-20 09-12UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2025-06-20 12-15UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-06-20 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-06-20 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-20 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-06-21 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-21 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-06-21 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-21 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-21 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-21 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-21 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-21 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-06-22 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-06-22 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-06-22 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-06-22 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-06-22 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-06-22 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-06-22 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-06-22 21-00UT",
+                    1.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 5.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "An isolated period of G1 (Minor) geomagnetic storms are likely on 20 Jun due to positive polarity CH HSS influences and possible influences from a CME that left the Sun on 17 Jun."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for S1 (Minor) solar radiation storms over 20-22 Jun."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 65,
+                "n+1": 65,
+                "n+2": 65,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R3",
+                "max_blackout_time": "Jun 19 2025 2350 UTC",
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are expected, with a slight chance for R3 (Strong) or greater events, over 20-22 Jun."
+            }
+        }
+    },
+    "2025-06-21": {
+        "issue": "2025-06-21 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-06-21 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-21 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-06-21 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-21 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-21 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-21 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-21 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-21 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-06-22 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-22 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-06-22 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-22 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-22 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-22 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-22 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-22 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-06-23 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-23 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-06-23 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-06-23 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-23 12-15UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-06-23 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-23 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-23 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for S1 (Minor) solar radiation storms over 21-23 Jun following any significant activity from Regions 4114 or 4117."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 65,
+                "n+1": 65,
+                "n+2": 65,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Jun 20 2025 1740 UTC",
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are likely, with a slight chance for R3 (Strong) or greater events, over 21-23 Jun."
+            }
+        }
+    },
+    "2025-06-22": {
+        "issue": "2025-06-22 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-06-22 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-22 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-06-22 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-22 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-22 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-22 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-22 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-22 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-06-23 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-23 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-06-23 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-06-23 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-23 12-15UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-06-23 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-23 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-23 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-06-24 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-24 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-06-24 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-06-24 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-24 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-24 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-24 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-24 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for S1 (Minor) solar radiation storms over 22-24 Jun."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 55,
+                "n+1": 55,
+                "n+2": 55,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are likely, with a slight chance for R3 (Strong) or greater events, over 22-24 Jun."
+            }
+        }
+    },
+    "2025-06-23": {
+        "issue": "2025-06-23 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-06-23 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-23 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-06-23 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-06-23 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-23 12-15UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-06-23 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-23 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-23 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-06-24 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-24 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-06-24 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-06-24 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-24 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-24 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-24 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-24 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-06-25 00-03UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-06-25 03-06UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-06-25 06-09UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-06-25 09-12UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-06-25 12-15UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-06-25 15-18UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-06-25 18-21UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-06-25 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 4.67,
+                "greatest_expected_scale": "G1",
+                "rationale": "Periods of G1 (Minor) geomagnetic storms are likely on 25 Jun due to the onset of negative polarity CH HSS influences."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for S1 (Minor) solar radiation storms over 23-25 Jun due to eruptive potential from multiple regions on the visible disk."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 45,
+                "n+1": 45,
+                "n+2": 45,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts, and a slight chance for R3 (Strong) or greater events, over 23-25 Jun."
+            }
+        }
+    },
+    "2025-06-24": {
+        "issue": "2025-06-24 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-06-24 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-24 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-06-24 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-06-24 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-24 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-24 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-24 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-24 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-06-25 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-25 03-06UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2025-06-25 06-09UT",
+                    5.33,
+                    "G1"
+                ],
+                [
+                    "2025-06-25 09-12UT",
+                    5.67,
+                    "G2"
+                ],
+                [
+                    "2025-06-25 12-15UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2025-06-25 15-18UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-06-25 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-06-25 21-00UT",
+                    5.0,
+                    "G1"
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-06-26 00-03UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2025-06-26 03-06UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-06-26 06-09UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-06-26 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-06-26 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-26 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-26 18-21UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-06-26 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 5.67,
+                "greatest_expected_scale": "G2",
+                "rationale": "G1-G2 (Minor-Moderate) geomagnetic storming is likely 25-26 June due to recurrent, negative polarity CH HSS effects."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for an S1 (Minor) solar radiation storm on 24-26 Jun."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 35,
+                "n+1": 35,
+                "n+2": 35,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "A chance for R1-R2 (Minor-Moderate) radio blackouts, with a slight chance for X-class flares (R3-Strong), will persist through 26 June."
+            }
+        }
+    },
+    "2025-06-25": {
+        "issue": "2025-06-25 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-06-25 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-25 03-06UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2025-06-25 06-09UT",
+                    5.33,
+                    "G1"
+                ],
+                [
+                    "2025-06-25 09-12UT",
+                    5.67,
+                    "G2"
+                ],
+                [
+                    "2025-06-25 12-15UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2025-06-25 15-18UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-06-25 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-06-25 21-00UT",
+                    5.0,
+                    "G1"
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-06-26 00-03UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2025-06-26 03-06UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-06-26 06-09UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-06-26 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-06-26 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-26 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-26 18-21UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-06-26 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-06-27 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-06-27 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-06-27 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-06-27 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-27 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-27 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-27 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-27 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 5.67,
+                "greatest_expected_scale": "G2",
+                "rationale": "G1-G2 (Minor-Moderate) geomagnetic storming is likely 25-26 June due to recurrent, negative polarity CH HSS effects."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 30,
+                "n+1": 30,
+                "n+2": 35,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "A chance for R1-R2 (Minor-Moderate) radio blackouts, with a slight chance for X-class flares (R3-Strong), will persist through 27 June."
+            }
+        }
+    },
+    "2025-06-26": {
+        "issue": "2025-06-26 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-06-26 00-03UT",
+                    5.33,
+                    "G1"
+                ],
+                [
+                    "2025-06-26 03-06UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2025-06-26 06-09UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-06-26 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-06-26 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-26 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-26 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-06-26 21-00UT",
+                    5.0,
+                    "G1"
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-06-27 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-06-27 03-06UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-06-27 06-09UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-06-27 09-12UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-06-27 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-27 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-27 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-27 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-06-28 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-06-28 03-06UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-06-28 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-28 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-28 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-28 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-28 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-28 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 5.33,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storming is likely, with a chance for an insolated G2 (Moderate) storming period, on 26-27 June due to negative polarity CH HSS effects."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 30,
+                "n+1": 35,
+                "n+2": 35,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "A chance for R1-R2 (Minor-Moderate) radio blackouts, with a slight chance for X-class flares (R3-Strong), will persist through 28 June."
+            }
+        }
+    },
+    "2025-06-27": {
+        "issue": "2025-06-27 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-06-27 00-03UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2025-06-27 03-06UT",
+                    5.67,
+                    "G2"
+                ],
+                [
+                    "2025-06-27 06-09UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-06-27 09-12UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-06-27 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-27 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-27 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-27 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-06-28 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-06-28 03-06UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-06-28 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-28 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-28 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-28 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-28 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-28 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-06-29 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-29 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-29 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-29 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-06-29 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-06-29 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-06-29 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-06-29 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 5.0,
+                "greatest_expected_kp": 5.67,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1-G2 (Minor-Moderate) geomagnetic storming is expected on 27 June due to persistent negative polarity CH HSS effects."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 25,
+                "n+1": 30,
+                "n+2": 30,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "A chance for R1-R2 (Minor-Moderate) radio blackouts due to isolated M-class flare activity will persist through 29 June."
+            }
+        }
+    },
+    "2025-06-28": {
+        "issue": "2025-06-28 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-06-28 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2025-06-28 03-06UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-06-28 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2025-06-28 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-28 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-28 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-28 18-21UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-06-28 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-06-29 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-29 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-29 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-29 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-06-29 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-06-29 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-06-29 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-06-29 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-06-30 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-06-30 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-06-30 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-06-30 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-06-30 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-06-30 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-06-30 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-06-30 21-00UT",
+                    1.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 5.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": "G1",
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 25,
+                "n+1": 25,
+                "n+2": 25,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There exists a chance for R1-R2 (Minor-Moderate) radio blackouts over 28-30 Jun."
+            }
+        }
+    },
+    "2025-06-29": {
+        "issue": "2025-06-29 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-06-29 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-06-29 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-29 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2025-06-29 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-06-29 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-06-29 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-06-29 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2025-06-29 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-06-30 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-06-30 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-06-30 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-06-30 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-06-30 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-06-30 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-06-30 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-06-30 21-00UT",
+                    1.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-07-01 00-03UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-07-01 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-07-01 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-07-01 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-07-01 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-07-01 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-07-01 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-07-01 21-00UT",
+                    1.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 2.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 25,
+                "n+1": 25,
+                "n+2": 25,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts through the period."
+            }
+        }
+    },
+    "2025-06-30": {
+        "issue": "2025-06-30 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2025-06-30 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-06-30 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-06-30 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-06-30 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-06-30 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-06-30 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-06-30 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-06-30 21-00UT",
+                    1.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2025-07-01 00-03UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-07-01 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-07-01 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-07-01 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-07-01 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-07-01 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2025-07-01 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2025-07-01 21-00UT",
+                    1.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2025-07-02 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2025-07-02 03-06UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2025-07-02 06-09UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2025-07-02 09-12UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2025-07-02 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-07-02 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2025-07-02 18-21UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2025-07-02 21-00UT",
+                    4.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 5.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storming is likely on 02 Jul with the arrival of the 28 Jun CME."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 25,
+                "n+1": 25,
+                "n+2": 25,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "A chance for R1-R2 (Minor-Moderate) radio blackouts due to isolated M-class flare activity will persist through 02 July."
+            }
+        }
+    }
+}

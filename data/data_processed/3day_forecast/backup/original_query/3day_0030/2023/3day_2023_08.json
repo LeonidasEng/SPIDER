@@ -1,0 +1,4367 @@
+{
+    "2023-08-01": {
+        "issue": "2023-08-01 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-08-01 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-01 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-08-01 06-09UT",
+                    5.33,
+                    "G1"
+                ],
+                [
+                    "2023-08-01 09-12UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2023-08-01 12-15UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2023-08-01 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-08-01 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-08-01 21-00UT",
+                    4.67,
+                    "G1"
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-08-02 00-03UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2023-08-02 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-08-02 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-08-02 09-12UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-08-02 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-02 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-02 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-02 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-08-03 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-03 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-03 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-03 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-03 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-03 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-03 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-03 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 2.0,
+                "greatest_expected_kp": 5.33,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storming is likely 01-02 Aug with the arrival of the 28 Jul CME event."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "A slight chance for S1 (Minor) solar radiation storms will persist throughout the forecast period. This is  first due to any additional enhancement and excitement with the arrival of the 28 Jul CME, and then as AR 3380 continues to exhibit development as it rotates into a more favorable connection location."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 55,
+                "n+1": 55,
+                "n+2": 55,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Jul 31 2023 0900 UTC",
+                "rationale": "R1-2 (Minor-Moderate) radio blackouts from M-class flare activity is likely, along with a slight chance for an isolated R3 (Strong) radio blackout from an X-class flare, through the forecast period primarily due to Regions 3380 and 3386."
+            }
+        }
+    },
+    "2023-08-02": {
+        "issue": "2023-08-02 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-08-02 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-02 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-08-02 06-09UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2023-08-02 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-08-02 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-02 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-02 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-02 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-08-03 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-03 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-03 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-03 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-03 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-03 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-03 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-03 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-08-04 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-04 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-04 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-04 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-04 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-04 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-04 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-04 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 4.67,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) storming is likely during the early portions of 02 Aug with any lingering effects from the 28 Jul CME, although, confidence is low at this time."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "A slight chance for a S1 (Minor) solar radiation storm will persist through 03 Aug until AR 3880 rotates beyond the southwestern limb."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 55,
+                "n+1": 55,
+                "n+2": 50,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Aug 01 2023 0657 UTC",
+                "rationale": "R1-2 (Minor-Moderate) radio blackouts remain likely through 03 Aug until AR 3880 rotates beyond the southwestern limb."
+            }
+        }
+    },
+    "2023-08-03": {
+        "issue": "2023-08-03 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-08-03 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-08-03 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-08-03 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-03 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-03 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-03 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-03 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-03 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-08-04 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-04 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-04 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-04 09-12UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-08-04 12-15UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-08-04 15-18UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-08-04 18-21UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2023-08-04 21-00UT",
+                    5.0,
+                    "G1"
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-08-05 00-03UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2023-08-05 03-06UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2023-08-05 06-09UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2023-08-05 09-12UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-08-05 12-15UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-08-05 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-08-05 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-08-05 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 5.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storming is likely to commence by late on 04 Aug and continue into 05 Aug due to CME events that left the sun over the course of 01 and 02 Aug."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "A slight chance for an S1 (Minor) solar radiation event will persist through 03 Aug primarily due to the past activity and current potential presented by AR 3380 on the southwestern limb."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 55,
+                "n+1": 50,
+                "n+2": 50,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Aug 02 2023 1452 UTC",
+                "rationale": "R1-2 (Minor-Moderate) radio blackouts are likely, with a slight chance for an isolated R3 (Strong) radio blackout, through 03 Aug primarily due to AR 3380. Probabilities decrease to just a chance by 04 Aug and remain so through 05 Aug as AR 3380 rotates off the visible solar disk."
+            }
+        }
+    },
+    "2023-08-04": {
+        "issue": "2023-08-04 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-08-04 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-04 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-04 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-04 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-04 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-04 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-08-04 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-08-04 21-00UT",
+                    5.0,
+                    "G1"
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-08-05 00-03UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2023-08-05 03-06UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2023-08-05 06-09UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2023-08-05 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-08-05 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-08-05 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-08-05 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-08-05 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-08-06 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-08-06 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-08-06 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-08-06 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-08-06 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-06 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-06 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-06 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 5.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storming is likely to commence by late on 04 Aug and continue into 05 Aug due to CME events that left the sun over the course of 01 and 02 Aug."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "A slight chance for an S1 (Minor) solar radiation event will persist through 04 Aug primarily due to the past activity and current potential presented by AR 3380 on the southwestern limb."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 55,
+                "n+1": 35,
+                "n+2": 35,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Aug 03 2023 1155 UTC",
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are likely, with a slight chance for an isolated R3 (Strong) radio blackout, through 04 Aug. Probabilities decrease to just a chance by 05 Aug and remain so through 06 Aug."
+            }
+        }
+    },
+    "2023-08-05": {
+        "issue": "2023-08-05 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-08-05 00-03UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2023-08-05 03-06UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2023-08-05 06-09UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2023-08-05 09-12UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-08-05 12-15UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-08-05 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-08-05 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-08-05 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-08-06 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-08-06 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-08-06 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-08-06 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-08-06 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-06 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-06 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-06 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-08-07 00-03UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2023-08-07 03-06UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-08-07 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-07 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-08-07 12-15UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-08-07 15-18UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-08-07 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-07 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 5.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storms are expected on 05 Aug due to CME influence from activity that occurred on the Sun over 01-02 Aug."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for S1 (Minor) conditions on 05 Aug."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 55,
+                "n+1": 35,
+                "n+2": 35,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Aug 04 2023 0424 UTC",
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are likely on 05 Aug, with a chance for R1-R2 events on 06-07 Aug."
+            }
+        }
+    },
+    "2023-08-06": {
+        "issue": "2023-08-06 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-08-06 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-08-06 03-06UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-08-06 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-06 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-06 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-06 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-06 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-06 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-08-07 00-03UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2023-08-07 03-06UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-08-07 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-07 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-08-07 12-15UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-08-07 15-18UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-08-07 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-07 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-08-08 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-08 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-08-08 06-09UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-08-08 09-12UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2023-08-08 12-15UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-08-08 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-08-08 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-08 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 7.0,
+                "greatest_expected_kp": 5.0,
+                "greatest_expected_scale": "G3",
+                "rationale": "G1 (Minor) geomagnetic storms are likely on 08 Aug due to anticipated CME influence."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 95,
+                "n+1": 40,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": true,
+                "rationale": "S1 (Minor) solar radiation storms are expected on 06 Aug. A further enhancement to the S2 (Moderate) levels is possible due to the X1.6 flare from Region 3386. There is a good chance for the proton event to continue on 07 Aug."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 55,
+                "n+1": 55,
+                "n+2": 35,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R3",
+                "max_blackout_time": "Aug 05 2023 2221 UTC",
+                "rationale": "R1-R2 (Minor-Moderate) are likely with a slight chance for R3 (Strong) over 06-07 Aug. Activity is expected to decrease to a chance for R1-R2 on 08 Aug with the departure of Region 3386."
+            }
+        }
+    },
+    "2023-08-07": {
+        "issue": "2023-08-07 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-08-07 00-03UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2023-08-07 03-06UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-08-07 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-07 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-08-07 12-15UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-08-07 15-18UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-08-07 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-07 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-08-08 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-08 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-08 06-09UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2023-08-08 09-12UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2023-08-08 12-15UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-08-08 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-08-08 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-08 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-08-09 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-09 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-08-09 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-08-09 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-09 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-09 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-09 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-09 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 1.0,
+                "greatest_expected_kp": 5.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storms are likely on 08 Aug due to anticipated CME influence."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 25,
+                "n+1": 25,
+                "n+2": 25,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": true,
+                "rationale": "There is a chance for S1 (Minor) solar radiation storms over 07-09 Aug."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 55,
+                "n+1": 25,
+                "n+2": 25,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R2",
+                "max_blackout_time": "Aug 06 2023 1840 UTC",
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are likely on 07 Aug due primarily to active regions on the Sun's western limb. A chance for R1-R2 exists over 08-09 Aug as the most active region rotates off of the visible disk."
+            }
+        }
+    },
+    "2023-08-08": {
+        "issue": "2023-08-08 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-08-08 00-03UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2023-08-08 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-08-08 06-09UT",
+                    5.67,
+                    "G2"
+                ],
+                [
+                    "2023-08-08 09-12UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-08-08 12-15UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2023-08-08 15-18UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2023-08-08 18-21UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2023-08-08 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-08-09 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-08-09 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-08-09 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-08-09 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-08-09 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-08-09 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-09 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-09 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-08-10 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-10 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-08-10 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-10 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-10 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-10 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-10 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-10 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 5.67,
+                "greatest_expected_scale": "G2",
+                "rationale": "G2 (Moderate) geomagnetic storms are likely to be reached in response to anticipated CME arrivals on 08 Aug."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 75,
+                "n+1": 25,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "S1 (Minor) solar radiation storms are expected on 08 Aug due to gradually increasing greater than 10 MeV proton flux levels. Additionally, any shock arrival from anticipated CMEs would likely increase the proton flux further."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 55,
+                "n+1": 55,
+                "n+2": 35,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R3",
+                "max_blackout_time": "Aug 07 2023 2046 UTC",
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are likely 08-09 Aug due in particular to the flare probability and activity trend of Region 3387."
+            }
+        }
+    },
+    "2023-08-09": {
+        "issue": "2023-08-09 00:40:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-08-09 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-08-09 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-08-09 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-08-09 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-08-09 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-08-09 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-09 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-09 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-08-10 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-10 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-08-10 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-10 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-10 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-10 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-10 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-10 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-08-11 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-11 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-11 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-11 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-11 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-11 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-11 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-11 21-00UT",
+                    1.67,
+                    null
+                ]
+            ]
+        }
+    },
+    "2023-08-10": {
+        "issue": "2023-08-10 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-08-10 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-10 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-08-10 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-10 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-10 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-10 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-10 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-10 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-08-11 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-11 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-11 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-11 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-11 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-11 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-11 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-11 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-08-12 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-12 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-12 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-12 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-12 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-12 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-12 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-12 21-00UT",
+                    1.67,
+                    null
+                ]
+            ]
+        }
+    },
+    "2023-08-11": {
+        "issue": "2023-08-11 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-08-11 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-11 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-11 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-11 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-11 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-11 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-11 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-11 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-08-12 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-12 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-12 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-12 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-12 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-12 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-12 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-12 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-08-13 00-03UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-13 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-13 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-13 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-13 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-13 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-13 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-13 21-00UT",
+                    1.67,
+                    null
+                ]
+            ]
+        }
+    },
+    "2023-08-12": {
+        "issue": "2023-08-12 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-08-12 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-12 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-12 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-12 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-08-12 12-15UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2023-08-12 15-18UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2023-08-12 18-21UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-08-12 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-08-13 00-03UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-13 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-13 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-13 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-13 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-13 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-13 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-13 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-08-14 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-14 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-14 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-14 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-14 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-14 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-14 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-14 21-00UT",
+                    2.33,
+                    null
+                ]
+            ]
+        }
+    },
+    "2023-08-13": {
+        "issue": "2023-08-13 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-08-13 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-13 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-13 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-13 09-12UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2023-08-13 12-15UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2023-08-13 15-18UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2023-08-13 18-21UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2023-08-13 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-08-14 00-03UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-14 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-14 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-14 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-14 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-14 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-14 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-14 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-08-15 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-15 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-15 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-15 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-15 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-15 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-15 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-15 21-00UT",
+                    1.67,
+                    null
+                ]
+            ]
+        }
+    },
+    "2023-08-14": {
+        "issue": "2023-08-14 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-08-14 00-03UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-14 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-14 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-14 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-14 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-14 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-14 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-14 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-08-15 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-15 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-15 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-15 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-15 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-15 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-15 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-15 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-08-16 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-16 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-16 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-08-16 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-08-16 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-16 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-16 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-16 21-00UT",
+                    2.67,
+                    null
+                ]
+            ]
+        }
+    },
+    "2023-08-15": {
+        "issue": "2023-08-15 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-08-15 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-15 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-15 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-15 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-15 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-15 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-15 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-15 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-08-16 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-16 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-16 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-08-16 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-08-16 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-16 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-16 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-16 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-08-17 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-08-17 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-08-17 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-08-17 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-08-17 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-17 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-17 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-08-17 21-00UT",
+                    3.0,
+                    null
+                ]
+            ]
+        }
+    },
+    "2023-08-16": {
+        "issue": "2023-08-16 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-08-16 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-16 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-16 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-08-16 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-08-16 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-16 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-16 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-16 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-08-17 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-08-17 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-08-17 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-08-17 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-08-17 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-17 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-17 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-08-17 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-08-18 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-08-18 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-08-18 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-18 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-18 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-18 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-18 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-18 21-00UT",
+                    2.67,
+                    null
+                ]
+            ]
+        }
+    },
+    "2023-08-17": {
+        "issue": "2023-08-17 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-08-17 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-08-17 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-08-17 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-08-17 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-08-17 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-17 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-17 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-08-17 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-08-18 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-08-18 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-08-18 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-18 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-18 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-18 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-18 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-18 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-08-19 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-19 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-19 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-19 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-19 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-19 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-19 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-19 21-00UT",
+                    2.33,
+                    null
+                ]
+            ]
+        }
+    },
+    "2023-08-18": {
+        "issue": "2023-08-18 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-08-18 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-08-18 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-08-18 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-18 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-18 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-18 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-18 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-18 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-08-19 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-19 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-19 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-19 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-19 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-19 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-19 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-19 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-08-20 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-20 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-20 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-20 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-20 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-20 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-20 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-20 21-00UT",
+                    1.67,
+                    null
+                ]
+            ]
+        }
+    },
+    "2023-08-19": {
+        "issue": "2023-08-19 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-08-19 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-08-19 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2023-08-19 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-19 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-19 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-08-19 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-19 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-19 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-08-20 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-08-20 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-20 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-20 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-20 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-20 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-08-20 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-20 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-08-21 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-21 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-21 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-08-21 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-08-21 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-21 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-08-21 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-21 21-00UT",
+                    2.0,
+                    null
+                ]
+            ]
+        }
+    },
+    "2023-08-20": {
+        "issue": "2023-08-20 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-08-20 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-08-20 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-20 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-20 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-20 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-20 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-08-20 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-20 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-08-21 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-21 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-21 06-09UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-08-21 09-12UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-08-21 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-21 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-08-21 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-21 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-08-22 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-22 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-22 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-22 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-22 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-22 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-22 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-22 21-00UT",
+                    1.33,
+                    null
+                ]
+            ]
+        }
+    },
+    "2023-08-21": {
+        "issue": "2023-08-21 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-08-21 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-08-21 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-21 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-21 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-21 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-21 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-21 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-21 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-08-22 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-22 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-22 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-08-22 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-22 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-08-22 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-08-22 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-22 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-08-23 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-23 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-23 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-08-23 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-23 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-08-23 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-08-23 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-23 21-00UT",
+                    2.0,
+                    null
+                ]
+            ]
+        }
+    },
+    "2023-08-22": {
+        "issue": "2023-08-22 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-08-22 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-22 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-22 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-08-22 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-22 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-22 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-22 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-22 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-08-23 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-23 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-23 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-08-23 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-23 12-15UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-08-23 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-08-23 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-23 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-08-24 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-24 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-24 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-24 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-24 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-24 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-24 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-24 21-00UT",
+                    2.67,
+                    null
+                ]
+            ]
+        }
+    },
+    "2023-08-23": {
+        "issue": "2023-08-23 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-08-23 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-23 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-08-23 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-23 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-23 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-23 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-23 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-23 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-08-24 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-24 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-24 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-24 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-24 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-24 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-24 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-24 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-08-25 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-25 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-25 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-25 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-25 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-25 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-25 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-25 21-00UT",
+                    2.33,
+                    null
+                ]
+            ]
+        }
+    },
+    "2023-08-24": {
+        "issue": "2023-08-24 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-08-24 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-24 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-24 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-24 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-24 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-24 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-24 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-24 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-08-25 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-25 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-25 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-25 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-25 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-25 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-25 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-25 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-08-26 00-03UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-26 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-26 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-26 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-26 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-26 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-26 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-26 21-00UT",
+                    1.33,
+                    null
+                ]
+            ]
+        }
+    },
+    "2023-08-25": {
+        "issue": "2023-08-25 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-08-25 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-25 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-25 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-25 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-25 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-25 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-25 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-25 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-08-26 00-03UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-26 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-26 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-26 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-26 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-26 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-26 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-26 21-00UT",
+                    1.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-08-27 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-27 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-27 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-27 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-27 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-27 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-27 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-27 21-00UT",
+                    2.67,
+                    null
+                ]
+            ]
+        }
+    },
+    "2023-08-26": {
+        "issue": "2023-08-26 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-08-26 00-03UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-26 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-26 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-26 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-26 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-26 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-26 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-26 21-00UT",
+                    1.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-08-27 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-27 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-27 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-27 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-27 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-27 15-18UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-08-27 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-27 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-08-28 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-28 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-28 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-28 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-28 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-28 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-28 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-28 21-00UT",
+                    2.0,
+                    null
+                ]
+            ]
+        }
+    },
+    "2023-08-27": {
+        "issue": "2023-08-27 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-08-27 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-27 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-27 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-27 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-27 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-27 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-27 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-27 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-08-28 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2023-08-28 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-08-28 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-28 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-28 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-28 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-28 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-28 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-08-29 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-29 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-29 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-29 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-29 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-29 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-29 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-29 21-00UT",
+                    2.0,
+                    null
+                ]
+            ]
+        }
+    },
+    "2023-08-28": {
+        "issue": "2023-08-28 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-08-28 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2023-08-28 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-08-28 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-28 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-28 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-28 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-28 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-28 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-08-29 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-29 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-29 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-29 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-29 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-29 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-29 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-29 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-08-30 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-30 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-30 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-30 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-30 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-30 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-30 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-30 21-00UT",
+                    1.33,
+                    null
+                ]
+            ]
+        }
+    },
+    "2023-08-29": {
+        "issue": "2023-08-29 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-08-29 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-29 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-08-29 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-29 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-29 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-29 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-29 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-29 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-08-30 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-30 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-30 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-30 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-30 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-30 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-30 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-30 21-00UT",
+                    1.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-08-31 00-03UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-31 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-31 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-31 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-31 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-31 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-31 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-31 21-00UT",
+                    1.67,
+                    null
+                ]
+            ]
+        }
+    },
+    "2023-08-30": {
+        "issue": "2023-08-30 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-08-30 00-03UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2023-08-30 03-06UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2023-08-30 06-09UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2023-08-30 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-08-30 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-08-30 15-18UT",
+                    0.67,
+                    null
+                ],
+                [
+                    "2023-08-30 18-21UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2023-08-30 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-08-31 00-03UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-31 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-31 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-31 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-31 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-31 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-31 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-31 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-09-01 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-09-01 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-09-01 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-09-01 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-09-01 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-09-01 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-09-01 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-09-01 21-00UT",
+                    1.67,
+                    null
+                ]
+            ]
+        }
+    },
+    "2023-08-31": {
+        "issue": "2023-08-31 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2023-08-31 00-03UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-31 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-31 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-31 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-31 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-31 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2023-08-31 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2023-08-31 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2023-09-01 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-09-01 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-09-01 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2023-09-01 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-09-01 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-09-01 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-09-01 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-09-01 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2023-09-02 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-09-02 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2023-09-02 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-09-02 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-09-02 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2023-09-02 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-09-02 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2023-09-02 21-00UT",
+                    2.33,
+                    null
+                ]
+            ]
+        }
+    }
+}
