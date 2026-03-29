@@ -5,7 +5,7 @@ import joblib
 
 from datetime import datetime, timedelta
 
-DEBUG = True
+DEBUG = False
 
 def loadModel(forecast, lead_day):
     # Path to trained models
@@ -135,12 +135,13 @@ def userInputs():
 def main():
     base = os.environ.get("SPIDER") # Get SPIDER $PATH
 
-    #choice, ftype = userInputs()
-    
     # NOTE: Debug with these values DATE and FORECAST TYPE
-    choice = datetime.strptime("01/01/2023", "%d/%m/%Y")
-    ftype = "0030"
-
+    if DEBUG:
+        choice = datetime.strptime("03/01/2023", "%d/%m/%Y")
+        ftype = "0030"
+    else:
+        choice, ftype = userInputs() # Specify forecast from prompt
+    
     test_sets = {
         # Load the test set from data across lead days
         ld: pd.read_parquet(
