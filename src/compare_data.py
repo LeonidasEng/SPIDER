@@ -29,66 +29,6 @@ def dailyKp(df, kp_column):
     # 3-hour Kp is too noisy to plot, resampling at 1D minimum
     return df[kp_column].resample("1D").max()
 
-def forecastSpread(dataset_path:str):
-    '''
-    Tier 1 EDA Forecast Disagreement between products
-
-    Measures how much forecasts systems disagree at same valid time
-
-    Spread is calculated as max(Kp_forecasts) - min(Kp_forecasts)
-
-    Low Spread = forecasts agree (predictable)
-    High Spread = forecasts conflict (uncertain)
-    '''    
-    kp_column = {
-        "3 Day Forecast 0030": "kp_threeday",
-        "3 Day Forecast 1230": "kp_threeday",
-        #"Geomag Forecast": "kp_geomag"
-    }
-
-    lead_days = [0,1,2]
-    
-    for lead_day in lead_days:
-    
-        prepared = {}
-
-        for dataset, file_name in FILES.items():
-            if dataset == "Observed":
-                continue
-
-            df = pd.read_parquet(os.path.join(dataset_path, file_name))
-            
-            df_ld = prepareForecast(df, lead_day)
-            df_ld = normaliseTime(df_ld)
-            prepared[dataset] = dailyKp(df_ld, kp_column[dataset])
-
-        # Combine forecasts across datasets and compare
-        df_aligned = pd.concat([
-                prepared["3 Day Forecast 0030"].rename("kp_0030"),
-                prepared["3 Day Forecast 1230"].rename("kp_1230")
-                #prepared["Geomag Forecast"].rename("kp_geomag")
-            ], axis=1, join="inner")
-    
-        # Sanity check: alignment 
-        # print("Aligned days:", len(df_aligned))
-        # print(df_aligned.head())
-    
-        # Spread of forecast values
-        df_aligned["spread"] = df_aligned.max(axis=1) - df_aligned.min(axis=1)
-        # Short term uncertainty (spikes = forecasters unsure, dips = predictable weather)
-        spread_short = df_aligned["spread"].rolling(27, center=True, min_periods=10).mean()
-        # Long term forecast reliability over time (strongly justifies modelling!)
-        spread_long = df_aligned["spread"].rolling(81, center=True, min_periods=40).mean()
-
-        plt.figure(figsize=(12,5))
-        plt.plot(spread_short, label="Short-term Uncertainty")
-        plt.plot(spread_long, label="Long-term Reliability")
-        plt.xlabel("Time")
-        plt.ylabel("Kp Spread")
-        plt.title(f"Forecast Disagreement (Lead Day {lead_day})", fontweight="bold")
-        plt.legend()
-        plt.show()
-
 def forecastRevision(dataset_path: str):
     '''
     Tier 1 EDA Forecast revision vs lead time
@@ -129,9 +69,9 @@ def forecastRevision(dataset_path: str):
     for name, series in revisions.items():
         plt.plot(series, label=f"{name}")
 
-    plt.ylabel("Kp Revision Magnitude")
+    plt.ylabel("Kp Revision Magnitude", fontsize=14)
     plt.title("Forecast stability as lead time decreases (81-day rolling mean)", fontsize=16, fontweight="bold")
-    plt.legend()
+    plt.legend(fontsize=14)
     plt.grid(alpha=0.3)
     plt.show()
 
@@ -197,13 +137,13 @@ def leadDaySkill(dataset_path:str):
         for ax, ld in zip(axs, lead_order):
             ax.plot(lead_errors[ld], label=f"Lead Day {ld}", color=colours[ld])
             ax.axhline(y=1.0, color="black", linestyle="--", linewidth=1) # Error Indicator
-            ax.set_xlabel("Time")
-            ax.set_ylabel("Absolute Kp Error")
+            ax.set_xlabel("Time", fontsize=14)
+            ax.set_ylabel("Absolute Kp Error", fontsize=14)
             ax.set_ylim(0, 2.2) # Uniform range
             ax.grid(alpha=0.3)
             ax.legend()
 
-        fig.suptitle(f"{dataset} Skill vs Lead Day", fontweight="bold", y=0.95) # Move suptitle closer to plots
+        fig.suptitle(f"{dataset} Skill vs Lead Day", fontsize=18, fontweight="bold", y=0.95) # Move suptitle closer to plots
         fig.tight_layout()
 
         plt.show()
@@ -417,12 +357,10 @@ def main():
     # Commenting out specific lines, doesn't have to be a proper program
     # I only care about making the graphs:
 
-    #histogramObserved(dataset_path)
     #overviewObserved(dataset_path)
-    #forecastSpread(dataset_path)
-    #forecastRevision(dataset_path)
+    forecastRevision(dataset_path)
     #leadDaySkill(dataset_path)
-    riskCurves(dataset_path)
+    #riskCurves(dataset_path)
 
 if __name__ == "__main__":
     main()
