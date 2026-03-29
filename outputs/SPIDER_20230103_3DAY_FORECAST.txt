@@ -57,7 +57,7 @@ Key:
 TIME: Valid start of the 3-hour forecast time window.
 REL:  Reliability, the inverse of the large error probability.
 UNC:  Uncertainty, the confidence in the model prediction.
-      Max uncertainty is (p = 0.5), while confidence is 0 or 1.
+      Max uncertainty is (p = 0.5), while certain is 0 or 1.
 CI:   Confidence interval, uncertainty range around reliability.
 
 DECISION: Recommendation based on results.

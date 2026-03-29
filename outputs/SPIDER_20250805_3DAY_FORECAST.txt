@@ -1,0 +1,72 @@
+
+       /\  .-"""-.  /\         ____  ____ ___ ____  _____ ____     
+      //\\/  ,,,  \//\\       / ___||  _ \_ _|  _ \| ____|  _ \     
+      |/\| ,;;;;;, |/\|       \___ \| |_) | || | | |  _| | |_) |    
+      //\\\;-"""-;///\\        ___) |  __/| || |_| | |___|  _ <     
+     //  \/   .   \/  \\      |____/|_|  |___|____/|_____|_| \_\    
+    (| ,-_| \ | / |_-, |)                                           
+      //`__\.-.-./__`\\     Space Protection & Intelligent Detection
+     // /.-(() ())-.\ \\             of Environmental Risks         
+    (\ |)   '---'   (| /)                                           
+     ` (|           |) `                                            
+       \)           (/                                              
+
+###############################################################################
+:Product: SPIDER_20250805_3DAY_FORECAST.txt
+:Issued: 2025 Aug 05 00:30 UTC
+# Created by LeonidasEng, thanks to NOAA SWPC for the data!
+
+SPIDER Geomagnetic Activity Forecast with Reliability
+
+Aug 05 Forecast:
+
+TIME   Kp    REL   UNC   CI            DECISION
+03:00  2.00  0.65  0.71  [0.00, 1.00]  LOW CONFIDENCE, DO NOT TRUST
+06:00  2.00  0.73  0.54  [0.19, 1.00]  MODERATE CONFIDENCE, CAUTION
+09:00  2.00  0.79  0.42  [0.37, 1.00]  MODERATE CONFIDENCE, CAUTION
+12:00  2.00  0.80  0.40  [0.40, 1.00]  HIGH CONFIDENCE, TRUST
+15:00  2.00  0.86  0.29  [0.57, 1.00]  HIGH CONFIDENCE, TRUST
+18:00  2.00  0.77  0.46  [0.31, 1.00]  MODERATE CONFIDENCE, CAUTION
+21:00  2.33  0.84  0.31  [0.53, 1.00]  HIGH CONFIDENCE, TRUST
+
+Aug 06 Forecast:
+
+TIME   Kp    REL   UNC   CI            DECISION
+00:00  2.33  0.85  0.31  [0.54, 1.00]  HIGH CONFIDENCE, TRUST
+03:00  2.67  0.77  0.45  [0.32, 1.00]  MODERATE CONFIDENCE, CAUTION
+06:00  2.00  0.77  0.46  [0.31, 1.00]  MODERATE CONFIDENCE, CAUTION
+09:00  2.00  0.79  0.42  [0.37, 1.00]  MODERATE CONFIDENCE, CAUTION
+12:00  2.00  0.78  0.44  [0.35, 1.00]  MODERATE CONFIDENCE, CAUTION
+15:00  2.00  0.85  0.30  [0.55, 1.00]  HIGH CONFIDENCE, TRUST
+18:00  2.00  0.81  0.38  [0.42, 1.00]  HIGH CONFIDENCE, TRUST
+21:00  2.00  0.86  0.29  [0.57, 1.00]  HIGH CONFIDENCE, TRUST
+
+Aug 07 Forecast:
+
+TIME   Kp    REL   UNC   CI            DECISION
+00:00  1.33  0.83  0.35  [0.48, 1.00]  HIGH CONFIDENCE, TRUST
+03:00  1.33  0.82  0.35  [0.47, 1.00]  HIGH CONFIDENCE, TRUST
+06:00  1.33  0.81  0.37  [0.44, 1.00]  HIGH CONFIDENCE, TRUST
+09:00  1.67  0.86  0.28  [0.58, 1.00]  HIGH CONFIDENCE, TRUST
+12:00  1.33  0.82  0.37  [0.45, 1.00]  HIGH CONFIDENCE, TRUST
+15:00  1.33  0.81  0.38  [0.43, 1.00]  HIGH CONFIDENCE, TRUST
+18:00  1.67  0.82  0.35  [0.47, 1.00]  HIGH CONFIDENCE, TRUST
+21:00  1.67  0.02  0.04  [0.00, 0.06]  LOW CONFIDENCE, DO NOT TRUST
+
+
+Greatest Observed Kp 3.0
+Greatest Expected Kp 2.67
+Greatest Expected Scale None
+Rationale: No G1 (Minor) or greater geomagnetic storms are expected
+No significant transient or recurrent solar wind features are forecast.
+    
+
+Key:
+TIME: Valid start of the 3-hour forecast time window.
+REL:  Reliability, the inverse of the large error probability.
+UNC:  Uncertainty, the confidence in the model prediction.
+      Max uncertainty is (p = 0.5), while certain is 0 or 1.
+CI:   Confidence interval, uncertainty range around reliability.
+
+DECISION: Recommendation based on results.
+    
