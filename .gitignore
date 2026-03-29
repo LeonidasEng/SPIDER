@@ -14,7 +14,8 @@ dist/
 data/raw/
 data/test/
 data/datasets/archive/
-data/data_processed/*
+data/data_processed/dayind/
+data/data_processed/omni2/
 
 # Re-include processed data for rule layer
 !data/data_processed/3day_forecast/

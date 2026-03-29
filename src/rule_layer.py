@@ -2,6 +2,7 @@ import os
 import sys
 import pandas as pd
 import joblib
+import json
 
 from datetime import datetime, timedelta
 
@@ -55,10 +56,11 @@ def formatBlock(df:pd.DataFrame, rels, uncertainties, cis, decisions):
         lines.append(f"{valid}  {kp}  {r}  {u}  {ci}  {d}")
     return header + "\n" + "\n".join(lines)
 
-def formatResult(base, new_records, model_outputs):
+def formatResult(base, ftype, new_records, model_outputs):
     issue = new_records[0].iloc[0]["issue_time_utc"]
     issue_str = datetime.strftime(issue, "%Y %b %d %H:%M UTC")
-    
+    meta = None
+
     lead_dates = {
         # Adding the lead day to the issue to see in 
         # same date format as original forecast
@@ -79,6 +81,33 @@ def formatResult(base, new_records, model_outputs):
                                  uncs,
                                  cis,
                                  decs)
+    if issue.year == 2025:
+        metadata_path = os.path.join(base, "data", "data_processed", "3day_forecast", 
+            f"3day_{ftype}", f"{issue.year}", f"3day_{issue.year}_{issue.month:02d}.json")
+        data_dt = f"{issue.year}-{issue.month:02d}-{issue.day:02d}"
+        with open(metadata_path, "r") as f:
+            metadata_json = json.load(f)
+        
+        meta = metadata_json[data_dt]["kp"]["meta"]
+        meta_text = ""
+
+    
+    if meta:
+        rationale = meta["rationale"]
+        # Rationale is two lines, splitting after full stop
+        # to maintain forecast width
+        rationale_lines = [s.strip() for s in rationale.split(". ") if s]
+        formatted_rationale = "\n".join(rationale_lines)
+
+        # This metadata is only available with year 2025.
+        # This year had no data gaps so used parse_3day.py
+        meta_text = f"""
+Greatest Observed Kp {meta["greatest_observed_kp"]}
+Greatest Expected Kp {meta["greatest_expected_kp"]}
+Greatest Expected Scale {meta["greatest_expected_scale"]}
+Rationale: {formatted_rationale}
+    """
+            
     # No indent here is intentional, as it would appear in txt file otherwise.
     text = f"""{showBanner(base)}
 ###############################################################################
@@ -100,25 +129,25 @@ SPIDER Geomagnetic Activity Forecast with Reliability
 
 {blocks[2]}
 
+{meta_text}
+
 Key:
 TIME: Valid start of the 3-hour forecast time window.
 REL:  Reliability, the inverse of the large error probability.
 UNC:  Uncertainty, the confidence in the model prediction.
-      Max uncertainty is (p = 0.5), while confidence is 0 or 1.
+      Max uncertainty is (p = 0.5), while certain is 0 or 1.
 CI:   Confidence interval, uncertainty range around reliability.
 
 DECISION: Recommendation based on results.
     """
-    #Rationale: {rationale} - I can only include this for 2025-2026
-    #print(text)
     return text
 
 def userInputs():
     # This is a simple prompt to act as a quick interface
-    print("Please insert a date between 01/01/2023 and 31/12/2025.")
+    print("Please insert a date between 20230101 and 20251231 (YYYYMMDD format).")
     issue_input = input("Insert: ").strip()
     try:
-        issue = datetime.strptime(issue_input, "%d/%m/%Y")
+        issue = datetime.strptime(issue_input, "%Y%m%d")
     except ValueError:
         print("Invalid start date format.")
         sys.exit(1)
@@ -137,7 +166,7 @@ def main():
 
     # NOTE: Debug with these values DATE and FORECAST TYPE
     if DEBUG:
-        choice = datetime.strptime("03/01/2023", "%d/%m/%Y")
+        choice = datetime.strptime("20230101", "%Y%m%d")
         ftype = "0030"
     else:
         choice, ftype = userInputs() # Specify forecast from prompt
@@ -260,7 +289,7 @@ def main():
         model_outputs[ld] = outputs 
     # Use debugger with breakpoint to vew debug_df
     debug_df = pd.DataFrame(debug_rows)
-    text = formatResult(base, new_records, model_outputs)
+    text = formatResult(base, ftype, new_records, model_outputs)
     output_path = os.path.join(
         base, "outputs", 
         f"SPIDER_{choice.year}{choice.month:02d}{choice.day:02d}_3DAY_FORECAST.txt"
