@@ -58,10 +58,10 @@ def addErrorFeatures(df:pd.DataFrame):
         return output
     
     # Previous error is inspired by the good performance of the persistence baseline model
-    df["prev_error"] = df.groupby("lead_day")["is_large_error"].shift(8).fillna(False).astype(bool)
+    df["prev_error"] = df.groupby("lead_day")["is_large_error"].shift(1).fillna(False).astype(bool)
 
     # Attempting to avoid future leakage
-    shifted_error = df.groupby("lead_day")["is_large_error"].shift(8)
+    shifted_error = df.groupby("lead_day")["is_large_error"].shift(1)
 
     df["error_count_24h"] = (
         # df.groupby("lead_day")["is_large_error"]
@@ -90,10 +90,10 @@ def addErrorFeatures(df:pd.DataFrame):
 
 def persistenceBase(df:pd.DataFrame, target_col="is_large_error_win"):
     '''
-    Was forecast wrong today? Will it be wrong tomorrow? (8 * 3-hour intervals)
+    Was forecast wrong before? Will it be wrong again? (3-hour intervals)
     '''
     df = df.copy()
-    df["probability"] = df[target_col].shift(8)
+    df["probability"] = df[target_col].shift(1)
 
      # Remove missing values
     df = df.dropna(subset=["probability"])
@@ -307,28 +307,47 @@ def reliabilityCurve(dataset, lead_day, y_test, y_prob, model_name="Model", n_bi
 
     prob_true, prob_pred = calibration_curve(y_test, y_prob, n_bins=n_bins, strategy="uniform")
 
-    suffix = dataset[-4:]
+    prefix = dataset[-4:]
 
     # Create figure with two panels in vertical configuration
-    fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(8,8), gridspec_kw={"height_ratios": [2,1]})
+    fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(8,7), gridspec_kw={"height_ratios": [2,1]})
 
     ax1.plot([0,1], [0,1], linestyle="--", color="grey", label="Perfect calibration")
     ax1.plot(prob_pred, prob_true, marker="o", color="tab:blue", label=model_name)
 
-    ax1.set_xlabel("Predicted Probability")
-    ax1.set_ylabel("Observed Frequency")
-    ax1.set_title(f"{suffix} Reliability Curve LD{lead_day} ({model_name})")
+    ax1.set_xlabel("Predicted Probability", fontsize=16)
+    ax1.set_ylabel("Observed Frequency", fontsize=16)
+    ax1.set_title(f"{prefix} Reliability Curve LD{lead_day} ({model_name})", 
+                  fontweight="bold", fontsize=18)
     ax1.legend()
     ax1.grid(True)
 
     ax2.hist(y_prob, bins=n_bins, range=(0,1), edgecolor="black")
-    ax2.set_xlabel("Predicted Probability")
-    ax2.set_ylabel("Count")
-    ax2.set_title("Probability Distribution")
+    ax2.set_xlabel("Predicted Probability", fontsize=16)
+    ax2.set_ylabel("Count", fontsize=16)
+    ax2.set_title("Probability Distribution", fontweight="bold", fontsize=18)
     ax2.grid(alpha=0.3)
 
     plt.tight_layout()
     plt.show()
+
+def generateROC(y_true, y_pred, lead_day, database_name, model_name, line_colour="black"):
+    fpr, tpr, thresholds = roc_curve(y_true, y_score=y_pred)
+    labels = [line.get_label() for line in plt.gca().get_lines()]
+    roc_auc = metrics.auc(fpr, tpr)
+    prefix = database_name[-4:]
+    
+    if 'Random Classifier' not in labels:
+        plt.plot([0, 1], [0, 1],'--', color="grey", label="Random Classifier")
+
+    plt.plot(fpr, tpr, color=line_colour, label=f"{model_name} %0.2f" % roc_auc)
+    
+    plt.legend(loc="lower right")
+    plt.xlim([0, 1])
+    plt.ylim([0, 1])
+    plt.title(f"{prefix} LD{lead_day} ROC Curve", fontweight="bold",fontsize=18)
+    plt.ylabel('True Positive Rate', fontsize=16)
+    plt.xlabel('False Positive Rate', fontsize=16)
 
 def main():
     # Environment variable must be set to run this script
@@ -364,28 +383,49 @@ def main():
             rows.append(metricsTable(dataset, lead_day, "Persistence", 
                                      y_true, y_prob, y_pred))
             
+            # Evaluate model outputs using these tools (uncomment appropriately)
+            # cmDisplay(y_true, y_pred)
+            # generateROC(y_true, y_pred, lead_day, database_name=dataset, 
+            #             model_name="Persistence", line_colour="tab:blue")
+
             print(f"Running Climatology baseline model for Lead Day {lead_day}...")
             clim_map, global_mean = climatologyFit(train_set) # Fit to train data
             y_true, y_prob, y_pred = climatologyApply(test_set, clim_map, global_mean) # Apply to test for no future leakage
             rows.append(metricsTable(dataset, lead_day, "Climatology",  
                                      y_true, y_prob, y_pred))
+            
+            # Evaluate model outputs using these tools (uncomment appropriately)
+            # cmDisplay(y_true, y_pred)
+            # generateROC(y_true, y_pred, lead_day, database_name=dataset, 
+            #             model_name="Climatology", line_colour="tab:green")
 
             print(f"Running Naive Bayes baseline model for Lead Day {lead_day}...")
             y_test, y_train, y_train_pred, y_prob, y_pred = gaussianBase(train_set, test_set)
             rows.append(metricsTable(dataset, lead_day, "NB",  
                                      y_test, y_prob, y_pred,
                                      y_train, y_train_pred))
-            reliabilityCurve(dataset, lead_day, y_test, y_prob, model_name="Gaussian NB")
+            
+            # Evaluate model outputs using these tools (uncomment appropriately)
+            # cmDisplay(y_test, y_pred)
+            # reliabilityCurve(dataset, lead_day, y_test, y_prob, model_name="Gaussian NB")
+            # generateROC(y_test, y_pred, lead_day, database_name=dataset, 
+            #             model_name="NB", line_colour="tab:orange")
             
             print(f"Running Logistic Regression baseline model for Lead Day {lead_day}...")
             y_test, y_train, y_train_pred, y_prob, y_pred = logisticBase(train_set, test_set)
             rows.append(metricsTable(dataset, lead_day, "LR", 
                                      y_test, y_prob, y_pred,
                                      y_train, y_train_pred))   
-            reliabilityCurve(dataset, lead_day, y_test, y_prob, model_name="Logistic Regression")
-    
             
-            #cmDisplay(y_true, y_pred)
+            # Evaluate model outputs using these tools (uncomment appropriately)
+            # cmDisplay(y_test, y_pred)
+            # reliabilityCurve(dataset, lead_day, y_test, y_prob, model_name="Logistic Regression")
+            # generateROC(y_test, y_pred, lead_day, database_name=dataset, 
+            #             model_name="LR", line_colour="tab:purple")
+    
+            # # Required for all calls of ROC Curve
+            # plt.show() # For ROC Curve only
+
             tables[dataset][lead_day] = pd.DataFrame(rows)
 
     for dataset in tables:

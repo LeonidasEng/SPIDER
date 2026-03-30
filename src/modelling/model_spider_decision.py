@@ -10,6 +10,7 @@ from sklearn.calibration import CalibratedClassifierCV
 from sklearn.calibration import calibration_curve
 
 from sklearn import metrics
+from sklearn.metrics import roc_curve
 from sklearn.inspection import permutation_importance
 
 RANDOM_STATE = 37
@@ -182,12 +183,12 @@ def randomForest(train_set, test_set, base, dataset, lead_day):
 
     rf_cal = CalibratedClassifierCV(
         estimator=rf,
-        method="sigmoid",
+        method="sigmoid", # LR
         cv=5
     )
     rf_cal.fit(X_train, y_train)
  
-    # Creating folder to store trained models
+    # Creating folder to store trained models (only run once)
     prefix = dataset[-4:]
     model_dir = os.path.join(base, "models")
     os.makedirs(model_dir, exist_ok=True)
@@ -273,21 +274,22 @@ def reliabilityCurve(dataset, lead_day, y_test, y_prob, model_name="Model", n_bi
     prefix = dataset[-4:]
 
     # Create figure with two panels in vertical configuration
-    fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(8,8), gridspec_kw={"height_ratios": [2,1]})
+    fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(8,7), gridspec_kw={"height_ratios": [2,1]})
 
     ax1.plot([0,1], [0,1], linestyle="--", color="grey", label="Perfect calibration")
     ax1.plot(prob_pred, prob_true, marker="o", color="tab:blue", label=model_name)
 
-    ax1.set_xlabel("Predicted Probability")
-    ax1.set_ylabel("Observed Frequency")
-    ax1.set_title(f"{prefix} Reliability Curve LD{lead_day} ({model_name})")
-    ax1.legend()
+    ax1.set_xlabel("Predicted Probability", fontsize=16)
+    ax1.set_ylabel("Observed Frequency", fontsize=16)
+    ax1.set_title(f"{prefix} Reliability Curve LD{lead_day} ({model_name})",
+                  fontweight="bold", fontsize=18)
+    ax1.legend(fontsize=14)
     ax1.grid(True)
 
     ax2.hist(y_prob, bins=n_bins, range=(0,1), edgecolor="black")
-    ax2.set_xlabel("Predicted Probability")
-    ax2.set_ylabel("Count")
-    ax2.set_title("Probability Distribution")
+    ax2.set_xlabel("Predicted Probability", fontsize=16)
+    ax2.set_ylabel("Count", fontsize=16)
+    ax2.set_title("Probability Distribution", fontweight="bold", fontsize=18)
     ax2.grid(alpha=0.3)
 
     plt.tight_layout()
@@ -319,6 +321,23 @@ def plotPFI(dataset, lead_day, model, X_test, y_test, feature_names, top=10, mod
     plt.tight_layout()
     plt.show()
 
+def generateROC(y_true, y_pred, lead_day, database_name, model_name, line_colour="black"):
+    fpr, tpr, thresholds = roc_curve(y_true, y_score=y_pred)
+    labels = [line.get_label() for line in plt.gca().get_lines()]
+    roc_auc = metrics.auc(fpr, tpr)
+    prefix = database_name[-4:]
+    
+    if 'Random Classifier' not in labels:
+        plt.plot([0, 1], [0, 1],'--', color="grey", label="Random Classifier")
+
+    plt.plot(fpr, tpr, color=line_colour, label=f"{model_name} %0.2f" % roc_auc)
+    
+    plt.legend(loc="lower right")
+    plt.xlim([0, 1])
+    plt.ylim([0, 1])
+    plt.title(f"{prefix} LD{lead_day} ROC Curve", fontweight="bold",fontsize=18)
+    plt.ylabel('True Positive Rate', fontsize=16)
+    plt.xlabel('False Positive Rate', fontsize=16)
 
 def main():
     # Environment variable must be set to run this script
@@ -359,10 +378,14 @@ def main():
             rows.append(metricsTable(dataset, lead_day, "DT",
                                     y_test, y_prob, y_pred,
                                     y_train, y_train_pred))
+            
+            # Evaluate model outputs using these tools (uncomment appropriately)
             # reliabilityCurve(dataset, lead_day, y_test, y_prob, model_name="Decision Tree")
             # cmDisplay(y_test, y_pred)
             # plotPFI(dataset, lead_day, dt, X_test, y_test, 
             #         feature_names=X_test.columns, top=10, model_name="Decision Tree")
+            # generateROC(y_test, y_pred, lead_day, database_name=dataset, 
+            #             model_name="DT", line_colour="tab:pink")
 
             print(f"Running Random Forest Classifier for Lead Day {lead_day}...")
             rf, X_test, y_test, y_train, y_train_pred, y_prob, y_pred = randomForest(train_set, test_set, 
@@ -370,11 +393,17 @@ def main():
             rows.append(metricsTable(dataset, lead_day, "RF",
                                      y_test, y_prob, y_pred,
                                      y_train, y_train_pred))
+            
+            # Evaluate model outputs using these tools (uncomment appropriately)
             reliabilityCurve(dataset, lead_day, y_test, y_prob, model_name="Random Forest")      
             # cmDisplay(y_test, y_pred)
             # plotPFI(dataset, lead_day, rf, X_test, y_test, 
             #         feature_names=X_test.columns, top=10, model_name="Random Forest")
+            # generateROC(y_test, y_pred, lead_day, database_name=dataset, 
+            #             model_name="RF", line_colour="tab:red")
     
+            # # Required for all calls of ROC Curve
+            # plt.show()
             tables[dataset][lead_day] = pd.DataFrame(rows)
 
     for dataset in tables:
