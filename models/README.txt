@@ -31,7 +31,7 @@ LD2: 72-hr
 - rf_cal_1230_LD1.pkl
 - rf_cal_1230_LD2.pkl
 
-To run these models, simply run: 
+To use these models, simply run: 
 
     python src/decision/rule_layer.py 
 
