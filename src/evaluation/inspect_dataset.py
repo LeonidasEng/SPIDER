@@ -1,6 +1,9 @@
 import os
 import pandas as pd
 
+import sys
+print(f"Environment: {sys.executable}")
+
 # Debugger for all parquet files to quickly assess datasets.
 
 def climateOut(df): 
@@ -15,6 +18,7 @@ def main():
     
     dataset_path = os.path.join(base, "data", "datasets")
     testset_path = os.path.join(base, "data", "test_sets")
+    decision_path = os.path.join(base, "data", "decision")
 
     FILES = {
             "Observed": "spider_features_obs.parquet",
@@ -27,7 +31,8 @@ def main():
             "Testset 0030 LD2": "test_0030_LD2.parquet",
             "Testset 1230 LD0": "test_1230_LD0.parquet",
             "Testset 1230 LD1": "test_1230_LD1.parquet",
-            "Testset 1230 LD2": "test_1230_LD2.parquet"
+            "Testset 1230 LD2": "test_1230_LD2.parquet",
+            "Debug Rule Layer": "SPIDER_decisions.parquet"
         }
     
     df_obs = pd.read_parquet(os.path.join(dataset_path, FILES["Observed"]))
@@ -43,6 +48,9 @@ def main():
     print(f"3 Day 0030 Target Dataset: {df_tar_0030.shape}")
     print(f"3 Day 1230 Target Dataset: {df_tar_1230.shape}")
 
+    #df_clim0030 = climateOut(df_tar_0030)
+    #df_clim1230 = climateOut(df_tar_1230)
+    #df_climGeo  = climateOut(df_tar_geo)
 
     test_0030_LD0 = pd.read_parquet(os.path.join(testset_path, FILES["Testset 0030 LD0"]))
     test_0030_LD1 = pd.read_parquet(os.path.join(testset_path, FILES["Testset 0030 LD1"]))
@@ -52,12 +60,11 @@ def main():
     test_1230_LD1 = pd.read_parquet(os.path.join(testset_path, FILES["Testset 1230 LD1"]))
     test_1230_LD2 = pd.read_parquet(os.path.join(testset_path, FILES["Testset 1230 LD2"]))
 
-    
-    #df_clim0030 = climateOut(df_tar_0030)
-    #df_clim1230 = climateOut(df_tar_1230)
-    #df_climGeo  = climateOut(df_tar_geo)
+    debug_decision = pd.read_parquet(os.path.join(decision_path, FILES["Debug Rule Layer"]))
 
-    print("stop") # For debug
+    # RECOMMENDED: If in VSCode, recommend using Data Wrangler extension to view the datasets.
+
+    print("stop") # Put BREAKPOINT HERE FOR DEBUG OR NOTHING WILL HAPPEN
     
     # ORIGINAL DATA
     # Observed Dataset: (11675, 11)
