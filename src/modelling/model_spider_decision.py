@@ -174,10 +174,10 @@ def randomForest(train_set, test_set, base, dataset, lead_day):
     y_test = df_test["is_large_error_win"]
 
     rf = RandomForestClassifier(
-        n_estimators=100,
+        n_estimators=200,
         max_depth=8,
-        min_samples_leaf=50,
-        min_samples_split=100,
+        min_samples_leaf=10,
+        min_samples_split=20,
         class_weight="balanced",
         random_state=RANDOM_STATE,
         verbose=1
@@ -397,7 +397,7 @@ def main():
                                      y_train, y_train_pred))
             
             # Evaluate model outputs using these tools (uncomment appropriately)
-            reliabilityCurve(dataset, lead_day, y_test, y_prob, model_name="Random Forest")      
+            reliabilityCurve(dataset, lead_day, y_test, y_prob, model_name="Random Forest + LR")      
             # cmDisplay(y_test, y_pred)
             # plotPFI(dataset, lead_day, rf, X_test, y_test, 
             #         feature_names=X_test.columns, top=10, model_name="Random Forest")
