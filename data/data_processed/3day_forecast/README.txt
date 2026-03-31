@@ -16,7 +16,7 @@ data/data_processed/3day_forecast/backup/original_query
 However, due to the nature of the NCEI archive, this dataset was 
 intermittent, with large data gaps where SWPC had not requested that 
 the forecast be stored in the long-term NCEI archive. A contact from 
-NOAA, provided all available historic data for the 0030 and 1230 
+NOAA, provided all available historical data for the 0030 and 1230 
 forecasts using an in-house tool.
 
 Disclaimer: NOAA states that the data collected using this tool is 

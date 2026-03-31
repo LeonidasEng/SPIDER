@@ -187,6 +187,11 @@ one.
 <p>Verify:</p>
 <pre><code class="language-sh">python -c "import &lt;package_name&gt;"</code></pre>
 
+<p><b>KeyboardInterrupt cancels debug session</b></p>
+
+<p>In Windows VSCode, if the venv keeps closing on every debug session, try adding the following line to .vscode/settings.json:</p>
+<p><code class="language-sh">{"python.useEnvironmentsExtension": true}</code></p>
+<p><a href="https://github.com/microsoft/vscode-python/issues/25720">Bug Report</a></p>
 </details>
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -221,6 +226,15 @@ Welcome to the repo! In order to start using SPIDER, first ensure you have read 
 ### Data Parsing
 <details>
 <summary>Click to expand/collapse</summary>
+<p>All raw data collected via FTP access utility will be stored in:</p>
+<pre><code>data/raw/&lt;type&gt;/&lt;subtype&gt;</code></pre>
+
+<p>To process the new data, run:</p>
+<pre><code class="language-sh">python -m src.ingestion.parse_3day</code></pre>
+
+<p>The parser will automatically locate and process all files</p>
+
+<p>Recursive conflict-handling will ensure only the most recent data is used.</p>
 
 </details>
 
