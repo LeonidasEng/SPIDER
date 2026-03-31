@@ -2,6 +2,8 @@ import os
 import matplotlib.pyplot as plt
 import pandas as pd
 import joblib
+import warnings
+warnings.simplefilter(action='ignore', category=FutureWarning)
 
 
 from sklearn.tree import DecisionTreeClassifier

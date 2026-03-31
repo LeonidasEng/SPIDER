@@ -2,6 +2,8 @@ import os
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
+import warnings
+warnings.simplefilter(action='ignore', category=FutureWarning)
 
 from sklearn import metrics
 from sklearn.naive_bayes import GaussianNB
@@ -18,8 +20,7 @@ TARGETS = {
         "3 Day Forecast 1230": "spider_targets_3day_1230.parquet"
     }
 
-# Create Test and Train datasets: https://www.geeksforgeeks.org/python/pandas-create-test-and-train-samples-from-dataframe/
-# I'll add later when I need for NB and LR
+# This script requires that a target dataset be created for available processed data. 
 
 def dataSplit(df: pd.DataFrame, dataset:str):
     '''

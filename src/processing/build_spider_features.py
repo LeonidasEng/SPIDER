@@ -4,6 +4,12 @@ import json
 from datetime import datetime, timezone
 import pandas as pd
 
+# OBSERVED DATA, 3-DAY FORECAST DATA, OMNI2 DATA are all required
+# before this script can run.
+
+# This creates the master dataset before any data splits take place
+# for training or testing.
+
 DATASETS = {
     "observed_kp":"dayind",
     "3day_forecast": "3day_forecast",
