@@ -24,7 +24,7 @@
 <details>
   <summary>Table of Contents</summary>
   <ol>
-    <li><a href="#️-spider-initial-setup">SPIDER Initial Setup</a></li>
+    <li><a href="#initial-setup">Initial Setup</a></li>
         <ul>
         <li><a href="#️-setting-spider-environment-variable---required">Setting SPIDER Environment Variable - Required</a></li>
             <ul>
@@ -35,6 +35,7 @@
         <li><a href="#️-python-virtual-environment-setup---recommended">Python Virtual Environment - Recommended</a></li>
         <li><a href="#troubleshooting">Troubleshooting</a></li>
         </ul>
+    <li><a href="#user-guide">User Guide</a></li>
     <li><a href="#contributing">Contributing</a></li>
         <ul>
         <li><a href="#clone-the-repo">Clone the Repo</a></li>
@@ -45,7 +46,7 @@
   </ol>
 </details>
 
-## SPIDER Initial Setup 
+## Initial Setup 
 PLEASE REVIEW BEFORE RUNNING ANY SCRIPTS
 
 ### ⚠️ SETTING SPIDER ENVIRONMENT VARIABLE - REQUIRED 
@@ -190,6 +191,67 @@ one.
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
 
+## User Guide
+Welcome to the repo! In order to start using SPIDER, first ensure you have read the
+"Initial Setup" guide before attempting to run any script. 
+
+### Data Collection
+<details>
+<summary>Click to expand/collapse</summary>
+<p>To download new data, run:</p>
+<pre><code class="language-sh">python -m src.ingestion.ftp_access</code></pre>
+
+<p>This opens the FTP Access utility main menu.</p>
+
+<p>From the menu, select the data source you want to use, for example <code>forecasts</code>.</p>
+
+<p>Next, select the data you want to download, for example <code>3day</code>.</p>
+
+<p>The utility will connect to the FTP server and display the available data.</p>
+
+<p>Enter a start date in <code>YYYYMMDD</code> format, for example <code>20250101</code>.</p>
+
+<p>Enter an end date in <code>YYYYMMDD</code> format, for example <code>20250131</code>.</p> 
+
+<p>After you press Enter, the selected data will be downloaded to:</p> 
+<pre><code>data/raw/&lt;start_date&gt;_&lt;end_date&gt;_raw/&lt;year&gt;/&lt;month&gt;</code></pre>
+
+</details>
+
+### Data Parsing
+<details>
+<summary>Click to expand/collapse</summary>
+
+</details>
+
+### Build Datasets
+<details>
+<summary>Click to expand/collapse</summary>
+
+</details>
+
+### ML Modelling
+<details>
+<summary>Click to expand/collapse</summary>
+
+</details>
+
+### Rule Layer
+<details>
+<summary>Click to expand/collapse</summary>
+
+</details>
+
+## ℹ️ Data Disclaimer
+NOAA provided historical archives for 3-day Kp forecast data period (2012-2024) to resolve data gaps.
+However, NOAA states that the data collected using this tool is not definitive and may still contain 
+errors. It is a best-effort attempt to fill in gaps in the archive.
+
+SPIDER currently can only gather data on historic forecasts. The main limitation being that observed Kp
+is not available at forecast runtime. 
+
+NASAs OMNI2 uses placeholder values to indicate missing or invalid data. OMNI2 
+
 ## Built With
 * Python
 * Scikit-learn
@@ -206,7 +268,7 @@ See the [open issues](https://github.com/LeonidasEng/SPIDER/issues) for a list o
 
 <!-- CONTRIBUTING -->
 ## Contributing
-This project was done as a Final year Engineering project. Any feedback you can give is **greatly appreciated**.
+This project was created as a Final year Engineering project. Any feedback you can give is **greatly appreciated**.
 
 ### Clone the Repo
 1. Clone the repository to your local machine or download the ZIP.
@@ -233,8 +295,6 @@ If you have a suggestion that would make this better, please fork the repo and c
 <!-- LICENSE -->
 ## License
 This source code is licensed under the Apache2.0-style license found in: [LICENSE](https://github.com/LeonidasEng/SPIDER/blob/trunk/LICENSE) found in the root directory of this source tree.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p> 
 
 Project Link: [https://github.com/LeonidasEng/SPIDER](https://github.com/LeonidasEng/SPIDER)
 
