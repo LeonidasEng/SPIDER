@@ -200,6 +200,10 @@ one.
 Welcome to the repo! In order to start using SPIDER, first ensure you have read the
 "Initial Setup" guide before attempting to run any script. 
 
+<div align="center">
+  <img src="docs/Data_Pipleline.png" alt="Pipeline", width="500">
+</div>
+
 ### Data Collection
 <details>
 <summary>Click to expand/collapse</summary>
@@ -241,6 +245,16 @@ Welcome to the repo! In order to start using SPIDER, first ensure you have read 
 ### Build Datasets
 <details>
 <summary>Click to expand/collapse</summary>
+<p>To build datasets, first, ensure that observed data (parse_dayind.py) and OMNI2 data (parse_omni2.py) have been processed alongside 3-day forecast data.</p>
+<pre><code class="language-sh">python -m src.processing.build_spider_features</code></pre>
+<p>Note: Currently, running this script will overwrite feature datasets.</p>
+
+<p>With feature parquet files created, generate targets for the datasets using:</p>
+<pre><code class="language-sh">python -m src.processing.build_spider_targets</code></pre>
+<p>Note: Currently, running this script will overwrite target datasets.</p>
+
+<p>A backup of the original 2012-2025 master datasets are available in:</p>
+<pre><code>data/datasets/2012_2025</code></pre>
 
 </details>
 
@@ -261,10 +275,17 @@ NOAA provided historical archives for 3-day Kp forecast data period (2012-2024) 
 However, NOAA states that the data collected using this tool is not definitive and may still contain 
 errors. It is a best-effort attempt to fill in gaps in the archive.
 
-SPIDER currently can only gather data on historic forecasts. The main limitation being that observed Kp
+SPIDER currently can only gather data on historical forecasts. The main limitation being that observed Kp
 is not available at forecast runtime. 
 
-NASAs OMNI2 uses placeholder values to indicate missing or invalid data. OMNI2 
+NASA’s OMNI2 dataset uses placeholder values to indicate missing or invalid data, and its parameters are released in a staggered manner, with some observed values taking up to a month to become available. 
+
+Despite this limitation, OMNI2 is used in this project because it provides a cleaned, cross-calibrated 
+representation of solar wind and geomagnetic conditions, averaged across multiple observatories 
+(ACE, DSCOVR, Wind) and time-shifted to the bow shock, thereby avoiding errors in time propagation.
+
+As a result, SPIDER is not intended for operational use, but rather as a retrospective analysis tool,
+with the aim of understanding how forecast errors manifest, with the potentially to inform future models.
 
 ## Built With
 * Python

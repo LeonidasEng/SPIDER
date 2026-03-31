@@ -3,7 +3,7 @@ import pandas as pd
 import warnings
 warnings.simplefilter(action='ignore', category=FutureWarning)
 
-# T
+# This script requires updated feature parquet files in order to generate targets.
 
 FILES = {
         "Observed": "spider_features_obs.parquet",
