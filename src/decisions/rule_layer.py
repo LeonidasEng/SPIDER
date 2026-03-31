@@ -60,6 +60,7 @@ def formatResult(base, ftype, new_records, model_outputs):
     issue = new_records[0].iloc[0]["issue_time_utc"]
     issue_str = datetime.strftime(issue, "%Y %b %d %H:%M UTC")
     meta = None
+    meta_text = None
 
     lead_dates = {
         # Adding the lead day to the issue to see in 
@@ -81,15 +82,16 @@ def formatResult(base, ftype, new_records, model_outputs):
                                  uncs,
                                  cis,
                                  decs)
-    if issue.year == 2025:
-        metadata_path = os.path.join(base, "data", "data_processed", "3day_forecast", 
-            f"3day_{ftype}", f"{issue.year}", f"3day_{issue.year}_{issue.month:02d}.json")
-        data_dt = f"{issue.year}-{issue.month:02d}-{issue.day:02d}"
-        with open(metadata_path, "r") as f:
-            metadata_json = json.load(f)
-        
-        meta = metadata_json[data_dt]["kp"]["meta"]
-        meta_text = ""
+    if DEBUG:
+        if issue.year == 2025:
+            metadata_path = os.path.join(base, "data", "data_processed", "3day_forecast", 
+                f"3day_{ftype}", f"{issue.year}", f"3day_{issue.year}_{issue.month:02d}.json")
+            data_dt = f"{issue.year}-{issue.month:02d}-{issue.day:02d}"
+            with open(metadata_path, "r") as f:
+                metadata_json = json.load(f)
+            
+            meta = metadata_json[data_dt]["kp"]["meta"]
+            meta_text = ""
 
     
     if meta:
@@ -200,7 +202,7 @@ def main():
             df_all["valid_start_utc"].dt.date == target_date
         ].sort_values("valid_start_utc").reset_index(drop=True)
     
-    if DEBUG == True:
+    if DEBUG:
         # To view all records not just one day
         new_records = {
             ld: df.sort_values("valid_start_utc").reset_index(drop=True)
@@ -245,7 +247,7 @@ def main():
     for ld in [0, 1, 2]:
         model = models[ld]
         X = new_forecasts[ld]
-        if DEBUG == True:
+        if DEBUG:
             df_ld = new_records[ld] # <- DEBUG
 
         probs = predictProb(model, X)
@@ -272,7 +274,7 @@ def main():
             })
 
             # Want to be able to see all outputs to tune decision thresholds
-            if DEBUG == True:
+            if DEBUG:
                 debug_rows.append({
                     "issue_time_utc": df_ld.iloc[i]["issue_time_utc"],
                     "valid_start_utc": df_ld.iloc[i]["valid_start_utc"],
