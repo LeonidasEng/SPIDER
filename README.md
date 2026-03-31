@@ -206,7 +206,7 @@ Welcome to the repo! In order to start using SPIDER, first ensure you have read 
 
 ### Data Collection
 <details>
-<summary>Click to expand/collapse</summary>
+<summary>Download new data</summary>
 <p>To download new data, run:</p>
 <pre><code class="language-sh">python -m src.ingestion.ftp_access</code></pre>
 
@@ -229,7 +229,7 @@ Welcome to the repo! In order to start using SPIDER, first ensure you have read 
 
 ### Data Parsing
 <details>
-<summary>Click to expand/collapse</summary>
+<summary>Process collected data</summary>
 <p>All raw data collected via FTP access utility will be stored in:</p>
 <pre><code>data/raw/&lt;type&gt;/&lt;subtype&gt;</code></pre>
 
@@ -244,7 +244,7 @@ Welcome to the repo! In order to start using SPIDER, first ensure you have read 
 
 ### Build Datasets
 <details>
-<summary>Click to expand/collapse</summary>
+<summary>Build Dataset Features and Targets</summary>
 <p>To build datasets, first, ensure that observed data (parse_dayind.py) and OMNI2 data (parse_omni2.py) have been processed alongside 3-day forecast data.</p>
 <pre><code class="language-sh">python -m src.processing.build_spider_features</code></pre>
 <p>Note: Currently, running this script will overwrite feature datasets.</p>
@@ -260,13 +260,35 @@ Welcome to the repo! In order to start using SPIDER, first ensure you have read 
 
 ### ML Modelling
 <details>
-<summary>Click to expand/collapse</summary>
+<summary>Run Model Scripts</summary>
+<p><strong>Baseline models:</strong></p>
+<pre><code class="language-sh">python -m src.modelling.model_spider_base</code></pre>
+
+<p><strong>Tree-based models:</strong></p>
+<pre><code class="language-sh">python -m src.modelling.model_spider_decision</code></pre>
+
+<p>Each script generates a classification metrics table, which serves as a benchmark tool for model performance.</p>
+
+<p>Additional analysis tools are included within the scripts and can be enabled by uncommenting the relevant lines to evaluate model outputs.</p>
 
 </details>
 
 ### Rule Layer
 <details>
-<summary>Click to expand/collapse</summary>
+<summary>Run Rule Layer</summary>
+
+<p><strong>Generate SPIDER-enhanced forecast output:</strong></p>
+<pre><code class="language-sh">python -m src.decision.rule_layer</code></pre>
+
+<p>Enter an issue date in <code>YYYYMMDD</code> format, for example <code>20250101</code>.</p>
+
+<p>Forecasts from 2025-01-01 onwards include geomagnetic activity associated metadata, in the final forecast outputs</p>
+
+<p>This script applies a rule-layer to model probability outputs, producing an enhanced forecast with reliability, uncertainty and confidence intervals</p>
+
+<p>Finally, the rule layer produces a decision for each sample, it's confidence in the forecast and whether to trust the result.</p>
+
+<p><code>Debug=True</code> will run the rule layer on the entire test_set for a specified forecast (<code>0030</code> or <code>1230</code>).</p>
 
 </details>
 
