@@ -14,6 +14,7 @@ def setupLogger(log_dir: str | None = None, level=logging.INFO):
         "%(asctime)s | %(levelname)-7s | %(message)s",
         datefmt="%Y-%m-%d %H:%M:%S"
     )
+    # https://docs.python.org/3/library/logging.html
 
     # Console Handler
     ch = logging.StreamHandler()
@@ -114,7 +115,7 @@ def extractKpMeta(kp_data:list):
         meta["greatest_expected_kp"] = float(m_exp.group(1))
 
     m_scale = re.search(r"noaa scale\s*(g\d)", joined, re.IGNORECASE) # NOAA scale
-    # Capturea any scale with at least one space, the letter "g" followed by a number
+    # Capture any scale with at least one space, the letter "g" followed by a number
     if m_scale:
         meta["greatest_expected_scale"] = m_scale.group(1).upper()
 

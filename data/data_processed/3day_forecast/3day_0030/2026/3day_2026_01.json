@@ -1,0 +1,5241 @@
+{
+    "2026-01-01": {
+        "issue": "2026-01-01 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2026-01-01 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2026-01-01 03-06UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-01 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2026-01-01 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-01 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-01 15-18UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2026-01-01 18-21UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2026-01-01 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2026-01-02 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2026-01-02 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-02 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2026-01-02 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2026-01-02 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-02 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-02 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-02 21-00UT",
+                    4.67,
+                    "G1"
+                ]
+            ],
+            "n+2": [
+                [
+                    "2026-01-03 00-03UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2026-01-03 03-06UT",
+                    6.0,
+                    "G2"
+                ],
+                [
+                    "2026-01-03 06-09UT",
+                    6.0,
+                    "G2"
+                ],
+                [
+                    "2026-01-03 09-12UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2026-01-03 12-15UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2026-01-03 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-03 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-03 21-00UT",
+                    4.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 6.0,
+                "greatest_expected_scale": "G2",
+                "rationale": "G1 (Minor) geomagnetic storms are likely for Jan 01-02 and G2 (Moderate) geomagnetic storms are likely for Jan 03 due to the anticipated impact of CMEs that left the Sun between 28-31 Dec."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 40,
+                "n+1": 20,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a chance for S1 (Minor) solar radiation storms on Jan 01 due to a impulsive flare on 31 Dec, and a slight chance for S1 (Minor) solar radiation storms on 02-03 Jan."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 55,
+                "n+1": 55,
+                "n+2": 55,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 20,
+                "n+1": 20,
+                "n+2": 20,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R2",
+                "max_blackout_time": "Dec 31 2025 1351 UTC",
+                "rationale": "R1-R2 (Minor to Moderate) or radio blackouts are likely on 01-03 Jan."
+            }
+        }
+    },
+    "2026-01-02": {
+        "issue": "2026-01-02 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2026-01-02 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2026-01-02 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-02 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2026-01-02 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2026-01-02 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-02 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-02 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-02 21-00UT",
+                    4.67,
+                    "G1"
+                ]
+            ],
+            "n+1": [
+                [
+                    "2026-01-03 00-03UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2026-01-03 03-06UT",
+                    6.0,
+                    "G2"
+                ],
+                [
+                    "2026-01-03 06-09UT",
+                    6.0,
+                    "G2"
+                ],
+                [
+                    "2026-01-03 09-12UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2026-01-03 12-15UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2026-01-03 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-03 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-03 21-00UT",
+                    4.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2026-01-04 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2026-01-04 03-06UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2026-01-04 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-04 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-04 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-04 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-04 18-21UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2026-01-04 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 6.0,
+                "greatest_expected_scale": "G2",
+                "rationale": "G1-G2 (Minor-Moderate) geomagnetic storms are likely over 02-03 Jan due to anticipated influence from multiple CMEs that left the Sun over 28-30 Dec."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 20,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for S1 (Minor) or greater solar radiation storms over 02-04 Jan due to multiple complex regions on the solar disk."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 55,
+                "n+1": 55,
+                "n+2": 55,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 20,
+                "n+1": 20,
+                "n+2": 20,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are likely over 02-04, with a slight chance for R3 (Strong), primarily due to flare potential from Regions 4325 and 4324."
+            }
+        }
+    },
+    "2026-01-03": {
+        "issue": "2026-01-03 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2026-01-03 00-03UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2026-01-03 03-06UT",
+                    6.0,
+                    "G2"
+                ],
+                [
+                    "2026-01-03 06-09UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2026-01-03 09-12UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2026-01-03 12-15UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2026-01-03 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-03 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-03 21-00UT",
+                    4.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2026-01-04 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2026-01-04 03-06UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2026-01-04 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-04 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-04 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-04 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-04 18-21UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2026-01-04 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2026-01-05 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-05 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-05 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-05 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2026-01-05 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2026-01-05 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2026-01-05 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2026-01-05 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 5.0,
+                "greatest_expected_kp": 6.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1-G2 (Minor-Moderate) geomagnetic storms are expected on 03 Jan and G1 storms on 04 Jan due to influence from both a negative polarity CH HSS and multiple anticipated CMEs."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for S1 (Minor) or greater solar radiation storms over 03-05 Jan due to the eruptive potential of multiple complex regions on the visible disk."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 50,
+                "n+1": 50,
+                "n+2": 50,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts, with a slight chance for R3 (Strong), on 03-05 Jan due to the flare potential of multiple complex regions on the visible disk."
+            }
+        }
+    },
+    "2026-01-04": {
+        "issue": "2026-01-04 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2026-01-04 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2026-01-04 03-06UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2026-01-04 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-04 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-04 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-04 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-04 18-21UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2026-01-04 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2026-01-05 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-05 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-05 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-05 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2026-01-05 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2026-01-05 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2026-01-05 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2026-01-05 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2026-01-06 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-06 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2026-01-06 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-06 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-06 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-06 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-06 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-06 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 4.67,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storms are likely on 04 Jan due to the anticipated effects of passing CME that left the Sun on 02 Jan."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There exists a slight chance for S1 (Minor) or greater solar radiation storms over 04-06 Jan due to the eruptive potential of multiple regions on the visible disk."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 50,
+                "n+1": 50,
+                "n+2": 50,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts, with a slight chance for R3 (Strong), over 04-06 Jan due to the flare potential of multiple regions on the visible disk."
+            }
+        }
+    },
+    "2026-01-05": {
+        "issue": "2026-01-05 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2026-01-05 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2026-01-05 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2026-01-05 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-05 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2026-01-05 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-05 15-18UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2026-01-05 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-01-05 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2026-01-06 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-06 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2026-01-06 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2026-01-06 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-01-06 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-01-06 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-01-06 18-21UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2026-01-06 21-00UT",
+                    0.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2026-01-07 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2026-01-07 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2026-01-07 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-01-07 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-01-07 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-01-07 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-01-07 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2026-01-07 21-00UT",
+                    1.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 2.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There remains a slight chance for S1 (Minor) or greater solar radiation storms over 05-07 Jan."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 50,
+                "n+1": 50,
+                "n+2": 50,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There exists a chance for R1-R2 (Minor-Moderate) radio blackouts, with a slight chance for R3 (Strong), over 05-07 Jan."
+            }
+        }
+    },
+    "2026-01-06": {
+        "issue": "2026-01-06 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2026-01-06 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-06 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2026-01-06 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2026-01-06 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-01-06 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-01-06 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-01-06 18-21UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2026-01-06 21-00UT",
+                    0.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2026-01-07 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2026-01-07 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2026-01-07 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-01-07 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-01-07 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-01-07 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-01-07 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2026-01-07 21-00UT",
+                    1.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2026-01-08 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2026-01-08 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-01-08 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-01-08 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-01-08 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-01-08 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-01-08 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2026-01-08 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 2.33,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 40,
+                "n+1": 40,
+                "n+2": 40,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There a chance for R1-R2 (Minor-Moderate) radio blackout events, with a slight chance for R3 (Strong), 06-08 Jan."
+            }
+        }
+    },
+    "2026-01-07": {
+        "issue": "2026-01-07 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2026-01-07 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2026-01-07 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2026-01-07 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-01-07 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-01-07 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-01-07 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-01-07 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2026-01-07 21-00UT",
+                    1.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2026-01-08 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2026-01-08 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-01-08 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-01-08 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-01-08 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-01-08 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-01-08 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2026-01-08 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2026-01-09 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-09 03-06UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2026-01-09 06-09UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2026-01-09 09-12UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2026-01-09 12-15UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2026-01-09 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-09 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-09 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 2.0,
+                "greatest_expected_kp": 5.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) or greater geomagnetic storms are possible on 09 Jan due to potential compounded affects of a CIR and a CME that left the Sun on 06 Jan."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for S1 (Minor) or greater solar radiation storms are 07-09 Jan."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 40,
+                "n+1": 40,
+                "n+2": 40,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts, with a slight chance for R3 (Strong) events, on 07-09 Jan."
+            }
+        }
+    },
+    "2026-01-08": {
+        "issue": "2026-01-08 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2026-01-08 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2026-01-08 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2026-01-08 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-08 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-08 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-08 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2026-01-08 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-08 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2026-01-09 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-09 03-06UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2026-01-09 06-09UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2026-01-09 09-12UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2026-01-09 12-15UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2026-01-09 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-09 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-09 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2026-01-10 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2026-01-10 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2026-01-10 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2026-01-10 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-10 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-10 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-10 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-10 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 2.0,
+                "greatest_expected_kp": 5.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) or greater geomagnetic storms are anticipated on 09 Jan due to a coronal high speed stream interacting with a potential glancing blow from a CME that left the Sun on 06 Jan."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for a S1 (Minor) or greater solar radiation storm 08-10 Jan."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 45,
+                "n+1": 45,
+                "n+2": 45,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts, with a slight chance for R3 (Strong) or greater events, on 08-10 Jan."
+            }
+        }
+    },
+    "2026-01-09": {
+        "issue": "2026-01-09 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2026-01-09 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-09 03-06UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2026-01-09 06-09UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2026-01-09 09-12UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2026-01-09 12-15UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2026-01-09 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-09 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-09 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2026-01-10 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2026-01-10 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2026-01-10 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2026-01-10 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-10 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-10 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-10 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-10 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2026-01-11 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2026-01-11 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-11 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-11 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-11 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2026-01-11 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-11 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-11 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 5.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) or greater geomagnetic storms are possible on 09 Jan due to CH HSS influences compounded by a potential glancing blow from a CME that left the Sun on 06 Jan."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for S1 (Minor) or greater solar radiation storms on 09-11 Jan."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 45,
+                "n+1": 45,
+                "n+2": 45,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts, with a slight chance for R3 (Strong) events, on 09-11 Jan."
+            }
+        }
+    },
+    "2026-01-10": {
+        "issue": "2026-01-10 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2026-01-10 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2026-01-10 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2026-01-10 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-10 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-10 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-10 15-18UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2026-01-10 18-21UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2026-01-10 21-00UT",
+                    4.67,
+                    "G1"
+                ]
+            ],
+            "n+1": [
+                [
+                    "2026-01-11 00-03UT",
+                    5.33,
+                    "G1"
+                ],
+                [
+                    "2026-01-11 03-06UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2026-01-11 06-09UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2026-01-11 09-12UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2026-01-11 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-11 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-11 18-21UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2026-01-11 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2026-01-12 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2026-01-12 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2026-01-12 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-12 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-12 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-12 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2026-01-12 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-12 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 5.33,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) or greater geomagnetic storms are possible on 10-11 Jan due to the potential entanglement of a CME with the arriving CH HSS."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 15,
+                "n+1": 20,
+                "n+2": 20,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a slight chance for R1-R2 (Minor-Moderate) radio blackouts on 10-12 Jan."
+            }
+        }
+    },
+    "2026-01-11": {
+        "issue": "2026-01-11 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2026-01-11 00-03UT",
+                    5.33,
+                    "G1"
+                ],
+                [
+                    "2026-01-11 03-06UT",
+                    5.67,
+                    "G2"
+                ],
+                [
+                    "2026-01-11 06-09UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2026-01-11 09-12UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2026-01-11 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-11 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-11 18-21UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2026-01-11 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2026-01-12 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2026-01-12 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-12 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-12 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-12 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-12 15-18UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2026-01-12 18-21UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2026-01-12 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2026-01-13 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-13 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2026-01-13 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2026-01-13 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-13 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-13 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-13 18-21UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2026-01-13 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 6.0,
+                "greatest_expected_kp": 5.67,
+                "greatest_expected_scale": "G2",
+                "rationale": "G1 (Minor) and G2 (Moderate) geomagnetic storms are likely over 11 Jan due to influence of CMEs that departed the Sun on 08 Jan combined with an anticipated CH HSS."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There exists a slight chance for R1-R2 (Minor-Moderate) radio blackouts over 11-13 Jan due primarily to the flare potential of Region 4336."
+            }
+        }
+    },
+    "2026-01-12": {
+        "issue": "2026-01-12 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2026-01-12 00-03UT",
+                    5.67,
+                    "G2"
+                ],
+                [
+                    "2026-01-12 03-06UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2026-01-12 06-09UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2026-01-12 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2026-01-12 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-12 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-12 18-21UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2026-01-12 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2026-01-13 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-13 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2026-01-13 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2026-01-13 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-13 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-13 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-13 18-21UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2026-01-13 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2026-01-14 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2026-01-14 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-14 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-14 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2026-01-14 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-14 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-14 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-14 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 5.0,
+                "greatest_expected_kp": 5.67,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) and G2 (Moderate) geomagnetic storms are likely on 12 Jan due to ongoing influence from a CME that left the Sun on 08 Jan."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Jan 11 2026 2314 UTC",
+                "rationale": "There exists a slight chance for R1-R2 (Minor-Moderate) radio blackouts over 12-14 Jan."
+            }
+        }
+    },
+    "2026-01-13": {
+        "issue": "2026-01-13 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2026-01-13 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2026-01-13 03-06UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2026-01-13 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-13 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-13 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-13 15-18UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2026-01-13 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2026-01-13 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2026-01-14 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2026-01-14 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-14 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-14 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2026-01-14 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-14 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-14 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-14 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2026-01-15 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-15 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-15 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-15 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-15 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2026-01-15 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-15 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-15 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 4.0,
+                "greatest_expected_scale": null,
+                "rationale": "G1 (Minor) or greater geomagnetic storms are possible early on 13 Jan due to CH HSS influence."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 25,
+                "n+1": 25,
+                "n+2": 25,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Jan 12 2026 0030 UTC",
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts on 13-15 Jan."
+            }
+        }
+    },
+    "2026-01-14": {
+        "issue": "2026-01-14 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2026-01-14 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2026-01-14 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-14 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-14 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2026-01-14 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-14 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-14 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-14 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2026-01-15 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-15 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-15 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-15 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-15 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2026-01-15 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-15 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-15 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2026-01-16 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2026-01-16 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-01-16 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-01-16 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-01-16 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-01-16 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-01-16 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2026-01-16 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 25,
+                "n+1": 25,
+                "n+2": 25,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance (25%) R1-R2 (Minor-Moderate) radio blackouts on 14-16 Jan."
+            }
+        }
+    },
+    "2026-01-15": {
+        "issue": "2026-01-15 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2026-01-15 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-15 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-15 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-15 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-15 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2026-01-15 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-15 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-15 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2026-01-16 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2026-01-16 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-01-16 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-01-16 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-01-16 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-01-16 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-01-16 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2026-01-16 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2026-01-17 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-17 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2026-01-17 06-09UT",
+                    5.33,
+                    "G1"
+                ],
+                [
+                    "2026-01-17 09-12UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2026-01-17 12-15UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2026-01-17 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-17 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-17 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 5.33,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) or greater geomagnetic storms are possible on 17 Jan due to the anticipated arrival of coronal hole high speed stream and a co-rotating interaction region (CIR) ahead of it."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 25,
+                "n+1": 30,
+                "n+2": 30,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Jan 14 2026 2033 UTC",
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts on 15-17 Jan."
+            }
+        }
+    },
+    "2026-01-16": {
+        "issue": "2026-01-16 00:34:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2026-01-16 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-16 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2026-01-16 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-16 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-16 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-16 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-16 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-16 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2026-01-17 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-17 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2026-01-17 06-09UT",
+                    5.33,
+                    "G1"
+                ],
+                [
+                    "2026-01-17 09-12UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2026-01-17 12-15UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2026-01-17 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-17 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-17 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2026-01-18 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2026-01-18 03-06UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2026-01-18 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2026-01-18 09-12UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2026-01-18 12-15UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2026-01-18 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2026-01-18 18-21UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2026-01-18 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 5.33,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) or greater geomagnetic storms are possible on 17 and 18 Jan due to the anticipated arrival of coronal hole high speed stream and a co-rotating interaction region (CIR) ahead of it."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 55,
+                "n+1": 55,
+                "n+2": 55,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a likely chance for R1-R2 (Minor-Moderate) radio blackouts on 16-18 Jan."
+            }
+        }
+    },
+    "2026-01-17": {
+        "issue": "2026-01-17 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2026-01-17 00-03UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2026-01-17 03-06UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2026-01-17 06-09UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2026-01-17 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2026-01-17 12-15UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2026-01-17 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2026-01-17 18-21UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2026-01-17 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2026-01-18 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2026-01-18 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-18 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-18 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-18 12-15UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2026-01-18 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2026-01-18 18-21UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2026-01-18 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2026-01-19 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2026-01-19 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-19 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-19 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-19 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-19 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2026-01-19 18-21UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2026-01-19 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 5.0,
+                "greatest_expected_kp": 4.67,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storms are likely over 17-18 Jan due to anticipated influence from a coronal hole."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 55,
+                "n+1": 55,
+                "n+2": 55,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are likely, with a slight chance for R3 (Strong), over 17-19 Jan."
+            }
+        }
+    },
+    "2026-01-18": {
+        "issue": "2026-01-18 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2026-01-18 00-03UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2026-01-18 03-06UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2026-01-18 06-09UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2026-01-18 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-18 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-18 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2026-01-18 18-21UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2026-01-18 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2026-01-19 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2026-01-19 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2026-01-19 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2026-01-19 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-19 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-19 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2026-01-19 18-21UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2026-01-19 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2026-01-20 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2026-01-20 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2026-01-20 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2026-01-20 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-20 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-20 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2026-01-20 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-20 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 5.0,
+                "greatest_expected_kp": 4.67,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storms are expected on 18 Jan due to influence from a positive polarity coronal hole."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 55,
+                "n+1": 55,
+                "n+2": 55,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Jan 17 2026 1029 UTC",
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are likely, with a slight chance of R3 (Strong), over 18-20 Jan due to the flare potential from multiple complex regions on the solar disk."
+            }
+        }
+    },
+    "2026-01-19": {
+        "issue": "2026-01-19 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2026-01-19 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2026-01-19 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2026-01-19 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2026-01-19 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-19 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-19 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2026-01-19 18-21UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2026-01-19 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2026-01-20 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2026-01-20 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2026-01-20 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2026-01-20 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-20 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-20 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2026-01-20 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-20 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2026-01-21 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2026-01-21 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2026-01-21 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-21 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-21 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-21 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-21 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-21 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 4.0,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 99,
+                "n+1": 50,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": true,
+                "rationale": "S1 (Minor) or greater solar radiation storms are expected on 19 Jan, decaying to a chance on 20 Jan and a slight chance on 21 Jan."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 65,
+                "n+1": 65,
+                "n+2": 65,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 20,
+                "n+1": 20,
+                "n+2": 20,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R3",
+                "max_blackout_time": "Jan 18 2026 1809 UTC",
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are likely and a slight chance for R3 (Strong) radio blackouts over 19-21 Jan due to the flare potential of multiple complex regions on the visible disk."
+            }
+        }
+    },
+    "2026-01-20": {
+        "issue": "2026-01-20 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2026-01-20 00-03UT",
+                    7.67,
+                    "G4"
+                ],
+                [
+                    "2026-01-20 03-06UT",
+                    6.67,
+                    "G3"
+                ],
+                [
+                    "2026-01-20 06-09UT",
+                    6.33,
+                    "G2"
+                ],
+                [
+                    "2026-01-20 09-12UT",
+                    6.33,
+                    "G2"
+                ],
+                [
+                    "2026-01-20 12-15UT",
+                    6.67,
+                    "G3"
+                ],
+                [
+                    "2026-01-20 15-18UT",
+                    5.67,
+                    "G2"
+                ],
+                [
+                    "2026-01-20 18-21UT",
+                    6.0,
+                    "G2"
+                ],
+                [
+                    "2026-01-20 21-00UT",
+                    4.67,
+                    "G1"
+                ]
+            ],
+            "n+1": [
+                [
+                    "2026-01-21 00-03UT",
+                    4.33,
+                    null
+                ],
+                [
+                    "2026-01-21 03-06UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2026-01-21 06-09UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2026-01-21 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-21 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-21 15-18UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2026-01-21 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-21 21-00UT",
+                    3.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2026-01-22 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-22 03-06UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2026-01-22 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-22 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-22 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-22 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-22 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-22 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 8.0,
+                "greatest_expected_kp": 7.67,
+                "greatest_expected_scale": "G4",
+                "rationale": "G4 (Severe) or greater geomagnetic storms are expected on 20 Jan due to effects from a CME that left the Sun on 19 Jan."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 99,
+                "n+1": 95,
+                "n+2": 65,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": true,
+                "rationale": "An S2 (Moderate) solar radiation storm is in progress at the time of this summary. S1 (Minor) radiation levels are expected on 21-22 Jan."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 65,
+                "n+1": 65,
+                "n+2": 65,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 25,
+                "n+1": 20,
+                "n+2": 20,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Jan 19 2026 1119 UTC",
+                "rationale": "R1-R2 (Minor-Moderate) or greater radio blackouts are likely, with a slight chance for R3 (Strong) or greater through 22 Jan."
+            }
+        }
+    },
+    "2026-01-21": {
+        "issue": "2026-01-21 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2026-01-21 00-03UT",
+                    6.67,
+                    "G3"
+                ],
+                [
+                    "2026-01-21 03-06UT",
+                    6.67,
+                    "G3"
+                ],
+                [
+                    "2026-01-21 06-09UT",
+                    5.67,
+                    "G2"
+                ],
+                [
+                    "2026-01-21 09-12UT",
+                    5.67,
+                    "G2"
+                ],
+                [
+                    "2026-01-21 12-15UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2026-01-21 15-18UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2026-01-21 18-21UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2026-01-21 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2026-01-22 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2026-01-22 03-06UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2026-01-22 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-22 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2026-01-22 12-15UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-22 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-22 18-21UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2026-01-22 21-00UT",
+                    3.67,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2026-01-23 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2026-01-23 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2026-01-23 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-23 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-23 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-23 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-23 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-23 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 8.0,
+                "greatest_expected_kp": 6.67,
+                "greatest_expected_scale": "G4",
+                "rationale": "G1-G3 (Minor-Strong) geomagnetic storms are anticipated on 20-21 Jan due to continuing CH HSS influence and the passage of a halo CME that arrived late on 19 Jan."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 99,
+                "n+1": 45,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": true,
+                "rationale": "S1 (Minor) or greater solar radiation storms are expected to continue through 21 Jan, with the possibility of another crossing or slow decay keeping 22-23 Jan probabilities elevated."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 60,
+                "n+1": 60,
+                "n+2": 60,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are likely, with a slight chance for R3 (Strong) events, on 21-23 Jan."
+            }
+        }
+    },
+    "2026-01-22": {
+        "issue": "2026-01-22 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2026-01-22 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2026-01-22 03-06UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2026-01-22 06-09UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2026-01-22 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2026-01-22 12-15UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2026-01-22 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2026-01-22 18-21UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2026-01-22 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2026-01-23 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2026-01-23 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2026-01-23 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2026-01-23 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-23 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-23 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-23 18-21UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-23 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2026-01-24 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-24 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2026-01-24 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-24 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2026-01-24 12-15UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-24 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-24 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-24 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 7.0,
+                "greatest_expected_kp": 4.67,
+                "greatest_expected_scale": "G3",
+                "rationale": "G1 (Minor) geomagnetic storms are expected on 22 Jan due to CH HSS influences."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 45,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": true,
+                "rationale": "There is a decreasing chance for S1 (Minor) or greater solar radiation storms through 24 Jan."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 60,
+                "n+1": 60,
+                "n+2": 60,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": true,
+                "max_blackout_level": "R1",
+                "max_blackout_time": "Jan 21 2026 0712 UTC",
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are likely, with a slight chance for R3 (Strong) events, on 22-24 Jan."
+            }
+        }
+    },
+    "2026-01-23": {
+        "issue": "2026-01-23 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2026-01-23 00-03UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2026-01-23 03-06UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2026-01-23 06-09UT",
+                    5.67,
+                    "G2"
+                ],
+                [
+                    "2026-01-23 09-12UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2026-01-23 12-15UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2026-01-23 15-18UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-23 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-23 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2026-01-24 00-03UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-24 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-24 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-24 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-24 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2026-01-24 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2026-01-24 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-24 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2026-01-25 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-25 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2026-01-25 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-25 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2026-01-25 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-01-25 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-01-25 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-25 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 5.0,
+                "greatest_expected_kp": 5.67,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1-G2 (Minor-Moderate) geomagnetic storms are expected on 23 Jan due to persistent CH HSS influences."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": true,
+                "rationale": "There is a slight chance for S1 (Minor) or greater solar radiation storms through 25 Jan."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 60,
+                "n+1": 60,
+                "n+2": 60,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 15,
+                "n+1": 15,
+                "n+2": 15,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are likely, with a slight chance for R3 (Strong) events, on 23-25 Jan."
+            }
+        }
+    },
+    "2026-01-24": {
+        "issue": "2026-01-24 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2026-01-24 00-03UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2026-01-24 03-06UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2026-01-24 06-09UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2026-01-24 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-24 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2026-01-24 15-18UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2026-01-24 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-24 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2026-01-25 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-25 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2026-01-25 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-25 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2026-01-25 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-01-25 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-01-25 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-25 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2026-01-26 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2026-01-26 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-01-26 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-01-26 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-01-26 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2026-01-26 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-01-26 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2026-01-26 21-00UT",
+                    1.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 4.67,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storms are expected early on 24 Jan due to positive polarity CH HSS influences."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "There is a slight chance for S1 (Minor) solar radiation storms over 24-26 Jan."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 55,
+                "n+1": 55,
+                "n+2": 55,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are likely, with a slight chance for an R3 (Strong) or greater event, over 24-26 Jan."
+            }
+        }
+    },
+    "2026-01-25": {
+        "issue": "2026-01-25 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2026-01-25 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-25 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2026-01-25 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-25 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2026-01-25 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-01-25 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-01-25 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-25 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2026-01-26 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2026-01-26 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-01-26 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-01-26 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-01-26 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2026-01-26 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-01-26 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2026-01-26 21-00UT",
+                    1.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2026-01-27 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-27 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2026-01-27 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-27 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2026-01-27 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2026-01-27 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-27 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-27 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 3.33,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 55,
+                "n+1": 55,
+                "n+2": 55,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 10,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "R1-R2 (Minor-Moderate) radio blackouts are likely, with a slight chance for an R3 (Strong) or greater event, over 25-27 Jan."
+            }
+        }
+    },
+    "2026-01-26": {
+        "issue": "2026-01-26 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2026-01-26 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2026-01-26 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2026-01-26 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-26 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-26 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-01-26 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-01-26 18-21UT",
+                    1.0,
+                    null
+                ],
+                [
+                    "2026-01-26 21-00UT",
+                    1.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2026-01-27 00-03UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-27 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2026-01-27 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-27 09-12UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2026-01-27 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2026-01-27 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-27 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-27 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2026-01-28 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2026-01-28 03-06UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2026-01-28 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2026-01-28 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-28 12-15UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2026-01-28 15-18UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2026-01-28 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2026-01-28 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 4.67,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storming is likely on 28 Jan due to negative polarity CH HSS influences."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 45,
+                "n+1": 40,
+                "n+2": 35,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "There is a chance for R1-R2 (Minor-Moderate) radio blackouts over 26-28 Jan."
+            }
+        }
+    },
+    "2026-01-27": {
+        "issue": "2026-01-27 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2026-01-27 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2026-01-27 03-06UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-27 06-09UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2026-01-27 09-12UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2026-01-27 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-27 15-18UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-27 18-21UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-27 21-00UT",
+                    2.67,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2026-01-28 00-03UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2026-01-28 03-06UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2026-01-28 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2026-01-28 09-12UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-28 12-15UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2026-01-28 15-18UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2026-01-28 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2026-01-28 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2026-01-29 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2026-01-29 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2026-01-29 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-29 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-29 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2026-01-29 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2026-01-29 18-21UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2026-01-29 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 4.67,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storms are likely on 28 Jan due to CH HSS influences."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 25,
+                "n+1": 25,
+                "n+2": 25,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "A chance for R1-R2 (Minor-Moderate) radio blackouts due to isolated M-class flares will persist through 29 Jan."
+            }
+        }
+    },
+    "2026-01-28": {
+        "issue": "2026-01-28 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2026-01-28 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2026-01-28 03-06UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2026-01-28 06-09UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2026-01-28 09-12UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2026-01-28 12-15UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2026-01-28 15-18UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2026-01-28 18-21UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2026-01-28 21-00UT",
+                    4.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2026-01-29 00-03UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2026-01-29 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2026-01-29 06-09UT",
+                    3.0,
+                    null
+                ],
+                [
+                    "2026-01-29 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-29 12-15UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2026-01-29 15-18UT",
+                    3.33,
+                    null
+                ],
+                [
+                    "2026-01-29 18-21UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2026-01-29 21-00UT",
+                    4.0,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2026-01-30 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2026-01-30 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2026-01-30 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-30 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-30 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-30 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-30 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-30 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 3.0,
+                "greatest_expected_kp": 4.67,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storms are likely on 28 Jan due to CH HSS influences."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 25,
+                "n+1": 25,
+                "n+2": 20,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 5,
+                "n+2": 5,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "A chance for R1-R2 (Minor-Moderate) radio blackouts due to isolated M-class flares will persist through 30 Jan."
+            }
+        }
+    },
+    "2026-01-29": {
+        "issue": "2026-01-29 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2026-01-29 00-03UT",
+                    5.0,
+                    "G1"
+                ],
+                [
+                    "2026-01-29 03-06UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2026-01-29 06-09UT",
+                    4.67,
+                    "G1"
+                ],
+                [
+                    "2026-01-29 09-12UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2026-01-29 12-15UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2026-01-29 15-18UT",
+                    4.0,
+                    null
+                ],
+                [
+                    "2026-01-29 18-21UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2026-01-29 21-00UT",
+                    3.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2026-01-30 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2026-01-30 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2026-01-30 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-30 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-30 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-30 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-30 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-30 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2026-01-31 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2026-01-31 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2026-01-31 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-31 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-31 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2026-01-31 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-01-31 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-31 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 5.0,
+                "greatest_expected_kp": 5.0,
+                "greatest_expected_scale": "G1",
+                "rationale": "G1 (Minor) geomagnetic storms are expected on 29 Jan due to CH HSS influences."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 25,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "A decreaseing chance for R1-R2 (Minor-Moderate) radio blackouts exists for the next three days."
+            }
+        }
+    },
+    "2026-01-30": {
+        "issue": "2026-01-30 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2026-01-30 00-03UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2026-01-30 03-06UT",
+                    3.67,
+                    null
+                ],
+                [
+                    "2026-01-30 06-09UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-30 09-12UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-30 12-15UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-30 15-18UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-30 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-30 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2026-01-31 00-03UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2026-01-31 03-06UT",
+                    2.67,
+                    null
+                ],
+                [
+                    "2026-01-31 06-09UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-31 09-12UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-31 12-15UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2026-01-31 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-01-31 18-21UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-31 21-00UT",
+                    2.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2026-02-01 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2026-02-01 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2026-02-01 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2026-02-01 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-02-01 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-02-01 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-02-01 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-02-01 21-00UT",
+                    1.33,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 3.67,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 5,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 15,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 5,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "No R1 (Minor) or greater radio blackouts are expected.  No significant active region flare activity is forecast."
+            }
+        }
+    },
+    "2026-01-31": {
+        "issue": "2026-01-31 00:30:00 UTC",
+        "kp": {
+            "n": [
+                [
+                    "2026-01-31 00-03UT",
+                    2.33,
+                    null
+                ],
+                [
+                    "2026-01-31 03-06UT",
+                    2.0,
+                    null
+                ],
+                [
+                    "2026-01-31 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2026-01-31 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-01-31 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-01-31 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-01-31 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2026-01-31 21-00UT",
+                    2.0,
+                    null
+                ]
+            ],
+            "n+1": [
+                [
+                    "2026-02-01 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2026-02-01 03-06UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2026-02-01 06-09UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2026-02-01 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-02-01 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-02-01 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-02-01 18-21UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-02-01 21-00UT",
+                    1.33,
+                    null
+                ]
+            ],
+            "n+2": [
+                [
+                    "2026-02-02 00-03UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2026-02-02 03-06UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-02-02 06-09UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-02-02 09-12UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-02-02 12-15UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-02-02 15-18UT",
+                    1.33,
+                    null
+                ],
+                [
+                    "2026-02-02 18-21UT",
+                    1.67,
+                    null
+                ],
+                [
+                    "2026-02-02 21-00UT",
+                    1.67,
+                    null
+                ]
+            ],
+            "meta": {
+                "greatest_observed_kp": 4.0,
+                "greatest_expected_kp": 2.33,
+                "greatest_expected_scale": null,
+                "rationale": "No G1 (Minor) or greater geomagnetic storms are expected.  No significant transient or recurrent solar wind features are forecast."
+            }
+        },
+        "solar_radiation": {
+            "S1 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "radiation_observed": false,
+                "rationale": "No S1 (Minor) or greater solar radiation storms are expected. No significant active region activity favorable for radiation storm production is forecast."
+            }
+        },
+        "radio_blackout": {
+            "R1-R2": {
+                "n": 15,
+                "n+1": 10,
+                "n+2": 10,
+                "unit": "%"
+            },
+            "R3 or greater": {
+                "n": 1,
+                "n+1": 1,
+                "n+2": 1,
+                "unit": "%"
+            },
+            "meta": {
+                "blackout_observed": false,
+                "max_blackout_level": null,
+                "max_blackout_time": null,
+                "rationale": "A slight chance for R1-2 (Minor-Moderate) radio blackouts due to isolated M-class activity will presist through 02 Feb."
+            }
+        }
+    }
+}
