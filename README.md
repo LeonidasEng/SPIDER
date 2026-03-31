@@ -7,7 +7,7 @@
 
 <!-- PROJECT LOGO -->
 <div align="center">
-    <img src="docs/SPIDER_Mission_Logo.png" alt="Logo", width="300">
+    <img src="docs/SPIDER_Mission_Logo.png" alt="Logo", width="500">
   <br />
   
   <p align="center">
