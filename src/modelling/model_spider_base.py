@@ -45,6 +45,8 @@ def dataSplit(df: pd.DataFrame, dataset:str):
 def addErrorFeatures(df:pd.DataFrame):
     df = df.sort_values(["lead_day", "issue_time_utc", "valid_start_utc"])
 
+    target = df["is_large_error_win"]
+
     # Adding previous error features based on persistence (derived from target pre-window)
     def _sinceLastError(series):
         # Internal and only used once for feature
@@ -65,7 +67,6 @@ def addErrorFeatures(df:pd.DataFrame):
     shifted_error = df.groupby("lead_day")["is_large_error"].shift(1)
 
     df["error_count_24h"] = (
-        # df.groupby("lead_day")["is_large_error"]
         shifted_error
         .rolling(window=8, min_periods=1) # 8 periods equal to 24-hours
         .sum()
@@ -75,14 +76,16 @@ def addErrorFeatures(df:pd.DataFrame):
     df["error_rate_24h"] = df["error_count_24h"] / 8
 
     df["time_since_last_error"] = (
-        #df.groupby("lead_day")["is_large_error"]
         shifted_error.groupby(df["lead_day"])
         .transform(_sinceLastError)
     )
 
-    # Need to groupby and shift at the same time
+    # Fill NaNs after feature creation
     df["error_rate_24h"] = df["error_rate_24h"].fillna(0)
-    df["time_since_last_error"] = df.groupby("lead_day")["time_since_last_error"].fillna(0)
+    df["time_since_last_error"] = df["time_since_last_error"].fillna(0)
+
+    df = df.drop("is_large_error_win", axis=1)
+    df["is_large_error_win"] = target # Last column should always be the target
 
     # These columns are only needed for calculation and can safely be removed
     df = df.drop(columns=["is_large_error", "error_count_24h"])

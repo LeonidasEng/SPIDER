@@ -64,12 +64,10 @@ def addErrorFeatures(df:pd.DataFrame):
     df["prev_error"] = df.groupby("lead_day")["is_large_error"].shift(1).fillna(False).astype(bool)
 
     # Attempting to avoid future leakage
-    # shifted_error = df.groupby("lead_day")["is_large_error"].shift(1)
+    shifted_error = df.groupby("lead_day")["is_large_error"].shift(1)
 
     df["error_count_24h"] = (
-        df.groupby("lead_day")["is_large_error"]
-        #shifted_error
-        .shift(1)
+        shifted_error
         .rolling(window=8, min_periods=1) # 8 periods equal to 24-hours
         .sum()
         .reset_index(level=0, drop=True) # Reset index to original
@@ -78,17 +76,13 @@ def addErrorFeatures(df:pd.DataFrame):
     df["error_rate_24h"] = df["error_count_24h"] / 8
 
     df["time_since_last_error"] =(
-        df.groupby("lead_day")["is_large_error"]
-         .shift(1)  # Forgot to add shift to these variables, was getting future leakage
-         .fillna(0)
-         .groupby(df["lead_day"])
-        # shifted_error.groupby(df["lead_day"])
+        shifted_error.groupby(df["lead_day"])
         .transform(_sinceLastError)
     )
 
-    # Need to groupby and shift at the same time
-    df["error_rate_24h"] = df["error_rate_24h"].shift(1).fillna(0)
-    df["time_since_last_error"] = df["time_since_last_error"].shift(1).fillna(0)
+    # Fill NaNs after feature creation
+    df["error_rate_24h"] = df["error_rate_24h"].fillna(0)
+    df["time_since_last_error"] = df["time_since_last_error"].fillna(0)
 
     df = df.drop("is_large_error_win", axis=1)
     df["is_large_error_win"] = target # Last column should always be the target
