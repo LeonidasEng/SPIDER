@@ -69,6 +69,7 @@ def addErrorFeatures(df:pd.DataFrame):
     df["error_count_24h"] = (
         df.groupby("lead_day")["is_large_error"]
         #shifted_error
+        .shift(1)
         .rolling(window=8, min_periods=1) # 8 periods equal to 24-hours
         .sum()
         .reset_index(level=0, drop=True) # Reset index to original
@@ -76,8 +77,11 @@ def addErrorFeatures(df:pd.DataFrame):
 
     df["error_rate_24h"] = df["error_count_24h"] / 8
 
-    df["time_since_last_error"] = (
+    df["time_since_last_error"] =(
         df.groupby("lead_day")["is_large_error"]
+         .shift(1)  # Forgot to add shift to these variables, was getting future leakage
+         .fillna(0)
+         .groupby(df["lead_day"])
         # shifted_error.groupby(df["lead_day"])
         .transform(_sinceLastError)
     )
@@ -276,7 +280,7 @@ def reliabilityCurve(dataset, lead_day, y_test, y_prob, model_name="Model", n_bi
     prefix = dataset[-4:]
 
     # Create figure with two panels in vertical configuration
-    fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(8,7), gridspec_kw={"height_ratios": [2,1]})
+    fig, ax1 = plt.subplots(figsize=(8,7))
 
     ax1.plot([0,1], [0,1], linestyle="--", color="grey", label="Perfect calibration")
     ax1.plot(prob_pred, prob_true, marker="o", color="tab:blue", label=model_name)
@@ -288,11 +292,11 @@ def reliabilityCurve(dataset, lead_day, y_test, y_prob, model_name="Model", n_bi
     ax1.legend(fontsize=14)
     ax1.grid(True)
 
-    ax2.hist(y_prob, bins=n_bins, range=(0,1), edgecolor="black")
-    ax2.set_xlabel("Predicted Probability", fontsize=16)
-    ax2.set_ylabel("Count", fontsize=16)
-    ax2.set_title("Probability Distribution", fontweight="bold", fontsize=18)
-    ax2.grid(alpha=0.3)
+    # ax2.hist(y_prob, bins=n_bins, range=(0,1), edgecolor="black")
+    # ax2.set_xlabel("Predicted Probability", fontsize=16)
+    # ax2.set_ylabel("Count", fontsize=16)
+    # ax2.set_title("Probability Distribution", fontweight="bold", fontsize=18)
+    # ax2.grid(alpha=0.3)
 
     plt.tight_layout()
     plt.show()
