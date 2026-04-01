@@ -20,7 +20,7 @@ def showBanner(base):
         return f.read()
 
 def predictProb(model, X):
-    # Model targe is is_large_error
+    # Model target is is_large_error
     return model.predict_proba(X)[:, 1]
 
 def confidenceInterval(prob, uncertainty):
