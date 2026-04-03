@@ -279,9 +279,17 @@ def reliabilityCurve(dataset, lead_day, y_test, y_prob, model_name="Model", n_bi
     ax1.plot([0,1], [0,1], linestyle="--", color="grey", label="Perfect calibration")
     ax1.plot(prob_pred, prob_true, marker="o", color="tab:blue", label=model_name)
 
+    lead_time_map = {
+        0: '24h',
+        1: '48h',
+        2: '72h'
+    }
+
+    lt = lead_time_map[lead_day]
+
     ax1.set_xlabel("Predicted Probability", fontsize=16)
     ax1.set_ylabel("Observed Frequency", fontsize=16)
-    ax1.set_title(f"{prefix} Reliability Curve LD{lead_day} ({model_name})",
+    ax1.set_title(f"3-day {prefix} Forecast Reliability by Lead Time {lt}",
                   fontweight="bold", fontsize=18)
     ax1.legend(fontsize=14)
     ax1.grid(True)
@@ -395,7 +403,7 @@ def main():
                                      y_train, y_train_pred))
             
             # Evaluate model outputs using these tools (uncomment appropriately)
-            reliabilityCurve(dataset, lead_day, y_test, y_prob, model_name="Random Forest + LR")      
+            reliabilityCurve(dataset, lead_day, y_test, y_prob, model_name="Predicted Probabilty of Large Error")      
             # cmDisplay(y_test, y_pred)
             # plotPFI(dataset, lead_day, rf, X_test, y_test, 
             #         feature_names=X_test.columns, top=10, model_name="Random Forest")
