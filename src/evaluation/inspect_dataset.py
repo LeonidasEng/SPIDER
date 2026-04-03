@@ -62,10 +62,10 @@ def main():
 
     debug_decision = pd.read_parquet(os.path.join(decision_path, FILES["Debug Rule Layer"]))
 
-    # RECOMMENDED: If in VSCode, recommend using Data Wrangler extension to view the datasets.
+    # RECOMMENDED: If in VSCode, use the Data Wrangler extension to view the datasets.
 
     print("stop") # Put BREAKPOINT HERE FOR DEBUG OR NOTHING WILL HAPPEN
-    
+    print("Oops! Try running the script in DEBUG mode and setting a BREAKPOINT to view the datasets.")
     # ORIGINAL DATA
     # Observed Dataset: (11675, 11)
     # 3 Day 0030 Feature Dataset: (23117, 15)
