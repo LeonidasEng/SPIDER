@@ -274,6 +274,7 @@ Welcome to the repo! In order to start using SPIDER, first ensure you have read 
 </details>
 
 ### Rule Layer
+<p><strong>Note: </strong>If you only want to test final outputs, you can skip the previous steps and run this section independently.</p>
 <details>
 <summary>Run Rule Layer</summary>
 
