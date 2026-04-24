@@ -7,6 +7,20 @@ import logging
 from datetime import datetime
 
 def setupLogger(log_dir: str | None = None, level=logging.INFO):
+    """
+    Configure logger for the FTP access utility.
+
+    The logger outputs messages to the console and, 
+    if a log directory is provided stores FTP download requests 
+    in a timestamped log file.
+
+    Args:
+        log_dir: Optional directory where the log file will be saved.
+        level: Logging level used for console and file handler.
+    
+    Returns:
+        logging.Logger: Configured logger for FTP access.
+    """
     logger = logging.getLogger("SPIDER.ftp")
     logger.setLevel(level)
     logger.propagate = False
@@ -35,12 +49,8 @@ def setupLogger(log_dir: str | None = None, level=logging.INFO):
     return logger
 logger = logging.getLogger("SPIDER.ftp")
 
-# Docs
-# Logging: https://docs.python.org/3/library/logging.html
-# Datetime: https://docs.python.org/3/library/datetime.html
-# FTPLib: https://docs.python.org/3/library/ftplib.html
-# Regular Expressions: https://docs.python.org/3/library/re.html
-
+# Contains configuration for FTP hosts including base paths.
+# Designed to be extended if the need arises.
 FTP_SOURCES = {
     "forecasts": {
         "host": "ftp.ngdc.noaa.gov",
@@ -60,19 +70,27 @@ FTP_SOURCES = {
         "host": "spdf.gsfc.nasa.gov",
         "base_path": "/pub/data/omni/low_res_omni",
         "datasets": {"omni2": ""},
-        "tls": True
+        "tls": True # NASA SPDF requires TLS conneciton
 
     }
 }
 
 def listFiles(ftp: ftplib.FTP, source_cfg: dict, dataset: str, 
-              year: int, month: int | None = None):
-    ''' 
-    List files for a given FTP source and dataset.
-    Supports:
-        - year/month layout (NOAA SWPC)
-        - year layout (OMNI)
-    '''
+              year: int, month: int | None = None) -> list[str]:
+    """
+    List available files for a given FTP source, dataset and time period.
+    
+    Args:
+        ftp: Active FTP object.
+        source_cfg: Configuration dict for the selected FTP source.
+        dataset: Dataset key used to resolve the required dataset in FTP_SOURCES.
+        year: Used to construct remote path in NOAA SWPC/NGDC and NASA OMNI2.
+        month: Optional value for NOAA SWPC/NGDC remote path.  
+
+    Returns:
+        list[str]: List of file names in target directory or empty if no
+                   target is found.
+    """
 
     dataset_path = source_cfg["datasets"].get(dataset, "")
 
@@ -92,7 +110,7 @@ def listFiles(ftp: ftplib.FTP, source_cfg: dict, dataset: str,
         logger.error(f"Skipping missing directory: {path}")
         return []
 
-def extractDateFile(fname):
+def extractDateFile(fname: str):
     ''' 
     Extract YYYYMMDD from NOAA SWPC filenames. 
     '''
