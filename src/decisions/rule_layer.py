@@ -144,8 +144,9 @@ DECISION: Recommendation based on results.
     """
     return text
 
-def userInputs():
+def userInputs(base):
     # This is a simple prompt to act as a quick interface
+    print(f"{showBanner(base)}")
     print("Please insert a date between 20230101 and 20251231 (YYYYMMDD format).")
     issue_input = input("Insert: ").strip()
     try:
@@ -171,7 +172,7 @@ def main():
         choice = datetime.strptime("20230101", "%Y%m%d")
         ftype = "0030"
     else:
-        choice, ftype = userInputs() # Specify forecast from prompt
+        choice, ftype = userInputs(base) # Specify forecast from prompt
     
     test_sets = {
         # Load the test set from data across lead days
