@@ -3,10 +3,12 @@ import sys
 import pandas as pd
 import joblib
 import json
+import subprocess
 
 from datetime import datetime, timedelta
 
 DEBUG = False
+DEMO = True
 
 def loadModel(forecast, lead_day):
     # Path to trained models
@@ -300,6 +302,9 @@ def main():
     # Output forecast + reliability to file
     with open(output_path, "w") as f:
         f.write(text)
+
+    if DEMO:
+        subprocess.Popen(["xdg-open", output_path])
 
 if __name__ == "__main__":
     main()
