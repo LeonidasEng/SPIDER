@@ -5,6 +5,20 @@ import logging
 from collections import defaultdict
 
 def setupLogger(log_dir: str | None = None, level=logging.INFO):
+    """
+    Configure logger for the FTP access utility.
+
+    The logger outputs messages to the console and, 
+    if a log directory is provided stores FTP download requests 
+    in a timestamped log file.
+
+    Args:
+        log_dir: Optional directory where the log file will be saved.
+        level: Logging level used for console and file handler.
+    
+    Returns:
+        logging.Logger: Configured logger for FTP access.
+    """
     logger = logging.getLogger("SPIDER.dayind")
     logger.setLevel(level)
     logger.propagate = False
@@ -35,12 +49,18 @@ logger = logging.getLogger("SPIDER.dayind")
 
 
 def fileFetch(base_path:str):
-    '''
-    Generator recursively walks a directory tree and yields
-    path and contents of each raw .txt data file.
+    """
+    Recursively fetches all text files from directory and yields their file paths
+    and contents.
 
-    Abstacts file I/O away for streaming of large datasets. 
-    '''
+    Args:
+        base_path (str): Root directory to search for files
+    
+    Yields:
+        tuple[str, list[str]]:
+            - file_path: Path to discovered text file.
+            - text: List of read lines from file.
+    """
     for root, _, files, in os.walk(base_path):
         for file_name in files:
             if file_name.endswith(".txt"):
@@ -50,12 +70,22 @@ def fileFetch(base_path:str):
                 yield file_path, text
 
 def parseDayInd(text: list):
-    '''
-    Parse a NOAA SWPC dayind.txt file and extract:
-        - Issue timestamp (UTC)
-        - Estimated Planetary Kp values in 3-hour bins
-    '''
+    """
+    Parses NOAA daily geomagnetic indices (`dayind`) product text and extracts
+    Kp values.
 
+    Args:
+        text (list): Raw NOAA `dayind` product text as a list of lines.
+    
+    Returns:
+        tuple[str, list]
+            - observed_dt: Observed date associated with Kp measurements.
+            - kp_bins: 3-hour UTC time bins, corresponding observed Kp value.
+    Notes:
+        NOAA `dayind` products are issued after the observation day, therefore
+        Kp measurements are associated with:
+        `issue_date - 1 day`
+    """
     # Extract issue timestamp from product header
     if not text:
         return None
@@ -113,10 +143,18 @@ def parseDayInd(text: list):
     return observed_dt, kp_bins
 
 def buildIndices(observed_dt: str, kp_bins: list):
-    '''
-    Build data structure (dict) for single observation data
-    Kp sorted chronologically by Date of Observation.
-    '''
+    """
+    Builds a dictionary for a single day of observed Kp data
+
+    Args:
+        observed_dt (str): Observed date associated with the Kp measurements.
+        kp_bins (list): List of tuples containing 3-hour UTC time bin 
+        and observed Kp value.
+
+    Returns:
+        collections.defaultdict: Dictionary containing chronologically sorted
+        observed Kp values for the observation date.
+    """
     out = defaultdict(dict)
 
     kp_bins_sorted = sorted(kp_bins, key=lambda x: x[0]) # Sort by observed date
@@ -127,10 +165,18 @@ def buildIndices(observed_dt: str, kp_bins: list):
     return out
 
 def dumpJob(year: int, month: int, month_data: dict, proc_output: str):
-    '''
-    Write processed daily Kp data to a monthly JSON file.
-    '''
+    """
+    Writes processed monthly observed data to a JSON file.
 
+    Args:
+        year (int): Observed year used for output directory naming.
+        month (int): Observed month used for each output file naming.
+        month_data (dict): Dictionary containing observed data for the month.
+        proc_output (str): Root directory for processed JSON files.
+    
+    Returns:
+        None
+    """
     # Create year-level output directory if it does not exist
     out_dir = os.path.join(proc_output, str(year))
     os.makedirs(out_dir, exist_ok=True)
@@ -147,6 +193,28 @@ def dumpJob(year: int, month: int, month_data: dict, proc_output: str):
     logger.info(f"Dumped data for {year}-{month:02d} -> {out_file}")
 
 def main():
+    """
+    Main entry point for processing NOAA `dayind` observed geomagnetic
+    activity.
+
+    The pipeline:
+    - Locates raw `dayind` product files.
+    - Extracts observed Kp measurements.
+    - Builds structured daily observed dictionaries.
+    - Organises observations by year and month.
+    - Writes processed monthly observed data to JSON files.
+
+    Notes:
+        Raw NOAA observation files are read from:        
+        `data/raw/observed_indices/observed/`
+        
+        Processed monthly JSON files are written to:
+        `data/data_processed/dayind/`
+    
+    Raises:
+        EnvironmentError: Raised if the `SPIDER` environment variable is not defined.
+
+    """
     # Project path controlled by environment variable
     base = os.environ.get("SPIDER")
     if base is None:
