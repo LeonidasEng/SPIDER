@@ -6,6 +6,20 @@ from collections import defaultdict
 
 
 def setupLogger(log_dir: str | None = None, level=logging.INFO):
+    """
+    Configure logger for the FTP access utility.
+
+    The logger outputs messages to the console and, 
+    if a log directory is provided stores FTP download requests 
+    in a timestamped log file.
+
+    Args:
+        log_dir: Optional directory where the log file will be saved.
+        level: Logging level used for console and file handler.
+    
+    Returns:
+        logging.Logger: Configured logger for FTP access.
+    """
     logger = logging.getLogger("SPIDER.omni2")
     logger.setLevel(level)
     logger.propagate = False
@@ -90,10 +104,25 @@ FIELDS = {
 }
 
 def toFloat(val: str):
-    '''
-    Convert OMNI2 string values to float.
-    Replaces known OMNI fill values and invalid entries with NaN.
-    '''
+    """
+    Converts an OMNI2 data field to a float value.
+
+    Args:
+        val (str):
+            OMNI2 data field value as a string.
+    
+    Returns: 
+        float | None:
+            Parsed float value, returning `None` if:
+                - The value matches a known OMNI fill value.
+                - The value cannot be converted to a float.
+                - The field is missing or malformed.
+
+    Notes:
+        OMNI2 datasets use predefined fill values to represent missing or 
+        invalid values. Fill values are checked against the global
+        `OMNI_FILL` collection before returning a valid value. 
+    """
     try:
         v = float(val)
         return None if v in OMNI_FILL else v
@@ -102,10 +131,18 @@ def toFloat(val: str):
         return None
 
 def fileFetch(base_path:str):
-    '''
-    Generator walks through OMNI2 raw data directory and yields each .dat file
-    as a list of lines. Files are sorted chronologically.
-    '''
+    """
+    Recursively fetches all text files from directory and yields their file paths
+    and contents.
+
+    Args:
+        base_path (str): Root directory to search for files
+    
+    Yields:
+        tuple[str, list[str]]:
+            - file_path: Path to discovered text file.
+            - text: List of read lines from file.
+    """
     for root, folders, files in os.walk(base_path):
         files = sorted(files)
         for fname in files:
@@ -115,10 +152,32 @@ def fileFetch(base_path:str):
                     yield path, f.readlines()
 
 def parseOMNI(text: list):
-    '''
-    Parse OMNI2 hourly data into a nested dict.
-    year -> month -> date (YYYY-MM-DD) -> hour (HH) -> parameters
-    '''
+    """
+    Parses OMNI2 hourly space weather data into a nested dictionary.
+
+    Args:
+        text (list): Raw OMNI2 dataset lines.
+
+    Returns:
+        collections.defaultdict: Nested dictionary structured as:
+        `year -> month -> date -> hour -> parameters`
+
+    Notes:
+        OMNI2 record rows must contain at least 51 fields to be considered
+        valid.
+
+        Decimal day-of-year values are converted into calendar dates.
+
+        Selected physical parameters are extracted using global `FIELDS`
+        configuration.
+
+        Parameter values are converted using the `toFloat()` to handle OMNI2
+        fill values and malformed entries.
+
+        Each hourly parameter entry is stored with:
+            - `value` and `unit`
+
+    """
     out = defaultdict(lambda: defaultdict(lambda: defaultdict(dict)))
 
     for line in text:
@@ -156,9 +215,18 @@ def parseOMNI(text: list):
     return out
 
 def dumpJob(year: int, month: int, month_data: dict, out_base: str):
-    '''
-    Write a single monthly OMNI2 JSON file.
-    '''
+    """
+    Writes processed monthly OMNI2 data to a JSON file.
+
+    Args:
+        year (int): OMNI2 year used for output directory naming.
+        month (int): OMNI2 month used for each output file naming.
+        month_data (dict): Dictionary containing OMNI2 data for the month.
+        proc_output (str): Root directory for processed JSON files.
+    
+    Returns:
+        None
+    """
     out_dir = os.path.join(out_base, str(year))
     os.makedirs(out_dir, exist_ok=True)
 
@@ -173,6 +241,27 @@ def dumpJob(year: int, month: int, month_data: dict, out_base: str):
     logger.info(f"Dumped OMNI2 {year}-{month:02d} -> {out_file}")
 
 def main():
+    """
+    Main entry point for processing OMNI2 hourly space weather data.
+
+    The pipeline:
+    - Locates raw OMNI2 files.
+    - Parses hourly OMNI2 measurement records.
+    - Organises data into structured yearly and monthly datasets.
+    - Aggregates hourly observations by date and hour.
+    - Writes processed monthly OMNI2 data to JSON files.
+
+    Notes:
+        Raw OMNI2 files are read from:
+        `data/raw/nasa_omni/omni2/`
+
+        Processed monthly JSON files are written to:
+        `data/data_processed/omni2/`
+    
+    Raises:
+        EnvironmentError: If the `SPIDER` environment variable is 
+        not defined.
+    """
     base = os.environ.get("SPIDER")
     if base is None:
         raise EnvironmentError("SPIDER system variable is not set")
