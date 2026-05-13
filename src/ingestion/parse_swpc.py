@@ -4,8 +4,8 @@ from datetime import datetime, timedelta
 from collections import defaultdict
 
 
-# The kind people at SWPC provided me with this data to fill in the gaps that I found within the NCEI archive
-# using an in-house tool. This data is not definitive and and may contain errors.
+# The kind people at NOAA provided me with this data to fill in the gaps that I found within the NCEI archive
+# using an in-house tool. This data is not definitive and may contain errors.
 
 DATA = {
     "Full":"full_data_2011-2015.json"
@@ -14,6 +14,18 @@ DATA = {
 }
 
 def importFile(file_path:str):
+    """
+    Imports and parses a JSON file containing SWPC forecast data.
+
+    Args: 
+        file_path (str): Path to the JSON file to import.
+
+    Returns:
+        dict | list: Parsed JSON data loaded from the file.
+    
+    Raises:
+        ValueError: If the JSON file cannot be found at the specified path.
+    """
     try:
         # Helper function for reading in JSON file
         with open(file_path, "r", encoding="utf-8") as f:
@@ -24,7 +36,20 @@ def importFile(file_path:str):
         raise ValueError(f"JSON file not found at: {file_path}.")
     
 def classifyStorm(kp:float):
-    ''' Convert Kp to NOAA G-scale '''
+    """
+    Converts Kp value into the corresponding NOAA geomagnetic storm
+    scale classification.
+
+    Args:
+        kp (float): Kp value
+    
+    Returns:
+        str | None
+            NOAA geomagnetic storm scale:
+            - `G1` to `G5`
+            - Returns `None` if the Kp value is below storm threshold
+            (`Kp < 5`). 
+    """
     if kp >= 9: return "G5"
     if kp >= 8: return "G4"
     if kp >= 7: return "G3"
@@ -33,6 +58,23 @@ def classifyStorm(kp:float):
     return None
 
 def normaliseRecord(data: dict) -> dict:
+    """
+    Normalises a SWPC forecast record into the SPIDER forecast schema.
+
+    Args:
+        data (dict): Raw SWPC forecast record.
+    
+    Returns:
+        dict:
+            Normalised forecast record containing:
+            - `issue_time_utc`
+            - `valid_start_utc`
+            - `lead_time_hrs`
+            - `forecast_kp`
+    Notes:
+        Observed Kp values are omitted because they available using
+        another script: `parse_dayind.py`
+    """
     # Normalise each record using the known SPIDER schema
     issue = datetime.fromisoformat(data["cycle"].replace("Z", "+00:00"))
     valid = datetime.fromisoformat(data["valid"].replace("Z", "+00:00"))
@@ -46,6 +88,20 @@ def normaliseRecord(data: dict) -> dict:
     }
 
 def splitJSON(threeday_json:list):
+    """
+    Splits SWPC forecast records into `0030` and `1230` issue groups.
+
+    Args:
+        threeday_json (list): List of raw SWPC forecast records.
+    
+    Returns:
+        tuple[list, list]
+            - threeday_0030: Forecast records issued before 12:00 UTC.
+            - threeday_1230: Forecast records issued at or after 12:00 UTC.
+    
+    Raises:
+        ValueError: if an unexpected issue time error occurs.
+    """
     # Keep as lists to allow sorting later
     threeday_0030 = []
     threeday_1230 = []
@@ -67,6 +123,17 @@ def splitJSON(threeday_json:list):
     return threeday_0030, threeday_1230
 
 def sortJSON(threeday_0030, threeday_1230):
+    """
+    Sorts forecast records by issue time and valid start time.
+
+    Args:
+        threeday_0030 (list): Forecast records associated with `0030` issue period.
+        threeday_1230 (list): Forecast records assocated with `1230` issue period.
+    
+    Returns:
+        tuple[list, list]
+            Chronologically sorted forecast records for each issue period.
+    """
     # Key helper function making sorting neater
     def sorter(record):
         return (record["issue_time_utc"], record["valid_start_utc"])
@@ -77,10 +144,31 @@ def sortJSON(threeday_0030, threeday_1230):
     return sorted_0030, sorted_1230
 
 def buildForecastStruct(sorted_records:list):
-    '''
-    Build same structure as other parsing scripts to insert into existing
-    data pipeline.
-    '''
+    """
+    Builds a structured forecast dictionary compatible with the existing SPIDER
+    3-day forecast processing pipeline.
+
+    Args:
+        sorted_records (list): Chronologically sorted SWPC forecast records.
+
+    Returns:
+        dict:
+            Structured forecast dictionary grouped by issue date and forecast lead
+            period.
+    
+    Notes:
+        Forecasts are grouped into: `n`, `n+1`, `n+2` based on the different lead times
+        from issue date (`n`).
+
+        Forecast entries are stored as:
+
+        - forecast time bin
+        - forecast Kp value
+        - NOAA G-scale classification.
+
+        Solar radiation, radio blackout and metadata sections are omitted
+        because they were not included in the supplied SWPC dataset.
+    """
     # Initialise the default structure shared by processed data
     # Omitting meta, Solar and Radio data as this was not provided
     output = defaultdict(lambda: {
@@ -117,7 +205,21 @@ def buildForecastStruct(sorted_records:list):
     return dict(output)
 
 def dumpJob(sorted_records:list, proc_output:str, tag:str):
-    # Changed to 3day_ folder to match other processed data
+    """
+    Writes processed SWPC forecast data into monthly JSON files.
+
+    Args:
+        sorted_records (list): Sorted forecast records to export.
+        proc_output (str): Root processed data output directory.
+        tag (str): Forecast issue period identifier (`0030` or `1230`).
+    
+    Returns:
+        None
+    
+    Notes:
+        Output files are written using the structure:
+        `operation_full/3day_<tag>/<year>/3day_<year>_<month>.json`
+    """
     out_dir = os.path.join(proc_output, "operation_full", f"3day_{tag}")
 
     struct = buildForecastStruct(sorted_records)
@@ -147,6 +249,29 @@ def dumpJob(sorted_records:list, proc_output:str, tag:str):
         print(f"Dumped {tag} data to {file_path}")
 
 def main():
+    """
+    Main entry point for processing supplied SWPC historical forecast
+    datasets.
+
+    The pipeline:
+    - Loads supplied SWPC JSON forecast datasets.
+    - Splits forecasts into `0030` and `1230` issue periods.
+    - Sorts forecasts chronologically.
+    - Converts records into the SPIDER forecast schema.
+    - Writes processed monthly forecast JSON files.
+
+    Notes:
+        Raw SWPC forecast datasets are read from:
+        `data/raw/forecasts/3day/operation_full`
+
+        This data was provided through direct communication with NOAA and generated using 
+        an internal tool representing the available historical Kp forecast archive.
+
+        The dataset is not considered definitive and may contain errors.
+    
+    Raises:
+        EnvironmentError: If the `SPIDER` environment variable is not defined.
+    """
     base = os.environ.get("SPIDER")
     if base is None:
         raise EnvironmentError("SPIDER system variable is not set!")
@@ -161,8 +286,6 @@ def main():
         # Call dump job for each issue type
         dumpJob(sorted_0030, processed_path, "0030")
         dumpJob(sorted_1230, processed_path, "1230")
-
-
 
 if __name__ == "__main__":
     main()
