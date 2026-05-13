@@ -5,7 +5,21 @@ import json
 import logging
 from collections import defaultdict
 
-def setupLogger(log_dir: str | None = None, level=logging.INFO):
+def setupLogger(log_dir: str | None = None, level=logging.INFO) -> logging.Logger:
+    """
+    Configure logger for the FTP access utility.
+
+    The logger outputs messages to the console and, 
+    if a log directory is provided stores FTP download requests 
+    in a timestamped log file.
+
+    Args:
+        log_dir: Optional directory where the log file will be saved.
+        level: Logging level used for console and file handler.
+    
+    Returns:
+        logging.Logger: Configured logger for FTP access.
+    """
     logger = logging.getLogger("SPIDER.3day")
     logger.setLevel(level)
     logger.propagate = False
@@ -37,6 +51,18 @@ logger = logging.getLogger("SPIDER.3day")
 
 
 def fileFetch(base_path:str):
+    """
+    Recursively fetches all text files from directory and yields their file paths
+    and contents
+
+    Args:
+        base_path (str): Root directory to search for files
+    
+    Yields:
+        tuple[str, list[str]]:
+            - file_path: Path to discovered text file.
+            - text: List of read lines from file.
+    """
     for root, dirs, files in os.walk(base_path):
         for file_name in files:
             if file_name.endswith(".txt"):
@@ -46,12 +72,20 @@ def fileFetch(base_path:str):
                 yield file_path, text # Yield keyword to retrieve more than one file on iteration
  
 def parseSections(text:list):
-    '''
-    Extract relevant sections from text files.
+    """
+    Parse NOAA forecast text into each forecast activity section.
+
+    Args:
+        text (list): List of lines from a NOAA forecast text file.
     
-    :param text: Extract relevant section data
-    :type text: list
-    '''
+    Returns:
+        tuple[list, list, list, str, datetime]:
+            - kp_data: Lines from geomagnetic activity
+            - radiation_data: Lines from solar radiation activity
+            - blackout_data: Lines from radio blackout activity
+            - issue_dt: Issue date as string in `YYYY-MM-DD` format.
+            - issue_ts: Full issue timestamp as datetime.
+    """
     issue_ln = text[1].replace("Issued", "").replace(":", "").strip()
     issue = datetime.strptime(issue_ln, "%Y %b %d %H%M %Z")
     issue_dt = str(issue.date())
@@ -85,20 +119,26 @@ def parseSections(text:list):
 
     return kp_data, radiation_data, blackout_data, issue_dt, issue_ts
 
-def extractKpMeta(kp_data:list):
-    '''
-    Extract metadata from text-based Kp section
+def extractKpMeta(kp_data:list) -> dict:
+    """
+    Extracts text data and rationale info as metadata from NOAA geomag activity.
+
+    Args:
+        kp_data (list): List of lines from geomagnetic activity section
     
-    :param kp_data: Kp section with text and numeric data.
-    :return meta: meta data for Kp
-    '''
+    Returns:
+        dict[str, float | str | None]:
+            - greatest_observed_kp: Highest observed Kp value
+            - greatest_expected_kp: Highest forecast Kp value
+            - greatest_expected_scale: Highest NOAA storm scale forecast.
+            - rationale: Forecast rationale combined into single string.
+    """
     meta = {
         "greatest_observed_kp": None,
         "greatest_expected_kp": None,
         "greatest_expected_scale": None,
         "rationale": "" # Rationale can be multi-line
     }
-    capture_rationale = False
     
     # Join lines to avoid missing values over new lines
     joined = " ".join(line.strip() for line in kp_data)
@@ -134,13 +174,18 @@ def extractKpMeta(kp_data:list):
     return meta
 
 
-def extractRadiationMeta(radiation_data:list):
-    '''
-    Extract metadata from text-based Solar Radiation section
+def extractRadiationMeta(radiation_data:list) -> dict:
+    """
+    Extracts text data and rationale info as metadata from NOAA solar radiation activity.
+
+    Args:
+        radiation_data (list): List of lines from solar radiation activity section.
     
-    :param radiation_data: Solar Radiation section with text and numeric data
-    :return meta: Metadata for Solar Radiation
-    '''
+    Returns:
+        dict[str, bool | str | None]:
+            - radiation_observed: Boolean indicating observed radiation was
+            above the NOAA S-scale threshold.
+    """
     meta = {
         "radiation_observed": None,
         "rationale": "" # Rationale can be multi-line
@@ -172,14 +217,20 @@ def extractRadiationMeta(radiation_data:list):
 
     return meta
 
-def extractBlackoutMeta(blackout_data:list):
-    '''
-    Extract metadata from text-based Radio Blackout section
+def extractBlackoutMeta(blackout_data:list) -> dict:
+    """
+    Extracts text data and rationale info as metadata from NOAA radio blackout activity.
+
+    Args:
+        blackout_data (list): List of lines belonging to the radio blackout activity.
     
-    :param blackout_data: Radio Blackout section with text and numeric data
-    
-    :return meta: Metadata for Radio Blackout data
-    '''
+    Returns:
+        dict[str, bool | str | None]:
+            - blackout_observed: Boolean indicating observed radio blackout activity.
+            - max_blackout_level: Highest observed radio blackout scale.
+            - max_blackout_time: Timestamp of the largest observed blackout event in UTC.
+            - rationale: Forecast rationale text combined into a single string.
+    """
     meta = {
         "blackout_observed": None,
         "max_blackout_level": None,
@@ -224,24 +275,30 @@ def extractBlackoutMeta(blackout_data:list):
     return meta
 
 def cleanForecastData(kp_data:list, radiation_data:list, blackout_data:list):
-    '''
-    Extract the tabular data from the forecast sections
-    
-    :param kp_data: Kp table + text 
-    :param radiation_data: Radiation table + text
-    :param blackout_data: Blackout table + text
-    
-    :return kp_data_cleaned: Kp section with 3-hour granularity
-    :return radiation_data_cleaned: Radiation probability table
-    :return blackout_data_cleaned: Radio Blackout probability table
-    '''
-    def extractBlock(lines:list, start_text:str):
+    """
+    Cleans and extracts tabular forecast blocks from NOAA activity sections.
+
+    Args:
+        kp_data (list): Lines from geomagnetic activity forecast section.
+        radiation_data (list): Lines from solar radiation activity forecast section.
+        blackout_data (list): Lines from radio blackout activity forecast section.
+
+    Returns:
+        tuple[list, list, list]:
+            - kp_data_cleaned: Extracted Kp index forecast table.
+            - radiation_data_cleaned: Extracted solar radiation storm forecast table.
+    """
+    def _extractBlock(lines:list, start_text:str):
         '''
-        Extract tabular data helper function
+        Extract tabular data helper function.
         
-        :param lines: Section text
-        :param start_text: Define the start of the tabular data
-        :return cleaned: tabular data
+        Args:
+            lines (list): Section text
+            start_text (str): Define the start of the tabular data
+        
+        Returns:
+            list
+                - cleaned: Tabular data.
         '''
         cleaned = []
         capture = False
@@ -258,15 +315,45 @@ def cleanForecastData(kp_data:list, radiation_data:list, blackout_data:list):
                 cleaned.append(line)
         return cleaned
     
-    kp_data_cleaned = extractBlock(kp_data, start_text="noaa kp index breakdown") # Extract Kp data
-    radiation_data_cleaned = extractBlock(radiation_data, start_text="solar radiation storm forecast") # Extract Solar Radiation data
-    blackout_data_cleaned = extractBlock(blackout_data, start_text="radio blackout forecast") # Extract Radio Blackout data
+    kp_data_cleaned = _extractBlock(kp_data, start_text="noaa kp index breakdown")
+    radiation_data_cleaned = _extractBlock(radiation_data, start_text="solar radiation storm forecast")
+    blackout_data_cleaned = _extractBlock(blackout_data, start_text="radio blackout forecast")
 
     return kp_data_cleaned, radiation_data_cleaned, blackout_data_cleaned
 
 def buildIndices(kp_data:list, radiation_data:list, blackout_data:list, 
                  kp_meta:list, radiation_meta:list, blackout_meta:list, 
                  issue_dt, issue_ts:datetime):
+    """
+    Builds a nested forecast dictionary from cleaned NOAA forecast data and associated
+    metadata.
+
+    Args:
+        kp_data (list): Cleaned Kp forecast table lines.
+        radiation_data (list): Cleaned solar radiation forecast table lines.
+        blackout_data (list): Cleaned radio blackout forecast table lines.
+        kp_meta (dict): Metadata extracted from geomag activity section.
+        radiation_meta (dict): Metadata extracted from solar radiation activity section.
+        blackout_meta (dict): Metadata extracted from radio blackout activity section.
+        issue_dt (str): Issue date string used as top-level forecast dictionary.
+        issue_ts (datetime): Full issue timestamp as datetime.
+    
+    Returns:
+        collections.defaultdict: Nested forecast dictionary containing forecast values
+        for  Kp index, solar radiation, radio blackout, and metadata.
+    
+    Notes:
+        Kp forecasts are stored as:
+            - `n`:   Forecast values for issue date.
+            - `n+1`: Forecast values for following day.
+            - `n+2`: Forecast values for 2 days after issue date.
+        
+        Solar radiation and radio blackout probabilities are stored as percentages for
+        `n`, `n+1`, `n+2`.
+
+        Errors in forecast sections are logged without blocking dictionary build process.
+    """
+
     forecast_dict = defaultdict(lambda: defaultdict(lambda: defaultdict(dict)))
 
     # Kp parsing
@@ -318,7 +405,7 @@ def buildIndices(kp_data:list, radiation_data:list, blackout_data:list,
     except Exception as e:
         logger.error(f"Kp build failed due to an error: {e}")
     
-    # Radiation parsing
+    # Solar Radiation parsing
     try:
         line = radiation_data[2]
         label = re.split(r"\d+%", line, maxsplit=1)[0].strip() # extract label before percentage values
@@ -357,6 +444,26 @@ def buildIndices(kp_data:list, radiation_data:list, blackout_data:list,
     return forecast_dict
 
 def dumpJob(year:int, month:int, month_data:dict, proc_output:str):
+    """
+    Writes processed monthly forecast data to a JSON file.
+
+    Args:
+        year (int): Forecast year used for output directory naming.
+        month (int): Forecast month used for each output file naming.
+        month_data (dict): Dictionary containing forecast data for the month.
+        proc_output (str): Root directory for processed JSON files.
+    
+    Returns:
+        None
+    
+    Notes:
+        Output files are written to a year-based directory:
+        `proc_output/<year>/3day_<year>_<month>.json`
+
+        Forecast entries are sorted by issue date before writing to drive.
+
+        Parent directories are created automatically if they do not already exist.
+    """
     out_dir = os.path.join(proc_output, str(year))
     os.makedirs(out_dir, exist_ok=True)
 
@@ -371,6 +478,17 @@ def dumpJob(year:int, month:int, month_data:dict, proc_output:str):
     logger.info(f"Dumped data for {year}-{month:02d} -> {out_file}")
 
 def classifyTimePeriods(issue_ts: datetime) -> str:
+    """
+    Classifies a forecast issue timestamp into a NOAA forecast release period.
+
+    Args:
+        issue_ts (datetime): Forecast issue timestamp.
+    
+    Returns:
+        str: Forecast release period
+            - `"0030"`: Forecast issued before 12:30 UTC
+            - `"1230"`: Forecast issued at or after 12:30 UTC
+    """
     minutes = issue_ts.hour * 60 + issue_ts.minute
 
     if minutes < (12 * 60 + 30):
@@ -379,6 +497,24 @@ def classifyTimePeriods(issue_ts: datetime) -> str:
         return "1230"
 
 def main():
+    """
+    Main entry point for processing NOAA 3-day forecast files.
+        
+    Pipeline:
+    - Locate raw forecast text files from raw data directory.
+    - Extract and parse forecast sections.
+    - Build structured forecast dictionaries.
+    - Organises forecasts by issue period and date.
+    - Write processed monthly forecast data to JSON files.
+
+    Notes:
+        Forecasts are separated into `0030` and `1230` issue time periods
+        and stored in independent output directories.
+
+        Older duplicate forecasts for the same issue period are skipped in
+        favour of most recent timestamp.
+
+    """
     base = os.environ.get('SPIDER')
     if base is None:
         raise EnvironmentError("SPIDER system variable is not set!")
