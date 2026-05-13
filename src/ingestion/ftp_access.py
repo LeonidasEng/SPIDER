@@ -19,7 +19,8 @@ def setupLogger(log_dir: str | None = None, level=logging.INFO):
         level: Logging level used for console and file handler.
     
     Returns:
-        logging.Logger: Configured logger for FTP access.
+        logging.Logger
+            Configured logger for FTP access.
     """
     logger = logging.getLogger("SPIDER.ftp")
     logger.setLevel(level)
@@ -88,8 +89,8 @@ def listFiles(ftp: ftplib.FTP, source_cfg: dict, dataset: str,
         month: Optional value for NOAA SWPC/NGDC remote path.  
 
     Returns:
-        list[str]: List of file names in target directory or empty if no
-                   target is found.
+        list
+            List of file names in target directory or empty if not target is found.
     """
 
     dataset_path = source_cfg["datasets"].get(dataset, "")
@@ -111,18 +112,35 @@ def listFiles(ftp: ftplib.FTP, source_cfg: dict, dataset: str,
         return []
 
 def extractDateFile(fname: str):
-    ''' 
-    Extract YYYYMMDD from NOAA SWPC filenames. 
-    '''
+    """
+    Extract a forecast date from a NOAA SWPC filename.
+
+    Args:
+        fname (str): Filename containing a date in `YYYYMMDD` format.
+
+    Returns:
+        datetime | None:
+            Parsed datetime object representing the extracted date.
+            Returns `None` if no valid date pattern is found in the filename.
+    """
     m = re.search(r"(19|20)\d{6}", fname) #  Find valid date in file name
     if m:
         return datetime.strptime(m.group(), "%Y%m%d") # Return date only
     return None
 
 def extractYearFile(fname: str):
-    '''
-    Extract YYYY from OMNI filenames.
-    '''
+    """
+    Extracts the year value from an OMNI data filename.
+
+    Args:
+        fname (str): OMNI filename expected in following format:
+        `omni2_YYYY.dat`
+    
+    Returns:
+        int | None:
+            Extracted year as int. Returns `None` if filename does not match
+            expected format.
+    """
     m = re.match(r"^omni2_(\d{4})\.dat$", fname)
     if m:
         return int(m.group(1))
@@ -130,13 +148,21 @@ def extractYearFile(fname: str):
 
 def downloadFTPfile(ftp: ftplib.FTP, source_cfg: dict, dataset: str, 
                     fname: str, local_dir: str, year: int, month: int | None = None):
-    '''
-    Download single file from FTP source to a local directory
-    Supports:
-        - year/month layout
-        - year only layout
-    '''
+    """
+    Downloads a single file from an FTP source to a local directory.
 
+    Args:
+        ftp (ftplib.FTP): Active FTP connection object.
+        source_cfg (dict): Source configuration dictionary containing FTP paths 
+        and datasets.
+        dataset (str): Dataset identifier used to resolve remote data path.
+        fname (str): Name of file to download.
+        year (int): Year associated with file.
+        month (int | None, optional): Month associated with file.
+    
+    Returns: 
+        None
+    """
     dataset_path = source_cfg["datasets"].get(dataset, "")
 
     if month is not None:
@@ -156,6 +182,16 @@ def downloadFTPfile(ftp: ftplib.FTP, source_cfg: dict, dataset: str,
     logger.info(f"Saved {fname} -> {local}")
  
 def getDirBytes(path):
+    """
+    Calculates the total size of a directory in bytes.
+
+    Args:
+        path (str): Path to the directory to measure.
+    
+    Returns:
+        int:
+            - Total size of all files within the directory in bytes.
+    """
     # https://stackoverflow.com/questions/1392413/calculating-a-directorys-size-using-python
     total_bytes = 0
     for dirpath, dirnames, filenames in os.walk(path):
@@ -166,7 +202,20 @@ def getDirBytes(path):
     return total_bytes
 
 def getDirSize(size_bytes):
-    ''' Get formatted directory size in string - Base_2 '''
+    """
+    Converts a directory size in bytes into human-readable string.
+
+    Args:
+        size_bytes (int): Directory size in bytes.
+    
+    Returns:
+        str: Directory size in
+            - Bytes (`B`)
+            - Kilobytes (`KB`)
+            - Megabytes (`MB`)
+            - Gigabytes (`GB`)
+
+    """
     if size_bytes < 1024:
         return f"{size_bytes} B"
     elif size_bytes < 1024 ** 2:
@@ -176,16 +225,45 @@ def getDirSize(size_bytes):
     else:
         return f"{size_bytes / 1024 ** 3:.2f} GB"
     
-def showBanner(base):
+def showBanner(base:str):
+    """
+    Displays the SPIDER ASCII banner in the console.
+
+    Args:
+        base (str): Root SPIDER project directory containing banner file.
+    
+    Returns:
+        None
+    """
     banner_name = "SPIDER_ASCII_Banner.txt"
     banner_path = os.path.join(base, "docs", banner_name)
     with open(banner_path, "r", encoding="utf-8") as f:
         print(f.read())
 
 def downloadRange(start_date: datetime, end_date: datetime, local_dir: str, source_key: str, dataset: str):
-    ''' 
-    Download files for a date range from a configured FTP source 
-    '''
+    """
+    Downloads files within a specified date range from a configured FTP source.
+
+    Args:
+        start_date (datetime): Start date of the download range.
+        end_date (datetime): End date of the download range.
+        local_dir (str): Local directory to store downloaded files.
+        source_key (str): Identifier for configured FTP source in `FTP_SOURCES`.
+        dataset (str): Identfier used to resolve remote dataset paths.
+    
+    Returns:
+        None
+    
+    Notes:
+        Supports two FTP directory structures:
+        - `NOAA-style`: `year/month/file`
+        - `NASA-style`: `file-only` layout using yearly filenames.
+        - TLS-enabled FTP connections are enabled when specified in source config.
+    
+    Raises:
+        ftplib.all_errors:
+            Logged if an FTP connection or transfer operation fails.
+    """
     source_cfg = FTP_SOURCES[source_key]
 
     try:
@@ -250,11 +328,18 @@ def downloadRange(start_date: datetime, end_date: datetime, local_dir: str, sour
                 pass
 
 def summariseDatasets(source_key: str, dataset: str):
-    ''' 
-    Summarise available data for a given FTP source.
-        - List available years (and months where applicable)    
-    '''
-    
+    """
+    Retrieves and displays available data from a configured FTP source
+    so the user can inspect the available data and decide what date
+    ranges or datasets they want to download..
+
+    Args:
+        source_key (str): Key identifying the configured FTP source from `FTP_SOURCES`.
+        dataset (str): Dataset identifier used to resolve remote dataset path.
+
+    Returns:
+        None
+    """
     source_cfg = FTP_SOURCES[source_key]
     dataset_path = source_cfg["datasets"].get(dataset, "")
     base_path = f"{source_cfg['base_path']}/{dataset_path}".replace("//", "/")
@@ -324,13 +409,28 @@ def summariseDatasets(source_key: str, dataset: str):
                 pass
 
 def userInputs():
-    ''' 
-    Ask the user to select:
-        - FTP source
-        - Dataset within FTP source
-        - Start and End dates 
-    '''
+    """
+    Collects user inputs for FTP data retrieval
 
+    The user is prompted to select:
+
+    - An FTP data source.
+    - A dataset within the selected source.
+    - A start and end date range for download.
+
+    Args:
+        None
+    
+    Returns:
+        tuple[str, str, datetime, datetime]:
+            - source_key: Selected FTP source identifier.
+            - dataset_key: Selected dataset identifier.
+            - start_date: Start date for data retrieval.
+            - end_date: End date for data retrieval.
+    Raises:
+        SystemExit: Raised if the user selects an invalid source, dataset,
+        format or range.
+    """
     print("Available data sources:")
     for key in FTP_SOURCES:
         print(f" - {key}")
@@ -381,9 +481,27 @@ def userInputs():
     return source_key, dataset_key, start_date, end_date
 
 def runFTPaccess():
-    ''' 
-    Main entry point for running ftp_access utility 
-    '''
+    """
+    Main entry point for the FTP access utility.
+
+    The utility:
+    - Displays the SPIDER startup banner.
+    - Configures logging.
+    - Collects user-selected FTP download parameters.
+    - Creates a structure local output directory.
+    - Downloads datasets within the requested date range.
+
+    Notes:
+        Downloaded datasets are stored under the SPIDER raw data directory
+        using the following structure:
+        `data/raw/<source>/<dataset>/<start>_<end>_raw`
+
+        The SPIDER project root directory is resolved using the `SPIDER` environment
+        variable.
+    
+    Raises:
+        EnvironmentError: If the `SPIDER` environment variable is not defined.
+    """
     base = os.environ.get('SPIDER')
     if base is None:
         raise EnvironmentError("SPIDER environment variable not set!")
