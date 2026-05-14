@@ -11,27 +11,91 @@ DEBUG = False
 DEMO = True
 
 def loadModel(forecast, lead_day):
+    """
+    Loads a trained calibrated Random Forest model.
+
+    Args:
+        forecast (str): Forecast issue type identifier (`0030` or `1230`).
+        lead_day (int): Forecast lead day.
+    
+    Returns:
+        CalibratedClassifierCV: Loaded calibrated Random Forest classifier.
+
+    Notes:
+        Models are loaded from the SPIDER `models/` directory.
+    """
     # Path to trained models
     model_path = f"models/rf_cal_{forecast}_LD{lead_day}.pkl"
     return joblib.load(model_path)
 
 def showBanner(base):
+    """
+    Loads the SPIDER ASCII banner text.
+
+    Args:
+        base (str): Root SPIDER project directory.
+    
+    Returns:
+        str:
+            ASCII banner text.
+    """
     banner_name = "SPIDER_ASCII_Banner.txt"
     banner_path = os.path.join(base, "docs", banner_name)
     with open(banner_path, "r", encoding="utf-8") as f:
         return f.read()
 
-def predictProb(model, X):
+def predictProb(model, X: pd.DataFrame):
+    """
+    Predicts large-error probabilities using a trained classification model.
+
+    Args:
+        model: Trained classification model supporting probability prediction.
+        X (pandas.DataFrame): Feature used for prediction.
+    
+    Returns:
+        numpy.ndarray:
+            Predicted probabilities for large error class.
+    """
     # Model target is is_large_error
     return model.predict_proba(X)[:, 1]
 
 def confidenceInterval(prob, uncertainty):
+    """
+    Calculates a confidence interval around the reliability estimate.
+
+    Args:
+        prob (float): Reliability estimate.
+        uncertainty (float): Model uncertainty value.
+
+    Returns:
+        tuple[float, float]:
+            Lower and upper confidence interval bounds.
+
+    Notes:
+        Confidence interval bounds are clipped within the valid probability range `[0, 1]`.
+    """
     # Prevent invalid probabilities outside [0,1]
     lower = max(0, prob - uncertainty)
     upper = min(1, prob + uncertainty)
     return lower, upper
 
 def makeDecision(reliability, uncertainty):
+    """
+    Generates an operator recommendation from reliability and uncertainty
+    estimates.
+
+    Args:
+        reliability (float): Forecast reliability estimate.
+        uncertainty (float): Forecast uncertainty estimate.
+    
+    Returns:
+        str:
+            Human-readable forecast confidence recommendations.
+    
+    Notes:
+        Decision thresholds are based on empirical tuning using
+        trained model behaviour and reliability analysis.
+    """
     # Based on trained model and reliability curve 
     # the following decisions can be defined
     if reliability >= 0.7 and uncertainty < 0.4: # was 0.2 and 0.3
@@ -42,6 +106,24 @@ def makeDecision(reliability, uncertainty):
         return "LOW CONFIDENCE, DO NOT TRUST"
 
 def formatBlock(df:pd.DataFrame, rels, uncertainties, cis, decisions):
+    """
+    Formats a single forecast lead-day output block for text.
+
+    Args:
+        df (pandas.DataFrame): Forecast records associated with a lead day.
+        rels: Reliability estimates.
+        uncertainties: Uncertainty estimates.
+        cis: Confidence intervals.
+        decisions: Decision recommendations.
+    
+    Returns:
+        str:
+            Formatted text block containing forecast reliability results.
+    
+    Notes:
+        Forecast output is formatted to resemble original NOAA 3-day
+        forecast layout.
+    """
     lines = []
 
     header = "TIME   Kp    REL   UNC   CI            DECISION"
@@ -59,6 +141,28 @@ def formatBlock(df:pd.DataFrame, rels, uncertainties, cis, decisions):
     return header + "\n" + "\n".join(lines)
 
 def formatResult(base, ftype, new_records, model_outputs):
+    """
+    Builds the final SPIDER reliability forecast text product.
+
+    Args:
+        base (str): Root SPIDER project directory.
+        ftype (str): Forecast issue type identifier (`0030` or `1230`).
+        new_records (dict): Forecast records grouped by lead day.
+    
+    Returns:
+        str:
+            Fully formatted SPIDER forecast text product.
+    Notes:
+        The generated product includes:
+            - Reliability estimates.
+            - Uncertainty estimates.
+            - Confidence intervals.
+            - Decision recommendations.
+        
+            When debug mode is enabled and metadata exists (Year: 2025), NOAA
+            rationale and geomag text data from original forecast are appended
+            to output product.
+    """
     issue = new_records[0].iloc[0]["issue_time_utc"]
     issue_str = datetime.strftime(issue, "%Y %b %d %H:%M UTC")
     meta = None
@@ -147,6 +251,20 @@ DECISION: Recommendation based on results.
     return text
 
 def userInputs(base):
+    """
+    Collects user-selected forecast parameters for rule-layer evaluation.
+
+    Args:
+        base (str): Root SPIDER project directory.
+    
+    Returns: 
+        tuple[datetime, str]:
+            - Forecast issue date.
+            - Forecast issue type (`0030` or `1230`)
+    Notes:
+        The function creates a small command line interface for selecting
+        a forecast product for conversion to a SPIDER forecast product.
+    """
     # This is a simple prompt to act as a quick interface
     print(f"{showBanner(base)}")
     print("Please insert a date between 20230101 and 20251231 (YYYYMMDD format).")
@@ -167,6 +285,33 @@ def userInputs(base):
     return issue, ftype
 
 def main():
+    """
+    Main entry point for the SPIDER rule-layer forecast reliability system.
+
+    The pipeline:
+    - Loads trained calibrated Random Forest models.
+    - Loads forecast test datasets for all lead days.
+    - Extracts records for a selected forecast issue date,
+    - Generates large-error probabilities from a trained model.
+    - Converts probabilities into reliability and uncertainty estimates.
+    - Formats SPIDER reliability forecast text product.
+    - Writes the forecast product to a text file.
+
+    Notes:
+        Reliability is defined as: `1 - P(large forecast error)`
+        
+        Uncertainty is highest when predicted probability approaches 0.5
+        and lowest when probabilities approach 0 or 1.
+
+        Forecast outputs are designed to resemble NOAA geomagnetic
+        forecast products enhanced with ML-based reliability guidance.
+
+        When `DEMO` mode is enabled, the generated forecast product is opened
+        automatically after selection is made in the active script.
+
+    Raises:
+        EnvironmentError: If the `SPIDER` variable is not defined.
+    """
     base = os.environ.get("SPIDER") # Get SPIDER $PATH
 
     # NOTE: Debug with these values DATE and FORECAST TYPE
