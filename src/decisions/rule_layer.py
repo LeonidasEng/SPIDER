@@ -306,6 +306,10 @@ def main():
         Forecast outputs are designed to resemble NOAA geomagnetic
         forecast products enhanced with ML-based reliability guidance.
 
+        When `DEBUG` mode is enabled, the script bypasses interactive user
+        input and uses the full test-set period to view all enhanced forecast
+        outputs in Data Viewer (via debugger with breakpoint).
+
         When `DEMO` mode is enabled, the generated forecast product is opened
         automatically after selection is made in the active script.
 
@@ -335,7 +339,7 @@ def main():
     # to not include the first element of the forecast 
     # because it's valid start was before 0030 so I need to
     # correct for that change in the output from 
-    # 8,8,7 to 7,8,8
+    # 8,8,7 samples per 3-day to 7,8,8 per 3-day
 
     # Get all rows for the issue time (across all lead days)
     df_all = pd.concat([
@@ -437,8 +441,8 @@ def main():
 
 
         model_outputs[ld] = outputs 
-    # Use debugger with breakpoint to vew debug_df
     debug_df = pd.DataFrame(debug_rows)
+    # USE DEBUGGER HERE with breakpoint to view debug_df
     text = formatResult(base, ftype, new_records, model_outputs)
     output_path = os.path.join(
         base, "outputs", 
