@@ -11,10 +11,25 @@ FILES = {
         "3 Day Forecast 1230": "spider_features_3day_1230.parquet"
     }
 
-def buildTargetsT1(dataset_path:str, file_name:str):
-    '''
-    Tier 1 Targets for Modelling
-    '''
+def buildTargetsT1(dataset_path:str, file_name:str) -> pd.DataFrame:
+    """
+    Builds Tier 1 modelling targets from a SPIDER feature dataset.
+
+    Args:
+        dataset_path (str): Directory containing SPIDER parquet files.
+        file_name (str): Name of the feature parquet file to process.
+    
+    Returns:
+        pandas.DataFrame:
+            Feature dataset with added forecast error target columns.
+    
+    Notes:
+        Tier 1 targets include:
+        - `delta_kp`
+        - `abs_delta_kp`
+        - `is_large_error`: A large forecast error is defined as an 
+        absolute Kp error greater than 1.
+    """
     df = pd.read_parquet(os.path.join(dataset_path, file_name)).copy()
 
     forecast_col = [col for col in df.columns if col.startswith("kp_") and col != "kp_obs"]
@@ -29,9 +44,29 @@ def buildTargetsT1(dataset_path:str, file_name:str):
     return df
 
 def buildTargetsT2(dataset_path:str, file_name:str):
-    '''
-    Tier 2 Targets for Modelling
-    '''
+    """
+    Builds Tier 2 modelling targets from a SPIDER feature dataset.
+
+    Args:
+        dataset_path (str): Directory containing SPIDER feature parquet files.
+        file_name (str): Name of the feature parquet file to process.
+
+    Returns:
+        pandas.DataFrame:
+            Feature dataset with added large error targets.
+
+    Notes:
+        Tier 2 targets include both instantaneous and windowed large-error targets.
+
+        An instantaneous large error is defined as:
+        `abs(forecast_kp - observed_kp) > 1`
+
+        The windowed large-error target also marks neighbouring 3-hour bins
+        as `True` when a large error occurs. This reduces double penalties caused
+        by small timing offsets around clustered forecast errors.
+
+        Intermediate calculation columns are removed before returning the final target dataset.
+    """
     df = pd.read_parquet(os.path.join(dataset_path, file_name)).copy()
 
     forecast_col = [col for col in df.columns if col.startswith("kp_") and col != "kp_obs"]
@@ -76,9 +111,34 @@ def buildTargetsT2(dataset_path:str, file_name:str):
     return df
 
 def buildTargetsT3(dataset_path:str):
+    """
+    Placeholder for future Tier 3 target generation.
+
+    Args:
+        dataset_path (str): Directory containing SPIDER feature parquet files.
+    """
     pass
 
 def main():
+    """
+    Main entry point for building SPIDER modelling target datasets.
+
+    The pipeline:
+    - Locates SPIDER feature parquet files.
+    - Skips the observation-only feature dataset.
+    - Builds target labels for the 0030 and 1230 3-day forecast datasets.
+    - Applies the Tier 2 windowed large error target strategy (currently).
+    - Writes final target datasets to parquet files.
+
+    Notes:
+        This script requires the SPIDER feature parquet files to exist before target generation can run.
+
+        Output target parquet files are written to:
+        `data/datasets/`
+    
+    Raises:
+        EnvironmentError: If the `SPIDER` environment variable is not defined.
+    """
     # Environment variable must be set to run this script
     base = os.environ.get("SPIDER")
     if base is None:
