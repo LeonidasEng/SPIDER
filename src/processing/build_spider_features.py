@@ -17,6 +17,19 @@ DATASETS = {
 }
 
 def importFile(file_path:str):
+    """
+    Imports and parses JSON file.
+
+    Args:
+        file_path (str): Path to the JSON file.
+    
+    Returns:
+        dict | list: 
+            Parsed JSON data.
+    
+    Raises:
+        ValueError: If the JSON file cannot be found.
+    """
     try:
         # Helper function for reading in JSON file
         with open(file_path, "r", encoding="utf-8") as f:
@@ -26,6 +39,17 @@ def importFile(file_path:str):
         raise ValueError(f"JSON file not found at: {file_path}.")
 
 def extractObservedKp(observed_json:dict):
+    """
+    Extracts observed Kp values from processed observed geomag data.
+
+    Args:
+        observed_json (dict): Processed observed Kp JSON data.
+    
+    Returns:
+        list[dict]:
+            - valid_start_utc: Start time of the 3-hour observation bin.
+            - kp_obs: Observed Kp value.
+    """
     rows = []
     
     for day, data in observed_json.items():
@@ -48,6 +72,21 @@ def extractObservedKp(observed_json:dict):
     return rows
             
 def extract3dayForecastKp(three_day_json:str):
+    """
+    Extracts Kp forecast values from processed NOAA 3-day forecast data.
+    
+    Args:
+        three_day_json (dict): Processed 3-day forecast JSON data.
+    
+    Returns:
+        list[dict]: 
+            List of forecast records containing issue time, valid start time,
+            forecast Kp, lead day and lead time.
+    
+    Notes:
+        Forecast rows with negative lead times are ignored because they occur
+        before the forecast issue time.
+    """
     rows = []
 
     for day, forecast in three_day_json.items():
@@ -91,6 +130,17 @@ def extract3dayForecastKp(three_day_json:str):
     return rows
 
 def extractOmni2(omni2_json:dict):
+    """
+    Extracts selected hourly OMNI2 space weather parameters.
+
+    Args:
+        omni2_json (dict): Processed OMNI2 JSON data.
+    
+    Returns:
+        list[dict]: 
+            List of hourly OMNI2 records containing valid start time and
+            selected upstream solar wind and IMF parameters.
+    """
     rows = []
 
     FIELDS = [
@@ -117,7 +167,18 @@ def extractOmni2(omni2_json:dict):
     
     return rows
 
-def build3DayForecast(three_day_forecast_path:str):
+def build3DayForecast(three_day_forecast_path:str) -> pd.DataFrame:
+    """
+    Builds a DataFrame containing processed 3-day Kp forecast records.
+
+    Args:
+        three_day_forecast_path (str): Path to processed 3-day forecast JSON files.
+    
+    Returns:
+        pandas.DataFrame: 
+            DataFrame of extracted 3-day forecast records
+            sorted by issue time and valid start time.
+    """
     threeday_data = []
 
     # Sort if sub-folders in a directory at path
@@ -148,7 +209,17 @@ def build3DayForecast(three_day_forecast_path:str):
 
     return df_threeday
 
-def buildObserved(observed_path:str):
+def buildObserved(observed_path:str) -> pd.DataFrame:
+    """
+    Builds a DataFrame containing observed Kp records
+
+    Args:
+        observed_path (str): Path to processed observed Kp JSON files.
+    
+    Returns:
+        pandas.DataFrame: 
+            DataFrame of observed Kp records sorted by valid start time.
+    """
     observed_data = []
     
     # Get sorted list of year sub-directories inside observed path
@@ -177,7 +248,17 @@ def buildObserved(observed_path:str):
 
     return df_obs
 
-def buildOMNI(omni_path:str):
+def buildOMNI(omni_path:str) -> pd.DataFrame:
+    """
+    Builds a DataFrame containing processed OMNI2 hourly records.
+
+    Args:
+        omni_path (str): Path to processed OMNI2 JSON files.
+    
+    Returns:
+        pandas.DataFrame:
+            DataFrame of OMNI2 records sorted by valid start time.
+    """
     omni2_data = []
 
     # Get sorted list of year sub-directories inside observed
@@ -207,6 +288,22 @@ def buildOMNI(omni_path:str):
     return df_omni
 
 def buildTable3Day(df_3day:pd.DataFrame, df_obs:pd.DataFrame, df_omni:pd.DataFrame) -> pd.DataFrame:
+    """
+    Builds a forecast-centric SPIDER feature table for 3-day Kp forecasts.
+
+    Args:
+        df_3day (pandas.DataFrame): DataFrame containing 3-day forecast records.
+        df_obs  (pandas.DataFrame): DataFrame containing observed Kp records.
+        df_omni (pandas.DataFrame): DataFrame containing OMNI2 upstream space weather records.
+    
+    Returns:
+        pandas.DataFrame:
+            Merged feature table containing forecast Kp, observed Kp, OMNI2 context,
+            lead-time information. Derived temporal features are also added here.
+    
+    Notes:
+        OMNI2 hourly data is merged using backward nearest-time merge with 3-hour tolerance.
+    """
     df = df_3day.copy() # Important: Table forecast-centric NOT observation-centric
 
     # 3DAY (attach valid time match)
@@ -234,6 +331,21 @@ def buildTable3Day(df_3day:pd.DataFrame, df_obs:pd.DataFrame, df_omni:pd.DataFra
     return df.sort_values(["issue_time_utc", "valid_start_utc"]).reset_index(drop=True)
 
 def buildTableObserved(df_obs:pd.DataFrame, df_omni:pd.DataFrame) -> pd.DataFrame:
+    """
+    Builds an observation-centric SPIDER feature table.
+
+    Args:
+        df_obs (pandas.DataFrame): DataFrame containing observed Kp records.
+        df_omni (pandas.DataFrame): DataFrame containing upstream space weather conditions.
+    
+    Returns:
+        pandas.DataFrame:
+            Merged observation table containing Kp and OMNI2 context.
+    
+    Notes:
+        This dataset represents the full ground-truth period rather than the forecast limited
+        dataset.
+    """
     df = df_obs.copy() # Full ground truth.
     
     # Merge OMNI (Upstream context for full period)
@@ -248,6 +360,18 @@ def buildTableObserved(df_obs:pd.DataFrame, df_omni:pd.DataFrame) -> pd.DataFram
     return df.sort_values("valid_start_utc").reset_index(drop=True)
 
 def getProcDatapath(base:str, dataset_key: str, sub_folder: str | None = None):
+    """
+    Builds a processed data path for a dataset.
+    
+    Args:
+        base (str): Root SPIDER project directory.
+        dataset_key (str): Dataset key defined in the global `DATASETS` mapping.
+        sub_folder (str | None, optional): Optional subfolder within the processed dataset directory.
+
+    Returns:
+        str:
+            Full path to the requested processed dataset directory.
+    """
     # Added subfolder param for 3day 0030 and 1230
     try:
         base_path = os.path.join(base, "data", "data_processed", DATASETS[dataset_key])
@@ -259,12 +383,36 @@ def getProcDatapath(base:str, dataset_key: str, sub_folder: str | None = None):
         raise ValueError(f"Unknown dataset key: {dataset_key}")
 
 def removeInvalidKp(df:pd.DataFrame) -> pd.DataFrame:
+    """
+    Remove rows containing invalid negative Kp values.
+
+    Args:
+        df (pandas.DataFrame): Input DataFrame containing one or more Kp columns.
+
+    Returns:
+        pandas.DataFrame: DataFrame with rows removed where a Kp column contained
+        a negative value.
+    """
     # Removes impossible Kp (Kp < 0)
     kp_columns = [c for c in ["kp_obs", "kp_threeday", "kp_geomag"] if c in df.columns]
 
     return df[~(df[kp_columns] < 0).any(axis=1)]
 
 def addTemporalFeatures(df: pd.DataFrame) -> pd.DataFrame:
+    """
+    Adds derived temporal and coupling features to the forecast feature table.
+
+    Args:
+        df (pandas.DataFrame): Input forecast feature DataFrame containing OMNI2 parameters.
+
+    Returns:
+        pandas.DataFrame:
+            DataFrame with additional temporal feature columns.
+    
+    Notes:
+        Added features include: rolling Ey, southward Bz duration, rolling solar wind 
+        speed, vBz coupling, rolling vBz coupling and pressure jump flag.
+    """
     df = df.sort_values(["issue_time_utc", "valid_start_utc"])
 
     # No more than these features might envoke the Curse of Dimensionality
@@ -291,6 +439,23 @@ def addTemporalFeatures(df: pd.DataFrame) -> pd.DataFrame:
     return df
 
 def verifyDataQuality(df: pd.DataFrame, name:str="dataset") -> dict:
+    """
+    Generates a data quality report for a SPIDER feature dataset.
+
+    Args:
+        df (pandas.DataFrame): Feature dataset to inspect.
+        name (str, optional): Name used to identify the dataset in the report.
+    
+    Returns:
+        dict:
+            Data quality summary containing row counts, column counts, time coverage,
+            time-gap information, missing value percentages, lead-time checks and
+            duplicate time checks.
+    
+    Notes:
+        This function adheres to the CRISP-DM data understanding stage by
+        summarising consistency and performing data validation checks.
+    """
     # CRISP-DM Data Understanding (2.4)
     # Examine quality of data, addressing data completeness 
     # data errors, missing values
@@ -367,6 +532,22 @@ def verifyDataQuality(df: pd.DataFrame, name:str="dataset") -> dict:
     return report
 
 def main():
+    """
+    Main entry point for building SPIDER feature datasets.
+
+    The pipeline:
+    - Locates processed observed Kp, 3-day forecast and OMNI2 data.
+    - Builds DataFrames for each processed data source.
+    - Merges forecasts, observed and upstream OMNI2 data.
+    - Creates forecast-centric 0030 and 1230 feature datasets.
+    - Creates an observation-centric ground-truth dataset.
+    - Generates a feature data quality report.
+    - Writes final feature datasets to parquet files.
+
+    Notes:
+        This script creates the master feature datasets before any training
+        or testing splits are applied.
+    """
     # Environment variable must be set to run this script
     base = os.environ.get("SPIDER")
     if base is None:
