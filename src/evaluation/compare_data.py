@@ -12,32 +12,67 @@ FILES = {
     }
     
 # Helper functions for preparing datasets
-def prepareForecast(df, lead_day):
+def prepareForecast(df:pd.DataFrame, lead_day: int) -> pd.DataFrame:
+    """
+    Filters a forecast dataset to a specific forecast lead day.
+
+    Args:
+        df (pandas.DataFrame): Forecast feature dataset
+        lead_day (int): Forecast lead day to filter by.
+    
+    Returns:
+        pandas.DataFrame:
+            Filtered forecast for the selected lead day. 
+    """
     # Filter forecast to specific lead day
     df = df.copy()
     df = df[df["lead_day"] == lead_day]
     return df
 
-def normaliseTime(df):
+def normaliseTime(df:pd.DataFrame) -> pd.DataFrame:
+    """
+    Converts valid start times to datetime format and sets as index.
+    """
     # Normalise by valid time to resample Kp to daily
     df["valid_start_utc"] = pd.to_datetime(df["valid_start_utc"])
     df = df.sort_values("valid_start_utc")
     df = df.set_index("valid_start_utc")
     return df
 
-def dailyKp(df, kp_column):
+def dailyKp(df: pd.DataFrame, kp_column: str):
+    """
+    Resample 3-hourly Kp data into daily max Kp values.
+
+    Args:
+        df (pandas.DataFrame): Time-indexed dataset containing 
+        Kp values.
+        kp_column (str): Name of Kp column to resample.
+    
+    Returns:
+        pandas.Series:
+            Daily max Kp values.
+    """
     # 3-hour Kp is too noisy to plot, resampling at 1D minimum
     return df[kp_column].resample("1D").max()
 
 def forecastRevision(dataset_path: str):
-    '''
-    Tier 1 EDA Forecast revision vs lead time
+    """
+    Plots forecast revision magnitude as forecast lead time decreases.
 
-    Measures how forecasts change as the valid time approaches.
+    Args:
+        dataset_path (str): Path to SPIDER feature dataset directory.
+    
+    Returns:
+        None
+    
+    Notes:
+        This Tier 1 EDA plot compares daily max forecast Kp values across
+        lead days to measure how much the forecast changes as valid 
+        time approaches.
 
-    High revision = new information entering forecast
-    Low revision  = forecast confident
-    '''
+        High revision suggests new information entering forecast,
+        while low revision suggests greater forecast stability.
+    """
 
     df = pd.read_parquet(os.path.join(dataset_path, FILES["3 Day Forecast 0030"]))
 
@@ -77,22 +112,28 @@ def forecastRevision(dataset_path: str):
 
 
 def leadDaySkill(dataset_path:str):
-    '''
-    Tier 2 EDA Forecast skill vs lead time
+    """
+    Plots forecast skill against lead day using absolute Kp error.
 
-    Measures how close each forecast is to the observed geomagnetic activity
+    Args:
+        dataset_path (str): Path to SPIDER feature dataset directory.
+    
+    Returns:
+        None
+    
+    Notes:
+        Tier 2 EDA Forecast skill vs lead time. Forecast skill is measured using:
 
-    Error is defined as |Kp_forecast - Kp_observed|
+        `abs(Kp_forecast - Kp_observed)`
 
-    Low Error = Forecast accurate
-    High Error = Forecast unreliable
-    '''
+        Lower error indicates a more accurate forecast, while higher
+        error indicates reduced forecast reliability.
+    """
     lead_errors = {}
     
     kp_column = {
         "3 Day Forecast 0030": "kp_threeday",
-        "3 Day Forecast 1230": "kp_threeday",
-        #"Geomag Forecast": "kp_geomag"
+        "3 Day Forecast 1230": "kp_threeday"
     }
 
     kp_obs_daily = None
@@ -149,18 +190,23 @@ def leadDaySkill(dataset_path:str):
         plt.show()
 
 def riskCurves(dataset_path:str):
-    '''
-    Tier 3 EDA Risk vs Lead Day (Justifies ML modelling)
-    
-    Generates operational risk curves for each forecast and lead day.
-    
-    For each lead day, aligns daily max forecast Kp with 
-    observed daily max Kp to calculate probability of a large forecast error 
-    P(|ΔKp| > 1) conditioned on the forecast value.
+    """
+    Generates operational risk curves by forecast Kp and lead day.
 
-    Answers: "How trustworthy is a forecast Kp level at a given lead time?" 
-            P((|ΔKp| > 1) | Kp, Ld)    
-    '''
+    Args:
+        dataset_path (str): Path to the SPIDER feature dataset directory.
+
+    Returns:
+        None
+    
+    Notes:
+        This Tier 3 EDA plot estimates the probability of a large forecast
+        error on forecast Kp and lead day.
+        `P((|ΔKp| > 1) | Kp, Ld)`
+
+        The curve helps assess how trustworthu a forecast Kp value is at
+        a given lead time.
+    """
     # Kp columns are different across datasets
     kp_column = {
             "3 Day Forecast 0030": "kp_threeday",
@@ -236,17 +282,25 @@ def riskCurves(dataset_path:str):
         plt.show()
 
 def overviewObserved(dataset_path: str):
-    '''
-    Tier 0 EDA Observed Geomagnetic activity context
+    """
+    Plots obsered geomagnetic activity alongside solar radio flux.
 
-    Provides high-level overview of Kp in the context of the solar cycle. 
+    Args:
+        dataset_path (str): Path to the SPIDER feature dataset directory.
     
-    F10.7cm provides long-term context of solar activity
-    Use lead day of 0 to get single occurrence per valid time.
-    Data gaps must be included to show trend of solar cycle
-    Identifies when storms occur and overlays the events
-    '''
+    Returns:
+        None
     
+    Notes:
+        This Tier 0 EDA plot provides long-term context for observed Kp
+        across the solar cycle.
+
+        Daily maximum Kp values are smoothed using a 27-day rolling mean,
+        and storm-scale events are overlaid using NOAA G-scale categories.
+
+        F10.7 solar radio flux is displayed on a secondary axis as a proxy
+        for broader solar activity.
+    """ 
     df_obs_all = pd.read_parquet(os.path.join(dataset_path, FILES["Observed"]))
 
     df_obs_all = normaliseTime(df_obs_all)
@@ -264,8 +318,9 @@ def overviewObserved(dataset_path: str):
     f107_daily = df_obs_all["f10.7"].resample("1D").mean()
 
     def classifyStorm(kp):
-        # These are not finalised Kp values from GFZ-Potsdam, Germany but estimated Kp
-        # from SWPC
+        # These are not the finalised Kp values from GFZ-Potsdam, Germany but estimated Kp
+        # from SWPC, this is intentional to maintain consitency between forecast source and
+        # observed reference data when evaluating forecast reliability.
         if   kp >= 9: return "G5"
         elif kp >= 8: return "G4"
         elif kp >= 7: return "G3"
@@ -347,6 +402,21 @@ def overviewObserved(dataset_path: str):
     plt.show()    
 
 def main():
+    """
+    Main entry point for SPIDER exploratory data analysis plotting.
+
+    The pipeline:
+    - Locates SPIDER feature datasets.
+    - Loads selected forecast and observed datasets.
+    - Runs selected plotting functions.
+    - Displays comparison plots for forecast revision, forecast skill,
+    operational risk or observed geomagnetic activity.
+
+    Notes:
+        This script's intended use was within development cycle so
+        plotting functions need to be enabled or disabled manually
+        inside main() depending on the analysis plot required.
+    """
     # Environment variable must be set to run this script
     base = os.environ.get("SPIDER")
     if base is None:
