@@ -23,11 +23,25 @@ TARGETS = {
 # This script requires that a target dataset be created for available processed data. 
 
 def dataSplit(df: pd.DataFrame, dataset:str):
-    '''
-    Chronological split (not percentage split):
-    Train: November 2012 -> December 2022
-    Test: January 2023 -> December 2025
-    '''
+    """
+    Splits a SPIDER dataset into chronological training and testing sets.
+
+    Args:
+        df (pandas.DataFrame): Input SPIDER modelling dataset.
+        dataset (str): Dataset identifier used for reporting.
+    
+    Returns: 
+        tuple[pandas.DataFrame, pandas.DataFrame]:
+            Chronologically separated training and testing datasets.
+    
+    Notes:
+        The split uses a fixed cutoff:
+        - Train: `November 2012 -> December 2022`
+        - Test: `January 2023 - December 2025`
+        
+        Additional temporal error features derived from the previous target
+        are added after splitting to avoid future leakage.
+    """
     df = df.sort_values(["issue_time_utc", "valid_start_utc"])
 
     cutoff = pd.Timestamp("2023-01-01", tz="UTC")
@@ -43,6 +57,29 @@ def dataSplit(df: pd.DataFrame, dataset:str):
     return train_set, test_set
 
 def addErrorFeatures(df:pd.DataFrame):
+    """
+    Adds persistence-inspired forecast error features for 
+    probabilistic modelling.
+
+    Args:
+        df (pandas.DataFrame): Input modelling dataset.
+
+    Returns:
+        pandas.DataFrame:
+            Dataset with additional historical error features.
+
+    Notes:
+        Added features include:
+
+        - `prev_error`
+        - `error_rate_24h`
+        - `time_since_last_error`
+
+    Features are generated independently for each forecast lead day to 
+    preserve consistency.
+
+    Intermediate calculation columns are removed before returning final dataset. 
+    """
     df = df.sort_values(["lead_day", "issue_time_utc", "valid_start_utc"])
 
     target = df["is_large_error_win"]
@@ -93,9 +130,23 @@ def addErrorFeatures(df:pd.DataFrame):
     return df
 
 def persistenceBase(df:pd.DataFrame, target_col="is_large_error_win"):
-    '''
-    Was forecast wrong before? Will it be wrong again? (3-hour intervals)
-    '''
+    """
+    Evaluates a persistence based model.
+
+    Args:
+        df (pandas.DataFrame): Input modelling dataset.
+        target_col (str, optional): Target classification column.
+
+    Returns:
+        tuple:
+            Ground-truth labels, predicted probabilities and predicted
+            binary classifications.
+    
+    Notes:
+        The persistence model assumes that if the previous forecast interval
+        contained a large error, the next interval is also likely to contain
+        a large error.
+    """
     df = df.copy()
     df["probability"] = df[target_col].shift(1)
 
@@ -111,6 +162,23 @@ def persistenceBase(df:pd.DataFrame, target_col="is_large_error_win"):
 
 def climatologyFit(train_set:pd.DataFrame,
                    target_col="is_large_error_win", forecast_col="kp_forecast"):
+    """
+    Fits a climatology forecast reliabilty model
+
+    Args:
+        train_set (pandas.DataFrame): Training dataset.
+        target_col (str, optional): Target column.
+        forecast_col (str, optional): Forecast Kp column for binning.
+    
+    Returns:
+        tuple[dict, float]:
+            - clim_map: Historical averages by Kp bin.
+            - global_mean: Global mean target probability.
+    
+    Notes:
+        Forecast Kp values are grouped into bins to reduce noise.
+        Laplace smoothing is applied to avoid extremes.
+    """
     train = train_set.copy()
     train = train.dropna(subset=[forecast_col, target_col])
 
@@ -135,6 +203,27 @@ def climatologyFit(train_set:pd.DataFrame,
 def climatologyApply(test_set:pd.DataFrame,
                      clim_map: dict, global_mean: float, 
                      target_col="is_large_error_win", forecast_col="kp_forecast"):
+    """
+    Applies a climatology-based reliability model to the test dataset.
+
+    Args:
+        test_set (pandas.DataFrame): Test dataset.
+        clim_map (dict): Historical probability mapping.
+        global_mean (float): Global fallback probability.
+        target_col (str, optional): Target column.
+        forecast_col (str, optional): Forecast Kp column for binning.
+    
+    Returns:
+        tuple:
+            Ground-truth labels, predicted probabilities, and predicted 
+            binary classifications.
+    
+    Notes:
+        Forecast Kp values are converted into climatology bins before 
+        probability lookup.
+        A fixed classification threshold of 0.5 is used for the
+        baseline model.
+    """
     test = test_set.copy()
     test = test.dropna(subset=[forecast_col, target_col])
 
@@ -152,9 +241,18 @@ def climatologyApply(test_set:pd.DataFrame,
     return y_true, y_prob, y_pred
 
 def gaussianBase(train_set:pd.DataFrame, test_set:pd.DataFrame):
-    '''
-    Gaussian Naive Bayes Baseline Model
-    '''
+    """
+    Trains and evaluates a Gaussian Naive Bayes baseline model.
+
+    Args:
+        train_set (pandas.DataFrame): Training dataset.
+        test_set (pandas.DataFrame): Testing dataset.
+    
+    Returns:
+        tuple:
+            Test labels, training labels, training predictions,
+            predicted probabilities, and predicted classifications.
+    """
     feature_columns = [
         "bz_gsm",
         "b_mag",
@@ -197,9 +295,21 @@ def gaussianBase(train_set:pd.DataFrame, test_set:pd.DataFrame):
     return y_test, y_train, y_train_pred, y_prob, y_pred
 
 def logisticBase(train_set:pd.DataFrame, test_set:pd.DataFrame):
-    '''
-    Logistic Regression Baseline model
-    '''
+    """
+    Trains and evaluates a Logistic Regression baseline model.
+
+    Args:
+        train_set (pandas.DataFrame): Training dataset.
+        test_set (pandas.DataFrame): Test dataset.
+
+    Returns:
+        tuple:
+            Test labels, training labels, training predictions,
+            predicted probabilities, and predicted classifications.
+    
+    Notes:
+        Balanced class weighting is enabled to compensate for forecast error imbalance. 
+    """
     feature_columns = [
         "bz_gsm",
         "b_mag",
@@ -242,17 +352,42 @@ def logisticBase(train_set:pd.DataFrame, test_set:pd.DataFrame):
 
     return y_test, y_train, y_train_pred, y_prob, y_pred
 
-def cmDisplay(observed, predicted):
+def cmDisplay(observed:pd.Series, predicted:pd.Series):
+    """
+    Displays a confusion matrix for model predictions.
+
+    Args:
+        observed (pandas.Series): Ground-truth labels
+        predicted (pandas.Series): Predicted class labels.
     
+    Returns:
+        None
+    """
     confusion_matrix = metrics.confusion_matrix(observed, predicted)
     cm_display = metrics.ConfusionMatrixDisplay(confusion_matrix=confusion_matrix, display_labels=[0, 1])
     cm_display.plot()
     plt.show()
 
-def metricsTable(dataset, lead_day, model_name, 
-                 y_test, y_prob, y_pred,
-                 y_train=None, y_train_pred=None):
-    
+def metricsTable(dataset: str, lead_day: int, model_name: str, 
+                 y_test: pd.Series, y_prob: pd.Series, y_pred: pd.Series,
+                 y_train: pd.Series | None = None, y_train_pred: pd.Series | None = None):
+    """
+    Computes verification and classification metrics for a model.
+
+    Args:
+        dataset (str): Dataset identifier.
+        lead_day (int): Forecast lead day.
+        model_name (str): Model identifier.
+        y_test (pd.Series): Ground-truth test labels.
+        y_prob (pd.Series): Predicted probabilities.
+        y_pred (pd.Series): Predicted classifications.
+        y_train (pd.Series, optional): Ground-truth training labels.
+        y_train_pred (pd.Series, optional): Predicted training classifications.
+
+    Returns:
+        dict:
+            - Accuracy, Precision, Recall, F1, Brier Score, AUC, POD, FAR, CSI, TSS, HSS. 
+    """
     # Persistence and Climatology don't have training sets
     test_accuracy = metrics.accuracy_score(y_test, y_pred)
     
@@ -304,9 +439,28 @@ def metricsTable(dataset, lead_day, model_name,
         "HSS": round(hss, 2)
     }
 
-def reliabilityCurve(dataset, lead_day, y_test, y_prob, model_name="Model", n_bins=10):
+def reliabilityCurve(dataset:str, lead_day:int, y_test:pd.Series, y_prob:pd.Series, 
+                     model_name:str = "Model", n_bins:int = 10):
     """
-    Generate reliability curve with probability histogram
+    Generate reliability curve with probability histogram.
+
+    Args:
+        dataset (str): Dataset identifier.
+        lead_day (int): Forecast lead day.
+        y_test (pd.Series): Ground-truth classification labels.
+        y_prob (pd.Series): Predicted probabilities.
+        model_name (str, optional): Model identifier.
+        n_bins (int, optional): Number of calibration bins.
+
+    Returns:
+        None
+    
+    Notes:
+        The reliability curve compares predicted probabilities against 
+        observed event frequencies.
+
+        A probability histogram is displayed beneath the calibration curve 
+        to visualise distribution.
     """
 
     prob_true, prob_pred = calibration_curve(y_test, y_prob, n_bins=n_bins, strategy="uniform")
@@ -335,11 +489,26 @@ def reliabilityCurve(dataset, lead_day, y_test, y_prob, model_name="Model", n_bi
     plt.tight_layout()
     plt.show()
 
-def generateROC(y_true, y_pred, lead_day, database_name, model_name, line_colour="black"):
+def generateROC(y_true:pd.Series, y_pred:pd.Series, lead_day:int, 
+                dataset_name:str, model_name:str, line_colour:str = "black"):
+    """
+    Generates a Receiver Operating Characteristic (ROC) curve.
+    
+    Args:
+        y_true (pd.Series): Ground-truth classification labels.
+        y_pred (pd.Series): Predicted probabilities.
+        lead_day (int): Forecast lead day.
+        dataset_name (str): Dataset identifier.
+        model_name (str): Model identifier.
+        line_colour (str, optional): ROC curve line colour.
+    
+    Returns:
+        None
+    """
     fpr, tpr, thresholds = roc_curve(y_true, y_score=y_pred)
     labels = [line.get_label() for line in plt.gca().get_lines()]
     roc_auc = metrics.auc(fpr, tpr)
-    prefix = database_name[-4:]
+    prefix = dataset_name[-4:]
     
     if 'Random Classifier' not in labels:
         plt.plot([0, 1], [0, 1],'--', color="grey", label="Random Classifier")
@@ -354,6 +523,33 @@ def generateROC(y_true, y_pred, lead_day, database_name, model_name, line_colour
     plt.xlabel('False Positive Rate', fontsize=16)
 
 def main():
+    """
+    Main entry point for SPIDER baseline model evaluation.
+
+    The pipeline:
+    - Loads SPIDER target datasets.
+    - Separates datasets by forecast lead day.
+    - Applies chronological train/test splitting
+    - Generates temporal error features.
+    - Evaluates multiple baseline forecasting models.
+    - Computes forecast verification metrics.
+    - Exports model metric tables as CSV files.
+
+    Evaluated baseline models include:
+    - Persistence
+    - Climatology
+    - Gaussian Naive Bayes
+    - Logistic Regression
+
+    Notes:
+        Forecast datasets are evaluated independently for `0030` and `1230` forecast
+        issue cycles.
+
+        Metric tables are exported as CSV files for each dataset and lead day combination.
+    
+    Raises:
+        EnvironmentError: If the `SPIDER` environment variable is not defined.
+    """
     # Environment variable must be set to run this script
     base = os.environ.get("SPIDER")
     if base is None:

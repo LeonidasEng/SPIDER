@@ -23,11 +23,25 @@ TARGETS = {
     }
 
 def dataSplit(df: pd.DataFrame, dataset:str):
-    '''
-    Chronological split (not percentage split):
-    Train: November 2012 -> December 2022
-    Test: January 2023 -> December 2025
-    '''
+    """
+    Splits a SPIDER dataset into chronological training and testing sets.
+
+    Args:
+        df (pandas.DataFrame): Input SPIDER modelling dataset.
+        dataset (str): Dataset identifier used for reporting.
+    
+    Returns: 
+        tuple[pandas.DataFrame, pandas.DataFrame]:
+            Chronologically separated training and testing datasets.
+    
+    Notes:
+        The split uses a fixed cutoff:
+        - Train: `November 2012 -> December 2022`
+        - Test: `January 2023 - December 2025`
+        
+        Additional temporal error features derived from the previous target
+        are added after splitting to avoid future leakage.
+    """
     df = df.sort_values(["issue_time_utc", "valid_start_utc"])
 
     cutoff = pd.Timestamp("2023-01-01", tz="UTC")
@@ -43,6 +57,29 @@ def dataSplit(df: pd.DataFrame, dataset:str):
     return train_set, test_set
 
 def addErrorFeatures(df:pd.DataFrame):
+    """
+    Adds persistence-inspired forecast error features for 
+    probabilistic modelling.
+
+    Args:
+        df (pandas.DataFrame): Input modelling dataset.
+
+    Returns:
+        pandas.DataFrame:
+            Dataset with additional historical error features.
+
+    Notes:
+        Added features include:
+
+        - `prev_error`
+        - `error_rate_24h`
+        - `time_since_last_error`
+
+    Features are generated independently for each forecast lead day to 
+    preserve consistency.
+
+    Intermediate calculation columns are removed before returning final dataset. 
+    """
     df = df.sort_values(["lead_day", "issue_time_utc", "valid_start_utc"])
 
     target = df["is_large_error_win"]
@@ -92,7 +129,28 @@ def addErrorFeatures(df:pd.DataFrame):
     return df
 
 def decisionTree(train_set:pd.DataFrame, test_set:pd.DataFrame):
+    """
+    Trains and evaluates a Decision Tree classifier model.
+
+    Args:
+        train_set (pandas.DataFrame): Training dataset
+        test_set  (pandas.DataFrame): Testing dataset
     
+    Returns:
+        tuple:
+            - dt (sklearn.tree.DecisionTreeClassifier): Trained Decision Tree classifier.
+            - X_test (pd.Series): Test features.
+            - y_test (pd.Series): Test labels.
+            - y_train (pd.Series): Training labels.
+            - y_train_pred (pd.Series): Predicted training classifications.
+            - y_prob (pd.Series): Predicted test probabilities for `is_large_error = True` class.
+            - y_pred (pd.Series): Predicted test classifications.
+    
+    Notes:
+        Class balancing is enabled to compensate for forecast error class imbalance.
+
+        Missing or invalid values are removed before model training begins.
+    """
     feature_columns = [
         "bz_gsm",
         "b_mag",
@@ -141,6 +199,38 @@ def decisionTree(train_set:pd.DataFrame, test_set:pd.DataFrame):
     return dt, X_test, y_test, y_train, y_train_pred, y_prob, y_pred
 
 def randomForest(train_set, test_set, base, dataset, lead_day):
+    """
+    Trains, calibrates and evaluates a Random Forest model.
+
+    Args:
+        train_set (pandas.DataFrame): Training dataset.
+        test_set  (pandas.DataFrame): Testing dataset.
+        base (str): Root SPIDER project directory.
+        dataset (str): Dataset identifier used for model naming and export.
+        lead_day (int): Forecast lead day for each model.
+
+    Returns:
+        tuple:
+            - rf_cal: Calibrated Random Forest classifier.
+            - X_test: Test features.
+            - y_test: Test labels.
+            - y_train: Training labels.
+            - y_train_pred: Predicted training classifications.
+            - y_prob: Predicted test probabilities for the `is_large_error = True` class.
+            - y_pred: Predicted test classifications.
+        
+    Notes:
+        Calibration is applied using sigmoid calibration (LR) 
+        via `CalibratedClassifierCV`.
+
+        Class balancing enabled to compensate for forecast error class
+        imbalance.
+
+        Trained calibrated models are exported as `.pkl` files inside the SPIDER
+        `models/` directory.
+
+        Rows containing missing or invalid values are removed before training.
+    """
     feature_columns = [
         "bz_gsm",
         "b_mag",
@@ -203,7 +293,16 @@ def randomForest(train_set, test_set, base, dataset, lead_day):
     return rf_cal, X_test, y_test, y_train, y_train_pred, y_prob, y_pred
 
 def cmDisplay(observed, predicted):
+    """
+    Displays a confusion matrix for model predictions.
+
+    Args:
+        observed (pandas.Series): Ground-truth labels
+        predicted (pandas.Series): Predicted class labels.
     
+    Returns:
+        None
+    """
     confusion_matrix = metrics.confusion_matrix(observed, predicted)
     cm_display = metrics.ConfusionMatrixDisplay(confusion_matrix=confusion_matrix, display_labels=[0, 1])
     cm_display.plot()
@@ -212,7 +311,23 @@ def cmDisplay(observed, predicted):
 def metricsTable(dataset, lead_day, model_name, 
                  y_test, y_prob, y_pred,
                  y_train=None, y_train_pred=None):
-    
+    """
+    Computes verification and classification metrics for a model.
+
+    Args:
+        dataset (str): Dataset identifier.
+        lead_day (int): Forecast lead day.
+        model_name (str): Model identifier.
+        y_test (pd.Series): Ground-truth test labels.
+        y_prob (pd.Series): Predicted probabilities.
+        y_pred (pd.Series): Predicted classifications.
+        y_train (pd.Series, optional): Ground-truth training labels.
+        y_train_pred (pd.Series, optional): Predicted training classifications.
+
+    Returns:
+        dict:
+            - Accuracy, Precision, Recall, F1, Brier Score, AUC, POD, FAR, CSI, TSS, HSS. 
+    """
     # Persistence and Climatology don't have training sets
     test_accuracy = metrics.accuracy_score(y_test, y_pred)
     
@@ -264,9 +379,28 @@ def metricsTable(dataset, lead_day, model_name,
         "HSS": round(hss, 2)
     }
 
-def reliabilityCurve(dataset, lead_day, y_test, y_prob, model_name="Model", n_bins=10):
+def reliabilityCurve(dataset:str, lead_day:int, y_test:pd.Series, y_prob:pd.Series, 
+                     model_name:str = "Model", n_bins:int = 10):
     """
-    Generate reliability curve with probability histogram
+    Generate reliability curve with probability histogram.
+
+    Args:
+        dataset (str): Dataset identifier.
+        lead_day (int): Forecast lead day.
+        y_test (pd.Series): Ground-truth classification labels.
+        y_prob (pd.Series): Predicted probabilities.
+        model_name (str, optional): Model identifier.
+        n_bins (int, optional): Number of calibration bins.
+
+    Returns:
+        None
+    
+    Notes:
+        The reliability curve compares predicted probabilities against 
+        observed event frequencies.
+
+        A probability histogram is displayed beneath the calibration curve 
+        to visualise distribution.
     """
 
     prob_true, prob_pred = calibration_curve(y_test, y_prob, n_bins=n_bins, strategy="uniform")
@@ -274,7 +408,7 @@ def reliabilityCurve(dataset, lead_day, y_test, y_prob, model_name="Model", n_bi
     prefix = dataset[-4:]
 
     # Create figure with two panels in vertical configuration
-    fig, ax1 = plt.subplots(figsize=(8,7))
+    fig, (ax1, ax2) = plt.subplots(2, 1, figsize=(8,7), gridspec_kw={"height_ratios": [2,1]})
 
     ax1.plot([0,1], [0,1], linestyle="--", color="grey", label="Perfect calibration")
     ax1.plot(prob_pred, prob_true, marker="o", color="tab:blue", label=model_name)
@@ -294,18 +428,39 @@ def reliabilityCurve(dataset, lead_day, y_test, y_prob, model_name="Model", n_bi
     ax1.legend(fontsize=14)
     ax1.grid(True)
 
-    # ax2.hist(y_prob, bins=n_bins, range=(0,1), edgecolor="black")
-    # ax2.set_xlabel("Predicted Probability", fontsize=16)
-    # ax2.set_ylabel("Count", fontsize=16)
-    # ax2.set_title("Probability Distribution", fontweight="bold", fontsize=18)
-    # ax2.grid(alpha=0.3)
+    ax2.hist(y_prob, bins=n_bins, range=(0,1), edgecolor="black")
+    ax2.set_xlabel("Predicted Probability", fontsize=16)
+    ax2.set_ylabel("Count", fontsize=16)
+    ax2.set_title("Probability Distribution", fontweight="bold", fontsize=18)
+    ax2.grid(alpha=0.3)
 
     plt.tight_layout()
     plt.show()
 
 
 def plotPFI(dataset, lead_day, model, X_test, y_test, feature_names, top=10, model_name="Model"):
+    """
+    Generate a Permutation Feature Importance (PFI) plot for a trained classification model.
 
+    Args:
+        dataset (str): Dataset identifier.
+        lead_day (int): Forecast lead day.
+        model: Trained classification model supporting scikit-learn interface.
+        X_test (pandas.DataFrame): Test features.
+        y_test (pandas.Series): Test labels.
+        top (int, optional): Number of highest importance features to display.
+        model_name (str, optional): Model identifier used in plot title.
+    
+    Returns:
+        None
+    
+    Notes:
+        Feature importance is calculated using permutation importance with
+        ROC-AUC scoring.
+
+        Importance values represent the decrease in model performance when
+        a feature
+    """
     scoring_type = "roc_auc"
 
     result = permutation_importance(
@@ -330,6 +485,20 @@ def plotPFI(dataset, lead_day, model, X_test, y_test, feature_names, top=10, mod
     plt.show()
 
 def generateROC(y_true, y_pred, lead_day, database_name, model_name, line_colour="black"):
+    """
+    Generates a Receiver Operating Characteristic (ROC) curve.
+    
+    Args:
+        y_true (pd.Series): Ground-truth classification labels.
+        y_pred (pd.Series): Predicted probabilities.
+        lead_day (int): Forecast lead day.
+        dataset_name (str): Dataset identifier.
+        model_name (str): Model identifier.
+        line_colour (str, optional): ROC curve line colour.
+    
+    Returns:
+        None
+    """
     fpr, tpr, thresholds = roc_curve(y_true, y_score=y_pred)
     labels = [line.get_label() for line in plt.gca().get_lines()]
     roc_auc = metrics.auc(fpr, tpr)
@@ -348,6 +517,41 @@ def generateROC(y_true, y_pred, lead_day, database_name, model_name, line_colour
     plt.xlabel('False Positive Rate', fontsize=16)
 
 def main():
+    """
+    Main entry point for SPIDER tree-based model evaluation.
+
+    The pipeline:
+    - Loads SPIDER target datsets.
+    - Separates datasets by forecast lead day.
+    - Applies chronological train/test splitting.
+    - Generates temporal error features.
+    - Trains Decision Tree and Random Forest classifiers.
+    - Evaluates model performance using forecast verification metrics.
+    - Generates optional diagnostic diagrams.
+    - Exports model metrics as CSV files.
+    - Saves calibrated Random Forest models and test datasets 
+    for later rule-layer evaluation.
+
+    Models include:
+        - Decision Tree Classifier
+        - Random Forest Classifier
+    
+    Notes:
+        Forecast datasets are evaluated independently for:
+        - `0030` and `1230` time periods.
+        - `0`, `1`, `2` lead days.
+
+        Test datasets are exported as parquet files for rule layer.
+
+        Random Forest models are calibrated using sigmoid calibration
+        before export.
+
+        Metric tables are exported as CSV files for each dataset and
+        lead day combination.
+    
+    Raises:
+        EnvironmentError: If the `SPIDER` environment variable is not defined.
+    """
     # Environment variable must be set to run this script
     base = os.environ.get("SPIDER")
     if base is None:
