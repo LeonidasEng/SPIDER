@@ -10,7 +10,7 @@ from datetime import datetime, timedelta
 DEBUG = False
 DEMO = True
 
-def loadModel(forecast, lead_day):
+def loadModel(forecast:str, lead_day:int):
     """
     Loads a trained calibrated Random Forest model.
 
@@ -28,7 +28,7 @@ def loadModel(forecast, lead_day):
     model_path = f"models/rf_cal_{forecast}_LD{lead_day}.pkl"
     return joblib.load(model_path)
 
-def showBanner(base):
+def showBanner(base: str) -> str:
     """
     Loads the SPIDER ASCII banner text.
 
@@ -59,7 +59,7 @@ def predictProb(model, X: pd.DataFrame):
     # Model target is is_large_error
     return model.predict_proba(X)[:, 1]
 
-def confidenceInterval(prob, uncertainty):
+def confidenceInterval(prob: float, uncertainty: float) -> tuple[float, float]:
     """
     Calculates a confidence interval around the reliability estimate.
 
@@ -79,7 +79,7 @@ def confidenceInterval(prob, uncertainty):
     upper = min(1, prob + uncertainty)
     return lower, upper
 
-def makeDecision(reliability, uncertainty):
+def makeDecision(reliability: float, uncertainty: float) -> str:
     """
     Generates an operator recommendation from reliability and uncertainty
     estimates.
@@ -105,7 +105,7 @@ def makeDecision(reliability, uncertainty):
     else:
         return "LOW CONFIDENCE, DO NOT TRUST"
 
-def formatBlock(df:pd.DataFrame, rels, uncertainties, cis, decisions):
+def formatBlock(df:pd.DataFrame, rels: list, uncertainties: list, cis: list, decisions: list):
     """
     Formats a single forecast lead-day output block for text.
 
@@ -140,7 +140,7 @@ def formatBlock(df:pd.DataFrame, rels, uncertainties, cis, decisions):
         lines.append(f"{valid}  {kp}  {r}  {u}  {ci}  {d}")
     return header + "\n" + "\n".join(lines)
 
-def formatResult(base, ftype, new_records, model_outputs):
+def formatResult(base: str, ftype: str, new_records: dict, model_outputs: dict):
     """
     Builds the final SPIDER reliability forecast text product.
 
@@ -159,9 +159,8 @@ def formatResult(base, ftype, new_records, model_outputs):
             - Confidence intervals.
             - Decision recommendations.
         
-            When debug mode is enabled and metadata exists (Year: 2025), NOAA
-            rationale and geomag text data from original forecast are appended
-            to output product.
+            When metadata exists (Year: 2025), NOAA rationale and geomag 
+            text data from original forecast are appended to output product.
     """
     issue = new_records[0].iloc[0]["issue_time_utc"]
     issue_str = datetime.strftime(issue, "%Y %b %d %H:%M UTC")
@@ -250,7 +249,7 @@ DECISION: Recommendation based on results.
     """
     return text
 
-def userInputs(base):
+def userInputs(base: str) -> tuple[datetime, str]:
     """
     Collects user-selected forecast parameters for rule-layer evaluation.
 
