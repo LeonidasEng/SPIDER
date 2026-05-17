@@ -292,7 +292,8 @@ Welcome to the repo! In order to start using SPIDER, first ensure you have read 
 #### Debug Mode
 
 <p><code>Debug=True</code> will run the rule layer on the entire test_set for a specified forecast (<code>0030</code> or <code>1230</code>).</p>
-<p>Ensure there is a breakpoint at: <code class="language-sh">rule_layer.py:Ln: 294</code></p>
+<p>It is recommended that Data Wrangler is installed as your Data Viewer in VSCode.</p>
+<p>Ensure that there is a breakpoint at: <code class="language-sh">rule_layer.py:Ln: 446</code></p>
 
 </details>
 
