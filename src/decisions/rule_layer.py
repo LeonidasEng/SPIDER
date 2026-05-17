@@ -1,5 +1,6 @@
 import os
 import sys
+import platform
 import pandas as pd
 import joblib
 import json
@@ -452,7 +453,13 @@ def main():
         f.write(text)
 
     if DEMO:
-        subprocess.Popen(["xdg-open", output_path])
+        system = platform.system()
+        if system == "Linux":
+            subprocess.Popen(["xdg-open", output_path])
+        elif system == "Windows":
+            subprocess.Popen(["notepad.exe", output_path])
+        else:
+            print(f"Unsupported OS: {system}")
 
 if __name__ == "__main__":
     main()
