@@ -308,7 +308,7 @@ Despite this limitation, OMNI2 is used in this project because it provides a cle
 representation of solar wind and geomagnetic conditions, averaged across multiple observatories 
 (ACE, DSCOVR, Wind) and time-shifted to the bow shock, thereby avoiding errors in time propagation.
 
-As a result, SPIDER is not intended for operational use, but rather as a retrospective analysis tool,
+As a result, <b>SPIDER is not yet intended for operational use</b>, but rather as a retrospective analysis tool,
 with the aim of understanding how forecast errors manifest, with the potentially to inform future models.
 
 ## Built With
