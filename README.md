@@ -289,6 +289,8 @@ Welcome to the repo! In order to start using SPIDER, first ensure you have read 
 
 <p>Finally, the rule layer produces a decision for each sample, it's confidence in the forecast and whether to trust the result.</p>
 
+#### Debug Mode
+
 <p><code>Debug=True</code> will run the rule layer on the entire test_set for a specified forecast (<code>0030</code> or <code>1230</code>).</p>
 <p>Ensure there is a breakpoint at: <code class="language-sh">rule_layer.py:Ln: 294</code></p>
 
