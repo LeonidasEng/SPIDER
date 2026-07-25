@@ -187,16 +187,15 @@ def formatResult(base: str, ftype: str, new_records: dict, model_outputs: dict):
                                  uncs,
                                  cis,
                                  decs)
-    if DEBUG:
-        if issue.year == 2025:
-            metadata_path = os.path.join(base, "data", "data_processed", "3day_forecast", 
-                f"3day_{ftype}", f"{issue.year}", f"3day_{issue.year}_{issue.month:02d}.json")
-            data_dt = f"{issue.year}-{issue.month:02d}-{issue.day:02d}"
-            with open(metadata_path, "r") as f:
-                metadata_json = json.load(f)
-            
-            meta = metadata_json[data_dt]["kp"]["meta"]
-            meta_text = ""
+    if DEMO and issue.year == 2025:
+        metadata_path = os.path.join(base, "data", "data_processed", "3day_forecast", 
+            f"3day_{ftype}", f"{issue.year}", f"3day_{issue.year}_{issue.month:02d}.json")
+        data_dt = f"{issue.year}-{issue.month:02d}-{issue.day:02d}"
+        with open(metadata_path, "r") as f:
+            metadata_json = json.load(f)
+        
+        meta = metadata_json[data_dt]["kp"]["meta"]
+        meta_text = ""
 
     
     if meta:
