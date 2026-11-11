@@ -36,11 +36,6 @@
         <li><a href="#troubleshooting">Troubleshooting</a></li>
         </ul>
     <li><a href="#user-guide">User Guide</a></li>
-    <li><a href="#contributing">Contributing</a></li>
-        <ul>
-        <li><a href="#clone-the-repo">Clone the Repo</a></li>
-        <li><a href="#suggestions">Suggestions</a></li>
-        </ul>
     <li><a href="#license">License</a></li>
     <li><a href="#acknowledgments">Acknowledgments</a></li>
   </ol>
@@ -325,32 +320,6 @@ You can find the changelog for this repo here: [Changelog](https://github.com/Le
 -->
 
 See the [open issues](https://github.com/LeonidasEng/SPIDER/issues) for a list of known issues.
-
-<p align="right">(<a href="#readme-top">back to top</a>)</p>
-
-<!-- CONTRIBUTING -->
-## Contributing
-This project was created as a Final year Engineering project. Any feedback you can give is **greatly appreciated**.
-
-### Clone the Repo
-1. Clone the repository to your local machine or download the ZIP.
-2. On the repository page, click on the green "Code" button.
-3. Copy the HTTPS or SSH URL of the repository (you can toggle between the two options).
-4. Open a terminal or command prompt on your local machine.
-5. Navigate to the directory where you want to clone the repository.
-6. Run the following command for HTTPS:
-    ```
-    git clone https://github.com/LeonidasEng/SPIDER.git
-    ```
-
-### Suggestions
-If you have a suggestion that would make this better, please fork the repo and create a pull request. You can also simply open an issue with the tag "enhancement".
-
-1. Fork the Project
-2. Create your Feature Branch (`git checkout -b feature/NewFeature`)
-3. Commit your Changes (`git commit -m 'Add some NewFeature'`)
-4. Push to the Branch (`git push origin feature/NewFeature`)
-5. Open a Pull Request
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
